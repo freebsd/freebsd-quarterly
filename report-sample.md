@@ -1,6 +1,7 @@
 ## Status Report Sample - This Will Become The Title ######
 
-Contact: John Smith <test@FreeBSD.org>
+Contact: John Smith, <test@FreeBSD.org>
+
 Link:	 [Link description here](http://www.example.com/project/url)
 
 Introduce your work.  Do not assume that the person reading
