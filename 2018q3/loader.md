@@ -39,7 +39,7 @@ something else in the environemnt that are being investigated. We hope
 to understand the problems well enough to provide a fix for FreeBSD
 12.0.
 
-Ian Lapore has reworked the GELI support so that it is MI and can be
+Ian Lepore has reworked the GELI support so that it is MI and can be
 used on any architecture we support.
 
 There's also efforts underway to bring signed image support, improved
