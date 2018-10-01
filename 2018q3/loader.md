@@ -2,9 +2,9 @@
 
 Contact: Warner Losh <imp@freebsd.org>, Kyle Evans <kevans@freebsd.org>, Toomas Soome <tsoome@Freebsd.org>
 
-The FreeBSD boot loader lives in src/stand. It covers all the code
-that the project provides that interacts with the hardware before the
-kernel starts.
+The FreeBSD boot loader lives in src/stand (prior releases had it in
+sys/boot and lib/libstand). It covers all the code that the project
+provides that interacts with the hardware before the kernel starts.
 
 The LUA interpreter we added earlier in the year was made default this
 quarter. Due to undiagnosed booting issues, however, it has been
@@ -38,6 +38,9 @@ machines that have issues with the default BootXXXX variables or
 something else in the environemnt that are being investigated. We hope
 to understand the problems well enough to provide a fix for FreeBSD
 12.0.
+
+Ian Lapore has reworked the GELI support so that it is MI and can be
+used on any architecture we support.
 
 There's also efforts underway to bring signed image support, improved
 crypto booting options and implement Multiboot 2.0.
