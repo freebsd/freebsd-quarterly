@@ -1,21 +1,22 @@
-## Status Report Sample - This Will Become The Title ######
+## Status Report Sample - This Will Become The Title ##
 
 Contact: John Smith, <email@example.org>
 
 Link:	 [Link description here](http://www.example.com/project/url)
 
+Paragraphs are separated with an empty line.  Use Markdown
+syntax, the same as you use on GitHub.  If you don't know
+Markdown, just write it as if it was plain text.
+
 Introduce your work.  Do not assume that the person reading
-the report knows about your project.  Paragraphs are separated
-with an empty line.
+the report knows about your project.
 
 Show the importance of your work.  Status reports are not
 just about telling everyone that things were done, they also
-need to explain why they were done.  Use Markdown syntax,
-the same you use on GitHub.
+need to explain why they were done.
 
 What has happened since the last report?  Let us know what
-is new in this area.  If you don't know Markdown, just write
-it as if it was plain text.
+is new in this area.
 
 Optionally include the information about the sponsor.
 
