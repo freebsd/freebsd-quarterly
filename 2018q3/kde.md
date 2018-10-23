@@ -32,7 +32,7 @@ with every release. Another upcoming issue is the way in which FreeBSD's libinpu
 lags behind. This blocks future updates to KDE Plasma as well as Wayland 
 improvements. Thankfully x11@ is looking at this issue already, so it should be
 fixed soon -- for the meantime people who want to give the latest KDE Plasma
-Desktop can use the appropriate branch from our github.
+Desktop a try can use the appropriate branch from our github.
 
 People who are willing to contribute can find us on #kde-freebsd on freenode,
 the kde@FreeBSD.org mailing list. Further we accept pull-requests and
