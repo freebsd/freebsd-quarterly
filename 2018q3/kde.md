@@ -27,9 +27,13 @@ control up to date. SDDM has been updated to the next-to-latest release with
 backported security fixes.
 
 One big issue we have is www/qt5-webengine, which requires too much time to keep
-up to date. Another upcoming issue is the way in which FreeBSD's libinput lags
-behind. This blocks future updates to KDE Plasma as well as Wayland improvements.
+up to date, as the underlying chromium is in need of many patches, which change 
+with every release. Another upcoming issue is the way in which FreeBSD's libinput
+lags behind. This blocks future updates to KDE Plasma as well as Wayland 
+improvements. Thankfully x11@ is looking at this issue already, so it should be
+fixed soon -- for the meantime people who want to give the latest KDE Plasma
+Desktop can use the appropriate branch from our github.
 
 People who are willing to contribute can find us on #kde-freebsd on freenode,
-the kde@freebsd.org mailing list. Further we accept pull-requests and
+the kde@FreeBSD.org mailing list. Further we accept pull-requests and
 contributions on github.com/freebsd/freebsd-ports-kde.
