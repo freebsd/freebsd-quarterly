@@ -43,7 +43,7 @@ possibility of pushing back to 2020. HardenedBSD remains the first and
 only enterprise operating system to use CFI across the base set of
 applications.
 
-On 20 Aug 2018, we launched a new tool called `hbsdcontrol(8) to
+On 20 Aug 2018, we launched a new tool called `hbsdcontrol(8)` to
 toggle exploit mitigations on a per-application basis.
 `hbsdcontrol(8)` uses filesystem extended attributes and is the
 preferred method for exploit mitigation toggling for those filesystem
