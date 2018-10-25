@@ -66,8 +66,17 @@ enhancing jail support and fixing regressions. We are grateful for
 Kyle Evans' assistance in landing the enhancements upstream in FreeBSD
 and his overall responsiveness and helpfulness.
 
-We taught `bhyve(8)` how to live in a jailed environment, allowing
-users to jail the hypervisor. We hardened the virtual address space of
-`bhyve(8)` by using guard pages. This work made it upstream to
-FreeBSD. We are grateful to those in FreeBSD who provided insight to
-increase the quality and efficiency of our patches.
+Relevant commits for the `bectl(8)` are:
+
+1. [r339047](https://svnweb.freebsd.org/base?view=revision&revision=339047)
+1. [r338221](https://svnweb.freebsd.org/base?view=revision&revision=338221)
+1. [r337993](https://svnweb.freebsd.org/base?view=revision&revision=337993)
+1. [r337947](https://svnweb.freebsd.org/base?view=revision&revision=337947)
+
+We taught `bhyve(8)` how to live in a [jailed
+environment](https://reviews.freebsd.org/rS337023), allowing users to
+jail the hypervisor. We hardened the virtual address space of
+`bhyve(8)` by using [guard pages](https://reviews.freebsd.org/rS338511).
+This work made it upstream to FreeBSD. We are grateful to those in
+FreeBSD who provided insight to increase the quality and efficiency
+of our patches.
