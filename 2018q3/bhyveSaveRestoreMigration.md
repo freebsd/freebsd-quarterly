@@ -14,7 +14,7 @@ Link:	[Github wiki - How to Save and Restore a bhyve guest](https://github.com/F
 
 Link:	[Github wiki - How to Migrate a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)
 
-Link:	[Github wiki - Suspend/resume test matrix](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)
+Link:	[Github wiki - Suspend/resume test matrix](https://github.com/FreeBSD-UPB/freebsd/wiki/Suspend-Resume-test-matrix)
 
 
 The Save/Restore for bhyve feature is a suspend and resume facility added to the
