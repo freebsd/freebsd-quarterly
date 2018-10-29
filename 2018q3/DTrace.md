@@ -1,4 +1,4 @@
-## FreeBSD/DTrace 2018Q4 update
+## FreeBSD/DTrace
 
 Contact: George Neville-Neil <gnn@freebsd.org>, Domagoj Stolfa <domagoj.stolfa@cl.cam.ac.uk>
 
@@ -33,12 +33,12 @@ internal workings of DTrace in general, and its adaptation to various
 operating systems in particular.  This work was sponsored by
 AFRL/DARPA through the CADETS project.
 
-Ruslan Bukin has added C-compressed ISA extension support to the
+Ruslan Bukin (br@) has added C-compressed ISA extension support to the
 RISC-V FBT provider as a part of the ECATS project.
 
-Mark Johnston has done some work to fix interactions between FBT and
-ifuncs. ifuncs are a toolchain feature which allow programmers to
-select a function's implementation at boot-time, rather than at
+Mark Johnston (markj@) has done some work to fix interactions between
+FBT and ifuncs. ifuncs are a toolchain feature which allow programmers
+to select a function's implementation at boot-time, rather than at
 compile-time. For instance, on amd64, memcpy() is an ifunc and may be
 implemented by either memcpy_erms() or memcpy_std(). FBT created
 probes for the implementation functions, but we needed some extra
@@ -49,15 +49,15 @@ pending.
 Microsoft showed a working demo of DTrace, which was ported from
 FreeBSD [1].
 
-Added to FreeBSD base in 11.2, dwatch is a new DTrace tool for
-automating complex queries for data and surgically tapping the
-kernel. In base there are 85 profiles for interpreting domain-specific
-data with another 17 available from ports making a total of over 100
-different pipelines from which you can extract data in multiple
-formats. dwatch also simplifies observation of over 100,000 probe
-points available in FreeBSD, making it easy to find any process,
-thread, or jail triggering any probe. On-top of all that, dwatch
-profiles can leverage higher-level languages such as python, perl, sh,
-and many more.
+Added to FreeBSD base in 11.2, dwatch is a new DTrace tool, developed
+by Devin Teske (dteske@), for automating complex queries for data and
+surgically tapping the kernel. In base there are 85 profiles for
+interpreting domain-specific data with another 17 available from ports
+making a total of over 100 different pipelines from which you can
+extract data in multiple formats. dwatch also simplifies observation
+of over 100,000 probe points available in FreeBSD, making it easy to
+find any process, thread, or jail triggering any probe. On-top of all
+that, dwatch profiles can leverage higher-level languages such as
+python, perl, sh, and many more.
 
 [1]: https://youtu.be/tG8R5SQGPck?t=891
