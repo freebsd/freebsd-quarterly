@@ -28,4 +28,4 @@ TODO: automatically activate the BAR on mapping, this is not done yet.
 Problem there is the need to avoid the resource conflict with the
 possible future attachment of the kernel driver.
 
-The work was sponsored by The FreeBSD Foundation.
+The work was sponsored by The FreeBSD Foundation and Mellanox Technologies.
