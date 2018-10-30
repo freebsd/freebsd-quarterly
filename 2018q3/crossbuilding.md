@@ -5,13 +5,22 @@ Contact: Alex Richardson, <arichardson@freebsd.org>
 Link:	 [Wiki](https://wiki.freebsd.org/BuildingOnNonFreeBSD) and [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018)
 
 Currently FreeBSD can only be built on a FreeBSD host. However, most free
-CI tools only allow building on Linux or macOS. Furthermore, this would allow
-developers to work on FreeBSD even if they don't have a FreeBSD build system.
-The current target is to allow building on both Linux and macOS but in the future
-it may even be possible to compile on a Windows host.
+CI tools only allow building on Linux or macOS and therefore can not be used
+for building the FreeBSD base system. Furthermore, it is sometimes useful to
+cross-build FreeBSD for a remote machine or an emulator even if the build
+machine is not running FreeBSD.
+The goal of this project is to allow building FreeBSD on both Linux and macOS hosts
+and in the future it may be extended to allow compiling on a Windows host.
+This work originates from the CHERI project and was motivated by multiple cases of
+people wanting to try out CheriBSD but not being able to compile it since they did
+not have a FreeBSD system available for compiling.
+Once completed this project will also allow developers to contribute to on FreeBSD
+even if they don't have access to a FreeBSD build system.
 
-When using the current prototype it is possible to compile both world and kernel for
-archictures using clang as well as MIPS64. However, some options such as LOCALES are
+The current set of patches for this project can be found on
+[GitHub](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018).
+With the current prototype it is possible to compile both world and kernel for
+archictures that use clang and for MIPS64. However, some options such as LOCALES are
 not supported yet and require further changes before the bootstrap tools can be built
 on Linux/macOS.
 
