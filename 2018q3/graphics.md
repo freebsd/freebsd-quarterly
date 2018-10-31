@@ -54,7 +54,7 @@ including libinput and supporting libraries.
 
 Work is also ongoing on updating MESA libraries.
 
-On the project management side, the most imprtant tasks is to continue to work
+On the project management side, the most important tasks is to continue to work
 on the team, and how we work internally.
 
 We are also working on setting up a list of requirements for testing, so that we
