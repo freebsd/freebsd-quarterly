@@ -2,9 +2,8 @@
 
 Contact: 
 - Wiki:
-  - Kubilay Kocak, <koobs@FreeBSD.org>
-  - Mark Linimon, <linimon@FreeBSD.org>
-  - Mateusz Piotrowski, <0mp@FreeBSD.org>
+  - wiki-admin@FreeBSD.org
+  - #freebsd-wiki @ freenode IRC
 - Quarterly reports:
   - Edward Tomasz Napierała, <trasz@FreeBSD.org>
   - Mateusz Piotrowski, <0mp@FreeBSD.org>
