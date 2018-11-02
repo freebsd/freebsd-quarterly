@@ -1,15 +1,21 @@
-<project cat='team'>
-  <title>Ports Collection</title>
+## Ports Collection ##
 
 Contact: René Ladan, <portmgr-secretary@FreeBSD.org</email>
+
 Contact: Ports Management Team, <portmgr@FreeBSD.org>
 
 Link:	[About FreeBSD Ports](https://www.FreeBSD.org/ports/)
+
 Link:	[Contributing to ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)
+
 Link:	[FreeBSD ports monitoring](http://portsmon.freebsd.org/index.html)
+
 Link:	[Ports management Team](https://www.freebsd.org/portmgr/index.html)
+
 Link:	[FreeBSD portmgr (@freebsd_portmgr)](https://twitter.com/freebsd_portmgr/)
+
 Link:	[FreeBSD Ports Management Team)](https://www.facebook.com/portmgr)
+
 Link:	[FreeBSD Ports Management Team)](https://plus.google.com/communities/108335846196454338383)
 
 In the last quarter, the number of ports grew to almost 32,000. There
