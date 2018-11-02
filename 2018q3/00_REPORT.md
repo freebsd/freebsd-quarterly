@@ -139,17 +139,13 @@ The work was sponsored by The FreeBSD Foundation.
 
 TODO:
 
-Intel currently works on extending the driver with the support for
-UEFI namespaces.
+  * Intel currently works on extending the driver with the support for
+    UEFI namespaces.
 
-DAX-capable filesystem is needed, which solves the issue of
-double-buffering.  Our tmpfs already provides VM facilities which
-allows it to avoid double-buffering for mmap, which can be reused
-there.
-Third quarter of 2018
-=====================
-
-This is the directory for status reports for the third quarter of 2018.
+  * DAX-capable filesystem is needed, which solves the issue of
+    double-buffering.  Our tmpfs already provides VM facilities which
+    allows it to avoid double-buffering for mmap, which can be reused
+    there.
 
 ## SMAP ##
 Contact: Konstantin Belousov, <kib@freebsd.org>
