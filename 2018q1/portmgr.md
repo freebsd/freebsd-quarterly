@@ -32,9 +32,9 @@ Koichiro IWAO (meta), and Sean Chittenden (seanc, returning).
 
 Three new USES were introduced:
 
-      - apache: handle dependencies on the Apache web server and modules
-      - eigen: automatically depend on math/eigen2 or math/eigen3
-      - emacs: handle dependencies on the Emacs editor and modules.
+  * apache: handle dependencies on the Apache web server and modules
+  * eigen: automatically depend on math/eigen2 or math/eigen3
+  * emacs: handle dependencies on the Emacs editor and modules.
 
 EXTRA_PATCHES has been extended to support
 directories, in which case it will automatically apply all
