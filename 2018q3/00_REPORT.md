@@ -990,6 +990,11 @@ and publishing release schedules for official project releases
 of FreeBSD, announcing code freezes and maintaining the
 respective branches, among other things.
 
+The 11.2-RELEASE cycle started April 20 with the code slush, and continued to
+progress througout the rest of the quarter with the code freeze, followed by
+three BETA builds and three RC builds, with the final release build announced
+June 27.
+
 The FreeBSD Release Engineering Team started the 12.0-RELEASE cycle August 10,
 beginning with the code slush.  The code slush followed August 24, with the
 *stable/12* branch expected to be created September 21.
@@ -1004,6 +1009,8 @@ Throughout the remainder of the quarter, several development snapshots builds
 were released for the *head*, *stable/11*, and *stable/10* branches.
 
 Much of this work was sponsored by the FreeBSD Foundation.
+
+
 ## FreeBSD/RISC-V 2018Q4 update
 
 Contact: Ruslan Bukin <br@freebsd.org>
