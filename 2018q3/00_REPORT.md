@@ -983,6 +983,7 @@ soon as it is considered a drop-in replacement for Marionette Collective.
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 
 Link:	[FreeBSD 10.4-RELEASE announcement](https://www.freebsd.org/releases/10.4R/announce.html)
+Link:	[FreeBSD 12.2-RELEASE announcement](https://www.freebsd.org/releases/12.2R/announce.html)
 Link:	[FreeBSD 12.0-RELEASE schedule](https://www.freebsd.org/releases/12.0R/schedule.html)
 Link:	[FreeBSD development snapshots](https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/)
 
