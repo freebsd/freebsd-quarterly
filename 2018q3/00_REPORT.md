@@ -850,6 +850,8 @@ cables just to configure your system.  You can also switch
 it to provide network interface, or present itself as a USB
 drive - it's all documented in the FreeBSD Handbook.
 
+The work was sponsored by The FreeBSD Foundation.
+
 ## PINE64-LTS Image
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>
