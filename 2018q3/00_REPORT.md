@@ -1,44 +1,44 @@
 ## 4G/4G address space split for i386  ##
-Contact: Konstantin Belousov, <kib@freebsd.org>
+Contact: Konstantin Belousov <kib@freebsd.org>
 Link:	 None
 
-i386, as most other 32bit FreeBSD architectures, starts suffering from
-the grow of software during the recent decade.  Althought 32bit
-execution environments, when 32bit address space is enough, are still
-have an advantage over the 64bit one, at least due to the smaller
-memory traffic and more economical use of caches, it is harder to
+Most 32-bit FreeBSD architectures, including i386, starts to suffer from
+the growth of software during the recent decade.
+When a 32-bit address space is enough, 32-bit mode still
+has an advantage over the 64-bit one, due to the smaller
+memory traffic and more economical use of caches, but it is harder to
 provide the self-hosting i386 system build.  
 
-Our i386 kernel so far split the 4G address space of the platform into
-3G (without 4M) accessible to userspace, and 1G for kernel itself.  In
-other words, neither kernel nor userspace got full 4G. The programs
-like clang and lld, require very large virtual address space for
-linking, 3G is not enough for them.  Kernel have trouble fitting into
-1G limitation with the modern sizing for network buffers, ZFS and
+Our i386 kernel so far split the 4GB address space of the platform into
+3GB (minus 4MB) accessible to userspace, and 1GB for kernel itself.  In
+other words, neither kernel nor userspace could access a full 4GB. Programs
+such as clang and lld require very large virtual address spaces for
+linking and 3GB is not enough for them.  The kernel has trouble fitting into
+the 1GB limitation with the modern sizing for network buffers, ZFS and
 other KVA-hungry in-kernel code.
 
 In FreeBSD 12, i386 now provides dedicated address spaces for
-userspace and kernel, giving each mode full 4G (- 8M) of usable
-addresses.  The userspace on i386 now has the same resources as
+userspace and kernel, giving each mode full 4GB (minus 8MB) of usable
+addresses.  The userspace on i386 now has access to the same amount of address space as
 compat32 on amd64 kernel, and there is much more breathing space for
 the kernel itself.
 
-We use two PDEs shared between modes, one for mapping the page table,
+We use two page director entries (PDEs) shared between modes, one for mapping the page table,
 another for the mode switching trampoline and other required system
-tables like GDT/IDT/TSS which must be mapped always.  Significant
-change required for the locore code, which page table creation part
-was completely rewritten and moved from assembler to C, aiding in
+tables, such as GDT/IDT/TSS, which must be mapped always.  Significant
+change was required for the locore code, of which the page table creation part
+was completely rewritten in C (form assembly), improving
 readability.
 
-Since user address space is no longer shared with the kernel,
-copyout(9) functions needed to be rewritten, making transient mapping
+Because user address space is no longer shared with the kernel,
+the copyout(9) functions needed to be rewritten to make transient mapping
 of userspace pages for duration of accesses.  Initial implementation
-used vm_fault_quick_hold_pages() framework, but was later optimized
+used the vm_fault_quick_hold_pages() framework, but was later optimized
 for faster small block copying by hand-written assembler routines
-which temporary switched to user mode mappings from trampoline.
+which temporary switched to user mode mappings from a trampoline.
 
-Future plans for maintanence of i386 include making i386 pmap capable
-of runtime selection of PAE/non-PAE page table format, bringing NX
+Future plans for maintenance of i386 include making the i386 pmap capable
+of runtime selection of the PAE or non-PAE page table format and bringing NX
 mappings for regular i386 kernel.
 
 The work was sponsored by The FreeBSD Foundation.
