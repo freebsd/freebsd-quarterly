@@ -1134,6 +1134,9 @@ XML files is not ideal for many end users. This is why we are trying to approach
 3. The quarterly reports project is testing out if using Markdown and GitHub as
    an alternative tool for submitting documentation lowers the barrier of
    entry.
+
+## Performance improvements ##
+
 FreeBSD 12 saw the introduction of a number of performance improvements:
    - the introduction of the new synchronization primitive epoch to replace the
      use of reader locks for providing existence guarantees for data structures
@@ -1147,6 +1150,7 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
    - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
    - The NUMA work has lead to a 20x-80x improvement in the scalability of page
      fault handling
+     
 ## FreeBSD on Power9 (ppc64) Parity ##
 
 Once Justin Hibbits largely stabilized the powerpc64 port on the POWER9
