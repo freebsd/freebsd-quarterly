@@ -161,6 +161,107 @@ Here are other noteworthy events (in chronological order) since the last quarter
 - Samy al Bahra was awarded project membership.
 - George Neville-Neil (gnn) was approved to begin co-mentoring Vincenzo Maffione (vmaffione).
 
+## The FreeBSD Foundation ##
+
+Contact: Deb Goodkin, <deb@FreeBSDFoundation.org>
+
+The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to supporting and promoting the FreeBSD Project and community worldwide. Funding comes from individual and corporate donations and is used to fund and manage software development projects, conferences and developer summits, and provide travel grants to FreeBSD contributors. The Foundation purchases and supports hardware to improve and maintain FreeBSD infrastructure and provides resources to improve security, quality assurance, and release engineering efforts; publishes marketing material to promote, educate, and advocate for the FreeBSD Project; facilitates collaboration between commercial vendors and FreeBSD developers; and finally, represents the FreeBSD Project in executing contracts, license agreements, and other legal arrangements that require a recognized legal entity.
+
+Here are some highlights of what we did to help FreeBSD last quarter:
+
+### Partnerships and Commercial User Support ###
+
+As a 501(c)(3) non-profit, we don’t directly support commercial users, but we do work with them to understand their needs and help facilitate collaboration with the community. Last quarter we met with a few key FreeBSD users and supporters, to discuss pain points, how they can contribute back to FreeBSD, and what technologies they would like to see supported, to support FreeBSD over more of their technologies and products.
+ 
+As many of you know, we formed a partnership with Intel around one and a half years ago. Since then the people we worked directly with left the company, but it moved us into a new relationship with their Open Source Technology Center (OTC).
+
+We are very encouraged that Intel has dedicated additional resources from the OTC to work on FreeBSD in addition to existing resources from the networking group and other technologies such as QuickAssist.   Much of the work has been focused on security and OS mitigations but we're also focusing on other areas such as power management and persistent memory.    In May and again in July we traveled to Intel's Hillsboro campus to meet with management and engineers from OTC and the networking team.  We presented an overview of the project and Foundation and also discussed key markets and vendors who use FreeBSD in their products or services and their future requirements.  
+
+Intel was also interested in learning more about who contributes to FreeBSD.  Along those lines we've done some work with OTC to create scripts and organizational mappings to answer that question.  This data has been updated through Q3 and is available (here).  It's interesting to see how the contributions change over time by clicking on the quarterly charts.   Note: that we do need developers to help us update and maintain the organizational mappings as we understand that developers do tend to move around and contractors are often working on behalf of multiple organizations.
+
+### Fundraising Efforts ###
+
+Our work is 100% funded by your donations. As of September 30, we raised $328,482. Our 2018 fundraising goal is $1,250,00 and we are continuing to work hard to meet and exceed this goal! Please consider making a donation to help us continue and increase our support for FreeBSD: https://www.FreeBSDfoundation.org/donate/.
+
+We also have a new Partnership Program, to provide more benefits for our larger commercial donors. Find out more information at https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/ 
+and share with your companies!
+
+### OS Improvements ###
+
+The Foundation improves the FreeBSD operating system by employing our technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. This also includes funding separate project grants like the arm64 port, porting the blacklistd access control daemon, and the integration of VIMAGE support, to make sure that FreeBSD remains a viable solution for research, education, computing, products and more.
+
+We kicked off or continued the following projects last quarter:
+  * OpenZFS RAID-Z Expansion project
+  * Headless mode out-of-the-box for embedded Arm boards like the Beaglebone Black
+  * Performance and scalability improvements
+
+Having software developers on staff has allowed us to jump in and work directly on projects to improve FreeBSD like:
+  * ZFS improvements
+  * New Intel server support
+  * kqueue(2) updates
+  * 64-bit inode support
+  * Stack guard
+  * Kernel Undefined Behavior Sanitizer
+  * Toolchain projects
+  * i915 driver investigation
+  * NVDIMM support in acpiconf(8)
+  * Continuous integration dashboard (web page and physical hardware)
+  * FAT filesystem support in makefs(8)
+
+### Continuous Integration and Quality Assurance ###
+
+The Foundation provides a full-time staff member who is working on improving our automated testing, continuous integration, and overall quality assurance efforts.
+
+Foundation employee Li-Wen Hsu set up new CI servers to speed up amd64 build and test jobs, to reduce the latency between changes being committed and results being available. Li-Wen also set up a staging / development server in order to test changes to the CI system itself without affecting production results. We’ve also started a small hardware test lab, currently connected to the staging server, that tests the a full boot and test cycle on physical hardware. In the near future additional hardware devices will be added, and this will migrate to the production CI server.
+
+### Release Engineering ###
+
+The Foundation provides a full-time staff member to lead the release engineering efforts. This has provided timely and reliable releases over the last five years.
+
+Foundation employee, Glen Barber continued leading the efforts on the upcoming 12.0-RELEASE.  For details surrounding the work involved and progress thus far on 12.0-RELEASE, please see the FreeBSD Release Engineering Team section of this quarterly status report.  
+
+### Supporting FreeBSD Infrastructure ###
+
+The Foundation provides hardware and support to improve the FreeBSD infrastructure. Last quarter, we continued supporting FreeBSD hardware located around the world.
+
+### FreeBSD Advocacy and Education ###
+
+A large part of our efforts are dedicated to advocating for the Project. This includes promoting work being done by others with FreeBSD; producing advocacy literature to teach people about FreeBSD and help make the path to starting using FreeBSD or contributing to the Project easier; and attending and getting other FreeBSD contributors to volunteer to run FreeBSD events, staff FreeBSD tables, and give FreeBSD presentations.
+
+The FreeBSD Foundation sponsors many conferences, events, and summits around the globe. These events can be BSD-related, open source, or technology events geared towards underrepresented groups. We support the FreeBSD-focused events to help provide a venue for sharing knowledge, to work together on projects, and to facilitate collaboration between developers and commercial users. This all helps provide a healthy ecosystem. We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.
+
+Check out some of the advocacy and education work we did last quarter:
+  * Organized and ran the Essen FreeBSD Hackathon in Essen Germany
+  * Participated in the FreeBSD Developer Summit BSDCam, in Cambridge, England
+  * Represented FreeBSD at the ARM Partner Meeting
+  * Presented and taught about FreeBSD at SdNOG 5 in Khartoum, Sudan
+  * Exhibited and gave a talk at OSCON 2018 in Portland, OR
+  * Exhibited at the 2018 Grace Hopper Celebration and sponsored as a Silver Non-Profit Sponsor
+  * Exhibited at COCON 2018 in Taipei, Taiwan
+  * Sponsored and gave presentations and tutorials at EuroBSDCon in Bucharest, Romania
+  * Organized and ran the Bucharest FreeBSD Developer Summit
+  * Sponsored the 2018 USENIX Security Symposium in Baltimore, MD as an Industry Partner
+  * Provided FreeBSD advocacy material
+  * Sponsored the 2018 USENIX Annual Technical Conference in Boston, MA as an Industry Partner
+  * Sponsored the OpenZFS Developer Summit as a Silver Sponsor
+  * Presented and taught about FreeBSD at SANOG32 in Dhaka, Bangladesh
+  * Sponsored the SNIA Storage Developer Conference 2018 as an Association Partner
+  * Provided 11 travel grants to FreeBSD contributors to attend many of the above events.
+
+We continued producing FreeBSD advocacy material to help people promote FreeBSD around the world.
+
+Read more about our conference adventures in the conference recaps and trip reports in our monthly newsletters: https://www.freebsdfoundation.org/news-and-events/newsletter/
+
+We help educate the world about FreeBSD by publishing the professionally produced FreeBSD Journal. Last quarter we published the July/August issue that you can find at https://www.FreeBSDfoundation.org/journal/.
+
+You can find out more about events we attended and upcoming events at https://www.FreeBSDfoundation.org/news-and-events/.
+
+### Legal/FreeBSD IP ###
+
+The Foundation owns the FreeBSD trademarks, and it is our responsibility to protect them. We also provide legal support for the core team to investigate questions that arise.
+
+Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and how we can help you!
+
 # Projects #
 
 ## Continuous Integration ##
