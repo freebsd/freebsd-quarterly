@@ -4,10 +4,10 @@
 
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 
-Link:	[FreeBSD 10.4-RELEASE announcement](https://www.freebsd.org/releases/10.4R/announce.html)
-Link:	[FreeBSD 11.2-RELEASE announcement](https://www.freebsd.org/releases/11.2R/announce.html)
-Link:	[FreeBSD 12.0-RELEASE schedule](https://www.freebsd.org/releases/12.0R/schedule.html)
-Link:	[FreeBSD development snapshots](https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/)
+Link:	[FreeBSD 10.4-RELEASE announcement](https://www.FreeBSD.org/releases/10.4R/announce.html)
+Link:	[FreeBSD 11.2-RELEASE announcement](https://www.FreeBSD.org/releases/11.2R/announce.html)
+Link:	[FreeBSD 12.0-RELEASE schedule](https://www.FreeBSD.org/releases/12.0R/schedule.html)
+Link:	[FreeBSD development snapshots](https://download.FreeBSD.org/ftp/snapshots/ISO-IMAGES/)
 
 The FreeBSD Release Engineering Team is responsible for setting
 and publishing release schedules for official project releases
@@ -47,11 +47,11 @@ Contact: Ports Management Team, <portmgr@FreeBSD.org>
 
 Link:	[About FreeBSD Ports](https://www.FreeBSD.org/ports/)
 
-Link:	[Contributing to ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)
+Link:	[Contributing to ports](https://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)
 
-Link:	[FreeBSD ports monitoring](http://portsmon.freebsd.org/index.html)
+Link:	[FreeBSD ports monitoring](http://portsmon.FreeBSD.org/index.html)
 
-Link:	[Ports management Team](https://www.freebsd.org/portmgr/index.html)
+Link:	[Ports management Team](https://www.FreeBSD.org/portmgr/index.html)
 
 Link:	[FreeBSD portmgr (@freebsd_portmgr)](https://twitter.com/freebsd_portmgr/)
 
@@ -271,7 +271,7 @@ Contact:
 Link:
   * [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)
   * [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)
-  * [FreeBSD Jenkins wiki](https://wiki.freebsd.org/Jenkins)
+  * [FreeBSD Jenkins wiki](https://wiki.FreeBSD.org/Jenkins)
   * [freebsd-testing Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing)
   * [freebsd-ci Repository](https://github.com/freebsd/freebsd-ci)
 
@@ -292,14 +292,14 @@ update and test continuously for 12-STABLE branch.
 
 We had meetings and working groups at two developer summits during 2018Q3:
 
-  * [BSDCam 2018](https://wiki.freebsd.org/DevSummit/201808/Testing)
-  * [EuroBSDCon 2018](https://wiki.freebsd.org/DevSummit/201809)
+  * [BSDCam 2018](https://wiki.FreeBSD.org/DevSummit/201808/Testing)
+  * [EuroBSDCon 2018](https://wiki.FreeBSD.org/DevSummit/201809)
 
 Work in progress:
   * Fixing the failing test cases and builds
-    * DTrace test: https://ci.freebsd.org/job/FreeBSD-head-amd64-dtrace_test/lastCompletedBuild/testReport/
-    * ZFS test: https://ci.freebsd.org/job/FreeBSD-head-amd64-test_zfs/lastCompletedBuild/testReport/
-    * GCC build: https://ci.freebsd.org/job/FreeBSD-head-amd64-gcc/
+    * DTrace test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-dtrace_test/lastCompletedBuild/testReport/
+    * ZFS test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-test_zfs/lastCompletedBuild/testReport/
+    * GCC build: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-gcc/
   * Adding drm ports building test against -CURRENT
   * Adding tests for selected project branches, e.g.: clang700-import
   * Adding new hardware to the embedded testbed
@@ -309,7 +309,7 @@ Work in progress:
 # Kernel Projects #
 
 ## 4G/4G address space split for i386  ##
-Contact: Konstantin Belousov <kib@freebsd.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
 Link:	 None
 
 Most 32-bit FreeBSD architectures, including i386, starts to suffer from
@@ -355,7 +355,7 @@ The work was sponsored by The FreeBSD Foundation.
 
 ## FreeBSD/DTrace
 
-Contact: George Neville-Neil <gnn@freebsd.org>, Domagoj Stolfa <domagoj.stolfa@cl.cam.ac.uk>
+Contact: George Neville-Neil <gnn@FreeBSD.org>, Domagoj Stolfa <domagoj.stolfa@cl.cam.ac.uk>
 
 DTrace is a whole-system debugging tool in FreeBSD and is one of the
 actively supported projects during the past year.
@@ -419,7 +419,7 @@ python, perl, sh, and many more.
 
 ## ACPI NVDIMM driver ##
 
-Contact: Konstantin Belousov, <kib@freebsd.org>
+Contact: Konstantin Belousov, <kib@FreeBSD.org>
 Link:	 None
 
 NV-DIMM is the technology which provides non-volatile memory with the
@@ -462,7 +462,7 @@ TODO:
 
 ## SMAP ##
 
-Contact: Konstantin Belousov, <kib@freebsd.org>
+Contact: Konstantin Belousov, <kib@FreeBSD.org>
 Link:	 None
 
 Support for SMAP, which stands for supervisor-mode access prevention,
@@ -531,7 +531,7 @@ underway to generate the 32-bit system call list from the "default"
 list.
 
 The remaining `ioctl` commands handled in
-[sys/compat/freebsd32/freebsd32_ioctl.c](https://svnweb.freebsd.org/base/head/sys/compat/freebsd32/freebsd32_ioctl.c?view=log)
+[sys/compat/freebsd32/freebsd32_ioctl.c](https://svnweb.FreeBSD.org/base/head/sys/compat/freebsd32/freebsd32_ioctl.c?view=log)
 need to be migrated to the point of implementation. Help with the latter
 would be appreciated.
 
@@ -592,7 +592,7 @@ Contact: Darius Mihai, <dariusmihaim@gmail.com>
 
 Contact: Sergiu Weisz, <sergiu121@gmail.com>
 
-Contact: Mihai Carabas, <mihai@freebsd.org>
+Contact: Mihai Carabas, <mihai@FreeBSD.org>
 
 Link:	[Github repository for the save/restore and migration features](https://github.com/FreeBSD-UPB/freebsd/tree/projects/bhyve_migration)
 
@@ -649,9 +649,9 @@ __Future tasks__:
 
 ## Building FreeBSD on non-FreeBSD hosts ##
 
-Contact: Alex Richardson, <arichardson@freebsd.org>
+Contact: Alex Richardson, <arichardson@FreeBSD.org>
 
-Link:	 [Wiki](https://wiki.freebsd.org/BuildingOnNonFreeBSD) and [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018)
+Link:	 [Wiki](https://wiki.FreeBSD.org/BuildingOnNonFreeBSD) and [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018)
 
 Currently FreeBSD can only be built on a FreeBSD host. However, most free
 CI tools only allow building on Linux or macOS and therefore can not be used
@@ -677,8 +677,8 @@ Some changes required for building on non-FreeBSD have already been merged to
 HEAD but there is still a rather large amount of changes that need review.
 
 If you are interested in getting this into HEAD and would like to help, please
-try the current prototype and report any issues to arichardson@freebsd.org.
-If you can help with reviewing the changes please contact arichardson@freebsd.org
+try the current prototype and report any issues to arichardson@FreeBSD.org.
+If you can help with reviewing the changes please contact arichardson@FreeBSD.org
 to be added to any pending Phabricator reviews.
 
 ## DTS Update ##
@@ -733,7 +733,7 @@ Sponsor: Amazon.com Inc.
 
 ## FreeBSD Graphics Team ##
 
-Contact: FreeBSD Graphics Team, <x11@freebsd.org>, Niclas Zeising <zeising@freebsd.org>
+Contact: FreeBSD Graphics Team, <x11@FreeBSD.org>, Niclas Zeising <zeising@FreeBSD.org>
 
 Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
 
@@ -802,9 +802,9 @@ https://github.com/FreeBSDDesktop
 
 ## ifuncs ##
 
-Contact: Konstantin Belousov, <kib@freebsd.org>,
-	Ed Maste <emaste@freebsd.org>, Mark Johnston <markj@freebsd.org>,
-	Mateusz Guzik <mjg@freebsd.org>
+Contact: Konstantin Belousov, <kib@FreeBSD.org>,
+	Ed Maste <emaste@FreeBSD.org>, Mark Johnston <markj@FreeBSD.org>,
+	Mateusz Guzik <mjg@FreeBSD.org>
 Link:	 None
 
 Ifunc is a special construct in the ELF infrastructure, which allows
@@ -864,13 +864,13 @@ currently doesn't have any notion of runtime power management, and many devices
 don't properly implement suspend and resume. In addition, some preliminary work
 is in process as it was thought to help when eventually enabling opportunistic
 idle. That preliminary work has been happening and is now up for review:
-- https://reviews.freebsd.org/D17675
-- https://reviews.freebsd.org/D17676
+- https://reviews.FreeBSD.org/D17675
+- https://reviews.FreeBSD.org/D17676
 
 NVDIMM namespace support has also been put up for review. ACPI spec defines
 namespaces as a way of partitioning the device into separate labels. The current
 work will integrate with geom(4). How these are used is application dependent.
-This work is up for review as well: https://reviews.freebsd.org/D17619
+This work is up for review as well: https://reviews.FreeBSD.org/D17619
 
 The team has additionally taken on smaller tasks like porting turbostat(8),
 working on git svn init scripts, some small modifications to acpi tooling, and
@@ -910,7 +910,7 @@ its own git branch available only for FreeBSD after 12 releases.
 
 ## Boot Loader ##
 
-Contact: Warner Losh <imp@freebsd.org>, Kyle Evans <kevans@freebsd.org>, Toomas Soome <tsoome@Freebsd.org>
+Contact: Warner Losh <imp@FreeBSD.org>, Kyle Evans <kevans@FreeBSD.org>, Toomas Soome <tsoome@Freebsd.org>
 
 The FreeBSD boot loader lives in src/stand (prior releases had it in
 sys/boot and lib/libstand). It covers all the code that the project
@@ -957,7 +957,7 @@ crypto booting options and implement Multiboot 2.0.
 
 ## Usermode mapping of PCI BARs ##
 
-Contact: Konstantin Belousov, <kib@freebsd.org>
+Contact: Konstantin Belousov, <kib@FreeBSD.org>
 Link:	 None
 
 Modern PCI(e) devices typically define memory-mapped BARs, each of them
@@ -992,7 +992,7 @@ The work was sponsored by The FreeBSD Foundation and Mellanox Technologies.
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
-Link:	 [Handbook chapter](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-device-mode.html)
+Link:	 [Handbook chapter](https://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/usb-device-mode.html)
 
 Many embedded boards include hardware which supports device
 side USB - the ability for the board to present itself to another
@@ -1035,7 +1035,7 @@ Support for it was added and the Beaglebone image can be used on it directly.
 
 ## FreeBSD on PowerNV (ppc64) ##
 
-Contact: Patryk Duda <pdk@semihalf.com>, Wojciech Macek <wma@FreeBSD.org>, Michal Stanek <mst@semihalf.com>, Nathan Whitehorn <nw@freebsd.org>
+Contact: Patryk Duda <pdk@semihalf.com>, Wojciech Macek <wma@FreeBSD.org>, Michal Stanek <mst@semihalf.com>, Nathan Whitehorn <nw@FreeBSD.org>
 
 Semihalf is happy to announce that FreeBSD is now running on IBM POWER8. This project is a continuation of work done by Nathan Whitehorn who provided basic support for a PowerNV emulator.
 
@@ -1102,7 +1102,7 @@ https://github.com/POWER9BSD/freebsd/projects/1
 
 ## FreeBSD on RISC-V ##
 
-Contact: Ruslan Bukin <br@freebsd.org>
+Contact: Ruslan Bukin <br@FreeBSD.org>
 
 FreeBSD/RISC-V has been one of the actively supported projects during the past year.
 
@@ -1126,7 +1126,7 @@ Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can acce
 
 ## RPI Firmware/DTB/U-Boot Update ##
 
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>, U-Boot mailing list: <uboot@freebsd.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>, U-Boot mailing list: <uboot@FreeBSD.org>
 
 The RaspberryPi firmware loads the DTB from the fat partition based on
 the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
@@ -1163,7 +1163,7 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
 
 Contact: Adriaan de Groot <adridg@FreeBSD.org>, Tobias C. Berner <tcberner@FreeBSD.org>
 
-Link:	 [KDE FreeBSD](https://freebsd.kde.org/)
+Link:	 [KDE FreeBSD](https://FreeBSD.kde.org/)
 
 KDE FreeBSD is responsible for the ports of the Plasma5 and KDE4 desktops, and
 all associated applications. Further we also manage the Qt4 and Qt5 ports, as
@@ -1237,14 +1237,14 @@ Link:    [GitHub repo](https://github.com/gonzoua/scarab)
 
 scarab is a CLI tool that makes some of Bugzilla functionality
 available from the command line. Normally users interact with the
-[bugtracker](https://bugs.freebsd.org/bugzilla/) using web browser
+[bugtracker](https://bugs.FreeBSD.org/bugzilla/) using web browser
 but for certain workflows, Web UI may be more of an obstacle
 than help requiring to perform more steps compared to CLI tool.
 
 Bugzilla provides XML-RPC interfaces that can be used for
 automation/integration and there are several CLI tools like
 [pybugz](https://github.com/williamh/pybugz) that can be used
-with bugs.freebsd.org as-is. They are generic one-size-fits-all
+with bugs.FreeBSD.org as-is. They are generic one-size-fits-all
 tools which mean they can do a lot of thing at the cost of
 more complex CLI.
 
@@ -1283,7 +1283,7 @@ Contact:
   - Mateusz Piotrowski, <0mp@FreeBSD.org>
 
 Links:	 
-- [Wiki Fixit Group Website](https://wiki.freebsd.org/WikiFixitGroup/)
+- [Wiki Fixit Group Website](https://wiki.FreeBSD.org/WikiFixitGroup/)
 
 The FreeBSD Wiki used to be a scratch pad for the FreeBSD developers to
 organize projects, store notes and publish articles that were about to be added
@@ -1294,7 +1294,7 @@ the character of the wiki.
 As a result we decided to discuss the future of the tools we want to use for
 documentation in FreeBSD (one of such discussions was held during BSDCam 2018, 
 you may see some notes
-[here](https://wiki.freebsd.org/DevSummit/201808/DeveloperTools)). The general
+[here](https://wiki.FreeBSD.org/DevSummit/201808/DeveloperTools)). The general
 conclusion is that wiki is a great tool for what it was meant for: organizing
 projects and notes in the community of developers. We should not move all our
 documentation (especially handbooks) to Wiki as the quality and maintainability
@@ -1317,7 +1317,7 @@ XML files is not ideal for many end users. This is why we are trying to approach
 Contact: Shawn Webb <shawn.webb@hardenedbsd.org>
 
 Our last report was [June
-2017](https://www.freebsd.org/news/status/report-2017-04-2017-06.html#HardenedBSD).
+2017](https://www.FreeBSD.org/news/status/report-2017-04-2017-06.html#HardenedBSD).
 A lot has transpired since then. In this status report, we will
 attempt to briefly cover all the progress we've made, including the
 few commits that made it upstream to FreeBSD.
@@ -1382,15 +1382,15 @@ and his overall responsiveness and helpfulness.
 
 Relevant commits for the `bectl(8)` are:
 
-1. [r339047](https://svnweb.freebsd.org/base?view=revision&revision=339047)
-1. [r338221](https://svnweb.freebsd.org/base?view=revision&revision=338221)
-1. [r337993](https://svnweb.freebsd.org/base?view=revision&revision=337993)
-1. [r337947](https://svnweb.freebsd.org/base?view=revision&revision=337947)
+1. [r339047](https://svnweb.FreeBSD.org/base?view=revision&revision=339047)
+1. [r338221](https://svnweb.FreeBSD.org/base?view=revision&revision=338221)
+1. [r337993](https://svnweb.FreeBSD.org/base?view=revision&revision=337993)
+1. [r337947](https://svnweb.FreeBSD.org/base?view=revision&revision=337947)
 
 We taught `bhyve(8)` how to live in a [jailed
-environment](https://reviews.freebsd.org/rS337023), allowing users to
+environment](https://reviews.FreeBSD.org/rS337023), allowing users to
 jail the hypervisor. We hardened the virtual address space of
-`bhyve(8)` by using [guard pages](https://reviews.freebsd.org/rS338511).
+`bhyve(8)` by using [guard pages](https://reviews.FreeBSD.org/rS338511).
 This work made it upstream to FreeBSD. We are grateful to those in
 FreeBSD who provided insight to increase the quality and efficiency
 of our patches.
