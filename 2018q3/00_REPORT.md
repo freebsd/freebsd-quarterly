@@ -1,6 +1,6 @@
 # FreeBSD Team reports #
 
-## FreeBSD Release Engineering Team ##
+## Release Engineering Team ##
 
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 
@@ -124,7 +124,7 @@ Open tasks:
     leaving more PRs unresolved. If you can, please pick up some PRs
     and improve everyone's experience.
 
-## FreeBSD Core Team
+## Core Team ##
 
 Contact: FreeBSD Core Team <core@FreeBSD.org>
 
@@ -262,8 +262,6 @@ The Foundation owns the FreeBSD trademarks, and it is our responsibility to prot
 
 Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and how we can help you!
 
-# Projects #
-
 ## Continuous Integration ##
 
 Contact:
@@ -308,7 +306,7 @@ Work in progress:
   * Implementing automatic tests on bare metal hardware
   * Planning running ztest and network stack tests
 
-# Kernel #
+# Kernel Projects #
 
 ## 4G/4G address space split for i386  ##
 Contact: Konstantin Belousov <kib@freebsd.org>
@@ -548,7 +546,7 @@ Contact: Emmanuel Vadot <manu@FreeBSD.org>
   * Add overlays to use another timer controller as the default one in A64 if faulty
     These overlay is enabled in the PINE64/LTS images by default
 
- ## ARMv6 and ARMv7 image now use EFI loader
+## ARMv6 and ARMv7 image now use EFI loader
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>
 
@@ -586,7 +584,7 @@ GENERIC config and use unmodified sys/gnu/dts device trees. The details are as f
 
 Sponsors: Stormshield, Semihalf
 
-## bhyve - Save/Restore/Migration ##
+## Save/Restore/Migration support in bhyve ##
 
 Contact: Elena Mihailescu, <elenamihailescu22@gmail.com>
 
@@ -683,7 +681,7 @@ try the current prototype and report any issues to arichardson@freebsd.org.
 If you can help with reviewing the changes please contact arichardson@freebsd.org
 to be added to any pending Phabricator reviews.
 
-## DTS Update
+## DTS Update ##
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>
 
@@ -733,7 +731,7 @@ The v0.8.0 and v0.8.1 release patches included:
 
 Sponsor: Amazon.com Inc.
 
-## FreeBSD Graphics Team status report ##
+## FreeBSD Graphics Team ##
 
 Contact: FreeBSD Graphics Team, <x11@freebsd.org>, Niclas Zeising <zeising@freebsd.org>
 
@@ -830,17 +828,17 @@ ifuncs.
 ifunc were already applied for optimization of the following areas of
 amd64 kernel:
 
-- context switching code, instead of huge number of runtime checks
+* context switching code, instead of huge number of runtime checks
   (PTI vs non-PTI, PCID or not, is INVPCID instruction supported for
   PCID) now uses set of mode-specific routines, see
   pmap_activate_sw().  Besides removing checks at runtime, it also
   makes the code much more cleanly structured and readable.
 
-- TLB and cache flush implementation.
+* TLB and cache flush implementation.
 
-- memcpy/memmove, copyin/copyout variants selection for ERMS and SMAP.
+* memcpy/memmove, copyin/copyout variants selection for ERMS and SMAP.
 
-- FPU state save and restore, depending on the support for AVX or not,
+* FPU state save and restore, depending on the support for AVX or not,
   this is also used on i386.
 
 For amd64 userspace, we currently use ifunc for optimization of the
@@ -848,11 +846,9 @@ TLS base set and get arch-depended functions.
 
 The work was sponsored by The FreeBSD Foundation.
 
-## Intel ##
+## Intel Work on Core Enabling and Security ###
 
-### FreeBSD Core Enabling / Security ###
 Contact: Ben Widawsky <bwidawsk@FreeBSD.org>
-Link: N/A
 
 A new team has been formed within Intel to help with side channel security
 mitigations as well as core enabling. They are evaluating work from all areas
@@ -879,9 +875,6 @@ This work is up for review as well: https://reviews.freebsd.org/D17619
 The team has additionally taken on smaller tasks like porting turbostat(8),
 working on git svn init scripts, some small modifications to acpi tooling, and
 an effort to create a port PMDK.
-
-### Networking ###
-Contact: jeb, erj??
 
 ## LLVM 7.0 - Sanitizers support improvements / Static code analysis ##
 
@@ -915,7 +908,7 @@ cases are now covered as well a W^X code detection had been added.
 At the moment, this 7.0 version is imported by Dimitry Andric, within
 its own git branch available only for FreeBSD after 12 releases.
 
-## Boot Loader 2018Q4 Update
+## Boot Loader ##
 
 Contact: Warner Losh <imp@freebsd.org>, Kyle Evans <kevans@freebsd.org>, Toomas Soome <tsoome@Freebsd.org>
 
@@ -995,7 +988,7 @@ possible future attachment of the kernel driver.
 
 The work was sponsored by The FreeBSD Foundation and Mellanox Technologies.
 
-## Device Mode USB
+## Device Mode USB ##
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
@@ -1024,14 +1017,14 @@ drive - it's all documented in the FreeBSD Handbook.
 
 The work was sponsored by The FreeBSD Foundation.
 
-## PINE64-LTS Image
+## PINE64-LTS Image ##
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>
 
 We now produce an image for the PINE64-LTS.
 This image works on the PINE64-LTS and the Sopine with Baseboard.
 
-## PocketBeagle Support
+## PocketBeagle Support ##
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>, Tom Jones <thj@FreeBSD.org>
 
@@ -1068,62 +1061,9 @@ Sponsors: IBM, FreeBSD Foundation, QCM Technologies, Semihalf, Limelight Network
 
 The project is kindly initiated and supported by Limelight Networks (Kevin Bowling).
 
-## FreeBSD/RISC-V 2018Q4 update
+## FreeBSD on POWER9 ##
 
-Contact: Ruslan Bukin <br@freebsd.org>
-
-FreeBSD/RISC-V has been one of the actively supported projects during the past year.
-
-On a compiler front we have upstreamed FreeBSD OS-dependent bits for GNU toolchain. It was updated to GCC 8.1 and Binutils 2.30. FreeBSD packages are available.
-
-FreeBSD Testsuite and required dependencies were successfully built for RISC-V and we did a test run: 152 tests failed out of 5186, which demonstrates a very good result for initial run and reveals areas to work on.
-
-We have added support for compressed ISA extension to KDB debugger and DTrace FBT provider enabling C-compressed kernel and userland by default. The output of disassembling instructions in KDB is looking similar to objdump.
-
-QEMU has updated to latest privilege spec allowing us to bringup FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: https://www.youtube.com/watch?v=FnWpRBaWF18
-
-Platform-Level Interrupt Controller (PLIC) driver was added. Interrupt support was converted to INTRNG.
-PLIC is used in QEMU for virtio network and block devices (full FreeBSD distribution can be booted in QEMU).
-
-Network virtualization support (VIMAGE) was fixed and enabled by default now.
-
-In order to support RocketChip and derivatives we had to work on A(accessed), D(dirty) PTE (page table entry) bits management.
-We have successfully tested this on a lowRISC board and it is booting to multiuser just fine. lowRISC UART driver was added.
-
-Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
-
-## RPI Firmware/DTB/U-Boot Update
-
-Contact: Emmanuel Vadot <manu@FreeBSD.org>, U-Boot mailing list: <uboot@freebsd.org>
-
-The RaspberryPi firmware loads the DTB from the fat partition based on
-the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
-instead of using the one it embed.
-This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
-HATs.
-The Overlays can be obtained by installing the rpi-firmware package.
-
-A new u-boot port for the W variant of the RPI0 was commited as u-boot-rpi-0-w.
-Some experiments started by trasz@ show that we could maybe produce a generic
-image for all armv6 RPI (RPI-B, RPI0 and RPI0W).
-
-## Performance improvements ##
-
-FreeBSD 12 saw the introduction of a number of performance improvements:
-   - the introduction of the new synchronization primitive epoch to replace the
-     use of reader locks for providing existence guarantees for data structures
-   - epoch was used to provide an 85+% reduction in the overhead of pcb lookup
-     in high core count systems
-   - It was used to provide an 85+% reduction in UDP send overhead on high core
-     count systems see the link for a bit more detail: 
-       http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees
-
-   - System call overhead is now half that of 11
-   - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
-   - The NUMA work has lead to a 20x-80x improvement in the scalability of page
-     fault handling
-     
-## FreeBSD on Power9 (ppc64) Parity ##
+Contact: Matthew Macy, <mmacy@FreeBSD.org>
 
 Once Justin Hibbits largely stabilized the powerpc64 port on the POWER9
 based Talos II I decided to procure one. I've been slowly working towards
@@ -1160,9 +1100,66 @@ A list of the other items needed to achieve kernel feature parity with a
 (wishful) list of milestones can be found at:
 https://github.com/POWER9BSD/freebsd/projects/1
 
+## FreeBSD on RISC-V ##
+
+Contact: Ruslan Bukin <br@freebsd.org>
+
+FreeBSD/RISC-V has been one of the actively supported projects during the past year.
+
+On a compiler front we have upstreamed FreeBSD OS-dependent bits for GNU toolchain. It was updated to GCC 8.1 and Binutils 2.30. FreeBSD packages are available.
+
+FreeBSD Testsuite and required dependencies were successfully built for RISC-V and we did a test run: 152 tests failed out of 5186, which demonstrates a very good result for initial run and reveals areas to work on.
+
+We have added support for compressed ISA extension to KDB debugger and DTrace FBT provider enabling C-compressed kernel and userland by default. The output of disassembling instructions in KDB is looking similar to objdump.
+
+QEMU has updated to latest privilege spec allowing us to bringup FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: https://www.youtube.com/watch?v=FnWpRBaWF18
+
+Platform-Level Interrupt Controller (PLIC) driver was added. Interrupt support was converted to INTRNG.
+PLIC is used in QEMU for virtio network and block devices (full FreeBSD distribution can be booted in QEMU).
+
+Network virtualization support (VIMAGE) was fixed and enabled by default now.
+
+In order to support RocketChip and derivatives we had to work on A(accessed), D(dirty) PTE (page table entry) bits management.
+We have successfully tested this on a lowRISC board and it is booting to multiuser just fine. lowRISC UART driver was added.
+
+Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
+
+## RPI Firmware/DTB/U-Boot Update ##
+
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>, U-Boot mailing list: <uboot@freebsd.org>
+
+The RaspberryPi firmware loads the DTB from the fat partition based on
+the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
+instead of using the one it embed.
+This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
+HATs.
+The Overlays can be obtained by installing the rpi-firmware package.
+
+A new u-boot port for the W variant of the RPI0 was commited as u-boot-rpi-0-w.
+Some experiments started by trasz@ show that we could maybe produce a generic
+image for all armv6 RPI (RPI-B, RPI0 and RPI0W).
+
+## Performance improvements ##
+
+Contact: Matthew Macy, <mmacy@FreeBSD.org>
+
+FreeBSD 12 saw the introduction of a number of performance improvements:
+   - the introduction of the new synchronization primitive epoch to replace the
+     use of reader locks for providing existence guarantees for data structures
+   - epoch was used to provide an 85+% reduction in the overhead of pcb lookup
+     in high core count systems
+   - It was used to provide an 85+% reduction in UDP send overhead on high core
+     count systems see the link for a bit more detail: 
+       http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees
+
+   - System call overhead is now half that of 11
+   - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
+   - The NUMA work has lead to a 20x-80x improvement in the scalability of page
+     fault handling
+     
 # Ports #
 
-## FreeBSD KDE status report ##
+## KDE on FreeBSD ##
 
 Contact: Adriaan de Groot <adridg@FreeBSD.org>, Tobias C. Berner <tcberner@FreeBSD.org>
 
