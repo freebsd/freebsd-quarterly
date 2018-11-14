@@ -126,7 +126,7 @@ Open tasks:
 
 ## Core Team ##
 
-Contact: FreeBSD Core Team <core@FreeBSD.org>
+Contact: FreeBSD Core Team, <core@FreeBSD.org>
 
 Much of Core's focus for the past months has been on three items.
 
@@ -322,8 +322,8 @@ Work in progress:
 # Kernel Projects #
 
 ## 4G/4G address space split for i386  ##
-Contact: Konstantin Belousov <kib@FreeBSD.org>
-Link:	 None
+
+Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
 Most 32-bit FreeBSD architectures, including i386, starts to suffer from
 the growth of software during the recent decade.
@@ -368,7 +368,9 @@ The work was sponsored by The FreeBSD Foundation.
 
 ## FreeBSD/DTrace
 
-Contact: George Neville-Neil <gnn@FreeBSD.org>, Domagoj Stolfa <domagoj.stolfa@cl.cam.ac.uk>
+Contact: George Neville-Neil, <gnn@FreeBSD.org>
+
+Contact: Domagoj Stolfa, <domagoj.stolfa@cl.cam.ac.uk>
 
 DTrace is a whole-system debugging tool in FreeBSD and is one of the
 actively supported projects during the past year.
@@ -433,7 +435,6 @@ python, perl, sh, and many more.
 ## ACPI NVDIMM driver ##
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
-Link:	 None
 
 NV-DIMM is the technology which provides non-volatile memory with the
 access parameters similar to the regular DRAM, in the normal memory
@@ -476,7 +477,6 @@ TODO:
 ## SMAP ##
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
-Link:	 None
 
 Support for SMAP, which stands for supervisor-mode access prevention,
 was added to amd64 kernels.  SMAP makes faulting any access from the
@@ -624,7 +624,7 @@ would be appreciated.
 
 ## Allwinner SoC Support
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
   * SPI driver added for A64 SoC
   * Thermal driver added/fixed for A64/H3/H5 SoCs
@@ -635,7 +635,7 @@ Contact: Emmanuel Vadot <manu@FreeBSD.org>
 
 ## ARMv6 and ARMv7 image now use EFI loader
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 Instead of using the ubldr version of the loader which uses the U-Boot
 API, all images now use loader.efi as their primary FreeBSD loader.
@@ -643,7 +643,11 @@ This allow us to have a common boot path for all arm and arm64 image.
 
 ## Armada 38x FreeBSD support ##
 
-Contact: Marcin Wojtas <mw@semihalf.com>, Patryk Duda <pdk@semihalf.com>, Rafał Kozik <rk@semihalf.com>
+Contact: Marcin Wojtas, <mw@semihalf.com>
+
+Contact: Patryk Duda, <pdk@semihalf.com>
+
+Contact: Rafał Kozik, <rk@semihalf.com>
 
 Link:	 [PRODUCT BRIEF](https://www.marvell.com/documents/egrkpyqzpoebxblyeept/)
 
@@ -770,7 +774,7 @@ to be added to any pending Phabricator reviews.
 
 ## DTS Update ##
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 DTS files (Device Tree Sources) were updated to be in pair with Linux 4.18 for
 the 12.0 releaase.
@@ -780,7 +784,7 @@ now always up-to-date.
 
 ## ENA FreeBSD Driver Update ##
 
-Contact: Michał Krawczyk <mk@semihalf.com>
+Contact: Michał Krawczyk, <mk@semihalf.com>
 
 Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)
 
@@ -820,7 +824,9 @@ Sponsor: Amazon.com Inc.
 
 ## FreeBSD Graphics Team ##
 
-Contact: FreeBSD Graphics Team, <x11@FreeBSD.org>, Niclas Zeising <zeising@FreeBSD.org>
+Contact: FreeBSD Graphics Team, <x11@FreeBSD.org>
+
+Contact: Niclas Zeising, <zeising@FreeBSD.org>
 
 Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
 
@@ -889,10 +895,13 @@ https://github.com/FreeBSDDesktop
 
 ## ifuncs ##
 
-Contact: Konstantin Belousov, <kib@FreeBSD.org>,
-	Ed Maste <emaste@FreeBSD.org>, Mark Johnston <markj@FreeBSD.org>,
-	Mateusz Guzik <mjg@FreeBSD.org>
-Link:	 None
+Contact: Konstantin Belousov, <kib@FreeBSD.org>
+
+Contact: Ed Maste, <emaste@FreeBSD.org>
+
+Contact: Mark Johnston, <markj@FreeBSD.org>
+
+Contact: Mateusz Guzik, <mjg@FreeBSD.org>
 
 Ifunc is a special construct in the ELF infrastructure, which allows
 the selection of the implementation for the given symbol at the
@@ -935,7 +944,7 @@ The work was sponsored by The FreeBSD Foundation.
 
 ## Intel Work on Core Enabling and Security ###
 
-Contact: Ben Widawsky <bwidawsk@FreeBSD.org>
+Contact: Ben Widawsky, <bwidawsk@FreeBSD.org>
 
 A new team has been formed within Intel to help with side channel security
 mitigations as well as core enabling. They are evaluating work from all areas
@@ -965,7 +974,7 @@ an effort to create a port PMDK.
 
 ## LLVM 7.0 - Sanitizers support improvements / Static code analysis ##
 
-Contact: David Carlier <devnexen@gmail.com>
+Contact: David Carlier, <devnexen@gmail.com>
 
 Link:	 [Release notes](http://releases.llvm.org/7.0.0/docs/ReleaseNotes.html)
 
@@ -997,7 +1006,11 @@ its own git branch available only for FreeBSD after 12 releases.
 
 ## Boot Loader ##
 
-Contact: Warner Losh <imp@FreeBSD.org>, Kyle Evans <kevans@FreeBSD.org>, Toomas Soome <tsoome@Freebsd.org>
+Contact: Warner Losh, <imp@FreeBSD.org>
+
+Contact: Kyle Evans, <kevans@FreeBSD.org>
+
+Contact: Toomas Soome, <tsoome@Freebsd.org>
 
 The FreeBSD boot loader lives in src/stand (prior releases had it in
 sys/boot and lib/libstand). It covers all the code that the project
@@ -1045,7 +1058,6 @@ crypto booting options and implement Multiboot 2.0.
 ## Usermode mapping of PCI BARs ##
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
-Link:	 None
 
 Modern PCI(e) devices typically define memory-mapped BARs, each of them
 have a separate page-aligned boundaries.  This is enforced by the need
@@ -1106,14 +1118,16 @@ The work was sponsored by The FreeBSD Foundation.
 
 ## PINE64-LTS Image ##
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 We now produce an image for the PINE64-LTS.
 This image works on the PINE64-LTS and the Sopine with Baseboard.
 
 ## PocketBeagle Support ##
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>, Tom Jones <thj@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
+
+Contact: Tom Jones, <thj@FreeBSD.org>
 
 Link:	 [Pocket Beagle](https://www.beagleboard.org/pocket)
 
@@ -1122,7 +1136,13 @@ Support for it was added and the Beaglebone image can be used on it directly.
 
 ## FreeBSD on PowerNV (ppc64) ##
 
-Contact: Patryk Duda <pdk@semihalf.com>, Wojciech Macek <wma@FreeBSD.org>, Michal Stanek <mst@semihalf.com>, Nathan Whitehorn <nw@FreeBSD.org>
+Contact: Patryk Duda, <pdk@semihalf.com>
+
+Contact: Wojciech Macek, <wma@FreeBSD.org>
+
+Contact: Michal Stanek, <mst@semihalf.com>
+
+Contact: Nathan Whitehorn, <nw@FreeBSD.org>
 
 Semihalf is happy to announce that FreeBSD is now running on IBM POWER8. This project is a continuation of work done by Nathan Whitehorn who provided basic support for a PowerNV emulator.
 
@@ -1189,7 +1209,7 @@ https://github.com/POWER9BSD/freebsd/projects/1
 
 ## FreeBSD on RISC-V ##
 
-Contact: Ruslan Bukin <br@FreeBSD.org>
+Contact: Ruslan Bukin, <br@FreeBSD.org>
 
 FreeBSD/RISC-V has been one of the actively supported projects during the past year.
 
@@ -1213,7 +1233,9 @@ Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can acce
 
 ## RPI Firmware/DTB/U-Boot Update ##
 
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>, U-Boot mailing list: <uboot@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
+
+Contact: U-Boot mailing list, <uboot@FreeBSD.org>
 
 The RaspberryPi firmware loads the DTB from the fat partition based on
 the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
@@ -1248,7 +1270,9 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
 
 ## KDE on FreeBSD ##
 
-Contact: Adriaan de Groot <adridg@FreeBSD.org>, Tobias C. Berner <tcberner@FreeBSD.org>
+Contact: Adriaan de Groot, <adridg@FreeBSD.org>
+
+Contact: Tobias C. Berner, <tcberner@FreeBSD.org>
 
 Link:	 [KDE FreeBSD](https://FreeBSD.kde.org/)
 
@@ -1288,7 +1312,7 @@ contributions on github.com/freebsd/freebsd-ports-kde.
 
 ## Puppet ##
 
-Contact: Puppet Team <puppet@FreeBSD.org>
+Contact: Puppet Team, <puppet@FreeBSD.org>
 
 Link:	 [PuppetLab's FreeBSD slack channel](https://puppetcommunity.slack.com/messages/C6CK0UGB1/)
 	 [BSDCan 2018: IT automation with Puppet](https://www.bsdcan.org/2018/schedule/events/930.en.html)
@@ -1401,7 +1425,7 @@ XML files is not ideal for many end users. This is why we are trying to approach
 
 ## HardenedBSD 2018Q3 Update
 
-Contact: Shawn Webb <shawn.webb@hardenedbsd.org>
+Contact: Shawn Webb, <shawn.webb@hardenedbsd.org>
 
 Our last report was [June
 2017](https://www.FreeBSD.org/news/status/report-2017-04-2017-06.html#HardenedBSD).
