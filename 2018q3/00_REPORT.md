@@ -489,6 +489,8 @@ The work was sponsored by The FreeBSD Foundation.
 
 ## Large scale package building ##
 
+Contact: Mateusz Guzik, <mjg@FreeBSD.org>
+
 Building packages on a 128-thread machine with poudriere exhibits some
 bottlenecks.
 
@@ -526,7 +528,11 @@ unnecessary slowdown.
 
 An easy way out is to cache a certain number of buffers.
 
+The work is sponsored by The FreeBSD Foundation.
+
 ## String functions on the amd64 architecture ##
+
+Contact: Mateusz Guzik, <mjg@FreeBSD.org>
 
 Functions like memset, memmove and memcpy are very frequently used by virtually
 all programs. They can be optimized in various ways, but FreeBSD uses very
@@ -552,6 +558,8 @@ which with some modifications can be used in libc later on.
 
 See the Intel Optimization Manual for reference:
 https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
+
+The work is sponsored by The FreeBSD Foundation.
 
 ## 32-bit compatibility and other ABI cleanups ##
 
