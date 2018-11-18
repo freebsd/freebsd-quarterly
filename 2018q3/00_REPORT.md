@@ -4,9 +4,9 @@
 
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 
-Link:	[FreeBSD 10.4-RELEASE announcement](https://www.FreeBSD.org/releases/10.4R/announce.html)
-Link:	[FreeBSD 11.2-RELEASE announcement](https://www.FreeBSD.org/releases/11.2R/announce.html)
-Link:	[FreeBSD 12.0-RELEASE schedule](https://www.FreeBSD.org/releases/12.0R/schedule.html)
+Link:	[FreeBSD 10.4-RELEASE announcement](https://www.FreeBSD.org/releases/10.4R/announce.html)  
+Link:	[FreeBSD 11.2-RELEASE announcement](https://www.FreeBSD.org/releases/11.2R/announce.html)  
+Link:	[FreeBSD 12.0-RELEASE schedule](https://www.FreeBSD.org/releases/12.0R/schedule.html)  
 Link:	[FreeBSD development snapshots](https://download.FreeBSD.org/ftp/snapshots/ISO-IMAGES/)
 
 The FreeBSD Release Engineering Team is responsible for setting
@@ -20,7 +20,7 @@ fifth release from the *stable/10* branch, which builds on the
 stability and reliability of 10.3-RELEASE.
 
 The 11.2-RELEASE cycle started April 20 with the code slush, and continued to
-progress througout the rest of the quarter with the code freeze, followed by
+progress throughout the rest of the quarter with the code freeze, followed by
 three BETA builds and three RC builds, with the final release build announced
 June 27.
 
@@ -28,7 +28,7 @@ The FreeBSD Release Engineering Team started the 12.0-RELEASE cycle August 10,
 beginning with the code slush.  The code slush followed August 24, with the
 *stable/12* branch expected to be created September 21.
 
-However, due to unforseen circumstances related to upstream code that was
+However, due to unforeseen circumstances related to upstream code that was
 deemed necessary to include in 12.0-RELEASE, the schedule needed to be
 adjusted several times to account for works-in-progress related to the
 upstream code to be compatible with other base system utilities.  At the end
@@ -41,23 +41,15 @@ Much of this work was sponsored by the FreeBSD Foundation.
 
 ## Ports Collection ##
 
-Contact: René Ladan, <portmgr-secretary@FreeBSD.org</email>
+Contact: René Ladan, <portmgr-secretary@FreeBSD.org>
 
-Contact: Ports Management Team, <portmgr@FreeBSD.org>
-
-Link:	[About FreeBSD Ports](https://www.FreeBSD.org/ports/)
-
-Link:	[Contributing to ports](https://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)
-
-Link:	[FreeBSD ports monitoring](http://portsmon.FreeBSD.org/index.html)
-
-Link:	[Ports management Team](https://www.FreeBSD.org/portmgr/index.html)
-
-Link:	[FreeBSD portmgr (@freebsd_portmgr)](https://twitter.com/freebsd_portmgr/)
-
-Link:	[FreeBSD Ports Management Team)](https://www.facebook.com/portmgr)
-
-Link:	[FreeBSD Ports Management Team)](https://plus.google.com/communities/108335846196454338383)
+Link:	[About FreeBSD Ports](https://www.FreeBSD.org/ports/)  
+Link:	[Contributing to ports](https://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  
+Link:	[FreeBSD ports monitoring](http://portsmon.FreeBSD.org/index.html)  
+Link:	[Ports management Team](https://www.FreeBSD.org/portmgr/index.html)  
+Link:	[FreeBSD portmgr (@freebsd_portmgr)](https://twitter.com/freebsd_portmgr/)  
+Link:	[FreeBSD Ports Management Team (Facebook)](https://www.facebook.com/portmgr)  
+Link:	[FreeBSD Ports Management Team (Google+)](https://plus.google.com/communities/108335846196454338383)
 
 During the first quarter of 2018, the number of ports grew to almost 32,000. There
 are currently 2,100 open PRs with less than 600 unassigned.  There were
@@ -104,7 +96,7 @@ Five new USES were introduced:
 
 EXTRA_PATCHES has been extended to support
 directories, in which case it will automatically apply all
-patch-* files to the port.  Ports using USES=php:phpize,
+patch-\* files to the port.  Ports using USES=php:phpize,
 php:ext, php:zend, and
 php:pecl are now flavored and packages will
 automatically be built for all versions they support (5.6, 7.0, 7.1 or
@@ -120,6 +112,7 @@ Xorg ports have been reorganized and there have been changes to
 net/openntpd, please read UPDATING if relevant.
 
 Open tasks:
+
   * The number of commits dropped somewhat over the last three quarters,
     leaving more PRs unresolved. If you can, please pick up some PRs
     and improve everyone's experience.
@@ -138,7 +131,8 @@ Much of Core's focus for the past months has been on three items.
 
 Here are other noteworthy events (in chronological order) since the last quarterly report.
 
-2017 Q4
+### 2017 Q4 ###
+
 - Sean Eric Fagan's (sef) commit bit was reactivated with a period of re-mentoring under Alexander Motin (mav).
 - The MIPS architecture was promoted to tier 2 status.
 - Core approved changes to the Code of Conduct.
@@ -147,7 +141,8 @@ Here are other noteworthy events (in chronological order) since the last quarter
 - Gordon Tetlow (gordon) became the new security officer.
 - Core approved the use of SPDX tags.
 
-2018 Q1
+### 2018 Q1 ###
+
 - Jeb Cramer (jeb) was awarded a src commit bit under the mentorship of Sean Bruno (sbruno) and Eric Joyner (erj).
 - Members of the CoC Review Team were approved.  The membership is to be reviewed once per year.
 - A vendor commit bit was awarded to Slava Shwartsman (slavash) of Mellanox Technologies under the mentorship of Konstantin Belousov (kib) and Hans Petter Selasky (hselasky).
@@ -156,7 +151,8 @@ Here are other noteworthy events (in chronological order) since the last quarter
 - Vincenzo Maffione (vmaffione) was awarded a src commit bit under the mentorship of Hiroki Sato (hrs).
 - Ram Kishore Vegesna (ram) was awarded a src commit bit under the mentorship of Kenneth D. Merry (ken) and Alexander Motin (mav).
 
-2018 Q2
+### 2018 Q2 ###
+
 - Tom Jones (thj) was awarded a src commit bit under the mentorship of Jonathan T. Looney (jtl).
 - Matt Macy's (mmacy) commit bit was restored under the mentorship of Sean Bruno (sbruno).
 - Breno Leitao (leitao) was awarded a src commit bit under the mentorship of Justin Hibbits (jhibbits) with Nathan Whitehorn (nwhitehorn) as co-mentor.
@@ -168,7 +164,8 @@ Here are other noteworthy events (in chronological order) since the last quarter
 - Daichi Goto's (daichi) commit bit was reactivated with a period of re-mentoring under George Neville-Neil (gnn).
 - A vendor commit bit was awarded to Ben Widawsky (bwidawsk) of Intel under the mentorship of Ed Maste (emaste).
 
-2018 Q3
+### 2018 Q3 ###
+
 - Core decided to begin meeting twice per month in an attempt to catch up with many new agenda items.
 - Li-Wen Hsu (lwhsu) was awarded a src commit bit under the mentorship of Mark Johnston (markj) with Ed Maste (emaste) as co-mentor.
 - Samy al Bahra was awarded project membership.
@@ -204,11 +201,13 @@ and share with your companies!
 The Foundation improves the FreeBSD operating system by employing our technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. This also includes funding separate project grants like the arm64 port, porting the blacklistd access control daemon, and the integration of VIMAGE support, to make sure that FreeBSD remains a viable solution for research, education, computing, products and more.
 
 We kicked off or continued the following projects last quarter:
+
   * OpenZFS RAID-Z Expansion project
   * Headless mode out-of-the-box for embedded Arm boards like the Beaglebone Black
   * Performance and scalability improvements
 
 Having software developers on staff has allowed us to jump in and work directly on projects to improve FreeBSD like:
+
   * ZFS improvements
   * New Intel server support
   * kqueue(2) updates
@@ -225,7 +224,7 @@ Having software developers on staff has allowed us to jump in and work directly 
 
 The Foundation provides a full-time staff member who is working on improving our automated testing, continuous integration, and overall quality assurance efforts.
 
-Foundation employee Li-Wen Hsu set up new CI servers to speed up amd64 build and test jobs, to reduce the latency between changes being committed and results being available. Li-Wen also set up a staging / development server in order to test changes to the CI system itself without affecting production results. We’ve also started a small hardware test lab, currently connected to the staging server, that tests the a full boot and test cycle on physical hardware. In the near future additional hardware devices will be added, and this will migrate to the production CI server.
+Foundation employee Li-Wen Hsu set up new CI servers to speed up amd64 build and test jobs, to reduce the latency between changes being committed and results being available. Li-Wen also set up a staging / development server in order to test changes to the CI system itself without affecting production results. W have also started a small hardware test lab, currently connected to the staging server, that tests the full boot and test cycle on physical hardware. In the near future additional hardware devices will be added, and this will migrate to the production CI server.
 
 ### Release Engineering ###
 
@@ -244,7 +243,8 @@ A large part of our efforts are dedicated to advocating for the Project. This in
 The FreeBSD Foundation sponsors many conferences, events, and summits around the globe. These events can be BSD-related, open source, or technology events geared towards underrepresented groups. We support the FreeBSD-focused events to help provide a venue for sharing knowledge, to work together on projects, and to facilitate collaboration between developers and commercial users. This all helps provide a healthy ecosystem. We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.
 
 Check out some of the advocacy and education work we did last quarter:
-  * Organized and ran the Essen FreeBSD Hackathon in Essen Germany
+
+  * Organized and ran the Essen FreeBSD Hackathon in Essen, Germany
   * Participated in the FreeBSD Developer Summit BSDCam, in Cambridge, England
   * Represented FreeBSD at the ARM Partner Meeting
   * Presented and taught about FreeBSD at SdNOG 5 in Khartoum, Sudan
@@ -278,10 +278,12 @@ Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and ho
 ## Continuous Integration ##
 
 Contact:
+
   * Jenkins Admin <jenkins-admin@FreeBSD.org>
   * Li-Wen Hsu <lwhsu@FreeBSD.org>
 
 Link:
+
   * [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)
   * [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)
   * [FreeBSD Jenkins wiki](https://wiki.FreeBSD.org/Jenkins)
@@ -294,13 +296,13 @@ repository can be successfully built, and performs various tests and analysis
 with the build results.  The CI team also maintains the archive of the artifact
 built by the CI system, for the further testing and debugging needs.
 
-Starting from June 2018, the project is spnosred by the FreeBSD Foundation in
+Starting from June 2018, the project is sponsored by the FreeBSD Foundation in
 hardware and staff.  For more details of the sponsored projects, please refer
 to:
 
 https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-september-2018/
 
-In addition to that, we also helped checking regressinos for OpenSSL 1.1.1
+In addition to that, we also helped checking regressions for OpenSSL 1.1.1
 update and test continuously for 12-STABLE branch.
 
 We had meetings and working groups at two developer summits during 2018Q3:
@@ -309,6 +311,7 @@ We had meetings and working groups at two developer summits during 2018Q3:
   * [EuroBSDCon 2018](https://wiki.FreeBSD.org/DevSummit/201809)
 
 Work in progress:
+
   * Fixing the failing test cases and builds
     * DTrace test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-dtrace_test/lastCompletedBuild/testReport/
     * ZFS test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-test_zfs/lastCompletedBuild/testReport/
@@ -350,7 +353,7 @@ We use two page director entries (PDEs) shared between modes, one for mapping th
 another for the mode switching trampoline and other required system
 tables, such as GDT/IDT/TSS, which must be mapped always.  Significant
 change was required for the locore code, of which the page table creation part
-was completely rewritten in C (form assembly), improving
+was completely rewritten in C (from assembly), improving
 readability.
 
 Because user address space is no longer shared with the kernel,
@@ -507,7 +510,7 @@ Contact: Mateusz Guzik, <mjg@FreeBSD.org>
 Building packages on a 128-thread machine with poudriere exhibits some
 bottlenecks.
 
-See the October FreeBSD Foundation Newsletter for an a short writeup:
+See the October FreeBSD Foundation Newsletter for a short write-up:
 https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-october-2018/
 
 One encountered problem stems from process handling.
@@ -529,7 +532,7 @@ can be significantly improved.
 
 A different problem stems from pipes.
 
-pipes are used all the time, e.g. "du -s | sort -n" creates a pipe whose
+Pipes are used all the time, e.g. "du -s | sort -n" creates a pipe whose
 one endpoint is standard output for du and another is standard input for sort.
 
 By default the pipe can hold up to 16KB before it gets filled up.
@@ -560,7 +563,7 @@ be used to only use rep movsb/stosb.
 
 Mid term goal extends userspace. SIMD extensions can be used to make these functions
 faster. They can't easily be used in the kernel: SIMD registers are not saved on
-transitions user<->kernel for performance reasons. Thus any use would have to
+transitions user&lt;-&gt;kernel for performance reasons. Thus any use would have to
 take care of saving these registers, which can consume any win from using them in
 the first place. This is not a concern for userspace code.
 
@@ -643,10 +646,8 @@ This allow us to have a common boot path for all arm and arm64 image.
 
 ## Armada 38x FreeBSD support ##
 
-Contact: Marcin Wojtas, <mw@semihalf.com>
-
-Contact: Patryk Duda, <pdk@semihalf.com>
-
+Contact: Marcin Wojtas, <mw@semihalf.com>  
+Contact: Patryk Duda, <pdk@semihalf.com>  
 Contact: Rafał Kozik, <rk@semihalf.com>
 
 Link:	 [PRODUCT BRIEF](https://www.marvell.com/documents/egrkpyqzpoebxblyeept/)
@@ -677,40 +678,33 @@ Sponsors: Stormshield, Semihalf
 
 ## Save/Restore/Migration support in bhyve ##
 
-Contact: Elena Mihailescu, <elenamihailescu22@gmail.com>
-
-Contact: Darius Mihai, <dariusmihaim@gmail.com>
-
-Contact: Sergiu Weisz, <sergiu121@gmail.com>
-
+Contact: Elena Mihailescu, <elenamihailescu22@gmail.com>  
+Contact: Darius Mihai, <dariusmihaim@gmail.com>  
+Contact: Sergiu Weisz, <sergiu121@gmail.com>  
 Contact: Mihai Carabas, <mihai@FreeBSD.org>
 
-Link:	[Github repository for the save/restore and migration features](https://github.com/FreeBSD-UPB/freebsd/tree/projects/bhyve_migration)
-
-Link:	[Github wiki - How to Save and Restore a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Save-and-Restore-a-virtual-machine-using-bhyve)
-
-Link:	[Github wiki - How to Migrate a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)
-
+Link:	[Github repository for the save/restore and migration features](https://github.com/FreeBSD-UPB/freebsd/tree/projects/bhyve_migration)  
+Link:	[Github wiki - How to Save and Restore a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Save-and-Restore-a-virtual-machine-using-bhyve)  
+Link:	[Github wiki - How to Migrate a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)  
 Link:	[Github wiki - Suspend/resume test matrix](https://github.com/FreeBSD-UPB/freebsd/wiki/Suspend-Resume-test-matrix)
-
 
 The Save/Restore for bhyve feature is a suspend and resume facility added to the
 FreeBSD/amd64's hypervisor, bhyve. The bhyvectl tool is used to save the guest
 state in three files (a file for the guest memory, a file for devices' and CPU's
 state and another one for some metadata that are used in the restore process).
-To suspend a bhyve guest, the bhyvectl tool must be run with the ```--suspend <state_file_name>```
+To suspend a bhyve guest, the bhyvectl tool must be run with the `--suspend <state_file_name>`
 option followed by the guest name.
 
-To restore a bhyve guest from a checkpoint, one simply has to add the ```-r``` option
-followed by the main state file (the same file that was given to the ```--suspend```
+To restore a bhyve guest from a checkpoint, one simply has to add the `-r` option
+followed by the main state file (the same file that was given to the `--suspend`
 option for bhyvectl) when starting the VM.
 
 The Migration feature uses the Save/Restore feature to migrate a bhyve guest
 from a FreeBSD host to another FreeBSD host. To migrate a bhyve guest,
 one needs to start an empty guest on the destination host from a shared guest
-image using the bhyve tool with the ```-R``` option followed by the source host
+image using the bhyve tool with the `-R` option followed by the source host
 IP and the port to listen to migration request. On the source host, the
-migration is started by executing the bhyvectl command with the ```--migrate```
+migration is started by executing the bhyvectl command with the `--migrate`
 option, followed by the destination host IP and the port to send to the messages.
 
 __New features added__:
@@ -760,7 +754,7 @@ even if they don't have access to a FreeBSD build system.
 The current set of patches for this project can be found on
 [GitHub](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018).
 With the current prototype it is possible to compile both world and kernel for
-archictures that use clang and for MIPS64. However, some options such as LOCALES are
+architectures that use clang and for MIPS64. However, some options such as LOCALES are
 not supported yet and require further changes before the bootstrap tools can be built
 on Linux/macOS.
 
@@ -777,7 +771,7 @@ to be added to any pending Phabricator reviews.
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 DTS files (Device Tree Sources) were updated to be in pair with Linux 4.18 for
-the 12.0 releaase.
+the 12.0 release.
 
 The DTS are now compile for some arm64 boards as the one present in U-Boot are
 now always up-to-date.
@@ -788,7 +782,7 @@ Contact: Michał Krawczyk, <mk@semihalf.com>
 
 Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)
 
-ENA (Elastic Network Adapter) is the smart NIC which is used in the virtualized
+ENA (Elastic Network Adapter) is the smart NIC which is used in the virtualised
 environment of Amazon Web Services (AWS). It supports multiple queues and can handle up to 25 Gb/s, depending on the instance type on which it is used.
 
 Since last report, the ENA v0.8.0 and v0.8.1 were released, which introduced
@@ -824,14 +818,13 @@ Sponsor: Amazon.com Inc.
 
 ## FreeBSD Graphics Team ##
 
-Contact: FreeBSD Graphics Team, <x11@FreeBSD.org>
-
+Contact: FreeBSD Graphics Team, <x11@FreeBSD.org>  
 Contact: Niclas Zeising, <zeising@FreeBSD.org>
 
 Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
 
 The FreeBSD X11/Graphics team is responsible for the lower levels of the FreeBSD
-grpahics stack.  This includes graphics drivers, graphics libraries such as the
+graphics stack.  This includes graphics drivers, graphics libraries such as the
 MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
 
@@ -884,10 +877,10 @@ On the project management side, the most important tasks is to continue to work
 on the team, and how we work internally.
 
 We are also working on setting up a list of requirements for testing, so that we
-can be resonably assured that updates won't cause regressions.
+can be reasonably assured that updates won't cause regressions.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
-mailing list, or on our gitter chat: https://gitter.im/FreeBSDDesktop/Lobby.  We
+mailing list, or on our Gitter chat: https://gitter.im/FreeBSDDesktop/Lobby.  We
 are also available in #freebsd-xorg on EFNet.
 
 We also have a team area on GitHub where our work repositories can be found:
@@ -895,12 +888,9 @@ https://github.com/FreeBSDDesktop
 
 ## ifuncs ##
 
-Contact: Konstantin Belousov, <kib@FreeBSD.org>
-
-Contact: Ed Maste, <emaste@FreeBSD.org>
-
-Contact: Mark Johnston, <markj@FreeBSD.org>
-
+Contact: Konstantin Belousov, <kib@FreeBSD.org>  
+Contact: Ed Maste, <emaste@FreeBSD.org>  
+Contact: Mark Johnston, <markj@FreeBSD.org>  
 Contact: Mateusz Guzik, <mjg@FreeBSD.org>
 
 Ifunc is a special construct in the ELF infrastructure, which allows
@@ -909,7 +899,7 @@ runtime, when the ELF module gets the final relocations applied.  The
 selection is governed by the small piece of user provided code,
 attached to the symbol, so called resolver function.  Ifuncs provide
 the very convenient way to select machine-specific implementation of
-the parts of the code, without uglyness and unsafety of the
+the parts of the code, without ugliness and unsafety of the
 alternative approach, which is runtime patching.
 
 Ifuncs require support both from the static linker ld(1), and from the
@@ -949,6 +939,7 @@ Contact: Ben Widawsky, <bwidawsk@FreeBSD.org>
 A new team has been formed within Intel to help with side channel security
 mitigations as well as core enabling. They are evaluating work from all areas
 except networking. The team is currently focusing on two areas:
+
 1. Power Management improvements
 2. NVDIMM namespace support
 
@@ -960,6 +951,7 @@ currently doesn't have any notion of runtime power management, and many devices
 don't properly implement suspend and resume. In addition, some preliminary work
 is in process as it was thought to help when eventually enabling opportunistic
 idle. That preliminary work has been happening and is now up for review:
+
 - https://reviews.FreeBSD.org/D17675
 - https://reviews.FreeBSD.org/D17676
 
@@ -991,7 +983,7 @@ Also libFuzzer support finally had been possible. Basically,
 it allows to test code with random values from corpus inputs.
 Mutation and combination algorithms of those random inputs 
 can be overwritten. Also can be used in addition of ubsan,
- asan, msan and so on.
+asan, msan and so on.
 
 At last, the X-Ray instrumentation feature is also supported.
 It is mainly about performance profiling purposes for a
@@ -1006,10 +998,8 @@ its own git branch available only for FreeBSD after 12 releases.
 
 ## Boot Loader ##
 
-Contact: Warner Losh, <imp@FreeBSD.org>
-
-Contact: Kyle Evans, <kevans@FreeBSD.org>
-
+Contact: Warner Losh, <imp@FreeBSD.org>  
+Contact: Kyle Evans, <kevans@FreeBSD.org>  
 Contact: Toomas Soome, <tsoome@Freebsd.org>
 
 The FreeBSD boot loader lives in src/stand (prior releases had it in
@@ -1026,13 +1016,13 @@ after 12.0 release, or approximately January 2020. Platforms not
 currently working have until that date to resolve the issues.
 
 At this point, the LUA scripts implement everything that FORTH scripts
-did. Where there was ambiguity in the spec, or where the FORTH scirpts
+did. Where there was ambiguity in the spec, or where the FORTH scripts
 were more forgiving that was strictly documented, every effort has
 been made to improve the documentation and follow the old FORTH
 behavior, or document the new behavior where the old behavior was
 clearly a bug.
 
-It's anticpated that no further changes to the FORTH loader or the
+It's anticipated that no further changes to the FORTH loader or the
 FORTH scripts will happen. They are quite mature and bullet proof at
 tnhis point and it's unlikely that an undiscovered bug will need to be
 fixed before retirement.
@@ -1045,7 +1035,7 @@ entering the tree soon after the freeze lifts.
 
 UEFI booting has been greatly enhanced. However, there's still some
 machines that have issues with the default BootXXXX variables or
-something else in the environemnt that are being investigated. We hope
+something else in the environment that are being investigated. We hope
 to understand the problems well enough to provide a fix for FreeBSD
 12.0.
 
@@ -1125,8 +1115,7 @@ This image works on the PINE64-LTS and the Sopine with Baseboard.
 
 ## PocketBeagle Support ##
 
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>
-
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>  
 Contact: Tom Jones, <thj@FreeBSD.org>
 
 Link:	 [Pocket Beagle](https://www.beagleboard.org/pocket)
@@ -1136,12 +1125,9 @@ Support for it was added and the Beaglebone image can be used on it directly.
 
 ## FreeBSD on PowerNV (ppc64) ##
 
-Contact: Patryk Duda, <pdk@semihalf.com>
-
-Contact: Wojciech Macek, <wma@FreeBSD.org>
-
-Contact: Michal Stanek, <mst@semihalf.com>
-
+Contact: Patryk Duda, <pdk@semihalf.com>  
+Contact: Wojciech Macek, <wma@FreeBSD.org>  
+Contact: Michal Stanek, <mst@semihalf.com>  
 Contact: Nathan Whitehorn, <nw@FreeBSD.org>
 
 Semihalf is happy to announce that FreeBSD is now running on IBM POWER8. This project is a continuation of work done by Nathan Whitehorn who provided basic support for a PowerNV emulator.
@@ -1179,6 +1165,7 @@ GitHub project - in part to eliminate the need to continue to support the 11
 year old in tree gcc4.
 
 Progress so far:
+
   - Adapted lock_delay to use POWER's SMT scheduling hints rather than
     using the yield hint from an older ISA
   - Added ifunc support
@@ -1192,6 +1179,7 @@ Progress so far:
     table support.
 
 Work in Progress:
+
    - NMI semantics: NMIs need to be emulated by only soft disabling interrupts,
      disabling interrupts blocks all interrupts except machine check exceptions
      and system resets.
@@ -1219,7 +1207,7 @@ FreeBSD Testsuite and required dependencies were successfully built for RISC-V a
 
 We have added support for compressed ISA extension to KDB debugger and DTrace FBT provider enabling C-compressed kernel and userland by default. The output of disassembling instructions in KDB is looking similar to objdump.
 
-QEMU has updated to latest privilege spec allowing us to bringup FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: https://www.youtube.com/watch?v=FnWpRBaWF18
+QEMU has updated to latest privilege spec allowing us to bring up FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: https://www.youtube.com/watch?v=FnWpRBaWF18
 
 Platform-Level Interrupt Controller (PLIC) driver was added. Interrupt support was converted to INTRNG.
 PLIC is used in QEMU for virtio network and block devices (full FreeBSD distribution can be booted in QEMU).
@@ -1233,8 +1221,7 @@ Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can acce
 
 ## RPI Firmware/DTB/U-Boot Update ##
 
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>
-
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>  
 Contact: U-Boot mailing list, <uboot@FreeBSD.org>
 
 The RaspberryPi firmware loads the DTB from the fat partition based on
@@ -1244,7 +1231,7 @@ This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
 HATs.
 The Overlays can be obtained by installing the rpi-firmware package.
 
-A new u-boot port for the W variant of the RPI0 was commited as u-boot-rpi-0-w.
+A new u-boot port for the W variant of the RPI0 was committed as u-boot-rpi-0-w.
 Some experiments started by trasz@ show that we could maybe produce a generic
 image for all armv6 RPI (RPI-B, RPI0 and RPI0W).
 
@@ -1265,20 +1252,19 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
    - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
    - The NUMA work has lead to a 20x-80x improvement in the scalability of page
      fault handling
-     
+    
 # Ports #
 
 ## KDE on FreeBSD ##
 
-Contact: Adriaan de Groot, <adridg@FreeBSD.org>
-
+Contact: Adriaan de Groot, <adridg@FreeBSD.org>  
 Contact: Tobias C. Berner, <tcberner@FreeBSD.org>
 
 Link:	 [KDE FreeBSD](https://FreeBSD.kde.org/)
 
 KDE FreeBSD is responsible for the ports of the Plasma5 and KDE4 desktops, and
 all associated applications. Further we also manage the Qt4 and Qt5 ports, as
-well as cmake.
+well as CMake.
 
 We also care for the FreeBSD builders for KDE's upstream CI on build.kde.org.
 
@@ -1294,7 +1280,7 @@ increasing burden of maintenance).
 On a more technical side, bsd.qt.mk has been replaced by qt.mk and qt-dist.mk.
 The porter's handbook is being updated (with thanks to Tobias Kortkamp).
 
-Further we have been keeping cmake and Qt5 and almost every other port under our
+Further we have been keeping CMake and Qt5 and almost every other port under our
 control up to date. SDDM has been updated to the next-to-latest release with
 backported security fixes.
 
@@ -1304,7 +1290,7 @@ with every release. Another upcoming issue is the way in which FreeBSD's libinpu
 lags behind. This blocks future updates to KDE Plasma as well as Wayland 
 improvements. Thankfully x11@ is looking at this issue already, so it should be
 fixed soon -- for the meantime people who want to give the latest KDE Plasma
-Desktop a try can use the appropriate branch from our github.
+Desktop a try can use the appropriate branch from our GitHub.
 
 People who are willing to contribute can find us on #kde-freebsd on freenode,
 the kde@FreeBSD.org mailing list. Further we accept pull-requests and
