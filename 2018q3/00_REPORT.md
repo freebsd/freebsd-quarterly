@@ -224,7 +224,7 @@ Having software developers on staff has allowed us to jump in and work directly 
 
 The Foundation provides a full-time staff member who is working on improving our automated testing, continuous integration, and overall quality assurance efforts.
 
-Foundation employee Li-Wen Hsu set up new CI servers to speed up amd64 build and test jobs, to reduce the latency between changes being committed and results being available. Li-Wen also set up a staging / development server in order to test changes to the CI system itself without affecting production results. W have also started a small hardware test lab, currently connected to the staging server, that tests the full boot and test cycle on physical hardware. In the near future additional hardware devices will be added, and this will migrate to the production CI server.
+Foundation employee Li-Wen Hsu set up new CI servers to speed up amd64 build and test jobs, to reduce the latency between changes being committed and results being available. Li-Wen also set up a staging / development server in order to test changes to the CI system itself without affecting production results. We have also started a small hardware test lab, currently connected to the staging server, that tests the full boot and test cycle on physical hardware. In the near future additional hardware devices will be added, and this will migrate to the production CI server.
 
 ### Release Engineering ###
 
