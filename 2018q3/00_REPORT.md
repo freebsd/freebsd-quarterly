@@ -363,7 +363,7 @@ Future plans for maintenance of i386 include making the i386 pmap capable
 of runtime selection of the PAE or non-PAE page table format and bringing NX
 mappings for regular i386 kernel.
 
-The work was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## FreeBSD/DTrace
 
@@ -461,7 +461,7 @@ cache flush over the mapped regions, needed to efficiently support bio
 flushes from the filesystems.  NVDIMM driver uses the KPI, it might be
 also useful for the NTB driver.
 
-The work was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 TODO:
 
@@ -497,7 +497,7 @@ the SMAP was enabled.  One issue existed in the pci(9) user driver.
 On the other hand, at least two ports, VBox and acpi_call, appeared to
 access userspace in unsafe manner.
 
-The work was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## Large scale package building ##
 
@@ -540,7 +540,7 @@ unnecessary slowdown.
 
 An easy way out is to cache a certain number of buffers.
 
-The work is sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## String functions on the amd64 architecture ##
 
@@ -571,7 +571,7 @@ which with some modifications can be used in libc later on.
 See the Intel Optimization Manual for reference:
 https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
 
-The work is sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## 32-bit compatibility and other ABI cleanups ##
 
@@ -670,7 +670,8 @@ GENERIC config and use unmodified sys/gnu/dts device trees. The details are as f
     - Enable support for both old and Linux GPIO device tree bindings, so that multiple controllers
       can be used.
 
-Sponsors: Stormshield, Semihalf
+Sponsor: Stormshield
+Sponsor: Semihalf
 
 ## Save/Restore/Migration support in bhyve ##
 
@@ -713,7 +714,8 @@ __New features added__:
   * Fix vhpet restore state issues (timers related);
   * Add partially support for suspending and resuming a Linux guest;
 
-Sponsors: Matthew Grooms; iXsystems;
+Sponsor: Matthew Grooms
+Sponsor: iXsystems
 
 __Future tasks__:
 
@@ -927,7 +929,7 @@ amd64 kernel:
 For amd64 userspace, we currently use ifunc for optimization of the
 TLS base set and get arch-depended functions.
 
-The work was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## Intel Work on Core Enabling and Security ###
 
@@ -1072,7 +1074,8 @@ TODO: automatically activate the BAR on mapping, this is not done yet.
 Problem there is the need to avoid the resource conflict with the
 possible future attachment of the kernel driver.
 
-The work was sponsored by The FreeBSD Foundation and Mellanox Technologies.
+Sponsor: The FreeBSD Foundation
+Sponsor: Mellanox Technologies
 
 ## Device Mode USB ##
 
@@ -1101,7 +1104,7 @@ cables just to configure your system.  You can also switch
 it to provide network interface, or present itself as a USB
 drive - it's all documented in the FreeBSD Handbook.
 
-The work was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation
 
 ## PINE64-LTS Image ##
 

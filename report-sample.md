@@ -28,3 +28,4 @@ and invite people to get in contact:
   * Second task
   * Third, if any
 
+Sponsor: Sponsoring Organisation, If Any
