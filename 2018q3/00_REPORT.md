@@ -1,4 +1,4 @@
-# FreeBSD Team reports #
+# FreeBSD Team Reports #
 
 ## Release Engineering Team ##
 
@@ -277,18 +277,14 @@ Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and ho
 
 ## Continuous Integration ##
 
-Contact:
+Contact: Jenkins Admin, <jenkins-admin@FreeBSD.org>
+Contact: Li-Wen Hsu, <lwhsu@FreeBSD.org>
 
-  * Jenkins Admin <jenkins-admin@FreeBSD.org>
-  * Li-Wen Hsu <lwhsu@FreeBSD.org>
-
-Link:
-
-  * [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)
-  * [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)
-  * [FreeBSD Jenkins wiki](https://wiki.FreeBSD.org/Jenkins)
-  * [freebsd-testing Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing)
-  * [freebsd-ci Repository](https://github.com/freebsd/freebsd-ci)
+Link: [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)
+Link: [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)
+Link: [FreeBSD Jenkins wiki](https://wiki.FreeBSD.org/Jenkins)
+Link: [freebsd-testing Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing)
+Link: [freebsd-ci Repository](https://github.com/freebsd/freebsd-ci)
 
 The FreeBSD CI team maintains continuous integration tasks for FreeBSD.  The CI
 system regularly checks the changes committed to the project's Subversion
@@ -736,7 +732,8 @@ __Future tasks__:
 
 Contact: Alex Richardson, <arichardson@FreeBSD.org>
 
-Link:	 [Wiki](https://wiki.FreeBSD.org/BuildingOnNonFreeBSD) and [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018)
+Link: [Wiki](https://wiki.FreeBSD.org/BuildingOnNonFreeBSD)
+Link: [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-aug2018)
 
 Currently FreeBSD can only be built on a FreeBSD host. However, most free
 CI tools only allow building on Linux or macOS and therefore can not be used
@@ -1371,6 +1368,8 @@ flexibility. More information and usage examples can be found in the
 
 ## Various Documentation Bits ##
 
+Link: [Wiki Fixit Group Website](https://wiki.FreeBSD.org/WikiFixitGroup/)
+
 Contact: 
 - Wiki:
   - wiki-admin@FreeBSD.org
@@ -1378,9 +1377,6 @@ Contact:
 - Quarterly reports:
   - Edward Tomasz Napierała, <trasz@FreeBSD.org>
   - Mateusz Piotrowski, <0mp@FreeBSD.org>
-
-Links:	 
-- [Wiki Fixit Group Website](https://wiki.FreeBSD.org/WikiFixitGroup/)
 
 The FreeBSD Wiki used to be a scratch pad for the FreeBSD developers to
 organize projects, store notes and publish articles that were about to be added
