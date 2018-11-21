@@ -621,58 +621,6 @@ The remaining `ioctl` commands handled in
 need to be migrated to the point of implementation. Help with the latter
 would be appreciated.
 
-## Allwinner SoC Support
-
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>
-
-  * SPI driver added for A64 SoC
-  * Thermal driver added/fixed for A64/H3/H5 SoCs
-  * Lot of bugs where fixed in the mmc driver, stability should be better
-  * New driver for AXXP803 which is the power chip companion of the A64 SoC
-  * Add overlays to use another timer controller as the default one in A64 if faulty
-    These overlay is enabled in the PINE64/LTS images by default
-
-## ARMv6 and ARMv7 image now use EFI loader
-
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>
-
-Instead of using the ubldr version of the loader which uses the U-Boot
-API, all images now use loader.efi as their primary FreeBSD loader.
-This allow us to have a common boot path for all arm and arm64 image.
-
-## Armada 38x FreeBSD support ##
-
-Contact: Marcin Wojtas, <mw@semihalf.com>  
-Contact: Patryk Duda, <pdk@semihalf.com>  
-Contact: Rafał Kozik, <rk@semihalf.com>
-
-Link:	 [PRODUCT BRIEF](https://www.marvell.com/documents/egrkpyqzpoebxblyeept/)
-
-The Marvell Armada 38x is a very poplular ARMv7-based dual core SoC.
-Thanks to the multiple low and high speed interfaces
-the platform is used in a wide range of products, such
-as Network-Attached Storage (NAS), Wi-Fi Access Point (WAP) and others.
-
-Since last report, remaining Armada 38x support was integrated to HEAD, which can now compile with the armv7
-GENERIC config and use unmodified sys/gnu/dts device trees. The details are as follows:
-
-* GENERIC config
-    - Introduce a vast rework of sys/arm/mv directory for arm and armv7 platforms.
-    - Enable PLATFORM support for Marvell ARMv7 SoCs, which can now can boot with GENERIC kernel.
-    - Base on dynamic detection of SoC type and device tree instead of using ifdefs
-      and enable more flexible environment for maintaining Marvell platforms.
-* sys/gnu/dts device trees
-    - Improve platform code and the drivers (e.g. CESA, PCIE, GPIO) to properly work with original
-      Linux device trees.
-* GPIO
-    - Add multiple fixes and improvements to the sys/arm/mv/gpio.c
-    - Rework driver to properly integrate with HEAD GPIO frameworks (main and gpioled)
-    - Enable support for both old and Linux GPIO device tree bindings, so that multiple controllers
-      can be used.
-
-Sponsor: Stormshield
-Sponsor: Semihalf
-
 ## Save/Restore/Migration support in bhyve ##
 
 Contact: Elena Mihailescu, <elenamihailescu22@gmail.com>  
@@ -764,16 +712,6 @@ If you are interested in getting this into HEAD and would like to help, please
 try the current prototype and report any issues to arichardson@FreeBSD.org.
 If you can help with reviewing the changes please contact arichardson@FreeBSD.org
 to be added to any pending Phabricator reviews.
-
-## DTS Update ##
-
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>
-
-DTS files (Device Tree Sources) were updated to be in pair with Linux 4.18 for
-the 12.0 release.
-
-The DTS are now compile for some arm64 boards as the one present in U-Boot are
-now always up-to-date.
 
 ## ENA FreeBSD Driver Update ##
 
@@ -1106,6 +1044,59 @@ drive - it's all documented in the FreeBSD Handbook.
 
 Sponsor: The FreeBSD Foundation
 
+## Performance improvements ##
+
+Contact: Matthew Macy, <mmacy@FreeBSD.org>
+
+FreeBSD 12 saw the introduction of a number of performance improvements:
+   - the introduction of the new synchronization primitive epoch to replace the
+     use of reader locks for providing existence guarantees for data structures
+   - epoch was used to provide an 85+% reduction in the overhead of pcb lookup
+     in high core count systems
+   - It was used to provide an 85+% reduction in UDP send overhead on high core
+     count systems see the link for a bit more detail: 
+       http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees
+
+   - System call overhead is now half that of 11
+   - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
+   - The NUMA work has lead to a 20x-80x improvement in the scalability of page
+     fault handling
+
+# Architectures #
+
+## Armada 38x FreeBSD support ##
+
+Contact: Marcin Wojtas, <mw@semihalf.com>
+Contact: Patryk Duda, <pdk@semihalf.com>
+Contact: Rafał Kozik, <rk@semihalf.com>
+
+Link:	 [PRODUCT BRIEF](https://www.marvell.com/documents/egrkpyqzpoebxblyeept/)
+
+The Marvell Armada 38x is a very poplular ARMv7-based dual core SoC.
+Thanks to the multiple low and high speed interfaces
+the platform is used in a wide range of products, such
+as Network-Attached Storage (NAS), Wi-Fi Access Point (WAP) and others.
+
+Since last report, remaining Armada 38x support was integrated to HEAD, which can now compile with the armv7
+GENERIC config and use unmodified sys/gnu/dts device trees. The details are as follows:
+
+* GENERIC config
+    - Introduce a vast rework of sys/arm/mv directory for arm and armv7 platforms.
+    - Enable PLATFORM support for Marvell ARMv7 SoCs, which can now can boot with GENERIC kernel.
+    - Base on dynamic detection of SoC type and device tree instead of using ifdefs
+      and enable more flexible environment for maintaining Marvell platforms.
+* sys/gnu/dts device trees
+    - Improve platform code and the drivers (e.g. CESA, PCIE, GPIO) to properly work with original
+      Linux device trees.
+* GPIO
+    - Add multiple fixes and improvements to the sys/arm/mv/gpio.c
+    - Rework driver to properly integrate with HEAD GPIO frameworks (main and gpioled)
+    - Enable support for both old and Linux GPIO device tree bindings, so that multiple controllers
+      can be used.
+
+Sponsor: Stormshield
+Sponsor: Semihalf
+
 ## PINE64-LTS Image ##
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
@@ -1122,6 +1113,51 @@ Link:	 [Pocket Beagle](https://www.beagleboard.org/pocket)
 
 The Pocket Beagle is the latest member of the BeagleBoard family.
 Support for it was added and the Beaglebone image can be used on it directly.
+
+## Allwinner SoC Support
+
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
+
+  * SPI driver added for A64 SoC
+  * Thermal driver added/fixed for A64/H3/H5 SoCs
+  * Lot of bugs where fixed in the mmc driver, stability should be better
+  * New driver for AXXP803 which is the power chip companion of the A64 SoC
+  * Add overlays to use another timer controller as the default one in A64 if faulty
+    These overlay is enabled in the PINE64/LTS images by default
+
+## ARMv6 and ARMv7 image now use EFI loader
+
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
+
+Instead of using the ubldr version of the loader which uses the U-Boot
+API, all images now use loader.efi as their primary FreeBSD loader.
+This allow us to have a common boot path for all arm and arm64 image.
+
+## DTS Update ##
+
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
+
+DTS files (Device Tree Sources) were updated to be in pair with Linux 4.18 for
+the 12.0 release.
+
+The DTS are now compile for some arm64 boards as the one present in U-Boot are
+now always up-to-date.
+
+## RPI Firmware/DTB/U-Boot Update ##
+
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>  
+Contact: U-Boot mailing list, <uboot@FreeBSD.org>
+
+The RaspberryPi firmware loads the DTB from the fat partition based on
+the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
+instead of using the one it embed.
+This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
+HATs.
+The Overlays can be obtained by installing the rpi-firmware package.
+
+A new u-boot port for the W variant of the RPI0 was committed as u-boot-rpi-0-w.
+Some experiments started by trasz@ show that we could maybe produce a generic
+image for all armv6 RPI (RPI-B, RPI0 and RPI0W).
 
 ## FreeBSD on PowerNV (ppc64) ##
 
@@ -1219,40 +1255,6 @@ We have successfully tested this on a lowRISC board and it is booting to multius
 
 Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
 
-## RPI Firmware/DTB/U-Boot Update ##
-
-Contact: Emmanuel Vadot, <manu@FreeBSD.org>  
-Contact: U-Boot mailing list, <uboot@FreeBSD.org>
-
-The RaspberryPi firmware loads the DTB from the fat partition based on
-the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
-instead of using the one it embed.
-This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
-HATs.
-The Overlays can be obtained by installing the rpi-firmware package.
-
-A new u-boot port for the W variant of the RPI0 was committed as u-boot-rpi-0-w.
-Some experiments started by trasz@ show that we could maybe produce a generic
-image for all armv6 RPI (RPI-B, RPI0 and RPI0W).
-
-## Performance improvements ##
-
-Contact: Matthew Macy, <mmacy@FreeBSD.org>
-
-FreeBSD 12 saw the introduction of a number of performance improvements:
-   - the introduction of the new synchronization primitive epoch to replace the
-     use of reader locks for providing existence guarantees for data structures
-   - epoch was used to provide an 85+% reduction in the overhead of pcb lookup
-     in high core count systems
-   - It was used to provide an 85+% reduction in UDP send overhead on high core
-     count systems see the link for a bit more detail: 
-       http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees
-
-   - System call overhead is now half that of 11
-   - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
-   - The NUMA work has lead to a 20x-80x improvement in the scalability of page
-     fault handling
-    
 # Ports #
 
 ## KDE on FreeBSD ##
