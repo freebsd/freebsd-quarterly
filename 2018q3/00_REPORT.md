@@ -318,7 +318,7 @@ Work in progress:
   * Implementing automatic tests on bare metal hardware
   * Planning running ztest and network stack tests
 
-# Kernel Projects #
+# Projects #
 
 ## 4G/4G address space split for i386  ##
 
