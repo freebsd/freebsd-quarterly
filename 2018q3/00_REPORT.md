@@ -191,9 +191,9 @@ Intel was also interested in learning more about who contributes to FreeBSD.  Al
 
 ### Fundraising Efforts ###
 
-Our work is 100% funded by your donations. As of September 30, we raised $328,482. Our 2018 fundraising goal is $1,250,00 and we are continuing to work hard to meet and exceed this goal! Please consider making a donation to help us continue and increase our support for FreeBSD: https://www.FreeBSDfoundation.org/donate/.
+Our work is 100% funded by your donations. As of September 30, we raised $328,482. Our 2018 fundraising goal is $1,250,00 and we are continuing to work hard to meet and exceed this goal! Please consider making a donation to help us continue and increase our support for FreeBSD: (https://www.FreeBSDfoundation.org/donate/).
 
-We also have a new Partnership Program, to provide more benefits for our larger commercial donors. Find out more information at https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/ 
+We also have a new Partnership Program, to provide more benefits for our larger commercial donors. Find out more information at (https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/) 
 and share with your companies!
 
 ### OS Improvements ###
@@ -263,17 +263,17 @@ Check out some of the advocacy and education work we did last quarter:
 
 We continued producing FreeBSD advocacy material to help people promote FreeBSD around the world.
 
-Read more about our conference adventures in the conference recaps and trip reports in our monthly newsletters: https://www.freebsdfoundation.org/news-and-events/newsletter/
+Read more about our conference adventures in the conference recaps and trip reports in our monthly newsletters: (https://www.freebsdfoundation.org/news-and-events/newsletter/)
 
-We help educate the world about FreeBSD by publishing the professionally produced FreeBSD Journal. Last quarter we published the July/August issue that you can find at https://www.FreeBSDfoundation.org/journal/.
+We help educate the world about FreeBSD by publishing the professionally produced FreeBSD Journal. Last quarter we published the July/August issue that you can find at (https://www.FreeBSDfoundation.org/journal/).
 
-You can find out more about events we attended and upcoming events at https://www.FreeBSDfoundation.org/news-and-events/.
+You can find out more about events we attended and upcoming events at (https://www.FreeBSDfoundation.org/news-and-events/).
 
 ### Legal/FreeBSD IP ###
 
 The Foundation owns the FreeBSD trademarks, and it is our responsibility to protect them. We also provide legal support for the core team to investigate questions that arise.
 
-Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and how we can help you!
+Go to (http://www.FreeBSDfoundation.org) to find out how we support FreeBSD and how we can help you!
 
 ## Continuous Integration ##
 
@@ -296,7 +296,7 @@ Starting from June 2018, the project is sponsored by the FreeBSD Foundation in
 hardware and staff.  For more details of the sponsored projects, please refer
 to:
 
-https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-september-2018/
+(https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-september-2018/)
 
 In addition to that, we also helped checking regressions for OpenSSL 1.1.1
 update and test continuously for 12-STABLE branch.
@@ -309,9 +309,9 @@ We had meetings and working groups at two developer summits during 2018Q3:
 Work in progress:
 
   * Fixing the failing test cases and builds
-    * DTrace test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-dtrace_test/lastCompletedBuild/testReport/
-    * ZFS test: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-test_zfs/lastCompletedBuild/testReport/
-    * GCC build: https://ci.FreeBSD.org/job/FreeBSD-head-amd64-gcc/
+    * [DTrace test](https://ci.FreeBSD.org/job/FreeBSD-head-amd64-dtrace_test/lastCompletedBuild/testReport/)
+    * [ZFS test](https://ci.FreeBSD.org/job/FreeBSD-head-amd64-test_zfs/lastCompletedBuild/testReport/)
+    * [GCC build](https://ci.FreeBSD.org/job/FreeBSD-head-amd64-gcc/)
   * Adding drm ports building test against -CURRENT
   * Adding tests for selected project branches, e.g.: clang700-import
   * Adding new hardware to the embedded testbed
@@ -415,8 +415,8 @@ support to ensure that fbt::memcpy:entry continues to work as
 expected. Similar work is needed for the PID provider, but is still
 pending.
 
-Microsoft showed a working demo of DTrace, which was ported from
-FreeBSD [1].
+Microsoft showed a [working demo of DTrace](https://youtu.be/tG8R5SQGPck?t=891),
+which was ported from FreeBSD.
 
 Added to FreeBSD base in 11.2, dwatch is a new DTrace tool, developed
 by Devin Teske (dteske@), for automating complex queries for data and
@@ -429,7 +429,6 @@ find any process, thread, or jail triggering any probe. On-top of all
 that, dwatch profiles can leverage higher-level languages such as
 python, perl, sh, and many more.
 
-[1]: https://youtu.be/tG8R5SQGPck?t=891
 
 ## ACPI NVDIMM driver ##
 
@@ -507,7 +506,7 @@ Building packages on a 128-thread machine with poudriere exhibits some
 bottlenecks.
 
 See the October FreeBSD Foundation Newsletter for a short write-up:
-https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-october-2018/
+(https://www.freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-october-2018/)
 
 One encountered problem stems from process handling.
 
@@ -564,12 +563,12 @@ take care of saving these registers, which can consume any win from using them i
 the first place. This is not a concern for userspace code.
 
 There is a BSD-licensed implementation in bionic:
-https://android.googlesource.com/platform/bionic/+/master/libc/arch-x86_64/string/
+(https://android.googlesource.com/platform/bionic/+/master/libc/arch-x86_64/string/)
 
 which with some modifications can be used in libc later on.
 
 See the Intel Optimization Manual for reference:
-https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
+(https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf)
 
 Sponsor: The FreeBSD Foundation
 
@@ -817,11 +816,11 @@ We are also working on setting up a list of requirements for testing, so that we
 can be reasonably assured that updates won't cause regressions.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
-mailing list, or on our Gitter chat: https://gitter.im/FreeBSDDesktop/Lobby.  We
+mailing list, or on our Gitter chat: (https://gitter.im/FreeBSDDesktop/Lobby).  We
 are also available in #freebsd-xorg on EFNet.
 
 We also have a team area on GitHub where our work repositories can be found:
-https://github.com/FreeBSDDesktop
+(https://github.com/FreeBSDDesktop)
 
 ## ifuncs ##
 
@@ -889,13 +888,13 @@ don't properly implement suspend and resume. In addition, some preliminary work
 is in process as it was thought to help when eventually enabling opportunistic
 idle. That preliminary work has been happening and is now up for review:
 
-- https://reviews.FreeBSD.org/D17675
-- https://reviews.FreeBSD.org/D17676
+- (https://reviews.FreeBSD.org/D17675)
+- (https://reviews.FreeBSD.org/D17676)
 
 NVDIMM namespace support has also been put up for review. ACPI spec defines
 namespaces as a way of partitioning the device into separate labels. The current
 work will integrate with geom(4). How these are used is application dependent.
-This work is up for review as well: https://reviews.FreeBSD.org/D17619
+This work is up for review as well: (https://reviews.FreeBSD.org/D17619)
 
 The team has additionally taken on smaller tasks like porting turbostat(8),
 working on git svn init scripts, some small modifications to acpi tooling, and
@@ -1055,7 +1054,7 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
      in high core count systems
    - It was used to provide an 85+% reduction in UDP send overhead on high core
      count systems see the link for a bit more detail: 
-       http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees
+       (http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees)
 
    - System call overhead is now half that of 11
    - UNIX sockets now scale near linearly (previously maxed out at 3-4 threads)
@@ -1229,7 +1228,7 @@ Work in Progress:
 
 A list of the other items needed to achieve kernel feature parity with a
 (wishful) list of milestones can be found at:
-https://github.com/POWER9BSD/freebsd/projects/1
+(https://github.com/POWER9BSD/freebsd/projects/1)
 
 ## FreeBSD on RISC-V ##
 
@@ -1243,7 +1242,7 @@ FreeBSD Testsuite and required dependencies were successfully built for RISC-V a
 
 We have added support for compressed ISA extension to KDB debugger and DTrace FBT provider enabling C-compressed kernel and userland by default. The output of disassembling instructions in KDB is looking similar to objdump.
 
-QEMU has updated to latest privilege spec allowing us to bring up FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: https://www.youtube.com/watch?v=FnWpRBaWF18
+QEMU has updated to latest privilege spec allowing us to bring up FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: (https://www.youtube.com/watch?v=FnWpRBaWF18)
 
 Platform-Level Interrupt Controller (PLIC) driver was added. Interrupt support was converted to INTRNG.
 PLIC is used in QEMU for virtio network and block devices (full FreeBSD distribution can be booted in QEMU).
@@ -1303,7 +1302,7 @@ contributions on github.com/freebsd/freebsd-ports-kde.
 Contact: Puppet Team, <puppet@FreeBSD.org>
 
 Link:	 [PuppetLab's FreeBSD slack channel](https://puppetcommunity.slack.com/messages/C6CK0UGB1/)
-	 [BSDCan 2018: IT automation with Puppet](https://www.bsdcan.org/2018/schedule/events/930.en.html)
+Link:	 [BSDCan 2018: IT automation with Puppet](https://www.bsdcan.org/2018/schedule/events/930.en.html)
 
 Since our last status report last year, the puppet@ team regularly updated the
 Puppet ports to catch on upstream releases.  We have also held a Puppet talk at
@@ -1418,8 +1417,8 @@ XML files is not ideal for many end users. This is why we are trying to approach
 
 Contact: Shawn Webb, <shawn.webb@hardenedbsd.org>
 
-Our last report was [June
-2017](https://www.FreeBSD.org/news/status/report-2017-04-2017-06.html#HardenedBSD).
+Our last report was
+[June 2017](https://www.FreeBSD.org/news/status/report-2017-04-2017-06.html#HardenedBSD).
 A lot has transpired since then. In this status report, we will
 attempt to briefly cover all the progress we've made, including the
 few commits that made it upstream to FreeBSD.
@@ -1448,8 +1447,8 @@ NOEXEC implementations.
 
 Over the past two years, we have slowly worked on Cross-DSO CFI
 support in HardenedBSD. In mid-2018, we made enough progress that we
-could publish an alpha [Call-For-Testing
-(CFT)](https://hardenedbsd.org/article/shawn-webb/2018-07-16/preliminary-call-testing-cross-dso-cfi).
+could publish an alpha
+[Call-For-Testing (CFT)](https://hardenedbsd.org/article/shawn-webb/2018-07-16/preliminary-call-testing-cross-dso-cfi).
 We need to integrate the Cross-DSO CFI support with the RTLD such that
 function pointers resolved through `dlopen(3)`/`dlsym(3)` work properly
 with the cfi-icall scheme. We also need to perform experimental
@@ -1467,8 +1466,7 @@ that support extended attributes (UFS, ZFS). Our original utility,
 `secadm`, should be used with filesystems that do not support extended
 attributes (NFS).
 
-In [September
-2018](https://hardenedbsd.org/article/shawn-webb/2018-09-17/announcing-hardenedbsd-foundation),
+In [September 2018](https://hardenedbsd.org/article/shawn-webb/2018-09-17/announcing-hardenedbsd-foundation),
 the HardenedBSD Foundation Corp became a 501(c)(3) tax-exempt,
 not-for-profit organization in the USA. This means that donations by
 US persons are eligible for tax deductions. The creation of the
@@ -1484,13 +1482,13 @@ and his overall responsiveness and helpfulness.
 
 Relevant commits for the `bectl(8)` are:
 
-1. [r339047](https://svnweb.FreeBSD.org/base?view=revision&revision=339047)
-1. [r338221](https://svnweb.FreeBSD.org/base?view=revision&revision=338221)
-1. [r337993](https://svnweb.FreeBSD.org/base?view=revision&revision=337993)
-1. [r337947](https://svnweb.FreeBSD.org/base?view=revision&revision=337947)
+- [r339047](https://svnweb.FreeBSD.org/base?view=revision&revision=339047)
+- [r338221](https://svnweb.FreeBSD.org/base?view=revision&revision=338221)
+- [r337993](https://svnweb.FreeBSD.org/base?view=revision&revision=337993)
+- [r337947](https://svnweb.FreeBSD.org/base?view=revision&revision=337947)
 
-We taught `bhyve(8)` how to live in a [jailed
-environment](https://reviews.FreeBSD.org/rS337023), allowing users to
+We taught `bhyve(8)` how to live in a
+[jailed environment](https://reviews.FreeBSD.org/rS337023), allowing users to
 jail the hypervisor. We hardened the virtual address space of
 `bhyve(8)` by using [guard pages](https://reviews.FreeBSD.org/rS338511).
 This work made it upstream to FreeBSD. We are grateful to those in
