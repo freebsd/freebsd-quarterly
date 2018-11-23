@@ -1369,17 +1369,24 @@ flexibility. More information and usage examples can be found in the
 
 # Documentation #
 
-## Various Documentation Bits ##
+## Quarterly Reports ##
+
+Contact: Edward Tomasz Napierała, <trasz@FreeBSD.org>
+Contact: Mateusz Piotrowski, <0mp@FreeBSD.org>
+
+The Quarterly Reports have been resurrected after almost a year long hiatus.
+The old workflow, which consisted of users submitting XML-formatted entries,
+which would then get hand-assembled into DocBook, was replaced with a new
+one, using Markdown instead.  The XML submission form was replaced with
+GitHub Pull Requests.  This should make submissions and editing much easier
+and user-friendly.
+
+## Cleaning up the Wiki ##
+
+Contact: <wiki-admin@FreeBSD.org>
 
 Link: [Wiki Fixit Group Website](https://wiki.FreeBSD.org/WikiFixitGroup/)
-
-Contact: 
-- Wiki:
-  - wiki-admin@FreeBSD.org
-  - #freebsd-wiki @ freenode IRC
-- Quarterly reports:
-  - Edward Tomasz Napierała, <trasz@FreeBSD.org>
-  - Mateusz Piotrowski, <0mp@FreeBSD.org>
+Link: [IRC channel](irc://freebsd-wiki@irc.freenode.net)
 
 The FreeBSD Wiki used to be a scratch pad for the FreeBSD developers to
 organize projects, store notes and publish articles that were about to be added
@@ -1402,9 +1409,6 @@ XML files is not ideal for many end users. This is why we are trying to approach
    hierarchy of subpages and categories to make navigating the wiki easier.
 2. Some articles from the wiki are going to be migrated to either the doc tree
    or manual pages.
-3. The quarterly reports project is testing out if using Markdown and GitHub as
-   an alternative tool for submitting documentation lowers the barrier of
-   entry.
 
 # Third-Party Projects #
 
