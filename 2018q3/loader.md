@@ -24,7 +24,7 @@ clearly a bug.
 
 It's anticpated that no further changes to the FORTH loader or the
 FORTH scripts will happen. They are quite mature and bullet proof at
-tnhis point and it's unlikely that an undiscovered bug will need to be
+this point and it's unlikely that an undiscovered bug will need to be
 fixed before retirement.
 
 Other work in progress includes Toomas Soome's port to OpenIndiana. In
@@ -43,5 +43,5 @@ Ian Lepore has reworked the GELI support so that it is MI and can be
 used on any architecture we support.
 
 There's also efforts underway to bring signed image support, improved
-crypto booting options and implement Multiboot 2.0.
+crypto booting options and implement Multiboot 2.0 support.
 
