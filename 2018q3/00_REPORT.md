@@ -384,7 +384,7 @@ rewritten from assembly to C, improving readability and maintainability
 of the code.
 
 Because the user address space is no longer shared with the kernel,
-the copyout(9) functions was rewritten to make a transient mapping
+the copyout(9) functions were rewritten to make a transient mapping
 of userspace pages for duration of any needed accesses.  The initial
 implementation used the vm_fault_quick_hold_pages() framework, but
 this was later optimized by temporarily switching to user mode
@@ -413,7 +413,7 @@ as a part of the CADETS project. Recent developments include the
 creation of dlog, an in-kernel DTrace consumer which is able to
 publish to Kafka. In addition to that, early boot tracing and tracing
 on shutdown was improved upon. On the virtualisation front,
-improvements were made in the ability to deference and follow
+improvements were made in the ability to dereference and follow
 pointers inside guests from the host in the probe context by
 implementing a nested page table walk inside DTrace for Intel
 architectures. Moreover, the CADETS project has started formalizing
