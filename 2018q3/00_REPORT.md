@@ -913,12 +913,12 @@ since the last 6.0 version.
 
 Starting with the sanitizers, Memory Sanitizer (for amd64) mainly to
 detect unitialized pointers. There is also a simple W^X paging
-requests detection available from most of sanitizers is also present.
+requests detection available from most of sanitizers.
 
 Also libFuzzer support finally had been possible. Basically,
 it allows to test code with random values from corpus inputs.
 Mutation and combination algorithms of those random inputs 
-can be overwritten. Also can be used in addition of ubsan,
+can be overwritten. Can also be used in addition to ubsan,
 asan, msan and so on.
 
 At last, the X-Ray instrumentation feature is also supported.
@@ -927,7 +927,7 @@ reasonable performance runtime cost.
 
 In the static code analysis department, reliable strlcpy (unfortunately strlcat
 did not get merged in due time for the release) wrong usage
-cases are now covered as well a W^X code detection had been added.
+cases are now covered and W^X code detection tooling had been added.
 
 At the moment, this 7.0 version is imported by Dimitry Andric, within
 its own git branch available only for FreeBSD after 12 releases.
@@ -960,7 +960,7 @@ clearly a bug.
 
 It's anticipated that no further changes to the FORTH loader or the
 FORTH scripts will happen. They are quite mature and bullet proof at
-tnhis point and it's unlikely that an undiscovered bug will need to be
+this point and it's unlikely that an undiscovered bug will need to be
 fixed before retirement.
 
 Other work in progress includes Toomas Soome's port to OpenIndiana. In
@@ -979,7 +979,7 @@ Ian Lepore has reworked the GELI support so that it is MI and can be
 used on any architecture we support.
 
 There's also efforts underway to bring signed image support, improved
-crypto booting options and implement Multiboot 2.0.
+crypto booting options and implement Multiboot 2.0 support.
 
 ## Usermode mapping of PCI BARs ##
 
@@ -1008,8 +1008,8 @@ for PCIOCBARMMAP ioctl(2) request description for details, and
 pciconf(8) for the -D switch.
 
 TODO: automatically activate the BAR on mapping, this is not done yet.
-Problem there is the need to avoid the resource conflict with the
-possible future attachment of the kernel driver.
+There is a problem with avoiding the resource conflicts on
+possible future attachmens of the kernel driver.
 
 Sponsor: The FreeBSD Foundation
 Sponsor: Mellanox Technologies
@@ -1053,7 +1053,7 @@ FreeBSD 12 saw the introduction of a number of performance improvements:
    - epoch was used to provide an 85+% reduction in the overhead of pcb lookup
      in high core count systems
    - It was used to provide an 85+% reduction in UDP send overhead on high core
-     count systems see the link for a bit more detail: 
+     count systems - see the link for a bit more detail:
        (http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees)
 
    - System call overhead is now half that of 11
@@ -1080,7 +1080,7 @@ Since last report, remaining Armada 38x support was integrated to HEAD, which ca
 GENERIC config and use unmodified sys/gnu/dts device trees. The details are as follows:
 
 * GENERIC config
-    - Introduce a vast rework of sys/arm/mv directory for arm and armv7 platforms.
+    - Introduce a vast rework of the sys/arm/mv directory for arm and armv7 platforms.
     - Enable PLATFORM support for Marvell ARMv7 SoCs, which can now can boot with GENERIC kernel.
     - Base on dynamic detection of SoC type and device tree instead of using ifdefs
       and enable more flexible environment for maintaining Marvell platforms.
@@ -1147,7 +1147,7 @@ now always up-to-date.
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>  
 Contact: U-Boot mailing list, <uboot@FreeBSD.org>
 
-The RaspberryPi firmware loads the DTB from the fat partition based on
+The RaspberryPi firmware loads the DTB from the FAT partition based on
 the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
 instead of using the one it embed.
 This allow us to use the RaspberryPi Foundation provided DTB overlays to enable
@@ -1252,7 +1252,7 @@ Network virtualization support (VIMAGE) was fixed and enabled by default now.
 In order to support RocketChip and derivatives we had to work on A(accessed), D(dirty) PTE (page table entry) bits management.
 We have successfully tested this on a lowRISC board and it is booting to multiuser just fine. lowRISC UART driver was added.
 
-Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
+Superuser-User-Modify (SUM) bit in status register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
 
 # Ports #
 
