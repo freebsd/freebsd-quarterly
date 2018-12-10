@@ -13,7 +13,7 @@ Since last report, remaining Armada 38x support was integrated to HEAD, which ca
 GENERIC config and use unmodified sys/gnu/dts device trees. The details are as follows:
 
 * GENERIC config
-    - Introduce a vast rework of sys/arm/mv directory for arm and armv7 platforms.
+    - Introduce a vast rework of the sys/arm/mv directory for arm and armv7 platforms.
     - Enable PLATFORM support for Marvell ARMv7 SoCs, which can now can boot with GENERIC kernel.
     - Base on dynamic detection of SoC type and device tree instead of using ifdefs
       and enable more flexible environment for maintaining Marvell platforms.
