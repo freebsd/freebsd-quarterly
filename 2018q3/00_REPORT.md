@@ -57,42 +57,53 @@ Link:	[FreeBSD portmgr (@freebsd_portmgr)](https://twitter.com/freebsd_portmgr/)
 Link:	[FreeBSD Ports Management Team (Facebook)](https://www.facebook.com/portmgr)  
 Link:	[FreeBSD Ports Management Team (Google+)](https://plus.google.com/communities/108335846196454338383)
 
-During the first quarter of 2018, the number of ports grew to almost 32,000. There
-are currently 2,100 open PRs with less than 600 unassigned.  There were
+During the first quarter of 2018, the number of ports grew to almost 32,000.
+In 2018Q1, there were
+2,100 open PRs with fewer than 600 unassigned.  There were
 7,900 commits from 169 committers. Compared to last quarter, the number
-of commits grew by 18% and the number of PRs dropped by 25%.  Those are
+of commits grew by 18% and the number of PRs dropped by 25%.  Those were
 some good numbers.
 
-During the following two quarters, the number of ports grew to just under
-34,000.  The number of open PR grew to almost 2,500 with less than 600
+During the 2018Q2 and 2018Q3 quarters, the number of ports grew to just under
+34,000.  The number of open PR grew to almost 2,500 with fewer than 600
 of those unassigned. A total of 175 committers made almost 14,200 commits.
 Compared to the first quarter, the number of commits dropped by 10% and
 the number of PRs grew by 19%.
 
 During the last three quarters, portmgr took twelve commit bits in for
-safekeeping: maho@, wxs@, vg@, tabthorpe@, pawel@, junovitch@, kevlo@,
-ian@, nemysis@, daichi@, deichen@, and rea@.
+safekeeping: daichi@, deichen@, ian@, junovitch@, kevlo@, maho@, nemysis@,
+pawel@, rea@, tabthorpe@, vg@, and wxs@.
 
-On the other hand, we welcomed thirteen new committers: 
-Eric Turgeon (ericbsd@), Devin Teske
-(dteske@), Matthias Fechner (mfechner@), Fernando Apesteguía (fernape@),
-Koichiro IWAO (meta@), Sean Chittenden (seanc@, returning),
-John Hixson (jhixson@), Kevin Bowling (kbowling@), Sergey Kozlov
-(skozlov@), Fukang Chen (loader@), Gleb Popov (arrowd@),
-Mateusz Piotrowski (0mp@), and Jesper Schmitz Mouridsen (jsm@).
-itetcu@ and kevlo@ returned after a hiatus.
+Portmgr welcomed thirteen new committers in 2018Q2 and 2018Q3: 
 
-During the last three quarters, antoine@ ran no less than 113 exp-runs
-to test updates and to perform cleanups and improvements to the framework and the
-base system. Most of them
-were for port upgrades, but others include LLD progress, changing the
-default port versions, improving support for armv6, armv7, and RISC-V,
-removing old base system functionality, new USES,
-and better matching pkg-plist with
-Makefile options (DOCS and
-EXAMPLES).
+  * Devin Teske (dteske@)
+  * Eric Turgeon (ericbsd@)
+  * Fernando Apesteguía (fernape@)
+  * Fukang Chen (loader@)
+  * Gleb Popov (arrowd@)
+  * Jesper Schmitz Mouridsen (jsm@)
+  * John Hixson (jhixson@)
+  * Kevin Bowling (kbowling@)
+  * Koichiro IWAO (meta@)
+  * Mateusz Piotrowski (0mp@)
+  * Matthias Fechner (mfechner@)
+  * Sergey Kozlov (skozlov@)
 
-Five new USES were introduced:
+The following committers returned after a hiatus:
+  * Ion-Mihai Tetcu (itetcu@)
+  * Kevin Lo (kevlo@)
+  * Sean Chittenden (seanc@)
+
+During the last three quarters, Antoine Brodin (antoine@) ran no
+fewer than 113 exp-runs against the ports tree.  These runs were
+executed to test updates, perform cleanups, and make improvements
+to the framework and the base system.  Most of the runs were for
+port upgrades, but others include LLD progress, changes to the
+default port versions, improved support for armv6, armv7, and RISC-V
+architectures, removed old base system functionality, new USES, and
+better matching pkg-plist with Makefile options (DOCS and EXAMPLES).
+
+Five new USES values were introduced:
 
   * apache: handle dependencies on the Apache web server and modules
   * eigen: automatically depend on math/eigen2 or math/eigen3
@@ -100,27 +111,27 @@ Five new USES were introduced:
   * gl replaces the old USE_GL from bsd.port.mk
   * qt-dist, qt:4 and qt:5 replace the old USE_QT from bsd.qt.mk
 
-EXTRA_PATCHES has been extended to support
-directories, in which case it will automatically apply all
-patch-\* files to the port.  Ports using USES=php:phpize,
-php:ext, php:zend, and
-php:pecl are now flavored and packages will
-automatically be built for all versions they support (5.6, 7.0, 7.1 or
-7.2).
+The EXTRA_PATCHES functionality has been extended to support
+directories, where it will automatically apply all
+patch-\* files to the port.
 
-Last quarter again saw some updates of major ports: pkg 1.10.5, Chromium
-65.0.3325.181, Firefox 59.0.2 and Firefox-ESR 52.7.3, Ruby 2.3.7/2.5.1
+Ports using USES=php:phpize, php:ext, php:zend, and php:pecl have
+been flavored and packages are now automatically be built for all
+versions of PHP that are supported (5.6, 7.0, 7.1 or 7.2).
+
+2018Q3 had updates of major ports: pkg 1.10.5, Chromium
+65.0.3325.181, Firefox 59.0.2, Firefox-ESR 52.7.3, Ruby 2.3.7/2.5.1
 and Qt5 5.9.4.
 The default version of PHP was changed from 5.6 to 7.1. The former
-version is no longer supported by the developers. Furthermore, the
+version of PHP is no longer supported by the developers.  The
 default versions of Samba and GCC are now respectively 4.7 and 7. The
 Xorg ports have been reorganized and there have been changes to
-net/openntpd, please read UPDATING if relevant.
+net/openntpd.  Please review the UPDATING file for relevant details.
 
 Open tasks:
 
   * The number of commits dropped somewhat over the last three quarters,
-    leaving more PRs unresolved. If you can, please pick up some PRs
+    leaving more PRs unresolved.  If possible, please pick up some PRs
     and improve everyone's experience.
 
 ## Core Team ##
