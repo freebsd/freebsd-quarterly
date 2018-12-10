@@ -9,32 +9,38 @@ Link:	[FreeBSD 11.2-RELEASE announcement](https://www.FreeBSD.org/releases/11.2R
 Link:	[FreeBSD 12.0-RELEASE schedule](https://www.FreeBSD.org/releases/12.0R/schedule.html)  
 Link:	[FreeBSD development snapshots](https://download.FreeBSD.org/ftp/snapshots/ISO-IMAGES/)
 
-The FreeBSD Release Engineering Team is responsible for setting
-and publishing release schedules for official project releases
-of FreeBSD, announcing code freezes and maintaining the
-respective branches, among other things.
+The FreeBSD Release Engineering Team responsibilities include:
 
-The FreeBSD Release Engineering Team completed the 10.4-RELEASE,
-led by Marius Strobl, early October.  FreeBSD 10.4-RELEASE is the
-fifth release from the *stable/10* branch, which builds on the
+  * setting and publishing release schedules for official project releases
+of FreeBSD
+  * announcing code slushes, freezes, and thaws
+  * maintaining the respective branches for all supported releases
+
+The FreeBSD Release Engineering Team, led by Marius Strobl,
+completed the 10.4-RELEASE in early October 2017.  FreeBSD 10.4-RELEASE was the
+fifth release from the *stable/10* branch, which built on the
 stability and reliability of 10.3-RELEASE.
 
-The 11.2-RELEASE cycle started April 20 with the code slush, and continued to
-progress throughout the rest of the quarter with the code freeze, followed by
-three BETA builds and three RC builds, with the final release build announced
-June 27.
+The FreeBSD 11.2-RELEASE cycle started April 20, 2018 with the
+announcement of the code slush.  The first stage progress was
+continued throughout the rest of the quarter with the code freeze,
+followed by three BETA builds, three RC builds, and the final release
+build was announced June 27, 2018.
 
-The FreeBSD Release Engineering Team started the 12.0-RELEASE cycle August 10,
-beginning with the code slush.  The code slush followed August 24, with the
-*stable/12* branch expected to be created September 21.
+The FreeBSD Release Engineering Team started the 12.0-RELEASE cycle
+August 10, 2018 with the announcement of the code slush.  The code
+freeze followed on August 24, 2018.  The tentative date for the
+*stable/12* branch was expected to be September 21, 2018.
 
-However, due to unforeseen circumstances related to upstream code that was
-deemed necessary to include in 12.0-RELEASE, the schedule needed to be
-adjusted several times to account for works-in-progress related to the
-upstream code to be compatible with other base system utilities.  At the end
-of the quarter, the *stable/12* branch had not been created due to this delay.
+Due to unforeseen circumstances with upstream code that was necessary
+to include in 12.0-RELEASE, the tentative release schedule needed
+to be adjusted several times.  The API changes in the updated version
+of the upstream code required changes to be made for all base system
+utilities that linked with the upstream code.  By the end of the
+2018Q3 quarter, the *stable/12* branch had not been created due to
+this delay.
 
-Throughout the remainder of the quarter, several development snapshots builds
+Throughout the remainder of 2018Q3, several development snapshots builds
 were released for the *head*, *stable/11*, and *stable/10* branches.
 
 Much of this work was sponsored by the FreeBSD Foundation.
