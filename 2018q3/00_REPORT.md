@@ -1304,7 +1304,7 @@ We have added support for compressed ISA extension to KDB debugger and DTrace FB
 QEMU has updated to latest privilege spec allowing us to bring up FreeBSD on it. The emulation is quite fast: it takes one second only to boot FreeBSD to single-user mode in QEMU: (https://www.youtube.com/watch?v=FnWpRBaWF18)
 
 Platform-Level Interrupt Controller (PLIC) driver was added. Interrupt support was converted to INTRNG.
-PLIC is used in QEMU for virtio network and block devices (full FreeBSD distribution can be booted in QEMU).
+PLIC is used in QEMU for virtio network and block devices.  With these changes, a full FreeBSD distribution can now be booted in QEMU.
 
 Network virtualization support (VIMAGE) was fixed and enabled by default now.
 
