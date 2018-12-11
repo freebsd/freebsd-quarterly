@@ -993,16 +993,17 @@ The FreeBSD boot loader lives in src/stand (prior releases had it in
 sys/boot and lib/libstand). It covers all the code that the project
 provides that interacts with the hardware before the kernel starts.
 
-The LUA interpreter we added earlier in the year was made default this
-quarter. Due to undiagnosed booting issues, however, it has been
+The LUA interpreter that was added earlier in 2018 was made default in 2018Q3.
+Due to undiagnosed booting issues, the LUA interpreter has been
 disabled on sparc64 and all powerpc. The LUA interpreter is scheduled
 to replace the FORTH interpreter entirely in FreeBSD 13, although the
 FORTH interpreter will remain available as a build option in FreeBSD
 12. The plans are not to remove the FORTH loader for about a year
 after 12.0 release, or approximately January 2020. Platforms not
-currently working have until that date to resolve the issues.
+currently working with the LUA interpreter
+have until that date to resolve the issues.
 
-At this point, the LUA scripts implement everything that FORTH scripts
+At this point, the LUA scripts implement everything that the FORTH scripts
 did. Where there was ambiguity in the spec, or where the FORTH scripts
 were more forgiving that was strictly documented, every effort has
 been made to improve the documentation and follow the old FORTH
@@ -1020,7 +1021,7 @@ in the block layer, and UEFI). Many of his improvements have been
 committed to FreeBSD, though a few remain and hopefully will be
 entering the tree soon after the freeze lifts.
 
-UEFI booting has been greatly enhanced. However, there's still some
+UEFI booting has been greatly enhanced.  There are still some
 machines that have issues with the default BootXXXX variables or
 something else in the environment that are being investigated. We hope
 to understand the problems well enough to provide a fix for FreeBSD
@@ -1029,8 +1030,8 @@ to understand the problems well enough to provide a fix for FreeBSD
 Ian Lepore has reworked the GELI support so that it is MI and can be
 used on any architecture we support.
 
-There's also efforts underway to bring signed image support, improved
-crypto booting options and implement Multiboot 2.0 support.
+There are also efforts underway to support booting signed images, improved
+crypto booting options, and implement Multiboot 2.0 support.
 
 ## Usermode mapping of PCI BARs ##
 
