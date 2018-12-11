@@ -1,0 +1,28 @@
+#
+# These reports are about prior Quarters of activity, the
+# contents of most (all?) of the sections should be written in
+# the past tense.
+#
+
+# Editing:
+# Updates should happen to the individual .md files for each
+# report section.  This allows for greater editing in parallel,
+# with less chance of conflicts.  At the end of the editing process,
+# the smaller files will be concatenated together.
+
+# SPECIAL 2018Q3 note: edit the 00_REPORT.md file directly for
+# this set of the release notes.
+
+# Each section of the report is written from the point of view
+# of different authors, which means that using "we" when describing
+# changes / efforts / opinions should be discouraged.
+#
+# In particular, the section "The FreeBSD Foundation" uses this
+# terminology in many, many places.  Too many to edit in a quick
+# pass of the documentation.
+
+# Consistency in referenced email addresses:
+# Many email addresses referenced in report sections call out the
+# email address after a person's name by surround the email address
+# with parentheses and including a trailing "at" (@) symbol:
+# e.g.  George Neville-Neil (gnn@)
