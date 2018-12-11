@@ -61,8 +61,8 @@ During the first quarter of 2018, the number of ports grew to almost 32,000.
 In 2018Q1, there were
 2,100 open PRs with fewer than 600 unassigned.  There were
 7,900 commits from 169 committers. Compared to last quarter, the number
-of commits grew by 18% and the number of PRs dropped by 25%.  Those were
-some good numbers.
+of commits grew by 18% and the number of PRs dropped by 25%.  Those are
+some good numbers!
 
 During the 2018Q2 and 2018Q3 quarters, the number of ports grew to just under
 34,000.  The number of open PR grew to almost 2,500 with fewer than 600
@@ -132,7 +132,7 @@ Open tasks:
 
   * The number of commits dropped somewhat over the last three quarters,
     leaving more PRs unresolved.  If possible, please pick up some PRs
-    and improve everyone's experience.
+    and improve everyone's experience (please add a link so readers know where to go).
 
 ## Core Team ##
 
@@ -140,7 +140,7 @@ Contact: FreeBSD Core Team, <core@FreeBSD.org>
 
 Much of Core's focus for the past months has been on three items:
 
-1. Coordination between different groups to support the upcoming 12.0 release.  For example, the timing of the OpenSSL 1.1.1 release posed challenges.  The new OpenSSL version included API changes, so many components of the base system and ports required changes.  Staying with the older OpenSSL in 12.0 was not a feasible option, because it would have meant backporting many changes to a version of OpenSSL that would be unmaintained by the upstream source.
+1. Coordination between different groups to support the upcoming 12.0 release.  The timing of the OpenSSL 1.1.1 release posed challenges, the new OpenSSL version included API changes,  many components of the base system and ports required changes.  Staying with the older OpenSSL in 12.0 was not a feasible option, because it would have meant backporting many changes to a version of OpenSSL that would be unmaintained by the upstream source.
 
 2. Discussions with the release engineering team and Scott Long about updating the FreeBSD release process.  Topics for exploration include:
 
@@ -149,7 +149,7 @@ Much of Core's focus for the past months has been on three items:
   * revising and improving the tooling used to manage the tree and releases
   * additional topics as they are discovered
 
-3. Gathering information to make decisions be more data-driven.  For example, we are planning developer and user surveys.  If there are questions that you think should be added to the survey, please discuss them on freebsd-arch@.  We are exploring ways for automated user-driven hardware usage data to understand the changing ways our software is used and to target better hardware support.
+3. Gathering information to make decisions more data-driven.  For example, we are planning developer and user surveys.  If there are questions that you think should be added to the survey, please discuss them on freebsd-arch@.  We are exploring ways for automated user-driven hardware usage data to understand the changing ways our software is used and to target better hardware support.
 
 Here are other noteworthy events (in chronological order) since the last quarterly report.
 
@@ -179,7 +179,7 @@ Here are other noteworthy events (in chronological order) since the last quarter
 - Matt Macy's (mmacy@) commit bit was restored under the mentorship of Sean Bruno (sbruno@).
 - Breno Leitao (leitao@) was awarded a src commit bit under the mentorship of Justin Hibbits (jhibbits@) with Nathan Whitehorn (nwhitehorn@) as co-mentor.
 - Leandro Lupori (luporl@) was awarded a src commit bit under the mentorship of Justin Hibbits (jhibbits@) with Nathan Whitehorn (nwhitehorn@) as co-mentor.
-- The handover from the ninth to the tenth elected Core team took place.  The Core members are: Allan Jude (allanjude@), Benedict Reuschling (bcr@), Brooks Davis (brooks@), Hiroki Sato (hrs@), Warner Losh (imp@), Jeff Roberson (jeff@), John Baldwin (jhb@), Kris Moore (kmoore@), and Sean Chittenden (seanc@).
+- The handover from the ninth to the tenth elected Core team took place.  The tenth Core members are: Allan Jude (allanjude@), Benedict Reuschling (bcr@), Brooks Davis (brooks@), Hiroki Sato (hrs@), Warner Losh (imp@), Jeff Roberson (jeff@), John Baldwin (jhb@), Kris Moore (kmoore@), and Sean Chittenden (seanc@).
 - Joseph Mingrone (jrm@) was appointed the Core secretary under mentorship of the retiring Core secretary, Matthew Seaman (matthew@).
 - The new team liaisons were decided.  portmgr: Sean, doceng: Hiroki, secteam: Brooks, re: John, clusteradm: Allan, CoC: Warner, Foundation: Benedict, bugmeister: John, CI: Sean.
 - David Maxwell (dwm@) was awarded project membership.
@@ -220,7 +220,7 @@ and share with your companies!
 
 ### OS Improvements ###
 
-The Foundation improves the FreeBSD operating system by employing our technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. This also includes funding separate project grants like the arm64 port, porting the blacklistd access control daemon, and the integration of VIMAGE support, to make sure that FreeBSD remains a viable solution for research, education, computing, products and more.
+The Foundation improves the FreeBSD operating system by employing technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. This also includes funding separate project grants like the arm64 port, porting the blacklistd access control daemon, and the integration of VIMAGE support, to make sure that FreeBSD remains a viable solution for research, education, computing, products and more.
 
 We kicked off or continued the following projects last quarter:
 
@@ -228,7 +228,7 @@ We kicked off or continued the following projects last quarter:
   * Headless mode out-of-the-box for embedded Arm boards like the Beaglebone Black
   * Performance and scalability improvements
 
-Having software developers on staff has allowed us to jump in and work directly on projects to improve FreeBSD like:
+Having software developers on staff has allowed us to jump in and work directly on projects to improve FreeBSD such as:
 
   * ZFS improvements
   * New Intel server support
@@ -356,8 +356,8 @@ increase in size of the build tools.
 
 The FreeBSD i386 kernel, prior to the 12.0-RELEASE version, split
 the 4GB address space of the platform into 3GB (minus 4MB) accessible
-to userspace accesses and 1GB for kernel accesses.  In other words,
-neither kernel nor userspace could access a full 4GB address space.
+to userspace accesses and 1GB for kernel accesses.
+Neither kernel nor userspace could access a full 4GB address space.
 Programs that require very large virtual address spaces, such as
 clang when compiling or lld when linking, could run out of address
 space: 3GB of address space was insufficient for their operation.
@@ -370,7 +370,7 @@ dedicated separate address spaces for userspace and kernel, giving
 each mode full access to 4GB (minus 8MB) of usable address space.
 The userspace on the i386 architecture now has access to the same
 amount of address space as the compat32 subsystem in the amd64
-architecture kernel.  The increase in kernel address space enable
+architecture kernel.  The increase in kernel address space enables
 further growth and maintainability of the i386 architecture.
 
 The split 4GB/4GB user/kernel implementation uses two page directory
@@ -411,12 +411,12 @@ of DTrace that can trace bhyve virtual machines from the host FreeBSD
 system are currently under development at the University of Cambridge
 as a part of the CADETS project. Recent developments include the
 creation of dlog, an in-kernel DTrace consumer which is able to
-publish to Kafka. In addition to that, early boot tracing and tracing
-on shutdown was improved upon. On the virtualisation front,
+publish to Kafka, and improvements to early boot and shutdown tracing.
+On the virtualisation front,
 improvements were made in the ability to dereference and follow
 pointers inside guests from the host in the probe context by
 implementing a nested page table walk inside DTrace for Intel
-architectures. Moreover, the CADETS project has started formalizing
+architectures. The CADETS project has started formalizing
 DTrace in HOL4 which enables automated test generation, high assurance
 of DTrace implementations in terms of adherence to the specification
 and exploration of all allowable behaviors for a given D
@@ -600,8 +600,8 @@ be used to only use rep movsb/stosb.
 
 Mid term goal extends userspace. SIMD extensions can be used to make these functions
 faster. They can't easily be used in the kernel: SIMD registers are not saved on
-transitions user&lt;-&gt;kernel for performance reasons. Thus any use would have to
-take care of saving these registers, which can consume any win from using them in
+transitions user<->kernel for performance reasons. Thus any use would have to
+take care of saving these registers, which can consume any advantage from using them in
 the first place. This is not a concern for userspace code.
 
 There is a BSD-licensed implementation in bionic:
@@ -637,7 +637,7 @@ Committed improvements include:
  * Migration from a model of translating `ioctl` commands and data
    structures at the kernel boundary to translating where the commands
    are processed.  This is a correctness improvement (`ioctl` commands
-   have not meaning outside the specific file descriptor in question)
+   do not have meaning outside the specific file descriptor in question)
    and improves code reusability (my out-of-tree work will soon include
    a 64-bit compatibility layer.)
 
@@ -734,7 +734,7 @@ Link: [GitHub project](https://github.com/arichardson/freebsd/tree/crossbuild-au
 
 Currently FreeBSD can only be built on a FreeBSD host. However, most free
 CI tools only allow building on Linux or macOS and therefore can not be used
-for building the FreeBSD base system. Furthermore, it is sometimes useful to
+for building the FreeBSD base system. It is sometimes useful to
 cross-build FreeBSD for a remote machine or an emulator even if the build
 machine is not running FreeBSD.
 The goal of this project is to allow building FreeBSD on both Linux and macOS hosts
@@ -882,7 +882,7 @@ the selection of the implementation for the given symbol at runtime,
 when the ELF module gets the final relocations applied.  The selection
 of which code to use is governed by the small piece of user provided
 code, attached to the symbol, the so called resolver function.
-Ifuncs provide the a convenient way to select between different
+Ifuncs provide a convenient way to select between different
 machine-specific implementations of the parts of the code, without
 the ugliness and unsafety of the alternative approach, which is
 runtime patching.
@@ -966,8 +966,8 @@ Starting with the sanitizers, Memory Sanitizer (for amd64) mainly to
 detect unitialized pointers. There is also a simple W^X paging
 requests detection available from most of sanitizers.
 
-Also libFuzzer support finally had been possible. Basically,
-it allows to test code with random values from corpus inputs.
+Also libFuzzer support finally had been possible.
+It allows code to be tested with random values from corpus inputs.
 Mutation and combination algorithms of those random inputs 
 can be overwritten. Can also be used in addition to ubsan,
 asan, msan and so on.
@@ -993,7 +993,7 @@ The FreeBSD boot loader lives in src/stand (prior releases had it in
 sys/boot and lib/libstand). It covers all the code that the project
 provides that interacts with the hardware before the kernel starts.
 
-The LUA interpreter that was added earlier in 2018 was made default in 2018Q3.
+The LUA interpreter added earlier in 2018 was made default in 2018Q3.
 Due to undiagnosed booting issues, the LUA interpreter has been
 disabled on sparc64 and all powerpc. The LUA interpreter is scheduled
 to replace the FORTH interpreter entirely in FreeBSD 13, although the
