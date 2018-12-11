@@ -1080,8 +1080,8 @@ Link:	 [Handbook chapter](https://www.FreeBSD.org/doc/en_US.ISO8859-1/books/hand
 Many embedded boards include hardware which supports device
 side USB - the ability for the board to present itself to another
 system as a USB drive, network adapter, or a virtual serial port.
-FreeBSD USB stack has supported this functionality for quite some
-time, but it wasn't used to its full extent.
+The FreeBSD USB stack has supported this functionality for quite some
+time, but it has not been used to its fullest extent.
 
 The goal of this project was to fix that - to document the
 functionality, possibly fix some bugs, and to make it easy
