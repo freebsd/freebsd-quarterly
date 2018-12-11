@@ -512,25 +512,31 @@ TODO:
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
-Support for SMAP, which stands for supervisor-mode access prevention,
-was added to amd64 kernels.  SMAP makes faulting any access from the
-supervisor mode to the pages accessible to user mode, unless the
-%eflags.AC bit is set.
+Support for SMAP (Supervisor-Mode Access Prevention), has been added
+to the amd64 kernel.  The SMAP feature makes any access from the
+supervisor mode to the pages accessible to user mode cause a fault,
+unless the %eflags.AC bit is set at the time of the access.
 
-SMAP implementation uses the ifunc framework to avoid checking for the
-SMAP capability of hardware on each call for the copyout(9) and other
-functions.
+The SMAP implementation uses the ifunc framework to avoid checking
+for the SMAP capability of hardware on each call to copyout(9) and
+other functions.
 
-On amd64, we have the common address space between kernel and user.
-Enabling SMAP virtually splits the it into two disjoint address
-spaces, providing relatively low-overhead way of catching direct
-accesses from kernel to usermode, without using the copyout(9) family
-of functions.
+In the amd64 architecture, FreeBSD has a common address space between
+the kernel space and user space.  Enabling SMAP virtually splits
+the shared address space into two disjoint address spaces, which
+have different access criteria.  This splitting of the address space
+provides a relatively low-overhead way of catching direct accesses
+from kernel to usermode, when not using the copyout(9) family of
+functions.  The copyout(9) family of functions are permitted direct
+access to user space.  And direct access from kernel mode to user
+address space that isn't performed through the copyout(9) family
+of functions indicates a potential programming error.
 
-It is interesting that not much bugs were found in our kernel after
-the SMAP was enabled.  One issue existed in the pci(9) user driver.
-On the other hand, at least two ports, VBox and acpi_call, appeared to
-access userspace in unsafe manner.
+It is interesting that very few bugs were found in the FreeBSD
+kernel after the SMAP feature was enabled.  One issue that was
+identified existed in the pci(9) user driver.  Enabling the SMAP
+feature identified at least two ports, VBox and acpi_call, which
+appeared to access userspace in an unsafe manner.
 
 Sponsor: The FreeBSD Foundation
 
