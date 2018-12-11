@@ -1188,7 +1188,7 @@ Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 Instead of using the ubldr version of the loader which uses the U-Boot
 API, all images now use loader.efi as their primary FreeBSD loader.
-This allow us to have a common boot path for all arm and arm64 image.
+This allow us to have a common boot path for all arm and arm64 images.
 
 ## DTS Update ##
 
