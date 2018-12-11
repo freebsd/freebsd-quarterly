@@ -1194,7 +1194,7 @@ This allow us to have a common boot path for all arm and arm64 images.
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
-DTS files (Device Tree Sources) were updated to be in pair with Linux 4.18 for
+DTS files (Device Tree Sources) were updated to be on par with Linux 4.18 for
 the 12.0 release.
 
 The DTS are now compile for some arm64 boards as the one present in U-Boot are
