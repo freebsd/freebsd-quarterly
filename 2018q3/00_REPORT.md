@@ -199,11 +199,11 @@ Contact: Deb Goodkin, <deb@FreeBSDFoundation.org>
 
 The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to supporting and promoting the FreeBSD Project and community worldwide. Funding comes from individual and corporate donations and is used to fund and manage software development projects, conferences and developer summits, and provide travel grants to FreeBSD contributors. The Foundation purchases and supports hardware to improve and maintain FreeBSD infrastructure and provides resources to improve security, quality assurance, and release engineering efforts; publishes marketing material to promote, educate, and advocate for the FreeBSD Project; facilitates collaboration between commercial vendors and FreeBSD developers; and finally, represents the FreeBSD Project in executing contracts, license agreements, and other legal arrangements that require a recognized legal entity.
 
-Here are some highlights of what we did to help FreeBSD last quarter:
+Here are some highlights of what the FreeBSD Foundation did to help FreeBSD last quarter:
 
 ### Partnerships and Commercial User Support ###
 
-As a 501(c)(3) non-profit, we don’t directly support commercial users, but we do work with them to understand their needs and help facilitate collaboration with the community. Last quarter we met with a few key FreeBSD users and supporters, to discuss pain points, how they can contribute back to FreeBSD, and what technologies they would like to see supported, to support FreeBSD over more of their technologies and products.
+As a 501(c)(3) non-profit, we don't directly support commercial users, but we do work with them to understand their needs and help facilitate collaboration with the community. Last quarter we met with a few key FreeBSD users and supporters, to discuss pain points, how they can contribute back to FreeBSD, and what technologies they would like to see supported, to support FreeBSD over more of their technologies and products.
  
 As many of you know, we formed a partnership with Intel around one and a half years ago. Since then the people we worked directly with left the company, but it moved us into a new relationship with their Open Source Technology Center (OTC).
 
