@@ -812,7 +812,7 @@ graphics stack.  This includes graphics drivers, graphics libraries such as the
 MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
 
-There has been a lot of changes since the last report.  The most important one
+There have been a lot of changes since the last report.  The most important one
 is the change of driver distribution and updates.  On FreeBSD 11.2 and later
 modern graphics drivers using the Linux KPI subsystem are found in ports.  These
 give much improved support for Intel and AMD graphics hardware, however, they
@@ -834,21 +834,21 @@ from individual \*proto packages to xorgproto, and turning that into a build
 time dependency.  Many thanks to portmgr for help with exp-runs for these
 changes.
 
-There have also been updates to applications and libraries as needed.
+There have been updates to applications and libraries as needed.
 
 On the project management side, there is ongoing work to set up a more efficient
 way of working, including bi-weekly conference calls to discuss the current
 works in progress.  Notes from these conference calls will be posted on the
 mailing list.
 
-Looking forward, the current major works in progress is to update the graphics
-driver to be on pair with Linux 4.17.  The code is merged, but patching and bug
+Looking forward, the current major work in progress is to update the graphics
+driver to be on par with Linux 4.17.  The code is merged, but patching and bug
 fixing is ongoing.
 
 There is also work to port the VMware guest graphics driver, vmwgfx, to FreeBSD
 and to the Linux KPI, to get better graphics support in VMware.
 
-Lastly on the driver side is to get the new graphics drivers to work on i386 as
+Lastly, on the driver side is to get the new graphics drivers to work on i386 as
 well.  Experimental support for this exists in the code repository, but is not
 yet merged to the FreeBSD ports tree.
 
