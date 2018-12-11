@@ -413,13 +413,13 @@ as a part of the CADETS project. Recent developments include the
 creation of dlog, an in-kernel DTrace consumer which is able to
 publish to Kafka. In addition to that, early boot tracing and tracing
 on shutdown was improved upon. On the virtualisation front,
-improvements were made in the ability to dereference and follow
+improvements were made in the ability to deference and follow
 pointers inside guests from the host in the probe context by
 implementing a nested page table walk inside DTrace for Intel
-architectures. Moreover, the CADETS project has started formalising
+architectures. Moreover, the CADETS project has started formalizing
 DTrace in HOL4 which enables automated test generation, high assurance
 of DTrace implementations in terms of adherence to the specification
-and exploration of all allowable behaviours for a given D
+and exploration of all allowable behaviors for a given D
 script. Currently, the formal model contains most of DIF instructions
 and a code generator for them, providing the ability to run DIF
 programs specified using the model using FreeBSD's DTrace
@@ -466,40 +466,44 @@ python, perl, sh, and many more.
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
-NV-DIMM is the technology which provides non-volatile memory with the
-access parameters similar to the regular DRAM, in the normal memory
-address space of the host.  ACPI and UEFI specifications define
-platform-independed way to detect and enumerate presence of NVDIMM and
-get most of the data needed for correct applications use of it.
+NVDIMM is a technology which provides non-volatile memory with
+access characteristics similar to regular DRAM, which is the
+technology that implements the normal memory address space of a host.
+There are ACPI and UEFI specifications that define platform independent
+ways to detect and enumerate the presence of NVDIMMs.  These
+specifications allow the retrieval of most of the data needed to
+allow proper application use of the NVDIMM storage.
 
-FreeBSD driver parses the ACPI NFIT table which lists NV-DIMMs, their
-operational characteristics, and physical address spaces where the
-NVDIMM memory is accessible.  Driver presents each address region as
-two devices, one allows userspace to open(2) devfs node, which can be
-read/written/mapped from the application, the mapping is zero-copy.
-Another device is actually geom disk(9), which makes it possible to
-use NVDIMM for normal FreeBSD filesystem, like UFS/ZFS/msdosfs.  Note
-that buffer cache/mapping of files from a filesystem created over
-NVDIMM causes unneeded double-buffering.
+A new FreeBSD driver parses the ACPI NFIT table which lists NVDIMMs,
+their operational characteristics, and the physical address space
+where the NVDIMM memory is accessible.  The driver presents each
+address region as two devices:  One device allows userspace to
+open(2) a devfs node, which can be read/written/mapped from the
+application.  This mapping is zero-copy.  The second device is a
+geom disk(9), which makes it possible to use NVDIMM for the backing
+storage for normal FreeBSD filesystem, such as UFS, ZFS, or msdosfs.
+Note that buffer cache/mapping of files from a filesystem created
+over NVDIMM causes an unneeded double-buffering.
 
-Apparently, on typical modern hardware, NVDIMM regions are located far
-from the regular memory in the address space, and have attributes not
-compatible with the regular DRAM.  This makes it unfeasible to extend
-the direct map to provide kernel mappings.  New pmap KPI was designed,
-pmap_large_map(9), which allows efficient mapping of very large
-physical regions into KVA.  Also it have some optimizations to the
-cache flush over the mapped regions, needed to efficiently support bio
-flushes from the filesystems.  NVDIMM driver uses the KPI, it might be
-also useful for the NTB driver.
+Empirically, on typical modern hardware, NVDIMM regions are located
+far from the regular DRAM backed memory in the address space, and
+have attributes that are not compatible with regular DRAM memory.
+This makes it unfeasible to extend the kernel's direct map to provide
+the kernel mappings.  A new pmap KPI was designed, pmap_large_map(9),
+which allows efficient mapping of very large physical regions into
+the KVA.  The new code has some optimization to the cache flushing
+operations over the mapped regions, which is needed to efficiently
+support bio flushes from the filesystems. The NVDIMM driver uses
+the new KPI, but the new KPI might also be useful for the NTB driver.
 
 Sponsor: The FreeBSD Foundation
 
 TODO:
 
-  * Intel currently works on extending the driver with the support for
+  * Intel is currently working on extending the driver to support
     UEFI namespaces.
 
-  * DAX-capable filesystem is needed, which solves the issue of
+  * A DAX-capable filesystem is needed, which solves the issue of
     double-buffering.  Our tmpfs already provides VM facilities which
     allows it to avoid double-buffering for mmap, which can be reused
     there.
