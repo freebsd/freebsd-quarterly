@@ -1239,8 +1239,8 @@ The support for POWER8 system running FreeBSD in Non-Virtualized environment con
   * PCIe host controller driver
   * USB-3.0 XHCI driver
   * Reworked drivers to be Big-Endian compatible:
-		- Chelsio cxgbe(4) 10/25G network adapter
-		- NVMe SSD drive
+    * Chelsio cxgbe(4) 10/25G network adapter
+    * NVMe SSD drive
 
 All work has been merged into HEAD and will be included in FreeBSD 12.0-RELEASE.
 
