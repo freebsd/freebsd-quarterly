@@ -877,26 +877,29 @@ Contact: Ed Maste, <emaste@FreeBSD.org>
 Contact: Mark Johnston, <markj@FreeBSD.org>  
 Contact: Mateusz Guzik, <mjg@FreeBSD.org>
 
-Ifunc is a special construct in the ELF infrastructure, which allows
-the selection of the implementation for the given symbol at the
-runtime, when the ELF module gets the final relocations applied.  The
-selection is governed by the small piece of user provided code,
-attached to the symbol, so called resolver function.  Ifuncs provide
-the very convenient way to select machine-specific implementation of
-the parts of the code, without ugliness and unsafety of the
-alternative approach, which is runtime patching.
+An ifunc is a special construct in an ELF object, which allows for
+the selection of the implementation for the given symbol at runtime,
+when the ELF module gets the final relocations applied.  The selection
+of which code to use is governed by the small piece of user provided
+code, attached to the symbol, the so called resolver function.
+Ifuncs provide the a convenient way to select between different
+machine-specific implementations of the parts of the code, without
+the ugliness and unsafety of the alternative approach, which is
+runtime patching.
 
 Ifuncs require support both from the static linker ld(1), and from the
 runtime linker for the corresponding execution environment.  On
 FreeBSD, with the switch from the ancient GPLv2 licensed BFD-based
 ld(1) to either in-tree LLD or external modern BFD ld, the use of
-ifuncs become possible.  Runtime linkers for i386, amd64, and arm64
-kernels, usermode dynamic linker ld-elf.so.1 on i386 and amd64, and
-static binaries startup code for i386 and amd64 currently support
-ifuncs.
+ifuncs become possible.  Runtime linkers for ifunc support exists for
+the following environments:
 
-ifunc were already applied for optimization of the following areas of
-amd64 kernel:
+  * i386, amd64, and arm64 kernels
+  * usermode dynamic linker ld-elf.so.1 on i386 and amd64
+  * static binaries startup code for i386 and amd64
+
+The use of ifuncs were previously applied for optimization of the
+following areas of the amd64 kernel:
 
 * context switching code, instead of huge number of runtime checks
   (PTI vs non-PTI, PCID or not, is INVPCID instruction supported for
@@ -912,7 +915,7 @@ amd64 kernel:
   this is also used on i386.
 
 For amd64 userspace, we currently use ifunc for optimization of the
-TLS base set and get arch-depended functions.
+architecture dependent TLS base set and get functions.
 
 Sponsor: The FreeBSD Foundation
 
