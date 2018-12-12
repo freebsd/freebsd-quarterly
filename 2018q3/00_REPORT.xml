@@ -4,7 +4,7 @@
   "http://www.FreeBSD.org/XML/share/xml/statusreport.dtd" >
 
 <!-- $FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/report-template.xml 51132 2017-10-19 01:38:11Z bjk $ -->
-
+<!-- This file was generated with https://github.com/trasz/md2docbook -->
 <!--
      Variables to replace:
      %%START%%     - report month start
@@ -150,52 +150,70 @@
     </links>
 
     <body>
-      <p>The FreeBSD Release Engineering Team is responsible for
-	setting
-	and publishing release schedules for official project
-	releases
-	of FreeBSD, announcing code freezes and maintaining the
-	respective branches, among other things.</p>
-
-      <p>The FreeBSD Release Engineering Team completed the
-	10.4-RELEASE,
-	led by Marius Strobl, early October. FreeBSD 10.4-RELEASE
-	is the
-	fifth release from the *stable/10* branch, which builds on
-	the
-	stability and reliability of 10.3-RELEASE.</p>
-
-      <p>The 11.2-RELEASE cycle started April 20 with the code
-	slush, and continued to
-	progress throughout the rest of the quarter with the code
-	freeze, followed by
-	three BETA builds and three RC builds, with the final
-	release build announced
-	June 27.</p>
-
-      <p>The FreeBSD Release Engineering Team started the
-	12.0-RELEASE cycle August 10,
-	beginning with the code slush. The code slush followed
-	August 24, with the</p>
+      <p>The FreeBSD Release Engineering Team responsibilities
+	include:</p>
 
       <ul>
-	<li>stable/12* branch expected to be created September 21.</li>
+	<li>setting and publishing release schedules for official
+	project releases</li>
+      </ul>
+
+      <p>of FreeBSD</p>
+
+      <ul>
+	<li>announcing code slushes, freezes, and thaws</li>
+
+	<li>maintaining the respective branches for all supported
+	releases</li>
       </ul>
 
       <p>
-	However, due to unforeseen circumstances related to
-	upstream code that was
-	deemed necessary to include in 12.0-RELEASE, the schedule
-	needed to be
-	adjusted several times to account for works-in-progress
-	related to the
-	upstream code to be compatible with other base system
-	utilities. At the end
-	of the quarter, the *stable/12* branch had not been
-	created due to this delay.</p>
+	The FreeBSD Release Engineering Team, led by Marius
+	Strobl,
+	completed the 10.4-RELEASE in early October 2017. FreeBSD
+	10.4-RELEASE was the
+	fifth release from the *stable/10* branch, which built on
+	the
+	stability and reliability of 10.3-RELEASE.</p>
 
-      <p>Throughout the remainder of the quarter, several
-	development snapshots builds
+      <p>The FreeBSD 11.2-RELEASE cycle started April 20, 2018 with
+	the
+	announcement of the code slush. The first stage progress
+	was
+	continued throughout the rest of the quarter with the code
+	freeze,
+	followed by three BETA builds, three RC builds, and the
+	final release
+	build was announced June 27, 2018.</p>
+
+      <p>The FreeBSD Release Engineering Team started the
+	12.0-RELEASE cycle
+	August 10, 2018 with the announcement of the code slush.
+	The code
+	freeze followed on August 24, 2018. The tentative date for
+	the</p>
+
+      <ul>
+	<li>stable/12* branch was expected to be September 21, 2018.</li>
+      </ul>
+
+      <p>
+	Due to unforeseen circumstances with upstream code that
+	was necessary
+	to include in 12.0-RELEASE, the tentative release schedule
+	needed
+	to be adjusted several times. The API changes in the
+	updated version
+	of the upstream code required changes to be made for all
+	base system
+	utilities that linked with the upstream code. By the end
+	of the
+	2018Q3 quarter, the *stable/12* branch had not been
+	created due to
+	this delay.</p>
+
+      <p>Throughout the remainder of 2018Q3, several development
+	snapshots builds
 	were released for the *head*, *stable/11*, and *stable/10*
 	branches.</p>
 
@@ -227,19 +245,19 @@
 
     <body>
       <p>During the first quarter of 2018, the number of ports grew
-	to almost 32,000. There
-	are currently 2,100 open PRs with less than 600
-	unassigned. There were
+	to almost 32,000.
+	In 2018Q1, there were
+	2,100 open PRs with fewer than 600 unassigned. There were
 	7,900 commits from 169 committers. Compared to last
 	quarter, the number
 	of commits grew by 18% and the number of PRs dropped by
 	25%. Those are
-	some good numbers.</p>
+	some good numbers!</p>
 
-      <p>During the following two quarters, the number of ports
+      <p>During the 2018Q2 and 2018Q3 quarters, the number of ports
 	grew to just under
 	34,000. The number of open PR grew to almost 2,500 with
-	less than 600
+	fewer than 600
 	of those unassigned. A total of 175 committers made almost
 	14,200 commits.
 	Compared to the first quarter, the number of commits
@@ -248,38 +266,69 @@
 
       <p>During the last three quarters, portmgr took twelve commit
 	bits in for
-	safekeeping: maho@, wxs@, vg@, tabthorpe@, pawel@,
-	junovitch@, kevlo@,
-	ian@, nemysis@, daichi@, deichen@, and rea@.</p>
+	safekeeping: daichi@, deichen@, ian@, junovitch@, kevlo@,
+	maho@, nemysis@,
+	pawel@, rea@, tabthorpe@, vg@, and wxs@.</p>
 
-      <p>On the other hand, we welcomed thirteen new committers:
-	Eric Turgeon (ericbsd@), Devin Teske
-	(dteske@), Matthias Fechner (mfechner@), Fernando
-	Apesteguía (fernape@),
-	Koichiro IWAO (meta@), Sean Chittenden (seanc@,
-	returning),
-	John Hixson (jhixson@), Kevin Bowling (kbowling@), Sergey
-	Kozlov
-	(skozlov@), Fukang Chen (loader@), Gleb Popov (arrowd@),
-	Mateusz Piotrowski (0mp@), and Jesper Schmitz Mouridsen
-	(jsm@).
-	itetcu@ and kevlo@ returned after a hiatus.</p>
+      <p>Portmgr welcomed thirteen new committers in 2018Q2 and
+	2018Q3:</p>
 
-      <p>During the last three quarters, antoine@ ran no less than
-	113 exp-runs
-	to test updates and to perform cleanups and improvements
-	to the framework and the
-	base system. Most of them
-	were for port upgrades, but others include LLD progress,
-	changing the
-	default port versions, improving support for armv6, armv7,
-	and RISC-V,
-	removing old base system functionality, new USES,
-	and better matching pkg-plist with
-	Makefile options (DOCS and
+      <ul>
+	<li>Devin Teske (dteske@)</li>
+
+	<li>Eric Turgeon (ericbsd@)</li>
+
+	<li>Fernando Apesteguía (fernape@)</li>
+
+	<li>Fukang Chen (loader@)</li>
+
+	<li>Gleb Popov (arrowd@)</li>
+
+	<li>Jesper Schmitz Mouridsen (jsm@)</li>
+
+	<li>John Hixson (jhixson@)</li>
+
+	<li>Kevin Bowling (kbowling@)</li>
+
+	<li>Koichiro IWAO (meta@)</li>
+
+	<li>Mateusz Piotrowski (0mp@)</li>
+
+	<li>Matthias Fechner (mfechner@)</li>
+
+	<li>Sergey Kozlov (skozlov@)</li>
+      </ul>
+
+      <p>
+	The following committers returned after a hiatus:</p>
+
+      <ul>
+	<li>Ion-Mihai Tetcu (itetcu@)</li>
+
+	<li>Kevin Lo (kevlo@)</li>
+
+	<li>Sean Chittenden (seanc@)</li>
+      </ul>
+
+      <p>
+	During the last three quarters, Antoine Brodin (antoine@)
+	ran no
+	fewer than 113 exp-runs against the ports tree. These runs
+	were
+	executed to test updates, perform cleanups, and make
+	improvements
+	to the framework and the base system. Most of the runs
+	were for
+	port upgrades, but others include LLD progress, changes to
+	the
+	default port versions, improved support for armv6, armv7,
+	and RISC-V
+	architectures, removed old base system functionality, new
+	USES, and
+	better matching pkg-plist with Makefile options (DOCS and
 	EXAMPLES).</p>
 
-      <p>Five new USES were introduced:</p>
+      <p>Five new USES values were introduced:</p>
 
       <ul>
 	<li>apache: handle dependencies on the Apache web server and
@@ -297,36 +346,38 @@
       </ul>
 
       <p>
-	EXTRA_PATCHES has been extended to support
-	directories, in which case it will automatically apply all
-	patch-\* files to the port. Ports using USES=php:phpize,
-	php:ext, php:zend, and
-	php:pecl are now flavored and packages will
-	automatically be built for all versions they support (5.6,
-	7.0, 7.1 or
-	7.2).</p>
+	The EXTRA_PATCHES functionality has been extended to
+	support
+	directories, where it will automatically apply all
+	patch-\* files to the port.</p>
 
-      <p>Last quarter again saw some updates of major ports: pkg
-	1.10.5, Chromium
-	65.0.3325.181, Firefox 59.0.2 and Firefox-ESR 52.7.3, Ruby
+      <p>Ports using USES=php:phpize, php:ext, php:zend, and
+	php:pecl have
+	been flavored and packages are now automatically be built
+	for all
+	versions of PHP that are supported (5.6, 7.0, 7.1 or 7.2).</p>
+
+      <p>2018Q3 had updates of major ports: pkg 1.10.5, Chromium
+	65.0.3325.181, Firefox 59.0.2, Firefox-ESR 52.7.3, Ruby
 	2.3.7/2.5.1
 	and Qt5 5.9.4.
 	The default version of PHP was changed from 5.6 to 7.1.
 	The former
-	version is no longer supported by the developers.
-	Furthermore, the
+	version of PHP is no longer supported by the developers.
+	The
 	default versions of Samba and GCC are now respectively 4.7
 	and 7. The
 	Xorg ports have been reorganized and there have been
 	changes to
-	net/openntpd, please read UPDATING if relevant.</p>
+	net/openntpd. Please review the UPDATING file for relevant
+	details.</p>
 
       <p>Open tasks:</p>
 
       <ul>
 	<li>The number of commits dropped somewhat over the last three
 	quarters,
-	leaving more PRs unresolved. If you can, please pick up
+	leaving more PRs unresolved. If possible, please pick up
 	some PRs
 	and improve everyone's experience.</li>
       </ul>
@@ -349,34 +400,43 @@
 
     <body>
       <p>Much of Core's focus for the past months has been on three
-	items.</p>
+	items:</p>
 
-      <p>1. We have been coordinating between different groups to
-	support the upcoming 12.0 release. For example,
-	the timing of the OpenSSL 1.1.1 release has posed
-	challenges. The new OpenSSL version includes API
-	changes, so many components of the base system and
-	ports require changes. Staying with the older
-	OpenSSL in 12.0 in not a feasible option, because
-	it would mean backporting many changes to a
-	version of OpenSSL that will soon be unsupported.</p>
+      <p>1. Coordination between different groups to support the
+	upcoming 12.0 release. The timing of the OpenSSL
+	1.1.1 release posed challenges, the new OpenSSL
+	version included API changes, many components of
+	the base system and ports required changes.
+	Staying with the older OpenSSL in 12.0 was not a
+	feasible option, because it would have meant
+	backporting many changes to a version of OpenSSL
+	that would be unmaintained by the upstream source.</p>
 
-      <p>2. We have begun discussions with the release engineering
-	team and Scott Long about updating our release
-	process. Topics we are exploring include having
-	more frequent point releases, changing the support
-	model, and revising and improving the tooling used
-	to manage the tree and releases. More to come.</p>
+      <p>2. Discussions with the release engineering team and Scott
+	Long about updating the FreeBSD release process.
+	Topics for exploration include:</p>
 
-      <p>3. We are working to gather information to make more
-	data-driven decisions. For example, we are
-	planning developer and user surveys. If you have
-	questions that you think should be added to the
-	survey, please discuss them on freebsd-arch@. We
-	are exploring ways for automated user-driven
-	hardware usage data to understand the changing
-	ways our software is used and to target better
-	hardware support.</p>
+      <ul>
+	<li>having more frequent point releases</li>
+
+	<li>changing the support model</li>
+
+	<li>revising and improving the tooling used to manage the tree
+	and releases</li>
+
+	<li>additional topics as they are discovered</li>
+      </ul>
+
+      <p>
+	3. Gathering information to make decisions more
+	data-driven. For example, we are planning
+	developer and user surveys. If there are questions
+	that you think should be added to the survey,
+	please discuss them on freebsd-arch@. We are
+	exploring ways for automated user-driven hardware
+	usage data to understand the changing ways our
+	software is used and to target better hardware
+	support.</p>
 
       <p>Here are other noteworthy events (in chronological order)
 	since the last quarterly report.</p>
@@ -384,9 +444,9 @@
       <p>2017 Q4</p>
 
       <ul>
-	<li>Sean Eric Fagan's (sef) commit bit was reactivated with a
+	<li>Sean Eric Fagan's (sef@) commit bit was reactivated with a
 	period of re-mentoring under Alexander Motin
-	(mav).</li>
+	(mav@).</li>
 
 	<li>The MIPS architecture was promoted to tier 2 status.</li>
 
@@ -398,7 +458,7 @@
 	<li>Core approved the adoption of a policy requiring any
 	license exceptions to be recorded alongside code.</li>
 
-	<li>Gordon Tetlow (gordon) became the new security officer.</li>
+	<li>Gordon Tetlow (gordon@) became the new security officer.</li>
 
 	<li>Core approved the use of SPDX tags.</li>
       </ul>
@@ -407,75 +467,76 @@
 	2018 Q1</p>
 
       <ul>
-	<li>Jeb Cramer (jeb) was awarded a src commit bit under the
-	mentorship of Sean Bruno (sbruno) and Eric Joyner
-	(erj).</li>
+	<li>Jeb Cramer (jeb@) was awarded a src commit bit under the
+	mentorship of Sean Bruno (sbruno@) and Eric Joyner
+	(erj@).</li>
 
 	<li>Members of the CoC Review Team were approved. The
 	membership is to be reviewed once per year.</li>
 
 	<li>A vendor commit bit was awarded to Slava Shwartsman
-	(slavash) of Mellanox Technologies under the
-	mentorship of Konstantin Belousov (kib) and Hans
-	Petter Selasky (hselasky).</li>
+	(slavash@) of Mellanox Technologies under the
+	mentorship of Konstantin Belousov (kib@) and Hans
+	Petter Selasky (hselasky@).</li>
 
 	<li>Walter Schwarzenfeld was awarded project membership.</li>
 
-	<li>Brad Davis (brd) was awarded a src commit bit under the
-	mentorship of Allan Jude (allanjude) with Baptiste
-	Daroussin (bapt) as co-mentor.</li>
+	<li>Brad Davis (brd@) was awarded a src commit bit under the
+	mentorship of Allan Jude (allanjude@) with
+	Baptiste Daroussin (bapt@) as co-mentor.</li>
 
-	<li>Vincenzo Maffione (vmaffione) was awarded a src commit bit
-	under the mentorship of Hiroki Sato (hrs).</li>
+	<li>Vincenzo Maffione (vmaffione@) was awarded a src commit
+	bit under the mentorship of Hiroki Sato (hrs@).</li>
 
-	<li>Ram Kishore Vegesna (ram) was awarded a src commit bit
-	under the mentorship of Kenneth D. Merry (ken) and
-	Alexander Motin (mav).</li>
+	<li>Ram Kishore Vegesna (ram@) was awarded a src commit bit
+	under the mentorship of Kenneth D. Merry (ken@)
+	and Alexander Motin (mav@).</li>
       </ul>
 
       <p>
 	2018 Q2</p>
 
       <ul>
-	<li>Tom Jones (thj) was awarded a src commit bit under the
-	mentorship of Jonathan T. Looney (jtl).</li>
+	<li>Tom Jones (thj@) was awarded a src commit bit under the
+	mentorship of Jonathan T. Looney (jtl@).</li>
 
-	<li>Matt Macy's (mmacy) commit bit was restored under the
-	mentorship of Sean Bruno (sbruno).</li>
+	<li>Matt Macy's (mmacy@) commit bit was restored under the
+	mentorship of Sean Bruno (sbruno@).</li>
 
-	<li>Breno Leitao (leitao) was awarded a src commit bit under
-	the mentorship of Justin Hibbits (jhibbits) with
-	Nathan Whitehorn (nwhitehorn) as co-mentor.</li>
+	<li>Breno Leitao (leitao@) was awarded a src commit bit under
+	the mentorship of Justin Hibbits (jhibbits@) with
+	Nathan Whitehorn (nwhitehorn@) as co-mentor.</li>
 
-	<li>Leandro Lupori (luporl) was awarded a src commit bit under
-	the mentorship of Justin Hibbits (jhibbits) with
-	Nathan Whitehorn (nwhitehorn) as co-mentor.</li>
+	<li>Leandro Lupori (luporl@) was awarded a src commit bit
+	under the mentorship of Justin Hibbits (jhibbits@)
+	with Nathan Whitehorn (nwhitehorn@) as co-mentor.</li>
 
 	<li>The handover from the ninth to the tenth elected Core team
-	took place. The new Core members are: Allan Jude
-	(allanjude), Benedict Reuschling (bcr), Brooks
-	Davis (brooks), Hiroki Sato (hrs), Warner Losh
-	(imp), Jeff Roberson (jeff), John Baldwin (jhb),
-	Kris Moore (kmoore), and Sean Chittenden (seanc).</li>
+	took place. The tenth Core members are: Allan Jude
+	(allanjude@), Benedict Reuschling (bcr@), Brooks
+	Davis (brooks@), Hiroki Sato (hrs@), Warner Losh
+	(imp@), Jeff Roberson (jeff@), John Baldwin
+	(jhb@), Kris Moore (kmoore@), and Sean Chittenden
+	(seanc@).</li>
 
-	<li>Joseph Mingrone (jrm) was appointed the Core secretary
+	<li>Joseph Mingrone (jrm@) was appointed the Core secretary
 	under mentorship of the retiring Core secretary,
-	Matthew Seaman (matthew).</li>
+	Matthew Seaman (matthew@).</li>
 
 	<li>The new team liaisons were decided. portmgr: Sean, doceng:
 	Hiroki, secteam: Brooks, re: John, clusteradm:
 	Allan, CoC: Warner, Foundation: Benedict,
 	bugmeister: John, CI: Sean.</li>
 
-	<li>David Maxwell (dwm) was awarded project membership.</li>
+	<li>David Maxwell (dwm@) was awarded project membership.</li>
 
-	<li>Daichi Goto's (daichi) commit bit was reactivated with a
+	<li>Daichi Goto's (daichi@) commit bit was reactivated with a
 	period of re-mentoring under George Neville-Neil
-	(gnn).</li>
+	(gnn@).</li>
 
-	<li>A vendor commit bit was awarded to Ben Widawsky (bwidawsk)
-	of Intel under the mentorship of Ed Maste
-	(emaste).</li>
+	<li>A vendor commit bit was awarded to Ben Widawsky
+	(bwidawsk@) of Intel under the mentorship of Ed
+	Maste (emaste@).</li>
       </ul>
 
       <p>
@@ -485,14 +546,14 @@
 	<li>Core decided to begin meeting twice per month in an
 	attempt to catch up with many new agenda items.</li>
 
-	<li>Li-Wen Hsu (lwhsu) was awarded a src commit bit under the
-	mentorship of Mark Johnston (markj) with Ed Maste
-	(emaste) as co-mentor.</li>
+	<li>Li-Wen Hsu (lwhsu@) was awarded a src commit bit under the
+	mentorship of Mark Johnston (markj@) with Ed Maste
+	(emaste@) as co-mentor.</li>
 
 	<li>Samy al Bahra was awarded project membership.</li>
 
-	<li>George Neville-Neil (gnn) was approved to begin
-	co-mentoring Vincenzo Maffione (vmaffione).</li>
+	<li>George Neville-Neil (gnn@) was approved to begin
+	co-mentoring Vincenzo Maffione (vmaffione@).</li>
       </ul>
 
       <p></p>
@@ -532,12 +593,12 @@
 	legal arrangements that require a recognized legal
 	entity.</p>
 
-      <p>Here are some highlights of what we did to help FreeBSD
-	last quarter:</p>
+      <p>Here are some highlights of what the FreeBSD Foundation
+	did to help FreeBSD last quarter:</p>
 
       <p>Partnerships and Commercial User Support</p>
 
-      <p>As a 501(c)(3) non-profit, we don’t directly support
+      <p>As a 501(c)(3) non-profit, we don't directly support
 	commercial users, but we do work with them to
 	understand their needs and help facilitate
 	collaboration with the community. Last quarter we
@@ -600,9 +661,9 @@
       <p>OS Improvements</p>
 
       <p>The Foundation improves the FreeBSD operating system by
-	employing our technical staff to maintain and
-	improve critical kernel subsystems, add features
-	and functionality, and fix problems. This also
+	employing technical staff to maintain and improve
+	critical kernel subsystems, add features and
+	functionality, and fix problems. This also
 	includes funding separate project grants like the
 	arm64 port, porting the blacklistd access control
 	daemon, and the integration of VIMAGE support, to
@@ -625,7 +686,7 @@
       <p>
 	Having software developers on staff has allowed us to jump
 	in and work directly on projects to improve
-	FreeBSD like:</p>
+	FreeBSD such as:</p>
 
       <ul>
 	<li>ZFS improvements</li>
@@ -909,68 +970,92 @@
     </contact>
 
     <body>
-      <p>Most 32-bit FreeBSD architectures, including i386, starts
-	to suffer from
-	the growth of software during the recent decade.
-	When a 32-bit address space is enough, 32-bit mode still
-	has an advantage over the 64-bit one, due to the smaller
-	memory traffic and more economical use of caches, but it
-	is harder to
-	provide the self-hosting i386 system build.</p>
+      <p>Most 32-bit FreeBSD architectures, including i386, started
+	to suffer
+	from the rapid growth of the size of software during the
+	past decade.
+	When a 32-bit address space is enough space for a given
+	task, 32-bit
+	mode still has an intrinsic advantage over 64-bit mode,
+	due to less
+	memory traffic and more economical use of caches. It has
+	grown
+	harder to provide the self-hosting i386 system build due
+	to the
+	increase in size of the build tools.</p>
 
-      <p>Our i386 kernel so far split the 4GB address space of the
-	platform into
-	3GB (minus 4MB) accessible to userspace, and 1GB for
-	kernel itself. In
-	other words, neither kernel nor userspace could access a
-	full 4GB. Programs
-	such as clang and lld require very large virtual address
-	spaces for
-	linking and 3GB is not enough for them. The kernel has
-	trouble fitting into
-	the 1GB limitation with the modern sizing for network
-	buffers, ZFS and
-	other KVA-hungry in-kernel code.</p>
+      <p>The FreeBSD i386 kernel, prior to the 12.0-RELEASE
+	version, split
+	the 4GB address space of the platform into 3GB (minus 4MB)
+	accessible
+	to userspace accesses and 1GB for kernel accesses.
+	Neither kernel nor userspace could access a full 4GB
+	address space.
+	Programs that require very large virtual address spaces,
+	such as
+	clang when compiling or lld when linking, could run out of
+	address
+	space: 3GB of address space was insufficient for their
+	operation.
+	The kernel also had trouble fitting into the traditional
+	1GB
+	limitation of address space with the modern sizing for
+	network
+	buffers, ZFS and other KVA-hungry in-kernel subsystems.</p>
 
-      <p>In FreeBSD 12, i386 now provides dedicated address spaces
-	for
-	userspace and kernel, giving each mode full 4GB (minus
-	8MB) of usable
-	addresses. The userspace on i386 now has access to the
-	same amount of address space as
-	compat32 on amd64 kernel, and there is much more breathing
-	space for
-	the kernel itself.</p>
+      <p>In FreeBSD 12, the i386 architecture has been changed to
+	provide
+	dedicated separate address spaces for userspace and
+	kernel, giving
+	each mode full access to 4GB (minus 8MB) of usable address
+	space.
+	The userspace on the i386 architecture now has access to
+	the same
+	amount of address space as the compat32 subsystem in the
+	amd64
+	architecture kernel. The increase in kernel address space
+	enables
+	further growth and maintainability of the i386
+	architecture.</p>
 
-      <p>We use two page director entries (PDEs) shared between
-	modes, one for mapping the page table,
+      <p>The split 4GB/4GB user/kernel implementation uses two page
+	directory
+	entries (PDEs) shared between modes: one for mapping the
+	page table,
 	another for the mode switching trampoline and other
 	required system
-	tables, such as GDT/IDT/TSS, which must be mapped always.
-	Significant
-	change was required for the locore code, of which the page
-	table creation part
-	was completely rewritten in C (from assembly), improving
-	readability.</p>
+	tables. The required system tables, which must always be
+	mapped,
+	regardless of kernel or user mode, includes such things as
+	the
+	GDT/IDT/TSS entries. Significant changes were made to the
+	locore
+	code. The page table creation portion of the code was
+	completely
+	rewritten from assembly to C, improving readability and
+	maintainability
+	of the code.</p>
 
-      <p>Because user address space is no longer shared with the
-	kernel,
-	the copyout(9) functions needed to be rewritten to make
+      <p>Because the user address space is no longer shared with
+	the kernel,
+	the copyout(9) functions were rewritten to make a
 	transient mapping
-	of userspace pages for duration of accesses. Initial
-	implementation
-	used the vm_fault_quick_hold_pages() framework, but was
-	later optimized
-	for faster small block copying by hand-written assembler
-	routines
-	which temporary switched to user mode mappings from a
-	trampoline.</p>
+	of userspace pages for the duration of any needed
+	accesses. The initial
+	implementation used the vm_fault_quick_hold_pages()
+	framework, but
+	this was later optimized by temporarily switching to user
+	mode
+	mappings from a trampoline, and then using hand-written
+	assembler
+	routines to perform a faster small block copy operation.</p>
 
-      <p>Future plans for maintenance of i386 include making the
-	i386 pmap capable
-	of runtime selection of the PAE or non-PAE page table
-	format and bringing NX
-	mappings for regular i386 kernel.</p>
+      <p>Future plans for the ongoing maintenance of i386 include
+	making the i386 pmap
+	capable of runtime selection of the PAE or non-PAE page
+	table format
+	and supporting NX (no execute) mappings for regular i386
+	kernel.</p>
 
       <p></p>
 
@@ -1011,23 +1096,21 @@
 	include the
 	creation of dlog, an in-kernel DTrace consumer which is
 	able to
-	publish to Kafka. In addition to that, early boot tracing
-	and tracing
-	on shutdown was improved upon. On the virtualisation
-	front,
+	publish to Kafka, and improvements to early boot and
+	shutdown tracing.
+	On the virtualisation front,
 	improvements were made in the ability to dereference and
 	follow
 	pointers inside guests from the host in the probe context
 	by
 	implementing a nested page table walk inside DTrace for
 	Intel
-	architectures. Moreover, the CADETS project has started
-	formalising
+	architectures. The CADETS project has started formalizing
 	DTrace in HOL4 which enables automated test generation,
 	high assurance
 	of DTrace implementations in terms of adherence to the
 	specification
-	and exploration of all allowable behaviours for a given D
+	and exploration of all allowable behaviors for a given D
 	script. Currently, the formal model contains most of DIF
 	instructions
 	and a code generator for them, providing the ability to
@@ -1114,66 +1197,74 @@
     </contact>
 
     <body>
-      <p>NV-DIMM is the technology which provides non-volatile
-	memory with the
-	access parameters similar to the regular DRAM, in the
-	normal memory
-	address space of the host. ACPI and UEFI specifications
-	define
-	platform-independed way to detect and enumerate presence
-	of NVDIMM and
-	get most of the data needed for correct applications use
-	of it.</p>
+      <p>NVDIMM is a technology which provides non-volatile memory
+	with
+	access characteristics similar to regular DRAM, which is
+	the
+	technology that implements the normal memory address space
+	of a host.
+	There are ACPI and UEFI specifications that define
+	platform independent
+	ways to detect and enumerate the presence of NVDIMMs.
+	These
+	specifications allow the retrieval of most of the data
+	needed to
+	allow proper application use of the NVDIMM storage.</p>
 
-      <p>FreeBSD driver parses the ACPI NFIT table which lists
-	NV-DIMMs, their
-	operational characteristics, and physical address spaces
-	where the
-	NVDIMM memory is accessible. Driver presents each address
-	region as
-	two devices, one allows userspace to open(2) devfs node,
-	which can be
-	read/written/mapped from the application, the mapping is
-	zero-copy.
-	Another device is actually geom disk(9), which makes it
-	possible to
-	use NVDIMM for normal FreeBSD filesystem, like
-	UFS/ZFS/msdosfs. Note
-	that buffer cache/mapping of files from a filesystem
-	created over
-	NVDIMM causes unneeded double-buffering.</p>
+      <p>A new FreeBSD driver parses the ACPI NFIT table which
+	lists NVDIMMs,
+	their operational characteristics, and the physical
+	address space
+	where the NVDIMM memory is accessible. The driver presents
+	each
+	address region as two devices: One device allows userspace
+	to
+	open(2) a devfs node, which can be read/written/mapped
+	from the
+	application. This mapping is zero-copy. The second device
+	is a
+	geom disk(9), which makes it possible to use NVDIMM for
+	the backing
+	storage for a normal FreeBSD filesystem, such as UFS, ZFS,
+	or msdosfs.
+	Note that buffer cache/mapping of files from a traditional
+	filesystem
+	created over NVDIMM causes an unneeded double-buffering.</p>
 
-      <p>Apparently, on typical modern hardware, NVDIMM regions are
-	located far
-	from the regular memory in the address space, and have
-	attributes not
-	compatible with the regular DRAM. This makes it unfeasible
-	to extend
-	the direct map to provide kernel mappings. New pmap KPI
-	was designed,
-	pmap_large_map(9), which allows efficient mapping of very
-	large
-	physical regions into KVA. Also it have some optimizations
-	to the
-	cache flush over the mapped regions, needed to efficiently
-	support bio
-	flushes from the filesystems. NVDIMM driver uses the KPI,
-	it might be
-	also useful for the NTB driver.</p>
+      <p>Empirically, on typical modern hardware, NVDIMM regions
+	are located
+	far from the regular DRAM backed memory in the address
+	space, and
+	have attributes that are not compatible with regular DRAM
+	memory.
+	This makes it unfeasible to extend the kernel's direct map
+	to provide
+	the kernel mappings for the NVDIMM regions.
+	A new pmap KPI was designed, pmap_large_map(9),
+	which allows efficient mapping of very large physical
+	regions into
+	the KVA. The new code has some optimizations to the cache
+	flushing
+	operations over the mapped regions, which is needed to
+	efficiently
+	support bio flushes from a filesystems using the NVDIMM
+	storage.
+	The NVDIMM driver is the first user of the new KPI,
+	but the new KPI might also be useful for the NTB driver.</p>
 
       <p>
 	TODO:</p>
 
       <ul>
-	<li>Intel currently works on extending the driver with the
-	support for
+	<li>Intel is currently working on extending the driver to
+	support
 	UEFI namespaces.</li>
       </ul>
 
       <p></p>
 
       <ul>
-	<li>DAX-capable filesystem is needed, which solves the issue
+	<li>A DAX-capable filesystem is needed, which solves the issue
 	of
 	double-buffering. Our tmpfs already provides VM facilities
 	which
@@ -1203,37 +1294,50 @@
     </contact>
 
     <body>
-      <p>Support for SMAP, which stands for supervisor-mode access
-	prevention,
-	was added to amd64 kernels. SMAP makes faulting any access
+      <p>Support for SMAP (Supervisor-Mode Access Prevention), has
+	been added
+	to the amd64 kernel. The SMAP feature makes any access
 	from the
-	supervisor mode to the pages accessible to user mode,
-	unless the
-	%eflags.AC bit is set.</p>
+	supervisor mode to the pages accessible to user mode cause
+	a fault,
+	unless the %eflags.AC bit is set at the time of the
+	access.</p>
 
-      <p>SMAP implementation uses the ifunc framework to avoid
-	checking for the
-	SMAP capability of hardware on each call for the
-	copyout(9) and other
-	functions.</p>
+      <p>The SMAP implementation uses the ifunc framework to avoid
+	checking
+	for the SMAP capability of hardware on each call to
+	copyout(9) and
+	other functions.</p>
 
-      <p>On amd64, we have the common address space between kernel
-	and user.
-	Enabling SMAP virtually splits the it into two disjoint
-	address
-	spaces, providing relatively low-overhead way of catching
-	direct
-	accesses from kernel to usermode, without using the
-	copyout(9) family
-	of functions.</p>
+      <p>In the amd64 architecture, FreeBSD has a common address
+	space between
+	the kernel space and user space. Enabling SMAP virtually
+	splits
+	the shared address space into two disjoint address spaces,
+	which
+	have different access criteria. This splitting of the
+	address space
+	provides a relatively low-overhead way of catching direct
+	accesses
+	from kernel to usermode, when not using the copyout(9)
+	family of
+	functions. The copyout(9) family of functions are
+	permitted direct
+	access to user space. Any direct access from kernel mode
+	to user
+	address space that isn't performed through the copyout(9)
+	family
+	of functions indicates a potential programming error.</p>
 
-      <p>It is interesting that not much bugs were found in our
-	kernel after
-	the SMAP was enabled. One issue existed in the pci(9) user
-	driver.
-	On the other hand, at least two ports, VBox and acpi_call,
-	appeared to
-	access userspace in unsafe manner.</p>
+      <p>It is interesting that very few bugs were found in the
+	FreeBSD
+	kernel after the SMAP feature was enabled. One issue that
+	was
+	identified existed in the pci(9) user driver. Enabling the
+	SMAP
+	feature identified at least two ports, VBox and acpi_call,
+	which
+	appeared to access userspace in an unsafe manner.</p>
 
       <p></p>
 
@@ -1357,10 +1461,10 @@
 	used to make these functions
 	faster. They can't easily be used in the kernel: SIMD
 	registers are not saved on
-	transitions user&amp;lt;-&amp;gt;kernel for performance
-	reasons. Thus any use would have to
+	transitions user&lt;-&gt;kernel for performance reasons.
+	Thus any use would have to
 	take care of saving these registers, which can consume any
-	win from using them in
+	advantage from using them in
 	the first place. This is not a concern for userspace code.</p>
 
       <p>There is a BSD-licensed implementation in bionic:
@@ -1431,8 +1535,8 @@
 	commands
 	are processed. This is a correctness improvement (`ioctl`
 	commands
-	have not meaning outside the specific file descriptor in
-	question)
+	do not have meaning outside the specific file descriptor
+	in question)
 	and improves code reusability (my out-of-tree work will
 	soon include
 	a 64-bit compatibility layer.)</li>
@@ -1510,14 +1614,24 @@
     </links>
 
     <body>
-      <p>The Save/Restore for bhyve feature is a suspend and resume
-	facility added to the
-	FreeBSD/amd64's hypervisor, bhyve. The bhyvectl tool is
-	used to save the guest
-	state in three files (a file for the guest memory, a file
-	for devices' and CPU's
-	state and another one for some metadata that are used in
-	the restore process).
+      <p>The Save/Restore feature is a facility to suspend and
+	resume guest
+	virtual images that has been added to the FreeBSD/amd64's
+	hypervisor,
+	bhyve. The bhyvectl tool is used to save the guest virtual
+	machine
+	into three files:</p>
+
+      <ul>
+	<li>a file for the guest memory</li>
+
+	<li>a file for state of each device / CPU state</li>
+
+	<li>a file that has metadata that is used in the restore
+	process</li>
+      </ul>
+
+      <p>
 	To suspend a bhyve guest, the bhyvectl tool must be run
 	with the `--suspend &lt;state_file_name&gt;`
 	option followed by the guest name.</p>
@@ -1528,10 +1642,10 @@
 	given to the `--suspend`
 	option for bhyvectl) when starting the VM.</p>
 
-      <p>The Migration feature uses the Save/Restore feature to
-	migrate a bhyve guest
-	from a FreeBSD host to another FreeBSD host. To migrate a
-	bhyve guest,
+      <p>The Migration feature uses the Save/Restore implementation
+	to migrate a bhyve guest
+	from one FreeBSD host to another FreeBSD host. To migrate
+	a bhyve guest,
 	one needs to start an empty guest on the destination host
 	from a shared guest
 	image using the bhyve tool with the `-R` option followed
@@ -1547,22 +1661,22 @@
 
       <ul>
 	<li>Create the socket connection between source and
-	destination hosts;</li>
+	destination hosts</li>
 
-	<li>Migrate the guest state via sockets;</li>
+	<li>Migrate the guest state via sockets</li>
 
 	<li>Separate the suspend/resume/migration code from the
 	bhyverun.c and bhyvectl.c and added two new files
-	for them: migration.c and migration.h;</li>
+	for them: migration.c and migration.h</li>
 
-	<li>Added save/restore state for xhci;</li>
+	<li>Added save/restore state for xhci</li>
 
-	<li>Added save/restore state for fbuf;</li>
+	<li>Added save/restore state for fbuf</li>
 
-	<li>Fix vhpet restore state issues (timers related);</li>
+	<li>Fix vhpet restore state issues (timers related)</li>
 
 	<li>Add partially support for suspending and resuming a Linux
-	guest;</li>
+	guest</li>
       </ul>
 
       <p></p>
@@ -1571,25 +1685,25 @@
 
       <ul>
 	<li>Check if live migration can be implemented using the
-	FreeBSD's Copy-on-Write mechanism;</li>
+	FreeBSD's Copy-on-Write mechanism</li>
 
-	<li>Add live migration support by using EPT (Intel);</li>
+	<li>Add live migration support by using EPT (Intel)</li>
 
-	<li>Add live migration support by using NPT (AMD);</li>
+	<li>Add live migration support by using NPT (AMD)</li>
 
-	<li>Add suspend/resume support for nvme;</li>
+	<li>Add suspend/resume support for nvme</li>
 
-	<li>Add suspend/resume support for virtio-console;</li>
+	<li>Add suspend/resume support for virtio-console</li>
 
-	<li>Add suspend/resume support for virtio-scsi;</li>
+	<li>Add suspend/resume support for virtio-scsi</li>
 
-	<li>Fix restore timers issues;</li>
+	<li>Fix restore timers issues</li>
 
-	<li>Fix suspending bhyve - threads issues;</li>
+	<li>Fix suspending bhyve - threads issues</li>
 
-	<li>Fix suspending bhyve - mutexes issues;</li>
+	<li>Fix suspending bhyve - mutexes issues</li>
 
-	<li>Add suspend/resume support for Windows guests.</li>
+	<li>Add suspend/resume support for Windows guests</li>
       </ul>
 
       <p></p>
@@ -1626,8 +1740,8 @@
 	However, most free
 	CI tools only allow building on Linux or macOS and
 	therefore can not be used
-	for building the FreeBSD base system. Furthermore, it is
-	sometimes useful to
+	for building the FreeBSD base system. It is sometimes
+	useful to
 	cross-build FreeBSD for a remote machine or an emulator
 	even if the build
 	machine is not running FreeBSD.
@@ -1641,7 +1755,7 @@
 	compile it since they did
 	not have a FreeBSD system available for compiling.
 	Once completed this project will also allow developers to
-	contribute to on FreeBSD
+	contribute to FreeBSD
 	even if they don't have access to a FreeBSD build system.</p>
 
       <p>The current set of patches for this project can be found
@@ -1650,15 +1764,16 @@
 	href="https://github.com/arichardson/freebsd/tree/crossbuild-aug2018">GitHub</a>.
 	With the current prototype it is possible to compile both
 	world and kernel for
-	architectures that use clang and for MIPS64. However, some
-	options such as LOCALES are
+	architectures that use the clang compiler and for MIPS64,
+	which uses gcc. However, some options such as
+	LOCALES are
 	not supported yet and require further changes before the
 	bootstrap tools can be built
 	on Linux/macOS.</p>
 
       <p>Some changes required for building on non-FreeBSD have
 	already been merged to
-	HEAD but there is still a rather large amount of changes
+	HEAD but there are still a rather large number of changes
 	that need review.</p>
 
       <p>If you are interested in getting this into HEAD and would
@@ -1695,8 +1810,8 @@
 	depending on the instance type on which it is
 	used.</p>
 
-      <p>Since last report, the ENA v0.8.0 and v0.8.1 were
-	released, which introduced
+      <p>Since last report, ENA versions v0.8.0 and v0.8.1 have
+	been released, which introduced
 	many bug fixes, new features, optimization, stability and
 	error recovery
 	improvements. The last is especially important on the AWS,
@@ -1716,10 +1831,10 @@
 	device, which can
 	perform the reset adequately to the encountered error.</li>
 
-	<li>The device statistics (like global Tx and Rx) are not read
-	from the device,
-	anymore. The only exception are Rx drops, which are read
-	using the AENQ
+	<li>Device statistics (like global Tx and Rx counters) are no
+	longer read directly from the device.
+	The only exception is Rx drops, which are still read using
+	the AENQ
 	descriptor.</li>
 
 	<li>The RX Out Of Order completion feature was added, which
@@ -1733,8 +1848,8 @@
 	<li>Error handling paths were reworked and fixed.</li>
 
 	<li>Driver was covered with branch prediction statements, to
-	use the most of this
-	CPU feature in the hot paths.</li>
+	make the most
+	of this CPU feature in the hot paths.</li>
 
 	<li>Fix handling of the DF flag in the IP packets.</li>
 
@@ -1743,7 +1858,7 @@
 
 	<li>MTU configuration now is being verified using the device
 	capabilities instead
-	of constant value.</li>
+	of a constant value.</li>
 
 	<li>Do not pass packet header length hint to the device,
 	because for the chained
@@ -1790,8 +1905,8 @@
 	applications, and Wayland with related libraries and
 	applications.</p>
 
-      <p>There has been a lot of changes since the last report. The
-	most important one
+      <p>There have been a lot of changes since the last report.
+	The most important one
 	is the change of driver distribution and updates. On
 	FreeBSD 11.2 and later
 	modern graphics drivers using the Linux KPI subsystem are
@@ -1826,8 +1941,8 @@
 	exp-runs for these
 	changes.</p>
 
-      <p>There have also been updates to applications and libraries
-	as needed.</p>
+      <p>There have been updates to applications and libraries as
+	needed.</p>
 
       <p>On the project management side, there is ongoing work to
 	set up a more efficient
@@ -1837,9 +1952,9 @@
 	be posted on the
 	mailing list.</p>
 
-      <p>Looking forward, the current major works in progress is to
+      <p>Looking forward, the current major work in progress is to
 	update the graphics
-	driver to be on pair with Linux 4.17. The code is merged,
+	driver to be on par with Linux 4.17. The code is merged,
 	but patching and bug
 	fixing is ongoing.</p>
 
@@ -1848,7 +1963,7 @@
 	and to the Linux KPI, to get better graphics support in
 	VMware.</p>
 
-      <p>Lastly on the driver side is to get the new graphics
+      <p>Lastly, on the driver side is to get the new graphics
 	drivers to work on i386 as
 	well. Experimental support for this exists in the code
 	repository, but is not
@@ -1908,21 +2023,23 @@
     </contact>
 
     <body>
-      <p>Ifunc is a special construct in the ELF infrastructure,
-	which allows
+      <p>An ifunc is a special construct in an ELF object, which
+	allows for
 	the selection of the implementation for the given symbol
-	at the
-	runtime, when the ELF module gets the final relocations
-	applied. The
-	selection is governed by the small piece of user provided
-	code,
-	attached to the symbol, so called resolver function.
-	Ifuncs provide
-	the very convenient way to select machine-specific
-	implementation of
-	the parts of the code, without ugliness and unsafety of
-	the
-	alternative approach, which is runtime patching.</p>
+	at runtime,
+	when the ELF module gets the final relocations applied.
+	The selection
+	of which code to use is governed by the small piece of
+	user provided
+	code, attached to the symbol, the so called resolver
+	function.
+	Ifuncs provide a convenient way to select between
+	different
+	machine-specific implementations of the parts of the code,
+	without
+	the ugliness and unsafety of the alternative approach,
+	which is
+	runtime patching.</p>
 
       <p>Ifuncs require support both from the static linker ld(1),
 	and from the
@@ -1932,17 +2049,22 @@
 	BFD-based
 	ld(1) to either in-tree LLD or external modern BFD ld, the
 	use of
-	ifuncs become possible. Runtime linkers for i386, amd64,
-	and arm64
-	kernels, usermode dynamic linker ld-elf.so.1 on i386 and
-	amd64, and
-	static binaries startup code for i386 and amd64 currently
-	support
-	ifuncs.</p>
+	ifuncs become possible. Runtime linkers for ifunc support
+	exists for
+	the following environments:</p>
 
-      <p>ifunc were already applied for optimization of the
-	following areas of
-	amd64 kernel:</p>
+      <ul>
+	<li>i386, amd64, and arm64 kernels</li>
+
+	<li>usermode dynamic linker ld-elf.so.1 on i386 and amd64</li>
+
+	<li>static binaries startup code for i386 and amd64</li>
+      </ul>
+
+      <p>
+	The use of ifuncs were previously applied for optimization
+	of the
+	following areas of the amd64 kernel:</p>
 
       <ul>
 	<li>context switching code, instead of huge number of runtime
@@ -1979,7 +2101,7 @@
       <p>
 	For amd64 userspace, we currently use ifunc for
 	optimization of the
-	TLS base set and get arch-depended functions.</p>
+	architecture dependent TLS base set and get functions.</p>
 
       <p></p>
 
@@ -2082,15 +2204,13 @@
 	mainly to
 	detect unitialized pointers. There is also a simple W^X
 	paging
-	requests detection available from most of sanitizers is
-	also present.</p>
+	requests detection available from most of sanitizers.</p>
 
       <p>Also libFuzzer support finally had been possible.
-	Basically,
-	it allows to test code with random values from corpus
+	It allows code to be tested with random values from corpus
 	inputs.
 	Mutation and combination algorithms of those random inputs
-	can be overwritten. Also can be used in addition of ubsan,
+	can be overwritten. Can also be used in addition to ubsan,
 	asan, msan and so on.</p>
 
       <p>At last, the X-Ray instrumentation feature is also
@@ -2102,7 +2222,7 @@
 	(unfortunately strlcat
 	did not get merged in due time for the release) wrong
 	usage
-	cases are now covered as well a W^X code detection had
+	cases are now covered and W^X code detection tooling had
 	been added.</p>
 
       <p>At the moment, this 7.0 version is imported by Dimitry
@@ -2140,10 +2260,10 @@
 	provides that interacts with the hardware before the
 	kernel starts.</p>
 
-      <p>The LUA interpreter we added earlier in the year was made
-	default this
-	quarter. Due to undiagnosed booting issues, however, it
-	has been
+      <p>The LUA interpreter added earlier in 2018 was made default
+	in 2018Q3.
+	Due to undiagnosed booting issues, the LUA interpreter has
+	been
 	disabled on sparc64 and all powerpc. The LUA interpreter
 	is scheduled
 	to replace the FORTH interpreter entirely in FreeBSD 13,
@@ -2154,11 +2274,11 @@
 	a year
 	after 12.0 release, or approximately January 2020.
 	Platforms not
-	currently working have until that date to resolve the
-	issues.</p>
+	currently working with the LUA interpreter
+	have until that date to resolve the issues.</p>
 
       <p>At this point, the LUA scripts implement everything that
-	FORTH scripts
+	the FORTH scripts
 	did. Where there was ambiguity in the spec, or where the
 	FORTH scripts
 	were more forgiving that was strictly documented, every
@@ -2173,8 +2293,8 @@
 	loader or the
 	FORTH scripts will happen. They are quite mature and
 	bullet proof at
-	tnhis point and it's unlikely that an undiscovered bug
-	will need to be
+	this point and it's unlikely that an undiscovered bug will
+	need to be
 	fixed before retirement.</p>
 
       <p>Other work in progress includes Toomas Soome's port to
@@ -2187,8 +2307,8 @@
 	will be
 	entering the tree soon after the freeze lifts.</p>
 
-      <p>UEFI booting has been greatly enhanced. However, there's
-	still some
+      <p>UEFI booting has been greatly enhanced. There are still
+	some
 	machines that have issues with the default BootXXXX
 	variables or
 	something else in the environment that are being
@@ -2201,9 +2321,10 @@
 	and can be
 	used on any architecture we support.</p>
 
-      <p>There's also efforts underway to bring signed image
-	support, improved
-	crypto booting options and implement Multiboot 2.0.</p>
+      <p>There are also efforts underway to support booting signed
+	images, improved
+	crypto booting options, and implement Multiboot 2.0
+	support.</p>
 
     </body>
 
@@ -2220,15 +2341,19 @@
     </contact>
 
     <body>
-      <p>Modern PCI(e) devices typically define memory-mapped BARs,
-	each of them
-	have a separate page-aligned boundaries. This is enforced
-	by the need
+      <p>Modern PCI(e) devices typically define memory-mapped BARs
+	(Base Address Registers) to make a memory region available
+	to the device.
+	Each BAR
+	has a separate page-aligned boundary and memory region
+	associated with it.
+	This is enforced by the need
 	of hypervisors to provide the pass-through using VT-d,
 	which operates
-	with memory and has granularity of page for access
-	control. As is, it
-	also means that the BARs have suitable configuration for
+	with memory and has the granularity of one page for access
+	control.
+	As is, it
+	also means that the BARs have a suitable configuration for
 	providing
 	access to usermode, controlling access by the normal page
 	tables.</p>
@@ -2236,23 +2361,24 @@
       <p>Linux already gives a way for userspace mapping of BARs
 	using sysfs.</p>
 
-      <p>Of course, if userspace have enough privileges, it can
-	read BAR,
+      <p>Of course, if a userspace program has enough privileges,
+	it can read a BAR,
 	determine the physical address of the mapping as seen by
 	CPU, and use
-	mem(4) AKA /dev/mem to mmap. This is really cumbersome,
-	and leaves
-	issues open, e.g. BAR might be not activated, which
-	requires
-	involvement on IOMMU on some architectures. Also this rude
-	approach
+	mem(4) (aka /dev/mem) to mmap() that region of memory.
+	This is very cumbersome, and leaves many unresolved
+	issues.
+	For example, a BAR might be not activated, which would
+	require
+	involvement of the IOMMU on some architectures. Also this
+	rude approach
 	makes it very hard to create mappings with the correct
 	caching
 	attributes.</p>
 
-      <p>FreeBSD pci(4) driver recently got a convenient support
-	for such
-	mappings, and pciconf(8) utility was extended to use it.
+      <p>The FreeBSD pci(4) driver was enhanced to support such
+	mappings, and pciconf(8) utility was extended to use the
+	new support.
 	See pci(4)
 	for PCIOCBARMMAP ioctl(2) request description for details,
 	and
@@ -2260,9 +2386,8 @@
 
       <p>TODO: automatically activate the BAR on mapping, this is
 	not done yet.
-	Problem there is the need to avoid the resource conflict
-	with the
-	possible future attachment of the kernel driver.</p>
+	There is a problem with avoiding the resource conflicts on
+	possible future attachmens of the kernel driver.</p>
 
       <p></p>
 
@@ -2299,9 +2424,9 @@
 	another
 	system as a USB drive, network adapter, or a virtual
 	serial port.
-	FreeBSD USB stack has supported this functionality for
+	The FreeBSD USB stack has supported this functionality for
 	quite some
-	time, but it wasn't used to its full extent.</p>
+	time, but it has not been used to its fullest extent.</p>
 
       <p>The goal of this project was to fix that - to document the
 	functionality, possibly fix some bugs, and to make it easy
@@ -2310,8 +2435,8 @@
       <p>Starting with FreeBSD 12.0, this functionality is enabled
 	out of the box. This means you can connect your BeagleBone
 	Black's (using its USB client socket) or a Raspberry Pi 0
-	(using the OTG port) to your laptop, and you'll get a
-	virtual
+	(using the On-The-Go (OTG) port) to your laptop, and
+	you'll get a virtual
 	USB serial port, which serves as a system console, with
 	getty(8)
 	waiting for you to log in. This means you no longer need
@@ -2347,18 +2472,20 @@
 	improvements:</p>
 
       <ul>
-	<li>the introduction of the new synchronization primitive
-	epoch to replace the
-	use of reader locks for providing existence guarantees for
-	data structures</li>
+	<li>The introduction of the new synchronization primitive
+	epoch(9) to
+	replace the use of reader locks for providing existence
+	guarantees
+	for data structures.</li>
 
-	<li>epoch was used to provide an 85+% reduction in the
-	overhead of pcb lookup
-	in high core count systems</li>
+	<li>epoch(9) was used to provide an 85+% reduction in the
+	overhead of
+	pcb lookup in high core count systems.</li>
 
-	<li>It was used to provide an 85+% reduction in UDP send
-	overhead on high core
-	count systems see the link for a bit more detail:
+	<li>epoch(9) was used to provide an 85+% reduction in UDP send
+	overhead
+	on high core count systems. See the link for a bit more
+	detail:
 	<a
 	href="http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees">http://scalebsd.org/blog/2018/06/16/UDP-and-epoch-for-liveness-guarantees</a></li>
       </ul>
@@ -2366,14 +2493,14 @@
       <p></p>
 
       <ul>
-	<li>System call overhead is now half that of 11</li>
+	<li>System call overhead is now half that of FreeBSD 11.</li>
 
 	<li>UNIX sockets now scale near linearly (previously maxed out
-	at 3-4 threads)</li>
+	at 3-4 threads).</li>
 
 	<li>The NUMA work has lead to a 20x-80x improvement in the
-	scalability of page
-	fault handling</li>
+	scalability
+	of page fault handling.</li>
       </ul>
 
       <p></p>
@@ -2421,8 +2548,8 @@
       <ul>
 	<li>GENERIC config</li>
 
-	<li>Introduce a vast rework of sys/arm/mv directory for arm
-	and armv7 platforms.</li>
+	<li>Introduce a vast rework of the sys/arm/mv directory for
+	arm and armv7 platforms.</li>
 
 	<li>Enable PLATFORM support for Marvell ARMv7 SoCs, which can
 	now can boot with GENERIC kernel.</li>
@@ -2562,7 +2689,7 @@
 	API, all images now use loader.efi as their primary
 	FreeBSD loader.
 	This allow us to have a common boot path for all arm and
-	arm64 image.</p>
+	arm64 images.</p>
 
     </body>
 
@@ -2579,7 +2706,7 @@
     </contact>
 
     <body>
-      <p>DTS files (Device Tree Sources) were updated to be in pair
+      <p>DTS files (Device Tree Sources) were updated to be on par
 	with Linux 4.18 for
 	the 12.0 release.</p>
 
@@ -2606,22 +2733,24 @@
     </contact>
 
     <body>
-      <p>The RaspberryPi firmware loads the DTB from the fat
+      <p>The RaspberryPi firmware loads the DTB from the FAT
 	partition based on
-	the model. U-Boot now uses this DTB and pass it to the
+	the model. U-Boot now uses this DTB and passes it to the
 	FreeBSD loader/kernel
-	instead of using the one it embed.
-	This allow us to use the RaspberryPi Foundation provided
-	DTB overlays to enable
+	instead of using the DTS embedded in U-Boot.
+	This allow the FreeBSD Kernel to use the RaspberryPi
+	Foundation provided DTB overlays to enable
 	HATs.
-	The Overlays can be obtained by installing the
+	The overlays can be obtained by installing the
 	rpi-firmware package.</p>
 
-      <p>A new u-boot port for the W variant of the RPI0 was
-	committed as u-boot-rpi-0-w.
-	Some experiments started by trasz@ show that we could
-	maybe produce a generic
-	image for all armv6 RPI (RPI-B, RPI0 and RPI0W).</p>
+      <p>A new U-Boot port for the W variant of the RPI0 was
+	committed as
+	u-boot-rpi-0-w. Some experiments started by Edward Tomasz
+	Napierala
+	(trasz@) have shown that we could possibly produce a
+	generic image
+	for all armv6 RPI (RPI-B, RPI0 and RPI0W).</p>
 
     </body>
 
@@ -2688,9 +2817,9 @@
 
 	<li>Reworked drivers to be Big-Endian compatible:</li>
 
-	<li>- Chelsio cxgbe(4) 10/25G network adapter</li>
+	<li>Chelsio cxgbe(4) 10/25G network adapter</li>
 
-	<li>- NVMe SSD drive</li>
+	<li>NVMe SSD drive</li>
       </ul>
 
       <p>
@@ -2832,8 +2961,9 @@
 
       <p>Platform-Level Interrupt Controller (PLIC) driver was
 	added. Interrupt support was converted to INTRNG.
-	PLIC is used in QEMU for virtio network and block devices
-	(full FreeBSD distribution can be booted in QEMU).</p>
+	PLIC is used in QEMU for virtio network and block devices.
+	With these changes, a full FreeBSD distribution
+	can now be booted in QEMU.</p>
 
       <p>Network virtualization support (VIMAGE) was fixed and
 	enabled by default now.</p>
@@ -2845,7 +2975,7 @@
 	is booting to multiuser just fine. lowRISC UART
 	driver was added.</p>
 
-      <p>Superuser-User-Modify (SUM) bit in sstatus register is now
+      <p>Superuser-User-Modify (SUM) bit in status register is now
 	used: kernel can access userspace only within
 	certain functions that explicitly handle crossing
 	user/kernel boundary.</p>
