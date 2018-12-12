@@ -370,7 +370,7 @@ dedicated separate address spaces for userspace and kernel, giving
 each mode full access to 4GB (minus 8MB) of usable address space.
 The userspace on the i386 architecture now has access to the same
 amount of address space as the compat32 subsystem in the amd64
-architecture kernel.  The increase in kernel address space enable
+architecture kernel.  The increase in kernel address space enables
 further growth and maintainability of the i386 architecture.
 
 The split 4GB/4GB user/kernel implementation uses two page directory
@@ -385,15 +385,15 @@ of the code.
 
 Because the user address space is no longer shared with the kernel,
 the copyout(9) functions were rewritten to make a transient mapping
-of userspace pages for duration of any needed accesses.  The initial
+of userspace pages for the duration of any needed accesses.  The initial
 implementation used the vm_fault_quick_hold_pages() framework, but
 this was later optimized by temporarily switching to user mode
 mappings from a trampoline, and then using hand-written assembler
 routines to perform a faster small block copy operation.
 
-Future plans for maintenance of i386 include making the i386 pmap
+Future plans for the ongoing maintenance of i386 include making the i386 pmap
 capable of runtime selection of the PAE or non-PAE page table format
-and bringing NX (no execute) mappings for regular i386 kernel.
+and supporting NX (no execute) mappings for regular i386 kernel.
 
 Sponsor: The FreeBSD Foundation
 
@@ -481,20 +481,22 @@ address region as two devices:  One device allows userspace to
 open(2) a devfs node, which can be read/written/mapped from the
 application.  This mapping is zero-copy.  The second device is a
 geom disk(9), which makes it possible to use NVDIMM for the backing
-storage for normal FreeBSD filesystem, such as UFS, ZFS, or msdosfs.
-Note that buffer cache/mapping of files from a filesystem created
-over NVDIMM causes an unneeded double-buffering.
+storage for a normal FreeBSD filesystem, such as UFS, ZFS, or msdosfs.
+Note that buffer cache/mapping of files from a traditional filesystem
+created over NVDIMM causes an unneeded double-buffering.
 
 Empirically, on typical modern hardware, NVDIMM regions are located
 far from the regular DRAM backed memory in the address space, and
 have attributes that are not compatible with regular DRAM memory.
 This makes it unfeasible to extend the kernel's direct map to provide
-the kernel mappings.  A new pmap KPI was designed, pmap_large_map(9),
+the kernel mappings for the NVDIMM regions.
+A new pmap KPI was designed, pmap_large_map(9),
 which allows efficient mapping of very large physical regions into
-the KVA.  The new code has some optimization to the cache flushing
+the KVA.  The new code has some optimizations to the cache flushing
 operations over the mapped regions, which is needed to efficiently
-support bio flushes from the filesystems. The NVDIMM driver uses
-the new KPI, but the new KPI might also be useful for the NTB driver.
+support bio flushes from a filesystems using the NVDIMM storage.
+The NVDIMM driver is the first user of the new KPI,
+but the new KPI might also be useful for the NTB driver.
 
 Sponsor: The FreeBSD Foundation
 
@@ -528,7 +530,7 @@ have different access criteria.  This splitting of the address space
 provides a relatively low-overhead way of catching direct accesses
 from kernel to usermode, when not using the copyout(9) family of
 functions.  The copyout(9) family of functions are permitted direct
-access to user space.  And direct access from kernel mode to user
+access to user space.  Any direct access from kernel mode to user
 address space that isn't performed through the copyout(9) family
 of functions indicates a potential programming error.
 
@@ -709,7 +711,6 @@ __New features added__:
   * Add partially support for suspending and resuming a Linux guest
 
 Sponsor: Matthew Grooms
-
 Sponsor: iXsystems
 
 __Future tasks__:
@@ -1038,8 +1039,9 @@ crypto booting options, and implement Multiboot 2.0 support.
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
 Modern PCI(e) devices typically define memory-mapped BARs
-(Base Address Registers), each BAR
-has a separate page-aligned boundary and memory region.
+(Base Address Registers) to make a memory region available to the device.
+Each BAR
+has a separate page-aligned boundary and memory region associated with it.
 This is enforced by the need
 of hypervisors to provide the pass-through using VT-d, which operates
 with memory and has the granularity of one page for access control.
@@ -1049,11 +1051,12 @@ access to usermode, controlling access by the normal page tables.
 
 Linux already gives a way for userspace mapping of BARs using sysfs.
 
-Of course, if userspace have enough privileges, it can read a BAR,
+Of course, if a userspace program has enough privileges, it can read a BAR,
 determine the physical address of the mapping as seen by CPU, and use
-mem(4) (aka /dev/mem) to mmap that region of memory.  This is really cumbersome, and leaves
-issues open, e.g. BAR might be not activated, which requires
-involvement on IOMMU on some architectures.  Also this rude approach
+mem(4) (aka /dev/mem) to mmap() that region of memory.
+This is very cumbersome, and leaves many unresolved issues.
+For example, a BAR might be not activated, which would require
+involvement of the IOMMU on some architectures.  Also this rude approach
 makes it very hard to create mappings with the correct caching
 attributes.
 
@@ -1068,7 +1071,6 @@ There is a problem with avoiding the resource conflicts on
 possible future attachmens of the kernel driver.
 
 Sponsor: The FreeBSD Foundation
-
 Sponsor: Mellanox Technologies
 
 ## Device Mode USB ##
@@ -1090,7 +1092,7 @@ to use, automating it as much as possible.
 Starting with FreeBSD 12.0, this functionality is enabled
 out of the box.  This means you can connect your BeagleBone
 Black's (using its USB client socket) or a Raspberry Pi 0
-(using the OTG port) to your laptop, and you'll get a virtual
+(using the On-The-Go (OTG) port) to your laptop, and you'll get a virtual
 USB serial port, which serves as a system console, with getty(8)
 waiting for you to log in.  This means you no longer need to
 look for a keyboard and a screen, or mess with the console
