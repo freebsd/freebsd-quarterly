@@ -700,7 +700,7 @@ IP and the port to listen to migration request. On the source host, the
 migration is started by executing the bhyvectl command with the `--migrate`
 option, followed by the destination host IP and the port to send to the messages.
 
-__New features added__:
+### New features added: ###
 
   * Create the socket connection between source and destination hosts
   * Migrate the guest state via sockets
@@ -713,7 +713,7 @@ __New features added__:
 Sponsor: Matthew Grooms
 Sponsor: iXsystems
 
-__Future tasks__:
+### Future tasks: ###
 
    * Check if live migration can be implemented using the FreeBSD's Copy-on-Write mechanism
    * Add live migration support by using EPT (Intel)

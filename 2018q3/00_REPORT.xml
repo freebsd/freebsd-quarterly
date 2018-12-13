@@ -1657,7 +1657,7 @@
 	option, followed by the destination host IP and the port
 	to send to the messages.</p>
 
-      <p>__New features added__:</p>
+      <p>New features added:</p>
 
       <ul>
 	<li>Create the socket connection between source and
@@ -1681,7 +1681,7 @@
 
       <p></p>
 
-      <p>__Future tasks__:</p>
+      <p>Future tasks:</p>
 
       <ul>
 	<li>Check if live migration can be implemented using the
@@ -3275,7 +3275,7 @@
 	during BSDCam 2018,
 	you may see some notes
 	<a
-	href="https://wiki.FreeBSD.org/DevSummit/201808/DeveloperTools)">here</a>.
+	href="https://wiki.FreeBSD.org/DevSummit/201808/DeveloperTools">here</a>).
 	The general
 	conclusion is that wiki is a great tool for what it was
 	meant for: organizing
@@ -3370,8 +3370,9 @@
 	support in HardenedBSD. In mid-2018, we made enough
 	progress that we
 	could publish an alpha
-	[Call-For-Testing
-	(CFT)](https://hardenedbsd.org/article/shawn-webb/2018-07-16/preliminary-call-testing-cross-dso-cfi).
+	<a
+	href="https://hardenedbsd.org/article/shawn-webb/2018-07-16/preliminary-call-testing-cross-dso-cfi">Call-For-Testing
+	(CFT)</a>.
 	We need to integrate the Cross-DSO CFI support with the
 	RTLD such that
 	function pointers resolved through `dlopen(3)`/`dlsym(3)`
@@ -3448,8 +3449,9 @@
 	environment</a>, allowing users to
 	jail the hypervisor. We hardened the virtual address space
 	of
-	`bhyve(8)` by using [guard
-	pages](https://reviews.FreeBSD.org/rS338511).
+	`bhyve(8)` by using <a
+	href="https://reviews.FreeBSD.org/rS338511">guard
+	pages</a>.
 	This work made it upstream to FreeBSD. We are grateful to
 	those in
 	FreeBSD who provided insight to increase the quality and
