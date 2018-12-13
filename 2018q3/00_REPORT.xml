@@ -172,8 +172,8 @@
 	Strobl,
 	completed the 10.4-RELEASE in early October 2017. FreeBSD
 	10.4-RELEASE was the
-	fifth release from the *stable/10* branch, which built on
-	the
+	fifth release from the <tt>stable/10</tt> branch, which
+	built on the
 	stability and reliability of 10.3-RELEASE.</p>
 
       <p>The FreeBSD 11.2-RELEASE cycle started April 20, 2018 with
@@ -208,14 +208,14 @@
 	base system
 	utilities that linked with the upstream code. By the end
 	of the
-	2018Q3 quarter, the *stable/12* branch had not been
+	2018Q3 quarter, the <tt>stable/12</tt> branch had not been
 	created due to
 	this delay.</p>
 
       <p>Throughout the remainder of 2018Q3, several development
 	snapshots builds
-	were released for the *head*, *stable/11*, and *stable/10*
-	branches.</p>
+	were released for the <tt>head</tt>, <tt>stable/11</tt>,
+	and <tt>stable/10</tt> branches.</p>
 
       <p>Much of this work was sponsored by the FreeBSD Foundation.</p>
 
@@ -1120,10 +1120,10 @@
 
       <p>As a result of all of this, a number of changes were
 	upstreamed to the
-	FreeBSD auditing subsystem and new variables such as `jid`
-	and
-	`jailname` were added to DTrace which can be accessed from
-	D scripts.</p>
+	FreeBSD auditing subsystem and new variables such as
+	<tt>jid</tt> and
+	<tt>jailname</tt> were added to DTrace which can be
+	accessed from D scripts.</p>
 
       <p>OpenDTrace Specification 1.0 has been published which
 	covers the
@@ -1521,16 +1521,16 @@
       <p>Committed improvements include:</p>
 
       <ul>
-	<li>Improved `ioctl` and `sysctl` support to allow `ifconfig`
-	and
-	`netstat` to work in 32-bit compat mode.</li>
+	<li>Improved <tt>ioctl</tt> and <tt>sysctl</tt> support to
+	allow <tt>ifconfig</tt> and
+	<tt>netstat</tt> to work in 32-bit compat mode.</li>
       </ul>
 
       <p></p>
 
       <ul>
-	<li>Migration from a model of translating `ioctl` commands and
-	data
+	<li>Migration from a model of translating <tt>ioctl</tt>
+	commands and data
 	structures at the kernel boundary to translating where the
 	commands
 	are processed. This is a correctness improvement (`ioctl`
@@ -1567,13 +1567,13 @@
 
       <p>Work in progress includes cleanups to the APIs used by the
 	kernel when
-	creating processes and continued `ioctl` improvements.
-	Works is also
+	creating processes and continued <tt>ioctl</tt>
+	improvements. Works is also
 	underway to generate the 32-bit system call list from the
 	"default"
 	list.</p>
 
-      <p>The remaining `ioctl` commands handled in
+      <p>The remaining <tt>ioctl</tt> commands handled in
 	<a
 	href="https://svnweb.FreeBSD.org/base/head/sys/compat/freebsd32/freebsd32_ioctl.c?view=log">sys/compat/freebsd32/freebsd32_ioctl.c</a>
 	need to be migrated to the point of implementation. Help
@@ -1633,13 +1633,14 @@
 
       <p>
 	To suspend a bhyve guest, the bhyvectl tool must be run
-	with the `--suspend &lt;state_file_name&gt;`
+	with the <tt>--suspend
+	&lt;state_file_name&gt;</tt>
 	option followed by the guest name.</p>
 
       <p>To restore a bhyve guest from a checkpoint, one simply has
-	to add the `-r` option
+	to add the <tt>-r</tt> option
 	followed by the main state file (the same file that was
-	given to the `--suspend`
+	given to the <tt>--suspend</tt>
 	option for bhyvectl) when starting the VM.</p>
 
       <p>The Migration feature uses the Save/Restore implementation
@@ -1648,12 +1649,12 @@
 	a bhyve guest,
 	one needs to start an empty guest on the destination host
 	from a shared guest
-	image using the bhyve tool with the `-R` option followed
-	by the source host
+	image using the bhyve tool with the <tt>-R</tt> option
+	followed by the source host
 	IP and the port to listen to migration request. On the
 	source host, the
 	migration is started by executing the bhyvectl command
-	with the `--migrate`
+	with the <tt>--migrate</tt>
 	option, followed by the destination host IP and the port
 	to send to the messages.</p>
 
@@ -3192,8 +3193,8 @@
       </ul>
 
       <p>
-	First two operations were implemented as *files*, *fetch*,
-	*fetchall*, *attach*
+	First two operations were implemented as <tt>files</tt>,
+	<tt>fetch</tt>, <tt>fetchall</tt>, <tt>attach</tt>
 	commands of the tool.</p>
 
       <p>The third operation was implemented by introducing PR
@@ -3335,8 +3336,8 @@
 	supporting LibreSSL
 	in base. We still maintain LibreSSL in base; however,
 	OpenSSL is
-	simply the default crypto library (aka, `WITHOUT_LIBRESSL`
-	is the
+	simply the default crypto library (aka,
+	<tt>WITHOUT_LIBRESSL</tt> is the
 	default). We look forward to building a development
 	community around
 	LibreSSL in HardenedBSD such that we can re-enable
@@ -3375,8 +3376,8 @@
 	(CFT)</a>.
 	We need to integrate the Cross-DSO CFI support with the
 	RTLD such that
-	function pointers resolved through `dlopen(3)`/`dlsym(3)`
-	work properly
+	function pointers resolved through
+	<tt>dlopen(3)</tt>/`dlsym(3)` work properly
 	with the cfi-icall scheme. We also need to perform
 	experimental
 	package builds, find breakages, and fix those breakages.
@@ -3390,16 +3391,16 @@
 	applications.</p>
 
       <p>On 20 Aug 2018, we launched a new tool called
-	`hbsdcontrol(8)` to
+	<tt>hbsdcontrol(8)</tt> to
 	toggle exploit mitigations on a per-application basis.
-	`hbsdcontrol(8)` uses filesystem extended attributes and
-	is the
+	<tt>hbsdcontrol(8)</tt> uses filesystem extended
+	attributes and is the
 	preferred method for exploit mitigation toggling for those
 	filesystem
 	that support extended attributes (UFS, ZFS). Our original
 	utility,
-	`secadm`, should be used with filesystems that do not
-	support extended
+	<tt>secadm</tt>, should be used with filesystems that do
+	not support extended
 	attributes (NFS).</p>
 
       <p>In <a
@@ -3419,15 +3420,15 @@
 	grsecurity
 	patchset based on publicly-available documentation.</p>
 
-      <p>We assisted Kyle Evans with the new `bectl(8)` utility,
-	primarily
+      <p>We assisted Kyle Evans with the new <tt>bectl(8)</tt>
+	utility, primarily
 	enhancing jail support and fixing regressions. We are
 	grateful for
 	Kyle Evans' assistance in landing the enhancements
 	upstream in FreeBSD
 	and his overall responsiveness and helpfulness.</p>
 
-      <p>Relevant commits for the `bectl(8)` are:</p>
+      <p>Relevant commits for the <tt>bectl(8)</tt> are:</p>
 
       <ul>
 	<li><a
@@ -3444,12 +3445,12 @@
       </ul>
 
       <p>
-	We taught `bhyve(8)` how to live in a
+	We taught <tt>bhyve(8)</tt> how to live in a
 	<a href="https://reviews.FreeBSD.org/rS337023">jailed
 	environment</a>, allowing users to
 	jail the hypervisor. We hardened the virtual address space
 	of
-	`bhyve(8)` by using <a
+	<tt>bhyve(8)</tt> by using <a
 	href="https://reviews.FreeBSD.org/rS338511">guard
 	pages</a>.
 	This work made it upstream to FreeBSD. We are grateful to
