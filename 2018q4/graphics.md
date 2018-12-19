@@ -13,4 +13,7 @@ List of changes:
 * wayland default
 * vmware support
 * i386 alpha support
-* ppc64 support?
+* ppc64 support
+* port renames and version updates
+* meetings
+* input stack
