@@ -2,7 +2,7 @@
 
 Contact: Emmanuel Vadot <manu@FreeBSD.org>, U-Boot mailing list: <uboot@freebsd.org>
 
-The RaspberryPi firmware loads the DTB from the fat partition based on
+The RaspberryPi firmware loads the DTB from the FAT partition based on
 the model. U-Boot now uses this DTB and pass it to the FreeBSD loader/kernel
 instead of using the one it embed.
 This allow us to use the RaspberryPi Foundation provided DTB overlays to enable

@@ -20,4 +20,4 @@ Network virtualization support (VIMAGE) was fixed and enabled by default now.
 In order to support RocketChip and derivatives we had to work on A(accessed), D(dirty) PTE (page table entry) bits management.
 We have successfully tested this on a lowRISC board and it is booting to multiuser just fine. lowRISC UART driver was added.
 
-Superuser-User-Modify (SUM) bit in sstatus register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.
+Superuser-User-Modify (SUM) bit in status register is now used: kernel can access userspace only within certain functions that explicitly handle crossing user/kernel boundary.

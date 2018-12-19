@@ -25,7 +25,7 @@ for PCIOCBARMMAP ioctl(2) request description for details, and
 pciconf(8) for the -D switch.
 
 TODO: automatically activate the BAR on mapping, this is not done yet.
-Problem there is the need to avoid the resource conflict with the
-possible future attachment of the kernel driver.
+There is a problem with avoiding the resource conflicts on
+possible future attachments of the kernel driver.
 
 The work was sponsored by The FreeBSD Foundation and Mellanox Technologies.
