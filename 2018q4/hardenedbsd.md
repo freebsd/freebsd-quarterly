@@ -13,7 +13,7 @@ with FreeBSD.
 
 ### HardenedBSD Foundation Update
 
-Through a generous donations by DEF CON, the computer security
+Through a generous donation by DEF CON, the computer security
 conference held each year in Las Vegas, and an anonymous member of the
 community, the HardenedBSD Foundation was able to provide the
 HardenedBSD project with a new Cavium ThunderX2 server. HardenedBSD
@@ -60,7 +60,7 @@ Improvements in 12-STABLE from 11-STABLE:
 #### Non-Cross-DSO CFI
 
 Non-Cross-DSO CFI is an exploit mitigation technique that helps
-prevent attackers from modifying the behavior of a program and
+to prevent attackers from modifying the behavior of a program and
 jumping to undefined or arbitrary memory locations. Microsoft has
 implemented a variant of CFI, which they term Control Flow Guard,
 or CFG. The PaX team has spent the last few years perfecting their
