@@ -1,7 +1,7 @@
 ## HardenedBSD 2018Q4 Update
 
-Contact: Shawn Webb <shawn.webb@hardenedbsd.org>
-URL: https://hardenedbsd.org/
+* Contact: Shawn Webb <shawn.webb@hardenedbsd.org>
+* URL: https://hardenedbsd.org/
 
 ### Introduction to HardenedBSD
 
