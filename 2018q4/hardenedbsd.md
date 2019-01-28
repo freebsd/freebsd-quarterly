@@ -29,7 +29,7 @@ HardenedBSD's PaX NOEXEC implementation in OPNsense. PaX NOEXEC is a
 strong form of W^X, which prevents memory allocations from being both
 writable and executable, and toggling between the two.
 
-The HardenedBSD Foundation Corp is a registered 501(c)(3) tax-exempt
+The HardenedBSD Foundation Corp. is a registered 501(c)(3) tax-exempt
 not-for-profit charitable organization in the United States. We look
 forward to a productive 2019, with work to support Cross-DSO CFI still
 ongoing.
