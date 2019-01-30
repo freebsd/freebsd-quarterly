@@ -10,11 +10,37 @@ This includes graphics drivers, graphics libraries such as the
 MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
 
-List of changes:
-* wayland default
-* vmware support
-* i386 alpha support
-* ppc64 support
-* port renames and version updates
-* meetings
-* input stack
+During the period, a lot of time was spent stablizing the graphics drivers and ports for the FreeBSD 12.0 release.
+The graphics drivers have been updated with new versions for both FreeBSD 11.2 and FreeBSD 12.0, and they have been renamed in order to make it clearer which version of a port runs on which version on FreeBSD.
+A meta port, `graphics/drm-kmod` has been created, which will install the correct driver based on FreeBSD version and architecture.
+This is the recommended way to install the FreeBSD graphics drivers.
+
+Currently, we have `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` for CURRENT and 12.0 respectively.
+These are both updated to use the Linux Kernel 4.16 source.
+For FreeBSD 11.2 we have `graphics/drm-fbsd11.2-kmod` which is at Linux Kernel 4.11.
+There is also `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT, and is a copy of the legacy drivers that are in base.
+The drivers in base have been removed from the default build on CURRENT, and are slated for removal at some point, except for arm.
+
+Support for i386 and PowerPC 64 has been added to the drm kernel drivers.
+This is currently in an alpha state.
+
+Wayland has been enabled by default in the ports tree, meaning that all packages are build with wayland support enabled.
+This makes it much easier to use and test wayland.
+
+Support for VMware graphics pass through has been added to the kernel driver.
+Support for this is still missing in `graphcs/mesa-dri` though, so it currently does not work out of the box.
+
+The input stack has been updated and is now for the most part current with upstream.
+Evdev headers where split off from `multimedia/v4l_compat` into their own port, `devel/evdev-proto`.
+This makes it easier to update those headers and keep them current with upstream, as needed.
+The input stack is still an area where more work needs to be done to make it easier to use various input devices with X and wayland on FreeBSD.
+
+Several meetings has been held over the course of the period.
+Meeting notes have been sent out to the public `x11@FreeBSD.org` mailing list.
+
+People who are interested in helping out can find us on the x11@FreeBSD.org
+mailing list, or on our gitter chat: https://gitter.im/FreeBSDDesktop/Lobby.  We
+are also available in #freebsd-xorg on EFNet.
+
+We also have a team area on GitHub where our work repositories can be found:
+https://github.com/FreeBSDDesktop
