@@ -19,7 +19,7 @@ Currently, we have `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` 
 These are both updated to use the Linux Kernel 4.16 source.
 For FreeBSD 11.2 we have `graphics/drm-fbsd11.2-kmod` which is at Linux Kernel 4.11.
 There is also `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT, and is a copy of the legacy drivers that are in base.
-The drivers in base have been removed from the default build on CURRENT, and are slated for removal at some point, except for arm.
+The drivers in base have been removed from the default build on CURRENT, and are slated for removal at some point. A small remnant of drm2 will remain due to an unresolved dependency for arm TEGRA.
 
 Support for i386 and PowerPC 64 has been added to the drm kernel drivers.
 This is currently in an alpha state.
