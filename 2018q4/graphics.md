@@ -10,9 +10,9 @@ This includes graphics drivers, graphics libraries such as the
 MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
 
-During the period, a lot of time was spent stablizing the graphics drivers and ports for the FreeBSD 12.0 release.
-The graphics drivers have been updated with new versions for both FreeBSD 11.2 and FreeBSD 12.0, and they have been renamed in order to make it clearer which version of a port runs on which version on FreeBSD.
-A meta port, `graphics/drm-kmod` has been created, which will install the correct driver based on FreeBSD version and architecture.
+In the forth quarter, the team focused on stablizing the graphics drivers and ports for the FreeBSD 12.0 release.
+The graphics drivers have been updated with new versions for both FreeBSD 11.2 and FreeBSD 12.0. The ports have been renamed in order to make it clearer which version of a port runs on which version on FreeBSD.
+A new meta port, `graphics/drm-kmod`, will install the correct driver based on FreeBSD version and architecture.
 This is the recommended way to install the FreeBSD graphics drivers.
 
 Currently, we have `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` for CURRENT and 12.0 respectively.
