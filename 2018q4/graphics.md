@@ -4,7 +4,7 @@ Contact: FreeBSD Graphics Team, <x11@freebsd.org>, Niclas Zeising <zeising@freeb
 
 Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
 
-The FreeBSD X11/Graphics team is maintains the lower levels of the FreeBSD grpahics stack.
+The FreeBSD X11/Graphics team maintains the lower levels of the FreeBSD grpahics stack.
 This includes graphics drivers, graphics libraries such as the
 MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
@@ -15,8 +15,9 @@ We also created a new meta port, `graphics/drm-kmod`, which will install the cor
 
 The DRM drivers themselves are named `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` for CURRENT and 12.0 respectively, both of which have been updated to use the 4.16 Linux Kernel source.
 For FreeBSD 11.2 we have `graphics/drm-fbsd11.2-kmod` which uses the 4.11 Linux Kernel source.
-Finally, we created `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT.  This is a copy of the legacy drivers which previously existed in base.
-This has allowed us to remove the drm2 code from CURRENT, we are planning on performing the removal of this code in early February.
+Finally, we created `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT.  This is a copy of the legacy drivers from the FreeBSD base system.
+This work will make it possible for us to remove the drm2 code from CURRENT,
+something we are planning to do in early February.
 A remnant of the drm2 code will remain in the base after this due to an unresolved dependency for arm TEGRA.
 Plans for its migration are expected to be finalized in first quarter in 2019.
 
