@@ -11,15 +11,13 @@ applications, and Wayland with related libraries and applications.
 
 In the forth quarter, the team focused on stablizing the graphics drivers and ports for the FreeBSD 12.0 release.
 The graphics drivers have been updated with new versions for both FreeBSD 11.2 and FreeBSD 12.0. The ports have been renamed in order to make it clearer which version of a port runs on which version on FreeBSD.
-A new meta port, `graphics/drm-kmod`, will install the correct driver based on FreeBSD version and architecture.
-This is the recommended way to install the FreeBSD graphics drivers.
+We also created a new meta port, `graphics/drm-kmod`, which will install the correct driver based on FreeBSD version and architecture.  Moving forward this is the recommended way to install the FreeBSD graphics drivers.
 
-Currently, we have `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` for CURRENT and 12.0 respectively.
-These are both updated to use the Linux Kernel 4.16 source.
-For FreeBSD 11.2 we have `graphics/drm-fbsd11.2-kmod` which is at Linux Kernel 4.11.
-There is also `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT, and is a copy of the legacy drivers that are in base.
-The drivers in base have been removed from the default build on CURRENT, and are slated for removal at in early February.
-A small remnant of drm2 will remain in the base due to an unresolved dependency for arm TEGRA.
+The DRM drivers themselves are named `graphics/drm-current-kmod` and `graphics/drm-fbsd12.0-kmod` for CURRENT and 12.0 respectively, both of which have been updated to use the 4.16 Linux Kernel source.
+For FreeBSD 11.2 we have `graphics/drm-fbsd11.2-kmod` which uses the 4.11 Linux Kernel source.
+Finally, we created `graphics/drm-legacy-kmod`, which works on FreeBSD 12.0 and CURRENT.  This is a copy of the legacy drivers which previously existed in base.
+This has allowed us to remove the drm2 code from CURRENT, we are planning on performing the removal of this code in early February.
+A remnant of the drm2 code will remain in the base after this due to an unresolved dependency for arm TEGRA.
 Plans for its migration are expected to be finalized in first quarter in 2019.
 
 Support for i386 and PowerPC 64 has been added to the drm kernel drivers.
