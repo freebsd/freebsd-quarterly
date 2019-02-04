@@ -15,7 +15,7 @@ By end of last year, we raised over $1.3M and were able to add Juniper, Netflix 
 ### OS Improvements ###
 In the fourth quarter of 2018 six authors made a total of 315 commits to FreeBSD development tree that were identified as being sponsored by the FreeBSD Foundation. These included staff members Konstantin Belousov, Glen Barber, Li-Wen Hsu and Ed Maste, and grant recipients Mateusz Guzik and Mark Johnston.
 
-Mateusz' work over the quarter consisted of identifying and fixing bottlenecks in the FreeBSD kernel and system libraries. The FreeBSD base system build, and ports builds via Poudriere, were used as motivating cases.
+Mateusz' work over the quarter consisted of identifying and fixing bottlenecks in the FreeBSD kernel and system libraries. The FreeBSD base system build, and ports built via Poudriere, were used as motivating cases.
 
 Mark added an in-kernel Intel CPU microcode loader. This simplifies and increases the robustness of microcode updates, which is increasingly important as mitigations for speculative execution vulnerabilities are delivered in microcode.
 
