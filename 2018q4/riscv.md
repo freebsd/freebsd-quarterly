@@ -12,4 +12,4 @@ We made a series of improvements and bug fixes to pmap support (machine-dependen
 
 RISC-V GENERIC kernel gets support for witness(4) (The FreeBSD lock validation facility).
 
-The british company Embecosm has reported that they were able to boot FreeBSD on a real hardware -- SiFive Unleashed board. The support is limited to a single core only. We are expecting patches from them.
+The british company [Embecosm](https://www.embecosm.com/) has reported that they were able to boot FreeBSD on a real hardware -- SiFive Unleashed board. The support is limited to a single core only. We are expecting patches from them.
