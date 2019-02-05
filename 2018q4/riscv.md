@@ -1,6 +1,7 @@
 ## FreeBSD/RISC-V update
 
 Contact: Ruslan Bukin <br@freebsd.org>
+
 Contact: Mark Johnston <markj@freebsd.org>
 
 FreeBSD/RISC-V is getting mature during last quarter.
