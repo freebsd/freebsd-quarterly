@@ -48,7 +48,7 @@ does not work out of the box.
 
 The input stack has been updated and is now for the most part current with
 upstream.
-Evdev headers where split off from `multimedia/v4l_compat` into their own port,
+Evdev headers were split off from `multimedia/v4l_compat` into their own port,
 `devel/evdev-proto`.
 This makes it easier to update those headers and keep them current with
 upstream, as needed.
