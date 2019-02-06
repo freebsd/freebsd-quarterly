@@ -39,8 +39,8 @@ Support for i386 and PowerPC 64 has been added to the drm kernel drivers.
 This is currently in an alpha state.
 
 Wayland has been enabled by default in the ports tree, meaning that all packages
-are build with wayland support enabled.
-This makes it much easier to use and test wayland.
+are build with Wayland support enabled.
+This makes it much easier to use and test Wayland.
 
 Support for VMware graphics pass through has been added to the kernel driver.
 Support for this is still missing in `graphcs/mesa-dri` though, so it currently
@@ -53,7 +53,7 @@ Evdev headers where split off from `multimedia/v4l_compat` into their own port,
 This makes it easier to update those headers and keep them current with
 upstream, as needed.
 The input stack is still an area where more work needs to be done to make it
-easier to use various input devices with X and wayland on FreeBSD.
+easier to use various input devices with X and Wayland on FreeBSD.
 
 Several meetings has been held over the course of the period.
 Meeting notes have been sent out to the public `x11@FreeBSD.org` mailing list.
