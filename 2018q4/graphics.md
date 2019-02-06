@@ -32,7 +32,7 @@ This is a copy of the legacy drivers from the FreeBSD base system.
 This work will make it possible for us to remove the drm2 code from CURRENT,
 something we are planning to do in early February.
 A remnant of the drm2 code will remain in the base after this due to an
-unresolved dependency for arm TEGRA.
+unresolved dependency for the NVIDIA Tegra ARM chip.
 Plans for its migration are expected to be finalized in first quarter in 2019.
 
 Support for i386 and PowerPC 64 has been added to the drm kernel drivers.
