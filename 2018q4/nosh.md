@@ -1,16 +1,14 @@
 # The nosh project
 
-Contact: Jonathan de Boyne Pollard 
-<J.deBoynePollard-newsgroups@NTLWorld.COM>
+Contact: Jonathan de Boyne Pollard <J.deBoynePollard-newsgroups@NTLWorld.COM>
 
-Link: [Introduction and blurb](http://jdebp.eu./Softwares/nosh/) - 
-[Guide](http://jdebp.eu./Softwares/nosh/guide.html) - [FreeBSD binary 
-packages](http://jdebp.eu./Softwares/nosh/freebsd-binary-packages.html) 
-- [Installation 
-how-to](http://jdebp.eu./Softwares/nosh/timorous-admin-installation-how-to.html) 
-- [Roadmap](http://jdebp.eu./Softwares/nosh/roadmap.html)
+Link: [Introduction and blurb](http://jdebp.eu./Softwares/nosh/)
+Link: [Guide](http://jdebp.eu./Softwares/nosh/guide.html)
+Link: [FreeBSD binary packages](http://jdebp.eu./Softwares/nosh/freebsd-binary-packages.html)
+Link: [Installation how-to](http://jdebp.eu./Softwares/nosh/timorous-admin-installation-how-to.html)
+Link: [Roadmap](http://jdebp.eu./Softwares/nosh/roadmap.html)
 
-## Background
+## Background ##
 
 The nosh project is a suite of system-level utilities for initializing, 
 running, and shutting down BSD systems; and for managing daemons, 
@@ -41,7 +39,7 @@ umbrella, and uses `kevent`(2) for event-driven parallelism.
 For more, see the aforelinked <i>introduction and blurb</i>, and the 
 <i>nosh Guide</i>.
 
-## News
+## News ##
 
 The project has seen a lot of development since the last status report 
 in 2017.  To briefly touch upon just some of the things that have been 
@@ -83,9 +81,9 @@ for all of the new commands, of course) on the subjects of the
 [`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment 
 variable and the 
 [`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) 
-system.   (There are also [some replacements for some Linux manual 
-pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have 
-gone missing over the past decade.)
+system.   (There are also
+[some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html)
+that have gone missing over the past decade.)
 
 * The external format configuration import subsystem has seen some major 
 improvements in per-user service configuration.  The per-user service 
@@ -99,10 +97,9 @@ keyboard maps and FreeBSD vt fonts.  It places a simple textual user
 interface on top of a user-space virtual terminal, can switch amongst 
 multiple input methods on the fly, and responds to both the dedicated 
 keys on a JIS 106/109-key keyboard or a Korean 103/106-key keyboard and 
-the conventional keys used on other keyboards.  The blurb includes [an 
-example of how this works for a Japanese 
-user](http://jdebp.eu./Softwares/nosh/japanese-input-methods.html), and 
-the virtual terminal chapters of the <i>nosh Guide</i> now incorporate 
+the conventional keys used on other keyboards.  The blurb includes
+[an example of how this works for a Japanese user](http://jdebp.eu./Softwares/nosh/japanese-input-methods.html),
+and the virtual terminal chapters of the <i>nosh Guide</i> now incorporate 
 input methods into the doco.
 
 Another area of work was eliminating Wide NCurses from almost all of the 
@@ -125,7 +122,7 @@ The external formats import subsystem will also now make a replacement
 `/etc/system-control/convert/termcap/termcap.db` that one can use, which 
 includes amongst other things the currently missing `teken` terminal type.
 
-## Roadmap
+## Roadmap ##
 
 In addition to what is on the aforelinked roadmap, several things are on 
 the cards for forthcoming versions.  Tools that can feed the process 
@@ -135,15 +132,15 @@ has multiple keyboards.  A Linux shim for `login.conf`. Proper handling
 of CSI sub-parameters in SoftTerm.  A manual page for the CIN file 
 format.  A `time-env-next-matching` tool.
 
-## How you can help
+## How you can help ##
 
 * The Z shell completions now have extensive coverage of the toolset, 
 but there are no completions for the Bourne Again shell or the Friendly 
 Interactive shell.  Work on such completions would be welcome.  The 
 users who use those shells would welcome it especially.
 
-* The `system-manager` already recognizes a `-b` option for [emergency 
-mode](http://jdebp.eu./FGA/emergency-and-rescue-mode-bootstrap.html). 
+* The `system-manager` already recognizes a `-b` option for
+[emergency mode](http://jdebp.eu./FGA/emergency-and-rescue-mode-bootstrap.html). 
 Work to make the FreeBSD loader and kernel send such an option to 
 process #1, in response to an additional emergency mode boot menu 
 choice, would be very welcome.
