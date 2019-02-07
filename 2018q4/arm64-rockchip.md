@@ -8,4 +8,4 @@ Original patch was submitted by Greg V <greg@unrelenting.technology>.
 
 Support for the RK805 and RK808 PMIC (Power Management IC) has been added.
 This allow changing some regulators voltage such as the cores one so cpufreq
-support works. You can change core freqeuncies with sysctl or powerd(8).
+support works. You can change core frequencies with sysctl or powerd(8).
