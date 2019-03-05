@@ -8,7 +8,9 @@ Contact: Sergiu Weisz, <sergiu121@gmail.com>
 
 Contact: Mihai Carabas, <mihai@freebsd.org>
 
-Link:	[Github wiki - How to Migrate a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)
+Link:	[Github wiki - How to Warm Migrate a bhyve guest](https://github.com/FreeBSD-UPB/freebsd/wiki/Virtual-Machine-Migration-using-bhyve)
+
+Link:	[Github - Warm Migration branch](https://github.com/FreeBSD-UPB/freebsd/tree/projects/bhyve_migration)
 
 Link:	[Github - Live Migration branch](https://github.com/FreeBSD-UPB/freebsd/tree/projects/bhyve_migration_dev)
 
@@ -24,9 +26,11 @@ port to send to the messages.
 __New features added__:
 
    * Prove that live migration cannot be implemented using the FreeBSD's Copy-on-Write mechanism;
+   * Add ```--migrate-live``` option to bhyvectl;
+   * Add additional message exchange between source and destination host to establish the migration type and the number of rounds;
    * Implement a dirty-bit approach for live migrating the guest's wired memory;
 
-Sponsors: Matthew Grooms; iXsystems;
+Sponsors: Matthew Grooms;
 
 __Future tasks__:
 
