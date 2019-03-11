@@ -2,7 +2,7 @@
 
 Contact: Konstantin Belousov, <kib@freebsd.org>
 
-Link:	 https://reviews.freebsd.org/D18894
+Link:	 (https://reviews.freebsd.org/D18894)
 
 The i386 architecture (in modern terms, x86 architecture in 32bit
 protected mode), has supported hardware execute-disable since early
