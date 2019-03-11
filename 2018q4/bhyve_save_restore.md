@@ -25,14 +25,14 @@ To restore a bhyve guest from a checkpoint, one simply has to add the ```-r``` o
 followed by the main state file (the same file that was given to the ```--suspend```
 option for bhyvectl) when starting the VM.
 
-__New features added__:
+New features added:
 
    * Improve timers' save and restore state feature;
    * Fix syncronization issues related to the ahci device save and restore state feature;
    * Add suspend/resume support for Windows guests;
    * Refactor save and restore code - save component's state field by field
 
-__Future tasks__:
+Future tasks:
 
    * Open ticket on Phabricator;
    * Add suspend/resume support for nvme;

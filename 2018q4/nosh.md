@@ -45,49 +45,19 @@ The project has seen a lot of development since the last status report
 in 2017.  To briefly touch upon just some of the things that have been 
 worked on:
 
-* There are several more packages for things like running Bruce 
-Guenter's bcron, shims for OpenRC's `rc-update` and `rc-service` tools, 
-and shims for portable substitutes for a couple of Linux's util-linux tools.
+* There are several more packages for things like running Bruce Guenter's bcron, shims for OpenRC's `rc-update` and `rc-service` tools, and shims for portable substitutes for a couple of Linux's util-linux tools.
 
-* There are quite a lot of new tools, including `getuidgid`, 
-`userenv-fromenv`, `setgid-fromenv`, `envgid`, `printenv`, `setlogin`, 
-`console-decode-ecma48`, `console-control-sequence`, 
-`console-flat-table-viewer`, `console-input-method`, and 
-`local-stream-socket-connect`.  To look at just two of these:
+* There are quite a lot of new tools, including `getuidgid`, `userenv-fromenv`, `setgid-fromenv`, `envgid`, `printenv`, `setlogin`, `console-decode-ecma48`, `console-control-sequence`, `console-flat-table-viewer`, `console-input-method`, and `local-stream-socket-connect`.  To look at just two of these:
 
-     * [`printenv`](http://jdebp.eu./Softwares/nosh/guide/printenv.html) 
-as a built-in allows more convenient use in conjunction with 
-`clearenv`.  It can also generate output in some additional formats.
+     * [`printenv`](http://jdebp.eu./Softwares/nosh/guide/printenv.html) as a built-in allows more convenient use in conjunction with `clearenv`.  It can also generate output in some additional formats.
 
-     * 
-[`console-control-sequence`](http://jdebp.eu./Softwares/nosh/guide/console-control-sequence.html) 
-also responds to the name `setterm`, and can do most of what the 
-non-portable util-linux tool by that name does; excluding the things 
-that are specific to non-portable Linux `ioctl()`s and control codes 
-(such as display adapter power management), but also including _extra_ 
-standard DEC VT and ECMA-48 things that the util-linux tool does _not_ 
-do (such as turning strikethrough, calculator keypad application mode, 
-mouse reports, and the alternative screen buffer on and off).
+     * [`console-control-sequence`](http://jdebp.eu./Softwares/nosh/guide/console-control-sequence.html) also responds to the name `setterm`, and can do most of what the non-portable util-linux tool by that name does; excluding the things that are specific to non-portable Linux `ioctl()`s and control codes (such as display adapter power management), but also including _extra_ standard DEC VT and ECMA-48 things that the util-linux tool does _not_ do (such as turning strikethrough, calculator keypad application mode, mouse reports, and the alternative screen buffer on and off).
 
-* There are a lot of new service bundles for more services, too many to 
-list here.  One can find them listed in the 1.37 and 1.38 + 1.39 release 
-announcements.
+* There are a lot of new service bundles for more services, too many to list here.  One can find them listed in the 1.37 and 1.38 + 1.39 release announcements.
 
-* There are new chapters in the <i>nosh Guide</i>, on packages and 
-ports, on resources for terminals such as keyboard maps, input methods, 
-and fonts, and on how the `head0` user-space virtual terminal is 
-structured.  There are also new manual pages (in addition to the ones 
-for all of the new commands, of course) on the subjects of the 
-[`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment 
-variable and the 
-[`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) 
-system.   (There are also
-[some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html)
-that have gone missing over the past decade.)
+* There are new chapters in the <i>nosh Guide</i>, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
 
-* The external format configuration import subsystem has seen some major 
-improvements in per-user service configuration.  The per-user service 
-manager itself gained a control FIFO, addressing a long-standing bug.
+* The external format configuration import subsystem has seen some major improvements in per-user service configuration.  The per-user service manager itself gained a control FIFO, addressing a long-standing bug.
 
 A particular area of improvement since the last status report is the 
 inclusion of input method capabilities in user-space virtual terminals.  
@@ -139,16 +109,8 @@ but there are no completions for the Bourne Again shell or the Friendly
 Interactive shell.  Work on such completions would be welcome.  The 
 users who use those shells would welcome it especially.
 
-* The `system-manager` already recognizes a `-b` option for
-[emergency mode](http://jdebp.eu./FGA/emergency-and-rescue-mode-bootstrap.html). 
-Work to make the FreeBSD loader and kernel send such an option to 
-process #1, in response to an additional emergency mode boot menu 
-choice, would be very welcome.
+* The `system-manager` already recognizes a `-b` option for [emergency mode](http://jdebp.eu./FGA/emergency-and-rescue-mode-bootstrap.html).  Work to make the FreeBSD loader and kernel send such an option to process #1, in response to an additional emergency mode boot menu choice, would be very welcome.
 
-* The `monitor-fsck-progress` and `monitored-fsck` tools stand ready to 
-work with a `-C` option to `fsck` that makes it spit out progress 
-information to an open file descriptor.  Another way to help is to add 
-this capability to `fsck`.
+* The `monitor-fsck-progress` and `monitored-fsck` tools stand ready to work with a `-C` option to `fsck` that makes it spit out progress information to an open file descriptor.  Another way to help is to add this capability to `fsck`.
 
-* `teken` needs to be added to base termcap.  It was put into NCurses 
-terminfo back in 2014.
+* `teken` needs to be added to base termcap.  It was put into NCurses terminfo back in 2014.

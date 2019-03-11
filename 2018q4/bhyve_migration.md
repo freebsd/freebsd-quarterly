@@ -23,14 +23,14 @@ migration is started by executing the bhyvectl command with the ```--migrate```
 or ```--migrate-live``` option, followed by the destination host IP and the
 port to send to the messages.
 
-__New features added__:
+New features added:
 
    * Prove that live migration cannot be implemented using the FreeBSD's Copy-on-Write mechanism;
    * Add ```--migrate-live``` option to bhyvectl;
    * Add additional message exchange between source and destination host to establish the migration type and the number of rounds;
    * Implement a dirty-bit approach for live migrating the guest's wired memory;
 
-__Future tasks__:
+Future tasks:
 
    * Clear the dirty bit after each migration round;
    * Extend live migration to highmem segment;

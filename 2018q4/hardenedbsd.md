@@ -3,7 +3,7 @@
 Contact: Shawn Webb, <shawn.webb@hardenedbsd.org>
 Link: (https://hardenedbsd.org)
 
-### Introduction to HardenedBSD
+### Introduction to HardenedBSD ###
 
 HardenedBSD is a security-enhanced fork of FreeBSD that aims to
 provide the BSD community with a clean-room reimplementation of the
@@ -11,7 +11,7 @@ publicly-documented parts of the grsecurity patchset for Linux. We
 maintain close compatibility with FreeBSD by syncing every six hours
 with FreeBSD.
 
-### HardenedBSD Foundation Update
+### HardenedBSD Foundation Update ###
 
 Through a generous donation by DEF CON, the computer security
 conference held each year in Las Vegas, and an anonymous member of the
@@ -34,7 +34,7 @@ not-for-profit charitable organization in the United States. We look
 forward to a productive 2019, with work to support Cross-DSO CFI still
 ongoing.
 
-### HardenedBSD 12-STABLE Released
+### HardenedBSD 12-STABLE Released ###
 
 In December 2018, HardenedBSD published is first official release of
 [12-STABLE](https://hardenedbsd.org/article/op/2018-12-17/stable-release-hardenedbsd-stable-12-stable-v1200058).
@@ -57,7 +57,7 @@ Improvements in 12-STABLE from 11-STABLE:
   implementations (llvm-ar, llvm-nm, and llvm-objdump).
 * Compilation of applications with Link-Time Optimization (LTO).
 
-#### Non-Cross-DSO CFI
+### Non-Cross-DSO CFI ###
 
 Non-Cross-DSO CFI is an exploit mitigation technique that helps
 to prevent attackers from modifying the behavior of a program and
