@@ -29,8 +29,6 @@ Some default versions were changed:
   * Ruby from 2.4 to 2.5
   * For LLVM, version 7.0 is now supported as a default version.
 
----
-
 Other big changes are:
   * info files are stored in the share/info directory just as other
     operating systems do.

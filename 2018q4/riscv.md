@@ -1,11 +1,11 @@
-## FreeBSD/RISC-V update
+## FreeBSD/RISC-V update ##
 
 Contact: Ruslan Bukin, <br@freebsd.org>
 Contact: Mark Johnston, <markj@freebsd.org>
 
 FreeBSD/RISC-V is getting more mature during last quarter.
 
-We have optimizied RISC-V copyin(9)/copyout(9) routines. They now support word-sized copies where possible to dramatically increase speed of copying data between kernel and userspace.
+We have optimised RISC-V copyin(9)/copyout(9) routines. They now support word-sized copies where possible to dramatically increase speed of copying data between kernel and userspace.
 
 We made a series of improvements and bug fixes to pmap support (machine-dependent portion of virtual memory subsystem). This part was not touched during the last years, and is now getting attention.
 

@@ -5,7 +5,6 @@ Contact: Tobias C. Berner, <tcberner@FreeBSD.org>
 
 Link:	 [KDE FreeBSD](https://freebsd.kde.org/)
 
-
 First of all, we removed KDE 4 from the ports tree this quarter.
 Qt4 will follow it by the end of march.
 

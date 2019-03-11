@@ -1,4 +1,4 @@
-## RockChip Support
+## RockChip Support ##
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 

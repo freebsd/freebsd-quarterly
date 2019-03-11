@@ -1,4 +1,4 @@
-## PWM Kernel API and userland utility
+## PWM Kernel API and userland utility ##
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 

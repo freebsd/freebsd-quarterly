@@ -1,4 +1,4 @@
-## DTS Update
+## DTS Update ##
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 

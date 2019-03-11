@@ -1,4 +1,4 @@
-# The nosh project
+## The nosh project ##
 
 Contact: Jonathan de Boyne Pollard, <J.deBoynePollard-newsgroups@NTLWorld.COM>
 
@@ -8,7 +8,7 @@ Link: [FreeBSD binary packages](http://jdebp.eu./Softwares/nosh/freebsd-binary-p
 Link: [Installation how-to](http://jdebp.eu./Softwares/nosh/timorous-admin-installation-how-to.html)
 Link: [Roadmap](http://jdebp.eu./Softwares/nosh/roadmap.html)
 
-## Background ##
+### Background ###
 
 The nosh project is a suite of system-level utilities for initializing, 
 running, and shutting down BSD systems; and for managing daemons, 
@@ -39,7 +39,7 @@ umbrella, and uses `kevent`(2) for event-driven parallelism.
 For more, see the aforelinked <i>introduction and blurb</i>, and the 
 <i>nosh Guide</i>.
 
-## News ##
+### News ###
 
 The project has seen a lot of development since the last status report 
 in 2017.  To briefly touch upon just some of the things that have been 
@@ -122,7 +122,7 @@ The external formats import subsystem will also now make a replacement
 `/etc/system-control/convert/termcap/termcap.db` that one can use, which 
 includes amongst other things the currently missing `teken` terminal type.
 
-## Roadmap ##
+### Roadmap ###
 
 In addition to what is on the aforelinked roadmap, several things are on 
 the cards for forthcoming versions.  Tools that can feed the process 
@@ -132,7 +132,7 @@ has multiple keyboards.  A Linux shim for `login.conf`. Proper handling
 of CSI sub-parameters in SoftTerm.  A manual page for the CIN file 
 format.  A `time-env-next-matching` tool.
 
-## How you can help ##
+### How you can help ###
 
 * The Z shell completions now have extensive coverage of the toolset, 
 but there are no completions for the Bourne Again shell or the Friendly 

@@ -2,7 +2,7 @@
 
 Contact: Oleg Ginzburg, <olevole@olevole.ru>
 
-Link:	 ClonOS Main Site URL: https://clonos.tekroutine.com
+Link:	 [ClonOS Main Site](https://clonos.tekroutine.com)
 
 ### What is ClonOS? ###
 

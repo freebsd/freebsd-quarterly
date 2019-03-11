@@ -2,7 +2,7 @@
 
 Contact: Konstantin Belousov, <kib@freebsd.org>
 
-Link:	The patch https://reviews.freebsd.org/D18893
+Link:	[The patch](https://reviews.freebsd.org/D18893)
 
 Skylake Xeons have a new feature in 4-level paging implementation
 called Usermode Protection Keys.  It is a complementary page access
@@ -33,8 +33,7 @@ explanation.
 
 int x86_pkru_get_perm(unsigned int keyidx, int *access, int *modify);
 int x86_pkru_set_perm(unsigned int keyidx, int access, int modify);
-int x86_pkru_protect_range(void *addr, unsigned long len, unsigned int keyidx,
-    int flag);
+int x86_pkru_protect_range(void *addr, unsigned long len, unsigned int keyidx, int flag);
 int x86_pkru_unprotect_range(void *addr, unsigned long len);
 
 Sponsor: The FreeBSD Foundation

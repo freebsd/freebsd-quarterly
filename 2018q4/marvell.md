@@ -1,4 +1,4 @@
-## Marvell 8K SoC support
+## Marvell 8K SoC support ##
 
 Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 Contact: Luis Octavio O Souza, <loos@FreeBSD.org>
