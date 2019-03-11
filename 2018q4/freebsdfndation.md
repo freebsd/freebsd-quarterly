@@ -7,12 +7,15 @@ The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to suppo
 Here are some highlights of what we did to help FreeBSD last quarter:
 
 ### Partnerships and Commercial User Support ###
+
 As a 501(c)(3) non-profit, we don’t directly support commercial users, but we do work with them to understand their needs and help facilitate collaboration with the community. Last quarter, we were able to meet with a number of FreeBSD users and supporters at the October FreeBSD Developer Summit and MeetBSD conference in addition to our regular company meetings.  These in-person meetings provide the opportunity to discuss pain points, identify how they can contribute back to FreeBSD, talk about what technologies they would like to see supported, and what can be done to support FreeBSD over more of their technologies and products.
 
 ### Fundraising Efforts ###
+
 By end of last year, we raised over $1.3M and were able to add Juniper, Netflix and Facebook and Handshake.org to our list of Foundation Partners. You can view entire list here (https://www.freebsdfoundation.org/donors/). We are still finalizing total donations, and will report the final numbers in early February. Thank you to everyone who supported our efforts in 2018. 
 
 ### OS Improvements ###
+
 In the fourth quarter of 2018 six authors made a total of 315 commits to FreeBSD development tree that were identified as being sponsored by the FreeBSD Foundation. These included staff members Konstantin Belousov, Glen Barber, Li-Wen Hsu and Ed Maste, and grant recipients Mateusz Guzik and Mark Johnston.
 
 Mateusz' work over the quarter consisted of identifying and fixing bottlenecks in the FreeBSD kernel and system libraries. The FreeBSD base system build, and ports built via Poudriere, were used as motivating cases.
@@ -27,6 +30,7 @@ Along with several FreeBSD developers Ed worked on the OpenSSL 1.1.1 import in p
 can be used as part of a vulnerability mitigation strategy.
 
 ### Continuous Integration and Quality Assurance ###
+
 The Foundation provides a full-time staff member who is working on improving our automated testing, continuous integration, and overall quality assurance efforts.
 
 During the fourth quarter of 2018, Foundation employee Li-Wen Hsu continuously worked on improving the project's CI infrastructure, examining the failing build and test cases, and work with other teams in the project for their testing needs. In this period, we also worked on collaboration with external projects to improve their CI on FreeBSD.
@@ -34,15 +38,18 @@ During the fourth quarter of 2018, Foundation employee Li-Wen Hsu continuously w
 See the FreeBSD CI section of this report for more information.
 
 ### Release Engineering ###
+
 The Foundation provides a full-time staff member to lead the release engineering efforts. This has provided timely and reliable releases over the last five years. During the fourth quarter of 2018, Glen Barber led the the FreeBSD Release Engineering team in continuing working on the 12.0-RELEASE with the official announcement sent December 11.
 
 See the FreeBSD Release Engineering Team section of this report for more
 information.
 
 ### Supporting FreeBSD Infrastructure ### 
+
 The Foundation provides hardware and support to improve the FreeBSD infrastructure. Last quarter, we continued supporting FreeBSD hardware located around the world.
 
 ### FreeBSD Advocacy and Education ###
+
 A large part of our efforts are dedicated to advocating for the Project. This includes promoting work being done by others with FreeBSD; producing advocacy literature to teach people about FreeBSD and help make the path to starting using FreeBSD or contributing to the Project easier; and attending and getting other FreeBSD contributors to volunteer to run FreeBSD events, staff FreeBSD tables, and give FreeBSD presentations.
 
 The FreeBSD Foundation sponsors many conferences, events, and summits around the globe. These events can be BSD-related, open source, or technology events geared towards underrepresented groups. We support the FreeBSD-focused events to help provide a venue for sharing knowledge, to work together on projects, and to facilitate collaboration between developers and commercial users. This all helps provide a healthy ecosystem. We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.
@@ -66,5 +73,6 @@ You can find out more about events we attended and upcoming events at https://ww
 For a look back at all of efforts in 2018, please see the year-end video at https://www.freebsdfoundation.org/blog/thank-you-for-supporting-freebsd/
 
 ### Legal/FreeBSD IP ###
+
 The Foundation owns the FreeBSD trademarks, and it is our responsibility to protect them. We also provide legal support for the core team to investigate questions that arise. Last quarter, we approved 6 requests to use the Trademark. 
 Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and how we can help you!
