@@ -1,6 +1,6 @@
 # The nosh project
 
-Contact: Jonathan de Boyne Pollard <J.deBoynePollard-newsgroups@NTLWorld.COM>
+Contact: Jonathan de Boyne Pollard, <J.deBoynePollard-newsgroups@NTLWorld.COM>
 
 Link: [Introduction and blurb](http://jdebp.eu./Softwares/nosh/)
 Link: [Guide](http://jdebp.eu./Softwares/nosh/guide.html)

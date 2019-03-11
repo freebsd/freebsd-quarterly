@@ -1,6 +1,7 @@
 ## FreeBSD KDE status report ##
 
-Contact: Adriaan de Groot <adridg@FreeBSD.org>, Tobias C. Berner <tcberner@FreeBSD.org>
+Contact: Adriaan de Groot, <adridg@FreeBSD.org>
+Contact: Tobias C. Berner, <tcberner@FreeBSD.org>
 
 Link:	 [KDE FreeBSD](https://freebsd.kde.org/)
 

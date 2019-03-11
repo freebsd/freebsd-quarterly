@@ -1,5 +1,6 @@
 ## pfsync performance improvement ##
-Contact: Kristof Provost <kp@freebsd.org>
+
+Contact: Kristof Provost, <kp@freebsd.org>
 Link:	 None
 
 While pf itself can operate on multiple states simultaneously

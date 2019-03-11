@@ -1,6 +1,6 @@
 ## PWM Kernel API and userland utility
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 A new subsystem was added to the kernel for PWM drivers to register themselves.
 In pair with the kernel subsystem, a pwm(8) utility is also available so users

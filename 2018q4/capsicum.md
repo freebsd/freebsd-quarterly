@@ -1,8 +1,8 @@
 ## Capsicum ##
 
-Contact: Mark Johnston <markj@FreeBSD.org>
-Contact: Ed Maste <emaste@FreeBSD.org>
-Contact: Mariusz Zaborski <oshogbo@FreeBSD.org>
+Contact: Mark Johnston, <markj@FreeBSD.org>
+Contact: Ed Maste, <emaste@FreeBSD.org>
+Contact: Mariusz Zaborski, <oshogbo@FreeBSD.org>
 
 Link:	 [Capsicum Wiki Page](https://wiki.FreeBSD.org/Capsicum)
 

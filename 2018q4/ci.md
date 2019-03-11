@@ -1,8 +1,7 @@
 ## Continuous Integration ##
 
-Contact:
-  * Jenkins Admin <jenkins-admin@FreeBSD.org>
-  * Li-Wen Hsu <lwhsu@FreeBSD.org>
+Contact: Jenkins Admin, <jenkins-admin@FreeBSD.org>
+Contact: Li-Wen Hsu, <lwhsu@FreeBSD.org>
 
 Link:
   * [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)

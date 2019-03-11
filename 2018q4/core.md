@@ -1,6 +1,6 @@
 ## FreeBSD Core Team
 
-Contact: FreeBSD Core Team <core@FreeBSD.org>
+Contact: FreeBSD Core Team, <core@FreeBSD.org>
 
 Noteworthy events since the last quarterly report:
 - Yuri Pankov (yuripv@) was awarded a source commit bit under the mentorship of Konstantin Belousov (kib@).

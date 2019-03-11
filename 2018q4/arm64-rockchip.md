@@ -1,6 +1,6 @@
 ## RockChip Support
 
-Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Emmanuel Vadot, <manu@FreeBSD.org>
 
 Early support for the RockChip RK3399 has been commited.
 For now it's only possible to netboot boards (Like the RockPro64).

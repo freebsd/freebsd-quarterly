@@ -1,9 +1,9 @@
 ## BSD PL ##
 
-Contact: Official <meetup@bsd-pl.org>
-Contact: Konrad Witaszczyk <def@FreeBSD.org>
-Contact: Mariusz Zaborski <oshogbo@FreeBSD.org>
-Contact: Jarosław Żurek <contact@zurek.pro>
+Contact: Official, <meetup@bsd-pl.org>
+Contact: Konrad Witaszczyk, <def@FreeBSD.org>
+Contact: Mariusz Zaborski, <oshogbo@FreeBSD.org>
+Contact: Jarosław Żurek, <contact@zurek.pro>
 
 Link: https://bsd-pl.org/
 

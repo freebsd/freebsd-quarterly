@@ -1,6 +1,6 @@
 ## ClonOS: virtualization platform on top of FreeBSD Operating System ##
 
-Contact: Oleg Ginzburg <olevole@olevole.ru>
+Contact: Oleg Ginzburg, <olevole@olevole.ru>
 
 Link:	 ClonOS Main Site URL: https://clonos.tekroutine.com
 

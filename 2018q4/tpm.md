@@ -1,6 +1,8 @@
 ## Improving FreeBSD boot security ##
 
-Contact: Michal Stanek, <mst@semihalf.com>, Marcin Wojtas, <mw@semihalf.com>, Kornel Duleba, <mindal@semihalf.com>
+Contact: Michal Stanek, <mst@semihalf.com>
+Contact: Marcin Wojtas, <mw@semihalf.com>
+Contact: Kornel Duleba, <mindal@semihalf.com>
 
 Link:	 [TPM 2.0 driver](https://svnweb.freebsd.org/base/head/sys/dev/tpm/tpm20.c?revision=342084&view=markup)
 Link:	 [Loader Secure Boot support](https://reviews.freebsd.org/D18798)
