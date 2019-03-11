@@ -5,7 +5,7 @@ Contact: Konrad Witaszczyk, <def@FreeBSD.org>
 Contact: Mariusz Zaborski, <oshogbo@FreeBSD.org>
 Contact: Jarosław Żurek, <contact@zurek.pro>
 
-Link: https://bsd-pl.org/
+Link: (https://bsd-pl.org/)
 
 The Polish BSD User group is an initiative promoting systems from the
 BSD family. We organize both meetings and as well as tutorial

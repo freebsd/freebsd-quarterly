@@ -64,15 +64,15 @@ Some of the advocacy and education work we did last quarter includes:
 
 We continued producing FreeBSD advocacy material to help people promote FreeBSD around the world. 
 
-Read more about our conference adventures in the conference recaps and trip reports in our monthly newsletters: https://www.freebsdfoundation.org/news-and-events/newsletter/
+Read more about our conference adventures in the conference recaps and trip reports in our monthly newsletters: (https://www.freebsdfoundation.org/news-and-events/newsletter/)
 
-We help educate the world about FreeBSD by publishing the professionally produced FreeBSD Journal. We recently announced that the FreeBSD Journal will become a Free publication with the January/February 2019 issue. https://www.FreeBSDfoundation.org/journal/.
+We help educate the world about FreeBSD by publishing the professionally produced FreeBSD Journal. We recently announced that the FreeBSD Journal will become a Free publication with the January/February 2019 issue. (https://www.FreeBSDfoundation.org/journal/).
 
-You can find out more about events we attended and upcoming events at https://www.FreeBSDfoundation.org/news-and-events/.
+You can find out more about events we attended and upcoming events at (https://www.FreeBSDfoundation.org/news-and-events/).
 
-For a look back at all of efforts in 2018, please see the year-end video at https://www.freebsdfoundation.org/blog/thank-you-for-supporting-freebsd/
+For a look back at all of efforts in 2018, please see the year-end video at (https://www.freebsdfoundation.org/blog/thank-you-for-supporting-freebsd/).
 
 ### Legal/FreeBSD IP ###
 
 The Foundation owns the FreeBSD trademarks, and it is our responsibility to protect them. We also provide legal support for the core team to investigate questions that arise. Last quarter, we approved 6 requests to use the Trademark. 
-Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and how we can help you!
+Go to (http://www.FreeBSDfoundation.org) to find out how we support FreeBSD and how we can help you!

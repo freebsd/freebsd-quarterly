@@ -40,7 +40,7 @@ During this period, work was carried out to:
 
 Open task:
 
-- ClonOS roadmap: https://clonos.tekroutine.com/roadmap.html
+- ClonOS roadmap: (https://clonos.tekroutine.com/roadmap.html)
 - FreeNAS/XigmaNAS or any other NAS integration
 - I would like to see ClonOS in real-world use. In this regard, I am interested
   in finding more people and companies that use FreeBSD for vm/jail services.
