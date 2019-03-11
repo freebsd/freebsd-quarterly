@@ -23,4 +23,4 @@ pfsync test case was added.
 
 This was committed into head in r341646, and later merged into stable/12 and stable/11.
 
-The work was sponsored by Orange Business Services.
+Sponsor: Orange Business Services

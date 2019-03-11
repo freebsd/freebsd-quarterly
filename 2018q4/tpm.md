@@ -25,4 +25,4 @@ UEFI Secure Boot support code will most likely be integrated with sjg's Veriexec
 
 Semihalf is also working on improving security of Veriexec by moving manifest signature verification to the kernel.
 
-Work sponsored by: Stormshield
+Sponsor: Stormshield

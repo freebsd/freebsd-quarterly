@@ -13,10 +13,10 @@ __New features added__:
    * Extend libvdsk to make it easier to implement new formats;
    * Implement read/write/probe functionalities in order to parse QCOW2 image files;
 
-Sponsors: Matthew Grooms;
-
 __Future tasks__:
 
    * Add support for Copy-On-Write;
    * Add support for multiple snapshots;
    * Integrate libvdsk in bhyve
+
+Sponsor: Matthew Grooms

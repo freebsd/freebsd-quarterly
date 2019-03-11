@@ -26,4 +26,4 @@ Todo:
 * Internal review and validation
 * Upstream of the patches
 
-Work sponsored by: Amazon.com Inc.
+Sponsor: Amazon.com Inc.

@@ -32,9 +32,6 @@ __New features added__:
    * Add suspend/resume support for Windows guests;
    * Refactor save and restore code - save component's state field by field
 
-
-Sponsors: Matthew Grooms; iXsystems;
-
 __Future tasks__:
 
    * Open ticket on Phabricator;
@@ -42,3 +39,5 @@ __Future tasks__:
    * Add suspend/resume support for virtio-console;
    * Add suspend/resume support for virtio-scsi;
    * Add TSC offseting for restore for AMD CPUs;
+
+Sponsor: Matthew Grooms; iXsystems;

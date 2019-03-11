@@ -8,4 +8,4 @@ has been commited.
 As of today clocks, gpio, thermal, sdcard/eMMC drivers has been commited.
 SATA and USB were already working.
 
-This work was sponsored by Rubicon Communications, LLC ("Netgate")
+Sponsor: Rubicon Communications, LLC ("Netgate")

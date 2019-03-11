@@ -30,10 +30,10 @@ __New features added__:
    * Add additional message exchange between source and destination host to establish the migration type and the number of rounds;
    * Implement a dirty-bit approach for live migrating the guest's wired memory;
 
-Sponsors: Matthew Grooms;
-
 __Future tasks__:
 
    * Clear the dirty bit after each migration round;
    * Extend live migration to highmem segment;
    * Extend live migration to unwired memory;
+
+Sponsor: Matthew Grooms
