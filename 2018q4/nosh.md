@@ -36,8 +36,8 @@ service management as well as system-wide, provides user-space virtual
 terminals, brings TTY login under the general service management 
 umbrella, and uses `kevent`(2) for event-driven parallelism.
 
-For more, see the aforelinked <i>introduction and blurb</i>, and the 
-<i>nosh Guide</i>.
+For more, see the aforelinked `introduction and blurb`, and the
+`nosh Guide`.
 
 ### News ###
 
@@ -55,7 +55,7 @@ worked on:
 
 * There are a lot of new service bundles for more services, too many to list here.  One can find them listed in the 1.37 and 1.38 + 1.39 release announcements.
 
-* There are new chapters in the <i>nosh Guide</i>, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
+* There are new chapters in the `nosh Guide`, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
 
 * The external format configuration import subsystem has seen some major improvements in per-user service configuration.  The per-user service manager itself gained a control FIFO, addressing a long-standing bug.
 
@@ -69,7 +69,7 @@ multiple input methods on the fly, and responds to both the dedicated
 keys on a JIS 106/109-key keyboard or a Korean 103/106-key keyboard and 
 the conventional keys used on other keyboards.  The blurb includes
 [an example of how this works for a Japanese user](http://jdebp.eu./Softwares/nosh/japanese-input-methods.html),
-and the virtual terminal chapters of the <i>nosh Guide</i> now incorporate 
+and the virtual terminal chapters of the `nosh Guide` now incorporate
 input methods into the doco.
 
 Another area of work was eliminating Wide NCurses from almost all of the 
