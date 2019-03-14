@@ -12,17 +12,15 @@
 
    - LKPI support for POWER9, Drm-next supports radeonkms. Some additional big
      endian changes required for amdgpu.
-
   
    - Interrupt handling improvements resulting in up to a 10% reduction in
      buildkernel time.
 
-      a) Cached XICS IPI vector
+      - Cached XICS IPI vector
 
-      b) Added XIVE exploitation mode driver
+      - Added XIVE exploitation mode driver
 
    - Rust support in review.
 
    - Successfully booted an LLVM compiled kernel.
 
-   
