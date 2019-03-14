@@ -18,11 +18,11 @@ The Save/Restore for bhyve feature is a suspend and resume facility added to the
 FreeBSD/amd64's hypervisor, bhyve. The bhyvectl tool is used to save the guest
 state in three files (a file for the guest memory, a file for devices' and CPU's
 state and another one for some metadata that are used in the restore process).
-To suspend a bhyve guest, the bhyvectl tool must be run with the ```--suspend <state_file_name>```
+To suspend a bhyve guest, the bhyvectl tool must be run with the `--suspend <state_file_name>`
 option followed by the guest name.
 
-To restore a bhyve guest from a checkpoint, one simply has to add the ```-r``` option
-followed by the main state file (the same file that was given to the ```--suspend```
+To restore a bhyve guest from a checkpoint, one simply has to add the `-r` option
+followed by the main state file (the same file that was given to the `--suspend`
 option for bhyvectl) when starting the VM.
 
 New features added:
