@@ -4,7 +4,7 @@ Since we are still on this island among many in this vast ocean of the internet,
 
 i386 PAE Pagetables for up to 24GB memory support, Continuous Integration efforts, driver updates to ena and graphics, ARM enhancements such as RochChip, Marvell 8K, and Broadcom support as well as more DTS files, more Capsicum possibilities, as well as pfsync improvements, and many more things that you can read about for yourselves.
 
-Additionally, we bring news from some islands further down stream, namely the nosh project, HardenedBSD, ClonOS, and the Polish BSD User-Group
+Additionally, we bring news from some islands further down stream, namely the nosh project, HardenedBSD, ClonOS, and the Polish BSD User-Group.
 
 We would, selfishly, encourage those of you who give us the good word to please send in your submissions sooner than just before the deadline, and also encourage anyone willing to share the good word to please read the section on which submissions we're also interested in having.
 
