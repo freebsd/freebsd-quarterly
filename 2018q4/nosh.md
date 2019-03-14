@@ -49,13 +49,13 @@ worked on:
 
 * There are quite a lot of new tools, including `getuidgid`, `userenv-fromenv`, `setgid-fromenv`, `envgid`, `printenv`, `setlogin`, `console-decode-ecma48`, `console-control-sequence`, `console-flat-table-viewer`, `console-input-method`, and `local-stream-socket-connect`.  To look at just two of these:
 
-     * [`printenv`](http://jdebp.eu./Softwares/nosh/guide/printenv.html) as a built-in allows more convenient use in conjunction with `clearenv`.  It can also generate output in some additional formats.
+     * [printenv](http://jdebp.eu./Softwares/nosh/guide/printenv.html) as a built-in allows more convenient use in conjunction with `clearenv`.  It can also generate output in some additional formats.
 
-     * [`console-control-sequence`](http://jdebp.eu./Softwares/nosh/guide/console-control-sequence.html) also responds to the name `setterm`, and can do most of what the non-portable util-linux tool by that name does; excluding the things that are specific to non-portable Linux `ioctl()`s and control codes (such as display adapter power management), but also including _extra_ standard DEC VT and ECMA-48 things that the util-linux tool does _not_ do (such as turning strikethrough, calculator keypad application mode, mouse reports, and the alternative screen buffer on and off).
+     * [console-control-sequence](http://jdebp.eu./Softwares/nosh/guide/console-control-sequence.html) also responds to the name `setterm`, and can do most of what the non-portable util-linux tool by that name does; excluding the things that are specific to non-portable Linux `ioctl()`s and control codes (such as display adapter power management), but also including _extra_ standard DEC VT and ECMA-48 things that the util-linux tool does _not_ do (such as turning strikethrough, calculator keypad application mode, mouse reports, and the alternative screen buffer on and off).
 
 * There are a lot of new service bundles for more services, too many to list here.  One can find them listed in the 1.37 and 1.38 + 1.39 release announcements.
 
-* There are new chapters in the `nosh Guide`, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [`TERM`](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [`TerminalCapabilities`](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
+* There are new chapters in the `nosh Guide`, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [TERM](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [TerminalCapabilities](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
 
 * The external format configuration import subsystem has seen some major improvements in per-user service configuration.  The per-user service manager itself gained a control FIFO, addressing a long-standing bug.
 
@@ -84,9 +84,9 @@ generation.  The decoder is the basis for the new
 `console-decode-ecma48` tool, for example, as well as being the decoder 
 for terminal input in `console-termio-realizer` and in full-screen TUI 
 tools like 
-[`chkservice`](http://jdebp.eu./Softwares/nosh/guide/chkservice.html) 
+[chkservice](http://jdebp.eu./Softwares/nosh/guide/chkservice.html)
 and the new 
-[`console-flat-table-viewer`](http://jdebp.eu./Softwares/nosh/guide/console-flat-table-viewer.html).
+[console-flat-table-viewer](http://jdebp.eu./Softwares/nosh/guide/console-flat-table-viewer.html).
 
 The external formats import subsystem will also now make a replacement 
 `/etc/system-control/convert/termcap/termcap.db` that one can use, which 
