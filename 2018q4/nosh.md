@@ -55,7 +55,9 @@ worked on:
 
 * There are a lot of new service bundles for more services, too many to list here.  One can find them listed in the 1.37 and 1.38 + 1.39 release announcements.
 
-* There are new chapters in the `nosh Guide`, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.  There are also new manual pages (in addition to the ones for all of the new commands, of course) on the subjects of the [TERM](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [TerminalCapabilities](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.   (There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.)
+* There are new chapters in the `nosh Guide`, on packages and ports, on resources for terminals such as keyboard maps, input methods, and fonts, and on how the `head0` user-space virtual terminal is structured.
+   There are also new manual pages - in addition to the ones for all of the new commands, of course - on the subjects of the [TERM](http://jdebp.eu./Softwares/nosh/guide/TERM.html) environment variable and the [TerminalCapabilities](http://jdebp.eu./Softwares/nosh/guide/TerminalCapabilities.html) system.
+  There are also [some replacements for some Linux manual pages](http://jdebp.eu./Proposals/linux-kvt-manual-pages.html) that have gone missing over the past decade.
 
 * The external format configuration import subsystem has seen some major improvements in per-user service configuration.  The per-user service manager itself gained a control FIFO, addressing a long-standing bug.
 
