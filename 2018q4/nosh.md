@@ -76,7 +76,7 @@ input methods into the doco.
 
 Another area of work was eliminating Wide NCurses from almost all of the 
 tools, apart from the one tool that by definition uses it 
-(`console-ncurses-realizer`).  Wide NCurses has long been a porting 
+(console-ncurses-realizer).  Wide NCurses has long been a porting 
 difficulty for several operating systems, including Gentoo Linux and 
 OpenBSD, and does not really model modern real world terminals and 
 terminal emulators very well.  It has been replaced by a new 
