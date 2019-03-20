@@ -19,7 +19,7 @@ further details.
 
 Since a key index must be always specified, this makes the key zero a
 default key, which permissions are tricky to modify without breaking
-the process envirnment.  The rest 15 keys are usable, for instance
+the process environment.  The rest 15 keys are usable, for instance
 process might put some sensitive data like decoded private key into
 the key protected area, and only enable access on as needed basis,
 without issuing costly mprotect(2) syscall.  Note that permissions are
