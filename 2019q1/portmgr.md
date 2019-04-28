@@ -8,31 +8,23 @@ Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/artic
 Link:	 [FreeBSD Ports Monitoring](http://portsmon.freebsd.org/index.html)
 Link:	 [Ports Management Team](https://www.freebsd.org/portmgr/index.html">Ports Management Team)
 
-Paragraphs are separated with an empty line.  Use Markdown
-syntax, the same as you use on GitHub.  If you don't know
-Markdown, just write it as if it was plain text.
+As always, below is a summary of what happened in the Ports Tree during the
+last quarter.
 
-Introduce your work.  Do not assume that the person reading
-the report knows about your project.
+During 2019q1, the number of ports dropped slightly to just over 32,500.  At
+the end of the quarter, we had 2092 open port PRs.  The last quarter saw 8205
+commits from 167 committers.  So more PRs were closed and more commits were
+made than in 2018q4.
 
-Show the importance of your work.  Status reports are not
-just about telling everyone that things were done, they also
-need to explain why they were done.
+During the last quarter, we welcomed Kai Knoblich (kai@) and said goodbye to
+Matthew Rezny (rezny@).
 
-What has happened since the last report?  Let us know what
-is new in this area.
+On the infrastructure side, two new USES were introduced (azurepy and sdl) and
+USES=gecko was removed.  The default versions of Lazarus and LLVM were bumped
+to 2.0.0 and 8.0 respectively.  Some big port frameworks that were end-of-life
+were removed: PHP 5.6, Postgresql 9.3, Qt4, WebKit-Gtk and XPI.  Firefox was
+updated to 66.0.2, Firefox-ESR to 60.6.1, and Chromium was updated to
+72.0.3626.121.
 
-  * #ports #PR #PRunassigned #commits #committers conclusion
-  * commit bits granted/safekept (who/why)
-  * portmgr news/members
-  * infra: USES, default-versions, big changes
-  * major port updates (pkg), Firefox, Chromium
-  * exp-runs, pkg-builders, other infra
-
-If help is needed, make this explicit.  List tasks, with enough
-detail that people know if they are likely to be able to do them,
-and invite people to get in contact:
-
-  * Help for PRs?
-  * Help for testing?
-  * Help for documentation?
+During the last quarter, antoine@ ran 30 exp-runs for package updates, moving
+from GNU ld to LLVM ld, and switching clang to DWARF4.
