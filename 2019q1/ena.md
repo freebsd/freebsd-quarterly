@@ -1,6 +1,6 @@
 ## ENA FreeBSD Driver Update ##
 
-Contact: Michal Krawczyk <mk@semihalf.com>
+Contact: Michal Krawczyk <mk@semihalf.com>, Marcin Wojtas <mw@semihalf.com>
 
 Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)
 
@@ -18,8 +18,8 @@ To do:
 
 Recently, AWS released the A1 instances which are arm64 instances. Kernel was
 fixed, so the ENA can be used on those instances without any issues. Changes
-required adjustments in resource activation in the ENA driver (r345371) and
-adding missing bus release method to the nexus module for aarch64 (r345373).
+required adjustments in resource activation in the ENA driver [r345371](https://svnweb.freebsd.org/base?view=revision&revision=345371) and
+adding missing bus release method to the nexus module for aarch64 [r345373](https://svnweb.freebsd.org/base?view=revision&revision=345373).
 With those changes, the ENA driver should be able to run on A1 instances without
 any issues.
 
