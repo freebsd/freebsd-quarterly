@@ -132,7 +132,7 @@ Open tasks:
 
   * The number of commits dropped somewhat over the last three quarters,
     leaving more PRs unresolved.  If possible, please pick up some PRs
-    and improve everyone's experience.
+    and improve everyone's experience (please add a link so readers know where to go).
 
 ## Core Team ##
 
