@@ -32,8 +32,9 @@ to improve the code coverage, temporarily disabling flakey test cases,
 and opening tickets to work with domain experts.  The details are
 of these efforts are available in the weekly CI reports.
 
-We published the draft FCP for CI policy and are ready to accept comments:
-https://github.com/freebsd/fcp/blob/master/fcp-20190401-ci_policy.md
+We published the
+[draft FCP for CI policy](https://github.com/freebsd/fcp/blob/master/fcp-20190401-ci_policy.md)
+and are ready to accept comments.
 
 Please see freebsd-testing@ related tickets for more information.
 

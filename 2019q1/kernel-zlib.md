@@ -2,7 +2,7 @@
 
 Contact: Yoshihiro Ota, <ota@j.email.ne.jp>  
 
-Link:	(https://reviews.freebsd.org/D19706)  
+Link:	[Review D19706](https://reviews.freebsd.org/D19706)  
 
 The FreeBSD system still uses an ancient (over 20 year-old) version
 of zlib (version 1.0.4).  The FreeBSD kernel zlib implementation

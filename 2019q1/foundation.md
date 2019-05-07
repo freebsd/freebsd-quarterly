@@ -42,10 +42,10 @@ individual and corporate donations, including donations and commitments from
 NetApp, Netflix, Intel, Tarsnap, Beckhoff Automation, E-Card, VMware, and
 Stormshield. We are working hard to get more commercial users to give back
 to help us continue our work supporting FreeBSD.
-Please consider
-[making a donation](https://www.FreeBSDfoundation.org/donate/)
-to help us continue and increase our support for FreeBSD:
-https://www.FreeBSDfoundation.org/donate/.
+Please consider making a
+[donation](https://www.FreeBSDfoundation.org/donate/)
+to help us continue and increase our support for FreeBSD at:
+[www.FreeBSDfoundation.org/donate/](https://www.FreeBSDfoundation.org/donate/).
 
 We also have the Partnership Program, to provide more benefits for our
 larger commercial donors. Find out more information at
@@ -207,10 +207,10 @@ We help educate the world about FreeBSD by publishing the
 professionally produced FreeBSD Journal. We're excited to announce that with
 the release of the January/February 2019 issue, the FreeBSD Journal is now a
 free publication. Find out more and access the latest issues at
-https://www.FreeBSDfoundation.org/journal/.
+[www.FreeBSDfoundation.org/journal/](https://www.FreeBSDfoundation.org/journal/).
 
 You can find out more about events we attended and upcoming events at
-https://www.FreeBSDfoundation.org/news-and-events/.
+[www.FreeBSDfoundation.org/news-and-events/](https://www.FreeBSDfoundation.org/news-and-events/).
 
 We also engaged with a new website developer to help us improve our website
 to make it easier for community members to find information more easily and
@@ -222,5 +222,5 @@ The Foundation owns the FreeBSD trademarks, and it is our responsibility to
 protect them. We also provide legal support for the core team to investigate
 questions that arise.
 
-Go to http://www.FreeBSDfoundation.org to find out how we support FreeBSD and
-how we can help you!
+Go to [www.FreeBSDfoundation.org](http://www.FreeBSDfoundation.org) to find out
+how we support FreeBSD and how we can help you!
