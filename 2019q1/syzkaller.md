@@ -45,9 +45,12 @@ ioctl(2) definitions are missing.
 Some in-progress work aims to add support for bhyve as a VM backend
 for syzkaller, making it easier to fuzz FreeBSD VMs hosted on
 FreeBSD.  Currently that can be done using QEMU, but QEMU on FreeBSD
-lacks support for hardware acceleration.
+lacks support for hardware acceleration.  See the
+[PR](https://github.com/google/syzkaller/pull/1150) for the
+implementation.
 
 Finally, a number of bugs identified by syzkaller have yet to be
 fixed.  If you are interested in helping out with any of the above,
 please mail the contacts listed above.
 
+Sponsor: The FreeBSD Foundation
