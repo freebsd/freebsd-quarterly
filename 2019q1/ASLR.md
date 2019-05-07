@@ -2,7 +2,7 @@
 
 Contact: Konstantin Belousov <kib@freebsd.org>
 
-== ASLR
+### ASLR
 
 The ASLR (Address Space Layout Randomization) patch from
 [review D5603](https://reviews.freebsd.org/D5603) was
@@ -30,7 +30,7 @@ run, you can get the speed of non-pti syscalls back, but still run
 your normal user session in PTI mode.  E.g., firefox would be properly
 isolated.
 
-== Feature-control bits
+### Feature-control bits
 
 Every FreeBSD executable now contains a bit mask intended for
 enabling/disabling security-related features which makes sense for the

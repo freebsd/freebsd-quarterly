@@ -5,7 +5,7 @@ Contact: Konstantin Belousov <kib@freebsd.org>
 Several changes where made to the C runtime which generally improves
 the environment provided to an application.
 
-== Fix for libraries with initial exec TLS mode
+### Fix for libraries with initial exec TLS mode
 
 Some libraries, most prominent of which is NVidia-provided and thus
 binary-only libGL.so.1, use so called initial exec mode for TLS
@@ -42,7 +42,7 @@ These measures should make FreeBSD more resilent to improperly
 linked libraries.  The most interesting fix is to users of the
 nvidia libgl library, because it cannot be fixed by relinking.
 
-== Use rtld malloc in libthr
+### Use rtld malloc in libthr
 
 The FreeBSD implementation of mutexes in libthr allocates some
 memory to keep the mutex data needed for mutex initialization.  In
@@ -68,7 +68,7 @@ storage.  The later was already switched to direct use of mmap(2) for
 similar reasons.  Now less memory is wasted when key storage requires
 less than a page.
 
-== Destructors order bug
+### Destructors order bug
 
 Alexander Kabaev (kan@) noted that C++ destructors for the
 static objects from the linked shared libraries are executed before
