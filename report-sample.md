@@ -1,12 +1,16 @@
 ## Status Report Sample - This Will Become The Title ##
 
-Contact: Full Name, <email@example.org>
+Contact: Full Name, <email@example.org>  
 
-Link:	 [Link description here](http://www.example.com/project/url)
+Link:	 [Link description here](http://www.example.com/project/url)  
+Link:	 [Another link description here](http://www.example.com/other/url)  
 
 Paragraphs are separated with an empty line.  Use Markdown
 syntax, the same as you use on GitHub.  If you don't know
-Markdown, just write it as if it was plain text.
+Markdown, just write it as if it was plain text.  Note that
+**Contact:**, **Link:**, and **Sponsor:** in this template
+have two trailing spaces (`  `), which indicates that they
+should have a line break after them.
 
 Introduce your work.  Do not assume that the person reading
 the report knows about your project.
@@ -28,4 +32,4 @@ and invite people to get in contact:
   * Second task
   * Third, if any
 
-Sponsor: Sponsoring Organisation, If Any
+Sponsor: Sponsoring Organisation, If Any  
