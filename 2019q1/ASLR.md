@@ -4,7 +4,7 @@ Contact: Konstantin Belousov <kib@freebsd.org>
 
 == ASLR
 
-The ASLR (Address Space Layour Randomization) patch from D5603 was
+The ASLR (Address Space Layout Randomization) patch from D5603 was
 committed into svn.  While debate continues about the current and
 forward-looking value ASLR provides, having an implementation in
 the FreeBSD source tree makes it easily available to those who wish
