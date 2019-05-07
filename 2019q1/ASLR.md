@@ -4,7 +4,8 @@ Contact: Konstantin Belousov <kib@freebsd.org>
 
 == ASLR
 
-The ASLR (Address Space Layout Randomization) patch from D5603 was
+The ASLR (Address Space Layout Randomization) patch from
+[review D5603](https://reviews.freebsd.org/D5603) was
 committed into svn.  While debate continues about the current and
 forward-looking value ASLR provides, having an implementation in
 the FreeBSD source tree makes it easily available to those who wish
@@ -49,6 +50,6 @@ to FreeBSD and the mask can be used for enabling/disabling those
 features..
 
 It is expected that a tool to manipulate the mask will be provided
-shortly, see https://reviews.freebsd.org/D19290 .
+shortly, see [review D19290](https://reviews.freebsd.org/D19290).
 
 Sponsor: The FreeBSD Foundation
