@@ -1,11 +1,11 @@
 ## Fuzzing FreeBSD with syzkaller
 
-Contact: Mark Johnston, <markj@FreeBSD.org>
-Contact: Andrew Turner, <andrew@FreeBSD.org>
-Contact: Michael Tuexen, <tuexen@FreeBSD.org>
-Contact: Ed Maste, <emaste@FreeBSD.org>
+Contact: Mark Johnston, <markj@FreeBSD.org>  
+Contact: Andrew Turner, <andrew@FreeBSD.org>  
+Contact: Michael Tuexen, <tuexen@FreeBSD.org>  
+Contact: Ed Maste, <emaste@FreeBSD.org>  
 
-Link:	 [syzkaller](https://github.com/google/syzkaller)
+Link:	 [syzkaller](https://github.com/google/syzkaller)  
 
 Syzkaller is a coverage-guided system call fuzzer.  It was originally
 developed for Linux.  It programmatically creates programs consisting

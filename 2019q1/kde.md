@@ -1,9 +1,9 @@
 ## FreeBSD KDE status report ##
 
-Contact: Adriaan de Groot, <adridg@FreeBSD.org>
-Contact: Tobias C. Berner, <tcberner@FreeBSD.org>
+Contact: Adriaan de Groot, <adridg@FreeBSD.org>  
+Contact: Tobias C. Berner, <tcberner@FreeBSD.org>  
 
-Link:	 [KDE FreeBSD](https://freebsd.kde.org/)
+Link:	 [KDE FreeBSD](https://freebsd.kde.org/)  
 
 The two biggest accomplishements this quarter were:
 * Qt4 and all its consumers have been removed from the ports tree.

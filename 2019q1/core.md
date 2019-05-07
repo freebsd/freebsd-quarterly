@@ -1,6 +1,6 @@
 ## FreeBSD Core Team ##
 
-Contact: FreeBSD Core Team, <core@FreeBSD.org>
+Contact: FreeBSD Core Team, <core@FreeBSD.org>  
 
 The FreeBSD Core Team is the governing body of FreeBSD.
 

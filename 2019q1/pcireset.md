@@ -1,6 +1,6 @@
 ## PCI Express Resets ##
 
-Contact: Konstantin Belousov <konstantinb@mellanox.com>
+Contact: Konstantin Belousov <konstantinb@mellanox.com>  
 
 Sometimes the need to reset a device attached to the system presents
 itself.  Preferrably this device reset can be accomplished without
@@ -43,4 +43,4 @@ Mellanox uses the infrastructure to perform reset of the mlx(5) card
 after firmware reset without server reboot.  It is believed that
 'devctl reset' will be more widely useful.
 
-Sponsor: Mellanox Technologies
+Sponsor: Mellanox Technologies  

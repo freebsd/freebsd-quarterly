@@ -1,9 +1,9 @@
 ## LLVM's lld as the FreeBSD system linker ##
 
-Contact: Ed Maste, <emaste@freebsd.org>
+Contact: Ed Maste, <emaste@freebsd.org>  
 
-Link:    [LLD on the FreeBSD Wiki](https://wiki.freebsd.org/LLD)
-Link:    [lld exp-run](https://bugs.freebsd.org/214864)
+Link:    [LLD on the FreeBSD Wiki](https://wiki.freebsd.org/LLD)  
+Link:    [lld exp-run](https://bugs.freebsd.org/214864)  
 
 In FreeBSD-HEAD and 12.0 the default FreeBSD system linker
 (i.e., `/usr/bin/ld`) is LLVM's lld, on amd64, arm64, and armv7.
@@ -41,4 +41,4 @@ Tasks:
     that are no longer needed, should be addressed in lld, or should be sent
     upstream
 
-Sponsor: The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation  

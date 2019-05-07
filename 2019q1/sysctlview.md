@@ -2,8 +2,8 @@
 
 Contact: Alfonso Sabato Siciliano, <alfonso.siciliano@email.com>
 
-Link:	 [gitlab.com/alfix/sysctlview](https://www.gitlab.com/alfix/sysctlview)  
-Port:	 [deskutils/sysctlview](https://www.freshports.org/deskutils/sysctlview/)
+Link:	 [gitlab.com/alfix/sysctlview](https://www.gitlab.com/alfix/sysctlview)    
+Port:	 [deskutils/sysctlview](https://www.freshports.org/deskutils/sysctlview/)  
 
 The FreeBSD's kernel maintains a _Management Information Base_ where
 the _objects_ are properties to tuning the system using the

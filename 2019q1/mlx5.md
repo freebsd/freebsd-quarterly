@@ -1,8 +1,8 @@
 ## mlx5 Drivers Update ##
 
-Contact: Slava Shwartsman, Hans Petter Selasky, Konstantin Belousov <freebsd-drivers@mellanox.com>
+Contact: Slava Shwartsman, Hans Petter Selasky, Konstantin Belousov <freebsd-drivers@mellanox.com>  
 
-Link:	 [Mellanox OFED for FreeBSD Documentation](http://www.mellanox.com/page/products_dyn?product_family=193&mtag=freebsd_driver)
+Link:	 [Mellanox OFED for FreeBSD Documentation](http://www.mellanox.com/page/products_dyn?product_family=193&mtag=freebsd_driver)  
 
 The mlx5 driver provides support for PCI Express adapters based on
 ConnectX-4(LX), ConnectX-5(EX) and ConnectX-6(DX).
@@ -39,4 +39,4 @@ Following updates done in mlx5 drivers:
   * Added support for in-driver firmware updating using mlx5tool.
 
 
-Sponsor: Mellanox Technologies
+Sponsor: Mellanox Technologies  

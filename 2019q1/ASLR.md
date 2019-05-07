@@ -1,6 +1,6 @@
 ## Security-Related changes ##
 
-Contact: Konstantin Belousov <kib@freebsd.org>
+Contact: Konstantin Belousov <kib@freebsd.org>  
 
 ### ASLR
 
@@ -52,4 +52,4 @@ features..
 It is expected that a tool to manipulate the mask will be provided
 shortly, see [review D19290](https://reviews.freebsd.org/D19290).
 
-Sponsor: The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation  

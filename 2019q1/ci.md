@@ -1,16 +1,16 @@
 ## Continuous Integration ##
 
-Contact: Jenkins Admin, <jenkins-admin@FreeBSD.org>
-Contact: Li-Wen Hsu, <lwhsu@FreeBSD.org>
+Contact: Jenkins Admin, <jenkins-admin@FreeBSD.org>  
+Contact: Li-Wen Hsu, <lwhsu@FreeBSD.org>  
 
-Link: [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)
-Link: [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)
-Link: [FreeBSD Jenkins wiki](https://wiki.freebsd.org/Jenkins)
-Link: [freebsd-testing Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing)
-Link: [freebsd-ci Repository](https://github.com/freebsd/freebsd-ci)
-Link: [Tickets related to freebsd-testing@](https://preview.tinyurl.com/y9maauwg)
-Link: [Hosted CI wiki](https://wiki.freebsd.org/HostedCI)
-Link: [FreeBSD CI weekly report](https://hackfoldr.org/freebsd-ci-report/)
+Link: [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)  
+Link: [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)  
+Link: [FreeBSD Jenkins wiki](https://wiki.freebsd.org/Jenkins)  
+Link: [freebsd-testing Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing)  
+Link: [freebsd-ci Repository](https://github.com/freebsd/freebsd-ci)  
+Link: [Tickets related to freebsd-testing@](https://preview.tinyurl.com/y9maauwg)  
+Link: [Hosted CI wiki](https://wiki.freebsd.org/HostedCI)  
+Link: [FreeBSD CI weekly report](https://hackfoldr.org/freebsd-ci-report/)  
 
 The FreeBSD CI team maintains continuous integration system and
 related tasks for the FreeBSD project.  The CI system regularly

@@ -1,9 +1,9 @@
 ## sysctlmibinfo API 1.0 ##
 
-Contact: Alfonso Sabato Siciliano, <alfonso.siciliano@email.com>
+Contact: Alfonso Sabato Siciliano, <alfonso.siciliano@email.com>  
 
-Link:	 [gitlab.com/alfix/sysctlmibinfo](https://gitlab.com/alfix/sysctlmibinfo)  
-Port:	 [devel/libsysctlmibinfo](https://www.freshports.org/devel/libsysctlmibinfo/)
+Link:	 [gitlab.com/alfix/sysctlmibinfo](https://gitlab.com/alfix/sysctlmibinfo)    
+Port:	 [devel/libsysctlmibinfo](https://www.freshports.org/devel/libsysctlmibinfo/)  
 
 The _sysctl()_ system call can get or set the value of a 'property'
 of the system. A 'property' has others info (description, type,

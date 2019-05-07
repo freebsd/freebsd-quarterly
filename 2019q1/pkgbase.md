@@ -1,8 +1,8 @@
 ## CFT - Package Base ##
 
-Contact: Kris Moore, <kmoore@FreeBSD.org>
+Contact: Kris Moore, <kmoore@FreeBSD.org>  
 
-Link:	 [Package Base CFT - FAQ](https://trueos.github.io/pkgbase-docs/)
+Link:	 [Package Base CFT - FAQ](https://trueos.github.io/pkgbase-docs/)  
 
 The TrueOS project has been working on a Package Base implementation,
 and is pleased to issue its first [CFT to the FreeBSD
@@ -21,4 +21,4 @@ Additionally there will be a [working-group at BSDCan
 2019](https://wiki.freebsd.org/DevSummit/201905/PackageBase), and
 we encourage porters to attend and join the discussion.
 
-Sponsor: [iXsystems Inc](https://www.ixsystems.com)
+Sponsor: [iXsystems Inc](https://www.ixsystems.com)  

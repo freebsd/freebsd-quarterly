@@ -1,8 +1,8 @@
 ## FreeBSD Wiki Apple Intel Mac mini update ##
 
-Contact: Trevor Roydhouse, <fbsdwiki@gmx.net>
+Contact: Trevor Roydhouse, <fbsdwiki@gmx.net>  
 
-Link:	 [FreeBSD Wiki](https://wiki.freebsd.org/IntelMacMini)
+Link:	 [FreeBSD Wiki](https://wiki.freebsd.org/IntelMacMini)  
 
 The FreeBSD Wiki page for the Apple Intel Mac minis has been
 comprehensively updated over the last quarter to drag it from 2009

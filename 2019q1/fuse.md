@@ -1,6 +1,6 @@
 ## FUSE ##
 
-Contact: Alan Somers, <asomers@FreeBSD.org>
+Contact: Alan Somers, <asomers@FreeBSD.org>  
 
 FUSE (File system in USErspace) allows a userspace program to
 implement a file system.  It is widely used to support out-of-tree file
@@ -17,4 +17,4 @@ from the test suite or already reported?] During the next quarter
 I plan to continue fixing bugs, and I'll also raise the driver's
 API level [XXX - to a newer version?  The current version?].
 
-Sponsor: The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation  

@@ -1,6 +1,6 @@
 ## University of Waterloo Co-operative Education Students ##
 
-Contact: Ed Maste, <emaste@freebsd.org>
+Contact: Ed Maste, <emaste@freebsd.org>  
 
 For the January-April 2019 term the FreeBSD Foundation has again brought
 on two co-operative education (co-op) students from the University of
@@ -56,4 +56,4 @@ For the rest of the work term Bora will investigate and test unmodified
 Linux Docker containers on FreeBSD, to evaluate the state of Linuxulator
 support.
 
-Sponsor: The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation  

@@ -1,8 +1,8 @@
 ## ENA FreeBSD Driver Update ##
 
-Contact: Michal Krawczyk <mk@semihalf.com>, Marcin Wojtas <mw@semihalf.com>
+Contact: Michal Krawczyk <mk@semihalf.com>, Marcin Wojtas <mw@semihalf.com>  
 
-Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)
+Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)  
 
 ENA (Elastic Network Adapter) is the smart NIC available in the
 virtualized environment of Amazon Web Services (AWS).  The ENA
@@ -30,5 +30,5 @@ for aarch64
 With these changes, the ENA driver can run on A1 instances without
 any known issues.
 
-Sponsor: Amazon.com Inc.
+Sponsor: Amazon.com Inc.  
 

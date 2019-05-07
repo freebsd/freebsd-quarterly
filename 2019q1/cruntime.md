@@ -1,6 +1,6 @@
 ## C Runtime changes ##
 
-Contact: Konstantin Belousov <kib@freebsd.org>
+Contact: Konstantin Belousov <kib@freebsd.org>  
 
 Several changes where made to the C runtime which generally improves
 the environment provided to an application.
@@ -87,4 +87,4 @@ functions are called, using new internal ABI `__libc_atexit()` function.
 
 It is amusing that the bug was not noticed for so many years.
 
-Sponsor: The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation  

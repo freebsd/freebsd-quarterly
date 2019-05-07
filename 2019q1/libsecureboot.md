@@ -1,10 +1,10 @@
 ## FreeBSD boot security improvements ##
 
-Contact: Michal Stanek, <mst@semihalf.com>, Marcin Wojtas, <mw@semihalf.com>, Kornel Duleba, <mindal@semihalf.com>
+Contact: Michal Stanek, <mst@semihalf.com>, Marcin Wojtas, <mw@semihalf.com>, Kornel Duleba, <mindal@semihalf.com>  
 
-Link:	 [Veriexec manifest verification in kernel](https://svnweb.freebsd.org/changeset/base/345830)
-Link:	 [TPM as entropy source](https://svnweb.freebsd.org/changeset/base/345438)
-Link:	 [UEFI support in libsecureboot](https://svnweb.freebsd.org/changeset/base/344840)
+Link:	 [Veriexec manifest verification in kernel](https://svnweb.freebsd.org/changeset/base/345830)  
+Link:	 [TPM as entropy source](https://svnweb.freebsd.org/changeset/base/345438)  
+Link:	 [UEFI support in libsecureboot](https://svnweb.freebsd.org/changeset/base/344840)  
 
 FreeBSD gained TPM 2.0 (Trusted Platform Module) support at the end
 of 2018.  A kernel configuration option, TPM_HARVEST, was also added

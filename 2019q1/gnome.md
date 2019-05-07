@@ -1,10 +1,10 @@
 ## FreeBSD GNOME status report ##
 
-Contact: Koop Mast, <kwm@FreeBSD.org>
-Contact: Eric Turgeon, <ericbsd@FreeBSD.org>
+Contact: Koop Mast, <kwm@FreeBSD.org>  
+Contact: Eric Turgeon, <ericbsd@FreeBSD.org>  
 
-Link: [GNOME FreeBSD](https://freebsd.org/gnome/)
-Link: [GNOME development Repo](https://github.com/freebsd/freebsd-ports-gnome)
+Link: [GNOME FreeBSD](https://freebsd.org/gnome/)  
+Link: [GNOME development Repo](https://github.com/freebsd/freebsd-ports-gnome)  
 
 Ports activity in this quarter where:
 
