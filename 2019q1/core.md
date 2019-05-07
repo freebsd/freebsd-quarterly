@@ -1,4 +1,4 @@
- ## FreeBSD Core Team ##
+## FreeBSD Core Team ##
 
 Contact: FreeBSD Core Team, <core@FreeBSD.org>
 
