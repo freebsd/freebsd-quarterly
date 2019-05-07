@@ -27,7 +27,7 @@ TLS segment from libraries was not distributed among the threads' TLS
 areas, still breaking libraries which use initial exec mode for TLS.
 
 Another issue that somewhat mitigates mis-use of the mode is the
-DF_STATIC_TLS flag in the dynamic section.  This flag allows the
+`DF_STATIC_TLS` flag in the dynamic section.  This flag allows the
 linker to check for the space earlier and avoid loading dependencies
 if there is no total required space.  This linker flag was implemented
 by the BFD ld linker, but not by the LLVM lld linker.
@@ -74,7 +74,7 @@ Alexander Kabaev (kan@) noted that C++ destructors for the
 static objects from the linked shared libraries are executed before
 C++ destructors of the static objects from the main binary.  This was
 verified both for clang++ and g++, but amusingly not for
-__attribute__(((destructor))).
+`__attribute__(((destructor)))`.
 
 The bug was introduced when init functions and init arrays for main
 binary startup are called from the rtld instead of csu (C startup
@@ -83,7 +83,7 @@ due to the somewhat complicated way of how destructors are called
 both by fini/fini arrays and rtld-registered atexit(3) handler.
 
 Solution is to register rtld atexit(3) handler before main binary init
-functions are called, using new internal ABI __libc_atexit() function.
+functions are called, using new internal ABI `__libc_atexit()` function.
 
 It is amusing that the bug was not noticed for so many years.
 
