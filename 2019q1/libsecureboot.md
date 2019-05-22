@@ -23,8 +23,9 @@ backend.  The library supports loading trusted and blacklisted
 certificates from UEFI (DB/DBx databases) and can use them as trust
 anchors for the verification.
 
-The library is also used by Veriexec to verify and parse the manifest
-[XXX what  manifest?] in the kernel. Previously the manifest was
+The library is also used by Veriexec to verify and parse the
+authentication database (called 'manifest')
+in the kernel. Previously the manifest was
 verified and parsed by a userspace application, then sent to the
 kernel via /dev/veriexec, which was a significant limitation and a
 security weakness.
