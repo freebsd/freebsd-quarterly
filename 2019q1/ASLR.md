@@ -1,6 +1,6 @@
 ## Security-Related changes ##
 
-Contact: Konstantin Belousov <kib@freebsd.org>  
+Contact: Konstantin Belousov, <kib@freebsd.org>
 
 ### ASLR
 

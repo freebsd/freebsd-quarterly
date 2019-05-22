@@ -1,6 +1,6 @@
 ## C Runtime changes ##
 
-Contact: Konstantin Belousov <kib@freebsd.org>  
+Contact: Konstantin Belousov, <kib@freebsd.org>
 
 Several changes where made to the C runtime which generally improves
 the environment provided to an application.

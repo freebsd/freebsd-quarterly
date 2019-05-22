@@ -1,13 +1,12 @@
 ## Capsicum
 
-Contact: Enji Cooper <ngie@freebsd.org>  
-Contact: Mark Johnston <markj@FreeBSD.org>  
-Contact: Ed Maste <emaste@FreeBSD.org>  
-Contact: Mariusz Zaborski <oshogbo@FreeBSD.org>  
-Contact: Bora Özarslan <borako.ozarslan@gmail.com>  
+Contact: Enji Cooper, <ngie@freebsd.org>
+Contact: Mark Johnston, <markj@FreeBSD.org>
+Contact: Ed Maste, <emaste@FreeBSD.org>
+Contact: Mariusz Zaborski, <oshogbo@FreeBSD.org>
+Contact: Bora Özarslan, <borako.ozarslan@gmail.com>
 
-Links
-[Capsicum Wiki Page](https://wiki.FreeBSD.org/Capsicum)  
+Link:	[Capsicum Wiki Page](https://wiki.FreeBSD.org/Capsicum)
 
 Three themes for Capsicum work were:
  * Importing Google's Capsicum test suite into FreeBSD

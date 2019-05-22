@@ -1,6 +1,6 @@
 ## mlx5 Drivers Update ##
 
-Contact: Slava Shwartsman, Hans Petter Selasky, Konstantin Belousov <freebsd-drivers@mellanox.com>  
+Contact: Slava Shwartsman, Hans Petter Selasky, Konstantin Belousov, <freebsd-drivers@mellanox.com>
 
 Link:	 [Mellanox OFED for FreeBSD Documentation](http://www.mellanox.com/page/products_dyn?product_family=193&mtag=freebsd_driver)  
 
@@ -37,6 +37,5 @@ Following updates done in mlx5 drivers:
     trigger a firmware reset for the device so it can recover - without the
     need to reboot the entire host.
   * Added support for in-driver firmware updating using mlx5tool.
-
 
 Sponsor: Mellanox Technologies  

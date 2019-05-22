@@ -1,6 +1,8 @@
 ## FreeBSD boot security improvements ##
 
-Contact: Michal Stanek, <mst@semihalf.com>, Marcin Wojtas, <mw@semihalf.com>, Kornel Duleba, <mindal@semihalf.com>  
+Contact: Michal Stanek, <mst@semihalf.com>
+Contact: Marcin Wojtas, <mw@semihalf.com>
+Contact: Kornel Duleba, <mindal@semihalf.com>  
 
 Link:	 [Veriexec manifest verification in kernel](https://svnweb.freebsd.org/changeset/base/345830)  
 Link:	 [TPM as entropy source](https://svnweb.freebsd.org/changeset/base/345438)  
@@ -31,7 +33,7 @@ To do:
 
 * Backport to stable branches.
 
-Work sponsored by: Stormshield
-
 Special thanks to sjg and Juniper for fruitful cooperation around
 Veriexec and the libsecureboot development.
+
+Sponsor: Stormshield

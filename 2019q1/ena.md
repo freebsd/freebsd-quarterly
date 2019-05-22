@@ -1,6 +1,7 @@
 ## ENA FreeBSD Driver Update ##
 
-Contact: Michal Krawczyk <mk@semihalf.com>, Marcin Wojtas <mw@semihalf.com>  
+Contact: Michal Krawczyk, <mk@semihalf.com>
+Contact: Marcin Wojtas, <mw@semihalf.com>  
 
 Link:	 [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README)  
 
