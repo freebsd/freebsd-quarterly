@@ -27,5 +27,4 @@ development board now that one has been obtained by a FreeBSD
 developer.  We also expect to work on support for a new version
 of the SBI specification.
 
-Sponsor: The FreeBSD Foundation  
-Sponsor: DARPA, AFRL  
+Sponsor: The FreeBSD Foundation, DARPA, AFRL  

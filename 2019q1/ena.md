@@ -31,5 +31,5 @@ for aarch64
 With these changes, the ENA driver can run on A1 instances without
 any known issues.
 
-Sponsor: Amazon.com Inc.  
+Sponsor: Amazon.com Inc
 
