@@ -35,9 +35,6 @@ and active users of these legacy zlib code are welcomed.
     zlib in case of failure).
       Please also elaborate how to link such kernel, too.  I'm still
     trying to figure that out.
-  * i386 kgzip + kgzldr
-      This looks dead code already.  If anyone uses, please teach me how
-    to boot gzipped kernel; otherwise, I'd like to delete this.
   * netgraph compression/decompression
       Please help testing and/or teach how to test.  Netgraph compiles
     in the FreeBSD zlib version inside.
