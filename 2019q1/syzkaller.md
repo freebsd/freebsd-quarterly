@@ -29,8 +29,8 @@ can be run on a FreeBSD or Linux host to fuzz FreeBSD running in
 QEMU instances.  It can also fuzz FreeBSD instances running on GCE
 (Google Compute Engine).  Additionally, Google maintains a dedicated
 cluster of GCE hosts to continuously fuzz the latest builds of
-several different OS kernels.  A [FreeBSD
-target](https://syzkaller.appspot.com/freebsd) was recently added.
+several different OS kernels.  A
+[FreeBSD target](https://syzkaller.appspot.com/freebsd) was recently added.
 Subscribe to the
 [syzkaller-freebsd-bugs](https://groups.google.com/forum/#!forum/syzkaller-freebsd-bugs)
 Google Group to receive notifications for newly discovered bugs.

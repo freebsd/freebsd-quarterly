@@ -13,8 +13,8 @@ More detailed information is written in sys/modules/zlib/README in
 the review.
 
 In order to use the latest zlib, version 1.2.11, work has been done
-to revisit all existing zlib uses in the system.  Most of code works
-as with the newer version of zlib as is.  The unzip code will need
+to revisit all existing zlib uses in the system.  Most of the code works
+with the newer version of zlib as is.  The unzip code will need
 some conversion work to use the newer zlib.  A few callers will be
 made simplier by using some newer APIs available in the updated zlib.
 There are some zombie programs that have been broken and I would

@@ -25,7 +25,7 @@ infrastructure.
 Starting from this quarter, we started to publish CI weekly report at
 [freebsd-testing@](https://lists.freebsd.org/mailman/listinfo/freebsd-testing)
 mailing list.  The archive is available at
-https://hackfoldr.org/freebsd-ci-report/
+(https://hackfoldr.org/freebsd-ci-report/)
 
 We also worked on extending test executing environment
 to improve the code coverage, temporarily disabling flakey test cases,

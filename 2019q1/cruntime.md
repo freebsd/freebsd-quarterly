@@ -49,7 +49,7 @@ memory to keep the mutex data needed for mutex initialization.  In
 contrast, the malloc implementation used by FreeBSD, jemalloc(3),
 requires working pthread mutexes for operation.
 
-This creates chicken-and-egg problem during executable startup, and
+This creates a chicken-and-egg problem during executable startup, and
 requires jemalloc to provide fragile hacks to make it possible to
 initialize mutexes.  This has been a constant source of mismatches on
 imports of new versions of jemalloc.
