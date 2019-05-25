@@ -19,6 +19,7 @@ The purpose of the survey is to collect quantitative data from the
 public in order to help guide the project's priorities and efforts.
 It will remain open for 17 days and close at midnight May 13 UTC
 (Monday 5pm PDT).
+(Editor's note: Survey has finished)
 
 Core voted to approve source commit bits for Johannes Lundberg
 (johalun@) and Mitchell Horne (mhorne@) and associate membership
