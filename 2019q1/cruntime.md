@@ -59,7 +59,7 @@ malloc implementation, suitable for limited use in pre-C-runtime
 environments.  This seemed to be the ideal fit for an allocator for the
 pthread private mutexes memory.  By using this allocator, a method
 to address the cyclic dependencies between jemalloc and libthr could
-finally be implmented.
+finally be implemented.
 
 The entry points in the rtld malloc.c were renamed to avoid a clash with
 the libc exported symbols, and now the file is linked statically into
