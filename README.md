@@ -17,6 +17,6 @@ your report afterwards; just edit it and submit another PR.
 Don't worry too much about the Markdown syntax or language errors - we
 will fix it for you.
 
-Deadline for submitting Status Reports for the first quarter of 2019
-is 2019-04-30.
+Deadline for submitting Status Reports for the second quarter of 2019
+is 2019-07-31.
 
