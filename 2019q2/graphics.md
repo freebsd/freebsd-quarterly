@@ -12,6 +12,11 @@ MESA OpenGL implementation, the X.org xserver with related libraries and
 applications, and Wayland with related libraries and applications.
 
 INSERT STUFF HERE
+* synaptics, trackpad, elantech default
+* drm 5.0
+* drm driver updates
+* lkpi changes?
+* meetings
 
 Several meetings has been held over the course of the period.
 Meeting notes have been sent out to the public `x11@FreeBSD.org` mailing list.
