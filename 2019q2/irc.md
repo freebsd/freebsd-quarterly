@@ -1,5 +1,7 @@
 ## IRC Admin ##
 
+Contact: IRC Admin, <irc@FreeBSD.org>
+
 The FreeBSD IRC Admin team manages the FreeBSD Project's presence
 and activity on the freenode IRC network, looking after:
 
