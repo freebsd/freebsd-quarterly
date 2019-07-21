@@ -39,7 +39,7 @@ together the night of Tuesday, April 16 over dinner and talked about what our
 plans were for the week.
 
 Kristof and I had talked at AsiaBSDcon when I took his tutorial about Testing
-in FreeBSD that we should a chapter about it in the developers handbook. We
+in FreeBSD that we should add a chapter about it in the developers handbook. We
 also used our first meeting to synchronize each other about the latest news in
 FreeBSD from our developers viewpoint.
 
@@ -52,7 +52,7 @@ and Tom gave us a little tour. Working in a university myself, I'm always
 interested in how other education organizations are structured and the rooms
 and equipment they provide for learning. Overall, my impression was that there
 is a good amount of space and equipment available, which we could have used in
-the hackathon.=
+the hackathon.
 
 After returning, we decided to use a special tag in the commits we would be
 doing to identify them as coming from this hackathon. We chose "Event:" for it
@@ -127,10 +127,10 @@ enthusiastic support.
 
 I managed to look at a couple of open pf issues:
 
- * pfctl’s interface_group() function checks if a name is an interface or an interface group. It still thought that interface names always ended with a number, but this assumption has been wrong for several years now. That’s fixed in r 346370.
+ * pfctl’s interface_group() function checks if a name is an interface or an interface group. It still thought that interface names always ended with a number, but this assumption has been wrong for several years now. That’s fixed in [r346370](https://svnweb.freebsd.org/changeset/base/346370).
  * The DIOCRSETTFLAGS ioctl() misused copyin() (It held a lock calling it), which could result in panics.
  * That previous issue was actually discovered by my local instance of syzcaller, which I’d set up to add pf support to it. That support has now been merged, so we may see more issues detected by syzcaller soon.
- * Also for DIOCRSETTFLAGS problem I extended the pf tests to check for this issue.
+ * Also for the DIOCRSETTFLAGS problem I extended the pf tests to check for this issue.
  * The pf tests will now fail if the pft_set_rules call fails to set the rules. That didn’t actually cause issues yet, but it’ll make debugging tests slightly easier, and they may catch more problems now.
 
 On Saturday Tom took us out to discover some of the pretty bits of Scotland. It
