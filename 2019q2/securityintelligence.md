@@ -18,7 +18,7 @@ version and are constantly in contact with the core developer
 (also co-author of **SQLmap**) to bring out new features.
 
 The second project we are currently trying to add as a port is **Wazuh**.
-Wazuh is a for of **Ossec** which is already in the ports tree.
+Wazuh is a fork of **Ossec** which is already in the ports tree.
 Compared to Ossec, Wazuh has some intelligent addition like full 
 **ELK-Stack** integration with own apps and dashboards. 
 
