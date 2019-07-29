@@ -2,7 +2,7 @@
 
 Contact: Konstantin Belousov, <kib@freebsd.org>
 
-The Virtial Memory machine-dependent layer (pmap) on amd64 needs to
+The Virtual Memory machine-dependent layer (pmap) on amd64 needs to
 track all mappings for the managed physical memory pages, to be able
 to either destroy all of them (for page-out), or change them from
 writeable to read-only (e.g. to sync the page content to file, without
@@ -60,7 +60,7 @@ priority-inversion issues, but practically the wait occur very rare,
 typical parallel buildworld generates single-digit number of the
 events.
 
-The patch got a lot of testing from Peter Holm, continuos reviews by
+The patch got a lot of testing from Peter Holm, continuous reviews by
 Mark Johnston while I worked out bugs and live-lock problems in the
 implementation, and additional testing by Mateusz Guzik who helped to
 identify a priority inversion bug with the wait.
