@@ -24,7 +24,7 @@ updates bringing the userland input stack up to date.  This is work that was
 started in 2018.
 
 We have made several improvements to the drm kernel drivers.
-A longstanding memory leak in the Intel (i915) driver has been fixed, and
+A long-standing memory leak in the Intel (i915) driver has been fixed, and
 several other updates and improvements have been made to the various drm
 kernel driver components.
 
@@ -48,7 +48,6 @@ Linux.
 Virtual console won't update after loading the driver, but X and Wayland
 based compositors are working.
 This is experimental and still a work in progress.
-
 
 Mesa has been updated to 18.3.2 and switched from using `devel/llvm60` to use
 the Ports default version of llvm, currently `devel/llvm80`.
