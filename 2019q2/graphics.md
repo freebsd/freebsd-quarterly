@@ -38,16 +38,11 @@ The generic drm (`drm.ko`) driver as well as the i915 (`i915kms.ko`) driver
 can now be unloaded and reloaded to ease in development and testing.
 This causes issues with the virtual consoles, however, so an SSH connection is
 recommended.
-To improve debugging, `i915kms.ko` use of debugfs has been improved.  Other
-drivers are being worked on.  Limitations in how debugfs (which is based on
-pseudofs) works might prevent a fully functional debugfs and we might have to
-look into adding to pseudofs or use another framework.
+To aid debugging `i915kms.ko` use of debugfs has been improved but there are still limitations preventing it from being fully functional.  Since debugfs is based on pseudofs it is possible that this will prevent a fully functional debugfs in its current state, so we might have to look into adding the required functionality to pseudofs or use another framework.
 
 The new in-kernel drm driver for VirtualBox, `vboxvideo.ko` has been ported from
-Linux.
-The virtual console won't update after loading the driver, but X- and
+Linux.  Support is currently an experimental work in progress.  For example the virtual console won't update after loading the driver, but X- and
 Wayland-based compositors are working.
-This is experimental and still a work in progress.
 
 Mesa has been updated to 18.3.2 and switched from using `devel/llvm60` to use
 the Ports default version of llvm, currently `devel/llvm80`.
@@ -56,7 +51,7 @@ Several userland Xorg drivers, applications, and libraries have been updated, an
 other improvements to the various userland components that make up the Graphics
 Stack have been made.
 
-Several meetings have been held over the course of the period.
+We have also continued our regularlly scheduled bi-weekly meetings, although work remains in sending out timely meeting minuets afterwards.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
 mailing list, or on our gitter chat: (https://gitter.im/FreeBSDDesktop/Lobby).
