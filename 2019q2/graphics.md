@@ -57,7 +57,7 @@ Several userland Xorg drivers, applications, and libraries have been updated, an
 other improvements to the various userland components that make up the Graphics
 Stack have been made.
 
-We have also continued our regularlly scheduled bi-weekly meetings, although work
+We have also continued our regularly scheduled bi-weekly meetings, although work
 remains in sending out timely meeting minuets afterwards.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
