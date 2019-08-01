@@ -16,8 +16,9 @@ Link:	[Phabricator review - bhyve Snapshot Save and Restore](https://reviews.fre
 
 The Save/Restore for bhyve feature is a suspend and resume facility added to the
 FreeBSD/amd64's hypervisor, bhyve. The bhyvectl tool is used to save the guest
-state in three files (a file for the guest memory, a file for devices' and CPU's
-state and another one for some metadata that are used in the restore process).
+state in three files (a file for the guest memory, a file for the states of
+various devices and the state of the CPU, and another one for some metadata that
+is used in the restore process).
 To suspend a bhyve guest, the bhyvectl tool must be run with the `--suspend <state_file_name>`
 option followed by the guest name.
 
@@ -35,6 +36,6 @@ Future tasks:
    * Add suspend/resume support for nvme;
    * Add suspend/resume support for virtio-console;
    * Add suspend/resume support for virtio-scsi;
-   * Add TSC offseting for restore for AMD CPUs;
+   * Add TSC offsetting for restore for AMD CPUs;
 
 Sponsor: Matthew Grooms;
