@@ -47,15 +47,15 @@ the required functionality to pseudofs or use another framework.
 The new in-kernel drm driver for VirtualBox, `vboxvideo.ko` has been ported from
 Linux.
 Support is currently an experimental work in progress.
-For example the virtual console won't update after loading the driver, but X- and
-Wayland-based compositors are working.
+For example the virtual console won't update after loading the driver, but X-
+and Wayland-based compositors are working.
 
 Mesa has been updated to 18.3.2 and switched from using `devel/llvm60` to use
 the Ports default version of llvm, currently `devel/llvm80`.
 
-Several userland Xorg drivers, applications, and libraries have been updated, and
-other improvements to the various userland components that make up the Graphics
-Stack have been made.
+Several userland Xorg drivers, applications, and libraries have been updated,
+and other improvements to the various userland components that make up the
+Graphics Stack have been made.
 
 We have also continued our regularly scheduled bi-weekly meetings, although work
 remains in sending out timely meeting minuets afterwards.
