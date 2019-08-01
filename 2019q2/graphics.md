@@ -20,8 +20,8 @@ we have enabled IBM/Lenovo trackpoints and elantech and synaptics touchpads by
 default as well.
 
 The input device library libinput has been updated as the last in a series of
-updates bringing the userland input stack up to date.  This is work that was
-started in 2018.
+updates bringing the userland input stack up to date.
+This is work that was started in 2018.
 
 We have made several improvements to the drm kernel drivers.
 A long-standing memory leak in the Intel (i915) driver has been fixed, and
@@ -38,10 +38,16 @@ The generic drm (`drm.ko`) driver as well as the i915 (`i915kms.ko`) driver
 can now be unloaded and reloaded to ease in development and testing.
 This causes issues with the virtual consoles, however, so an SSH connection is
 recommended.
-To aid debugging `i915kms.ko` use of debugfs has been improved but there are still limitations preventing it from being fully functional.  Since debugfs is based on pseudofs it is possible that this will prevent a fully functional debugfs in its current state, so we might have to look into adding the required functionality to pseudofs or use another framework.
+To aid debugging `i915kms.ko` use of debugfs has been improved but there are
+still limitations preventing it from being fully functional.
+Since debugfs is based on pseudofs it is possible that this will prevent a fully
+functional debugfs in its current state, so we might have to look into adding
+the required functionality to pseudofs or use another framework.
 
 The new in-kernel drm driver for VirtualBox, `vboxvideo.ko` has been ported from
-Linux.  Support is currently an experimental work in progress.  For example the virtual console won't update after loading the driver, but X- and
+Linux.
+Support is currently an experimental work in progress.
+For example the virtual console won't update after loading the driver, but X- and
 Wayland-based compositors are working.
 
 Mesa has been updated to 18.3.2 and switched from using `devel/llvm60` to use
@@ -51,7 +57,8 @@ Several userland Xorg drivers, applications, and libraries have been updated, an
 other improvements to the various userland components that make up the Graphics
 Stack have been made.
 
-We have also continued our regularlly scheduled bi-weekly meetings, although work remains in sending out timely meeting minuets afterwards.
+We have also continued our regularlly scheduled bi-weekly meetings, although work
+remains in sending out timely meeting minuets afterwards.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
 mailing list, or on our gitter chat: (https://gitter.im/FreeBSDDesktop/Lobby).
