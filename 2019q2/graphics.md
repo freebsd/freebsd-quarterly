@@ -58,7 +58,7 @@ and other improvements to the various userland components that make up the
 Graphics Stack have been made.
 
 We have also continued our regularly scheduled bi-weekly meetings, although work
-remains in sending out timely meeting minuets afterwards.
+remains in sending out timely meeting minutes afterwards.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
 mailing list, or on our gitter chat: (https://gitter.im/FreeBSDDesktop/Lobby).
