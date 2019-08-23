@@ -25,4 +25,4 @@ embedded boards will become available.
 Likewise drivers for other SDIO devices can be developed
 now.
 
-This project was sponsored by The FreeBSD Foundation.
+Sponsor: The FreeBSD Foundation

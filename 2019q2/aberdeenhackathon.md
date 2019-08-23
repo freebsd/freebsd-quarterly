@@ -1,4 +1,4 @@
-# Aberdeen Hackathon
+## Aberdeen Hackathon ##
 
 At BSDCam in Cambridge last year we had a discussion to create a template
 Hackathon in the same way we have a template for Devsummits. To test out the
@@ -28,7 +28,7 @@ I need to thank the University of Aberdeen for providing the location for the
 Hackathon and to encourage you to run a hackathon where you are. The next one
 should be in your home town.
 
-## Benedict Reuschling 
+### Benedict Reuschling ##
 
 The hackathon in Aberdeen was happening in the week of Easter at the University
 of Aberdeen. Although only Kristof Provost (kp@) and myself joined our host Tom
@@ -105,7 +105,7 @@ and was an excellent guide. I would encourage him to host another such
 hackathon in the future and hope that next time, more people will take a trip
 to Aberdeen to spend some time hacking on FreeBSD
 
-## Kristof Provost 
+### Kristof Provost ###
 
 While I’d been to Scotland before I’d never seen Aberdeen. It’s a charming
 city, and I enthusiastically recommend visiting.
