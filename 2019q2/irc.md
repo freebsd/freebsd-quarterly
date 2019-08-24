@@ -5,7 +5,7 @@ Contact: IRC Admin, <irc@FreeBSD.org>
 The FreeBSD IRC Admin team manages the FreeBSD Project's presence
 and activity on the freenode IRC network, looking after:
 
- * Registration and management of channels within the official namespace (`#freebsd*`)
+ * Registration and management of channels within the official namespace (#freebsd*)
  * Channel moderation
  * Liaising with freenode staff
  * Allocating `freebsd/*` hostmask cloaks for users

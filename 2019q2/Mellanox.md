@@ -11,18 +11,18 @@ and RDMA over Converged Ethernet (RoCE).
 
 ### Following updates done in mlx5 drivers: ###
 
-  * **200Gb/s ConnectX-6 Ethernet**:  
+  * 200Gb/s ConnectX-6 Ethernet:  
     Added support for [Mellanox Socket Direct Adapters](http://www.mellanox.com/page/products_dyn?product_family=285&mtag=socketdc)
     which allows, among the rest of the capabilities, to run up to 200Gb/s on a
     PCIe Gen 3.0 on a LAG interface.
-  * **Support for "BlueField" - Multicore System On A Chip**:  
+  * Support for "BlueField" - Multicore System On A Chip:  
     Added support for RShim driver for [BlueField Multicore System On A Chip(SOC)](http://www.mellanox.com/products/bluefield-overview/).
     The RShim driver provides access to the RShim resources on the BlueField
     target accessible from an external host machine. The current RShim version
     provides device files for boot image push and virtual console access. It
     also creates virtual network interface to connect to the BlueField target
     and provides access to internal RShim registers.
-  * **Firmware Burning and Diagnostics Tools**:
+  * Firmware Burning and Diagnostics Tools:
     Added MSTFLINT to ports, this package contains a burning and diagnostic
     tools for Mellanox NICs.
     This package contains following tools:
@@ -34,7 +34,7 @@ and RDMA over Converged Ethernet (RoCE).
     configuration register space.
     mstvpd - This utility dumps the on-card VPD.
     and more.
-  * **OFED-FreeBSD-v3.5.1 Upstream**:  
+  * OFED-FreeBSD-v3.5.1 Upstream:  
     Pushed upstream and MFCed OFED-FreeBSD-v3.5.1 driver - more details
     on the content of this update can be found in [Mellanox OFED for FreeBSD documentation](http://www.mellanox.com/page/products_dyn?product_family=193&mtag=freebsd_driver) page.
 

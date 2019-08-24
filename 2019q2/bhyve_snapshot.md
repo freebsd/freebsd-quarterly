@@ -23,14 +23,14 @@ option for bhyvectl) when starting the VM.
 
 New features added:
 
-   * Open ticket on Phabricator;
+   * Open ticket on Phabricator
    * Apply feedback received from community
 
 Future tasks:
 
-   * Add suspend/resume support for nvme;
-   * Add suspend/resume support for virtio-console;
-   * Add suspend/resume support for virtio-scsi;
-   * Add TSC offsetting for restore for AMD CPUs;
+   * Add suspend/resume support for nvme
+   * Add suspend/resume support for virtio-console
+   * Add suspend/resume support for virtio-scsi
+   * Add TSC offsetting for restore for AMD CPUs
 
-Sponsor: Matthew Grooms;
+Sponsor: Matthew Grooms

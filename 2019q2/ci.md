@@ -33,7 +33,7 @@ Please see freebsd-testing@ related tickets for more information.
 Work in progress:
   * Fixing the failing test cases and builds
   * Adding drm ports building test against -CURRENT
-  * Adding powerpc64 tests job (https://github.com/freebsd/freebsd-ci/pull/33)
+  * Adding powerpc64 tests job: (https://github.com/freebsd/freebsd-ci/pull/33)
   * Implementing automatic tests on bare metal hardware
   * Extending and publishing the embedded testbed
   * Planning for running ztest and network stack tests

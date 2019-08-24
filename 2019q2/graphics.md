@@ -34,11 +34,11 @@ This driver requires a recent Linux KPI and is only available on recent
 versions of FreeBSD CURRENT.
 
 This version of the driver contains several development improvements.
-The generic drm (`drm.ko`) driver as well as the i915 (`i915kms.ko`) driver
+The generic drm (drm.ko) driver as well as the i915 (i915kms.ko) driver
 can now be unloaded and reloaded to ease in development and testing.
 This causes issues with the virtual consoles, however, so an SSH connection is
 recommended.
-To aid debugging `i915kms.ko` use of debugfs has been improved but there are
+To aid debugging `i915kms.ko` use of debugfs has been improved, but there are
 still limitations preventing it from being fully functional.
 Since debugfs is based on pseudofs it is possible that this will prevent a fully
 functional debugfs in its current state, so we might have to look into adding
