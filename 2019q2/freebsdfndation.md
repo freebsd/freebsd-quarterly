@@ -23,7 +23,7 @@ We also have the Partnership Program, to provide more benefits for our larger co
 and share with your companies!
 
 ### OS Improvements ###
-The Foundation improves the FreeBSD operating system by employing our technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. The foundation also provides grants to fund individual projects.
+The Foundation improves the FreeBSD operating system by employing our technical staff to maintain and improve critical kernel subsystems, add features and functionality, and fix problems. The Foundation also provides grants to fund individual projects.
 
 There were 243 commits to the FreeBSD base system repository sponsored by the Foundation during the quarter. These include improvements to the tmpfs in-memory, MSDOS, and UFS filesystems, device driver and hardware compatibility fixes, virtual memory (VM), tool chain, documentation, and testing and continuous integration improvements. 
 
