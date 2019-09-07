@@ -14,6 +14,26 @@ applications, and Wayland with related libraries and applications.
 LIST OF STUFF WE'VE DONE HERE
 
 * Ports infra: USES=xorg and USES=xorg-cat + docs
+* clean up of xorg ports.
+	deprecated a number of ports:
+	`x11-fonts/font-bitstream-speedo`
+	`x11-drivers/xf86-input-acecad`
+	`x11-drivers/xf86-input-fpit`
+	`x11-drivers/xf86-input-hyperpen`
+	`x11-drivers/xf86-input-mutouch`
+	`x11-drivers/xf86-input-penmount`
+	`x11/xprehashprinterlist`
+	`x11/xrx`
+	`x11/xsetmode`
+	`x11/xsetpointer`
+	`x11/libXevie`
+	`x11/liboldX`
+	`x11/libxkbui`
+	`x11-fonts/libXfontcache`
+	`x11/libXxf86misc`
+	`grapics/libGLw`
+
+	moved x11/luit to new upstream
 
 We have also continued our regularly scheduled bi-weekly meetings.
 
