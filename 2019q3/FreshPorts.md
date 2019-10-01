@@ -1,4 +1,4 @@
-## Status Report Sample - This Will Become The Title ##
+## FreshPorts ##
 
 Contact: Dan Langille, <dvl@FreeBSD.org>  
 
@@ -13,7 +13,7 @@ incoming emails refreses the the database with what it finds.
 
 In early September I started looking at at how FreshPorts
 could use a git repository for processing commits. The 
-result was (an approach](https://news.freshports.org/2019/09/02/git-and-freshports/) for identifying new commits and
+result was [an approach](https://news.freshports.org/2019/09/02/git-and-freshports/) for identifying new commits and
 for iterating through them.
 
 The next idea was [commit hooks](https://news.freshports.org/2019/09/18/moving-towards-commit-hooks/) but the most interesting
@@ -23,7 +23,7 @@ At the EuroBSDCon 2019 FreeBSD Developer summit, I wrote
 up a small requirements section and then received great 
 help from two sources:
 
-* Jan-Piet MENS recommended a [Python library])https://www.freshports.org/devel/py-gitpython/) and
+* Jan-Piet MENS recommended a [Python library](https://www.freshports.org/devel/py-gitpython/) and
   turned out to be great
 
 * Sergey Kozlov wrote Python code to create xml using
