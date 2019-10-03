@@ -27,7 +27,7 @@ hypervisor.
 - Project started to use own cloud images for better stability and
 resilency.
 
-- New mirrors in the France, US and Canada were added for
+- New mirrors in France, US and Canada were added for
 distributing ISO/cloud-init images in addition to Russia, Latvia and
 Ukraine.
 
