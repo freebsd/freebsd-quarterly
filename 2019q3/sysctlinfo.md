@@ -29,7 +29,7 @@ sysctl.name2oid (or similar) to explore the MIB just to find the corresponding
 OID.
 
 sysctlinfo can be installed via _sysutils/sysctlinfo-kmod_ or applying the 
-_sysctlinfo.diff_ patch (more efficient than the module because use a shared 
+_sysctlinfo.diff_ patch (more efficient than the module because uses a shared 
 lock). The interface is used by _deskutils/sysctlview 1.5_, 
 _sysutils/nsysctl 1.2_ and the converted version of sysctl(8), sysctlbyname(3), 
 sysctlnametomib(3), they should be used to get the value of an object with 23/24 
