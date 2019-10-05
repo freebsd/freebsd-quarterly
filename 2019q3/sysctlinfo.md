@@ -19,7 +19,7 @@ macros, examples, tests and converted tools.
 Primarily sysctlinfo provides a new set of sysctl nodes (corresponding to the 
 kernel interface) to handle an object up to CTL\_MAXNAME levels:
 sysctl.entryfakename, sysctl.entrydesc, sysctl.entrylabel, sysctl.entrykind, 
-sysctl.entryfmt and sysctl.entrynextleaf. Moreover new features were 
+sysctl.entryfmt and sysctl.entrynextleaf. Moreover new features have been 
 implemented: the support for the capability mode, sysctl.entryname, 
 sysctl.entryidbyname and sysctl.entrynextnode. To get all the info about an 
 object the kernel needs to find it many times, then the new 
