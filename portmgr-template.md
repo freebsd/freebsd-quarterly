@@ -6,7 +6,7 @@ Contact: FreeBSD Ports Management Team, <portmgr@FreeBSD.org>
 Link:	 [About FreeBSD Ports](https://www.FreeBSD.org/ports/)  
 Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  
 Link:	 [FreeBSD Ports Monitoring](http://portsmon.freebsd.org/index.html)  
-Link:	 [Ports Management Team](https://www.freebsd.org/portmgr/index.html">Ports Management Team)  
+Link:	 [Ports Management Team](https://www.freebsd.org/portmgr/index.html)  
 
 Paragraphs are separated with an empty line.  Use Markdown
 syntax, the same as you use on GitHub.  If you don't know
