@@ -36,7 +36,8 @@ regardless of whether the error is in the CMake update, or in
 the upstream code. These updates tend to take a large amount of effort,
 since they touch unfamiliar (and often very-very-legacy) code.
 
-The [open bugs list](https://bugs.freebsd.org/bugzilla/buglist.cgi?cmdtype=runnamed&list_id=316540&namedcmd=kde%20bugs) grew to 24 this quarter.
+The [open bugs list](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=New&bug_status=Open&bug_status=In%20Progress&bug_status=UNCONFIRMED&email1=kde%40FreeBSD.org&emailassigned_to1=1&emailtype1=substring&f0=OP&f1=OP&f2=product&f3=component&f4=alias&f5=short_desc&f7=CP&f8=CP&f9=assigned_to&j1=OR&j_top=OR&o2=substring&o3=substring&o4=substring&o5=substring&o9=substring&query_format=advanced&v2=kde%40&v3=kde%40&v4=kde%40&v5=kde%40&v9=kde%40&human=1)
+grew to 24 this quarter.
 It tends to hover around 20 items as new things come in
 and old ones are resolved. We welcome detailed bug reports
 and patches. KDE packaging updates are prepared in
