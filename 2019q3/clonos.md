@@ -25,13 +25,13 @@ for instant deploy and usage of virtual machines based on bhyve
 hypervisor.
 
 - Project started to use own cloud images for better stability and
-resilency.
+resiliency.
 
 - New mirrors in France, US and Canada were added for
 distributing ISO/cloud-init images in addition to Russia, Latvia and
 Ukraine.
 
-- Now we're using Jeknins CI for testing regular ClonOS builds:
+- Now we're using Jenkins CI for testing regular ClonOS builds:
   [Update clonos packages](https://jenkins.ircdriven.net/job/Update%20clonos%20packages./) (Thanks to Daniel Shafer)
 
 - New pkg repository was deployed to support ClonOS installation
