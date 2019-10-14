@@ -9,9 +9,9 @@ Link:	 [Things you didn’t know FreshPorts can do](https://news.freshports.org/
 FreshPorts consolidates commits into an easy-to-follow
 format so you can track changes to your favorite ports.
 It also processes src, doc, and www commit. FreshPorts parses
-incoming emails refreses the the database with what it finds.
+incoming emails refreshes the database with what it finds.
 
-In early September I started looking at at how FreshPorts
+In early September I started looking at how FreshPorts
 could use a git repository for processing commits. The 
 result was [an approach](https://news.freshports.org/2019/09/02/git-and-freshports/) for identifying new commits and
 for iterating through them.
