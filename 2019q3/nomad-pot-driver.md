@@ -22,7 +22,7 @@ containers, allowing to:
 * identify potential missing features in FreeBSD to support
   such computational model
 
-In the next quarter, we would lunch the first service based on this
+In the next quarter, we would launch the first service based on this
 project.
 
 Next steps are:
