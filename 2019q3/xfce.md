@@ -9,6 +9,9 @@ to the recently released XFCE 4.14 version.
 
 This updates includes upgrades of all the main XFCE components to the
 latest versions which have been migrated  to GTK3, with few exceptions.
+Base components still require and link to GTK2 in addition to GTK3 to
+allow older GTK2 XFCE applications, for example panel plugins, to keep
+working.
 
 Due to this change the gtk-xfce-engine theme is deprecated since it only
 supports GTK2. XFCE is installed unthemed by default, while upstream
