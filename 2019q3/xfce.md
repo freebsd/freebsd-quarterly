@@ -1,4 +1,4 @@
-## Status Report Sample - This Will Become The Title ##
+## XFCE 4.14 update ##
 
 Contact: Guido Falsi, <xfce@FreeBSD.org>  
 
