@@ -14,9 +14,8 @@ allow older GTK2 XFCE applications, for example panel plugins, to keep
 working.
 
 Due to this change the gtk-xfce-engine theme is deprecated since it only
-supports GTK2. XFCE is installed unthemed by default, while upstream
-suggests using the greybird theme, which is installed by the metaport
-and is available in the default installation.
+supports GTK2. The XFCE metaport by default installs the greybird theme,
+but it is not enabled by default.
 
 This new version also includes now it's own xfce4-screensaver program
 which is installed by default.
