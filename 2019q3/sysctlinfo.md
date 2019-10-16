@@ -6,11 +6,11 @@ Link:	 [gitlab.com/alfix/sysctlinfo](https://gitlab.com/alfix/sysctlinfo)
 
 The FreeBSD kernel maintains a Management Information Base (MIB) where a 
 component (object) represents a parameter of the system. The _sysctl_ system 
-call explores the MIB to find an object by its OID and calls its handler to get 
-or set the value of the parameter. It is often necessary to find an object not 
-to call its handler but to get its info (description, type, name, next object, 
-etc.), so the kernel provides an undocumented interface implemented in 
-kern\_sysctl.c.
+call explores the MIB to find an object by its Object Identifier (OID) and 
+calls its handler to get or set the value of the parameter. It is often 
+necessary to find an object not to call its handler but to get its info 
+(description, type, name, next object, etc.), so the kernel provides an 
+undocumented interface implemented in kern\_sysctl.c.
 
 sysctlinfo is a new interface to explore the sysctl MIB and to pass the info
 of an object to the userland. The project provides: a README, a manual, helper 
