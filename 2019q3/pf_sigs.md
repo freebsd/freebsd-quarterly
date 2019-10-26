@@ -3,10 +3,10 @@
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
 Due to the obvious neccessity, handling of the page faults is
-separated into two pieces.  First one is the architecture-depended low
+separated into two pieces.  First one is the architecture-dependent low
 level machine exceptions handler, and the second one is the
-architecture-independed vm_fault() function in sys/vm/vm_fault.c.
-Typically machine-depended code for page faults consists of three
+architecture-independent vm_fault() function in sys/vm/vm_fault.c.
+Typically machine-dependent code for page faults consists of three
 components, one is a trampoline written in assembly, which creates the
 C execution environment and gathers hardware-supplied data about page
 fault reason, second is common trap() function which is common C-level
