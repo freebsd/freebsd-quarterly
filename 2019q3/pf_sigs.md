@@ -47,7 +47,7 @@ things for trap handlers: it creates ktrace points for faults, calls
 vm_fault(), and then interpret result in term of the user-visible
 error condition, returning precalculated signal number and si_code to
 the caller.  Now trap_pfault() only need to decide for signal numbers
-for truly machine-depended errors.  For amd64, an example of such
+for truly machine-dependent errors.  For amd64, an example of such
 case is protection key violation.
 
 Besides compliance and bug fixes, we also provided some refinements to
