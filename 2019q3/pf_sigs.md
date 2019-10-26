@@ -1,12 +1,12 @@
-## Signals delivered on unhanled Page Faults ##
+## Signals delivered on unhandled Page Faults ##
 
 Contact: Konstantin Belousov, <kib@FreeBSD.org>
 
 Due to the obvious neccessity, handling of the page faults is
-separated into two pieces.  First one is the architecture-depended low
+separated into two pieces.  First one is the architecture-dependent low
 level machine exceptions handler, and the second one is the
-architecture-independed vm_fault() function in sys/vm/vm_fault.c.
-Typically machine-depended code for page faults consists of three
+architecture-independent vm_fault() function in sys/vm/vm_fault.c.
+Typically machine-dependent code for page faults consists of three
 components, one is a trampoline written in assembly, which creates the
 C execution environment and gathers hardware-supplied data about page
 fault reason, second is common trap() function which is common C-level
@@ -15,7 +15,7 @@ trap_pfault() C function to specifically handle page faults.
 trap_pfault() calls vm_fault() when the help from VM is needed to
 resolve the situation.
 
-If the fault was handled either my trap()/trap_pfault() or vm_fault(),
+If the fault was handled either by trap()/trap_pfault() or vm_fault(),
 the faulting instruction is restarted.  If fault cannot be handled for
 any reason, next action depends on the mode where the fault occured.
 If it was in kernel, and kernel installed a helper, then instead of
@@ -39,7 +39,7 @@ incompatibility were identified recently.
 Part of the problem is that code to calculate signal and si_code from
 Mach error returned by vm_fault() was located in trap_pfault().  In
 other words, each architecture did that on its own, with specific set
-of bugs and incompilance.  Sometimes code even mis-interpreted
+of bugs and incompliance.  Sometimes code even mis-interpreted
 returned Mach errors as errno.
 
 New helper function vm_fault_trap() was added, that does several
@@ -47,7 +47,7 @@ things for trap handlers: it creates ktrace points for faults, calls
 vm_fault(), and then interpret result in term of the user-visible
 error condition, returning precalculated signal number and si_code to
 the caller.  Now trap_pfault() only need to decide for signal numbers
-for trully machine-depended errors.  For amd64, an example of such
+for truly machine-dependent errors.  For amd64, an example of such
 case is protection key violation.
 
 Besides compliance and bug fixes, we also provided some refinements to
