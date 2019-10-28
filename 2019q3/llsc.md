@@ -8,7 +8,7 @@ architectures support it directly, for instance x86 and sparc.  Other
 provide a different building blocks, usually the pair of Load
 Linked/Store Conditional instructions (ll/sc) which allow to construct
 CAS or other atomic operations like Fetch-And-Add or any of atomic
-arithmetic ops using plain arithmetic instructions.  Example are LDXR/
+arithmetic ops using plain arithmetic instructions.  Example are LDXR.
 
 The ll/sc operation is performed by first using the load linked
 instruction to load a value from memory and simultaneously mark the
@@ -36,7 +36,7 @@ since the same address is potentially accessible to other, potentially
 malicious, threads in the same process or even to other process.  If
 such thread constantly dirties the cache line used by ll/sc loop, it
 practically could make the kernel-mode thread to stuck in the loop
-forever.  Since the loop it tight, and it does not check for signals,
+forever.  Since the loop is tight, and it does not check for signals,
 the thread cannot be stopped or killed.
 
 Solution is to make casueword implementation weak, which means that
