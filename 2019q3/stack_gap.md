@@ -25,24 +25,27 @@ enabled (default if ASLR is enabled).  Stack gap is specified in
 percentage of the total stack size that can be used for maximum gap.
 
 The main drawback of the gap approach was shortly identified.  Since
-gap is cut from the normal stack area, programs that use mlockall(2)
-wire the gap region (when mlockall(2) is not used, gap pages are not
-allocated at all, unless touched).  The problem there is that stack
-gap wiring easily exceed the very conservative limit on the total
-wired memory allowed even for root programs.  E.g. on amd64 with its
-default 512M main thread stack, even one percent of the max gap gives
-approximately 5M of wired unused memory, that blows up the limit.
+gap is cut from the normal stack area, attempts of the programs to
+reduce stack size using rlimit(RLIMIT_STACK) could cut the active stack
+region if new limit happens to be smaller than the gap.  E.g. on amd64
+with its default 512M main thread stack, even one percent of the max
+gap gives approximately 5M of unused stack, that can blow up the limit
+of several KBs.
+
+Typical reason for using rlimit(2) this way is for programs that wire
+all of its address space with mlockall(2), trying to reduce potential
+wired stack size to avoid exceeding RLIMIT_MEMLOCK.
 
 First victim of that issue appeared ntpd, which resets the stack limit
-after start for really small value, and which used mlockall(2) until
-very recent times.  It seems that the stack limit was reduced
-specifically to avoid the stack to cause too much wiring, but with the
-gap introduction, the gap is typically much larger than the set limit.
+after start for really small value.  Currently the wiring was removed
+from ntpd, because apparently it does not make the timekeeping better
+by any means, contrary to the popular beliefs.
 
-My belief is that the problem is more in the user interface area than
+My opinion is that the problem is more in the user interface area than
 in the gap approach itself.  We should make it easy to specify small
-gap sizes in the interface.  So far I did not formulated a way to do
-this which I would like, and nobody looked for a good solution because
-after ntpd was fixed, the severity of the issue seems very low.
+gap sizes, which cannot be done with integral percentage interface.
+So far I did not formulated a way to do this which I would like, and
+nobody looked for a good solution because after ntpd was fixed, the
+severity of the issue seems very low.
 
 Sponsor: The FreeBSD Foundation
