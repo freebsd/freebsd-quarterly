@@ -25,15 +25,15 @@ enabled (default if ASLR is enabled).  Stack gap is specified in
 percentage of the total stack size that can be used for maximum gap.
 
 The main drawback of the gap approach was shortly identified.  Since
-gap is cut from the normal stack area, attempts to of the programs to
+gap is cut from the normal stack area, attempts of the programs to
 reduce stack size using rlimit(RLIMIT_STACK) could cut the active stack
 region if new limit happens to be smaller than the gap.  E.g. on amd64
 with its default 512M main thread stack, even one percent of the max
 gap gives approximately 5M of unused stack, that can blow up the limit
 of several KBs.
 
-Typical reason for use rlimit(2) this way is for programs that wire
-all it address space with mlockall(2), trying to reduce potential
+Typical reason for using rlimit(2) this way is for programs that wire
+all of its address space with mlockall(2), trying to reduce potential
 wired stack size to avoid exceeding RLIMIT_MEMLOCK.
 
 First victim of that issue appeared ntpd, which resets the stack limit
