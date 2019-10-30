@@ -33,4 +33,6 @@ _sysctlinfo.diff_ patch (more efficient than the module because uses a shared
 lock). The interface is used by _deskutils/sysctlview 1.5_, 
 _sysutils/nsysctl 1.2_ and the converted version of sysctl(8), sysctlbyname(3), 
 sysctlnametomib(3), they should be used to get the value of an object with 23/24 
-levels or if some level-name has only the '\0' character.
+levels or if some level-name has only the '\0' character. In the future a new 
+_byname_ node will be added to allow sysctlbyname() to manage a CTLTYPE_NODE with
+a no-NULL handler, example sysctlbyname("kern.proc.pid.\<pid\>").
