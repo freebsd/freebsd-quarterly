@@ -1,6 +1,6 @@
 ## NFS Version 4.2 implementation ##
 
-Contact: Rick Macklem, <rmacklem@freebsd.org>
+Contact: Rick Macklem <rmacklem@freebsd.org>
 
 RFC-7862 describes a new minor revision to the NFS Version 4 protocol.
 This project implements this new minor revision.
