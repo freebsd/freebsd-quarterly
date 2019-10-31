@@ -1,7 +1,7 @@
 ## Ports Collection ##
 
-Contact: René Ladan, <portmgr-secretary@FreeBSD.org>  
-Contact: FreeBSD Ports Management Team, <portmgr@FreeBSD.org>  
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
 
 Link:	 [About FreeBSD Ports](https://www.FreeBSD.org/ports/)  
 Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  

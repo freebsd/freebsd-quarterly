@@ -1,6 +1,6 @@
 ## Status Report Sample - This Will Become The Title ##
 
-Contact: Full Name, <email@example.org>  
+Contact: Full Name <email@example.org>  
 
 Link:	 [Link description here](http://www.example.com/project/url)  
 Link:	 [Another link description here](http://www.example.com/other/url)  
