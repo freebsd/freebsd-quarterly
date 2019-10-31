@@ -1,7 +1,7 @@
 ## Continuous Integration ##
 
-Contact: Jenkins Admin, <jenkins-admin@FreeBSD.org>  
-Contact: Li-Wen Hsu, <lwhsu@FreeBSD.org>  
+Contact: Jenkins Admin <jenkins-admin@FreeBSD.org>  
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>  
 
 Link: [FreeBSD Jenkins Instance](https://ci.FreeBSD.org)  
 Link: [FreeBSD CI artifact archive](https://artifact.ci.FreeBSD.org/)  
@@ -23,7 +23,7 @@ are available in the weekly CI reports.
 
 We had a testing working group in [201909 DevSummit](https://wiki.freebsd.org/DevSummit/201909)
 lwhsu@ has presented the Testing/CI porject status and "how to work with the FreeBSD CI system", slides are available at the DevSummit page.
-Some contents have been mograted to https://wiki.freebsd.org/Jenkins/Debug , extending is welcomed.
+Some contents have been migrated to https://wiki.freebsd.org/Jenkins/Debug , extending is welcomed.
 
 We continue publishing CI Weekly Report and moved the archive to https://hackmd.io/@FreeBSD-CI
 
