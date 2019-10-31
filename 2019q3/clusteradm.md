@@ -1,6 +1,6 @@
 ## Cluster Administration Team ##
 
-Contact: Cluster Administration Team, <clusteradm@FreeBSD.org>
+Contact: Cluster Administration Team <clusteradm@FreeBSD.org>
 
 Link: https://www.FreeBSD.org/
 
