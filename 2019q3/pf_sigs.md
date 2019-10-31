@@ -1,6 +1,6 @@
 ## Signals delivered on unhandled Page Faults ##
 
-Contact: Konstantin Belousov, <kib@FreeBSD.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
 
 Due to the obvious neccessity, handling of the page faults is
 separated into two pieces.  First one is the architecture-dependent low
@@ -10,7 +10,7 @@ Typically machine-dependent code for page faults consists of three
 components, one is a trampoline written in assembly, which creates the
 C execution environment and gathers hardware-supplied data about page
 fault reason, second is common trap() function which is common C-level
-entry point to dispatch all exceptions processing, and the third if
+entry point to dispatch all exceptions processing, and the third is the
 trap_pfault() C function to specifically handle page faults.
 trap_pfault() calls vm_fault() when the help from VM is needed to
 resolve the situation.
@@ -28,7 +28,7 @@ Single Unix Specification) lists several cases where signal should be
 send, and specifies the signal number and si_code from siginfo that
 must be supplied with the signal.
 
-Unfortunately, FreeBSD was rather incompliant in this regard.  Long
+Unfortunately, FreeBSD was rather incompliant in this regard.  A long
 time ago, we already changed for compliance, a signal sent on access
 to the page which has permissions incompatible with the access mode.
 That caused multiple problems with GC-based runtimes which were

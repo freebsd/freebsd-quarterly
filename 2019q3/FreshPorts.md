@@ -1,6 +1,6 @@
 ## FreshPorts ##
 
-Contact: Dan Langille, <dvl@FreeBSD.org>  
+Contact: Dan Langille <dvl@FreeBSD.org>  
 
 Link:	 [FreshPorts](https://www.FreshPorts.org/)  
 Link:	 [git_proc_commit code](https://github.com/FreshPorts/git_proc_commit)
@@ -9,7 +9,7 @@ Link:	 [Things you didn’t know FreshPorts can do](https://news.freshports.org/
 FreshPorts consolidates commits into an easy-to-follow
 format so you can track changes to your favorite ports.
 It also processes src, doc, and www commit. FreshPorts parses
-incoming emails refreshes the database with what it finds.
+incoming emails and refreshes the database with what it finds.
 
 In early September I started looking at how FreshPorts
 could use a git repository for processing commits. The 
@@ -24,7 +24,7 @@ up a small requirements section and then received great
 help from two sources:
 
 * Jan-Piet MENS recommended a [Python library](https://www.freshports.org/devel/py-gitpython/) and
-  turned out to be great
+  it turned out to be great
 
 * Sergey Kozlov wrote Python code to create xml using
   that Python library

@@ -1,6 +1,6 @@
 ## Randomized Top of Stack pointer ##
 
-Contact: Konstantin Belousov, <kib@FreeBSD.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
 
 After the ASLR so useful addition, next in the series of the
 buzzword-compliant checkboxes is the stack addresses randomization.
@@ -36,16 +36,16 @@ Typical reason for using rlimit(2) this way is for programs that wire
 all of its address space with mlockall(2), trying to reduce potential
 wired stack size to avoid exceeding RLIMIT_MEMLOCK.
 
-First victim of that issue appeared ntpd, which resets the stack limit
-after start for really small value.  Currently the wiring was removed
+First victim of that issue was ntpd, which resets the stack limit
+after start for a really small value.  Currently the wiring was removed
 from ntpd, because apparently it does not make the timekeeping better
-by any means, contrary to the popular beliefs.
+by any means, contrary to popular belief.
 
 My opinion is that the problem is more in the user interface area than
 in the gap approach itself.  We should make it easy to specify small
 gap sizes, which cannot be done with integral percentage interface.
 So far I did not formulated a way to do this which I would like, and
-nobody looked for a good solution because after ntpd was fixed, the
-severity of the issue seems very low.
+since nobody looked for a good solution because after ntpd was fixed, 
+the severity of the issue seems very low.
 
 Sponsor: The FreeBSD Foundation

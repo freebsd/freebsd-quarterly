@@ -1,6 +1,6 @@
 ## FreeBSD Security Team ##
 
-Contact: secteam <secteam@FreeBSD.org>  
+Contact: Security Team <secteam@FreeBSD.org>  
 
 Link:	 [FreeBSD security information](https://www.freebsd.org/security/)  
 

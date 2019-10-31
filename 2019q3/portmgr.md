@@ -1,7 +1,7 @@
 ## Ports Collection ##
 
-Contact: René Ladan, <portmgr-secretary@FreeBSD.org>  
-Contact: FreeBSD Ports Management Team, <portmgr@FreeBSD.org>  
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
 
 Link:	 [About FreeBSD Ports](https://www.FreeBSD.org/ports/)  
 Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  
@@ -38,6 +38,6 @@ user-visible ports, Firefox got updated to 69.0.1, Firefox-esr to 68.1.0,
 Chromium to 76.0.3809.132, and Xfce to 4.14.
 
 During the last quarter, antoine@ ran 48 exp-runs to test package updates, test
-updating bsd.java.mk, test the new dconfig and ldconfig-linux keywords, test
+updating bsd.java.mk, test the new ldconfig and ldconfig-linux keywords, test
 default version updates, test the new xorg and xorg-cat USES, test base
 updates, and test various improvements to Go and Ruby.

@@ -1,6 +1,6 @@
 ## XFCE 4.14 update ##
 
-Contact: Guido Falsi, <xfce@FreeBSD.org>  
+Contact: Guido Falsi <xfce@FreeBSD.org>  
 
 Link:	 [XFCE 4.14 announce](https://xfce.org/about/news/?post=1565568000)
 
@@ -8,7 +8,7 @@ On September 19th the XFCE desktop environment ports have been updated
 to the recently released XFCE 4.14 version.
 
 These updates include upgrades of all the main XFCE components to the
-latest versions which have been migrated  to GTK3, with few exceptions.
+latest versions which have been migrated to GTK3, with few exceptions.
 Base components still require and link to GTK2 in addition to GTK3 to
 allow older GTK2 XFCE applications, for example panel plugins, to keep
 working.

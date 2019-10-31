@@ -1,7 +1,7 @@
 ## Nomad pot driver - Orchestrating jails via nomad ##
 
-Contact: Luca Pizzamiglio, <pizzamig@FreeBSD.org>  
-Contact: Esteban Barrios, <esteban.barrios@trivago.com>  
+Contact: Luca Pizzamiglio <pizzamig@FreeBSD.org>  
+Contact: Esteban Barrios <esteban.barrios@trivago.com>  
 
 Link:	 [Nomad pot driver](https://github.com/trivago/nomad-pot-driver)  
 Link:	 [Pot project](https://github.com/pizzamig/pot)  
@@ -15,7 +15,7 @@ Jail images can be created and exported using the `pot` framework.
 The images can be deployed and orchestrated using `nomad`.
 A driver has been developed to allow `nomad` to interact with `pot`.
 
-One of the goal of this project is to use not persistent jails as
+One of the goal of this project is to use non-persistent jails as
 containers, allowing to:
 * define containers similar to Docker, but still different, because
   the underlaying OS is different

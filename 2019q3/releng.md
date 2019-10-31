@@ -1,6 +1,6 @@
 ## FreeBSD Release Engineering Team ##
 
-Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
+Contact: FreeBSD Release Engineering Team <re@FreeBSD.org>
 
 Link:	[FreeBSD 11.3-RELEASE announcement](https://www.freebsd.org/releases/11.3R/announce.html)
 Link:	[FreeBSD 12.1-RELEASE schedule](https://www.freebsd.org/releases/12.1R/schedule.html)
@@ -12,7 +12,6 @@ and publishing release schedules for official project releases
 of FreeBSD, announcing code freezes and maintaining the
 respective branches, among other things.
 
-[XXX: Quarterly report stuff goes here.]
 During the third quarter of 2019, the FreeBSD Release Engineering team
 finished the 11.3-RELEASE cycle, with the final release build started on
 July 5th and the official announcement sent on July 9th.

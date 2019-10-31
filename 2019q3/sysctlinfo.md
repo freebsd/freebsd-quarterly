@@ -1,6 +1,6 @@
 ## sysctlinfo ##
 
-Contact: Alfonso Sabato Siciliano, <alfonso.sicilian@email.com>  
+Contact: Alfonso Sabato Siciliano <alfonso.sicilian@email.com>  
 
 Link:	 [gitlab.com/alfix/sysctlinfo](https://gitlab.com/alfix/sysctlinfo)    
 
@@ -28,7 +28,7 @@ sysctl.entryallinfo\* nodes were written, they are 30% more efficient. Finally,
 sysctl.name2oid (or similar) to explore the MIB just to find the corresponding 
 OID.
 
-sysctlinfo can be installed via _sysutils/sysctlinfo-kmod_ or applying the 
+sysctlinfo can be installed via _sysutils/sysctlinfo-kmod_ or by applying the 
 _sysctlinfo.diff_ patch (more efficient than the module because uses a shared 
 lock). The interface is used by _deskutils/sysctlview 1.5_, 
 _sysutils/nsysctl 1.2_ and the converted version of sysctl(8), sysctlbyname(3), 

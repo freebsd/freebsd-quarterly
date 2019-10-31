@@ -1,6 +1,6 @@
 ## KDE on FreeBSD ##
 
-Contact: Adriaan de Groot, <kde@FreeBSD.org>  
+Contact: Adriaan de Groot <kde@FreeBSD.org>  
 
 Link:	 [KDE FreeBSD](https://freebsd.kde.org/)  
 Link:	 [KDE Community FreeBSD](https://community.kde.org/FreeBSD)  

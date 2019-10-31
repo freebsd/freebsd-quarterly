@@ -1,6 +1,6 @@
 ## Casueword(9) livelock ##
 
-Contact: Konstantin Belousov, <kib@FreeBSD.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
 
 The Compare-And-Swap (CAS) is one of the fundamental building blocks
 for hardware-assisted atomic read/modify/write operations.  Some
@@ -13,7 +13,7 @@ arithmetic ops using plain arithmetic instructions.  Example are LDXR.
 The ll/sc operation is performed by first using the load linked
 instruction to load a value from memory and simultaneously mark the
 cache line for exclusive access.  The value is then updated by the
-store conditional instruction, but only if there were no any writes to
+store conditional instruction, but only if there were not any writes to
 the marked cache line.  Any write by other CPUs make the store
 instruction fail.  So typically atomic primitives on ll/sc
 architectures retry the whole operation if only store failed, because
@@ -33,9 +33,9 @@ x86.
 
 Using the strong implementation for casueword is apparently dangerous,
 since the same address is potentially accessible to other, potentially
-malicious, threads in the same process or even to other process.  If
+malicious, threads in the same process or even to other processes.  If
 such thread constantly dirties the cache line used by ll/sc loop, it
-practically could make the kernel-mode thread to stuck in the loop
+practically could make the kernel-mode thread get stuck in the loop
 forever.  Since the loop is tight, and it does not check for signals,
 the thread cannot be stopped or killed.
 

@@ -1,9 +1,9 @@
 ## Kernel ZLIB Update ##
 
-Contact: Xin Li, <delphij@FreeBSD.org>
-Contact: Yoshihiro Ota, <ota@j.email.ne.jp>
+Contact: Xin Li <delphij@FreeBSD.org>
+Contact: Yoshihiro Ota <ota@j.email.ne.jp>
 
-The ZLIB is a compression library widely used in various software.
+The ZLIB is a compression library is widely used in various software.
   The FreeBSD system had used an ancient (over 20 year-old) version
 of zlib (version 1.0.4) and total of 3 versions, one in user-land,
 one in ZFS, and one in kernel.
@@ -12,11 +12,11 @@ Along the efforts, zlib version was upgraded to 1.2.11, netgraph's ppp is
 re-implemented to use the standard zlib, and removed unmaintained code.
   We now only have one and the latest version of zlib in FreeBSD code base,
 new compress, compress2, and uncompress APIs exposed in the kernel,
-and importing changes from zlib will simple.
+and importing changes from zlib will be simple.
 
 Kernel zlib changes
 - [sys/crc32.h is split to avoid object file name conflict with ZLIB's](https://reviews.freebsd.org/D20193)
-- [contrib/zlib is moved to sys/contrib/zlib](https://reviews.freebsd.org/D20191 / r34722)
+- [contrib/zlib is moved to sys/contrib/zlib](https://reviews.freebsd.org/D20191)
 - [Kernel started switching to sys/contrib/zlib and ZFS copy dropped](https://reviews.freebsd.org/D19706)
 - [Kernel zcalloc is introduced and compress, compress2, and uncompress APIs are exposed to kernel](https://reviews.freebsd.org/D21156)
 - [Removed zlib 1.0.4 from kernel](https://reviews.freebsd.org/D21375)

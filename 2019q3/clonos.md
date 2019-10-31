@@ -1,6 +1,6 @@
 ## ClonOS: virtualization platform on top of FreeBSD Operating System ##
 
-Contact: Oleg Ginzburg, <olevole@olevole.ru>
+Contact: Oleg Ginzburg <olevole@olevole.ru>
 
 Link:	[ClonOS 19.09](https://clonos.tekroutine.com/download.html)
 Link:	[CBSD](https://www.bsdstore.ru/)
@@ -12,7 +12,7 @@ framework. ClonOS offers a complete web UI for an easy control, deployment
 and management of FreeBSD jails containers and bhyve/Xen hypervisor virtual
 environments.
 
-ClonOS is currently the only available platform which allows both Xen and bhyve
+ClonOS is currently the only available platforms which allow both Xen and bhyve
 hypervisors to coexist on the same host. Since ClonOS is a FreeBSD-based
 platform, it has the ability to create and manage jails natively, allowing
 you to run FreeBSD applications without losing performance.
@@ -21,7 +21,7 @@ you to run FreeBSD applications without losing performance.
 
 - Added support for cloud-init (Linux/BSD VMs) and cloudbase-init
 (Windows VMs). It gives the ability to use FreeBSD as IaaS platform
-for instant deploy and usage of virtual machines based on bhyve
+for instant deployment and usage of virtual machines based on bhyve
 hypervisor.
 
 - Project started to use own cloud images for better stability and
@@ -46,5 +46,5 @@ distribute ClonOS on FreeBSD environments.
 -  We'd like to expand our mirrors number geographically, your help
 and contribution will be much appriciated.
 
-- We urgently looking for hosting sponsorship for various
+- We're urgently looking for hosting sponsorship for various
 developing and testing activities.
