@@ -1,6 +1,6 @@
 ## sysctlinfo ##
 
-Contact: Alfonso Sabato Siciliano <alfonso.sicilian@email.com>  
+Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
 
 Link:	 [gitlab.com/alfix/sysctlinfo](https://gitlab.com/alfix/sysctlinfo)    
 
