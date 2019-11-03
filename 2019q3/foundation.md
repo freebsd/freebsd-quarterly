@@ -1,6 +1,6 @@
 ## FreeBSD Foundation ##
 
-﻿Contact: Deb Goodkin <deb@FreeBSDFoundation.org[a][b][c]>
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
 
 The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to
 supporting and promoting the FreeBSD Project and community worldwide.
