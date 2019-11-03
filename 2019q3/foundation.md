@@ -178,7 +178,7 @@ more at [ShopFreeBSD](https://www.zazzle.com/store/shopfreebsd).
 
 We have continued our work with a new website developer to help us improve
 our website.  Work has begun to make it easier for community members to find
-information more easily and to make the site more efficient.
+information and to make the site more efficient.
 
 ### Legal/FreeBSD IP ###
 The Foundation owns the FreeBSD trademarks, and it is our responsibility to
