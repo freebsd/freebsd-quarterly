@@ -20,7 +20,7 @@ The ports infrastructure for xorg ports and ports that depend on xorg ports have
 been updated.
 We have switched `USE_XORG` and `XORG_CAT` to use the `USES` framework, instead
 of the old way of including `bsd.xorg.mk` from `bsd.port.mk`.
-This infrastructure work has been farily substantial, and new ports depending on
+This infrastructure work has been fairly substantial, and new ports depending on
 xorg ports should add `USES=xorg` to their makefiles.
 As part of this `bsd.xorg.mk` was split up, and the `XORG_CAT` part was split
 out to `USES=xorg-cat`.
