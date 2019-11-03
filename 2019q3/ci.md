@@ -38,3 +38,5 @@ Work in progress:
   * Help more 3rd software get CI on FreeBSD through a hosted CI solution
 
 Please see freebsd-testing@ related tickets for more WIP information.
+
+Sponsor: The FreeBSD Foundation
