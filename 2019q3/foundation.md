@@ -55,7 +55,7 @@ one fifth of all commits during this period.  Many of these projects have
 their own entries in this quarterly report (and are not repeated here).
 
 Foundation staff member Konstantin Belousov committed many improvements to
-multiple kernel subsystems, as well as low-level 32- and 64-bit x86
+multiple kernel subsystems, as well as low-level 32-bit and 64-bit x86
 infrastructure.  These included fixes for robust mutexes, unionfs, the
 out of memory (OOM) handler, and per-cpu allocators.
 
@@ -68,7 +68,7 @@ ELF note. Additional work included effort on build infrastructure and the
 tool chain.
 
 Clang's integrated assembler (IAS) is now used more widely, as part of the
-path to retiring the assembler from GNU bintuils 2.17.50. The readelf tool
+path to retiring the assembler from GNU binutils 2.17.50. The readelf tool
 now decodes some additional ELF note information.
 
 Ed also enabled the Linuxulator (Linux binary support layer) on arm64, and
