@@ -17,6 +17,7 @@ your report afterwards; just edit it and submit another PR.
 Don't worry too much about the Markdown syntax or language errors - we
 will fix it for you.
 
-Deadline for submitting Status Reports for the third quarter of 2019
-is 2019-10-31.
-
+Deadline for submitting Status Reports for the fourth quarter of 2019
+is 2020-01-01.  (Note that this is immediately after the end of the fourth
+quater, not several weeks later as was the case with previous quarterly
+reports.)
