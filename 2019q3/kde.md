@@ -12,8 +12,8 @@ full desktop environment, the art application
 and hundreds of other applications that can be used on
 any FreeBSD desktop machine.
 
-Along with KDE itself, the team maintains the Qt libraries,
-cmake, and a handful of other C++ libraries used in the KDE stack.
+Along with KDE itself, the team maintains the Qt libraries, the CMake
+build system, and a handful of other C++ libraries used in the KDE stack.
 
 The upstream releases KDE Frameworks (libraries) on a monthly
 cycle, KDE Plasma (the desktop environment) quarterly and
