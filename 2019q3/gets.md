@@ -14,6 +14,7 @@ and refined several times, and the portmgr team performed several
 the removal.  Symbol versioning is used to preserve binary compatibility
 for existing software that uses gets.  
 
-The change was committed in September, and will be in FreeBSD 13.0.
+The change was [committed](https://reviews.freebsd.org/rS351659) in
+September, and will be in FreeBSD 13.0.
 
 Sponsor: The FreeBSD Foundation  
