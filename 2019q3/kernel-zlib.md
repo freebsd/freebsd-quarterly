@@ -1,7 +1,7 @@
 ## Kernel ZLIB Update ##
 
-Contact: Xin Li <delphij@FreeBSD.org>
-Contact: Yoshihiro Ota <ota@j.email.ne.jp>
+Contact: Xin Li <delphij@FreeBSD.org>  
+Contact: Yoshihiro Ota <ota@j.email.ne.jp>  
 
 The ZLIB is a compression library is widely used in various software.
   The FreeBSD system had used an ancient (over 20 year-old) version

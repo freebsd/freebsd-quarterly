@@ -1,9 +1,9 @@
 ## syzkaller on FreeBSD ##
 
-Contact: Andrew Turner <andrew@FreeBSD.org>
-Contact: Mark Johnston <markj@FreeBSD.org>
-Contact: Michael Tuexen <tuexen@FreeBSD.org>
-Contact: Samy Al Bahra <sbahra@freebsd.org>
+Contact: Andrew Turner <andrew@FreeBSD.org>  
+Contact: Mark Johnston <markj@FreeBSD.org>  
+Contact: Michael Tuexen <tuexen@FreeBSD.org>  
+Contact: Samy Al Bahra <sbahra@freebsd.org>  
 
 See the syzkaller entry in the 2019q1 quarterly report for an
 introduction to syzkaller.

@@ -1,8 +1,8 @@
 FreeBSD/powerpc Project
 
-Contact: Mark Linimon (ports) <linimon@FreeBSD.org>
-Contact: Justin Hibbits (src) <jhibbits@FreeBSD.org>
-Contact: Piotr Kubaj (ports) <pkubaj@FreeBSD.org>
+Contact: Mark Linimon (ports) <linimon@FreeBSD.org>  
+Contact: Justin Hibbits (src) <jhibbits@FreeBSD.org>  
+Contact: Piotr Kubaj (ports) <pkubaj@FreeBSD.org>  
 
 Link:	[Status of FreeBSD ports on PowerPC](https://wiki.freebsd.org/powerpc/ports)
 Link:	[Status of FreeBSD ports on PowerPC built using gcc](https://wiki.freebsd.org/powerpc/ports/PortsOnGcc)
