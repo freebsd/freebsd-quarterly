@@ -47,8 +47,9 @@ The software status:
  - As of the most recent package build on powerpc64/13 (still gcc4.2.1),
    the following statistics apply:
 
-	Queued 	Built 	Failed 	Skipped 	Ignored 	Remaining
-	33298 	30361 	259 	1812	 	866	 	0
+   | Queued | Built | Failed | Skipped | Ignored | Remaining |
+   |--------|-------|--------|---------|---------|-----------|
+   | 33298  | 30361 | 259    | 1812    | 866     | 0         |
 
  - More ports fixes are being committed every day.
 
