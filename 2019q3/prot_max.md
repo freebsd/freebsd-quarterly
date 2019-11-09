@@ -45,8 +45,7 @@ mmap(NULL, size,
 This change alters mprotect argument checking and returns an error when
 unhandled protection flags are set.  This differs from POSIX (in that POSIX
 only specifies an error if a valid permission can not be set), but is the
-documented behavior on Linux and more
-closely matches historical mmap behavior.
+documented behavior on Linux and more closely matches historical mmap behavior.
 
 In addition to explicit setting of the maximum permissions, an experimental
 sysctl `vm.imply_prot_max` causes mmap to assume that the initial permissions
