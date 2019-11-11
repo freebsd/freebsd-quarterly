@@ -15,7 +15,8 @@ people know.
 
 Key points:
 
- - powerpc64 src has been production-quality for over a year now.
+ - powerpc64 src on recent hardware has been production-quality for over
+   a year now.
 
  - powerpc64 ports has been developer-quality for over 18 months now.
 
@@ -28,10 +29,11 @@ The main targeted platforms:
  - powerpc64 on older Apple Power Macs, on a continuing but secondary
    basis.  Any FreeBSD version should work.
 
- - powerpc64 on x5000.  However, this is still developer-only quality.
+ - powerpc64 on x5000. However, this is still developer-only quality.
    FreeBSD 13 is recommended.
    
- - powerpcspe on Amiga A1222.
+ - powerpcspe on Amiga A1222. However, this is still developer-only quality.
+   FreeBSD 13 is recommended.
 
 The software status:
 
@@ -57,11 +59,11 @@ The software status:
 
  - More ports fixes are being committed every day.
 
+Also, Piotr would like to thank the FreeBSD Foundation for funding
+his personal Talos, and Raptor (via its IntegriCloud subsidiary) for
+loaning a server on which talos.anongoth.pl runs.
+
 The team would like to thank IBM for the loan of two POWER8 machines,
 and Oregon State University (OSU) for providing the hosting.  As well,
 we would like to thank the clusteradm team for keeping the Tyan POWER8
 machines online that are hosted at [NYI](https://www.nyi.net).
-
-We would also like to thank FreeBSD Foundation for funding POWER9 workstation
-for one of the developers and Raptor Computer Systems for providing a remote
-POWER9 server for development purposes.
