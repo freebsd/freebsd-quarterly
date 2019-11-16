@@ -21,8 +21,8 @@ failing builds and unstable tests, and work with the experts in that area to
 fix the code or adjust test infrastructure.  The details are of these efforts
 are available in the weekly CI reports.
 
-We had a testing working group in [201909 DevSummit](https://wiki.freebsd.org/DevSummit/201909)
-lwhsu@ has presented the Testing/CI porject status and "how to work with the FreeBSD CI system", slides are available at the DevSummit page.
+We had a testing working group at the [201909 DevSummit](https://wiki.freebsd.org/DevSummit/201909)
+lwhsu@ has presented the Testing/CI project status and "how to work with the FreeBSD CI system", slides are available at the DevSummit page.
 Some contents have been migrated to https://wiki.freebsd.org/Jenkins/Debug , extending is welcomed.
 
 We continue publishing CI Weekly Report and moved the archive to https://hackmd.io/@FreeBSD-CI

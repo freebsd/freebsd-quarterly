@@ -49,7 +49,7 @@ refer to the mac_ipacl(4) for using the new MAC module and various examples.
 
 -   ATF tests for the module in  [tests/sys/mac/ipacl](https://github.com/shivankgarg98/freebsd/tree/shivank_MACPolicyIPAddressJail/tests/sys/mac/ipacl)
 
--   A man for this new mac module - mac_ipacl.4 in
+-   A man page for this new mac module - mac_ipacl.4 in
  [share/man/man4/mac_ipacl.4](https://github.com/shivankgarg98/freebsd/blob/shivank_MACPolicyIPAddressJail/share/man/man4/mac_ipacl.4)
 
 
