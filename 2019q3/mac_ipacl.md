@@ -38,10 +38,10 @@ with the rules in mac_ipacl and output is returned accordingly to netinet.
 The module can be tuned with various sysctl and similarly, policy rules are
 also be defined with sysctl.
 
-**TestSuite** - Test scripts integrated with kyua and ATF are included with
+**TestSuite -** Test scripts integrated with kyua and ATF are included with
 the module.
 
-**Using the module:** - I have written a man page for the module. Please
+**Using the module -** I have written a man page for the module. Please
 refer to the mac_ipacl(4) for using the new MAC module and various examples.
 
 **Final Deliverables -**
