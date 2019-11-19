@@ -30,7 +30,8 @@ At present, there have been three BETA builds, and so far, two RC builds, with
 the final 12.1-RELEASE build scheduled for November 4th.
 
 Additionally throughout the quarter, several development snapshots builds
-were released for the *head* and *stable/11* branches.
+were released for the *head* and *stable/11* branches; snapshots for
+*stable/12* were released as well although not during the 12.1-RELEASE cycle.
 
 Much of this work was sponsored by Rubicon Communications, LLC (Netgate)
 and the FreeBSD Foundation.
