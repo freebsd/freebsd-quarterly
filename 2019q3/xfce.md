@@ -1,8 +1,8 @@
 ## XFCE 4.14 update ##
 
-Contact: Guido Falsi <xfce@FreeBSD.org>  
-
 Link:	 [XFCE 4.14 announce](https://xfce.org/about/news/?post=1565568000)
+
+Contact: Guido Falsi <xfce@FreeBSD.org>  
 
 On September 19th the XFCE desktop environment ports have been updated
 to the recently released XFCE 4.14 version.

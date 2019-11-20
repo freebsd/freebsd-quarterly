@@ -1,11 +1,11 @@
 ## GSoC'19 Project - MAC policy on IP addresses in Jail: mac_ipacl
 
-Contact:  Shivank Garg <shivank@FreeBSD.org>
-
 Link: [FreeBSD's Phabricator Differential Link](https://reviews.freebsd.org/D20967)
 Link: [Github Diff Link](https://github.com/freebsd/freebsd/compare/master...shivankgarg98:shivank_MACPolicyIPAddressJail)
 
 Link: [Project Wiki Page](https://wiki.freebsd.org/SummerOfCode2019Projects/MACPolicyIPAddressJail)
+
+Contact:  Shivank Garg <shivank@FreeBSD.org>
 
 **About -**  With the introduction of VNET(9) in FreeBSD, Jails are free to
 set their IP addresses. However, this privilege may need to be limited by

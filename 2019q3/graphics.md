@@ -1,9 +1,9 @@
 ## FreeBSD Graphics Team status report ##
 
+Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
+
 Contact: FreeBSD Graphics Team <x11@freebsd.org>  
 Contact: Niclas Zeising <zeising@freebsd.org>  
-
-Link:	 [Project GitHub page](https://github.com/FreeBSDDesktop)
 
 The FreeBSD X11/Graphics team maintains the lower levels of the FreeBSD graphics
 stack.

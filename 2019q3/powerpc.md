@@ -1,13 +1,13 @@
 FreeBSD/powerpc Project
 
-Contact: Mark Linimon (ports) <linimon@FreeBSD.org>  
-Contact: Justin Hibbits (src) <jhibbits@FreeBSD.org>  
-Contact: Piotr Kubaj (ports) <pkubaj@FreeBSD.org>  
-
 Link:	[Status of FreeBSD ports on PowerPC](https://wiki.freebsd.org/powerpc/ports)
 Link:	[Status of FreeBSD ports on PowerPC built using gcc](https://wiki.freebsd.org/powerpc/ports/PortsOnGcc)
 Link:	[Status of FreeBSD ports on PowerPC built using clang](https://wiki.freebsd.org/powerpc/ports/PortsOnClang)
 Link:	[Bringing LLVM to PowerPC64 target, using OpenPower ELF v2 ABI](https://wiki.freebsd.org/powerpc/llvm-elfv2)
+
+Contact: Mark Linimon (ports) <linimon@FreeBSD.org>  
+Contact: Justin Hibbits (src) <jhibbits@FreeBSD.org>  
+Contact: Piotr Kubaj (ports) <pkubaj@FreeBSD.org>  
 
 The FreeBSD/powerpc project continues to make great strides.  However,
 as we discovered at BSDCan 2019, we have not done a great job of letting

@@ -1,8 +1,8 @@
 ## Java on FreeBSD ##
 
-Contact: Greg Lewis <glewis@FreeBSD.org>
-
 Link:    [OpenJDK 11 repository at FreeBSD GitHub](https://github.com/freebsd/openjdk-jdk11u)
+
+Contact: Greg Lewis <glewis@FreeBSD.org>
 
 Over the last few quarters there has been considerable work in improving
 support for Java 11 and higher, with some work being backported to Java 8.

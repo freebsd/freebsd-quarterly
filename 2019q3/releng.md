@@ -1,11 +1,11 @@
 ## FreeBSD Release Engineering Team ##
 
-Contact: FreeBSD Release Engineering Team <re@FreeBSD.org>
-
 Link:	[FreeBSD 11.3-RELEASE announcement](https://www.freebsd.org/releases/11.3R/announce.html)
 Link:	[FreeBSD 12.1-RELEASE schedule](https://www.freebsd.org/releases/12.1R/schedule.html)
 Link:	[FreeBSD 12.1-RELEASE BETA/RC builds](https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.1/)
 Link:	[FreeBSD development snapshots](https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/)
+
+Contact: FreeBSD Release Engineering Team <re@FreeBSD.org>
 
 The FreeBSD Release Engineering Team is responsible for setting
 and publishing release schedules for official project releases

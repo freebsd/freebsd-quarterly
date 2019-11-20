@@ -1,8 +1,8 @@
 ## PROT\_MAX mmap/mprotect maximum protections API ##
 
-Contact: Brooks Davis <brooks@freebsd.org>  
-
 Link: [PROT\_MAX commit](https://reviews.freebsd.org/rS349240)
+
+Contact: Brooks Davis <brooks@freebsd.org>  
 
 Unix-like systems provide the `mmap(2)` system call to allocate memory or
 map files or devices into memory with specified access protection, and the

@@ -1,9 +1,9 @@
 ## ClonOS: virtualization platform on top of FreeBSD Operating System ##
 
-Contact: Oleg Ginzburg <olevole@olevole.ru>
-
 Link:	[ClonOS 19.09](https://clonos.tekroutine.com/download.html)
 Link:	[CBSD](https://www.bsdstore.ru/)
+
+Contact: Oleg Ginzburg <olevole@olevole.ru>
 
 ### What is ClonOS? ###
 

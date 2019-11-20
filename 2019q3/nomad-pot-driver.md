@@ -1,10 +1,10 @@
 ## Nomad pot driver - Orchestrating jails via nomad ##
 
-Contact: Luca Pizzamiglio <pizzamig@FreeBSD.org>  
-Contact: Esteban Barrios <esteban.barrios@trivago.com>  
-
 Link:	 [Nomad pot driver](https://github.com/trivago/nomad-pot-driver)  
 Link:	 [Pot project](https://github.com/pizzamig/pot)  
+
+Contact: Luca Pizzamiglio <pizzamig@FreeBSD.org>  
+Contact: Esteban Barrios <esteban.barrios@trivago.com>  
 
 An experimental project has started to provide jail orchestration
 based on `nomad` and the jail framework `pot`, similarly to how
