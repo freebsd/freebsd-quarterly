@@ -1,4 +1,4 @@
-FreeBSD/powerpc Project
+## FreeBSD/powerpc Project ##
 
 Link:	[Status of FreeBSD ports on PowerPC](https://wiki.freebsd.org/powerpc/ports)
 Link:	[Status of FreeBSD ports on PowerPC built using gcc](https://wiki.freebsd.org/powerpc/ports/PortsOnGcc)
