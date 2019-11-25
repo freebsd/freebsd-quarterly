@@ -5,7 +5,7 @@ This is the working repo for FreeBSD Quarterly Status Reports.
 To submit your own report:
 
 1. Fork the repository.  Reusing an old fork is fine
-2. Go into the directory for the current time period: `2019q3`
+2. Go into the directory for the current time period: `2019q4`
 3. Create a new file, with name corresponding to the
    name of your project.  Please use the `report-sample.md`
    as a template.
