@@ -1,10 +1,10 @@
 ## Status Report Sample - This Will Become The Title ##
 
-Link:	 [7 Day Challenge](https://wiki.freebsd.org/MichaelCrilly/7daychallenge)  
+Link:	 [7 Days Challenge](https://wiki.freebsd.org/MichaelCrilly/7dayschallenge)  
 
 Contact: Michael Crilly <mike@opsfactory.com.au>  
 
-The 7 Day Challenge is an educational initiative to help people unboard with FreeBSD more easily.
+The 7 Days Challenge is an educational initiative to help people unboard with FreeBSD more easily.
 
 It will use a combination of tutorials, guides and how-tos to get users engaged with
 FreeBSD quickly, target specific end goals the user might have for FreeBSD, and more.
