@@ -1,4 +1,4 @@
-## Status Report Sample - This Will Become The Title ##
+## 7 Days Challenge ##
 
 Link:	 [7 Days Challenge](https://wiki.freebsd.org/MichaelCrilly/7dayschallenge)  
 
