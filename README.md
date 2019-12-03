@@ -1,4 +1,4 @@
-FreeBSD quarterly status reports
+FreeBSD Quarterly Status Reports
 ================================
 
 ### Drafts
@@ -7,10 +7,10 @@ This repository is for drafts.
 
 Please submit your draft as early as possible. To submit:
 
-1. fork the repository – reusing an old fork is OK
-2. enter the directory for the current time period – `2019q4`
-3. create a new file, with a name that corresponds with the name of your project – use the `report-sample.md` template
-4. create a pull request.
+1. Fork the repository – reusing an old fork is OK.
+2. Enter the directory for the current time period – `2019q4`.
+3. Create a new file, with a name that corresponds with the name of your project – use the `report-sample.md` template.
+4. Create a pull request.
 
 You can tweak things afterwards. Simply edit, then submit another PR.
 
@@ -20,9 +20,12 @@ Please do not worry excessively about language errors or Markdown syntax – we 
 
 Wednesday 2020-01-01
 
-– immediately after the end of the fourth quarter. 
+Note that this is immediately after the end of the fourth
+quater, not several weeks later as was the case with previous quarterly
+reports.
 
-Deadlines now are tighter than in the past. Final reports will appear sooner. 
+Starting from this quarter reports will be collected the third month of each
+quarter. Then deadlines will be on the 1st of January, April, July, October.
 
 ### Finals
 
