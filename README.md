@@ -20,18 +20,20 @@ Please do not worry excessively about language errors or Markdown syntax – we 
 
 Wednesday 2020-01-01
 
-Note that this is immediately after the end of the fourth
-quater, not several weeks later as was the case with previous quarterly
-reports.
+Note that this is **immediately** after the end of the quarter, not several weeks later as was the case with previous deadlines.
 
-Starting from this quarter reports will be collected the third month of each
-quarter. Then deadlines will be on the 1st of January, April, July, October.
+From this quarter onwards: 
+
+* Reports will be collected during the third month.
+* Deadlines will be the 1st of January, April, July and October.
 
 ### Finals
 
 Collated final reports are: 
 
-* listed at [FreeBSD Status Reports](https://www.freebsd.org/news/status/)
-* promoted through [newsflashes](https://www.freebsd.org/news/newsflash.html). 
+* Listed at [FreeBSD Status Reports](https://www.freebsd.org/news/status/).
+* Promoted through [newsflashes](https://www.freebsd.org/news/newsflash.html). 
 
-The most recent: https://www.freebsd.org/news/status/report-2019-07-2019-09.html
+The most recent report:
+
+* https://www.freebsd.org/news/status/report-2019-07-2019-09.html
