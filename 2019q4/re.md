@@ -23,5 +23,5 @@ included in the original schedule, but had been decided to not be required.
 Additionally throughout the quarter, several development snapshots builds
 were released for the *head*, *stable/12*, and *stable/11* branches.
 
-Much of this work was sponsored by Rubicon Communications, LLC (Netgate)
+Much of this work was sponsored by Rubicon Communications, LLC (netgate.com)
 and the FreeBSD Foundation.
