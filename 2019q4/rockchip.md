@@ -1,6 +1,8 @@
 ## RockChip Support ##
 
-Contact: <freebsd-arm@FreeBSD.Org>, Emmanuel Vadot <manu@FreeBSD.Org>, Michal Meloun <mmel@FreeBSD.Org>
+Contact: <freebsd-arm@FreeBSD.Org>
+Contact: Emmanuel Vadot <manu@FreeBSD.Org>
+Contact: Michal Meloun <mmel@FreeBSD.Org>
 
 RockChip RK3399 now has USB3 support, some configuration such as device mode
 are still not supported however host mode should work on any board.
