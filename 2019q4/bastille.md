@@ -1,9 +1,12 @@
 ## Bastille ##
 
-Link:	 [GitHub](https://github.com/BastilleBSD/bastille)  
+Link:	 [Bastille GitHub](https://github.com/BastilleBSD/bastille)  
 Link:	 [Bastille Templates](https://gitlab.com/bastillebsd-templates)  
+Link:    [Bastille Website](https://bastillebsd.org)
 
-Contact: Christer Edwards \<christer.edwards@gmail.com>  
+Contact: Christer Edwards <christer.edwards@gmail.com>  
+
+### What is Bastille? ###
 
 Bastille is an open-source system for automating deployment and management of
 containerized applications on FreeBSD.  
@@ -17,6 +20,8 @@ Templates take care of installing, configuring, enabling and starting the
 software providing an automated way of building containerized stacks.
 
 Bastille is available in ports at `sysutils/bastille`.
+
+### Q4 2019 Status ###
 
 In Q4 2019 Bastille published three releases (for a total of ten releases in
 2019). Highlights from these updates include:
