@@ -29,6 +29,11 @@ From this quarter onwards:
 
 * Reports will be collected during the third month.
 * Deadlines will be the 1st of January, April, July and October.
+* Deadlines for portmgr are 1 week after the official deadlines:
+  8th of January, April, July and October.
+* Late report submitters can ask for 1 more week of time after
+  deadlines by contacting the quarterly status reports team, for
+  example by sending an e-mail to quarterly@.
 
 ### Finals
 
