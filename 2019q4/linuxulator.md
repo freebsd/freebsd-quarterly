@@ -15,7 +15,8 @@ such as making ^T work for Linux binaries.
 
 From the user point of view, when running 13-CURRENT, Linux jails
 are now in a mostly working state: you can SSH into a jail with
-CentOS 8 binaries, run screen(1), Emacs, Postgres, use `yum upgrade`...
+CentOS 8 binaries, run screen(1), Emacs, Postgres, OpenJDK 11,
+use `yum upgrade`...
 Of course there's still a bunch of things that need work:
 
  - There is a patch from chuck@ that makes core dumps work for
