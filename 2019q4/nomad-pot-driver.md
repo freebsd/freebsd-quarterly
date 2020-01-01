@@ -8,9 +8,9 @@ Contact: Luca Pizzamiglio <pizzamig@FreeBSD.org>
 Contact: Esteban Barrios <esteban.barrios@trivago.com>  
 
 pot added support to private bridges: a group of jail can now use a dedicated bridge, instead of the public one, improving isolation.
-Morever, several small bugs have been found and fixed, and support to pre/post start/stop hook script has been added.
+Moreover, several small bugs have been found and fixed, and support to pre/post start/stop hook script has been added.
 
-the nomad pot driver received support for nomad restart without drain and improved configuration stability.
+The nomad pot driver received support for nomad restart without drain and improved configuration stability.
 
 A new port called minipot has been added: this port will install configuration files and dependencies, converting a FreeBSD machine in a single node cluster. It will install nomad, consul, pot, the nomad pot driver and traefik, already configured and ready to use.
 
