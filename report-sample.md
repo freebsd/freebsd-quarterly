@@ -1,9 +1,9 @@
 ## Status Report Sample - This Will Become The Title ##
 
-Contact: Full Name, <email@example.org>  
-
 Link:	 [Link description here](http://www.example.com/project/url)  
 Link:	 [Another link description here](http://www.example.com/other/url)  
+
+Contact: Full Name <email@example.org>  
 
 Paragraphs are separated with an empty line.  Use Markdown
 syntax, the same as you use on GitHub.  If you don't know
