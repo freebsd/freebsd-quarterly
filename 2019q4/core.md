@@ -69,9 +69,12 @@ The FreeBSD Core Team is the governing body of FreeBSD.
 - Adam Weinberger (admaw) was added to conduct@.  Adam has demonstrated
   competence, understanding, and fairness in personal matters.
 
-- After lengthy discussions between Core and Li-Wen Hsu, changes were made to
-  the Project's internationalization policy to reaffirm that The Project
-  maintains a neutral position in political disputes.
+- Li-Wen Hsu (lwhsu) contacted Core after receiving a report from concerned
+  local community members about past updates to The Project's
+  internationalization policy.  Lengthy discussions took place to determine how
+  to reaffirm that The Project maintains a neutral position in political
+  disputes.  Updates were made to the document and it was decided that any
+  future changes would require explicit Core approval.
 
   https://www.freebsd.org/internal/i18n.html
 
