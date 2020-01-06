@@ -94,6 +94,45 @@ Find out more information at
 https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/
 and share with your companies!
 
+### OS Improvements ###
+
+The Foundation supports software development projects to improve FreeBSD
+through our full time technical staff, contractors, and project grant
+recipients. They maintain and improve critical kernel subsystems, add new
+features and functionality, and fix bugs.
+
+Between October and December there were 236 commits to the FreeBSD source
+repository tagged with FreeBSD Foundation sponsorship.  This is about 10%
+of all commits during this period.  Some of these projects have their own
+entries in the quarterly report, and are not repeated here, while others
+are briefly described below.
+
+As usual, Foundation staff member Konstantin Belousov committed a large
+number of UFS, NFS, tmpfs, VM system, and low-level Intel x86 bug fixes and
+improvements.  Kostik also committed improvements to the run-time linker
+(rtld), and participated in very many code reivews, helping to get changes
+from other developers integrated into the tree.
+
+Following on from his work to improve debugging tools in the Linuxulator
+environment, Edward Napierała integrated the Linux Test Project (LTP) with
+FreeBSD's CI system, and committed a number of small bug fixes to the
+Linuxulator itself.
+
+Mark Johnston continued working on infrastructure for the Syzkaller system
+call fuzzing tool, and committed fixes for many issues identified by it.
+Mark committed improvements to RISC-V infrastructure, the network stack,
+performance and locking, and x86 pmap.
+
+Mark also added support for newer Intel WiFi chipsets to the iwm driver,
+enabling WiFi support for the Lenovo X1 Carbon 7th generation, and other
+contemporary laptops.
+
+Ed Maste committed a number of improvements and cleanups in build
+infrastructure, vt console fixes including issues with keyboard maps,
+some blacklistd updates, documentation updates, and other small changes.
+Ed also committed some work to prepare for the removal of GCC 4.2.1 from
+the FreeBSD source tree, currently planned for Q1 2020.
+
 ### Continuous Integration and Quality Assurance ###
 
 The Foundation provides a full-time staff member who is working on improving
