@@ -18,5 +18,5 @@ Work in progress:
 * Drive upgrade test for pkg builders (SSDs) courtesy of the FreeBSD Foundation.
 * Boot issues with Aarch64 reference machines.
 * New NYI.net sponsored colocation space in Chicago-land area.
-* Setup new host for CI staging emvironment.
+* Setup new host for CI staging environment.
 * Plan how to add new semi-official pkg mirrors
