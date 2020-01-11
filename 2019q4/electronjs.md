@@ -15,4 +15,4 @@ VSCode is based on electron 6.x
 
 atom, another popular editor, is still a work in progress and it's based on electron 4.x
 
-Many thanks to Hiroki, for the hard work, and to Antoine, to support the special poudriere configuration needed to build VSCode.
+Many thanks to Hiroki, for the hard work, and to Antoine, for support of the special poudriere configuration needed to build VSCode.
