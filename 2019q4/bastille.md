@@ -14,10 +14,10 @@ containerized applications on FreeBSD.
 Bastille uses FreeBSD jails as a container platform and adds template
 automation to create a Docker-like collection of containerized software. The
 template collection currently validates 30-40 applications from the ports tree,
-and growing!  
+and is growing!  
 
-Templates take care of installing, configuring, enabling and starting the
-software providing an automated way of building containerized stacks.
+Templates take care of installing, configuring, enabling, and starting the
+software, providing an automated way of building containerized stacks.
 
 Bastille is available in ports at `sysutils/bastille`.
 
@@ -35,7 +35,7 @@ In Q4 2019 Bastille published three releases (for a total of ten releases in
 
 Bastille saw an increase in community contributions with six new GitHub
 contributors. These people generously improved error checking, release
-validation (sha256), firewall improvements, flexible networking and
+validation (sha256), firewall functionality, flexible networking and
 initial support for resource limits!
 
 We want to thank everyone that contributed to Bastille in 2019. Your support
