@@ -6,10 +6,10 @@ Link:    [NomadBSD Developer Mailing List](https://www.freelists.org/list/nomadb
 
 Contact: NomadBSD Team <info@NomadBSD.org>
 
-NomadBSD is a persistent live system for USB flash drives, based on FreeBSD®.
+NomadBSD is a persistent live system for USB flash drives, based on FreeBSD.
 Together with automatic hardware detection and setup, it is configured to be
 used as a desktop system that works out of the box, but can also be used for
-data recovery, for educational purposes, or to test FreeBSD®'s hardware
+data recovery, for educational purposes, or testing FreeBSD's hardware
 compatibility.
 
 After one release candidate the NomadBSD Team finished and released NomadBSD
@@ -24,7 +24,7 @@ nomadbsd-dmconfig to select a display manager theme, nomadbsd-adduser which adds
 new user accounts and DSBBg to change the background image. All these are using
 the Qt-Toolkit.
 
-In Q4 we added two mirrors in France in Germany and would like to thank
+In Q4 we added two mirrors in France and Germany and would like to thank
 nosheep.fr and fau.de for them.
 
 We are looking for people to help the project. Help is much appreciated in all areas:
