@@ -15,7 +15,7 @@ sysctlbyname() to handle:
 
  - a CTLTYPE_NODE with a no-NULL handler, example "kern.proc.pid.\<pid\>";
  - an object with some level-name equals to the '\0' character, example
-   "security.jail.param.allow.mount. ";
+   "security.jail.param.allow.mount.";
 
 A sysctlbyname() clone is provided: sysctlbyname\_improved(), the 
 implementation core is a new sysctl internal node to get the OID of a node 
