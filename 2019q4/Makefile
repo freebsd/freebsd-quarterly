@@ -1,5 +1,8 @@
+# Report month start
 START?=		10
+# Report month end
 STOP?=		12
+# Report year
 YEAR?=		2019
 
 # Entries from the various official and semi-official teams

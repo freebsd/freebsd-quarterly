@@ -47,11 +47,6 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${S
 	sed -i '' 's/%%START%%/${START}/g' $@
 	sed -i '' 's/%%STOP%%/${STOP}/g' $@
 	sed -i '' 's/%%YEAR%%/${YEAR}/g' $@
-#	sed -i '' '20,$$s/%%NUM%%/${NUM}/g' $@
-#	sed -i '' '20,$$s/%%STARTNEXT%%/${STARTNEXT}/g' $@
-#	sed -i '' '20,$$s/%%STOPNEXT%%/${STOPNEXT}/g' $@
-#	sed -i '' '20,$$s/%%YEARNEXT%%/${YEARNEXT}/g' $@
-#	sed -i '' '20,$$s/%%DUENEXT%%/${DUENEXT}/g' $@
 	# Work around bugs in md2docbook
 	sed -i '' 's,\([^ ]\)[ ]*</ul>,\1 </li></ul>,g' $@
 	sed -i '' 's,\\_,_,g' $@
@@ -60,11 +55,6 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${S
 	sed -i '' 's,@TEXTITC@,</i>,g' $@
 	sed -i '' 's,@TEXTBF@,<b>,g' $@
 	sed -i '' 's,@TEXTBFC@,</b>,g' $@
-#	# Insert introduction
-#	sed -i '' '29,47d' $@
-#	#sed -i '' '28r ${>:[1]}' $@
-#	${MD2DOCBOOK_CMD} ${>:[1]} > intro
-#	sed -i '' '28r intro' $@
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	cat $> >> $@
