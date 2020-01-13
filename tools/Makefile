@@ -1,0 +1,103 @@
+# SPDX-License-Identfier: BSD-2-Clause-FreeBSD
+#
+# Copyright (c) 2020 Lorenzo Salvadore
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+# OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+# HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+# OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+# SUCH DAMAGE.
+
+PYTHON3_CMD?=		python3.7
+MD2DOCBOOK_PATH?=	${.CURDIR}/../tools/md2docbook.py
+
+.if empty(PYTHON3_CMD:S/^/which /:sh)
+.error "Please set the PYTHON3_CMD variable to a valid python3 command."
+.endif
+
+.if !exists(${MD2DOCBOOK_PATH})
+.error "Please set the MD2DOCBOOK_PATH variable to the path of the md2docbook.py script (you can get it at https://github.com/trasz/md2docbook). Please include the name of the script itself in the path."
+.endif
+
+MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${MD2DOCBOOK_PATH}
+
+CATEGORIES=	TeamReports Projects Userland Kernel Architectures Documentation Ports ThirdParty Miscellaneous
+
+all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml
+
+report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${STOP}.md
+	${MD2DOCBOOK_CMD} ${>} $@
+	# Replace variables
+	sed -i '' 's/%%START%%/${START}/g' $@
+	sed -i '' 's/%%STOP%%/${STOP}/g' $@
+	sed -i '' 's/%%YEAR%%/${YEAR}/g' $@
+#	sed -i '' '20,$$s/%%NUM%%/${NUM}/g' $@
+#	sed -i '' '20,$$s/%%STARTNEXT%%/${STARTNEXT}/g' $@
+#	sed -i '' '20,$$s/%%STOPNEXT%%/${STOPNEXT}/g' $@
+#	sed -i '' '20,$$s/%%YEARNEXT%%/${YEARNEXT}/g' $@
+#	sed -i '' '20,$$s/%%DUENEXT%%/${DUENEXT}/g' $@
+	# Work around bugs in md2docbook
+	sed -i '' 's,\([^ ]\)[ ]*</ul>,\1 </li></ul>,g' $@
+	sed -i '' 's,\\_,_,g' $@
+	sed -i '' 's,\\\*,\*,g' $@
+	sed -i '' 's,@TEXTIT@,<i>,g' $@
+	sed -i '' 's,@TEXTITC@,</i>,g' $@
+	sed -i '' 's,@TEXTBF@,<b>,g' $@
+	sed -i '' 's,@TEXTBFC@,</b>,g' $@
+#	# Insert introduction
+#	sed -i '' '29,47d' $@
+#	#sed -i '' '28r ${>:[1]}' $@
+#	${MD2DOCBOOK_CMD} ${>:[1]} > intro
+#	sed -i '' '28r intro' $@
+
+report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
+	cat $> >> $@
+	# Work around bugs in md2docbook
+	sed -i '' 's/\*\*\([^*]\{2,\}\)\*\*/@TEXTBF@\1@TEXTBFC@/g' $@
+	sed -i '' 's/\*\([^*]\{2,\}\)\*/@TEXTIT@\1@TEXTITC@/g' $@
+
+clean:
+	rm -f ${CATEGORIES:S/$/.md/g} report-${YEAR}-${START}-${YEAR}-${STOP}.xml report-${YEAR}-${START}-${YEAR}-${STOP}.md intro
+
+TeamReports.md: ${TeamReports}
+	if test -n "$>"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Projects.md: ${Projects}
+	if test -n "$>"; then echo "# Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Userland.md: ${Userland}
+	if test -n "$>"; then echo "# Userland Programs # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Kernel.md: ${Kernel}
+	if test -n "$>"; then echo "# Kernel Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Architectures.md: ${Architectures}
+	if test -n "$>"; then echo "# Architectures # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Documentation.md: ${Documentation}
+	if test -n "$>"; then echo "# Documentation # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Ports.md: ${Ports}
+	if test -n "$>"; then echo "# Ports # " >> $@ && cat $> >> $@; else touch $@; fi
+
+ThirdParty.md: ${ThirdParty}
+	if test -n "$>"; then echo "# Third-Party Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+
+Miscellaneous.md: ${Miscellaneous}
+	if test -n "$>"; then echo "# Miscellaneous # " >> $@ && cat $> >> $@; else touch $@; fi
