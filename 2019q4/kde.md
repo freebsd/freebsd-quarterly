@@ -1,4 +1,4 @@
-# KDE on FreeBSD ##
+## KDE on FreeBSD ##
 
 Link:    [KDE FreeBSD](https://freebsd.kde.org/)  
 Link:    [KDE Community FreeBSD](https://community.kde.org/FreeBSD)  
