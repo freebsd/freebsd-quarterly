@@ -41,7 +41,24 @@ CATEGORIES=	TeamReports Projects Userland Kernel Architectures Documentation Por
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
 MD_FILES!=	ls *.md
 
-all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml
+all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
+
+check:
+	@echo ------------ Report build summary --------------
+	@echo
+	@echo -n "Md files included: "
+	@for x in ${MD_FILES}; \
+	do if test -n "$$(echo "${SOURCES}" | grep $$x)"; \
+	then echo -n "$$x "; fi; done
+	@echo
+	@echo
+	@echo -n "Md files not included: "
+	@for x in ${MD_FILES}; \
+	do if test -z "$$(echo "${SOURCES}" | grep $$x)"; \
+	then echo -n "$$x "; fi; done
+	@echo
+	@echo
+	@echo ------------------------------------------------
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${STOP}.md
 	${MD2DOCBOOK_CMD} ${>} $@
@@ -57,18 +74,6 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${S
 	sed -i '' 's,@TEXTITC@,</i>,g' $@
 	sed -i '' 's,@TEXTBF@,<b>,g' $@
 	sed -i '' 's,@TEXTBFC@,</b>,g' $@
-	@echo ------------ Report build summary --------------
-	@echo -n "Md files processed: "
-	@for x in ${MD_FILES}; \
-	do if test -n "$$(echo "${SOURCES}" | grep $$x)"; \
-	then echo -n "$$x "; fi; done
-	@echo
-	@echo -n "Md files not processed: "
-	@for x in ${MD_FILES}; \
-	do if test -z "$$(echo "${SOURCES}" | grep $$x)"; \
-	then echo -n "$$x "; fi; done
-	@echo
-	@echo ------------------------------------------------
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	cat $> >> $@
