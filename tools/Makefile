@@ -38,6 +38,8 @@ MD2DOCBOOK_PATH?=	${.CURDIR}/../tools/md2docbook.py
 MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${MD2DOCBOOK_PATH}
 
 CATEGORIES=	TeamReports Projects Userland Kernel Architectures Documentation Ports ThirdParty Miscellaneous
+SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
+MD_FILES!=	ls *.md
 
 all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml
 
@@ -55,6 +57,18 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${S
 	sed -i '' 's,@TEXTITC@,</i>,g' $@
 	sed -i '' 's,@TEXTBF@,<b>,g' $@
 	sed -i '' 's,@TEXTBFC@,</b>,g' $@
+	@echo ------------ Report build summary --------------
+	@echo -n "Md files processed: "
+	@for x in ${MD_FILES}; \
+	do if test -n "$$(echo "${SOURCES}" | grep $$x)"; \
+	then echo -n "$$x "; fi; done
+	@echo
+	@echo -n "Md files not processed: "
+	@for x in ${MD_FILES}; \
+	do if test -z "$$(echo "${SOURCES}" | grep $$x)"; \
+	then echo -n "$$x "; fi; done
+	@echo
+	@echo ------------------------------------------------
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	cat $> >> $@
