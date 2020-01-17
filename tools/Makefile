@@ -24,6 +24,12 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
+# Targets intended for use on the command line
+#
+# all (default)	-	build report + check
+# check		-	print build tree and build summary
+# clean		-	remove built report and files needed for its construction
+
 PYTHON3_CMD?=		python3.7
 MD2DOCBOOK_PATH?=	${.CURDIR}/../tools/md2docbook.py
 
