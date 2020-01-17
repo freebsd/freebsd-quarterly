@@ -148,7 +148,7 @@ their support of FreeBSD. We added several new CI jobs and brought the
 
 We published
 [2019 in Review: CI and Testing Advancements](https://www.freebsdfoundation.org/blog/2019-in-review-ci-and-testing-advancements/)
-on The Foundation's blog.  
+on the Foundation's blog.  
 
 See the FreeBSD CI section of this report for completed work items and detailed
 information.
