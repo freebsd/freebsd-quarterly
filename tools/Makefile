@@ -37,13 +37,34 @@ MD2DOCBOOK_PATH?=	${.CURDIR}/../tools/md2docbook.py
 
 MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${MD2DOCBOOK_PATH}
 
-CATEGORIES=	TeamReports Projects Userland Kernel Architectures Documentation Ports ThirdParty Miscellaneous
+CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
 MD_FILES!=	ls *.md
 
 all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
 
 check:
+	@echo ------------ Report build tree --------------
+	@echo
+	@echo "> Team reports"
+	@for y in ${TeamReports}; do echo "  |-- $$y"; done
+	@echo "> Projects"
+	@for y in ${Projects}; do echo "  |-- $$y"; done
+	@echo "> Kernel"
+	@for y in ${Kernel}; do echo "  |-- $$y"; done
+	@echo "> Architectures"
+	@for y in ${Architectures}; do echo "  |-- $$y"; done
+	@echo "> Userland"
+	@for y in ${Userland}; do echo "  |-- $$y"; done
+	@echo "> Documentation"
+	@for y in ${Documentation}; do echo "  |-- $$y"; done
+	@echo "> Ports"
+	@for y in ${Ports}; do echo "  |-- $$y"; done
+	@echo "> Third Party"
+	@for y in ${ThirdParty}; do echo "  |-- $$y"; done
+	@echo "> Miscellaneous"
+	@for y in ${Miscellaneous}; do echo "  |-- $$y"; done
+	@echo
 	@echo ------------ Report build summary --------------
 	@echo
 	@echo -n "Md files included: "
