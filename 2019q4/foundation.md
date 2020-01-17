@@ -110,7 +110,7 @@ are briefly described below.
 As usual, Foundation staff member Konstantin Belousov committed a large
 number of UFS, NFS, tmpfs, VM system, and low-level Intel x86 bug fixes and
 improvements.  Kostik also committed improvements to the run-time linker
-(rtld), and participated in very many code reivews, helping to get changes
+(rtld), and participated in very many code reviews, helping to get changes
 from other developers integrated into the tree.
 
 Following on from his work to improve debugging tools in the Linuxulator
@@ -143,12 +143,12 @@ During the fourth quarter of 2019, Foundation staff continued to improve the
 project's CI infrastructure, worked with contributors to fix the failing build
 and test cases.  We worked with other teams in the project for their testing
 needs and also worked with many external projects and companies to improve
-their support of FreeBSD. We added several new CI jobs and made
+their support of FreeBSD. We added several new CI jobs and brought the
 [FreeBSD Hardware Testing Lab](https://ci.freebsd.org/hwlab) online.
 
 We published
 [2019 in Review: CI and Testing Advancements](https://www.freebsdfoundation.org/blog/2019-in-review-ci-and-testing-advancements/)
-on Foundation's blog.  
+on the Foundation's blog.  
 
 See the FreeBSD CI section of this report for completed work items and detailed
 information.
@@ -164,8 +164,8 @@ around the world.
 A large part of our efforts are dedicated to advocating for the Project. This
 includes promoting work being done by others with FreeBSD; producing advocacy
 literature to teach people about FreeBSD and help make the path to starting
-using FreeBSD or contributing to the Project easier; and attending and getting
-other FreeBSD contributors to volunteer to run FreeBSD events, staff FreeBSD
+using FreeBSD or contributing to the Project easier; and attending and helping
+other FreeBSD contributors volunteer to run FreeBSD events, staff FreeBSD
 tables, and give FreeBSD presentations.
 
 The FreeBSD Foundation sponsors many conferences, events, and summits around the globe. These events can be BSD-related, open source, or technology events geared towards underrepresented groups. We support the FreeBSD-focused events to help provide a venue for sharing knowledge, to work together on projects, and to facilitate collaboration between developers and commercial users. This all helps provide a healthy ecosystem. We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.
