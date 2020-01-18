@@ -2,7 +2,7 @@
 
 Contact: Cluster Administration Team <clusteradm@FreeBSD.org>  
 
-Link: https://www.freebsd.org/administration.html#t-clusteradm  
+Link: [Cluster Administration Team members](https://www.freebsd.org/administration.html#t-clusteradm)
 
 The FreeBSD Cluster Administration Team consists of the people responsible for administering the machines that the Project relies on for its distributed work and communications to be synchronised. In this quarter, the team has worked on the following:
 
