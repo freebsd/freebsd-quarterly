@@ -6,7 +6,7 @@ STOP?=		12
 YEAR?=		2019
 
 # Entries from the various official and semi-official teams
-TeamReports= clusteradm.md ci.md core.md re.md
+TeamReports= core.md foundation.md re.md clusteradm.md ci.md
 
 # Projects that span multiple categories, from the kernel and userspace to
 # the Ports Collection or external projects
@@ -17,7 +17,7 @@ Userland= linuxulator.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= ausoc-audio.md
+Kernel= ausoc-audio.md azure.md ec2-arm.md ena.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
@@ -36,6 +36,6 @@ Ports= portmgr.md kde.md java.md electronjs.md bastille.md upt.md wine.md
 ThirdParty= sysctlbyname-improved.md nomad-pot-driver.md 7-days-challenge.md nomadbsd.md
 
 # Objects that defy categorization
-Miscellaneous= azure.md ec2-arm.md ena.md
+Miscellaneous=
 
 .include <../tools/Makefile>
