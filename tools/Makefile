@@ -26,7 +26,7 @@
 
 # Targets intended for use on the command line
 #
-# all (default)	-	build report + check
+# all (default)	-	clean + build report + check (build can have funny side effects if directory is not cleaned before)
 # check		-	print build tree and build summary
 # clean		-	remove built report and files needed for its construction
 
@@ -47,7 +47,7 @@ CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Por
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
 MD_FILES!=	ls *.md
 
-all: report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
+all: clean report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
 
 check:
 	@echo ------------ Report build tree --------------
