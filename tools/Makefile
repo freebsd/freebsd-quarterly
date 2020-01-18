@@ -112,28 +112,28 @@ clean:
 	rm -f ${CATEGORIES:S/$/.md/g} report-${YEAR}-${START}-${YEAR}-${STOP}.xml report-${YEAR}-${START}-${YEAR}-${STOP}.md intro
 
 TeamReports.md: ${TeamReports}
-	if test -n "$>"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Projects.md: ${Projects}
-	if test -n "$>"; then echo "# Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Projects # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Userland.md: ${Userland}
-	if test -n "$>"; then echo "# Userland Programs # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Userland Programs # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Kernel.md: ${Kernel}
-	if test -n "$>"; then echo "# Kernel Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Kernel Projects # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Architectures.md: ${Architectures}
-	if test -n "$>"; then echo "# Architectures # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Architectures # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Documentation.md: ${Documentation}
-	if test -n "$>"; then echo "# Documentation # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Documentation # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Ports.md: ${Ports}
-	if test -n "$>"; then echo "# Ports # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Ports # " >> $@ && cat $> >> $@; else touch $@; fi
 
 ThirdParty.md: ${ThirdParty}
-	if test -n "$>"; then echo "# Third-Party Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Third-Party Projects # " >> $@ && cat $> >> $@; else touch $@; fi
 
 Miscellaneous.md: ${Miscellaneous}
-	if test -n "$>"; then echo "# Miscellaneous # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Miscellaneous # " >> $@ && cat $> >> $@; else touch $@; fi
