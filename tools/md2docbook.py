@@ -42,7 +42,7 @@ class report_class:
   "http://www.FreeBSD.org/XML/share/xml/statusreport.dtd" >
 
 <!-- $FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/report-template.xml 51132 2017-10-19 01:38:11Z bjk $ -->
-<!-- This file was generated with https://github.com/trasz/md2docbook -->
+<!-- This file was generated with https://github.com/freebsd/freebsd-quarterly/blob/master/tools/md2docbook.py -->
 <!--
      Variables to replace:
      %%START%%     - report month start
