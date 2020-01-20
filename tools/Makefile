@@ -31,17 +31,12 @@
 # clean		-	remove built report and files needed for its construction
 
 PYTHON3_CMD?=		python3.7
-MD2DOCBOOK_PATH?=	${.CURDIR}/../tools/md2docbook.py
 
 .if empty(PYTHON3_CMD:S/^/which /:sh)
 .error "Please set the PYTHON3_CMD variable to a valid python3 command."
 .endif
 
-.if !exists(${MD2DOCBOOK_PATH})
-.error "Please set the MD2DOCBOOK_PATH variable to the path of the md2docbook.py script (you can get it at https://github.com/trasz/md2docbook). Please include the name of the script itself in the path."
-.endif
-
-MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${MD2DOCBOOK_PATH}
+MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${.CURDIR}/../tools/md2docbook.py
 
 CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
