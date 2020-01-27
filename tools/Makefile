@@ -26,23 +26,49 @@
 
 # Targets intended for use on the command line
 #
-# all (default)	-	clean + build report + check (build can have funny side effects if directory is not cleaned before)
-# check		-	print build tree and build summary
-# clean		-	remove built report and files needed for its construction
+# all-xml (default)	-	clean-xml + build xml report + check (build can have funny side effects if directory is not cleaned before)
+# all-txt		-	build a text version of the report using the html version online
+# check			-	print build tree and build summary
+# clean			-	clean-xml + clean-txt
+# clean-xml		-	remove built xml report and files needed for its construction
+# clean-txt		-	remove html and txt version of the report
 
+PERL_CMD?=		perl
+LYNX_CMD?=		lynx
 PYTHON3_CMD?=		python3.7
 
+.if empty(LYNX_CMD:S/^/which /:sh)
+.error "Please set the LYNX_CMD variable to a valid lynx binary."
+.endif
+.if empty(PERL_CMD:S/^/which /:sh)
+.error "Please set the PERL_CMD variable to a valid perl binary."
+.endif
 .if empty(PYTHON3_CMD:S/^/which /:sh)
 .error "Please set the PYTHON3_CMD variable to a valid python3 command."
 .endif
 
 MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${.CURDIR}/../tools/md2docbook.py
+PRETTIFY_CMD=	${PERL_CMD} ${.CURDIR}/../tools/prettify.perl
 
 CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
 MD_FILES!=	ls *.md
 
-all: clean report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
+.if ${QUARTER} == 1
+QUARTER_WORD=	First
+.elif ${QUARTER} == 2
+QUARTER_WORD=	Second
+.elif ${QUARTER} == 3
+QUARTER_WORD=	Third
+.elif ${QUARTER} == 4
+QUARTER_WORD=	Fourth
+.else
+.error "The value you inserted for the QUARTER variable is unexpected. If you are sure that your value is valid, please edit tools/Makefile by adding a definition for the QUARTER_WORD variable corresponding to your QUARTER value."
+.endif
+
+all-xml: clean-xml report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
+all-txt: report-${YEAR}-${START}-${YEAR}-${STOP}.txt
+clean:	clean-xml clean-txt
 
 check:
 	@echo ------------ Report build tree --------------
@@ -103,8 +129,23 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	sed -i '' 's/\*\*\([^*]\{2,\}\)\*\*/@TEXTBF@\1@TEXTBFC@/g' $@
 	sed -i '' 's/\*\([^*]\{2,\}\)\*/@TEXTIT@\1@TEXTITC@/g' $@
 
-clean:
-	rm -f ${CATEGORIES:S/$/.md/g} report-${YEAR}-${START}-${YEAR}-${STOP}.xml report-${YEAR}-${START}-${YEAR}-${STOP}.md intro
+report-${YEAR}-${START}-${YEAR}-${STOP}.txt: report-${YEAR}-${START}-${YEAR}-${STOP}.html
+	${LYNX_CMD} -dump -nolist $> | /usr/bin/iconv -f ISO-8859-1 -t UTF-8 > $@
+	${PRETTIFY_CMD} $@ ${QUARTER_WORD} ${YEAR}
+	mv $@.out $@
+
+report-${YEAR}-${START}-${YEAR}-${STOP}.html:
+	fetch -o $@ https://www.freebsd.org/news/status/report-${YEAR}-${START}-${YEAR}-${STOP}.html
+
+clean-xml:
+	rm -f	${CATEGORIES:S/$/.md/g} \
+		report-${YEAR}-${START}-${YEAR}-${STOP}.xml \
+		report-${YEAR}-${START}-${YEAR}-${STOP}.md \
+		intro
+
+clean-txt:
+	rm -f	report-${YEAR}-${START}-${YEAR}-${STOP}.html \
+		report-${YEAR}-${START}-${YEAR}-${STOP}.txt
 
 TeamReports.md: ${TeamReports}
 	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi

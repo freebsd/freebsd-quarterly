@@ -4,6 +4,8 @@ START?=		10
 STOP?=		12
 # Report year
 YEAR?=		2019
+# Report quarter
+QUARTER?=	4
 
 # Entries from the various official and semi-official teams
 TeamReports= core.md foundation.md re.md clusteradm.md ci.md
