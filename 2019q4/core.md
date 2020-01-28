@@ -66,7 +66,7 @@ The FreeBSD Core Team is the governing body of FreeBSD.
 
   https://wiki.freebsd.org/SummerOfCode2019Projects
 
-- Adam Weinberger (admaw) was added to conduct@.  Adam has demonstrated
+- Adam Weinberger (adamw) was added to conduct@.  Adam has demonstrated
   competence, understanding, and fairness in personal matters.
 
 - Li-Wen Hsu (lwhsu) contacted Core after receiving a report from concerned
