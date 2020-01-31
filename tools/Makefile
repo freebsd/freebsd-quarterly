@@ -147,6 +147,9 @@ clean-txt:
 	rm -f	report-${YEAR}-${START}-${YEAR}-${STOP}.html \
 		report-${YEAR}-${START}-${YEAR}-${STOP}.txt
 
+extract-contacts: ${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous}
+	cat $> | grep 'Contact:' | grep -o -E '<.*@.*>' | tr -d '<>'
+
 TeamReports.md: ${TeamReports}
 	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi
 
