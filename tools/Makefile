@@ -32,6 +32,7 @@
 # clean			-	clean-xml + clean-txt
 # clean-xml		-	remove built xml report and files needed for its construction
 # clean-txt		-	remove html and txt version of the report
+# extract-contacts	-	extract contacts from md reports
 
 PERL_CMD?=		perl
 LYNX_CMD?=		lynx
