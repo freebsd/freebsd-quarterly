@@ -9,7 +9,7 @@ segregate code and data, blocking unintentional execution of memory whose
 contents is controlled by an attacker.  W^X (write XOR execute) is a security
 policy which disallows the creation of mappings that are simultaneously
 writeable and executable.  Under this policy, memory whose contents can be
-modified must be mapped with the NX flag.  This policy makes harder to exploit
+modified must be mapped with the NX flag.  This policy makes it harder to exploit
 bugs that permit an attacker to arbitrarily overwrite data.
 
 FreeBSD has long made use of the NX flag for userspace mappings whenever

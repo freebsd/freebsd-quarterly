@@ -1,16 +1,12 @@
 ## Cluster Administration Team ##
 
-Contact: Cluster Administration Team <clusteradm@FreeBSD.org>
+Contact: Cluster Administration Team <clusteradm@FreeBSD.org>  
+
+Link: [Cluster Administration Team members](https://www.freebsd.org/administration.html#t-clusteradm)
 
 The FreeBSD Cluster Administration Team consists of the people responsible for administering the machines that the Project relies on for its distributed work and communications to be synchronised. In this quarter, the team has worked on the following:
 
-* Change IPv6 address in TWN site.
-* Solved hardware issues in KWC site (with hrs@).
-* Moved remaining infrastructure from the YSV (Yahoo!) site to NYI (New York Internet) (peter@).
-    * YSV hosted most of FreeBSD.org between 2000 and 2019.
-* Installed new machines for portmgr@ courtesy of the FreeBSD Foundation.
-* Resolved outtages (thanks uqs@) with GitHub exporter, Bugzilla and hg-beta (thanks bapt@).
-* PowerPC64 servers are online (power8) building pkgs and reference hosts.
+* Upgrade ref11-{amd64,i386}.freebsd.org to 11.3-STABLE r353313
 * Ongoing systems administration work:
     * Creating accounts for new committers.
     * Backups of critical infrastructure.
@@ -25,3 +21,4 @@ Work in progress:
 * Boot issues with Aarch64 reference machines.
 * New NYI.net sponsored colocation space in Chicago-land area.
 * Setup new host for CI staging environment.
+* Plan how to add new semi-official pkg mirrors

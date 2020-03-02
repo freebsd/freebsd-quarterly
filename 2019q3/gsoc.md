@@ -1,9 +1,9 @@
 ## Google Summer of Code 2019 ##
 
-Contact: Summer of Code Admins <soc-admins@freebsd.org>  
-
 Link:	 [2019 Summer of Code Project Wikis](https://wiki.freebsd.org/SummerOfCode2019Projects)  
 Link:    [2019 Summer of Code Projects](https://summerofcode.withgoogle.com/archive/2019/organizations/6504969929228288/)
+
+Contact: Summer of Code Admins <soc-admins@freebsd.org>  
 
 The FreeBSD Project is pleased to have participated in
 Google Summer of Code 2019 marking our 14th year of participation.

@@ -1,12 +1,12 @@
 ## Ports Collection ##
 
-Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
-Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
-
 Link:	 [About FreeBSD Ports](https://www.FreeBSD.org/ports/)  
 Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  
 Link:	 [FreeBSD Ports Monitoring](http://portsmon.freebsd.org/index.html)  
 Link:	 [Ports Management Team](https://www.freebsd.org/portmgr/index.html)  
+
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
 
 The FreeBSD Ports Management Team, tasked with overseeing the Ports Tree and
 its committers, reports that the following events happened during 2019Q3:

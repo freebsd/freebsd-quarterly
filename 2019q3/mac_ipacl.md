@@ -1,11 +1,11 @@
 ## GSoC'19 Project - MAC policy on IP addresses in Jail: mac_ipacl
 
-Contact:  Shivank Garg <shivank@FreeBSD.org>
-
 Link: [FreeBSD's Phabricator Differential Link](https://reviews.freebsd.org/D20967)
 Link: [Github Diff Link](https://github.com/freebsd/freebsd/compare/master...shivankgarg98:shivank_MACPolicyIPAddressJail)
 
 Link: [Project Wiki Page](https://wiki.freebsd.org/SummerOfCode2019Projects/MACPolicyIPAddressJail)
+
+Contact:  Shivank Garg <shivank@FreeBSD.org>
 
 **About -**  With the introduction of VNET(9) in FreeBSD, Jails are free to
 set their IP addresses. However, this privilege may need to be limited by
@@ -38,10 +38,10 @@ with the rules in mac_ipacl and output is returned accordingly to netinet.
 The module can be tuned with various sysctl and similarly, policy rules are
 also be defined with sysctl.
 
-**TestSuite** - Test scripts integrated with kyua and ATF are included with
+**TestSuite -** Test scripts integrated with kyua and ATF are included with
 the module.
 
-**Using the module:** - I have written a man page for the module. Please
+**Using the module -** I have written a man page for the module. Please
 refer to the mac_ipacl(4) for using the new MAC module and various examples.
 
 **Final Deliverables -**
@@ -49,7 +49,7 @@ refer to the mac_ipacl(4) for using the new MAC module and various examples.
 
 -   ATF tests for the module in  [tests/sys/mac/ipacl](https://github.com/shivankgarg98/freebsd/tree/shivank_MACPolicyIPAddressJail/tests/sys/mac/ipacl)
 
--   A man for this new mac module - mac_ipacl.4 in
+-   A man page for this new mac module - mac_ipacl.4 in
  [share/man/man4/mac_ipacl.4](https://github.com/shivankgarg98/freebsd/blob/shivank_MACPolicyIPAddressJail/share/man/man4/mac_ipacl.4)
 
 

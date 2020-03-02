@@ -1,9 +1,9 @@
 ## KDE on FreeBSD ##
 
-Contact: Adriaan de Groot <kde@FreeBSD.org>  
-
 Link:	 [KDE FreeBSD](https://freebsd.kde.org/)  
 Link:	 [KDE Community FreeBSD](https://community.kde.org/FreeBSD)  
+
+Contact: Adriaan de Groot <kde@FreeBSD.org>  
 
 The *KDE on FreeBSD* project packages the software produced by
 the KDE Community for FreeBSD. The software includes a

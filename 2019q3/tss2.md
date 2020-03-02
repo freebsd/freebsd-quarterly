@@ -1,11 +1,11 @@
 ## TPM2 Software Stack (TSS2) ##
 
-Contact: D Scott Phillips <scottph@FreeBSD.org>
-
 Link: [tpm2-tss Documentation](https://tpm2-tss.readthedocs.io/en/latest/index.html)
 Link: [tpm2 Source Repository](https://github.com/tpm2-software/)
 Link: [tpm2 mailing list](https://lists.01.org/postorius/lists/tpm2.lists.01.org/)
 Link: [tpm2 irc channel](ircs://chat.freenode.net:6697/tpm2.0-tss)
+
+Contact: D Scott Phillips <scottph@FreeBSD.org>
 
 Intel has contributed ports of the TPM2 Software Stack to the ports tree, with
 the new ports securtity/tpm2-tss, security/tpm2-tools, security/tpm2-abrmd.

@@ -5,7 +5,7 @@ Contact: Rick Macklem <rmacklem@freebsd.org>
 RFC-7862 describes a new minor revision to the NFS Version 4 protocol.
 This project implements this new minor revision.
 
-The NFS Version 4 Minorversion 2 protocol adds several optional
+The NFS Version 4 Minor Version 2 protocol adds several optional
 features to NFS, such as support for SEEK_DATA/SEEK_HOLE, file
 copying done on the server that avoids data transfer over the wire
 and support for posix_fallocate(), posix_fadvise().

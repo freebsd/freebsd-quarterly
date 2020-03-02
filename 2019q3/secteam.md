@@ -1,8 +1,8 @@
 ## FreeBSD Security Team ##
 
-Contact: Security Team <secteam@FreeBSD.org>  
-
 Link:	 [FreeBSD security information](https://www.freebsd.org/security/)  
+
+Contact: Security Team <secteam@FreeBSD.org>  
 
 Several members of the security team met at the Vendor Summit in October to
 formalize team structure dedicated for architecture and crypto engineering in
