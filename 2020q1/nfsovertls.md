@@ -18,7 +18,7 @@ over TLS may be more widely adopted, once implementations
 are available.
 
 Since FreeBSD's kernel TLS requires that data be in ext_pgs
-mbufs for transmission, most of the work so far has been
+mbufs for transmission, most of the work sofar has been
 modifying the NFS code that builds the protocol arguments
 to optionally use ext_pgs mbufs.
 Coding changes to handle received ext_pgs mbufs has also
@@ -29,7 +29,7 @@ The kernel RPC has also been modified to do the STARTTLS
 Null RPC and to do upcalls to userland daemons that
 perform the SSL_connect()/SSL_accept(), since the kernel
 TLS does not do this initial handshake.
-So far only a self signed certificate on the server,
+Sofar only a self signed certificate on the server,
 with no requirement for the client to have a certificate
 has been implemented.
 
@@ -46,3 +46,4 @@ Once receive side kernel TLS becomes available, the code in
 subversion under base/projects/nfs-over-tls will need third
 party testing and a security evaluation by someone familiar
 with TLS.
+
