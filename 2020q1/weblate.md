@@ -1,10 +1,10 @@
 ## FreeBSD Translations on Weblate ##
 
-Link: [Translate FreeBSD on Weblate wiki](https://wiki.freebsd.org/DocTranslationOnWeblate)
-Link: [FreeBSD Weblate Instance](https://translate-dev.freebsd.org/)
+Link: [Translate FreeBSD on Weblate wiki](https://wiki.freebsd.org/DocTranslationOnWeblate)  
+Link: [FreeBSD Weblate Instance](https://translate-dev.freebsd.org/)  
 
-Contact: Danilo G. Baio <dbaio@FreeBSD.org>
-Contact: Edson Brandi <ebrandi@FreeBSD.org>
+Contact: Danilo G. Baio <dbaio@FreeBSD.org>  
+Contact: Edson Brandi <ebrandi@FreeBSD.org>  
 
 As announced on [January](https://www.freebsd.org/news/newsflash.html#event20200121:01), The FreeBSD Project is adopting Weblate as its web-based continuous localization platform.
 
