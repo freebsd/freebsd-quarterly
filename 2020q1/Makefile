@@ -19,7 +19,7 @@ Userland=
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel=
+Kernel= bridge.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
@@ -27,11 +27,11 @@ Architectures=
 
 # Noteworthy changes in the documentation tree or new external
 # books/documents
-Documentation=
+Documentation= weblate.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports=
+Ports= xfce.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
