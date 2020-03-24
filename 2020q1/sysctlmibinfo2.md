@@ -1,6 +1,6 @@
 ## sysctlmibinfo2 API ##
 
-Link:	 [gitlab.com/alfix/sysctlmibinfo2](https://gitlab.com/alfix/sysctlmibinfo2)  
+Link:	 [sysctlmibinfo2](https://gitlab.com/alfix/sysctlmibinfo2)  
 
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
 
