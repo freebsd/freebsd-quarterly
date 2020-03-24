@@ -5,9 +5,9 @@ Link:	 [sysctlmibinfo2](https://gitlab.com/alfix/sysctlmibinfo2)
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
 
 In the previous third and fouth quarterly status reports 2019, the sysctlinfo
-interface and an extension to improve the sysctlbyname() syscall were described.
-They can access to the sysctl MIB and get the properties of an object, but both
-are quite low level and kernel related.
+interface and an extension to improve the sysctlbyname() syscall were described,
+they can access to the sysctl MIB and pass the properties of an object to the
+userland, but both are quite low level and kernel related.
 
 The sysctlmibinfo2 library provides an API to explore the sysctl MIB, to convert
 an object name in its corresponding Object Identifier and to find an object to
@@ -15,7 +15,7 @@ get its properties; therefore it is useful to handle an object correctly and to
 build a sysctl-like utility.
 
 Primarily sysctlmibinfo2 wraps the low level interface to provide an easy API,
-example: sysctlmif\_desc() retrieves the description on an object,
+example: sysctlmif\_desc() retrieves the description of an object,
 sysctlmif\_type() gets its type (like string or integer), sysctlmif\_fmt()
 specifies the format (an integer could represent a deciKelvin or milliKelvin) so
 it is possible to print properly a value.
