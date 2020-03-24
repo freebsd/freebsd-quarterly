@@ -34,5 +34,4 @@ about a node in a time, manages a name with a NULL level or expanded with an
 input for the sysctl handler.
 
 The library can be installed via the devel/sysctlmibinfo2 port, a manual page
-is available and examples in the Public Domain for getting started your
-projects.
+and examples in the Public Domain for getting started your projects are available.
