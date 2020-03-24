@@ -28,7 +28,7 @@ objects and sysctlmif\_treebyname("dev.pcm") returns a tree where _dev.pcm_ is
 the root node and each subtree represents an audio device.
 
 Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles nodes
-up to CTL\_MANAME levels, supports _capability mode_, seeking a node by its name
+up to CTL\_MAXNAME levels, supports _capability mode_, seeking a node by its name
 (avoiding to explore the MIB just to find the corresponding OID), gets all info
 about a node in a time, manages a name with a NULL level or expanded with an
 input for the sysctl handler.
