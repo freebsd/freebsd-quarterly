@@ -27,10 +27,10 @@ sysctlmif\_grouplistbyname("hw.snd") returns the list of the Sound Driver
 objects and sysctlmif\_treebyname("dev.pcm") returns a tree where "dev.pcm" is
 the root node and each subtree represents an audio device.
 
-Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles nodes
-up to CTL\_MAXNAME levels, supports capability mode, seeking a node by its name
+Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles OIDs
+up to CTL\_MAXNAME levels, supports capability mode, seeking an object by its name
 (avoiding to explore the MIB just to find the corresponding OID), gets all info
-about a node in a time, manages a name with a NULL level or expanded with an
+about an object in a time, manages a name with a NULL level or expanded with an
 input for the sysctl handler.
 
 The library can be installed via the devel/sysctlmibinfo2 port, a manual page
