@@ -16,7 +16,7 @@ build a sysctl-like utility.
 
 Primarily sysctlmibinfo2 wraps the low level interface to provide an easy API,
 some example: sysctlmif\_desc() retrieves the description of an object,
-sysctlmif\_type() gets the type (string, integer, etc) while sysctlmif\_fmt()
+sysctlmif\_kind() gets the type (string, integer, etc) while sysctlmif\_fmt()
 specifies the format (an integer could represent a deciKelvin, milliKelvin, etc)
 then it is possible to print properly an object value.
 
