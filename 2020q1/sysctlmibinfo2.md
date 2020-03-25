@@ -11,13 +11,13 @@ userland, but both are quite low level and kernel related.
 
 The sysctlmibinfo2 library provides an API to explore the sysctl MIB, to convert
 an object name in its corresponding Object Identifier and to find an object to
-get its properties; therefore it is useful to handle an object correctly and to
+get its properties, therefore it is useful to handle an object correctly and to
 build a sysctl-like utility.
 
 Primarily sysctlmibinfo2 wraps the low level interface to provide an easy API,
 some example: sysctlmif\_desc() retrieves the description of an object,
-sysctlmif\_kind() gets the type (string, integer, etc) while sysctlmif\_fmt()
-specifies the format (an integer could represent a deciKelvin, milliKelvin, etc)
+sysctlmif\_kind() gets the type (string, integer, etc) and sysctlmif\_fmt()
+specifies the format (an integer could represent a deciKelvin, milliKelvin, etc),
 then it is possible to print properly an object value.
 
 Moreover sysctlmibinfo2 provides a high level API: a struct sysctlmif\_object
