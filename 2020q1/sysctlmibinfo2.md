@@ -24,11 +24,11 @@ Moreover sysctlmibinfo2 provides a high level API: a struct sysctlmif\_object
 definition and functions to build data structures of objects.
 Example, let say, you would need to manage the sound system,
 sysctlmif\_grouplistbyname("hw.snd") returns the list of the Sound Driver
-objects and sysctlmif\_treebyname("dev.pcm") returns a tree where _dev.pcm_ is
+objects and sysctlmif\_treebyname("dev.pcm") returns a tree where "dev.pcm" is
 the root node and each subtree represents an audio device.
 
 Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles nodes
-up to CTL\_MAXNAME levels, supports _capability mode_, seeking a node by its name
+up to CTL\_MAXNAME levels, supports capability mode, seeking a node by its name
 (avoiding to explore the MIB just to find the corresponding OID), gets all info
 about a node in a time, manages a name with a NULL level or expanded with an
 input for the sysctl handler.
