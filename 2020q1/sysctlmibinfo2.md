@@ -22,7 +22,7 @@ then it is possible to print properly an object value.
 
 Moreover sysctlmibinfo2 provides a high level API: a struct sysctlmif\_object
 definition and functions to build data structures of objects.
-Example, let say, you would need to manage the sound system,
+Example, let say, we want to manage the sound system,
 sysctlmif\_grouplistbyname("hw.snd") returns the list of the Sound Driver
 objects and sysctlmif\_treebyname("dev.pcm") returns a tree where "dev.pcm" is
 the root node and each subtree represents an audio device.
