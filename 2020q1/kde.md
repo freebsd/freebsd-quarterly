@@ -24,6 +24,9 @@ release landing in ports, and then had the usual regular updates:
 There were no substantial Qt updates but four bugfix releases for
 `devel/cmake`, and regular work all over the ports tree.
 
+The SDDM login manager was updated to a much newer -- by over a year --
+release and patched to support more FreeBSD features.
+
 One update to `devel/qca` dropped compatibility with FreeBSD 11
 because upstream no longer supports older OpenSSL versions.
 There is infrastructure in the ports tree now that adds a `USES=qca`
