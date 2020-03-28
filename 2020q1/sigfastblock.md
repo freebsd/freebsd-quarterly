@@ -37,7 +37,7 @@ syscalls microbenchmarks, esp. on machines with SMAP.  The reason is
 that SMAP requires all userspace access bracketed by STAC/CLAC pair of
 instructions, which are de-facto serializing (this is not
 architectural, but all current microarchitectures do it).  The
-decision was made to eliminate the word read, but the cost of possibly
+decision was made to eliminate the word read, at the cost of possibly
 returning spurious EINTR.  The impact should be minimal, since
 sigfastblock(2) is not supposed to be the service available to users,
 it is only assumed for rtld and libthr implementations.
