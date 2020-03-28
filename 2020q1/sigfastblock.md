@@ -10,7 +10,7 @@ handlers and saves the signals and related context if signal is
 delivered while rtld or libthr are in protected section of code.
 
 In non-threaded processes, the async safety is provided by changing
-signal mask for the thread.  It is actually better then the
+signal mask for the thread.  It is actually better than the
 interposing done by libthr, since signals are delivered in the right
 context, instead of libthr attempt of recreate it later.  But the
 unfortunate side-effect is that each rtld entry requires two syscalls,
