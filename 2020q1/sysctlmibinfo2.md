@@ -22,17 +22,17 @@ etc), then it is possible to print properly an object value.
 
 Moreover sysctlmibinfo2 provides a high level API: a struct sysctlmif\_object
 definition and functions to build data structures of objects.
-Example, let say, we want to manage the sound system,
+Example, let's say we want to manage the sound system,
 sysctlmif\_grouplistbyname("hw.snd") returns the list of the Sound Driver
 objects and sysctlmif\_treebyname("dev.pcm") returns a tree where "dev.pcm" is
 the root node and each subtree represents an audio device.
 
 Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles OIDs
-up to CTL\_MAXNAME levels, supports capability mode, seeking an object by its
+up to CTL\_MAXNAME levels, supports capability mode, can seek an object by its
 name (avoiding to explore the MIB just to find the corresponding OID), gets all
 info about an object in a time, manages a name with a NULL level or expanded
 with an input for the sysctl handler.
 
-The library can be installed via the devel/sysctlmibinfo2 port, a manual page
+The library can be installed via the devel/libsysctlmibinfo2 port, a manual page
 and examples in the Public Domain are available for getting started your
 projects.
