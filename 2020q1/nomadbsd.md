@@ -2,7 +2,7 @@
 
 Link:	 [NomadBSD Website](https://www.nomadbsd.org/)
 Link:	 [NomadBSD Github](https://www.github.com/NomadBSD/NomadBSD)
-Link:    [NomadBSD Developer Mailing List](https://forum.NomadBSD.org/)
+Link:    [NomadBSD Forum](https://forum.NomadBSD.org/)
 
 Contact: NomadBSD Team <info@NomadBSD.org>
 
