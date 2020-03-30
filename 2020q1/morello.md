@@ -6,6 +6,8 @@ Link:	 [The CHERI Project](https://www.cl.cam.ac.uk/research/security/ctsrd/cher
 Contact: Andrew Turner <andrew@FreeBSD.org>
 Contact: Ruslan Bukin <br@FreeBSD.org>
 Contact: Brooks Davis <brooks@FreeBSD.org>
+Contact: John Baldwin <jhb@FreeBSD.org>
+Contact: Robert Watson <rwatson@FreeBSD.org>
 
 CHERI (Capability Hardware Enhanced RISC Instructions) extends
 conventional hardware Instruction-Set Architectures (ISAs) with new
@@ -32,7 +34,8 @@ supported by the UK Industrial Strategy Challenge Fund, including a
 commitment of over £50M commitment by Arm.  The aim is to test and
 validate CHERI extensions to the Arm ISA at scale with the idea that
 "successful concepts are expected to be carried forward into the
-architecture."
+architecture."  The Morello board is scheduled to ship in the third
+quarter of 2021.
 
 Over the past decade we have developed CheriBSD, a version of FreeBSD
 supporting CHERI.  Our public facing work has been performed on MIPS64
@@ -41,7 +44,8 @@ earlier version of the Morello ISA which we will be merging into
 our public repository as simulators and compilers become available.
 
 The Morello board is based on the Arm Neoverse N1 platform and derived
-from the N1SDP development platform.  Ruslan and Andrew are currently
+from the N1SDP development platform.  (The AWS Graviton2 systems are
+also based on the N1 core.)  Ruslan and Andrew are currently
 working to enable all relevant features of the N1 and the N1SDP to give
 us a solid baseline for work on Morello.  These features include the
 PCI root complex, system memory management unit (SMMU), and CoreSight.
