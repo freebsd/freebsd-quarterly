@@ -38,11 +38,11 @@ New jobs added:
   * https://ci.freebsd.org/job/FreeBSD-head-powerpc64-testvm/
 
 Work in progress:
-  * Collecting and sorting CI tasks and ideas at https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo
+  * Collecting and sorting CI tasks and ideas [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
   * Setup the CI stage environment and put the experimental jobs on it
   * Implementing automatic tests on bare metal hardware
   * Adding drm ports building test against -CURRENT
-  * Testing and merging pull requests at https://github.com/freebsd/freebsd-ci/pulls
+  * Testing and merging pull requests in [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls)
   * Planning for running ztest and network stack tests
   * Helping more 3rd software get CI on FreeBSD through a hosted CI solution
   * Adding non-x86 test jobs.
