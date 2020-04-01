@@ -12,7 +12,7 @@ An initial effort to write proper documentation and guides for the pot project h
 
 During the last quarter, some bugs were reported on pot and on the nomad-pot-driver. Both projects released a new bug fix version. 
 Many thanks to 'grembo' and 'Crest' that reported issues, tested and tried our solutions.  
-Thanks also to Mateusz (0mp) for his Push Requests!
+Thanks also to Mateusz (0mp) for his Pull Requests!
 
 pot will have a new release soon (0.11.0), focused on network:
 
