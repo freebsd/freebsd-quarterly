@@ -13,7 +13,7 @@ up to 100 Gb/s of network traffic, depending on the instance type
 on which it is used.
 
 Completed since the last update:
-  * Upstream of the driver v2.1.1 version, introducing:
+  * Upstream of the driver to v2.1.1, introducing:
     * Bug fix for LLQ mode which was causing race when multiple IO queues were
       used
 
