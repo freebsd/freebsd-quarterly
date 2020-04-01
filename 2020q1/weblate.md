@@ -12,8 +12,8 @@ We are getting new volunteers to the effort and so far these are the numbers:
 
 ### Q1 2020 Status ###
 
-* **9** languages
-* **45** registered users
+* **10** languages
+* **47** registered users
 
 #### Languages ####
 
@@ -23,6 +23,7 @@ We are getting new volunteers to the effort and so far these are the numbers:
 * German (de_DE) - **_Added_**
 * Italian (it_IT) - **_Added_**
 * Norwegian Bokmål - **_Added_** - New language on FreeBSD
+* Persian (fa_IR) - **_Added_** - New language on FreeBSD
 * Portuguese (Brazil)
 * Spanish
 * Turkish (tr-TR) **[1]** - **_Added_** - New language on FreeBSD
