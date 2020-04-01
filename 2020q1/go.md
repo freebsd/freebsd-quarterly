@@ -15,6 +15,4 @@ required by the golang policy for adding a new port to the main Go repository)
 Work in progress:
   * a lot of ports use an old version of golang.org/x/sys or golang.org/x/net
   (to name a few) that doesn't contain the FreeBSD aarch64 bits,
-  work is being done to fix these ports (details are in the tracking bug at [1])
-
-[1] https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=242312
+  work is being done to fix these ports (details are in the [bug tracker entry](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=242312))
