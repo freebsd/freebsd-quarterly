@@ -34,10 +34,14 @@
 # clean-txt		-	remove html and txt version of the report
 # extract-contacts	-	extract contacts from md reports
 
+FETCH_CMD?=		fetch
 PERL_CMD?=		perl
 LYNX_CMD?=		lynx
 PYTHON3_CMD?=		python3.7
 
+.if empty(FETCH_CMD:S/^/which /:sh)
+.error "Please set the FETCH_CMD variable to a valid fetch binary."
+.endif
 .if empty(LYNX_CMD:S/^/which /:sh)
 .error "Please set the LYNX_CMD variable to a valid lynx binary."
 .endif
@@ -53,8 +57,9 @@ PRETTIFY_CMD=	${PERL_CMD} ${.CURDIR}/../tools/prettify.perl
 
 CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
-MD_FILES!=	ls *.md
+MD_FILES=	`ls *.md`
 
+.ifdef QUARTER
 .if ${QUARTER} == 1
 QUARTER_WORD=	First
 .elif ${QUARTER} == 2
@@ -65,6 +70,7 @@ QUARTER_WORD=	Third
 QUARTER_WORD=	Fourth
 .else
 .error "The value you inserted for the QUARTER variable is unexpected. If you are sure that your value is valid, please edit tools/Makefile by adding a definition for the QUARTER_WORD variable corresponding to your QUARTER value."
+.endif
 .endif
 
 all-xml: clean-xml report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
@@ -152,28 +158,31 @@ extract-contacts: ${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectur
 	cat $> | grep 'Contact:' | grep -o -E '<.*@.*>' | tr -d '<>'
 
 TeamReports.md: ${TeamReports}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Projects.md: ${Projects}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Projects #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Userland.md: ${Userland}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Userland Programs # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Userland Programs #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Kernel.md: ${Kernel}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Kernel Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Kernel Projects #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Architectures.md: ${Architectures}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Architectures # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Architectures #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Documentation.md: ${Documentation}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Documentation # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Documentation #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Ports.md: ${Ports}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Ports # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Ports #" >> $@ && cat $> >> $@; else touch $@; fi
 
 ThirdParty.md: ${ThirdParty}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Third-Party Projects # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Third-Party Projects #" >> $@ && cat $> >> $@; else touch $@; fi
 
 Miscellaneous.md: ${Miscellaneous}
-	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Miscellaneous # " >> $@ && cat $> >> $@; else touch $@; fi
+	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Miscellaneous #" >> $@ && cat $> >> $@; else touch $@; fi
+
+report-template.xml:
+	${FETCH_CMD} -o ../tools/report-template.xml https://svn.freebsd.org/doc/head/en_US.ISO8859-1/htdocs/news/status/report-template.xml
