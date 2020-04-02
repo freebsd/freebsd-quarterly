@@ -29,11 +29,15 @@
 use strict;
 use warnings;
 
-my $INTRODUCTION =	0b1;
-my $PROJECT = 		0b10;
-my $UL =		0b100;
+my %FLAGS_DICTIONARY	= (
+	'INTRODUCTION' => 0b1,
+	'PROJECT' => 	0b10,
+	'CONTACTS' => 	0b100,
+	'LINKS' => 	0b1000,
+	'UL' => 	0b10000
+	);
 
-my $flags = $INTRODUCTION;
+my $flags = $FLAGS_DICTIONARY{INTRODUCTION};
 
 my %CATEGORIES = (
 	"# FreeBSD Team Reports #\n" => "team",
@@ -44,8 +48,25 @@ my %CATEGORIES = (
 	"# Documentation #\n" => "doc",
 	"# Ports #\n" => "ports",
 	"# Third-Party Projects #\n" => "third",
-	"# Miscellaneous #\n" => "misc" );
+	"# Miscellaneous #\n" => "misc"
+	);
+
 my $current_category;
+
+sub clear
+{
+	$flags = $flags & ~ $FLAGS_DICTIONARY{$_[0]};
+}
+
+sub set
+{
+	$flags = $flags | $FLAGS_DICTIONARY{$_[0]};
+}
+
+sub test
+{
+	return $flags & $FLAGS_DICTIONARY{$_[0]};
+}
 
 open(report_template, '<', "report-template.xml") or
 die "Could not open report-template.xml: $!";
@@ -61,7 +82,7 @@ while(<>)
 	$_ =~ s,\[(.*)\](\(.*://.*\)),<a href='$2'>$1</a>,g;
 	if(exists $CATEGORIES{$_})
 	{
-		if($flags & $INTRODUCTION)
+		if(test('INTRODUCTION'))
 		{
 			<report_template> foreach (29..49);
 			foreach(50..134)
@@ -69,7 +90,7 @@ while(<>)
 				my $line = <report_template>;
 				print $line;
 			}
-			$flags = $flags & ~ $INTRODUCTION;
+			clear('INTRODUCTION');
 			$current_category = $CATEGORIES{$_};
 		}
 	}
@@ -82,18 +103,18 @@ EOT
 	}
 	elsif($_ =~ m/^##.*##/)
 	{
-		if($flags & $UL)
+		if(test('UL'))
 		{
 			print "</li></ul>\n";
-			$flags = $flags & ~ $UL;
+			clear('UL');
 		}
-		print "</project>\n" if($flags & $PROJECT);
+		print "</project>\n" if(test('PROJECT'));
 		$_ =~ s/## | ##|\n//g; 
 		print <<"EOT";
 <project cat='$current_category'>
 <title>$_</title>
 EOT
-		$flags = $flags | $PROJECT;
+		set('PROJECT');
 	}
 	elsif($_ =~ m/^Contact: .*@.*/)
 	{
@@ -110,14 +131,14 @@ EOT
 	}
 	elsif($_ =~ s/^[-\*] //)
 	{
-		$flags & $UL ? print "</li>\n" : print "<ul>\n";
-		$flags = $flags | $UL;
+		test('UL') ? print "</li>\n" : print "<ul>\n";
+		set('UL');
 		print "<li>".$_;
 	}
-	elsif($_ !~ m/^ / and $flags & $UL)
+	elsif($_ !~ m/^ / and test('UL'))
 	{
 		print "</li></ul>\n";
-		$flags = $flags & ~ $UL;
+		clear('UL');
 	}
 	else {print $_;}
 }
