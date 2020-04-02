@@ -35,9 +35,9 @@ Apart from this update, there has also been ongoing work to keep the various
 drm-kmod ports and packages up to date, mostly in response to changes in FreeBSD
 CURRENT and to security issues found in the Intel i915 driver.
 
-We have also done updates as needed to the graphics and input stack up to date
-and working, and deprecated and removed several old and no longer used drivers,
-applications and libraries.
+We have also done updates as needed to keep the graphics and input stack up to
+date and working, and deprecated and removed several old and no longer used
+drivers, applications and libraries.
 
 We have also continued our regularly scheduled bi-weekly meetings.
 
