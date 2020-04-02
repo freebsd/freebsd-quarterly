@@ -32,7 +32,7 @@ use warnings;
 my %FLAGS_DICTIONARY	= (
 	'INTRODUCTION' => 0b1,
 	'PROJECT' => 	0b10,
-	'CONTACTS' => 	0b100,
+	'CONTACT' => 	0b100,
 	'LINKS' => 	0b1000,
 	'UL' => 	0b10000
 	);
@@ -79,6 +79,27 @@ foreach(1..28)
 while(<>)
 {
 	next if($_ eq "\n");
+	if($_ =~ m/^Contact: .*@.*/)
+	{
+		$_ =~ m-Contact:([^,]*)[ ,]*<(.*)>-;
+		my $name = $1;
+		my $email = $2;
+		$name =~ s/^ *| *$//g;
+		print "<contact>\n" if(not test('CONTACT'));
+		print <<"EOT";
+<person>
+<name>$name</name>
+<email>$email</email>
+</person>
+EOT
+		set('CONTACT');
+		next;
+	}
+	elsif(test('CONTACT'))
+	{
+		print "</contact>\n";
+		clear('CONTACT');
+	}
 	$_ =~ s,\[(.*)\](\(.*://.*\)),<a href='$2'>$1</a>,g;
 	if(exists $CATEGORIES{$_})
 	{
@@ -93,19 +114,21 @@ while(<>)
 			clear('INTRODUCTION');
 			$current_category = $CATEGORIES{$_};
 		}
+		next;
 	}
-	elsif($_ =~ m/^###.*###/)
+	if($_ =~ m/^###.*###/)
 	{
 		$_ =~ s/### | ###|\n//g; 
 		print <<"EOT";
 <h3>$_</h3>
 EOT
+		next;
 	}
-	elsif($_ =~ m/^##.*##/)
+	if($_ =~ m/^##.*##/)
 	{
 		if(test('UL'))
 		{
-			print "</li></ul>\n";
+					print "</li></ul>\n";
 			clear('UL');
 		}
 		print "</project>\n" if(test('PROJECT'));
@@ -115,31 +138,21 @@ EOT
 <title>$_</title>
 EOT
 		set('PROJECT');
+		next;
 	}
-	elsif($_ =~ m/^Contact: .*@.*/)
-	{
-		$_ =~ m-Contact:([^,]*)[ ,]*<(.*)>-;
-		my $name = $1;
-		my $email = $2;
-		$name =~ s/^ *| *$//g;
-		print <<"EOT";
-<contact><person>
-<name>$name</name>
-<email>$email</email>
-</person></contact>
-EOT
-	}
-	elsif($_ =~ s/^[-\*] //)
+	if($_ =~ s/^[-\*] //)
 	{
 		test('UL') ? print "</li>\n" : print "<ul>\n";
 		set('UL');
 		print "<li>".$_;
+		next;
 	}
-	elsif($_ !~ m/^ / and test('UL'))
+	if($_ !~ m/^ / and test('UL'))
 	{
 		print "</li></ul>\n";
 		clear('UL');
+		next;
 	}
-	else {print $_;}
+	print $_;
 }
 print <report_template>
