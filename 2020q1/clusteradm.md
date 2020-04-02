@@ -8,7 +8,7 @@ The FreeBSD Cluster Administration Team consists of the people responsible for a
 
 * Upgrade all ref- and universe- machines
 * South Africa mirror (JINX) is online
-* Seattle, USA mirrors pkg service (TUK) is online
+* Package service of Seattle, USA mirror (TUK) is online
 * Ongoing systems administration work:
     * Creating accounts for new committers.
     * Backups of critical infrastructure.
