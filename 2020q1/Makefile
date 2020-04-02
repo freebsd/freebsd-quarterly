@@ -8,7 +8,7 @@ YEAR?=		2020
 QUARTER?=	1
 
 # Entries from the various official and semi-official teams
-TeamReports= ci.md re.md clusteradm.md 
+TeamReports= ci.md re.md clusteradm.md graphics.md
 
 # Projects that span multiple categories, from the kernel and userspace to
 # the Ports Collection or external projects
