@@ -19,11 +19,11 @@ Userland=
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= bridge.md sigfastblock.md azure.md morello.md ppc2020Q1.md
+Kernel= bridge.md sigfastblock.md azure.md morello.md ls1046.md ena.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures=
+Architectures= powerpc.md riscv.md
 
 # Noteworthy changes in the documentation tree or new external
 # books/documents
