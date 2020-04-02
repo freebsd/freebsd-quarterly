@@ -24,7 +24,7 @@ Some highlights from last year:
 Last quarter, the default compiler and linker was switched to clang/lld. This
 required a small number of integration changes on our side, but was mainly
 enabled by the upstream improvements to the RISC-V LLVM back-end. LLVM's RISC-V
-support became "official" with LLVM 9 [1], and LLVM 10 has brought further
+support became "official" [with LLVM 9](https://lists.llvm.org/pipermail/llvm-dev/2019-September/135304.html), and LLVM 10 has brought further
 improvements. The LLVM back-end is expected to continue to mature, as there are
 now many parties actively involved in its development. GCC remains supported as
 an external toolchain for RISC-V.
@@ -52,5 +52,3 @@ out "Getting Started with FreeBSD/RISC-V" in the January/February edition of The
 FreeBSD Journal.
 
 Sponsor: DARPA, AFRL, Axiado
-
-[1] https://lists.llvm.org/pipermail/llvm-dev/2019-September/135304.html
