@@ -78,7 +78,6 @@ foreach(1..28)
 }
 while(<>)
 {
-	next if($_ eq "\n");
 	if($_ =~ m/^Contact: .*@.*/)
 	{
 		$_ =~ m-Contact:([^,]*)[ ,]*<(.*)>-;
@@ -101,6 +100,18 @@ EOT
 		clear('CONTACT');
 	}
 	$_ =~ s,\[(.*)\](\(.*://.*\)),<a href='$2'>$1</a>,g;
+	if($_ =~ s/Link:\s*//)
+	{
+		print "<links>\n" if(not test('LINKS'));
+		set('LINKS');
+		print $_;
+		next;
+	}
+	elsif(test('LINKS'))
+	{
+		print "</links>\n";
+		clear('LINKS');
+	}
 	if(exists $CATEGORIES{$_})
 	{
 		if(test('INTRODUCTION'))
