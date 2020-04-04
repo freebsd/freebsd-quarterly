@@ -31,6 +31,13 @@ improvements. The LLVM back-end is expected to continue to mature, as there are
 now many parties actively involved in its development. GCC remains supported as
 an external toolchain for RISC-V.
 
+The [CI job for head branch](https://ci.freebsd.org/job/FreeBSD-head-riscv64-build/)
+has been updated to use clang/lld toolchain, and GCC job will be added later.
+The riscv disk image built in the CI system now contains full base system and
+is available at the [CI artifact server](https://artifact.freebsd.org) for
+further tests.  The CI test job is updated to use OpenSBI in qemu.  The work on
+running FreeBSD test suite for RISC-V in the CI system is in progress.
+
 Some progress has been made on supporting the ports framework on RISC-V, which
 was mostly untested until recently. First,
 `emulators/qemu-user-static-devel` received an update adding support for the
@@ -53,4 +60,4 @@ visit the recently updated wiki page for information on getting set up, or check
 out "Getting Started with FreeBSD/RISC-V" in the January/February edition of The
 FreeBSD Journal.
 
-Sponsor: DARPA, AFRL, Axiado
+Sponsor: DARPA, AFRL, Axiado, the FreeBSD Foundation
