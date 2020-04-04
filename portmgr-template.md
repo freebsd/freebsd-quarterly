@@ -12,15 +12,13 @@ Paragraphs are separated with an empty line.  Use Markdown
 syntax, the same as you use on GitHub.  If you don't know
 Markdown, just write it as if it was plain text.
 
-Introduce your work.  Do not assume that the person reading
-the report knows about your project.
-
 Show the importance of your work.  Status reports are not
 just about telling everyone that things were done, they also
 need to explain why they were done.
 
-What has happened since the last report?  Let us know what
-is new in this area.
+The Ports Management Team is responsible for overseeing the
+overall direction of the Ports Tree, building packages, and
+personnel matters.  Below is what happened in the last quarter.
 
   * #ports #PR #PRunassigned #commits #committers conclusion
   * commit bits granted/safekept (who/why)
