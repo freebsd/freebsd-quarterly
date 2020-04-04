@@ -31,12 +31,12 @@ improvements. The LLVM back-end is expected to continue to mature, as there are
 now many parties actively involved in its development. GCC remains supported as
 an external toolchain for RISC-V.
 
-The [CI job for head branch](https://ci.freebsd.org/job/FreeBSD-head-riscv64-build/)
-has been updated to use clang/lld toolchain, and GCC job will be added later.
-The riscv disk image built in the CI system now contains full base system and
-is available at the [CI artifact server](https://artifact.freebsd.org) for
-further tests.  The CI test job is updated to use OpenSBI in qemu.  The work on
-running FreeBSD test suite for RISC-V in the CI system is in progress.
+The [CI job for HEAD](https://ci.freebsd.org/job/FreeBSD-head-riscv64-build/)
+has been updated to use the clang/lld toolchain, and a GCC job will be added in the future.
+The RISC-V disk image built in the CI system now contains the full base system and
+is available on the [CI artifact server](https://artifact.freebsd.org) for
+further testing.  The CI test job was updated to use OpenSBI in qemu. Work on
+running the FreeBSD test suite for RISC-V in the CI system is in progress.
 
 Some progress has been made on supporting the ports framework on RISC-V, which
 was mostly untested until recently. First,
