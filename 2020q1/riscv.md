@@ -7,6 +7,8 @@ Contact: Mitchell Horne <mhorne@FreeBSD.org>
 Contact: John Baldwin <jhb@FreeBSD.org>  
 Contact: Kristof Provost <kp@FreeBSD.org>  
 Contact: Philip Paeps <philip@FreeBSD.org>  
+Contact: [freebsd-riscv Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-riscv)  
+Contact: IRC #freebsd-riscv channel on freenode  
 
 It has been a year since the RISC-V project's last status report. In that time,
 the RISC-V port has benefited from increased attention, and received
