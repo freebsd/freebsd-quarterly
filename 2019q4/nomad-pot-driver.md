@@ -7,7 +7,7 @@ Link:    [minipot](https://github.com/pizzamig/minipot)
 Contact: Luca Pizzamiglio <pizzamig@FreeBSD.org>  
 Contact: Esteban Barrios <esteban.barrios@trivago.com>  
 
-pot added support to private bridges: a group of jail can now use a dedicated bridge, instead of the public one, improving isolation.
+The pot utility added support to private bridges: a group of jail can now use a dedicated bridge, instead of the public one, improving isolation.
 Moreover, several small bugs have been found and fixed, and support to pre/post start/stop hook script has been added.
 
 The nomad pot driver received support for nomad restart without drain and improved configuration stability.

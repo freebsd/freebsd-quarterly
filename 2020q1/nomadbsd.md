@@ -2,7 +2,7 @@
 
 Link:	 [NomadBSD Website](https://www.nomadbsd.org/)
 Link:	 [NomadBSD Github](https://www.github.com/NomadBSD/NomadBSD)
-Link:    [NomadBSD Developer Mailing List](https://www.freelists.org/list/nomadbsddevs)
+Link:    [NomadBSD Forum](https://forum.NomadBSD.org/)
 
 Contact: NomadBSD Team <info@NomadBSD.org>
 
@@ -12,20 +12,14 @@ used as a desktop system that works out of the box, but can also be used for
 data recovery, for educational purposes, or testing FreeBSD's hardware
 compatibility.
 
-After one release candidate the NomadBSD Team finished and released NomadBSD
-1.3 on December 7th.
-This release is based on FreeBSD 12.1, fixed a lot of bugs and added new
-packages and features.
-Along those features are the option to install NomadBSD on ZFS and the use of an
-automatic configuration when running NomadBSD in VirtualBox.
+In March we released a new minor version 1.3.1 which improves the configuration
+of the network interfaces, fixed some bugs and added nomadbsd-chusr and
+nomadbsd-sysinfo. Further some new features found their way into the release.
 
-New tools developed by the NomadBSD Team and added to version 1.3 are
-nomadbsd-dmconfig to select a display manager theme, nomadbsd-adduser which adds
-new user accounts and DSBBg to change the background image. All these are using
-the Qt-Toolkit.
-
-In Q4 we added two mirrors in France and Germany and would like to thank
-nosheep.fr and fau.de for them.
+Some days later the channel explainingcomputers on YouTube released a review video of
+NomadBSD. The explainingcomputers has almost 600,000 followers and the review was positive
+so we saw the highest peak in downloads ever! Along with it came a lot of people looking for
+help on our mailing list and on Twitter so we decided to set up a new support forum.
 
 We are looking for people to help the project. Help is much appreciated in all areas:
 
