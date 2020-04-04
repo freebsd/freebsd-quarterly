@@ -34,7 +34,6 @@ my %FLAGS_DICTIONARY	= (
 	'PROJECT' => 	0b10,
 	'CONTACT' => 	0b100,
 	'LINKS' => 	0b1000,
-	'UL' => 	0b10000
 	);
 
 my $flags = $FLAGS_DICTIONARY{INTRODUCTION};
@@ -52,6 +51,8 @@ my %CATEGORIES = (
 	);
 
 my $current_category;
+
+my @active_margins;
 
 sub clear
 {
@@ -137,11 +138,8 @@ EOT
 	}
 	if($_ =~ m/^##.*##/)
 	{
-		if(test('UL'))
-		{
-					print "</li></ul>\n";
-			clear('UL');
-		}
+		print "</li></ul>\n" and pop @active_margins
+		while (@active_margins);
 		print "</project>\n" if(test('PROJECT'));
 		$_ =~ s/## | ##|\n//g; 
 		print <<"EOT";
@@ -151,18 +149,32 @@ EOT
 		set('PROJECT');
 		next;
 	}
-	if($_ =~ s/^[-\*] //)
+	if($_ =~ m/^\s*[-\*] /)
 	{
-		test('UL') ? print "</li>\n" : print "<ul>\n";
-		set('UL');
+		$_ =~ m/[-\*]/;
+		my $current_margin = index($_,$&);
+		$_ =~ s/^\s*[-\*] //;
+		if(not @active_margins or $current_margin > $active_margins[-1])
+		{
+			push @active_margins, $current_margin;
+			print "<ul>\n";
+		}
+		elsif($current_margin < $active_margins[-1])
+		{
+			print "</li></ul>\n" and pop @active_margins
+			while ($active_margins[-1] != $current_margin);
+		}
+		else
+		{
+			print "</li>\n";
+		}
 		print "<li>".$_;
 		next;
 	}
-	if($_ !~ m/^ / and test('UL'))
+	elsif(@active_margins and $_ !~ m/^( |\n)/)
 	{
-		print "</li></ul>\n";
-		clear('UL');
-		next;
+		print "</li></ul>\n" and pop @active_margins
+		while (@active_margins);
 	}
 	print $_;
 }
