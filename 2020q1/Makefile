@@ -8,11 +8,11 @@ YEAR?=		2020
 QUARTER?=	1
 
 # Entries from the various official and semi-official teams
-TeamReports= ci.md re.md clusteradm.md graphics.md
+TeamReports= core.md re.md clusteradm.md ci.md portmgr.md graphics.md
 
 # Projects that span multiple categories, from the kernel and userspace to
 # the Ports Collection or external projects
-Projects= nfsovertls.md kyua.md
+Projects= nfsovertls.md kyua.md manpages.md
 
 # Changes affecting the base system and programs in it
 Userland= 
