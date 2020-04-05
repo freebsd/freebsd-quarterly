@@ -23,7 +23,7 @@ As always, people come and go. This time we welcomed Loïc
 Bartoletti (lbartoletti@), Mikael Urankar (mikael@), Kyle Evans
 (kevans@, who is already a src committer), and Lorenzo Salvadore
 (salvadore@, who we already know for compiling these reports you 
-are reading right now).  We said goodbye to dbn@ and theraven@ ,
+are reading right now).  We said goodbye to dbn@ and theraven@,
 who we hope to see back in the future.
 
 On the infrastructure side, USES=qca was added and USES=zope was
