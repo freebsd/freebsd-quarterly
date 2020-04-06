@@ -24,4 +24,4 @@ There's still a lot to do:
    Some of them are false positives, some are easy to fix bugs, and some require adding
    new system calls.  Any help is welcome.
 
-Sponsor: FreeBSD Foundation
+Sponsor: The FreeBSD Foundation

@@ -16,4 +16,4 @@ The current work is concentrating on investigating if it's possible to leverage
 the ConcurrencyKit epoch code for the datapath (i.e. `bridge_input()`,
 `bridge_output()`, `bridge_forward()`, ...).
 
-Sponsor:  The FreeBSD Foundation
+Sponsor: The FreeBSD Foundation
