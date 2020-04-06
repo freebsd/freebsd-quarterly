@@ -12,7 +12,7 @@ TeamReports= core.md re.md clusteradm.md ci.md portmgr.md graphics.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= nfsovertls.md kyua.md
+Projects= nfsovertls.md kyua.md linuxulator.md
 
 # Changes affecting the base system and programs in it
 Userland= gcc-retirement.md
