@@ -23,3 +23,5 @@ or had been deprecated.
 With no in-tree consumers remaining, GCC 4.2.1 was removed from FreeBSD in
 [r358454](https://svnweb.freebsd.org/changeset/base/358454) on February 29,
 2020.
+
+Sponsor: The FreeBSD Foundation  
