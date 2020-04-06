@@ -15,7 +15,7 @@ TeamReports= core.md re.md clusteradm.md ci.md portmgr.md graphics.md
 Projects= nfsovertls.md kyua.md
 
 # Changes affecting the base system and programs in it
-Userland= 
+Userland= gcc-retirement.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
