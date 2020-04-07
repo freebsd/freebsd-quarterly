@@ -30,11 +30,12 @@ use strict;
 use warnings;
 
 my %FLAGS_DICTIONARY	= (
-	'INTRODUCTION' => 0b1,
-	'PROJECT' => 	0b10,
-	'CONTACT' => 	0b100,
-	'LINKS' => 	0b1000,
-	'P' => 		0b10000
+	'INTRODUCTION'	=>	0b1,
+	'PROJECT'	=>	0b10,
+	'CONTACT'	=>	0b100,
+	'LINKS'		=>	0b1000,
+	'P'		=>	0b10000,
+	'BODY'		=> 	0b100000
 	);
 
 my $flags = $FLAGS_DICTIONARY{INTRODUCTION};
@@ -153,7 +154,11 @@ EOT
 		}
 		print "</li></ul>\n" and pop @active_margins
 		while (@active_margins);
-		print "</project>\n" if(test('PROJECT'));
+		if(test('PROJECT'))
+		{
+			print "</body></project>\n";
+			clear('BODY');
+		}
 		$_ =~ s/## | ##|\n//g; 
 		print <<"EOT";
 <project cat='$current_category'>
@@ -202,6 +207,11 @@ EOT
 	}
 	elsif(not test('P') and $_ !~ m/^\s*$/)
 	{
+		if(not test('BODY') and not test('INTRODUCTION'))
+		{
+			print "<body>";
+			set('BODY');
+		}
 		print "<p>";
 		set('P');
 		print $_;
