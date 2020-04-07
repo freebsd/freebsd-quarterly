@@ -6,7 +6,7 @@ In [r340076](https://reviews.freebsd.org/rS340076) Ed added the
 _NT\_FREEBSD\_FEATURE\_CTL_ ELF note, used to allow binaries to opt out of,
 or in to, vulnerability mitigation and other features.  FreeBSD Foundation
 intern Bora Özarslan later added a tool to decode and modify the ELF note,
-but it has yet to be installed by default.
+but it had yet to be installed by default.
 
 In the previous quarter Ed renamed the tool to _elfctl_, and installed it
 in /usr/bin.  Ed also committed a number of minor bug fixes, code style
