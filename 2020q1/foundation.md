@@ -170,14 +170,13 @@ applications, and to recruit more contributors to the Project.
 
 Check out some of the advocacy and education work we did last quarter:
 
-- Organized and presented at the first ever FreeBSD Mini-Conf aLinuxConfAu 2020,
+- Organized and presented at the first ever FreeBSD Mini-Conf LinuxConfAu 2020,
   in Gold Coast, Australia in addition to sponsoring the conference itself.
-  The recap can be found here:
-  https://www.freebsdfoundation.org/blog/freebsd-miniconf-at-lca2020-conference-recap/
+  [The recap can be found here](https://www.freebsdfoundation.org/blog/freebsd-miniconf-at-lca2020-conference-recap/).
 
 - Presented BSD Dev Room at FOSDEM '20, in Brussels, Belgium and represented
-  FreeBSD at a stand along with other members of the community.  Find out more
-  here: https://www.freebsdfoundation.org/blog/fosdem-2020-conference-recap/
+  FreeBSD at a stand along with other members of the community.  [Find out more
+  here](https://www.freebsdfoundation.org/blog/fosdem-2020-conference-recap/).
 
 - Represented FreeBSD at Apricot 2020 in Melbourne, Australia and sponsored the
   event.
@@ -190,33 +189,27 @@ Check out some of the advocacy and education work we did last quarter:
 
 - Held a "Getting Started with FreeBSD Workshop" at SCALE 18x in addition to
   giving a talk, representing FreeBSD at the Expo and holding a "Why FreeBSD is
-  Me" BoF.  Check out the conference recap:
-  https://www.freebsdfoundation.org/blog/scale-18x-conference-recap/
+  Me" BoF.  Check out the [conference recap](https://www.freebsdfoundation.org/blog/scale-18x-conference-recap/).
 
 We continued producing FreeBSD advocacy material to help people promote FreeBSD.
-Learn more about our efforts in 2019 to advocate for FreeBSD:
-https://www.freebsdfoundation.org/blog/2019-in-review-advocacy/
+Learn more about our efforts in 2019 to [advocate for FreeBSD](https://www.freebsdfoundation.org/blog/2019-in-review-advocacy/).
 
 In addition to the information found in the Development Projects update section
 of this report, take a minute to check out the latest update blogs:
 
-- POWER to the People: Making FreeBSD a First Class Citizen on POWER:
-https://www.freebsdfoundation.org/blog/power-to-the-people-making-freebsd-a-first-class-citizen-on-power/
+- [POWER to the People: Making FreeBSD a First Class Citizen on POWER](https://www.freebsdfoundation.org/blog/power-to-the-people-making-freebsd-a-first-class-citizen-on-power/).
 
-- Development Project Update: Toolchain Modernization:
-https://www.freebsdfoundation.org/blog/project-update-toolchain-modernization/
+- [Development Project Update: Toolchain Modernization](https://www.freebsdfoundation.org/blog/project-update-toolchain-modernization/).
 
 Read more about our conference adventures in the conference recaps and trip
-reports in our monthly newsletters:
-https://www.freebsdfoundation.org/news-and-events/newsletter/
+reports in [our monthly newsletters](https://www.freebsdfoundation.org/news-and-events/newsletter/).
 
 We help educate the world about FreeBSD by publishing the professionally
 produced FreeBSD Journal.  As we mentioned previously, the FreeBSD Journal is
-now a free publication.  Find out more and access the latest issues at
-https://www.FreeBSDfoundation.org/journal/.
+now a free publication.  [Find out more and access the latest issues](https://www.FreeBSDfoundation.org/journal/).
 
-You can find out more about events we attended and upcoming events at
-https://www.FreeBSDfoundation.org/news-and-events/.  As is the case for most of
+[You can find out more about events we attended and upcoming events here](https://www.FreeBSDfoundation.org/news-and-events/). 
+As is the case for most of
 us in this industry, SCALE was the last event we will be attending for a few
 months.  However, we're already working on how we can make more on-line
 tutorials and how-to guides available to facilitate getting more folks to try
