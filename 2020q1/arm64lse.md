@@ -14,7 +14,7 @@ platforms, including the Cavium ThunderX2 and AWS Graviton 2.  The new
 instructions provide significantly better scalability.
 
 A recent set of patches modified the FreeBSD kernel to detect support
-for the LSE and dynamically select an atomic(9) implementation based on
+for LSE and dynamically select an atomic(9) implementation based on
 the new instructions when all CPUs implement the extension.  The initial
 atomic(9) implementations were provided by Ali Saidi.  Some benchmarking
 on a 64-vCPU Graviton 2 instance shows a ~4% reduction in wall clock
