@@ -15,3 +15,5 @@ and that ports have seen an upwards trend.
 
 We hope that all of you are and yours are as safe as can be managed, and that
 we get through this together by working together.
+
+\-\- Daniel Ebdrup Jensen, <debdrup@freebsd.org>
