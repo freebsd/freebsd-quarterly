@@ -34,6 +34,7 @@ my %FLAGS_DICTIONARY	= (
 	'PROJECT' => 	0b10,
 	'CONTACT' => 	0b100,
 	'LINKS' => 	0b1000,
+	'P' => 		0b10000
 	);
 
 my $flags = $FLAGS_DICTIONARY{INTRODUCTION};
@@ -117,6 +118,13 @@ EOT
 	{
 		if(test('INTRODUCTION'))
 		{
+			if(test('P'))
+			{
+				print "</p>";
+				clear('P')
+			}
+			print "</li></ul>\n" and pop @active_margins
+			while (@active_margins);
 			<report_template> foreach (29..49);
 			foreach(50..134)
 			{
@@ -138,6 +146,11 @@ EOT
 	}
 	if($_ =~ m/^##.*##/)
 	{
+		if(test('P'))
+		{
+			print "</p>";
+			clear('P')
+		}
 		print "</li></ul>\n" and pop @active_margins
 		while (@active_margins);
 		print "</project>\n" if(test('PROJECT'));
@@ -154,6 +167,8 @@ EOT
 		$_ =~ m/[-\*]/;
 		my $current_margin = index($_,$&);
 		$_ =~ s/^\s*[-\*] //;
+		print "</p>" if(test('P'));
+		set('P');
 		if(not @active_margins or $current_margin > $active_margins[-1])
 		{
 			push @active_margins, $current_margin;
@@ -168,13 +183,29 @@ EOT
 		{
 			print "</li>\n";
 		}
-		print "<li>".$_;
+		print "<li><p>".$_;
 		next;
 	}
 	elsif(@active_margins and $_ !~ m/^( |\n)/)
 	{
 		print "</li></ul>\n" and pop @active_margins
 		while (@active_margins);
+		print $_;
+		next;
+	}
+	if(test('P') and $_ =~ m/^\s*$/)
+	{
+		print "</p>";
+		clear('P');
+		print $_;
+		next;
+	}
+	elsif(not test('P') and $_ !~ m/^\s*$/)
+	{
+		print "<p>";
+		set('P');
+		print $_;
+		next;
 	}
 	print $_;
 }
