@@ -8,14 +8,14 @@ YEAR?=		2020
 QUARTER?=	1
 
 # Entries from the various official and semi-official teams
-TeamReports= core.md re.md clusteradm.md ci.md portmgr.md graphics.md
+TeamReports= foundation.md core.md re.md clusteradm.md ci.md portmgr.md graphics.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
 Projects= nfsovertls.md kyua.md linuxulator.md
 
 # Changes affecting the base system and programs in it
-Userland= gcc-retirement.md
+Userland= gcc-retirement.md elfctl.md elftoolchain.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
@@ -31,11 +31,11 @@ Documentation= weblate.md manpages.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= xfce.md wine.md kde.md go.md
+Ports= xfce.md wine.md kde.md go.md sysctlmibinfo2.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty= pot.md nomadbsd.md sysctlmibinfo2.md
+ThirdParty= pot.md nomadbsd.md
 
 # Objects that defy categorization
 Miscellaneous=
