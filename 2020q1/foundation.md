@@ -19,11 +19,11 @@ Here are some highlights of what we did to help FreeBSD last quarter:
 
 ### General ###
 
-We moved! Our new address is:
-> The FreeBSD Foundation
-> 3980 Broadway St. STE #103-107
-> Boulder, CO 80304
-> USA
+We moved! Our new address is:  
+The FreeBSD Foundation  
+3980 Broadway St. STE #103-107  
+Boulder, CO 80304  
+USA  
 
 In February, the board of directors had an all-day board meeting in Berkely, CA,
 where FreeBSD began!  We put together our strategic plans for the next 2 years,
