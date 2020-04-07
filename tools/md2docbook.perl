@@ -105,6 +105,7 @@ EOT
 		clear('CONTACT');
 	}
 	$_ =~ s,\[(.*)\](\(.*://.*\)),<a href='$2'>$1</a>,g;
+	$_ =~ s,<(.*@.*)>,<a href='mailto:$1'>$1</a>,g;
 	if($_ =~ s/Link:\s*//)
 	{
 		print "<links>\n" if(not test('LINKS'));
