@@ -19,7 +19,7 @@ Userland= gcc-retirement.md elfctl.md elftoolchain.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= bridge.md sigfastblock.md azure.md morello.md ls1046.md ena.md
+Kernel= bridge.md sigfastblock.md arm64lse.md azure.md morello.md ls1046.md ena.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
