@@ -37,7 +37,6 @@
 FETCH_CMD?=		fetch
 PERL_CMD?=		perl
 LYNX_CMD?=		lynx
-PYTHON3_CMD?=		python3.7
 
 .if empty(FETCH_CMD:S/^/which /:sh)
 .error "Please set the FETCH_CMD variable to a valid fetch binary."
@@ -48,11 +47,8 @@ PYTHON3_CMD?=		python3.7
 .if empty(PERL_CMD:S/^/which /:sh)
 .error "Please set the PERL_CMD variable to a valid perl binary."
 .endif
-.if empty(PYTHON3_CMD:S/^/which /:sh)
-.error "Please set the PYTHON3_CMD variable to a valid python3 command."
-.endif
 
-MD2DOCBOOK_CMD=	${PYTHON3_CMD} ${.CURDIR}/../tools/md2docbook.py
+MD2DOCBOOK_CMD=	${PERL_CMD} ${.CURDIR}/../tools/md2docbook.perl
 PRETTIFY_CMD=	${PERL_CMD} ${.CURDIR}/../tools/prettify.perl
 
 CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
@@ -73,7 +69,7 @@ QUARTER_WORD=	Fourth
 .endif
 .endif
 
-all-xml: clean-xml report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
+all-xml: clean-xml report-template.xml report-${YEAR}-${START}-${YEAR}-${STOP}.xml check
 all-txt: report-${YEAR}-${START}-${YEAR}-${STOP}.txt
 clean:	clean-xml clean-txt
 
@@ -116,25 +112,14 @@ check:
 	@echo ------------------------------------------------
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.xml: report-${YEAR}-${START}-${YEAR}-${STOP}.md
-	${MD2DOCBOOK_CMD} ${>} $@
+	${MD2DOCBOOK_CMD} ${>} > $@
 	# Replace variables
 	sed -i '' 's/%%START%%/${START}/g' $@
 	sed -i '' 's/%%STOP%%/${STOP}/g' $@
 	sed -i '' 's/%%YEAR%%/${YEAR}/g' $@
-	# Work around bugs in md2docbook
-	sed -i '' 's,\([^ ]\)[ ]*</ul>,\1 </li></ul>,g' $@
-	sed -i '' 's,\\_,_,g' $@
-	sed -i '' 's,\\\*,\*,g' $@
-	sed -i '' 's,@TEXTIT@,<i>,g' $@
-	sed -i '' 's,@TEXTITC@,</i>,g' $@
-	sed -i '' 's,@TEXTBF@,<b>,g' $@
-	sed -i '' 's,@TEXTBFC@,</b>,g' $@
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	cat $> >> $@
-	# Work around bugs in md2docbook
-	sed -i '' 's/\*\*\([^*]\{2,\}\)\*\*/@TEXTBF@\1@TEXTBFC@/g' $@
-	sed -i '' 's/\*\([^*]\{2,\}\)\*/@TEXTIT@\1@TEXTITC@/g' $@
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.txt: report-${YEAR}-${START}-${YEAR}-${STOP}.html
 	${LYNX_CMD} -dump -nolist $> | /usr/bin/iconv -f ISO-8859-1 -t UTF-8 > $@
@@ -142,13 +127,13 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.txt: report-${YEAR}-${START}-${YEAR}-${S
 	mv $@.out $@
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.html:
-	fetch -o $@ https://www.freebsd.org/news/status/report-${YEAR}-${START}-${YEAR}-${STOP}.html
+	${FETCH_CMD} -o $@ https://www.freebsd.org/news/status/report-${YEAR}-${START}-${YEAR}-${STOP}.html
 
 clean-xml:
 	rm -f	${CATEGORIES:S/$/.md/g} \
+		report-template.xml \
 		report-${YEAR}-${START}-${YEAR}-${STOP}.xml \
 		report-${YEAR}-${START}-${YEAR}-${STOP}.md \
-		intro
 
 clean-txt:
 	rm -f	report-${YEAR}-${START}-${YEAR}-${STOP}.html \
@@ -184,5 +169,5 @@ ThirdParty.md: ${ThirdParty}
 Miscellaneous.md: ${Miscellaneous}
 	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# Miscellaneous #" >> $@ && cat $> >> $@; else touch $@; fi
 
-report-template.xml:
-	${FETCH_CMD} -o ../tools/report-template.xml https://svn.freebsd.org/doc/head/en_US.ISO8859-1/htdocs/news/status/report-template.xml
+report-template.xml!
+	${FETCH_CMD} -o report-template.xml https://svn.freebsd.org/doc/head/en_US.ISO8859-1/htdocs/news/status/report-template.xml
