@@ -31,7 +31,7 @@ Documentation= weblate.md manpages.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= xfce.md wine.md kde.md go.md sysctlmibinfo2.md
+Ports= kde.md xfce.md wine.md go.md sysctlmibinfo2.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
