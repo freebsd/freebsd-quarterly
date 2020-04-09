@@ -104,8 +104,8 @@ EOT
 		print "</contact>\n";
 		clear('CONTACT');
 	}
-	$_ =~ s,\[(.*)\](\(.*://.*\)),<a href='$2'>$1</a>,g;
 	$_ =~ s,<(.*@.*)>,<a href='mailto:$1'>$1</a>,g;
+	$_ =~ s,\[(.*)\]\((.*://.*)\),<a href='$2'>$1</a>,g;
 	if($_ =~ s/Link:\s*//)
 	{
 		print "<links>\n" if(not test('LINKS'));
@@ -129,24 +129,25 @@ EOT
 			}
 			print "</li></ul>\n" and pop @active_margins
 			while (@active_margins);
-			<report_template> foreach (29..49);
-			foreach(50..134)
+			<report_template> foreach (29..47);
+			foreach(48..134)
 			{
 				my $line = <report_template>;
 				print $line;
 			}
 			clear('INTRODUCTION');
-			$current_category = $CATEGORIES{$_};
 		}
+		$current_category = $CATEGORIES{$_};
 		next;
 	}
+	$_ =~ s/([^\w\\]|\A)[*_]{3}(\S)/$1<b><i>$2/g;
+	$_ =~ s/([^\s\\])[*_]{3}(\W|\Z)/$1<\/i><\/b>$2/g;
+	$_ =~ s/([^\w\\]|\A)[*_]{2}(\S)/$1<b>$2/g;
+	$_ =~ s/([^\s\\])[*_]{2}(\W|\Z)/$1<\/b>$2/g;
+	$_ =~ s/([^\w\\]|\A)[*_](\S)/$1<i>$2/g;
+	$_ =~ s/([^\s\\])[*_](\W|\Z)/$1<\/i>$2/g;
 	$_ =~ s/\\_/_/g;
-	$_ =~ s/([^0-9a-zA-Z])[*_]3([0-9a-zA-Z])/$1<b><i>$2/g;
-	$_ =~ s/([0-9a-zA-Z])[*_]3([^0-9a-zA-Z])/$1<\/i><\/b>$2/g;
-	$_ =~ s/([^0-9a-zA-Z])[*_]2([0-9a-zA-Z])/$1<b>$2/g;
-	$_ =~ s/([0-9a-zA-Z])[*_]2([^0-9a-zA-Z])/$1<\/b>$2/g;
-	$_ =~ s/([^0-9a-zA-Z])[*_]([0-9a-zA-Z])/$1<i>$2/g;
-	$_ =~ s/([0-9a-zA-Z])[*_]([^0-9a-zA-Z])/$1<\/i>$2/g;
+	$_ =~ s/&/&amp;/g;
 	if($_ =~ m/^###.*###/)
 	{
 		$_ =~ s/### | ###|\n//g; 
@@ -193,6 +194,7 @@ EOT
 		{
 			print "</li></ul>\n" and pop @active_margins
 			while ($active_margins[-1] != $current_margin);
+			print "</li>";
 		}
 		else
 		{
@@ -229,4 +231,12 @@ EOT
 	}
 	print $_;
 }
-print <report_template>
+if(test('P'))
+{
+	print "</p>";
+	clear('P')
+}
+print "</li></ul>\n" and pop @active_margins
+while (@active_margins);
+print "</body></project>";
+print <report_template>;
