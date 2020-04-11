@@ -1,6 +1,6 @@
 ## FreeBSD/powerpc Project ##
 
-Contact:  Mark Linimon linimon@FreeBSD.org>
+Contact:  Mark Linimon <linimon@FreeBSD.org>
 Contact:  Justin Hibbits <jhibbits@FreeBSD.org>
 Contact:  Piotr Kubaj <pkubaj@FreeBSD.org>
 
