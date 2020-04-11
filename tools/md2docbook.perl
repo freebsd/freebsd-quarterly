@@ -38,21 +38,36 @@ my %FLAGS_DICTIONARY	= (
 	'BODY'		=> 	0b100000,
 	'I'		=>	0b1000000,
 	'B'		=>	0b10000000,
-	'CODEBLOCK'	=>	0b100000000
+	'CODEBLOCK'	=>	0b100000000,
 	);
 
 my $flags = $FLAGS_DICTIONARY{INTRODUCTION};
 
 my %CATEGORIES = (
-	"# FreeBSD Team Reports #\n" => "team",
-	"# Projects #\n" => "proj",
-	"# Userland Programs #\n" => "bin",
-	"# Kernel Projects #\n" => "kern",
-	"# Architectures #\n" => "arch",
-	"# Documentation #\n" => "doc",
-	"# Ports #\n" => "ports",
-	"# Third-Party Projects #\n" => "third",
-	"# Miscellaneous #\n" => "misc"
+# string Category_title	=> (string category tag, boolean is_category_used,
+# integer description_first_line_number_in_report-template,
+# integer description_last_line_number_in_report-template)
+	"# FreeBSD Team Reports #\n" => ["team", 0, 50, 59],
+	"# Projects #\n" => ["proj", 0, 60, 68],
+	"# Kernel Projects #\n" => ["kern", 0, 69, 77],
+	"# Architectures #\n" => ["arch", 0, 78, 86],
+	"# Userland Programs #\n" => ["bin", 0, 87, 95],
+	"# Ports #\n" => ["ports", 0, 96, 104],
+	"# Documentation #\n" => ["doc", 0, 105, 113],
+	"# Miscellaneous #\n" => ["misc", 0, 114, 121],
+	"# Third-Party Projects #\n" => ["third", 0, 122, 133],
+	);
+
+my @SORTED_CATEGORY_NAMES = (
+	"# FreeBSD Team Reports #\n",
+	"# Projects #\n",
+	"# Kernel Projects #\n",
+	"# Architectures #\n",
+	"# Userland Programs #\n",
+	"# Ports #\n",
+	"# Documentation #\n",
+	"# Miscellaneous #\n",
+	"# Third-Party Projects #\n",
 	);
 
 my $current_category;
@@ -149,15 +164,13 @@ EOT
 			}
 			print "</li></ul>\n" and pop @active_margins
 			while (@active_margins);
-			<report_template> foreach (29..47);
-			foreach(48..134)
-			{
-				my $line = <report_template>;
-				print $line;
-			}
+			<report_template> foreach(29..47);
+			my $line = <report_template>;
+			print $line;
 			clear('INTRODUCTION');
 		}
-		$current_category = $CATEGORIES{$_};
+		$current_category = $CATEGORIES{$_}[0];
+		$CATEGORIES{$_}[1] = 1;
 		next;
 	}
 	if($_ =~ m/^###.*###/)
@@ -251,4 +264,23 @@ if(test('P'))
 print "</li></ul>\n" and pop @active_margins
 while (@active_margins);
 print "</body></project>";
+foreach(@SORTED_CATEGORY_NAMES)
+{
+	my $line;
+	if($CATEGORIES{$_}[1])
+	{
+		foreach($CATEGORIES{$_}[2]..$CATEGORIES{$_}[3])
+		{
+			$line = <report_template>;
+			print $line;
+		}
+	}
+	else
+	{
+		foreach($CATEGORIES{$_}[2]..$CATEGORIES{$_}[3])
+		{
+			$line = <report_template>;
+		}
+	}
+}
 print <report_template>;
