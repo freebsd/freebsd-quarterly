@@ -25,7 +25,7 @@ The FreeBSD Core Team is the governing body of FreeBSD.
   will mentor Aleksandr and John Baldwin (jhb) will act as co-mentor.
 
 - Core requested that the freebsd-mobile@ list be retired as it was almost
-  exclusively receiving spam.  postmater@ completed core's request.
+  exclusively receiving spam.  postmaster@ completed core's request.
   
 - Core approved third party authentication for some project services with
   certain conditions.  For example, for authentication with Google, users must
