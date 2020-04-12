@@ -173,8 +173,30 @@ EOT
 		$CATEGORIES{$_}[1] = 1;
 		next;
 	}
+	if($_ =~ m/^####.*####/)
+	{
+		if(test('P'))
+		{
+			print "</p>";
+			clear('P')
+		}
+		print "</li></ul>\n" and pop @active_margins
+		while (@active_margins);
+		$_ =~ s/#### | ####|\n//g; 
+		print <<"EOT";
+<h4>$_</h4>
+EOT
+		next;
+	}
 	if($_ =~ m/^###.*###/)
 	{
+		if(test('P'))
+		{
+			print "</p>";
+			clear('P')
+		}
+		print "</li></ul>\n" and pop @active_margins
+		while (@active_margins);
 		$_ =~ s/### | ###|\n//g; 
 		print <<"EOT";
 <h3>$_</h3>
