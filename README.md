@@ -20,7 +20,7 @@ syntax - we can correct things for you.
 
 #### Deadline for submissions for `2020q1`
 
-1st of April 2020
+1st of July 2020
 
 Note that this is **immediately** after the end of the quarter.
 
@@ -43,4 +43,4 @@ Collated final reports are:
 
 The most recent report:
 
-* https://www.freebsd.org/news/status/report-2019-10-2019-12.html
+* https://www.freebsd.org/news/status/report-2020-01-2020-03.html
