@@ -273,11 +273,11 @@ EOT
 		}
 		print "<p>";
 		set('P');
-		$_ =~ s,  $,<br/>,g;
+		$_ =~ s,  $,<br />,g;
 		print $_;
 		next;
 	}
-	$_ =~ s,  $,<br/>,g;
+	$_ =~ s,  $,<br />,g;
 	print $_;
 }
 if(test('P'))
