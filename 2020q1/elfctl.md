@@ -37,4 +37,4 @@ Indicate that a binary requests to opt-out of address randomization:
 $ elfctl -e +aslr binary
 ```
 
-Sponsor: The FreeBSD Foundation  
+Sponsor: The FreeBSD Foundation

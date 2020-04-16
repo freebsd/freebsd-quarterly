@@ -22,4 +22,4 @@ validation.
 Mark Johnston addressed many memory and file descriptor leaks and similar
 issues reported by Coverity Scan.
 
-Sponsor: The FreeBSD Foundation  
+Sponsor: The FreeBSD Foundation

@@ -9,7 +9,7 @@ The standard Wine port has moved from Wine 4.0.3 to Wine 5.0 which
 represents over 7,400 individual changes including built-in modules in
 PE format, multi-monitor support, Vulkan 1.1 support, and an XAudio2
 re-implementation.
-  
+
 After our request for help in the last quarterly report the i386 wine
 ports have been adopted by salvadore who immediately started resolving
 existing bugs and improving the ports. Most of this work is ready and we
