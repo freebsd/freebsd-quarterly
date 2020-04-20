@@ -11,5 +11,5 @@ default, the last feature allows to switch easily audio from/to laptop and hdmi,
 headphones and speakers, and so on.  
 MixerTUI can be installed via the audio/mixertui port.
 
-I would like to thank the FreeBSD community for the tips, feedbacks and patchesa
+I would like to thank the FreeBSD community for the tips, feedbacks and patches
 to improve this project.
