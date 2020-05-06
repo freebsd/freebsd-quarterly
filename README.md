@@ -32,7 +32,7 @@ General rules for deadlines:
   8th of January, April, July and October.
 * Late report submitters can ask for 1 more week of time after
   deadlines by contacting the quarterly status reports team, for
-  example by sending an e-mail to quarterly@.
+  example by sending an e-mail to quarterly-submissions@.
 
 ### Finals
 
