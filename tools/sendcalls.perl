@@ -27,48 +27,45 @@
 use strict;
 use warnings;
 
-if(scalar @ARGV != 3)
-{
-	print <<'EOT';
-Usage: ./sendcalls.perl <year> <quarter> <urgency>
-- year: 4 digits year of reference of the call
-- quarter: can be 1, 2, 3 or 4
-- urgency: can be "none", "2weeks" or "last"
-Example: "./sendcalls.perl 2020 1 2weeks" will send a call with object:
-"[2 WEEKS LEFT REMINDER] Call for 2020Q1 quarterly status reports".
-EOT
-	exit 1;
-}
-
-my ($year, $quarter, $urgency) = @ARGV;
-
-if($year < 1970)
-{
-	print <<'EOT';
-It looks like you specified a year preceding 1970...
-That must be wrong.
-EOT
-	exit 1;
-}
-
-if(not "$quarter" =~ "1|2|3|4")
-{
-	print <<'EOT';
-The second argument should be a quarter (1, 2, 3 or 4).
-EOT
-	exit 1;
-}
-
+my $day;
+my $month;
+my $year;
+my $quarter;
 my $urgency_tag;
 
-if($urgency eq "none") {$urgency_tag = '';}
-elsif($urgency eq "2weeks") {$urgency_tag = '[2 WEEKS LEFT REMINDER] ';}
-elsif($urgency eq "last") {$urgency_tag = '[LAST OFFICIAL REMINDER] ';}
-else
+if(scalar @ARGV == 3)
 {
-	print "The urgency argument (third argument) must be 'none' or '2weeks' or 'last'.";
+	($day, $month, $year) = @ARGV;
+	$month = $month - 1;
+}
+elsif(scalar @ARGV > 0)
+{
+	print <<EOT;
+Usage: ./sendcalls.perl <day> <month> <year>
+Example: ./sendcalls.perl 23 12 2000
+EOT
 	exit 1;
 }
+else
+{
+	(undef, undef, undef, $day, $month, $year, undef, undef, undef) = localtime();
+	$year = $year + 1900;
+}
+
+if($day < 14)
+{
+	$urgency_tag = '';
+}
+elsif($day < 23)
+{
+	$urgency_tag = '[2 WEEKS LEFT REMINDER] ';
+}
+else
+{
+	$urgency_tag = '[LAST OFFICIAL REMINDER] ';
+}
+
+$quarter = int($month / 3) + 1;
 
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
