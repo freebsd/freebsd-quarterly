@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 #
-# SPDX-License-Identfier: BSD-2-Clause-FreeBSD
-#
 # Copyright (c) 2020 Lorenzo Salvadore
 # All rights reserved.
 #
