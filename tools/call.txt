@@ -1,0 +1,31 @@
+Dear FreeBSD Community,
+
+The deadline for the next FreeBSD Quarterly Status update is
+%%DEADLINE%% for work done since the last round of Quarterly Reports:
+%%START%% %%YEAR%% - %%STOP%% %%YEAR%%.
+I would like to remind you that reports are collected during the last
+month of every quarter.
+
+Status report submissions do not need to be very long.  They may be
+about anything happening in the FreeBSD project and community, and
+they provide a great way to inform FreeBSD users and developers about
+work that is underway or has been completed. Report submissions are
+not limited to committers; anyone doing anything interesting and
+FreeBSD related can -- and should -- write one!
+
+The preferred method is to follow the guidelines at the Quarterly
+GitHub repository:
+
+https://github.com/freebsd/freebsd-quarterly
+
+Alternatively you can fetch the Markdown template, fill it in, and
+email it to quarterly-submissions@FreeBSD.org.
+The template can be found at:
+
+https://raw.githubusercontent.com/freebsd/freebsd-quarterly/master/report-sample.md
+
+We look forward to seeing your %%YEAR%%Q%%QUARTER reports!
+
+Thanks,
+
+%%SIGNATURE%% (on behalf of quarterly@)
