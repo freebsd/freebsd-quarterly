@@ -30,7 +30,6 @@
 # clean			-	clean-xml + clean-txt
 # clean-xml		-	remove built xml report and files needed for its construction
 # clean-txt		-	remove html and txt version of the report
-# extract-contacts	-	extract contacts from md reports
 
 FETCH_CMD?=		fetch
 PERL_CMD?=		perl
@@ -136,9 +135,6 @@ clean-xml:
 clean-txt:
 	rm -f	report-${YEAR}-${START}-${YEAR}-${STOP}.html \
 		report-${YEAR}-${START}-${YEAR}-${STOP}.txt
-
-extract-contacts: ${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous}
-	cat $> | grep 'Contact:' | grep -o -E '<.*@.*>' | tr -d '<>'
 
 TeamReports.md: ${TeamReports}
 	if test -n "$$(echo '$>' | tr -d ' \t')"; then echo "# FreeBSD Team Reports #" >> $@ && cat $> >> $@; else touch $@; fi

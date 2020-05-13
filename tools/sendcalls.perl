@@ -32,6 +32,7 @@ my $month;
 my $year;
 my $quarter;
 my $urgency_tag;
+my @destinataries = (	'quarterly-calls@FreeBSD.org'	);
 
 if(scalar @ARGV == 3)
 {
@@ -67,15 +68,34 @@ else
 
 $quarter = int($month / 3) + 1;
 
+my $year_last = $year;
+my $quarter_last = $quarter - 1;
+if($quarter == 0)
+{
+	$year_last = $year_last - 1;
+	$quarter = 4;
+}
+my $quarter_last_directory = '../'.$year_last.'q'.$quarter_last;
+foreach(`ls $quarter_last_directory`)
+{
+	$_ =~ tr/\n//d;
+	open(quarterly_report, '<', $quarter_last_directory.'/'.$_) or
+	die "Could not open $quarter_last_directory/$_: $!";
+	while(<quarterly_report>)
+	{
+		if($_ =~ m/^Contact:.*(<.*@.*>)/)
+		{
+			my $address = $1;
+			$address =~ tr/<>//d;
+			push @destinataries, $address;
+		}
+	}
+	close(quarterly_report);
+}
+
+my %tmp = map {$_ => 0} @destinataries;
+@destinataries = keys %tmp;
+
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
-open(destinataries_always, '<', "destinataries_always") or
-die "Could not open destinataries_always: $!.";
-open(destinataries_others, '<', "destinataries_others") or
-die "Could not open destinataries_others: $!";
-open(destinataries_optin, '<', "destinataries_optin") or
-die "Could not open destinataries_optin: $!";
-
-system "cat quarterly-mail | mail -s \"".$summary."\" ".$_ while(<destinataries_always>);
-system "cat quarterly-mail | mail -s \"".$summary."\" ".$_ while(<destinataries_others>);
-system "cat quarterly-mail | mail -s \"".$summary."\" ".$_ while(<destinataries_optin>);
+system "cat call.txt | mail -s \"".$summary."\" ".$_ foreach(@destinataries);
