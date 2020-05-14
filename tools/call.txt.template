@@ -24,7 +24,7 @@ The template can be found at:
 
 https://raw.githubusercontent.com/freebsd/freebsd-quarterly/master/report-sample.md
 
-We look forward to seeing your %%YEAR%%Q%%QUARTER reports!
+We look forward to seeing your %%YEAR%%Q%%QUARTER%% reports!
 
 Thanks,
 
