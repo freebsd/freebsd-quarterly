@@ -33,6 +33,20 @@ my $year;
 my $quarter;
 my $urgency_tag;
 my @destinataries = (	'quarterly-calls@FreeBSD.org'	);
+my %template_substitutions;
+
+$template_substitutions{1}{'%%START%%'}	=	'January';
+$template_substitutions{1}{'%%STOP%%'}	=	'March';
+$template_substitutions{1}{'%%DEADLINE%%'}	=	'April, 1st';
+$template_substitutions{2}{'%%START%%'}	=	'April';
+$template_substitutions{2}{'%%STOP%%'}	=	'June';
+$template_substitutions{2}{'%%DEADLINE%%'}	=	'July, 1st';
+$template_substitutions{3}{'%%START%%'}	=	'July';
+$template_substitutions{3}{'%%STOP%%'}	=	'September';
+$template_substitutions{3}{'%%DEADLINE%%'}	=	'October, 1st';
+$template_substitutions{4}{'%%START%%'}	=	'October';
+$template_substitutions{4}{'%%STOP%%'}	=	'December';
+$template_substitutions{4}{'%%DEADLINE%%'}	=	'January, 1st';
 
 if(scalar @ARGV == 3)
 {
@@ -96,6 +110,34 @@ foreach(`ls $quarter_last_directory`)
 my %tmp = map {$_ => 0} @destinataries;
 @destinataries = keys %tmp;
 
+$template_substitutions{$quarter}{'%%QUARTER%%'} = $quarter;
+$template_substitutions{$quarter}{'%%YEAR%%'} = $year;
+if($quarter != 4)
+{
+	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
+	$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.$year;
+}
+else
+{
+	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
+	$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.($year + 1);
+}
+open(call_template, '<', 'call.txt.template') or
+die "Could not open call.txt.template: $!";
+open(call_mail, '>', 'call.txt') or
+die "Could not open call.txt: $!";
+while(<call_template>)
+{
+	my $line = $_;
+	$line =~ s/$_/$template_substitutions{$quarter}{$_}/g
+		foreach(keys %{ $template_substitutions{$quarter} });
+	print call_mail $line;
+}
+close(call_template);
+close(call_mail);
+
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
 system "cat call.txt | mail -s \"".$summary."\" ".$_ foreach(@destinataries);
+
+unlink "call.txt";
