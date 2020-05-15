@@ -57,13 +57,15 @@ $Getopt::Std::STANDARD_HELP_VERSION = 1;
 sub main::HELP_MESSAGE
 {
 	print <<EOT;
-Usage: ./sendcalls.perl [-d day] [-m month] [-y year]
-Example: ./sendcalls.perl -d 23 -m 12 -y 2000
+Usage: ./sendcalls.perl [-d day] [-m month] [-y year] -s signature
+Example: ./sendcalls.perl -d 23 -m 12 -y 2000 -s 'Lorenzo Salvadore'
 EOT
 	exit 1;
 }
 
-getopts('d:m:y:', \%options);
+getopts('d:m:y:s:', \%options);
+
+main::HELP_MESSAGE if(not $options{'s'});
 
 (undef, undef, undef, $day, $month, $year, undef, undef, undef) = localtime();
 $year = $year + 1900;
@@ -86,6 +88,8 @@ else
 }
 
 $quarter = int($month / 3) + 1;
+
+$template_substitutions{$quarter}{'%%SIGNATURE%%'} = $options{'s'};
 
 my $year_last = $year;
 my $quarter_last = $quarter - 1;
