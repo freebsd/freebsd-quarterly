@@ -27,6 +27,8 @@
 use strict;
 use warnings;
 
+use Getopt::Std;
+
 my $day;
 my $month;
 my $year;
@@ -34,6 +36,7 @@ my $quarter;
 my $urgency_tag;
 my @destinataries = (	'quarterly-calls@FreeBSD.org'	);
 my %template_substitutions;
+my %options;
 
 $template_substitutions{1}{'%%START%%'}	=	'January';
 $template_substitutions{1}{'%%STOP%%'}	=	'March';
@@ -48,24 +51,26 @@ $template_substitutions{4}{'%%START%%'}	=	'October';
 $template_substitutions{4}{'%%STOP%%'}	=	'December';
 $template_substitutions{4}{'%%DEADLINE%%'}	=	'January, 1st';
 
-if(scalar @ARGV == 3)
-{
-	($day, $month, $year) = @ARGV;
-	$month = $month - 1;
-}
-elsif(scalar @ARGV > 0)
+$main::VERSION = 1.0;
+$Getopt::Std::STANDARD_HELP_VERSION = 1;
+
+sub main::HELP_MESSAGE
 {
 	print <<EOT;
-Usage: ./sendcalls.perl <day> <month> <year>
-Example: ./sendcalls.perl 23 12 2000
+Usage: ./sendcalls.perl [-d day] [-m month] [-y year]
+Example: ./sendcalls.perl -d 23 -m 12 -y 2000
 EOT
 	exit 1;
 }
-else
-{
-	(undef, undef, undef, $day, $month, $year, undef, undef, undef) = localtime();
-	$year = $year + 1900;
-}
+
+getopts('d:m:y:', \%options);
+
+(undef, undef, undef, $day, $month, $year, undef, undef, undef) = localtime();
+$year = $year + 1900;
+
+$day = $options{'d'} if($options{'d'});
+$month = $options{'m'} - 1 if($options{'m'});
+$year = $options{'y'} if($options{'y'});
 
 if($day < 14)
 {
