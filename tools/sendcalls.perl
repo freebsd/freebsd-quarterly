@@ -57,13 +57,20 @@ $Getopt::Std::STANDARD_HELP_VERSION = 1;
 sub main::HELP_MESSAGE
 {
 	print <<EOT;
-Usage: ./sendcalls.perl [-d day] [-m month] [-y year] -s signature
+Usage: ./sendcalls.perl [-d day] [-m month] [-y year] [-t] -s signature
+Options:
+	-d day		Day of the month.
+	-m month	Month.
+	-y year		Year.
+	-t		Testing flag. Set it it you want to test the
+			script without actually send mails.
+	-s signature	Name to use for signing the quarterly calls mail.
 Example: ./sendcalls.perl -d 23 -m 12 -y 2000 -s 'Lorenzo Salvadore'
 EOT
 	exit 1;
 }
 
-getopts('d:m:y:s:', \%options);
+getopts('d:m:y:s:t', \%options);
 
 main::HELP_MESSAGE if(not $options{'s'});
 
@@ -147,6 +154,19 @@ close(call_mail);
 
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
-system "cat call.txt | mail -s \"".$summary."\" ".$_ foreach(@destinataries);
+if($options{'t'})
+{
+	print <<EOT;
+Summary: $summary
+call.txt:
+EOT
+	open(call_mail, '<', 'call.txt') or
+	die "Could not open call.txt: $!";
+	print <call_mail>;
+}
+else
+{
+	system "cat call.txt | mail -s \"".$summary."\" ".$_ foreach(@destinataries);
+}
 
 unlink "call.txt";
