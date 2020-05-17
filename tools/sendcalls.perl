@@ -51,7 +51,7 @@ $template_substitutions{4}{'%%START%%'}	=	'October';
 $template_substitutions{4}{'%%STOP%%'}	=	'December';
 $template_substitutions{4}{'%%DEADLINE%%'}	=	'January, 1st';
 
-$main::VERSION = 1.0;
+$main::VERSION = "[not versioned]";
 $Getopt::Std::STANDARD_HELP_VERSION = 1;
 
 sub main::HELP_MESSAGE
