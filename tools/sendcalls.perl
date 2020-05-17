@@ -34,7 +34,7 @@ my $month;
 my $year;
 my $quarter;
 my $urgency_tag;
-my @destinataries = (	'quarterly-calls@FreeBSD.org'	);
+my @destinataries = ();
 my %template_substitutions;
 my %options;
 
@@ -154,10 +154,18 @@ close(call_mail);
 
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
+my $send_command = "cat call.txt | mail -s \"".$summary."\"";
+# @destinataries should never be empty as we have reports with mail
+# contacts every quarter, but we test it anyway: we do not want to assume
+# that this will be true forever
+$send_command = $send_command.' -c '.(join ',', @destinataries) if(@destinataries);
+$send_command = $send_command.' quarterly-calls@FreeBSD.org';
+
 if($options{'t'})
 {
 	print <<EOT;
-Summary: $summary
+send_command: $send_command
+summary: $summary
 call.txt:
 EOT
 	open(call_mail, '<', 'call.txt') or
@@ -166,7 +174,7 @@ EOT
 }
 else
 {
-	system "cat call.txt | mail -s \"".$summary."\" ".$_ foreach(@destinataries);
+	system $send_command;
 }
 
 unlink "call.txt";
