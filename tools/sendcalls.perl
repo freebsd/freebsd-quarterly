@@ -58,14 +58,21 @@ sub main::HELP_MESSAGE
 {
 	print <<EOT;
 Usage: ./sendcalls.perl [-d day] [-m month] [-y year] [-t] -s signature
+
 Options:
-	-d day		Day of the month.
-	-m month	Month.
-	-y year		Year.
+	-d day		Day of the month: [1-31].
+	-m month	Month: [1-12].
+	-y year		Year: >= 1970
+			(I think you are unlikely to send calls before
+			the Unix epoch. And I am writing it in 2020.)
 	-t		Testing flag. Set it it you want to test the
 			script without actually send mails.
 	-s signature	Name to use for signing the quarterly calls mail.
-Example: ./sendcalls.perl -d 23 -m 12 -y 2000 -s 'Lorenzo Salvadore'
+
+Example:
+	./sendcalls.perl -d 31 -m 2 -y 2000 -s 'Lorenzo Salvadore'
+	(Yes, you can send calls even on inexistent days such as
+	2020 February, 31st.)
 EOT
 	exit 1;
 }
@@ -80,6 +87,13 @@ $year = $year + 1900;
 $day = $options{'d'} if($options{'d'});
 $month = $options{'m'} - 1 if($options{'m'});
 $year = $options{'y'} if($options{'y'});
+
+die "Choosen date does not seem plausibile: year is $year, month is $month and day is $day"
+if(	$day < 1 or
+	$day > 31 or
+	$month < 1 or
+	$month > 12 or
+	$year < 1970	);
 
 if($day < 14)
 {
