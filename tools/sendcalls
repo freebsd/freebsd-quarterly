@@ -57,7 +57,7 @@ $Getopt::Std::STANDARD_HELP_VERSION = 1;
 sub main::HELP_MESSAGE
 {
 	print <<EOT;
-Usage: ./sendcalls.perl [-d day] [-m month] [-y year] [-t] -s signature
+Usage: ./sendcalls [-d day] [-m month] [-y year] [-t] -s signature
 
 Options:
 	-d day		Day of the month: [1-31].
@@ -70,7 +70,7 @@ Options:
 	-s signature	Name to use for signing the quarterly calls mail.
 
 Example:
-	./sendcalls.perl -d 31 -m 2 -y 2000 -s 'Lorenzo Salvadore'
+	./sendcalls -d 31 -m 2 -y 2000 -s 'Lorenzo Salvadore'
 	(Yes, you can send calls even on inexistent days such as
 	2020 February, 31st.)
 EOT

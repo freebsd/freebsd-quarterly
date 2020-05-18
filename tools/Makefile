@@ -45,8 +45,8 @@ LYNX_CMD?=		lynx
 .error "Please set the PERL_CMD variable to a valid perl binary."
 .endif
 
-MD2DOCBOOK_CMD=	${PERL_CMD} ${.CURDIR}/../tools/md2docbook.perl
-PRETTIFY_CMD=	${PERL_CMD} ${.CURDIR}/../tools/prettify.perl
+MD2DOCBOOK_CMD=	${PERL_CMD} ${.CURDIR}/../tools/md2docbook
+PRETTIFY_CMD=	${PERL_CMD} ${.CURDIR}/../tools/prettify
 
 CATEGORIES=	TeamReports Projects Kernel Architectures Userland Documentation Ports ThirdParty Miscellaneous
 SOURCES=	${TeamReports} ${Projects} ${Userland} ${Kernel} ${Architectures} ${Documentation} ${Ports} ${ThirdParty} ${Miscellaneous} intro.md
