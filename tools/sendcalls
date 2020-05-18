@@ -188,7 +188,7 @@ if($options{'t'})
 }
 else
 {
-	system "cat $options{'H'} call.txt | mail -s '$summary' quarterly-calls\@FreeBSD.org";
+	system "cat $options{'H'} call.txt | mail -s '$summary' freebsd-quarterly-calls\@FreeBSD.org";
 	system "cat call.txt | mail -s '$summary' $_" foreach(@destinataries);
 }
 
