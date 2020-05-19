@@ -57,7 +57,7 @@ $Getopt::Std::STANDARD_HELP_VERSION = 1;
 sub main::HELP_MESSAGE
 {
 	print <<EOT;
-Usage: ./sendcalls [-d day] [-m month] [-y year] [-H header] [-t] -s signature
+Usage: ./sendcalls [-d day] [-m month] [-y year] [-t] -s signature
 
 Options:
 	-d day		Day of the month: [1-31].
@@ -65,8 +65,6 @@ Options:
 	-y year		Year: >= 1970
 			(I think you are unlikely to send calls before
 			the Unix epoch. And I am writing it in 2020.)
-	-H header	Add the content of the file 'header' on top of the
-			mail text.
 	-t		Testing flag. Set it it you want to test the
 			script without actually send mails.
 	-s signature	Name to use for signing the quarterly calls mail.
@@ -79,7 +77,7 @@ EOT
 	exit 1;
 }
 
-getopts('d:m:y:H:s:t', \%options);
+getopts('d:m:y:s:t', \%options);
 
 main::HELP_MESSAGE if(not $options{'s'});
 
@@ -170,17 +168,20 @@ close(call_mail);
 
 my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
-$options{'H'} = '' if(not $options{'H'});
+my $send_command = "cat call.txt | mail -s \"".$summary."\"";
+# @destinataries should never be empty as we have reports with mail
+# contacts every quarter, but we test it anyway: we do not want to assume
+# that this will be true forever
+$send_command = $send_command.' -c '.(join ',', @destinataries) if(@destinataries);
+$send_command = $send_command.' quarterly-calls@FreeBSD.org';
+
 if($options{'t'})
 {
-	print "summary: $summary\ndestinataries:\n";
-	print join ' ', @destinataries;
-	print "\nheader file:\n";
-	open(header_file, '<', $options{'H'}) or
-	die "Could not open $options{'H'}: $!";
-	print <header_file>;
-	close(header_file);
-	print "call.txt:\n";
+	print <<EOT;
+send_command: $send_command
+summary: $summary
+call.txt:
+EOT
 	open(call_mail, '<', 'call.txt') or
 	die "Could not open call.txt: $!";
 	print <call_mail>;
@@ -188,8 +189,7 @@ if($options{'t'})
 }
 else
 {
-	system "cat $options{'H'} call.txt | mail -s '$summary' freebsd-quarterly-calls\@FreeBSD.org";
-	system "cat call.txt | mail -s '$summary' $_" foreach(@destinataries);
+	system $send_command;
 }
 
 unlink "call.txt";
