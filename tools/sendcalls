@@ -173,7 +173,7 @@ my $send_command = "cat call.txt | mail -s \"".$summary."\"";
 # contacts every quarter, but we test it anyway: we do not want to assume
 # that this will be true forever
 $send_command = $send_command.' -c '.(join ',', @destinataries) if(@destinataries);
-$send_command = $send_command.' quarterly-calls@FreeBSD.org';
+$send_command = $send_command.' freebsd-quarterly-calls@FreeBSD.org';
 
 if($options{'t'})
 {
