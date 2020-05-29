@@ -35,8 +35,17 @@ my $year;
 my $quarter;
 my $urgency_tag;
 my @destinataries = ();
+my %quarter_specific_destinataries;
 my %template_substitutions;
 my %options;
+
+$quarter_specific_destinataries{1} = [	'secretary@asiabsdcon.org'	];
+$quarter_specific_destinataries{2} = [	'info@bsdcan.org',
+					'soc-students@FreeBSD.org',
+					'soc-mentors@FreeBSD.org'	];
+$quarter_specific_destinataries{3} = [	'soc-students@FreeBSD.org',
+					'soc-mentors@FreeBSD.org'	];
+$quarter_specific_destinataries{4} = [];
 
 $template_substitutions{1}{'%%START%%'}	=	'January';
 $template_substitutions{1}{'%%STOP%%'}	=	'March';
@@ -137,6 +146,7 @@ foreach(`ls $quarter_last_directory`)
 	close(quarterly_report);
 }
 
+push @destinataries, @{$quarter_specific_destinataries{$quarter}};
 my %tmp = map {$_ => 0} @destinataries;
 @destinataries = keys %tmp;
 
