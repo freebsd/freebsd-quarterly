@@ -123,10 +123,10 @@ $template_substitutions{$quarter}{'%%SIGNATURE%%'} = $options{'s'};
 
 my $year_last = $year;
 my $quarter_last = $quarter - 1;
-if($quarter == 0)
+if($quarter_last == 0)
 {
 	$year_last = $year_last - 1;
-	$quarter = 4;
+	$quarter_last = 4;
 }
 my $quarter_last_directory = '../'.$year_last.'q'.$quarter_last;
 foreach(`ls $quarter_last_directory`)
