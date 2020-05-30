@@ -29,15 +29,65 @@ use warnings;
 
 use Getopt::Std;
 
+# -------------------------------------------------------
+# Global variables declaration
+# -------------------------------------------------------
+
+# Variables used to compute the time coordinates of the call (see below)
+#
+# They can be computed based on present date or given on the command line
+# through options (see --help).
 my $day;
 my $month;
 my $year;
+
+# Time coordinates of the call
+#
+# - $quarter is the number of the quarter for which we are sending the
+#   calls.
+# - $urgency_tag indicates the urgency with which we are requesting the
+#   reports. It will be included in the subject of the calling mail. It
+#   can be empty, [2 WEEKS LEFT REMINDER] or [LAST OFFICIAL REMINDER].
 my $quarter;
 my $urgency_tag;
-my @destinataries = ();
+
+# Variables related to last quarterly status reports contacts
+#
+# $year_last and $quarter_last are the year and the number of the quarter
+# of last quarterly status reports. They are used to compute
+# $quarter_last_directory, the directory where the reports for last
+# quarter can be found.
+my $year_last;
+my $quarter_last;
+my $quarter_last_directory;
+
+# Variables related to the quarterly calls mail we are sending
+#
+# - $subject is the subject of the mail we send.
+# - $send_command is the command we run to send the mail.
+# - $destinataries is the array of all the addresses we want to put in the
+#   CC field. The To field contains freebsd-quarterly-calls@FreeBSD.org.
+my $subject;
+my $send_command;
+my @destinataries;
+
+# Other variables
+# - %quarter_specific_destinataries is a hash that contains lists of
+#   addresses. The addresses of each list should be contacted only for the
+#   quarter specified by the list's the keys.
+# - %template_substitutions is a hash that specifies for each quarter how
+#   the variabes in the call.template file should be substituted.
+# - %options is a hash used for registering option. See --help to list all
+#   available options.
 my %quarter_specific_destinataries;
 my %template_substitutions;
 my %options;
+
+# -------------------------------------------------------
+# Variables initialization
+# -------------------------------------------------------
+
+@destinataries = ();
 
 $quarter_specific_destinataries{1} = [	'secretary@asiabsdcon.org'	];
 $quarter_specific_destinataries{2} = [	'info@bsdcan.org',
@@ -63,6 +113,10 @@ $template_substitutions{4}{'%%DEADLINE%%'}	=	'January, 1st';
 $main::VERSION = "[not versioned]";
 $Getopt::Std::STANDARD_HELP_VERSION = 1;
 
+# -------------------------------------------------------
+# Subroutines definition
+# -------------------------------------------------------
+
 sub main::HELP_MESSAGE
 {
 	print <<EOT;
@@ -86,9 +140,16 @@ EOT
 	exit 1;
 }
 
+# -------------------------------------------------------
+# Execution starts here
+# -------------------------------------------------------
 getopts('d:m:y:s:t', \%options);
 
 main::HELP_MESSAGE if(not $options{'s'});
+
+# -------------------------------------------------------
+# Compute time coordinates (see global variables declaration)
+# -------------------------------------------------------
 
 (undef, undef, undef, $day, $month, $year, undef, undef, undef) = localtime();
 $year = $year + 1900;
@@ -119,16 +180,17 @@ else
 
 $quarter = int($month / 3) + 1;
 
-$template_substitutions{$quarter}{'%%SIGNATURE%%'} = $options{'s'};
-
-my $year_last = $year;
-my $quarter_last = $quarter - 1;
+# -------------------------------------------------------
+# Compute @destinataries
+# -------------------------------------------------------
+$year_last = $year;
+$quarter_last = $quarter - 1;
 if($quarter_last == 0)
 {
 	$year_last = $year_last - 1;
 	$quarter_last = 4;
 }
-my $quarter_last_directory = '../'.$year_last.'q'.$quarter_last;
+$quarter_last_directory = '../'.$year_last.'q'.$quarter_last;
 foreach(`ls $quarter_last_directory`)
 {
 	$_ =~ tr/\n//d;
@@ -146,12 +208,18 @@ foreach(`ls $quarter_last_directory`)
 	close(quarterly_report);
 }
 
-push @destinataries, @{$quarter_specific_destinataries{$quarter}};
-my %tmp = map {$_ => 0} @destinataries;
-@destinataries = keys %tmp;
+push @destinataries, @{ $quarter_specific_destinataries{$quarter} };
+{
+	my %tmp = map {$_ => 0} @destinataries;
+	@destinataries = keys %tmp;
+}
 
+# -------------------------------------------------------
+# Compute missing %template_substitutions elements
+# -------------------------------------------------------
 $template_substitutions{$quarter}{'%%QUARTER%%'} = $quarter;
 $template_substitutions{$quarter}{'%%YEAR%%'} = $year;
+$template_substitutions{$quarter}{'%%SIGNATURE%%'} = $options{'s'};
 if($quarter != 4)
 {
 	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
@@ -162,6 +230,11 @@ else
 	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
 	$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.($year + 1);
 }
+
+
+# -------------------------------------------------------
+# Generate mail text
+# -------------------------------------------------------
 open(call_template, '<', 'call.txt.template') or
 die "Could not open call.txt.template: $!";
 open(call_mail, '>', 'call.txt') or
@@ -176,20 +249,26 @@ while(<call_template>)
 close(call_template);
 close(call_mail);
 
-my $summary = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
+# -------------------------------------------------------
+# Compute $subject and $send_command
+# -------------------------------------------------------
+$subject = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
-my $send_command = "cat call.txt | mail -s \"".$summary."\"";
+$send_command = "cat call.txt | mail -s \"".$subject."\"";
 # @destinataries should never be empty as we have reports with mail
 # contacts every quarter, but we test it anyway: we do not want to assume
 # that this will be true forever
 $send_command = $send_command.' -c '.(join ',', @destinataries) if(@destinataries);
 $send_command = $send_command.' freebsd-quarterly-calls@FreeBSD.org';
 
+# -------------------------------------------------------
+# Send mail or show testing information 
+# -------------------------------------------------------
 if($options{'t'})
 {
 	print <<EOT;
 send_command: $send_command
-summary: $summary
+subject: $subject
 call.txt:
 EOT
 	open(call_mail, '<', 'call.txt') or
@@ -202,4 +281,7 @@ else
 	system $send_command;
 }
 
+# -------------------------------------------------------
+# Clean environment
+# -------------------------------------------------------
 unlink "call.txt";
