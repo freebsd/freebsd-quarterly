@@ -65,21 +65,21 @@ my $quarter_last_directory;
 #
 # - $subject is the subject of the mail we send.
 # - $send_command is the command we run to send the mail.
-# - $destinataries is the array of all the addresses we want to put in the
+# - $recipients is the array of all the addresses we want to put in the
 #   CC field. The To field contains freebsd-quarterly-calls@FreeBSD.org.
 my $subject;
 my $send_command;
-my @destinataries;
+my @recipients;
 
 # Other variables
-# - %quarter_specific_destinataries is a hash that contains lists of
+# - %quarter_specific_recipients is a hash that contains lists of
 #   addresses. The addresses of each list should be contacted only for the
 #   quarter specified by the list's the keys.
 # - %template_substitutions is a hash that specifies for each quarter how
 #   the variabes in the call.template file should be substituted.
 # - %options is a hash used for registering option. See --help to list all
 #   available options.
-my %quarter_specific_destinataries;
+my %quarter_specific_recipients;
 my %template_substitutions;
 my %options;
 
@@ -87,15 +87,15 @@ my %options;
 # Variables initialization
 # -------------------------------------------------------
 
-@destinataries = ();
+@recipients = ();
 
-$quarter_specific_destinataries{1} = [	'secretary@asiabsdcon.org'	];
-$quarter_specific_destinataries{2} = [	'info@bsdcan.org',
+$quarter_specific_recipients{1} = [	'secretary@asiabsdcon.org'	];
+$quarter_specific_recipients{2} = [	'info@bsdcan.org',
 					'soc-students@FreeBSD.org',
 					'soc-mentors@FreeBSD.org'	];
-$quarter_specific_destinataries{3} = [	'soc-students@FreeBSD.org',
+$quarter_specific_recipients{3} = [	'soc-students@FreeBSD.org',
 					'soc-mentors@FreeBSD.org'	];
-$quarter_specific_destinataries{4} = [];
+$quarter_specific_recipients{4} = [];
 
 $template_substitutions{1}{'%%START%%'}	=	'January';
 $template_substitutions{1}{'%%STOP%%'}	=	'March';
@@ -181,7 +181,7 @@ else
 $quarter = int($month / 3) + 1;
 
 # -------------------------------------------------------
-# Compute @destinataries
+# Compute @recipients
 # -------------------------------------------------------
 $year_last = $year;
 $quarter_last = $quarter - 1;
@@ -202,16 +202,16 @@ foreach(`ls $quarter_last_directory`)
 		{
 			my $address = $1;
 			$address =~ tr/<>//d;
-			push @destinataries, $address;
+			push @recipients, $address;
 		}
 	}
 	close(quarterly_report);
 }
 
-push @destinataries, @{ $quarter_specific_destinataries{$quarter} };
+push @recipients, @{ $quarter_specific_recipients{$quarter} };
 {
-	my %tmp = map {$_ => 0} @destinataries;
-	@destinataries = keys %tmp;
+	my %tmp = map {$_ => 0} @recipients;
+	@recipients = keys %tmp;
 }
 
 # -------------------------------------------------------
@@ -255,10 +255,10 @@ close(call_mail);
 $subject = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
 $send_command = "cat call.txt | mail -s \"".$subject."\"";
-# @destinataries should never be empty as we have reports with mail
+# @recipients should never be empty as we have reports with mail
 # contacts every quarter, but we test it anyway: we do not want to assume
 # that this will be true forever
-$send_command = $send_command.' -c '.(join ',', @destinataries) if(@destinataries);
+$send_command = $send_command.' -c '.(join ',', @recipients) if(@recipients);
 $send_command = $send_command.' freebsd-quarterly-calls@FreeBSD.org';
 
 # -------------------------------------------------------
