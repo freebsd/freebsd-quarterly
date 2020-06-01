@@ -16,11 +16,11 @@ Haskell ports were updated too.
 
 All existing ports of Haskell applications were migrated to USES=cabal,
 which implements Go-style build proccess - all dependencies are compiled as
-part of the build. As consequence, ports of Haskell libraries have been
+part of the build. As a consequence, ports for Haskell libraries have been
 deprecated and removed.
 
-Upgrading GHC become a tedious task for a single person, so a new GitHub
-repository was created under FreeBSD organization - 
+Upgrading GHC became a tedious task for a single person, so a new GitHub
+repository was created under the FreeBSD organization - 
 [freebsd-ports-haskell](https://github.com/freebsd/freebsd-ports-haskell).
-Right now, a work is being done on preparing another GHC upgrade in `ghc-upgrade-810`
-branch. Any contribution is welcome.
+Right now, work is being done on preparing another GHC upgrade in the `ghc-upgrade-810`
+branch. Any contributions are welcome.
