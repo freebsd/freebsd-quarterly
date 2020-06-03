@@ -20,14 +20,17 @@ so this quarter the kde@ team:
 
 - Restored a patch that closes down a remote TCP held by X11 applications
   that use the ICE library. Thanks to Colin Percival for reporting it.
-  It went missing in one of the port updates, but now
-  rhe patch has now been upstreamed. PR 229772.
+  It went missing in one of the port updates. To prevent this in the future,
+  the patch has been upstreamed. PR 229772.
 - Chased KDE-adjacent software like CMake, Cutelyst, Latte-dock and Nheko
   through new releases. In particular CMake takes a lot of effort every
   time because it is a build-time dependency of over 2000 ports.
 - graphics/poppler was updated to the latest upstream release. This
   is a low-level dependency for many document-viewing applications,
   and like CMake requires chasing a lot of other software.
+  Poppler is one of the components shared between various
+  software stacks (and "desktop environments") under the desktop@
+  group, in which kde@ participates.
 - KDE Frameworks release like clockwork, reaching KDE Frameworks 5.70 mid-may.
 - KDE Applications -- the KDE release service, really, which delivers
   libraries, applications, and add-ons -- had one large release,
