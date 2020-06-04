@@ -12,13 +12,13 @@ Jennejohn <gj@FreeBSD.org> and Jesper Schmitz Mouridsen <jsm@FreeBSD.org>.
 Some tweaks have been imported from the Linux counterpart.
 
 The driver has been successfully tested with:
-  - RTL8411B under stable/12 (Acer Aspire E 15 E5-576-77W6)
   - RTS5209 under head (Lenovo ThinkPad L520)
   - RTS5227 under stable/11 and releng/12.1
     (HP ProBook 430 g2, Lenovo ThinkPad T450/T450s)
+  - RTS5229 under releng/12.1 (Lenovo IdeaPad 120S-14IAP)
   - RTS522A under releng/12.1 and head (Intel NUC8i5BE, Lenovo ThinkPad P50s)
   - RTS525A under releng/12.1 (Dell Latitude E5570)
-  - RTS5229 under releng/12.1 (Lenovo IdeaPad 120S-14IAP)
+  - RTL8411B under stable/12 (Acer Aspire E 15 E5-576-77W6)
 
 The driver should also work for Realtek RTS5249, RTL8402 and RTL8411.
 
