@@ -74,7 +74,7 @@ appears on every port page.
 
 ### Further reading ###
 
-Based upon [Things you didn’t know FreshPorts can do](https://news.freshports.org/2019/09/03/things-you-didnt-know-freshports-can-do/)
+Based upon [things you didn’t know FreshPorts can do](https://news.freshports.org/2019/09/03/things-you-didnt-know-freshports-can-do/)
 
 
 There are many things FreshPorts can do, including search `Makefile`s and
@@ -96,10 +96,10 @@ There are many things FreshPorts can do, including search `Makefile`s and
 ### Javascript help wanted ###
 
 We [recently upgraded](https://github.com/FreshPorts/freshports/commit/f620270161dd7818272dfebacacaaf26df5f37e6)
-some outdated Javascript modules. This broke our [Javascript based
+some outdated Javascript modules. This broke our [JavaScript based
 graphs](https://www.freshports.org/graphs2.php). We could use some help on
 fixing that please. The starting points are listed on that URL.  If you need
-a working website to play with, please contact me with an ssh public-key.
+a working website to play with, please contact me with a ssh public-key.
 
 
 Sponsor: hardware provided by [iXsystems](https://www.ixsystems.com)
