@@ -3,7 +3,7 @@
 Link:	 [FreshPorts](http://freshports.org/)  
 Link:	 [FreshPorts blog](http://news.freshports.org/)  
 
-Contact: Full Name <dan@langille.org>  
+Contact: Dan Langille <dan@langille.org>  
 
 FreshPorts, and its sister site, FreshSource, have reported
 upon FreeBSD commits for 20 years. They cover all commits,
@@ -26,7 +26,7 @@ built.
 
 ### Dependency lines ###
 
-Somethings are easiest done via copy/paste. If you are working on a port
+Some things are easiest done via copy/paste. If you are working on a port
 Makefile and need to add a new dependency, FreshPorts shows the dependency
 line for that port.  For example:
 
@@ -56,7 +56,7 @@ You can read more about this change in [issue
 
 The [search page](https://www.freshports.org/search.php) has long had
 the "Ports I Maintain" button (if you are logged in). This feature recently
-branched out to a new auomated watch list option: `Watch ports I maintain`.
+branched out to a new automated watch list option: `Watch ports I maintain`.
 
 This [report subscription](https://www.freshports.org/report-subscriptions.php) 
 will notify you of any commits to the ports you maintain. Your email 
@@ -74,7 +74,7 @@ appears on every port page.
 
 ### Further reading ###
 
-Based upon [Things you didn’t know FreshPorts can do] (https://news.freshports.org/2019/09/03/things-you-didnt-know-freshports-can-do/)
+Based upon [Things you didn’t know FreshPorts can do](https://news.freshports.org/2019/09/03/things-you-didnt-know-freshports-can-do/)
 
 
 There are many things FreshPorts can do, including search `Makefile`s and
@@ -83,14 +83,14 @@ There are many things FreshPorts can do, including search `Makefile`s and
 * provides example dependency line. e.g. p5-XML-RSS>0:textproc/p5-XML-RSS
 * list of dependencies for a port
 * list of ports depending upon this port
-* Default configuration options
+* see default configuration options
 * what packages install a given file (e.g. bin/unzip)
-* what ports does this person maintain?
-* which Makefiles contain a reference to bunzip?
+* find out what ports a person maintains
+* find Makefiles which contain references to bunzip
 * search results can be plain-text consisting of a list of foo/bar ports
-* The Maximum Effort checkbox on the search page does nothing.
-* Committers can be notified of sanity test failures after the commit
-* Find a commit, any commit, based on SVN revision number, e.g. : https://www.freshports.org/commit.php?revision=352332
+* the Maximum Effort checkbox on the search page does nothing
+* committers can be notified of sanity test failures after the commit
+* find a commit, any commit, based on SVN revision number, e.g. : https://www.freshports.org/commit.php?revision=352332
 
 
 ### Javascript help wanted ###
