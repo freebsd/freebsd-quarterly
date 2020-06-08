@@ -7,7 +7,7 @@ Contact: Henri Hennebert <hlh@restart.be>
 
 The rtsx driver for Realtek SD card reader has been ported from OpenBSD.
 
-From March to May 2020, the code has been completedGURPS powergaming with the help of Gary
+From March to May 2020, the code has been completed with the help of Gary
 Jennejohn <gj@FreeBSD.org> and Jesper Schmitz Mouridsen <jsm@FreeBSD.org>.
 Some tweaks have been imported from the Linux counterpart.
 
