@@ -35,7 +35,8 @@ so this quarter the kde@ team:
 - KDE Applications -- the KDE release service, really, which delivers
   libraries, applications, and add-ons -- had one large release,
   with [20.04.1](https://kde.org/announcements/changelog-releases.php?version=20.04.1)
-  landing in the ports tree also mid-may.
+  landing in the ports tree also mid-may and its monthly update
+  20.04.2 in mid-june.
 - Some new Wayland support for KDE Plasma -- we have not tested this on FreeBSD --
   has appeared and has been duly packaged.
 - A great deal of preparation has gone into Qt 5.15. Many ports have been
@@ -44,3 +45,6 @@ so this quarter the kde@ team:
   
 kde@ would like to thank Antoine for many exp-runs, Mikael for useful tips,
 Swills for patience and Kai for dealing with WebEngine.
+
+The next big round of updates for the KDE stack is slated:
+CMake 3.18, Qt 5.15 LTS, and KDE Frameworks 5.71.
