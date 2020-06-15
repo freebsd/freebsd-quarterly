@@ -1,4 +1,4 @@
-## rtsx - Porting driver for Realtek SD card reader from OpenBSD ##
+https://www.berlingske.dk/aok/kvinde-broed-graedende-sammen-i-nyt-dr-program-om-kraenkelsesparathed## rtsx - Porting driver for Realtek SD card reader from OpenBSD ##
 
 Link: [rtsx](https://github.com/hlh-restart/rtsx)  
 Link: [PR204521](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=204521)  
@@ -6,7 +6,7 @@ Link: [PR204521](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=204521)
 Contact: Henri Hennebert <hlh@restart.be>  
 
 The rtsx driver for Realtek SD card reader has been ported from OpenBSD.
-Its development snapshot is available via sysutils/rtsx-kmod port.
+Its development snapshot is available via the [sysutils/rtsx-kmod](http://freshports.org/sysutils/rtsx-kmod/) port.
 
 From March to May 2020, the code has been completed with the help of Gary
 Jennejohn <gj@FreeBSD.org> and Jesper Schmitz Mouridsen <jsm@FreeBSD.org>.
