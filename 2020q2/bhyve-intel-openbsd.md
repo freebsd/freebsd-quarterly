@@ -52,5 +52,5 @@ the guest that loads the firmware).
 In simple terms the host only passes the device interrupts to the guest
 as they come from the hardware. Everything related to the device
 management happens inside the guest so there's no danger that some
-network traffic exloits some issue in the host's network stack and
+network traffic exploits some issue in the host's network stack and
 causes the host to crash or misbehave in other ways.
