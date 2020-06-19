@@ -25,8 +25,8 @@ use any PCI devices passed through to them from the host.
 
 During the last 2 months the second bug was identified and fixed and
 they both were backported to 12.1-RELEASE (p7). So now it's possible to
-fully take advantage of PCI passthrough with bhyve in a production-ready
-RELEASE version.
+fully take advantage of PCI passthrough (ppt) with bhyve in a
+production-ready RELEASE version.
 
 The most typical case for ppt is to pass to the guest network adapters
 for its complete control, but you can also pass through USB devices
@@ -34,9 +34,9 @@ for its complete control, but you can also pass through USB devices
 devices is not supported yet (for more details see the 3rd link).
 
 A particularly interesting case for ppt is to use OpenBSD guest as a
-firewall and a router for a FreeBSD server. OpenBSD is considered by
-many to be the most secure OS and it's frequently used in network
-appliances as a firewall/router.
+firewall and a router for a FreeBSD server. OpenBSD has a solid track
+record in security and is frequently used in network appliances as a
+firewall/router.
 
 With ppt you can achieve this all inside a single server. You could pass
 to the OpenBSD guest a network adapter connected to the internet and it
