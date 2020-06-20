@@ -35,7 +35,7 @@ devices is not supported yet (for more details see the 3rd link).
 
 A particularly interesting case for ppt is to use OpenBSD guest as a
 firewall and a router for a FreeBSD server. OpenBSD has a solid track
-record in security and is frequently used in network appliances as a
+record as a secure OS and is frequently used in network appliances as a
 firewall/router.
 
 With ppt you can achieve this all inside a single server. You could pass
