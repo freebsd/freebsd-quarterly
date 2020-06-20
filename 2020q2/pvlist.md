@@ -1,3 +1,4 @@
+
 ## amd64 pmap Fine-grained pv lists locking ##
 
 Link:	 [Patch](https://reviews.freebsd.org/D24217)  
@@ -10,30 +11,29 @@ with so called managed pages.  Managed page is fully controlled by VM,
 which tracks it status.  In particular, managed page can be made
 read-only for write-back to the file, or unmapped for reuse (paging).
 
-Machine-dependent VM layer, pmap, must support managed pages, for
-instance provide operations pmap_remove_write() to downgrade all
-mappings to read-only, or pmap_remove_all() to unmap the page from all
-address spaces.  To implement this kind of operations, while not
-causing the overhead of scanning all page tables, pmap must track
-existing mappings of the page.  The tracking is done by allocating a
-small data structure 'pv entry' per mapping, and linking all pv
-entries for the given page into pv list.
+The machine-dependent VM layer, pmap, must support managed pages, for
+instance it must provide operations such as pmap_remove_write() to
+downgrade all mappings to read-only, or pmap_remove_all() to unmap
+the page from all address spaces.  To implement this kind of
+operations, while not causing the overhead of scanning all page
+tables, pmap must track existing mappings of the page.  The
+tracking is done by allocating a small data structure 'pv entry'
+per mapping, and linking all pv entries for the given page into pv
+list.
 
 Since pv entries come from context of different address spaces, pmap
 must provide synchronization to guarantee correctness of the list
 structures.  Current pmap allocates one mutex per one 2M physical
-superpage in NUMA configuration, and MAXCPU == 256 locks hashed by the
-page physical address for non-NUMA.  The end result is often
+superpage in NUMA configurations, and MAXCPU == 256 locks hashed by
+the page physical address for non-NUMA.  The end result is often
 undeserved lock aliasing causing pv list locks contention, since all
 4k pages in the 2M superpage share the same lock, and reservations
 typically cause adjasted pages to come from the same superpage.
 
-Proposed patch creates new kernel synchronization primitive OBM (one
-byte mutex), which is embedded into the currently unused padding in
+The proposed patch creates a new kernel synchronization primitive called one byte mutex, which is embedded into the currently unused padding in
 machine-dependent portion of the struct vm_page.  This way each page
-gets dedicated pv list lock.  In the ever-imprortant buildkernel
-benchmark on non-NUMA config, this change provides 2x reduction of the
-system time.
+gets dedicated pv list lock.  In the ever-important buildkernel
+benchmark on non-NUMA config, this change provides 2x reduction of the system time.
 
 One complication is that old locking distribution scheme made a
 natural fit for superpages promotion and demotion, since all embedded
