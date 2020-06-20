@@ -4,8 +4,8 @@ Link:	 [Patch](https://reviews.freebsd.org/D24652)
 
 Contact: Konstantin Belousov <kib@FreeBSD.org>  
 
-FreeBSD already provides excellent support for superpages, in the
-manner completely transparent to the applications.  It tries to
+FreeBSD already provides excellent support for superpages, in a
+manner completely transparent to applications.  It tries to
 proactively prevent fragmentation, reserves contigous runs of the
 physical pages for linear allocations in managed objects, and
 auto-promote runs of small pages when they form complete superpage.
@@ -19,16 +19,16 @@ efficient with large pages.  In such cases transparent
 (non-guaranteed) support cannot be used.
 
 The extension was developed for POSIX shared memory subsystem to allow
-creator request that the shared memory object was backed by physically
-contiguous pages, with runs of specified size.  The mmap(2) syscall is
-aware of such objects, and if the requested mapping is properly
-aligned, it will be served by superpages.
+the creator request that the shared memory object was backed by
+physically contiguous pages, with runs of specified size.  The mmap(2)
+syscall is aware of such objects, and if the requested mapping is
+properly aligned, it will be served by superpages.
 
 The new type of the shared memory objects are backed by modified
-physical pager, which only allocates contigous physical memory.  VM
-ensures that mappings of the objects are never split (clipped) on
-non-superpage boundary.  Fault handler is specially optimized to be
-very fast by quickly installing the superpage PTE and to avoid
+a physical pager, which only allocates contigous physical memory.  The
+VM ensures that mappings of the objects are never split (clipped) on a
+non-superpage boundary.  The fault handler is specially optimized to
+be very fast by quickly installing the superpage PTE, and to avoid
 touching all small pages constituing it.
 
 Currently the required pmap support is provided for amd64 with 2M and
