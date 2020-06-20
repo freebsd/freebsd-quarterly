@@ -1,3 +1,15 @@
+s/OpenBSD has a solid track\
+record as a secure OS and is frequently used in network appliances as a\
+firewall/router.//
+
+s/OpenBSD has a solid track\
+record as a secure OS and is frequently used in network appliances as a\
+firewall/router.//
+
+s/OpenBSD has a solid track\
+record as a secure OS and is frequently used in network appliances as a\
+firewall/router.//
+
 ## PCI passthrough with bhyve on Intel and for OpenBSD guests
 
 Link:	 [bhyve Intel bug report](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=229852)  
@@ -34,9 +46,7 @@ for its complete control, but you can also pass through USB devices
 devices is not supported yet (for more details see the 3rd link).
 
 A particularly interesting case for ppt is to use OpenBSD guest as a
-firewall and a router for a FreeBSD server. OpenBSD has a solid track
-record as a secure OS and is frequently used in network appliances as a
-firewall/router.
+firewall and a router for a FreeBSD server.
 
 With ppt you can achieve this all inside a single server. You could pass
 to the OpenBSD guest a network adapter connected to the internet and it
