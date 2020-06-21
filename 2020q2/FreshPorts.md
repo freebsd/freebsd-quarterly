@@ -1,4 +1,4 @@
-## Status Report Sample - This Will Become The Title ##
+limits -m 8g -v 8g firefox --new-instance## Status Report Sample - This Will Become The Title ##
 
 Link:	 [FreshPorts](http://freshports.org/)  
 Link:	 [FreshPorts blog](http://news.freshports.org/)  
@@ -27,9 +27,9 @@ Serhii (Sergey) Kozlov [created a script](https://github.com/FreshPorts/git_proc
 to transform GIT commit entries into XML digestible by FreshPorts.
 This was a huge step foward for the effort.
 
-The next step inslude:
+The next step include:
 
-* incorporate that script the automated processes of FreshPorts
+* incorporate a that script the automated processes of FreshPorts
 * migrate to new test & stage versions of FreshPorts
 * test
 * get ready for prod
