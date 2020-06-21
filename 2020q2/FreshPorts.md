@@ -1,4 +1,4 @@
-## Status Report Sample - This Will Become The Title ##
+limits -m 8g -v 8g firefox --new-instance## Status Report Sample - This Will Become The Title ##
 
 Link:	 [FreshPorts](http://freshports.org/)  
 Link:	 [FreshPorts blog](http://news.freshports.org/)  
@@ -15,6 +15,34 @@ to both port developers and port users.
 
 For example, https://www.freshports.org/security/acme.sh/ shows
 the history of this port, back to its creation in May 2017.
+
+### git ###
+
+Work on git started [back in September](https://news.freshports.org/?s=git&searchsubmit=).
+It was ignored for a while and started back in mid-June with 
+the creation of new git-specific jails for commit ingress (commit
+processing gitdev) and for the website.
+
+Serhii (Sergey) Kozlov [created a script](https://github.com/FreshPorts/git_proc_commit/blob/master/git-to-freshports/git-to-freshports.py)
+to transform GIT commit entries into XML digestible by FreshPorts.
+This was a huge step foward for the effort.
+
+The next step include:
+
+* incorporate a that script the automated processes of FreshPorts
+* migrate to new test & stage versions of FreshPorts
+* test
+* get ready for prod
+
+#### Help wanted ####
+
+git is not far away now. I could use helpers to
+
+* review code
+* watch the commits on the devgit websites
+* catch missing stuff
+
+Thank you
 
 ### Packages ###
 
