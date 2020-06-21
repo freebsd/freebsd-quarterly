@@ -15,7 +15,7 @@ any FreeBSD desktop machine.
 This quarter has been an ever-so-peculiar one. While we are used
 to working remotely, collaborating over the internet to update the ports
 tree, it's *qualitatively* different when
-the whole world locks down. Software continues to be released,
+the whole world locks down. Meanwhile, software continues to be released,
 so this quarter the kde@ team:
 
 - Restored a patch that closes down a remote TCP held by X11 applications
@@ -43,8 +43,8 @@ so this quarter the kde@ team:
   pre-emptively patched for this new -- and last -- LTS release of Qt 5.
   The update itself has not yet landed, pending a few last bits of fallout.
   
-kde@ would like to thank Antoine for many exp-runs, Mikael for useful tips,
-Swills for patience and Kai for dealing with WebEngine.
+kde@ would like to thank Antoine for many exp-runs, @mikael for useful tips,
+@swills for patience and @kai for dealing with WebEngine.
 
 The next big round of updates for the KDE stack is slated:
 CMake 3.18, Qt 5.15 LTS, and KDE Frameworks 5.71.
