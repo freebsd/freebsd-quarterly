@@ -30,17 +30,19 @@ undeserved lock aliasing causing pv list locks contention, since all
 4k pages in the 2M superpage share the same lock, and reservations
 typically cause adjasted pages to come from the same superpage.
 
-The proposed patch creates a new kernel synchronization primitive called one byte mutex, which is embedded into the currently unused padding in
-machine-dependent portion of the struct vm_page.  This way each page
-gets dedicated pv list lock.  In the ever-important buildkernel
-benchmark on non-NUMA config, this change provides 2x reduction of the system time.
+The proposed patch creates a new kernel synchronization primitive
+called one byte mutex, which is embedded into the currently unused
+padding in machine-dependent portion of the struct vm_page.  This way
+each page gets dedicated pv list lock without using any more memory.
+In the ever-important buildkernel benchmark on non-NUMA config, this
+change provides 2x reduction of the system time.
 
 One complication is that old locking distribution scheme made a
 natural fit for superpages promotion and demotion, since all embedded
 small pages shared the same pv list lock, and the operations basically
 fold/unfold corresponding pv entries.  Now the promotion and demotion
 operations require taking all locks for constituent small pages, which
-provides small but measurable impact on them.  It is possbile to
+provides small but measurable impact on them.  It is possible to
 optimize it further by providing the 'superlock' on the first page
 from the superpage run, but the affected operations are relatively
 rare so that it is not even obvious that implementing the optimization

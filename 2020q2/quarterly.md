@@ -2,17 +2,12 @@
 
 Contact: Quarterly Status Reports <quarterly@FreBSD.org>
 Contact: Daniel Ebdrup Jensen <debdrup@FreeBSD.org>
-Contact: Lorenzo Salvadore <salvadore@FreeBSD.org>
 
 Link: [Quarterly status reports](https://www.freebsd.org/news/status/)
 Link: [Git repository](https://github.com/freebsd/freebsd-quarterly)
 
 The Quarterly Status Reports Team collects and publish the reports that you are
-reading right now. At the moment, its most active members are:
-
-- debdrup, who reviews, merges and sorts the reports;
-
-- salvadore, who maintains the tools used by the team.
+reading right now.
 
 Many improvements have been done recently and thus we believe it is useful that
 the Quarterly Status Reports Team submits a report. Not all the changes below
