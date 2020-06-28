@@ -11,9 +11,9 @@ Lockless routing lookups will remove lookup bottlenecks, improve both dataplane 
 
 ### Background
 
-Initial routing kpi was introduced back in 1980. It was a nice generic approach back then, as no one new how the protocols would evolve. It has been enormously successful as it was able to survive for 20+ years.
+Initial routing kpi was introduced back in 1980. It was a nice generic approach back then, as no one knew how the protocols would evolve. It has been enormously successful as it was able to survive for 20+ years.
 
-Unfortunately this kpi does not try to protect subsystem internals from the outside users, resulting in tight  coupling with other subsystems. As a result, making changes is hard, leading to compromises and piling technical debt. 
+Unfortunately, this kpi does not try to protect subsystem internals from the outside users, resulting in tight coupling with other subsystems. As a result, making changes is hard, leading to compromises and piling technical debt. 
 
 ### Implementation overview 
 
@@ -22,9 +22,9 @@ Interested reader can find more detailed description in [D24141](https://reviews
 
 Multipath implementation extends nexthop concept further by introducing nexthop groups.
 
-Each route has a pointer to either nexthop or a nexthop group, decoupling lookup algorithm from the routing stack internals. Both nexthops and nexthop groups are immutable and use epoch(9)-backed reclamation.
+Each route has a pointer to either nexthops or a nexthop group, decoupling lookup algorithm from the routing stack internals. Both nexthops and nexthop groups are immutable and use epoch(9)-backed reclamation.
 
-Pre-requisite for the lockless routing lookup is the introduction of modular lookup framework, allowing to attach any longes-prefix-match algorithm implementation to any IPv4/IPv6 fib.
+A pre-requisite for lockless routing lookup is the introduction of modular lookup framework, allowing to attach any longes-prefix-match algorithm implementation to any IPv4/IPv6 fib.
 
 Currently there are plans to use modified DIR-24-8 algorithm from DPDK for both IPv4 and IPv6 families as an example of base lockless implementation.
 
@@ -35,10 +35,10 @@ Currently there are plans to use modified DIR-24-8 algorithm from DPDK for both 
 1.2 Conversion of old KPI users to the new one [ DONE ]
 1.2.1 Conversion of route caching to nexthop caching [ DONE ]
 1.3 Conversion of struct `rtentry` field access to nhop field access [ DONE ]
-1.4 Eliminating old lookup KPI and hiding struct rtentry. [ DONE ]
+1.4 Eliminating old lookup KPI and hiding struct rtentry [ DONE ]
 
 2 Multipath [ IN PROGRESS ]
-2.1 Switch control plane customers to use (rtentry, nhop) pair instead of rtentry to allow multipath changes happen transparently. [ 90% DONE ]
+2.1 Switch control plane cusomers to use (rtentry, nhop) pairs instead of rtentry to allow multipath changes happen transparently [ 90% DONE ]
 2.2 Introduce nexthop group objects
 2.3 Add mutipath support for the rib manipulation functions
 2.4 Add flowid generation for outbound traffic to enable load balancing
