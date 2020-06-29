@@ -6,9 +6,9 @@ For quite a while the [FreeBSD CI infrastructure](https://ci.FreeBSD.org)
 has been running FreeBSD builds and regression tests, making it easy to
 spot regressions.  While CI was building images for all architectures,
 the regression tests were only run on amd64 and i386, which means they
-couldn't detect architecture-specific runtime breakage.  The goal of this
-project is to run them for remaining architectures - ARM, ARM64, MIPS64,
-POWER, and RISC-V.
+couldn't detect architecture-specific runtime breakage on non-x86
+architectures.  The goal of this project is to run them for remaining
+architectures - ARM, ARM64, MIPS64, POWER, and RISC-V.
 
 The tests are being run using common, mostly machine-independent scripts.
 Those required some changes to make it possible to use QEMU in addition
@@ -23,8 +23,8 @@ Remaining work:
 
  - Failing regression tests need to be fixed.
 
- - The tests are quite slow, for example the ARM64 run takes about five
-   hours.  Running them automatically after each commit would quickly
+ - The tests are quite slow on QEMU, for example the ARM64 run takes about
+   five hours.  Running them automatically after each commit would quickly
    overload the CI cluster.  A solution would be to e.g. run them daily.
 
  - Two jobs still fail to produce results: powerpc64 deadlocks at the
