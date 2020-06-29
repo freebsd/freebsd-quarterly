@@ -24,7 +24,7 @@ Remaining work:
  - Failing regression tests need to be fixed.
 
  - The tests are quite slow, for example the ARM64 run takes about five
-   hours.  Running them automatically after each commit would quickl
+   hours.  Running them automatically after each commit would quickly
    overload the CI cluster.  A solution would be to e.g. run them daily.
 
  - Two jobs still fail to produce results: powerpc64 deadlocks at the
