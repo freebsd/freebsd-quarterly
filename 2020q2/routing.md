@@ -38,7 +38,7 @@ Currently there are plans to use modified DIR-24-8 algorithm from DPDK for both 
 1.4 Eliminating old lookup KPI and hiding struct rtentry [ DONE ]
 
 2 Multipath [ IN PROGRESS ]
-2.1 Switch control plane cusomers to use (rtentry, nhop) pairs instead of rtentry to allow multipath changes happen transparently [ 90% DONE ]
+2.1 Switch control plane consumers to use (rtentry, nhop) pairs instead of rtentry to allow multipath changes happen transparently [ 90% DONE ]
 2.2 Introduce nexthop group objects
 2.3 Add mutipath support for the rib (routing information base) manipulation functions
 2.4 Add flowid generation for outbound traffic to enable load balancing
