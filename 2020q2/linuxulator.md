@@ -2,10 +2,12 @@
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
-Work has shifted from cleanups to fixing actual applications.
+Earlier Linuxulator work focused on code cleanups and improving
+diagnostic tools.
+Work has now shifted from cleanups to fixing actual applications.
 Current status is being tracked at
 [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
-Current focus is on applications that don't involve X11, mostly
+Initial focus is on applications that don't involve X11, mostly
 because they tend to be easier to test and debug, and the bug fixes
 are not application-specific.
 
