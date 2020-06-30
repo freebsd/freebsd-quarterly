@@ -1,6 +1,7 @@
 ## Intel wireless and 11ac update ##
 
-Link:	 [Initial project announcement](https://lists.freebsd.org/pipermail/freebsd-wireless/2020-April/009055.html)  
+Link:	 [Initial project announcement](https://lists.freebsd.org/pipermail/freebsd-wireless/2020-April/009055.html) 
+Link:  [The freebsd-wireless mailing list](https://lists.freebsd.org/mailman/listinfo/freebsd-wireless)
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>  
 
