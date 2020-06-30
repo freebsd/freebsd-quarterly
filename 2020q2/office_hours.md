@@ -7,7 +7,7 @@ Link:	 [live.FreeBSD.org: Aggregation of Live streams](https://live.freebsd.org/
 Contact: Allan Jude <allanjude@freebsd.org>  
 
 Starting on the first of April 2020, the FreeBSD project has started
-hostingly regular video streams to foster greater communication within
+hosting regular video streams to foster greater communication within
 the wider FreeBSD community. The first of these sessions took the form
 of a public question and answer session, which drew over 60 participants.
 A second session was held two weeks later at a time more appropriate for
