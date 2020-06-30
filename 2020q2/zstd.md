@@ -10,7 +10,7 @@ kernel crash dumps, as a replacement for gzip or bzip for
 compressing log files, and for future versions of pkg(8).
 
 This effort to complete the integration of ZSTD into ZFS is
-funded by the FreeBSD Foundation.
+sponsored by the FreeBSD Foundation.
 
 Integrating ZSTD into ZFS will further extend the transparent
 compression feature of ZFS by offering higher compression
