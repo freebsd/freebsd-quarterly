@@ -28,9 +28,9 @@ are available in the [weekly CI reports](https://hackmd.io/@FreeBSD-CI).
 During the second quarter of 2020, we continue working with the contributors and developers in the project for their testing needs and also keep working with external projects and companies to improve their support of FreeBSD.
 
 Important changes:
- * All -test jobs will run tests under `/usr/tests`, previously only x86 architectures doing this. See [multiarch-ci] section in this report for more information.
- * Compression algorithm of disk images at [artifact server](https://artifacts.ci.freebsd.org) has been changed to zstd for speeding up.
- * The build and test results will be sent to [dev-ci mailing list](https://lists.freebsd.org/mailman/listinfo/dev-ci) soon. It's welcomed to subscribe and help analysis the issues.
+ * All -test jobs will run tests under `/usr/tests`, previously only x86 architectures doing this. See the Continuous Integration on !x86 section in this report for more information.
+ * Compression algorithm of disk images on the [artifact server](https://artifacts.ci.freebsd.org) has been changed to zstd to speed up compression and decompression.
+ * The build and test results will be sent to the [dev-ci mailing list](https://lists.freebsd.org/mailman/listinfo/dev-ci) soon. Feedback and help with analysis is very appreciated!
 
 New jobs added:
  * https://ci.freebsd.org/job/FreeBSD-head-armv7-test/
@@ -40,17 +40,17 @@ New jobs added:
 
 Work in progress:
   * Collecting and sorting CI tasks and ideas [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
-  * Testing and merging pull requests in [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls)
-  * Seting up the builder dedicated to run jobs need to provision VMs.
-  * Seting up the CI stage environment and put the experimental jobs on it
+  * Testing and merging pull requests in the [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls)
+  * Setting up a builder dedicated to run jobs using provisioned VMs.
+  * Setting up the CI stage environment and putting the experimental jobs on it
   * Implementing automatic tests on bare metal hardware
-  * Adding drm ports building test against -CURRENT
-  * Planning for running ztest and network stack tests
-  * Adding external toolchain related jobs.
+  * Adding drm ports building tests against -CURRENT
+  * Planning to run ztest and network stack tests
+  * Adding external toolchain related jobs
   * Improving the hardware lab to be more mature and adding more hardware
   * Helping more 3rd software get CI on FreeBSD through a hosted CI solution
   * Working with hosted CI providers to have better FreeBSD support
 
-Please see freebsd-testing@ related tickets for more WIP information, and join the efforts
+Please see freebsd-testing@ related tickets for more WIP information, and don't hesistate to join the effort!
 
 Sponsor: The FreeBSD Foundation
