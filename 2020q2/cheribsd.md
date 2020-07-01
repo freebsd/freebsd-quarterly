@@ -13,16 +13,18 @@ Contact: Robert Watson <rwatson@FreeBSD.org>
 Contact: Ruslan Bukin <br@FreeBSD.org>
 
 CheriBSD extends FreeBSD to implement memory protection and software
-compartmentalization features supported by the CHERI ISA.
+compartmentalization features supported by the CHERI instruction set
+extensions.
 
 Support for CHERI-RISC-V in CheriBSD has continued to mature this
 quarter in tandem with refinements to the CHERI-RISC-V architecture.
-CheriBSD's "pure capability" (CheriABI) process environment grew support
-for:
+We have recently made CheriBSD's "pure capability" (CheriABI) process
+environment the default ABI rather than a compatibility layer. It has
+grown support for:
 
 - dynamically linked binaries (previously only statically-linked binaries were supported)
 - C++ including exceptions
-- sealed return address capabilities ("sentries") which provide additional CFI protection
+- sealed return address and function pointer capabilities ("sentries") which provide additional CFI protection
 - initial MMU protections for loading and storing tags
 
 At this point, CHERI-RISC-V support in CheriBSD is generally on par with
