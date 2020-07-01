@@ -37,5 +37,10 @@ In addition, work has begun this quarter on porting CheriBSD to Arm's
 Morello SoC.  Morello is a prototype demonstrator board which adds CHERI
 extensions to ARMv8-A.
 
-URL: http://www.cheri-cpu.org
-URL: https://fett.darpa.mil
+We've recently switched to a dev-branch model where active work takes
+place on the `dev` branch and we periodically merge to `master` with
+synchronization between CheriBSD and dependencies like CHERI-LLVM.
+
+For those interested in what it's like to program for CHERI, we've
+recently released a [CHERI C/C++ Programming
+Guide](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-947.pdf).
