@@ -12,14 +12,14 @@ TeamReports= foundation.md core.md re.md clusteradm.md ci.md portmgr.md graphics
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= nfsovertls.md kyua.md linuxulator.md syzkaller.md
+Projects= nfsovertls.md kyua.md linuxulator.md syzkaller.md azure.md
 
 # Changes affecting the base system and programs in it
 Userland= gcc-retirement.md elfctl.md elftoolchain.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= bridge.md sigfastblock.md arm64lse.md azure.md morello.md ls1046.md ena.md
+Kernel= bridge.md sigfastblock.md arm64lse.md morello.md ls1046.md ena.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
