@@ -29,7 +29,7 @@ whenever it detects that it is available.
 There has also been a lot of work done to port FreeBSD's standard bootloader,
 `loader(8)`, to RISC-V. This has big advantages in terms of boot flexibility,
 and brings us closer to what's needed to produce official FreeBSD/RISC-V release
-images. By leveraging EFI support from
+images. By leveraging UEFI support from
 [u-boot](https://www.denx.de/wiki/U-Boot/), `loader.efi` can be used in a manner
 similar to arm and arm64. Next quarter will likely bring u-boot ports for RISC-V
 targets, pending the v2020.07 release. Booting the kernel directly via SBI
