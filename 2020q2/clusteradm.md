@@ -9,7 +9,7 @@ The FreeBSD Cluster Administration Team consists of the people responsible for a
 * Upgrade all x86 ref-* and universe-* machines
 * Setup Amsterdam (PKT) mirror
 * Solve hardware issue for bugzilla and svnweb backend
-* Setup public beta git server: https://cgit-beta.freebsd.org
+* Setup public [beta git server](https://cgit-beta.freebsd.org)
 * Decommission CyberOne Data (CYB) mirror
 * Ongoing systems administration work:
     * Accounts management for committers.
@@ -28,6 +28,4 @@ Work in progress:
 * New NYI.net sponsored colocation space in Chicago-land area.
 * Work with git working group
 * Check new hardware requirement from other teams
-* Searching for more mirror providers
-    * https://wiki.freebsd.org/Teams/clusteradm/generic-mirror-layout
-    * https://wiki.freebsd.org/Teams/clusteradm/tiny-mirror
+* Searching for more providers that can fit the requirements for a [generic mirrored layout](https://wiki.freebsd.org/Teams/clusteradm/generic-mirror-layout) or a [tiny mirror](https://wiki.freebsd.org/Teams/clusteradm/tiny-mirror)
