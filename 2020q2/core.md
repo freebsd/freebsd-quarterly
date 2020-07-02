@@ -6,7 +6,7 @@ The FreeBSD Core Team is the governing body of FreeBSD.
 
 The Core Team held 10 meetings during the second quarter of 2020, including a
 2020-05-21 joint meeting with members of the FreeBSD Foundation.  Here are some
-highlights from that meeting.
+highlights from that meeting:
 
   - Deb requested guidance on how the Foundation can support the community.
     Core and Foundation members believe that more developer support is necessary
