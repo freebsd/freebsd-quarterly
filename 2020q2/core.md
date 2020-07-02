@@ -37,11 +37,11 @@ results will be released soon.
 The Core-initiated Git Working Group continued to make progress, but there are
 still some remaining issues to be worked out with the translation from
 Subversion.  Hopefully the new Git src repository will be ready for use this
-summer.  [A beta version has been published for people to
-test](https://cgit-beta.freebsd.org/) and a preliminary version of a `Using Git
-for FreeBSD Development` primer will soon be ready to share.  Core, the Git
-Working Group, and Release Engineering are working towards the goal of releasing
-12.2 from the new Git repository.
+summer.  A [beta version](https://cgit-beta.freebsd.org/) has been published for
+people to test and a preliminary version of a `Using Git for FreeBSD
+Development` primer will soon be ready to share.  Core, the Git Working Group,
+and Release Engineering are working towards the goal of releasing 12.2 from the
+new Git repository.
 
 Following the results of a Core-initiated developer survey, The FreeBSD Project
 has adopted a new LLVM-derived [code of
