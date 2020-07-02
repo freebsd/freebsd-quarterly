@@ -9,23 +9,22 @@ The Core Team held 10 meetings during the second quarter of 2020, including a
 highlights from that meeting.
 
   - Deb requested guidance on how the Foundation can support the community.
-      Core and Foundation members believe that more developer support is
-      necessary to fill gaps in areas where commercial customers do not provide
-      backing.  The clearest example of such a gap is the desktop experience,
-      including graphics and wireless support.  What makes this request
-      different from past requests is that rather than support for one-time
-      projects, ongoing positions are necessary for a consistently high-quality
-      desktop experience.
+    Core and Foundation members believe that more developer support is necessary
+    to fill gaps in areas where commercial customers do not provide backing.
+    The clearest example of such a gap is the desktop experience, including
+    graphics and wireless support.  What makes this request different from past
+    requests is that rather than support for one-time projects, ongoing
+    positions are necessary for a consistently high-quality desktop experience.
 
         "FreeBSD not being able to run on your laptop is the first step to
          irrelevance." Ed Maste
 
   - Both teams discussed topics for upcoming sessions of FreeBSD Office Hours,
-      informal FreeBSD video conferences that anyone can attend.  Everyone
-      agreed that the Office Hours have been a useful way for different parts of
-      the Project to engage with each other and with the wider community.  Kudos
-      to Allan Jude for initiating the Office Hours and for everyone who has
-      helped make them a success by hosting or attending sessions.
+    informal FreeBSD video conferences that anyone can attend.  Everyone agreed
+    that the Office Hours have been a useful way for different parts of the
+    Project to engage with each other and with the wider community.  Kudos to
+    Allan Jude for initiating the Office Hours and for everyone who has helped
+    make them a success by hosting or attending sessions.
 
   - Both teams agreed that they should meet once per quarter.
 
