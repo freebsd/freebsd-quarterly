@@ -19,7 +19,7 @@ This project is sponsored by Microsoft.
 
 Li-Wen is working on the FreeBSD release code related to Azure for the -CURRENT, 12-STABLE and 11-STABLE branches.
 The work-in-progress is available [here](https://reviews.freebsd.org/D23804).
-The 12.1-RELEASE image on Azure Marketplace is waiting certification from Microsoft and will be published soon.
+The [12.1-RELEASE image on Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thefreebsdfoundation.freebsd-12_1) is published.
 The work on the 11.4-RELEASE image on Azure is in progress.
 
 This project is sponsored by The FreeBSD Foundation.
