@@ -27,7 +27,9 @@ tests ran
 (https://ci.freebsd.org/job/FreeBSD-head-armv7-test/lastCompletedBuild/testReport/).
 On ARM64 it's 19 failures and 160 skipped
 (https://ci.freebsd.org/job/FreeBSD-head-aarch64-test/lastCompletedBuild/testReport/).
-For MIPS64, POWER, and RISC-V the results are not available yet.
+On MIPS it's 172 failures and 734 skipped
+(https://ci.freebsd.org/job/FreeBSD-head-mips64-test/lastCompletedBuild/testReport/).
+For POWER, and RISC-V the results are not available yet.
 
 Remaining work:
 
@@ -39,7 +41,7 @@ Remaining work:
 
  - Some of the jobs still fail to produce results: powerpc64 deadlocks at
    the end of regression test suite due to an unkillable process, riscv64
-   panics randomly, and on mips64 kyua(1) crashes on jemalloc assertion.
+   panics randomly, and on mips64 kyua(1) often crashes on jemalloc assertion.
    Those might be fixed by an upcoming QEMU port update.
 
 Sponsor: DARPA
