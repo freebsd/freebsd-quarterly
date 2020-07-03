@@ -12,7 +12,7 @@ TeamReports= foundation.md core.md re.md clusteradm.md ci.md portmgr.md graphics
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= nfsovertls.md kyua.md linuxulator.md syzkaller.md azure.md
+Projects= nfsovertls.md kyua.md linuxulator.md syzkaller.md azure.md lua.md
 
 # Changes affecting the base system and programs in it
 Userland= gcc-retirement.md elfctl.md elftoolchain.md
