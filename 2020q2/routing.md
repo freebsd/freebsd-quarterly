@@ -1,4 +1,4 @@
-# ## Lockless routing lookups and scalable multipath ##
+## Lockless routing lookups and scalable multipath
 
 Link:	 [Implementation of scalable multipath](https://reviews.freebsd.org/D24141#change-ZOjdMqgDgUr7)  
 
