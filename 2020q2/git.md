@@ -32,6 +32,8 @@ to the
 and test out the beta src, ports, and/or doc repositories.
 
 Also check out the wiki, issues, README and other documentation at the
-[Git conversion tooling repo](https://github.com/freebsd/git_conv)
+[Git conversion tooling repo](https://github.com/freebsd/git_conv).
+
+We expect to be ready for the migration in the next quarter.
 
 Sponsor: The FreeBSD Foundation (in part)
