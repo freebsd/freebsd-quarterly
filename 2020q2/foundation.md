@@ -229,8 +229,9 @@ Results of the director and officer elections were:
  - Hiroki Sato (Director)
  - George Neville-Neil (Director)
 
-To see who's who, the Foundation's website has a list of the
-[FreeBSD Foundation Board of Directors](https://www.freebsdfoundation.org/about/board-of-directors/).
+Find out more about the
+[FreeBSD Foundation Board of Directors](https://www.freebsdfoundation.org/about/board-of-directors/)
+on our website.
 
 ### Legal/FreeBSD IP ###
 
