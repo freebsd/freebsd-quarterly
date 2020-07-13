@@ -12,7 +12,7 @@ Many uses of objdump can be replaced with readelf, and llvm-objdump is also
 available in the base system.  Ports that depend on objdump have been updated
 to rely on the GNU binutils port or package.
 
-GNU as was used by both the base system and by ports.  As with objdump, ports
+The GNU as utility was used by both the base system and by ports.  As with objdump, ports
 that require GNU as have generally been updated to depend on binutils.  One
 file in the base system (skein\_block\_asm.s) proved troublesome during earlier
 attempts to migrate to using Clang's integrated assembler (IAS).  However,
