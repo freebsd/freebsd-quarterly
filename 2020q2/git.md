@@ -31,7 +31,7 @@ to the
 [FreeBSD-git mailing list](https://lists.freebsd.org/mailman/listinfo/freebsd-git)
 and test out the beta src, ports, and/or doc repositories.
 
-Also check out the wiki, issues, README and other documentation at the
+You are also welcome check out the wiki, issues, README and other documentation at the
 [Git conversion tooling repo](https://github.com/freebsd/git_conv).
 
 We expect to be ready for the migration in the next quarter.
