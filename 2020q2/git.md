@@ -1,10 +1,10 @@
 ## Git Migration Working Group ##
 
-Link: [Git conversion tooling repo](https://github.com/freebsd/git_conv)
-Link: [FreeBSD-git mailing list](https://lists.freebsd.org/mailman/listinfo/freebsd-git)
-Link: [Beta doc git repo](https://cgit-beta.FreeBSD.org/doc)
-Link: [Beta ports git repo](https://cgit-beta.FreeBSD.org/ports)
-Link: [Beta src git repo](https://cgit-beta.FreeBSD.org/src)
+Link: [Git conversion tooling repo](https://github.com/freebsd/git_conv)  
+Link: [FreeBSD-git mailing list](https://lists.freebsd.org/mailman/listinfo/freebsd-git)  
+Link: [Beta doc git repo](https://cgit-beta.FreeBSD.org/doc)  
+Link: [Beta ports git repo](https://cgit-beta.FreeBSD.org/ports)  
+Link: [Beta src git repo](https://cgit-beta.FreeBSD.org/src)  
 
 Contact: Ed Maste <emaste@FreeBSD.org>  
 Contact: Warner Losh <imp@FreeBSD.org>  
