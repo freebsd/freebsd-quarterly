@@ -181,7 +181,7 @@ of this report, take a minute to check out the latest update blogs:
  - [My Experience as a FreeBSD Foundation Co-Op Student](https://www.freebsdfoundation.org/blog/my-experience-as-a-freebsd-foundation-co-op-student/)
 
 Keep up to date with our latest work in our
-[monthly newsletters](https://www.freebsdfoundation.org/news-and-events/newsletter/).
+[Bi-Monthly newsletters](https://www.freebsdfoundation.org/news-and-events/newsletter/).
 
 Mellanox provided an update on how and why they use FreeBSD in our latest
 [Contributor Case Study](https://www.freebsdfoundation.org/freebsd-case-study-mellanox/).
