@@ -12,14 +12,14 @@ TeamReports= foundation.md core.md releng.md clusteradm.md ci.md portmgr.md offi
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= azure.md lua.md linuxulator.md nfsovertls.md
+Projects= azure.md git.md lua.md linuxulator.md nfsovertls.md
 
 # Changes affecting the base system and programs in it
-Userland= bc-dc.md rtld.md vhdx.md
+Userland= bc-dc.md binutils.md rtld.md vhdx.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= ausoc-audio.md bluetooth.md drm.md dts.md ena.md forciblyunmount.md imx8m.md iwlwifi.md la57.md largepages.md ls1046.md pvlist.md routing.md rtsx.md zstd.md
+Kernel= ausoc-audio.md bluetooth.md drm.md dts.md ena.md forciblyunmount.md imx8m.md iwlwifi.md la57.md largepages.md ls1046.md pvlist.md routing.md zstd.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
@@ -31,7 +31,7 @@ Documentation= weblate.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= FreshPorts.md bastille.md kde.md haskell.md valgrind.md
+Ports= FreshPorts.md bastille.md kde.md haskell.md rtsx.md valgrind.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
