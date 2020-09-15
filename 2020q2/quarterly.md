@@ -1,6 +1,6 @@
 ## Quarterly Status Reports Team ##
 
-Contact: Quarterly Status Reports <quarterly@FreBSD.org>
+Contact: Quarterly Status Reports <quarterly@FreeBSD.org>
 Contact: Daniel Ebdrup Jensen <debdrup@FreeBSD.org>
 
 Link: [Quarterly status reports](https://www.freebsd.org/news/status/)
