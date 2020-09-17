@@ -39,7 +39,11 @@ is December 2020.
 
 - Co-process support (XXX possibly?)
 
-- CHERI documentation and exercises (XXX possibly?)
+- CHERI documentation and exercises - We have released [Capability
+Hardware Enhanced RISC Instructions: CHERI Instruction-Set Architecture
+(Version 8)](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-951.pdf).
+Notable changes include promotion of CHERI-RISC-V to non-experimental
+and discussion of Arm's Morello prototype.
 
 - Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) our
 completed port of bhyve to AArch64, various bug fixes and tweaks for PCIe
