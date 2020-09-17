@@ -45,5 +45,5 @@ is December 2020.
 completed port of bhyve to AAarch64, various bug fixes and tweaks for PCIe
 support, and support for the System MMU (SMMU) that will be present on the
 N1SDP and Morello SoCs.  We are also upstreaming support for cross-building
-FreeBSD from Mac OS X and Linux (with some limitations; see separate report
-on cheribuild).
+FreeBSD from macOS and Linux (with some limitations; see separate report on
+cheribuild).
