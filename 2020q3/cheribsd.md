@@ -44,6 +44,9 @@ Hardware Enhanced RISC Instructions: CHERI Instruction-Set Architecture
 (Version 8)](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-951.pdf).
 Notable changes include promotion of CHERI-RISC-V to non-experimental
 and discussion of Arm's Morello prototype.
+We have also developed a set of [Adversarial CHERI Exercises and
+Missions](https://ctsrd-cheri.github.io/cheri-exercises/#adversarial-cheri-exercises-and-missions)
+to introduce security researchers to CHERI protections.
 
 - Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) our
 completed port of bhyve to AArch64, various bug fixes and tweaks for PCIe
