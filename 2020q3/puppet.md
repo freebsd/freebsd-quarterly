@@ -22,8 +22,8 @@ allow to choose which version of Facter to use.  Facter 4 will be the
 default version of Facter with Puppet 7 which is expected to be released
 soon.
 
-We are getting ready for adding a port for Puppet 7 as sysutils/puppet7
-when it is available, along with PuppetServer 7 (sysutils/puppetserver7)
+We are getting ready to add a port for Puppet 7 as sysutils/puppet7
+when it is available, along with PuppetServer 7 (sysutils/puppetserver7),
 and PuppetDB 7 (databases/puppetdb7).
 
 Regarding orchestration, most Marionette Collective ports have been
