@@ -1,8 +1,8 @@
 ## ure - USB 3.0 Gigabit Ethernet Driver update ##
 
-Link:	[svn commit: r365648](https://svnweb.freebsd.org/changeset/base/365648)
-Link:	[FreeBSD-SA-20:27.ure](https://www.freebsd.org/security/advisories/FreeBSD-SA-20:27.ure.asc)
-Link:	[D25809 major update to if_ure](https://reviews.freebsd.org/D25809)  
+Link:	 [svn commit: r365648](https://svnweb.freebsd.org/changeset/base/365648)
+Link:	 [FreeBSD-SA-20:27.ure](https://www.freebsd.org/security/advisories/FreeBSD-SA-20:27.ure.asc)
+Link:	 [D25809 major update to if_ure](https://reviews.freebsd.org/D25809)
 
 Contact: John-Mark Gurney <jmg@FreeBSD.org>  
 
