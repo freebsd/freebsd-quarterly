@@ -11,7 +11,7 @@ including the RTL8153 USB 3.0 Gigabit ethernet adapters.  It is used
 in many ethernet dongles and docking stations.
 
 Previous to this update, the driver was limited in speed.  In my
-testing, I was only able to get ~91Mbps.  This limit was due to one
+testing, I was only able to get ~910Mbps.  This limit was due to one
 packet per USB transfer.  USB has a limit of 8000 transfers per
 second (1500 bytes/pkt * 8000 pkts/sec * 8bits/byte == 96 Mbps).
 This was acceptable for fast ethernet (RTL8152, 100Mbps), but with
@@ -36,5 +36,6 @@ As part of this work, a script was created to run tests to
 validate that basic functionality of the driver (w/o options) work
 properly, and then iterate over each option to make sure that they
 function properly.  This will be release at some point in the
-future.  If you're interested in helping out, or testing it, let me
-know.
+future.
+
+If you're interested in helping out, or testing it, let me know.
