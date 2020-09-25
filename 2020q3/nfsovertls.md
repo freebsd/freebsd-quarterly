@@ -19,9 +19,9 @@ are available.
 
 The coding for this project has now been completed.
 All required changes to the NFS and kernel RPC code have
-been committed to the head/current kernel.
+been committed to -CURRENT.
 The daemons are now believed to be complete, but will
-remain in base/projects/nfs-over-tls until head/current
+remain in base/projects/nfs-over-tls until -CURRENT
 has an OpenSSL library with the kernel TLS support
 incorporated in it.
 If this does not happen for FreeBSD-13, hopefully the
