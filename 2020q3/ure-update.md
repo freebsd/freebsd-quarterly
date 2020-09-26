@@ -18,7 +18,7 @@ This was acceptable for fast ethernet (RTL8152, 100Mbps), but with
 the additional support for Gigabit ethernet, it became a bottleneck.
 
 The updates add sending and receiving multiple packets in a single
-USB transfer, VLAN hardware tagging, and enables TCP and UDP
+USB transfer, VLAN hardware tagging, and enable TCP and UDP
 checksum offloading.  This increased the speed on gigabit ethernet
 to ~940 Mbps.
 
@@ -35,7 +35,7 @@ information.
 As part of this work, a script was created to run tests to
 validate that basic functionality of the driver (w/o options) work
 properly, and then iterate over each option to make sure that they
-function properly.  This will be release at some point in the
+function properly.  This will be released at some point in the
 future.
 
 If you're interested in helping out, or testing it, let me know.
