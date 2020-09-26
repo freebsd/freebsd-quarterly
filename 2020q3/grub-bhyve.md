@@ -2,7 +2,7 @@
 
 Link:	 [grub-bhyve Git Repository](https://gitlab.com/ctuffli/grub)  
 
-Contact: Full Name <chuck@freebsd.org>  
+Contact: Chuck Tuffli <chuck@freebsd.org>  
 
 bhyve is the hypervisor included in FreeBSD and other operating systems
 used to run virtual machines. When not using a boot ROM (i.e. UEFI), the
@@ -16,11 +16,11 @@ The current [grub-bhyve](https://www.freshports.org/sysutils/grub2-bhyve/)
 is based on an older version of GRUB (circa 2015) and thus is missing
 more recent additions such as XFS file system and
 [syslinux](https://www.syslinux.org/) support. With the update,
-installing CentOS, for example, does not now require the extra step of
-specifying EXT4 as the file system instead of the default XFS.
+installing CentOS, for example, now does not require the extra step of
+changing the default file system to something other than XFS.
 
 Internally, the code has been restructured to be its own "platform"
-which should make it easier to keep up to date with upstream development.
+which should make it easier to keep in sync with upstream development.
 The major improvement is the ability to automatically find and load the
 GRUB configuration file from the guest disk image. With this change, it
 is not necessary to create a device map file or specify which Linux
@@ -35,7 +35,7 @@ The automatic configuration file detection works with both GRUB
 configuration files (e.g. CentOS, Ubuntu) as well as syslinux
 configuration (e.g. Alpine). For the adventurous, there is experimental
 support for Fedora's BootLoaderSpec (a.k.a. `blscfg`) on the blscfg
-branch.
+branch of this Git repository.
 
 The code has been tested on a few Linux variants, but it would benefit
 from wider testing (and bug reports!). The new version does not have a
