@@ -35,7 +35,7 @@ The automatic configuration file detection works with both GRUB
 configuration files (e.g. CentOS, Ubuntu) as well as syslinux
 configuration (e.g. Alpine). For the adventurous, there is experimental
 support for Fedora's BootLoaderSpec (a.k.a. `blscfg`) on the blscfg
-branch of this Git repository.
+branch of the grub-bhyve Git repository.
 
 The code has been tested on a few Linux variants, but it would benefit
 from wider testing (and bug reports!). The new version does not have a
