@@ -33,7 +33,7 @@ site local CA. There are now exports(5) options to require client(s) to
 provide a valid X.509 certificate.
 
 The code is now available for testing. See:
-https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt
+[https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt](https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt).
 Setting up system(s) for testing is still a little awkward, as explained
 by the above rough document.
 
