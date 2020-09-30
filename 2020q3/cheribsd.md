@@ -40,7 +40,8 @@ are CHERI capabilities. This ensures that the kernel follows the
 intent of the application runtime and can not be used to defeat
 bounds on application pointers. We have developed and will soon
 merge a pure-capability kernel where all pointers in the kernel are
-appropriately bounded capabilities. This spatial memory safety lays the
+appropriately bounded capabilities. This vastly reduces the opportunity
+for buffer overflows. This spatial memory safety lays the
 groundwork for future work such as device driver compartmentalization
 and kernel temporal safety.
 
