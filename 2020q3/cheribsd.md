@@ -33,8 +33,8 @@ and runs statically linked CheriABI binaries on the Morello simulator,
 and dynamic linking support is in progress, with OS and toolchain bugs
 being worked on.  We aim to make a first CheriBSD/Morello snapshot
 available alongside other open-source Morello software in mid-October
-2020\.  However, our target for a more mature and usable implementation
-is December 2020.
+2020, however, our target for a more mature and usable implementation is
+December 2020.
 
 - Kernel spatial memory safety (pure-capability kernel) - The current
 CheriBSD kernel is a hybrid C program where only pointers to userspace
