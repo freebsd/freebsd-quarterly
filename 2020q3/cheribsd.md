@@ -3,6 +3,7 @@
 Link:    http://www.cheri-cpu.org
 Link:    https://fett.darpa.mil
 Link:    https://www.morello-project.org
+Link:    https://developer.arm.com/architectures/cpu-architecture/a-profile/morello
 
 Contact: Alex Richardson <arichardson@FreeBSD.org>
 Contact: Andrew Turner <andrew@FreeBSD.org>
