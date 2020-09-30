@@ -23,7 +23,15 @@ experimental Morello processor (due late 2021).  CheriBSD is a research
 operating system with a stable baseline implementation into which
 various new research features have been, or are currently being, merged:
 
-- Kernel spatial memory safety (pure-capability kernel)
+- Kernel spatial memory safety (pure-capability kernel) - The current
+CheriBSD kernel is a hybrid C program where pointers to userspace
+are CHERI capabilities. This ensures that the kernel follows the
+intent of the application runtime and can not be used to defeat
+bounds on application pointers. We have developed and will soon
+merge a pure-capability kernel where all pointers in the kernel are
+appropriately bounded capabilities. This spatial memory safety lays the
+groundwork for future work such as device driver compartmentalization
+and kernel temporal safety.
 
 - Userspace heap temporal memory safety (Cornucopia)
 
