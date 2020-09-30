@@ -51,6 +51,6 @@ to introduce security researchers to CHERI protections.
 - Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) our
 completed port of bhyve to AArch64, various bug fixes and tweaks for PCIe
 support, and support for the System MMU (SMMU) that will be present on the
-N1SDP and Morello SoCs.  We are have upstreaming support for cross-building
+N1SDP and Morello SoCs.  We have upstreamed support for cross-building
 FreeBSD from macOS and Linux (with some limitations; see separate report on
 crossbuilding).  We have also fixed implementation bugs in the RISC-V ABI.
