@@ -1,19 +1,19 @@
 ## CheriBSD 2020 Q3 ##
 
-Link:    http://www.cheri-cpu.org  
-Link:    https://fett.darpa.mil  
-Link:    https://www.morello-project.org  
-Link:    https://developer.arm.com/architectures/cpu-architecture/a-profile/morello
+Link:    http://www.cheri-cpu.org\
+Link:    https://fett.darpa.mil\
+Link:    https://www.morello-project.org\
+Link:    https://developer.arm.com/architectures/cpu-architecture/a-profile/morello\
 
-Contact: Alex Richardson <arichardson@FreeBSD.org>  
-Contact: Andrew Turner <andrew@FreeBSD.org>  
-Contact: Brooks Davis <brooks@FreeBSD.org>  
-Contact: Edward Tomasz Napierala <trasz@FreeBSD.org>  
-Contact: George Neville-Neil <gnn@FreeBSD.org>  
-Contact: Jessica Clarke <jrtc27@FreeBSD.org>  
-Contact: John Baldwin <jhb@FreeBSD.org>  
-Contact: Robert Watson <rwatson@FreeBSD.org>  
-Contact: Ruslan Bukin <br@FreeBSD.org>  
+Contact: Alex Richardson <arichardson@FreeBSD.org>\
+Contact: Andrew Turner <andrew@FreeBSD.org>\
+Contact: Brooks Davis <brooks@FreeBSD.org>\
+Contact: Edward Tomasz Napierala <trasz@FreeBSD.org>\
+Contact: George Neville-Neil <gnn@FreeBSD.org>\
+Contact: Jessica Clarke <jrtc27@FreeBSD.org>\
+Contact: John Baldwin <jhb@FreeBSD.org>\
+Contact: Robert Watson <rwatson@FreeBSD.org>\
+Contact: Ruslan Bukin <br@FreeBSD.org>\
 
 ### CheriBSD Status ###
 
