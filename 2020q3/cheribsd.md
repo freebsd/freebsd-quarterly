@@ -15,7 +15,7 @@ Contact: John Baldwin <jhb@FreeBSD.org>
 Contact: Robert Watson <rwatson@FreeBSD.org>  
 Contact: Ruslan Bukin <br@FreeBSD.org>  
 
-### CheriBSD Status ###
+### CheriBSD Status ###
 
 CheriBSD extends FreeBSD to implement memory protection and software
 compartmentalization features supported by the CHERI instruction-set
