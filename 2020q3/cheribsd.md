@@ -53,8 +53,6 @@ protection from use-after-reallocation bugs with an average cost below
 2%.  We aim to bring these overheads down further over the next year and
 merge this functionality into the mainline CheriBSD.
 
-- Co-process support (XXX possibly?)
-
 - Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) our
 completed port of bhyve to AArch64, various bug fixes and tweaks for PCIe
 support, and support for the System MMU (SMMU) that will be present on the
