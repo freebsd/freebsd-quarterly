@@ -72,5 +72,5 @@ Notable changes include promotion of CHERI-RISC-V to non-experimental
 and discussion of Arm's Morello prototype.
 
 - We have developed a set of [Adversarial CHERI Exercises and
-Missions](https://ctsrd-cheri.github.io/cheri-exercises/#adversarial-cheri-exercises-and-missions)
-to introduce security researchers to CHERI protections.
+Missions](https://ctsrd-cheri.github.io/cheri-exercises) to introduce security
+researchers to CHERI protections.
