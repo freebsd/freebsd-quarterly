@@ -23,6 +23,17 @@ experimental Morello processor (due late 2021).  CheriBSD is a research
 operating system with a stable baseline implementation into which
 various new research features have been, or are currently being, merged:
 
+- Arm Morello - We are preparing to open source our adaptation of
+CheriBSD to Arm's Morello architecture.  The Morello branch is being
+updated to the most recent CheriBSD baseline, and patches are in review
+for upstreaming to our open-source repository.  CheriBSD currently boots
+and runs statically linked CheriABI binaries on the Morello simulator,
+and dynamic linking support is in progress, with OS and toolchain bugs
+being worked on.  We aim to make a first CheriBSD/Morello snapshot
+available alongside other open-source Morello software in mid-October
+2020\.  However, our target for a more mature and usable implementation
+is December 2020.
+
 - Kernel spatial memory safety (pure-capability kernel) - The current
 CheriBSD kernel is a hybrid C program where pointers to userspace
 are CHERI capabilities. This ensures that the kernel follows the
@@ -41,17 +52,6 @@ we have implemented a light weight revocation framework providing
 protection from use-after-reallocation bugs with an average cost below
 2%.  We aim to bring these overheads down further over the next year and
 merge this functionality into the mainline CheriBSD.
-
-- Arm Morello - We are preparing to open source our adaptation of
-CheriBSD to Arm's Morello architecture.  The Morello branch is being
-updated to the most recent CheriBSD baseline, and patches are in review
-for upstreaming to our open-source repository.  CheriBSD currently boots
-and runs statically linked CheriABI binaries on the Morello simulator,
-and dynamic linking support is in progress, with OS and toolchain bugs
-being worked on.  We aim to make a first CheriBSD/Morello snapshot
-available alongside other open-source Morello software in mid-October
-2020\.  However, our target for a more mature and usable implementation
-is December 2020.
 
 - Co-process support (XXX possibly?)
 
