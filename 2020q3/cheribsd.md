@@ -35,7 +35,7 @@ available alongside other open-source Morello software in mid-October
 is December 2020.
 
 - Kernel spatial memory safety (pure-capability kernel) - The current
-CheriBSD kernel is a hybrid C program where pointers to userspace
+CheriBSD kernel is a hybrid C program where only pointers to userspace
 are CHERI capabilities. This ensures that the kernel follows the
 intent of the application runtime and can not be used to defeat
 bounds on application pointers. We have developed and will soon
