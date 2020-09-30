@@ -5,16 +5,16 @@ Link:	 [Wiki](https://wiki.freebsd.org/BuildingOnNonFreeBSD)
 Contact: Alex Richardson <arichardson@freebsd.org>  
 
 Until recently FreeBSD could only be built on a FreeBSD host.
-However, most free CI tools only allow building on Linux or macOS and therefore
-can not be used for building the FreeBSD base system. Furthermore, it is
-sometimes useful to cross-build FreeBSD for a remote machine or an emulator
+However, many popular free CI tools only allow building on Linux or macOS and
+therefore can not be used for building the FreeBSD base system. Furthermore, it
+is sometimes useful to cross-build FreeBSD for a remote machine or an emulator
 even if the build machine is not running FreeBSD.
 The goal of this project is to allow building the base system on Linux and macOS
 hosts.
 
 I started this project in 2017 to allow building
 [CheriBSD](https://github.com/CTSRD-CHERI/cheribsd) on the Linux servers and
-desktops that many of us working on the [CHERI project](http://www.cheri-cpu.com)
+desktops that many of us working on the [CHERI project](http://www.cheri-cpu.org)
 use. The first few patches were upstreamed in 2018 (see the 2018q3 report) and
 I merged the full set of patches to CheriBSD shortly after. Over the past two
 years I have slowly been upstreaming the remaining patches and finally comitted
