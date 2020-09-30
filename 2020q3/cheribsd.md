@@ -33,7 +33,14 @@ appropriately bounded capabilities. This spatial memory safety lays the
 groundwork for future work such as device driver compartmentalization
 and kernel temporal safety.
 
-- Userspace heap temporal memory safety (Cornucopia)
+- Userspace heap temporal memory safety (Cornucopia) - CHERI
+capabilities provide the necessary features to enable
+robust and efficient revocation of freed pointers.  With
+[Cornucopia](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
+we have implemented a light weight revocation framework providing
+protection from use-after-reallocation bugs with an average cost below
+2%.  We aim to bring these overheads down further over the next year and
+merge this functionality into the mainline CheriBSD.
 
 - Arm Morello - We are preparing to open source our adaptation of
 CheriBSD to Arm's Morello architecture.  The Morello branch is being
