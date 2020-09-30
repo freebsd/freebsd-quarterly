@@ -37,7 +37,7 @@ is December 2020.
 - Kernel spatial memory safety (pure-capability kernel) - The current
 CheriBSD kernel is a hybrid C program where only pointers to userspace
 are CHERI capabilities. This ensures that the kernel follows the
-intent of the application runtime and can not be used to defeat
+intent of the application runtime and cannot be used to defeat
 bounds on application pointers. We have developed and will soon
 merge a pure-capability kernel where all pointers in the kernel are
 appropriately bounded capabilities. This vastly reduces the opportunity
