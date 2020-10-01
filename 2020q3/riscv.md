@@ -6,7 +6,7 @@ Contact: Mitchell Horne <mhorne@FreeBSD.org>
 Contact: [freebsd-riscv Mailing List](https://lists.FreeBSD.org/mailman/listinfo/freebsd-riscv)  
 Contact: IRC #freebsd-riscv on freenode  
 
-The _FreeBSD/RISC-V_ project is providing support for running FreeBSD on the
+The FreeBSD/RISC-V project is providing support for running FreeBSD on the
 [RISC-V Instruction Set Architecture](https://riscv.org/).
 
 This quarter saw several important bug fixes. A number of hangs in the system
