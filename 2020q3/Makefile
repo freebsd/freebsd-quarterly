@@ -12,7 +12,7 @@ TeamReports=
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects=
+Projects= lua.md
 
 # Changes affecting the base system and programs in it
 Userland= 
