@@ -25,8 +25,8 @@ failing builds and unstable tests and work with the experts in that area to
 fix the codes or adjust test infrastructure.  The details of these efforts
 are available in the [weekly CI reports](https://hackmd.io/@FreeBSD-CI).
 
-During the third quarter of 2020, we continue working with the contributors and
-developers in the project to fulfill their testing needs and also keep
+During the third quarter of 2020, we continued working with the contributors and
+developers in the project to fulfil their testing needs and also keep
 collaborating with external projects and companies to improve their products
 and FreeBSD.
 
@@ -46,10 +46,10 @@ Important changes:
    soon. Feedback and help with analysis is very appreciated!
 
   * A builder dedicated to run jobs using provisioned VMs is setup, this
-    improves the stableness and reduces the exeuction time.
+    improves the stableness and reduces the execution time,
 
   * The result of [FreeBSD-head-amd64-test_zfs](https://ci.freebsd.org/job/FreeBSD-head-amd64-test_zfs)
-    is changed after OpenZFS importing, we encouage everyone check and fix the
+    is changed after OpenZFS importing, we encourage everyone check and fix the
     failing and skipped test cases.
 
 New jobs added:
@@ -57,22 +57,22 @@ New jobs added:
 
 Work in progress:
   * Collecting and sorting CI tasks and ideas
-    [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
+    [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo),
   * Testing and merging pull requests in the
-    [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls)
-  * Designing and implementing pre-commit CI building and testing
-  * Reduce the procedures of CI/test environment setting up for contriburos and
-    developers.
-  * Setting up the CI stage environment and putting the experimental jobs on it
-  * Setting up public network access for the VM guest running tests
-  * Implementing automatic tests on bare metal hardware
-  * Adding drm ports building tests against -CURRENT
-  * Planning to run ztest and network stack tests
-  * Adding more external toolchain related jobs
-  * Improving the hardware lab to be more mature and adding more hardware
-  * Helping more 3rd software get CI on FreeBSD through a hosted CI solution
-  * Working with hosted CI providers to have better FreeBSD support
+    [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls),
+  * Designing and implementing pre-commit CI building and testing,
+  * Reduce the procedures of CI/test environment setting up for contributors and
+    developers,
+  * Setting up the CI stage environment and putting the experimental jobs on it,
+  * Setting up public network access for the VM guest running tests,
+  * Implementing automatic tests on bare metal hardware,
+  * Adding drm ports building tests against -CURRENT,
+  * Planning to run ztest and network stack tests,
+  * Adding more external toolchain related jobs,
+  * Improving the hardware lab to be more mature and adding more hardware,
+  * Helping more 3rd software get CI on FreeBSD through a hosted CI solution,
+  * Working with hosted CI providers to have better FreeBSD support.
 
-Please see freebsd-testing@ related tickets for more WIP information, and don't hesistate to join the effort!
+Please see freebsd-testing@ related tickets for more WIP information, and don't hesitate to join the effort!
 
 Sponsor: The FreeBSD Foundation
