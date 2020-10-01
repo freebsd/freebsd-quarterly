@@ -14,7 +14,7 @@ technical debt. This project aims to bring LLDB closer to a fully
 featured replacement for GDB, and therefore for FreeBSD to feature a
 modern debugger for software developers.
 
-The legacy monolithic target support executed the application being
+The legacy monolithic target supports the executed application being
 debugged in the same process space as the debugger. The modern LLDB
 plugin approach, used on other supported targets, executes the
 target process under a separate lldb-server process. This improves
@@ -22,16 +22,16 @@ reliability and simplifies the process / thread model in LLDB itself.
 In addition, remote and local debugging will both be performed using
 the same approach.
 
-After the migration to the new process model is complete the project
+After the migration to the new process model is complete, the project
 will include reviewing the results of LLDB's test suite and fixing
-tests as time permits. The work will complete in 2020.
+tests as time permits. The work is expected to be complete in 2020.
 
-The Project Schedule is divided into three milestones, each taking approximately
+The project schedule is divided into three milestones, each taking approximately
 one month:
 
- * M1 Introduce new FreeBSD Remote Process Plugin for x86_64 with basic support and upstream to LLVM.
- * M2 Ensure and add the mandated features in the project (process launch, process attach (pid), process attach (name), userland core files, breakpoints, watchpoints, threads, remote debugging) for FreeBSD/amd64 and FreeBSD/i386.
- * M3 Iterate over the LLDB tests. Detect and as time permits fix bugs. Ensure bug reports for each non-fixed and known problem. Add missing man pages and update the FreeBSD Handbook.
+ 1. Introduce new FreeBSD Remote Process Plugin for x86_64 with basic support and upstream to LLVM,
+ 2. Ensure and add the mandated features in the project (process launch, process attach (pid), process attach (name), userland core files, breakpoints, watchpoints, threads, remote debugging) for FreeBSD/amd64 and FreeBSD/i386,
+ 3. Iterate over the LLDB tests. Detect, and as time permits, fix bugs. Ensure bug reports for each non-fixed and known problem. Add missing man pages and update the FreeBSD Handbook.
 
 We are nearing the completion of the first milestone. The new plugin is getting into
 shape, and it can already run simple single-threaded programs. The supported features
