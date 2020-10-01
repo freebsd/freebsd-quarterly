@@ -12,21 +12,20 @@ even if the build machine is not running FreeBSD.
 The goal of this project is to allow building the base system on Linux and macOS
 hosts.
 
-I started this project in 2017 to allow building
-[CheriBSD](https://github.com/CTSRD-CHERI/cheribsd) on the Linux servers and
-desktops that many of us working on the [CHERI project](http://www.cheri-cpu.org)
-use. The first few patches were upstreamed in 2018 (see the 2018q3 report) and
+I started this project in 2017 to allow building [CheriBSD](https://github.com/CTSRD-CHERI/cheribsd) on the Linux servers
+and desktops that many of us working on the [CHERI project](http://www.cheri-cpu.org) use.
+The first few patches were upstreamed in 2018 (see the 2018q3 report) and
 I merged the full set of patches to CheriBSD shortly after. Over the past two
-years I have slowly been upstreaming the remaining patches and finally comitted
+years I have slowly been upstreaming the remaining patches and finally committed
 the last required change in time for this report.
 
 As of September 2020 it should be possible to use the `buildworld` and
 `buildkernel` make targets to build a fully-functional FreeBSD installation
-on macOS and Linux hosts. We use this in our continuos integration system to
+on macOS and Linux hosts. We use this in our continuous integration system to
 build and test CheriBSD disk images for multiple architectures.
-I have also committed a [GitHub Actions](https://github.com/features/actions)
-configuration upstream that takes approximately 10 minutes to build an amd64
-kernel. This will ensure that changes that break crossbuilding from Linux/macOS
+I have also committed a [GitHub Actions](https://github.com/features/actions) configuration upstream
+that takes approximately 10 minutes to build an amd64 kernel. 
+This will ensure that changes that break crossbuilding from Linux/macOS
 can be detected easily.
 
 Upstreaming the crossbuilding changes has resulted in various build system
