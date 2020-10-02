@@ -26,13 +26,13 @@ fix the codes or adjust test infrastructure.  The details of these efforts
 are available in the [weekly CI reports](https://hackmd.io/@FreeBSD-CI).
 
 During the third quarter of 2020, we continued working with the contributors and
-developers in the project to fulfil their testing needs and also keep
+developers in the project to fulfill their testing needs and also keep
 collaborating with external projects and companies to improve their products
 and FreeBSD.
 
 Important changes:
- * All !x86 -test builds now trigger a new build on 22:00 UTC daily, this was
-   not running very often because of running all the tests in qemu takes lots
+ * All !x86 -test builds now trigger a new build on 22:00 UTC daily; this was
+   not running very often because running all the tests in qemu takes lots
    of time.  The work on improving the test execution speed and parallelism is
    in progress.  The list of the jobs is following:
    * https://ci.freebsd.org/job/FreeBSD-head-armv7-test/
@@ -49,7 +49,7 @@ Important changes:
     improves the stableness and reduces the execution time,
 
   * The result of [FreeBSD-head-amd64-test_zfs](https://ci.freebsd.org/job/FreeBSD-head-amd64-test_zfs)
-    is changed after OpenZFS importing, we encourage everyone check and fix the
+    is changed after OpenZFS importing; we encourage everyone to check and fix the
     failing and skipped test cases.
 
 New jobs added:
