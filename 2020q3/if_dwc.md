@@ -11,6 +11,6 @@ The driver was updated with following fixes:
   * Sense media type and adjust controller configuration accordingly
   * Add support RMII PHY mode
 
-Yet uncommitted changes include performance optimization by adding
-support for multi-segment mbuf transmition. The next step is to
-try to get more performance boost by using interrupt coalescense.
+Yet uncommitted changes include performance optimisation by adding
+support for multi-segment mbuf transmission. The next step is to
+try to get more performance boost by using interrupt coalescence.
