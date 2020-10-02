@@ -1,6 +1,7 @@
 ## Linux compatibility layer update ##
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
+Contact: Mark Johnston, <markj@FreeBSD.org>
 
 Earlier Linuxulator work focused on code cleanups and improving
 diagnostic tools.
@@ -16,11 +17,15 @@ a devfs(5) workaround to fix gettynam(3) inside jail/chroot, and
 workaround for the missing splice(2) syscall, which caused problems
 for grep and autotools. The Linux version reported to userspace was bumped
 to 3.10.0, which matches the kernel shipped with RHEL 7 and is neccessary
-for DB2 installation to succeed.  The BLKPBSZGET ioctl neccessary for
-Oracle is supported now.  There were also more cleanups, including moving
+for IBM's DB2 database installation to succeed.  The BLKPBSZGET ioctl neccessary for
+Oracle database is supported now.  There is now support for kcov(4),
+neccessary for syzcaller; as well as a number of fixes for issues
+reported by syzcaller, such as futex lock leaks.
+There were also more cleanups, including moving
 some Linuxulator-specific functionality related to error handling off
-from the syscall's fast code paths.  The sysutils/debootstrap was updated
-to a newer version; finally there were some improvements
+from the syscall's fast code paths.  The sysutils/debootstrap port,
+which provides an easy way to create Debian or Ubuntu jail, was updated
+to version 1.0.123.  Finally there were some improvements
 to [documentation](https://wiki.freebsd.org/LinuxJails).
 
 Most of those changes have been merged to FreeBSD 12-STABLE, in order
@@ -28,9 +33,8 @@ to ship with 12.2-RELEASE.
 
 There is increased involvement from other developers; this includes termios
 performance fixes, improved memfd support, implementing `CLOCK_MONOTONIC_RAW`
-required for Steam, madvise improvements, or new `compat.linux.use_emul_path`
-sysctl; support for kcov, neccessary for syzcaller, and fixes to problems
-found with syzcaller related to futex locking.  There is also ongoing work
+required for Steam, madvise improvements, new `compat.linux.use_emul_path`
+sysctl.  There is also ongoing work
 on tracking down the causes of failures related to Steam and WebKit, with
 fixes being first implemented in
 [linuxulator-steam-utils](https://github.com/shkhln/linuxulator-steam-utils/wiki/Compatibility).
