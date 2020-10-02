@@ -57,12 +57,16 @@ protection from use-after-reallocation bugs with an average cost below
 2%.  We aim to bring these overheads down further over the next year and
 merge this functionality into the mainline CheriBSD.
 
-- Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) our
-completed port of bhyve to AArch64, various bug fixes and tweaks for PCIe
-support, and support for the System MMU (SMMU) that will be present on the
-N1SDP and Morello SoCs.  We have upstreamed support for cross-building
-FreeBSD from macOS and Linux (with some limitations; see separate report on
-crossbuilding).  We have also fixed implementation bugs in the RISC-V ABI.
+- We have working on updating the arm64 bhyve from Politehnica University
+of Bucharest to have it committed to FreeBSD. We have been upstreaming
+initial changes to help support this.
+
+- Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) various
+bug fixes and tweaks for PCIe support, and support for the System MMU (SMMU)
+that will be present on the N1SDP and Morello SoCs.  We have upstreamed
+support for cross-building FreeBSD from macOS and Linux (with some
+limitations; see separate report on crossbuilding).  We have also fixed
+implementation bugs in the RISC-V ABI.
 
 ### CHERI Documentation and Exercises ###
 
