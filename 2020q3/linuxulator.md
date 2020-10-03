@@ -6,8 +6,7 @@ Contact: Mark Johnston, <markj@FreeBSD.org>
 Earlier Linuxulator work focused on code cleanups and improving
 diagnostic tools.
 Work has now shifted from cleanups to fixing actual applications.
-Current status is being tracked at
-[Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
+Current status is being tracked at [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
 Initial focus was on applications that don't involve X11, mostly
 because they tend to be easier to test and debug, and the bug fixes
 are not application-specific.
@@ -26,7 +25,7 @@ some Linuxulator-specific functionality related to error handling off
 from the syscall's fast code paths.  The sysutils/debootstrap port,
 which provides an easy way to create Debian or Ubuntu jail, was updated
 to version 1.0.123.  Finally there were some improvements
-to [documentation](https://wiki.freebsd.org/LinuxJails).
+to the [documentation](https://wiki.freebsd.org/LinuxJails).
 
 Most of those changes have been merged to FreeBSD 12-STABLE, in order
 to ship with 12.2-RELEASE.
@@ -36,7 +35,6 @@ performance fixes, improved memfd support, implementing `CLOCK_MONOTONIC_RAW`
 required for Steam, madvise improvements, new `compat.linux.use_emul_path`
 sysctl.  There is also ongoing work
 on tracking down the causes of failures related to Steam and WebKit, with
-fixes being first implemented in
-[linuxulator-steam-utils](https://github.com/shkhln/linuxulator-steam-utils/wiki/Compatibility).
+fixes being first implemented in [linuxulator-steam-utils](https://github.com/shkhln/linuxulator-steam-utils/wiki/Compatibility).
 
 Sponsor: The FreeBSD Foundation
