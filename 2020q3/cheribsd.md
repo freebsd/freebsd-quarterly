@@ -57,9 +57,9 @@ protection from use-after-reallocation bugs with an average cost below
 2%.  We aim to bring these overheads down further over the next year and
 merge this functionality into the mainline CheriBSD.
 
-- We have working on updating the arm64 bhyve from Politehnica University
-of Bucharest to have it committed to FreeBSD. We have been upstreaming
-initial changes to help support this.
+- We have been working on updating the arm64 bhyve from Politehnica
+University of Bucharest to have it committed to FreeBSD. We have been
+upstreaming initial changes to help support this.
 
 - Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) various
 bug fixes and tweaks for PCIe support, and support for the System MMU (SMMU)
