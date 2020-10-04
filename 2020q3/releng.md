@@ -26,7 +26,7 @@ builds currently planned, and RC3 scheduled on an as-needed basis.  The
 In addition to the 12.2-RELEASE, Glen Barber of the Release Engineering
 Team finished work to the release build tools and scripts to prepare for
 the conversion from Subversion to Git for the 13.0-RELEASE cycle.  There
-are no plans to merge these changes to stable branches at this time, as
+are no plans to merge these changes to stable branches at this time; as
 discussed within the Git working group, we feel such a change on a stable
 branch would be too intrusive to our user base as well as downstream
 FreeBSD consumers.  Development snapshot builds for 13.0-CURRENT have
@@ -37,9 +37,9 @@ Additionally throughout the quarter, several development snapshots builds
 were released for the *head*, *stable/12*, and *stable/11* branches.
 
 Finally, the Release Engineering Team would like to thank Marius Strobl
-for his time serving on the team, who had recently stepped down from the
+for his time serving on the team; he had recently stepped down from the
 Deputy RE Lead role due to constraints on his time.  The Team welcomes
-Colin Percival to the Team, who has accepted fulfilling this role.
+Colin Percival, who has accepted fulfilling this role.
 
 Much of this work was sponsored by Rubicon Communications, LLC (netgate.com)
 and the FreeBSD Foundation.

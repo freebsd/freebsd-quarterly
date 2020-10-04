@@ -8,9 +8,9 @@ Contact: Ankur Kothiwal <ankur@freebsd.org>
 The eBPF eXpress Data Path (XDP) allows eBPF programs to be run to filter
 received packets as early as possible, avoiding unnecessary processing
 overhead before the filter is run. The goal of this project is to extend an
-existing FreeBSD network driver (a virtual NIC like a VirtIO if_vtnet ) to
+existing FreeBSD network driver (a virtual NIC like a VirtIO if_vtnet) to
 be able to call into an eBPF program when processing a newly received
-packet. In short, XDP the driver must PASS (accept and process normally), DROP,
+packet. In short, with XDP the driver must PASS (accept and process normally), DROP,
 TX or REDIRECT the packet as specified by the program. eBPF helper
 functions and maps for aiding in packet filtering will also be
 implemented.
