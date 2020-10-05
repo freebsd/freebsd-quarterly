@@ -27,7 +27,7 @@ Architectures= riscv.md cheri.md
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
-Documentation= 
+Documentation= docng.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
