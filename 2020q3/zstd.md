@@ -20,7 +20,7 @@ Completed milestones in this project:
   * Importing ZSTD 1.4.5 into OpenZFS, using the recent upstream zstd features that make it easier to embed zstd in other projects,
   * Changing the way compression levels are tracked and inherited,
   * Save and restore the compression level via an embedded block header,
-  * Also store the version of zstd used in the embedded block header, for future proofing. The checksum of a block may not match if zstd is upgraded, since it may compress the block more,
+  * Also store the version of zstd used in the embedded block header, for future-proofing. The checksum of a block may not match if zstd is upgraded, since it may compress the block more,
   * Add tests to ensure zstd compression and metadata survive ZFS replication,
   * Resolve possible negative interactions with L2ARC and ZFS Native Encryption,
   * Fix bug with L2ARC if the Compressed ARC feature is disabled,
