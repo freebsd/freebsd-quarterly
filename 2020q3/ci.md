@@ -34,12 +34,12 @@ Important changes:
  * All !x86 -test builds now trigger a new build on 22:00 UTC daily; this was
    not running very often because running all the tests in qemu takes lots
    of time.  The work on improving the test execution speed and parallelism is
-   in progress.  The list of the jobs is following:
-   * https://ci.freebsd.org/job/FreeBSD-head-armv7-test/
-   * https://ci.freebsd.org/job/FreeBSD-head-aarch64-test/
-   * https://ci.freebsd.org/job/FreeBSD-head-mips64-test/
-   * https://ci.freebsd.org/job/FreeBSD-head-powerpc64-test/
-   * https://ci.freebsd.org/job/FreeBSD-head-riscv64-test/
+   in progress.  The following is a list of the jobs affected:
+   * [Test build for FreeBSD HEAD on ARMv7](https://ci.freebsd.org/job/FreeBSD-head-armv7-test/).
+   * [Test build for FreeBSD HEAD on AArch64](https://ci.freebsd.org/job/FreeBSD-head-aarch64-test/).
+   * [Test build for FreeBSD HEAD on MIPS64](https://ci.freebsd.org/job/FreeBSD-head-mips64-test/).
+   * [Test build for FreeBSD HEAD on PowerPC64](https://ci.freebsd.org/job/FreeBSD-head-powerpc64-test/).
+   * [Test build for FreeBSD HEAD on RISC-V64](https://ci.freebsd.org/job/FreeBSD-head-riscv64-test/).
 
  * The build and test results will be sent to the
    [dev-ci mailing list](https://lists.freebsd.org/mailman/listinfo/dev-ci)
