@@ -24,19 +24,19 @@ If you have a chance please test before the release.
 
 In the last three months the athp(4) port of the ath10k driver has progressed
 well.  Adrian reports the following important changes:
- * Per-node transmit buffering was implemented, required for correct hostap
-and QCA6174 behaviour,
- * Issues with ignoring sending some management frames got fixed; null-data
-frames were being filtered out and this caused undesirable hostap behaviour,
- * Transmit path refactoring reduced code duplication,
- * A fix on firmware start / VAP running tracking no longer stops
-the first VAP from coming active after VAP creation / ifconfig up,
- * Correcting hostap mode PHY configuration now allows non-VHT stations to
- associate and correctly exchange data with a VHT AP,
- * Addition of a crypto key configuration cache in the driver ensures the
-ieee80211_key details are available after the key is deleted; net80211
-would reuse or free the state before the driver task would finish the
-firmware command.
+  * Per-node transmit buffering was implemented, required for correct hostap
+  and QCA6174 behaviour.
+  * Issues with ignoring sending some management frames got fixed; null-data
+  frames were being filtered out and this caused undesirable hostap behaviour.
+  * Transmit path refactoring reduced code duplication.
+  * A fix on firmware start / VAP running tracking no longer stops
+  the first VAP from coming active after VAP creation / ifconfig up.
+  * Correcting hostap mode PHY configuration now allows non-VHT stations to
+  associate and correctly exchange data with a VHT AP.
+  * Addition of a crypto key configuration cache in the driver ensures the
+  ieee80211_key details are available after the key is deleted; net80211
+  would reuse or free the state before the driver task would finish the
+  firmware command.
 
 ### Newer Intel Wireless device support ###
 

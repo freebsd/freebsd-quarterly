@@ -49,8 +49,8 @@ capabilities on the VXLAN interface.  Use https://bugs.freebsd.org/bugzilla/
 to report bugs.
 
 Future work:
-* Direct call into a vxlan input routine from the driver's receive routine.
-* LRO support in if_vxlan(4).
-* GENEVE support.
+  * Direct call into a vxlan input routine from the driver's receive routine.
+  * LRO support in if_vxlan(4).
+  * GENEVE support.
 
 Sponsor: Chelsio Communications

@@ -46,31 +46,31 @@ Important changes:
    soon. Feedback and help with analysis is very appreciated!
 
   * A builder dedicated to run jobs using provisioned VMs is setup, this
-    improves the stableness and reduces the execution time,
+    improves the stableness and reduces the execution time.
 
   * The result of [FreeBSD-head-amd64-test_zfs](https://ci.freebsd.org/job/FreeBSD-head-amd64-test_zfs)
     is changed after OpenZFS importing; we encourage everyone to check and fix the
     failing and skipped test cases.
 
 New jobs added:
- * https://ci.freebsd.org/job/FreeBSD-head-powerpc64le-build/
+  * [CI build for FreeBSD HEAD on PowerPC64LE](https://ci.freebsd.org/job/FreeBSD-head-powerpc64le-build/).
 
 Work in progress:
   * Collecting and sorting CI tasks and ideas
-    [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo),
+    [here](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo).
   * Testing and merging pull requests in the
-    [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls),
+    [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls).
   * Designing and implementing pre-commit CI building and testing,
   * Reduce the procedures of CI/test environment setting up for contributors and
-    developers,
-  * Setting up the CI stage environment and putting the experimental jobs on it,
-  * Setting up public network access for the VM guest running tests,
-  * Implementing automatic tests on bare metal hardware,
-  * Adding drm ports building tests against -CURRENT,
-  * Planning to run ztest and network stack tests,
-  * Adding more external toolchain related jobs,
-  * Improving the hardware lab to be more mature and adding more hardware,
-  * Helping more 3rd software get CI on FreeBSD through a hosted CI solution,
+    developers.
+  * Setting up the CI stage environment and putting the experimental jobs on it.
+  * Setting up public network access for the VM guest running tests.
+  * Implementing automatic tests on bare metal hardware.
+  * Adding drm ports building tests against -CURRENT.
+  * Planning to run ztest and network stack tests.
+  * Adding more external toolchain related jobs.
+  * Improving the hardware lab to be more mature and adding more hardware.
+  * Helping more 3rd software get CI on FreeBSD through a hosted CI solution.
   * Working with hosted CI providers to have better FreeBSD support.
 
 Please see freebsd-testing@ related tickets for more WIP information, and don't hesitate to join the effort!

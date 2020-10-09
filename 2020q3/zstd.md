@@ -17,13 +17,13 @@ was completed in the upstream OpenZFS repository, and the new
 OpenZFS 2.0 codebase was imported into 13-CURRENT.
 Completed milestones in this project:
 
-  * Importing ZSTD 1.4.5 into OpenZFS, using the recent upstream zstd features that make it easier to embed zstd in other projects,
-  * Changing the way compression levels are tracked and inherited,
-  * Save and restore the compression level via an embedded block header,
-  * Also store the version of zstd used in the embedded block header, for future-proofing. The checksum of a block may not match if zstd is upgraded, since it may compress the block more,
-  * Add tests to ensure zstd compression and metadata survive ZFS replication,
-  * Resolve possible negative interactions with L2ARC and ZFS Native Encryption,
-  * Fix bug with L2ARC if the Compressed ARC feature is disabled,
+  * Importing ZSTD 1.4.5 into OpenZFS, using the recent upstream zstd features that make it easier to embed zstd in other projects.
+  * Changing the way compression levels are tracked and inherited.
+  * Save and restore the compression level via an embedded block header.
+  * Also store the version of zstd used in the embedded block header, for future-proofing. The checksum of a block may not match if zstd is upgraded, since it may compress the block more.
+  * Add tests to ensure zstd compression and metadata survive ZFS replication.
+  * Resolve possible negative interactions with L2ARC and ZFS Native Encryption.
+  * Fix bug with L2ARC if the Compressed ARC feature is disabled.
   * Improve the ZFS feature activation code, so that zstd cannot create pools that will panic older versions of ZFS.
 
 With these changes, upgraded pools can compress data with zstd

@@ -29,9 +29,9 @@ tests as time permits. The work is expected to be complete in 2020.
 The project schedule is divided into three milestones, each taking approximately
 one month:
 
- 1. Introduce new FreeBSD Remote Process Plugin for x86_64 with basic support and upstream to LLVM,
- 2. Ensure and add the mandated features in the project (process launch, process attach (pid), process attach (name), userland core files, breakpoints, watchpoints, threads, remote debugging) for FreeBSD/amd64 and FreeBSD/i386,
- 3. Iterate over the LLDB tests. Detect, and as time permits, fix bugs. Ensure bug reports for each non-fixed and known problem. Add missing man pages and update the FreeBSD Handbook.
+  1. Introduce new FreeBSD Remote Process Plugin for x86_64 with basic support and upstream to LLVM.
+  2. Ensure and add the mandated features in the project (process launch, process attach (pid), process attach (name), userland core files, breakpoints, watchpoints, threads, remote debugging) for FreeBSD/amd64 and FreeBSD/i386.
+  3. Iterate over the LLDB tests. Detect, and as time permits, fix bugs. Ensure bug reports for each non-fixed and known problem. Add missing man pages and update the FreeBSD Handbook.
 
 We are nearing the completion of the first milestone. The new plugin is getting into
 shape, and it can already run simple single-threaded programs. The supported features

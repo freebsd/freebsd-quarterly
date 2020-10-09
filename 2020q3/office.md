@@ -15,7 +15,6 @@ LibreOffice suite and companion apps to all FreeBSD users.
 
   * Alongside with updating old stable branch to latest 6.4.x releases, 
   current ports-tree now have a full-featured cutting-edge 7.0.1 bundle.  
-
   * Conservative users can keep 6.4.x stable version by switching to use 
   all-in-one editors/libreoffice6 port and even with i18n language pack (off by default). 
   It will be kept updated at least till 7.1.0 version is released.  

@@ -16,10 +16,10 @@ system. Other benefits of using Hugo is that we can use other
 technologies aside from AsciiDoctor, like MarkDown, RST, Pandoc, etc.
 
 The remaining tasks include:
-- Finish the conversion of some books to AsciiDoctor,
-- Get some tweaks in the CSS to be responsive,
-- Add AsciiDoctor extensions to create an index of tables and figures,
-- Make a general review.
+  * Finish the conversion of some books to AsciiDoctor.
+  * Get some tweaks in the CSS to be responsive.
+  * Add AsciiDoctor extensions to create an index of tables and figures.
+  * Make a general review.
 
 The dates for making the migration have yet to be discussed.
 

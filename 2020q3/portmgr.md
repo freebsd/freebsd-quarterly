@@ -31,7 +31,7 @@ Xorg to 1.20.9, Qt5 to 5.15.0, Emacs to 27.1, KDE Frameworks to
 
 Never tired, antoine@ ran 30 exp-runs to test port version updates,
 on such diverse matters as:
- - Updating byacc in base to 20200330,
- - Check balancing of sed "y" command,
- - Use of brackets, 
- - Removing the now redundant "port" argument from USES=readline.
+  * Updating byacc in base to 20200330.
+  * Check balancing of sed "y" command.
+  * Use of brackets.
+  * Removing the now redundant "port" argument from USES=readline.

@@ -18,11 +18,11 @@ contact to discuss other project ideas.  To name a couple of potential
 projects, some interesting modules that have not been started but could
 prove useful (listed in no particular order):
 
- - libcrypt
- - libexpat
- - libnv
- - libxo
+  * libcrypt
+  * libexpat
+  * libnv
+  * libxo
 
 There is also a small list of scripts that would do well with a port to flua:
 
- - certctl(8)
+  * certctl(8)
