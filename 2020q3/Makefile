@@ -8,22 +8,22 @@ YEAR?=		2020
 QUARTER?=	3
 
 # Entries from the various official and semi-official teams
-TeamReports= clusteradm.md releng.md ci.md portmgr.md office.md
+TeamReports= releng.md clusteradm.md ci.md portmgr.md office.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= lua.md crossbuilding.md nfsovertls.md azure.md linuxulator.md lldb.md
+Projects= azure.md crossbuilding.md linuxulator.md lldb.md lua.md nfsovertls.md
 
 # Changes affecting the base system and programs in it
-Userland= kde.md 
+Userland= 
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= vxlan.md wifi.md drm.md dts.md if_dwc.md ebpf.md ena.md esn.md ls1046.md powerpc64le.md
+Kernel= drm.md dts.md if_dwc.md ebpf.md ena.md esn.md ls1046.md powerpc64le.md ure_update.md vxlan.md wifi.md zstd.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures= riscv.md cheri.md
+Architectures= cheribsd.md riscv.md
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
@@ -31,7 +31,7 @@ Documentation= docng.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= grub-bhyve.md
+Ports= grub-bhyve.md kde.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
