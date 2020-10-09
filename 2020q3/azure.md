@@ -1,6 +1,6 @@
 ## FreeBSD on Microsoft HyperV and Azure ##
 
-Link: [MicrosoftAzure article on FreeBSD wiki](https://wiki.freebsd.org/MicrosoftAzure)  
+Link: [Microsoft Azure article on FreeBSD wiki](https://wiki.freebsd.org/MicrosoftAzure)  
 Link: [Microsoft HyperV article on FreeBSD wiki](https://wiki.freebsd.org/HyperV)  
 
 Contact: FreeBSD Integration Services Team <bsdic@microsoft.com>  
