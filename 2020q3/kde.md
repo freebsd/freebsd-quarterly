@@ -21,20 +21,20 @@ was conducted online over video calls.
 Meanwhile, software continues to be released,
 so this quarter the kde@ team:
 
-  * put the beta of the next version of KDE Plasma, scheduled for 
+  * Put the beta of the next version of KDE Plasma, scheduled for 
   official release in October 2020, into the 
   [Area51 development](https://community.kde.org/FreeBSD/Setup/Area51) tree.
   Area51 is a fork of the FreeBSD ports tree where new development for
   KDE ports happens.
-  * the monthly regular updates to the KDE Plasma desktop landed on-time
+  * The monthly regular updates to the KDE Plasma desktop landed on-time
   and safely.
-  * with three months in a quarter, there were also three releases of
+  * With three months in a quarter, there were also three releases of
   KDE Frameworks 5, including a new framework for handling DAV jobs.
-  * the June applications update and its .1 release landed a bit late,
+  * The June applications update and its .1 release landed a bit late,
   but brings with it the usual raft of updates to KDE applications and libraries,
-  * a new [Digikam](https://www.digikam.org/) release, which arrived in
+  * A new [Digikam](https://www.digikam.org/) release, which arrived in
   the ports tree on the day of its release.
-  * a new [KDevelop](https://www.kdevelop.org/) release arrived a day
+  * A new [KDevelop](https://www.kdevelop.org/) release arrived a day
   after its release. This update contains a number of crash fixes
   for refactoring support.
   * Qt was updated to Qt 5.15, the last in the Qt5 series and an LTS
