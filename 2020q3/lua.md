@@ -5,9 +5,9 @@ Contact: Kyle Evans <kevans@FreeBSD.org>
 Contact: Ryan Moeller <freqlabs@FreeBSD.org>
 
 During this quarter, flua (FreeBSD Lua) [was taught](https://svnweb.freebsd.org/base/?view=revision&revision=r364182)
-where to find base .lua modules in order to support **require** of .lua modules
+where to find base .lua modules in order to support `require` of .lua modules
 to be provided by the base system.  flua also [gained support](https://svnweb.freebsd.org/base/?view=revision&revision=r364222)
-for **require** of binary modules.
+for `require` of binary modules.
 
 A review for [libjail bindings](https://reviews.freebsd.org/D26080) has also
 been submitted, pending review.  libjail is an essential component if one wants
