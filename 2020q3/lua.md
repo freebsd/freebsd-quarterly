@@ -1,4 +1,4 @@
-## Lua Usage in FreeBSD ##
+## Lua usage in FreeBSD ##
 
 Contact: Ed Maste <emaste@FreeBSD.org>  
 Contact: Kyle Evans <kevans@FreeBSD.org>  
