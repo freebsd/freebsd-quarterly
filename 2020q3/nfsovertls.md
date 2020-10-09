@@ -32,7 +32,8 @@ handshake may optionally handle client X.509 certificates from a
 site local CA. There are now exports(5) options to require client(s) to
 provide a valid X.509 certificate.
 
-[The code is now available for testing](https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt). Setting up system(s) for testing is still a little awkward.
+While setting up system(s) for testing is still a little awkward, 
+[the documentation is now available for those who want to help with testing](https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt).
 
 The main limitation in the current implementation is that it uses TLS1.2
 and not TLS1.3. This should change once the KERN_TLS rx patch includes
