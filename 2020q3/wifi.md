@@ -57,6 +57,4 @@ Bjoern lately also got a brcmfmac PCIe card and started to port support for
 that.
 This for the moment remains a free-time project.
 
-Work by Bjoern was sponsored by:
-Sponsor: Rubicon Communications, LLC (d/b/a "Netgate")
-Sponsor: The FreeBSD Foundation
+Work by Bjoern was sponsored by: Rubicon Communications, LLC (d/b/a "Netgate") and The FreeBSD Foundation
