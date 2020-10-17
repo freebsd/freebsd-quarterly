@@ -37,13 +37,12 @@ Libraries such as `libdrm` and `libevdev` which includes new FreeBSD support
 developed by team members and added upstream.
 
 There has also been ongoing work to keep the various drm-kmod ports and packages
-up to date, mostly in response to changes in varios FreeBSD versions.
+up to date, mostly in response to changes in various FreeBSD versions.
 
 We have also continued our regularly scheduled bi-weekly meetings.
 
 People who are interested in helping out can find us on the x11@FreeBSD.org
-mailing list, or on our gitter chat: (https://gitter.im/FreeBSDDesktop/Lobby).
+mailing list, or on our [gitter chat](https://gitter.im/FreeBSDDesktop/Lobby).
 We are also available in #freebsd-xorg on EFNet.
 
-We also have a team area on GitHub where our work repositories can be found:
-(https://github.com/FreeBSDDesktop)
+We also have a team area [on GitHub](https://github.com/FreeBSDDesktop) where our work repositories can be found.
