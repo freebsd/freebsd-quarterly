@@ -8,11 +8,11 @@ YEAR?=		2020
 QUARTER?=	3
 
 # Entries from the various official and semi-official teams
-TeamReports= releng.md clusteradm.md ci.md portmgr.md office.md
+TeamReports= releng.md clusteradm.md ci.md portmgr.md office.md graphics.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= azure.md crossbuilding.md linuxulator.md lldb.md lua.md nfsovertls.md
+Projects= azure.md crossbuilding.md linuxulator.md lldb.md lua.md nfsovertls.md syzkaller.md
 
 # Changes affecting the base system and programs in it
 Userland= 
