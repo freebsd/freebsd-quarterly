@@ -113,7 +113,7 @@ assurance efforts for the FreeBSD project.
 
 During the third quarter of 2020, Foundation staff continued improving and
 monitoring the Project's CI infrastructure, and working with experts to fix
-the failing builds and the regressions found by tests.  The seting up of
+the failing builds and the regressions found by tests.  The setting up of
 dedicated VM host for running tests is completed.  New feature developments
 and the CI staging environment is in progress.  We are also working with
 other teams in the Project for their testing needs. For example, tests of
@@ -137,15 +137,15 @@ located.
 
 Some of the purchases we made for the Project last quarter to support
 infrastructure includes:
-- Spamhaus spam filtering software to limit the amount of spam on the mailing
-  lists
-- 5 application servers to run tasks like bugzilla, wiki, website, cgi,
-  phabricator, host git, etc.
-- 1 server to replace the old pkg server and will provide a lot more IOPS to
-  avoid the slowdowns seen during peak times of the day where the disks just
-  cannot keep up with the request volume.
-- 1 server for exp-runs and make them faster.
-- 1 server to build packages more frequently
+ - Spamhaus spam filtering software to limit the amount of spam on the mailing
+   lists
+ - 5 application servers to run tasks like bugzilla, wiki, website, cgi,
+   Phabricator, host git, etc.
+ - 1 server to replace the old pkg server and will provide a lot more IOPS to
+   avoid the slowdowns seen during peak times of the day where the disks just
+   cannot keep up with the request volume.
+ - 1 server for exp-runs and make them faster.
+ - 1 server to build packages more frequently
 
 ### FreeBSD Advocacy and Education ###
 
@@ -164,43 +164,43 @@ and to facilitate collaboration between developers and commercial users.  This
 all helps provide a healthy ecosystem.  We support the non-FreeBSD events to
 promote and raise awareness of FreeBSD, to increase the use of FreeBSD in
 different applications, and to recruit more contributors to the Project.  As is
-the case for most of us in this industry, Covid-19 has put our in-person events
+the case for most of us in this industry, COVID-19 has put our in-person events
 on hold.  In addition to attending virtual events, we are continually working
 on new training initiatives and updating our selection of how-to guides to
 facilitate getting more folks to try out FreeBSD.
 
 Check out some of the advocacy and education work we did last quarter:
-- Launched our FreeBSD Fridays series of 101 classes.  Topics included an
-  Introduction to FreeBSD, FreeBSD Installfest, Introduction to Security,
-  Introduction to ZFS and more.  Videos of the past sessions and a schedule of
-  upcoming events can be found [here](https://freebsdfoundation.org/freebsd-fridays/).
-- Attended and presented at OSI's State of the Source conference.  The event
-  was held virtually, September 9-11, 2020
-- Launched the
-  [redesign](https://freebsdfoundation.org/blog/weve-got-a-new-look/)
-  of the FreeBSD Foundation Website
-- [Announced](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-foundation-celebrates-20th-anniversary/)
-  the 20th Anniversary of the FreeBSD Foundation.
-- Participated as an Admin for Google Summer of Code 2020
-- Continued to promote the FreeBSD Office Hours series including holding our
-  own Foundation led office hours.  Videos from the one hour sessions can be
-  found on the Project's
-  [YouTube Channel](https://www.youtube.com/c/FreeBSDProject).  You can watch
-  ours [here](https://www.youtube.com/watch?v=Ji4ux4FWpRU).
-- [Interviewed](https://freebsdfoundation.org/blog/freebsd-core-team-10-in-review/)
-  members of the outgoing FreeBSD Core Team to get their thoughts on their
-  term.
-- Began working with the FreeBSD Vendor Summit planning committee on the
-  [November 2020 Vendor Summit](https://wiki.freebsd.org/DevSummit/202011).
-- Promoted the Foundation's 20th Anniversary and our work to support the
-  FreeBSD Project in the It's FOSS Article
-  [FreeBSD Foundation Celebrates 20 Years of Promoting and Supporting FreeBSD Project](https://itsfoss.com/freebsd-foundation-20-years/).
-- Authored a [Beginners Guide to FreeBSD](https://www.fosslife.org/beginners-guide-freebsd) for Fosslife.
-- Committed to sponsoring All Things Open as a media Sponsor
-- Committed to sponsoring the OpenZFS Developers Summit at the Bronze level.
-- Became an International RISC-V Member
-- Committed to giving a FreeBSD talk at the nerdear.la conference on
-  October 20th.
+ - Launched our FreeBSD Fridays series of 101 classes.  Topics included an
+   Introduction to FreeBSD, FreeBSD Installfest, Introduction to Security,
+   Introduction to ZFS and more.  Videos of the past sessions and a schedule of
+   upcoming events can be found [here](https://freebsdfoundation.org/freebsd-fridays/).
+ - Attended and presented at OSI's State of the Source conference.  The event
+   was held virtually, September 9-11, 2020
+ - Launched the
+   [redesign](https://freebsdfoundation.org/blog/weve-got-a-new-look/)
+   of the FreeBSD Foundation Website
+ - [Announced](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-foundation-celebrates-20th-anniversary/)
+   the 20th Anniversary of the FreeBSD Foundation.
+ - Participated as an Admin for Google Summer of Code 2020
+ - Continued to promote the FreeBSD Office Hours series including holding our
+   own Foundation led office hours.  Videos from the one hour sessions can be
+   found on the Project's
+   [YouTube Channel](https://www.youtube.com/c/FreeBSDProject).  You can watch
+   ours [here](https://www.youtube.com/watch?v=Ji4ux4FWpRU).
+ - [Interviewed](https://freebsdfoundation.org/blog/freebsd-core-team-10-in-review/)
+   members of the outgoing FreeBSD Core Team to get their thoughts on their
+   term.
+ - Began working with the FreeBSD Vendor Summit planning committee on the
+   [November 2020 Vendor Summit](https://wiki.freebsd.org/DevSummit/202011).
+ - Promoted the Foundation's 20th Anniversary and our work to support the
+   FreeBSD Project in the It's FOSS Article
+   [FreeBSD Foundation Celebrates 20 Years of Promoting and Supporting FreeBSD Project](https://itsfoss.com/freebsd-foundation-20-years/).
+ - Authored a [Beginners Guide to FreeBSD](https://www.fosslife.org/beginners-guide-freebsd) for Fosslife.
+ - Committed to sponsoring All Things Open as a media Sponsor
+ - Committed to sponsoring the OpenZFS Developers Summit at the Bronze level.
+ - Became an International RISC-V Member
+ - Committed to giving a FreeBSD talk at the nerdear.la conference on
+   October 20th.
 
 Keep up to date with our latest work in our
 [monthly newsletters](https://www.freebsdfoundation.org/news-and-events/newsletter/).
