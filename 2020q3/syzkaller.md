@@ -8,7 +8,7 @@ introduction to syzkaller.
 syzkaller, especially the public syzbot instance, continues to find bugs
 in the FreeBSD kernel.  A number of these bugs have been fixed in
 subsystems such as the VFS name cache, the TCP and SCTP stacks, pf(4),
-the unix domain socket implementation and the Linuxulator.
+the unix domain socket implementation, and the Linuxulator.
 
 The FreeBSD Foundation sponsored some work to enable cross-OS fuzzing.
 This makes it possible to fuzz the Linuxulator using syzkaller's Linux
