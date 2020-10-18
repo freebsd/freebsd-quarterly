@@ -33,7 +33,7 @@ This change will be in the upcoming FreeBSD 12.2 release.
 
 There have also been several updates to various libraries, both in the graphics
 and input stacks, and several userland drivers have been updated.
-Libraries such as `libdrm` and `libevdev` which includes new FreeBSD support
+Libraries such as `libdrm` and `libevdev` now include new FreeBSD support,
 developed by team members and added upstream.
 
 There has also been ongoing work to keep the various drm-kmod ports and packages

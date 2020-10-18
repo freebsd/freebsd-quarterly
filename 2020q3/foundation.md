@@ -81,7 +81,7 @@ Staff members also worked on a number of larger projects, including:
  - Run-Time Dynamic Linker (rtld) and kernel ELF loader improvements
  - Rewritten UNIX domain socket locking
  - Build infrastructure
- - Open system call path handling support for O_BENEATH, O_RESLOVE_BENEATH
+ - Open system call path handling support for O_BENEATH, O_RESOLVE_BENEATH
  - arm64 support
  - Migration to a Git repository
 
