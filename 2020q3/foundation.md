@@ -67,23 +67,23 @@ and share with your companies!
 
 A number of FreeBSD Foundation grant recipients started, continued working on,
 or completed projects during the third quarter.  These include:
- - Ongoing WiFi and Linux KPI layer improvements
- - Linuxulator application compatibility
- - DRM / Graphics driver updates
- - Zstd compression for OpenZFS
- - Online RAID-Z expansion
- - Modernized LLDB target support for FreeBSD
+ - Ongoing WiFi and Linux KPI layer improvements.
+ - Linuxulator application compatibility.
+ - DRM / Graphics driver updates.
+ - Zstd compression for OpenZFS.
+ - Online RAID-Z expansion.
+ - Modernized LLDB target support for FreeBSD.
 
 You can find more details about most of these projects in other quarterly
 reports.
 
 Staff members also worked on a number of larger projects, including:
- - Run-Time Dynamic Linker (rtld) and kernel ELF loader improvements
- - Rewritten UNIX domain socket locking
- - Build infrastructure
- - Open system call path handling support for O_BENEATH, O_RESOLVE_BENEATH
- - arm64 support
- - Migration to a Git repository
+ - Run-Time Dynamic Linker (rtld) and kernel ELF loader improvements.
+ - Rewritten UNIX domain socket locking.
+ - Build infrastructure.
+ - Open system call path handling support for O_BENEATH, O_RESOLVE_BENEATH.
+ - arm64 support.
+ - Migration to a Git repository.
 
 Many of these projects also have detailed entries in other quarterly report
 entries.
@@ -138,14 +138,14 @@ located.
 Some of the purchases we made for the Project last quarter to support
 infrastructure includes:
  - Spamhaus spam filtering software to limit the amount of spam on the mailing
-   lists
+   lists.
  - 5 application servers to run tasks like bugzilla, wiki, website, cgi,
    Phabricator, host git, etc.
  - 1 server to replace the old pkg server and provide a lot more IOPS to
    avoid the slowdowns seen during peak times of the day where the disks just
-   cannot keep up with the request volume
- - 1 server for exp-runs to make them faster
- - 1 server to build packages more frequently
+   cannot keep up with the request volume.
+ - 1 server for exp-runs to make them faster.
+ - 1 server to build packages more frequently.
 
 ### FreeBSD Advocacy and Education ###
 
@@ -175,10 +175,10 @@ Check out some of the advocacy and education work we did last quarter:
    Introduction to ZFS and more.  Videos of the past sessions and a schedule of
    upcoming events can be found [here](https://freebsdfoundation.org/freebsd-fridays/).
  - Attended and presented at OSI's State of the Source conference.  The event
-   was held virtually, September 9-11, 2020
+   was held virtually, September 9-11, 2020.
  - Launched the
    [redesign](https://freebsdfoundation.org/blog/weve-got-a-new-look/)
-   of the FreeBSD Foundation Website
+   of the FreeBSD Foundation Website.
  - [Announced](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-foundation-celebrates-20th-anniversary/)
    the 20th Anniversary of the FreeBSD Foundation.
  - Participated as an Admin for Google Summer of Code 2020
@@ -193,12 +193,12 @@ Check out some of the advocacy and education work we did last quarter:
  - Began working with the FreeBSD Vendor Summit planning committee on the
    [November 2020 Vendor Summit](https://wiki.freebsd.org/DevSummit/202011).
  - Promoted the Foundation's 20th Anniversary and our work to support the
-   FreeBSD Project in the It's FOSS Article
+   FreeBSD Project in the It's FOSS Article.
    [FreeBSD Foundation Celebrates 20 Years of Promoting and Supporting FreeBSD Project](https://itsfoss.com/freebsd-foundation-20-years/).
  - Authored a [Beginners Guide to FreeBSD](https://www.fosslife.org/beginners-guide-freebsd) for Fosslife.
- - Committed to sponsoring All Things Open as a media Sponsor
+ - Committed to sponsoring All Things Open as a media Sponsor.
  - Committed to sponsoring the OpenZFS Developers Summit at the Bronze level.
- - Became an International RISC-V Member
+ - Became an International RISC-V Member.
  - Committed to giving a FreeBSD talk at the nerdear.la conference on
    October 20th.
 
