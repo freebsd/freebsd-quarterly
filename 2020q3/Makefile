@@ -19,7 +19,7 @@ Userland=
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= drm.md dts.md if_dwc.md ebpf.md ena.md esn.md ls1046.md powerpc64le.md ure_update.md vxlan.md wifi.md zstd.md
+Kernel= drm.md dts.md if_dwc.md ebpf.md ena.md esn.md ls1046.md powerpc64le.md ure-update.md vxlan.md wifi.md zstd.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
