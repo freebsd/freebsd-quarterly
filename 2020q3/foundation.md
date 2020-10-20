@@ -141,10 +141,10 @@ infrastructure includes:
    lists
  - 5 application servers to run tasks like bugzilla, wiki, website, cgi,
    Phabricator, host git, etc.
- - 1 server to replace the old pkg server and will provide a lot more IOPS to
+ - 1 server to replace the old pkg server and provide a lot more IOPS to
    avoid the slowdowns seen during peak times of the day where the disks just
-   cannot keep up with the request volume.
- - 1 server for exp-runs and make them faster.
+   cannot keep up with the request volume
+ - 1 server for exp-runs to make them faster
  - 1 server to build packages more frequently
 
 ### FreeBSD Advocacy and Education ###
