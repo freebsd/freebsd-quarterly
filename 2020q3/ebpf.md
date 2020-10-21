@@ -16,27 +16,27 @@ functions and maps for aiding in packet filtering will also be
 implemented.
 
 Implemented:
-  1. Register a eBPF probe when an interface is registered with pfil.
-  2. Activating eBPF probe.
-  3. Create hooks and link them to the pfil head when the eBPF XDP probe is
-  activated and successfully list the XDP probes.
-  4. Create a xdp_rx function which will pass the received packets to the
-  eBPF program where the packets can be further processed. This function will
-  return XDP actions: DROP and PASS.
-  5. Register the xdp hook and link it to the pfil head.
-  6. Write an eBPF program to process (currently drop and pass) ICMP traffic -
-  This is to test that the hook is working properly.
-  7. Write a loader function to load the ICMP filter program to the kernel.
+ * Register a eBPF probe when an interface is registered with pfil.
+ * Activating eBPF probe.
+ * Create hooks and link them to the pfil head when the eBPF XDP probe is
+ activated and successfully list the XDP probes.
+ * Create a xdp_rx function which will pass the received packets to the
+ eBPF program where the packets can be further processed. This function will
+ return XDP actions: DROP and PASS.
+ * Register the xdp hook and link it to the pfil head.
+ * Write an eBPF program to process (currently drop and pass) ICMP traffic -
+ This is to test that the hook is working properly.
+ * Write a loader function to load the ICMP filter program to the kernel.
 
 Future Work:
-  * Currently we can only attach the XDP hook to PASS and DROP the packets -
-The work on detaching the hook is left.
-  * The XDP action to “TX” and “REDIRECT” the packets.
+ * Currently we can only attach the XDP hook to PASS and DROP the packets -
+ The work on detaching the hook is left.
+ * The XDP action to “TX” and “REDIRECT” the packets.
 
 Final Deliverables:
-  * Implemented XDP hook to pass and drop packets.
-  * Created a loader program to attach the eBPF program to the kernel.
-  * A test program to DROP ICMP filter.
+ * Implemented XDP hook to pass and drop packets.
+ * Created a loader program to attach the eBPF program to the kernel.
+ * A test program to DROP ICMP filter.
 
 This code was done under the Google Summer of Code 2020 under the guidance
 of Ryan Stone (rstone@). The eBPF implementation for FreeBSD

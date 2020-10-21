@@ -26,54 +26,54 @@ experimental Morello processor (due late 2021).  CheriBSD is a research
 operating system with a stable baseline implementation into which
 various new research features have been, or are currently being, merged:
 
-  * Arm Morello - We are preparing to open source our adaptation of
-CheriBSD to Arm's Morello architecture.  The Morello branch is being
-updated to the most recent CheriBSD baseline, and patches are in review
-for upstreaming to our open-source repository.  CheriBSD currently boots
-and runs statically linked CheriABI binaries on the Morello simulator,
-and dynamic linking support is in progress, with OS and toolchain bugs
-being worked on.  We aim to make a first CheriBSD/Morello snapshot
-available alongside other open-source Morello software in mid-October
-2020, however, our target for a more mature and usable implementation is
-December 2020.
+ * Arm Morello - We are preparing to open source our adaptation of
+ CheriBSD to Arm's Morello architecture.  The Morello branch is being
+ updated to the most recent CheriBSD baseline, and patches are in review
+ for upstreaming to our open-source repository.  CheriBSD currently boots
+ and runs statically linked CheriABI binaries on the Morello simulator,
+ and dynamic linking support is in progress, with OS and toolchain bugs
+ being worked on.  We aim to make a first CheriBSD/Morello snapshot
+ available alongside other open-source Morello software in mid-October
+ 2020, however, our target for a more mature and usable implementation is
+ December 2020.
 
-  * Kernel spatial memory safety (pure-capability kernel) - The current
-CheriBSD kernel is a hybrid C program where only pointers to userspace
-are CHERI capabilities. This ensures that the kernel follows the
-intent of the application runtime and cannot be used to defeat
-bounds on application pointers. We have developed and will soon
-merge a pure-capability kernel where all pointers in the kernel are
-appropriately bounded capabilities. This vastly reduces the opportunity
-for buffer overflows. This spatial memory safety lays the
-groundwork for future work such as device driver compartmentalization
-and kernel temporal safety.
+ * Kernel spatial memory safety (pure-capability kernel) - The current
+ CheriBSD kernel is a hybrid C program where only pointers to userspace
+ are CHERI capabilities. This ensures that the kernel follows the
+ intent of the application runtime and cannot be used to defeat
+ bounds on application pointers. We have developed and will soon
+ merge a pure-capability kernel where all pointers in the kernel are
+ appropriately bounded capabilities. This vastly reduces the opportunity
+ for buffer overflows. This spatial memory safety lays the
+ groundwork for future work such as device driver compartmentalization
+ and kernel temporal safety.
 
-  * Userspace heap temporal memory safety (Cornucopia) - CHERI
-capabilities provide the necessary features to enable
-robust and efficient revocation of freed pointers.  With [Cornucopia](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
-we have implemented a light-weight revocation framework providing
-protection from use-after-reallocation bugs with an average cost below
-2%.  We aim to bring these overheads down further over the next year and
-merge this functionality into the mainline CheriBSD.
+ * Userspace heap temporal memory safety (Cornucopia) - CHERI
+ capabilities provide the necessary features to enable
+ robust and efficient revocation of freed pointers.  With [Cornucopia](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
+ we have implemented a light-weight revocation framework providing
+ protection from use-after-reallocation bugs with an average cost below
+ 2%.  We aim to bring these overheads down further over the next year and
+ merge this functionality into the mainline CheriBSD.
 
-  * We have been working on updating the arm64 bhyve from Politehnica
-University of Bucharest to have it committed to FreeBSD. We have been
-upstreaming initial changes to help support this.
+ * We have been working on updating the arm64 bhyve from Politehnica
+ University of Bucharest to have it committed to FreeBSD. We have been
+ upstreaming initial changes to help support this.
 
-  * Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) various
-bug fixes and tweaks for PCIe support, and support for the System MMU (SMMU)
-that will be present on the N1SDP and Morello SoCs.  We have upstreamed
-support for cross-building FreeBSD from macOS and Linux (with some
-limitations; see separate entry on crossbuilding).  We have also fixed
-implementation bugs in the RISC-V ABI.
+ * Baseline FreeBSD improvements - We are upstreaming (to FreeBSD) various
+ bug fixes and tweaks for PCIe support, and support for the System MMU (SMMU)
+ that will be present on the N1SDP and Morello SoCs.  We have upstreamed
+ support for cross-building FreeBSD from macOS and Linux (with some
+ limitations; see separate entry on crossbuilding).  We have also fixed
+ implementation bugs in the RISC-V ABI.
 
 ### CHERI Documentation and Exercises ###
 
-  * We have released [Capability Hardware Enhanced RISC Instructions: CHERI
-Instruction-Set Architecture (Version 8)](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-951.pdf).
-Notable changes include promotion of CHERI-RISC-V to non-experimental
-and discussion of Arm's Morello prototype.
+ * We have released [Capability Hardware Enhanced RISC Instructions: CHERI
+ Instruction-Set Architecture (Version 8)](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-951.pdf).
+ Notable changes include promotion of CHERI-RISC-V to non-experimental
+ and discussion of Arm's Morello prototype.
 
-  * We have developed a set of [Adversarial CHERI Exercises and
-Missions](https://ctsrd-cheri.github.io/cheri-exercises) to introduce security
-researchers to CHERI protections.
+ * We have developed a set of [Adversarial CHERI Exercises and
+ Missions](https://ctsrd-cheri.github.io/cheri-exercises) to introduce security
+ researchers to CHERI protections.
