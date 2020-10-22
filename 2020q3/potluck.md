@@ -4,7 +4,7 @@ Link:	 [Potluck Repository & Project](https://potluck.honeyguide.net/)
 Link:	 [Potluck on github](https://github.com/hny-gd/potluck)  
 Link:  [pot project](https://pot.pizzamig.dev)
 
-Contact: Stephan Lichtenauer &lt;sl@honeyguide.eu&gt;  
+Contact: Stephan Lichtenauer <sl@honeyguide.eu>  
 
 pot is a jail management tool that [also supports orchestration through nomad](https://www.freebsd.org/news/status/report-2020-01-2020-03.html#pot-and-the-nomad-pot-driver).
 
