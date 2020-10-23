@@ -1,4 +1,4 @@
-## Puppet
+## Puppet ##
 
 Link:    [Puppet](https://puppet.com/docs/puppet/latest/puppet_index.html)
 Link:    [Puppet's FreeBSD slack channel](https://puppetcommunity.slack.com/messages/C6CK0UGB1/)
