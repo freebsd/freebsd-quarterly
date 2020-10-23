@@ -43,4 +43,4 @@ Collated final reports are:
 
 The most recent report:
 
-* https://www.freebsd.org/news/status/report-2020-04-2020-06.html
+* https://www.freebsd.org/news/status/report-2020-07-2020-09.html
