@@ -18,7 +18,7 @@ You can tweak things afterwards. Simply edit, then submit another PR.
 Please do not worry excessively about language errors or Markdown
 syntax - we can correct things for you.
 
-#### Deadline for submissions for `2020q3`
+#### Deadline for submissions for `2020q4`
 
 31st of December 2020
 
