@@ -20,7 +20,7 @@ syntax - we can correct things for you.
 
 #### Deadline for submissions for `2020q3`
 
-1st of October 2020
+31st of December 2020
 
 Note that this is **immediately** after the end of the quarter.
 
