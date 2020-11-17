@@ -99,16 +99,16 @@ $quarter_specific_recipients{4} = [];
 
 $template_substitutions{1}{'%%START%%'}	=	'January';
 $template_substitutions{1}{'%%STOP%%'}	=	'March';
-$template_substitutions{1}{'%%DEADLINE%%'}	=	'April, 1st';
+$template_substitutions{1}{'%%DEADLINE%%'}	=	'March, 30th';
 $template_substitutions{2}{'%%START%%'}	=	'April';
 $template_substitutions{2}{'%%STOP%%'}	=	'June';
-$template_substitutions{2}{'%%DEADLINE%%'}	=	'July, 1st';
+$template_substitutions{2}{'%%DEADLINE%%'}	=	'June, 30th';
 $template_substitutions{3}{'%%START%%'}	=	'July';
 $template_substitutions{3}{'%%STOP%%'}	=	'September';
-$template_substitutions{3}{'%%DEADLINE%%'}	=	'October, 1st';
+$template_substitutions{3}{'%%DEADLINE%%'}	=	'September, 30th';
 $template_substitutions{4}{'%%START%%'}	=	'October';
 $template_substitutions{4}{'%%STOP%%'}	=	'December';
-$template_substitutions{4}{'%%DEADLINE%%'}	=	'January, 1st';
+$template_substitutions{4}{'%%DEADLINE%%'}	=	'December, 31st';
 
 $main::VERSION = "[not versioned]";
 $Getopt::Std::STANDARD_HELP_VERSION = 1;
