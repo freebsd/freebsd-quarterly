@@ -15,11 +15,11 @@ TeamReports=
 Projects= 
 
 # Changes affecting the base system and programs in it
-Userland= 
+Userland= ping.md
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= 
+Kernel= random-fx.md
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
@@ -38,6 +38,6 @@ Ports=
 ThirdParty= 
 
 # Objects that defy categorization
-Miscellaneous= 
+Miscellaneous= nfs-exporter.md
 
 .include <../tools/Makefile>
