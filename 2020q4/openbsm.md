@@ -9,12 +9,12 @@ Contact: Gordon Bergling <gbe@FreeBSD.org>
 
 OpenBSM is a crucial part of FreeBSD, which provides auditing features for
 the operating system. OpenBSM is incorporated into FreeBSD and macOS.
-Apple and FreeBSD have currently made changes to the OpenBSM framework,
+Both Apple and FreeBSD have currently made changes to the OpenBSM framework,
 which weren't be upstreamed. This small project aims to consolidated
 these changes and upstream them to the OpenBSM github repository, so that
 both development efforts can be merged to FreeBSD later on. The tricky part
-of this project is the manual comparison since Apple doesn't provide any
+of this project is the manual comparison, since Apple doesn't provide any
 changelogs.
 
-I am currently working on on the macOS Catalina sources and hopefully Apple will
-release the sources of macOS Big Sur in time for FreeBSD 13.
+I am currently working on on the macOS Catalina sources and hopefully Apple 
+will release the sources of macOS Big Sur in time for FreeBSD 13.
