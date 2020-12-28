@@ -1,5 +1,3 @@
-limits -m 8g -v 8g firefox --new-instance## Status Report Sample - This Will Become The Title ##
-
 Link:	 [FreshPorts](http://freshports.org/)  
 Link:	 [FreshPorts blog](http://news.freshports.org/)  
 
