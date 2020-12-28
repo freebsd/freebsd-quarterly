@@ -35,7 +35,7 @@ Ports=
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty= 
+ThirdParty= k8s-bhyve.md
 
 # Objects that defy categorization
 Miscellaneous= nfs-exporter.md
