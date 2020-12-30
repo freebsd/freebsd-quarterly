@@ -34,6 +34,6 @@ We had fun, we chased the things that are most useful to
 us, and got through the year. Here's to next year with
 actually **seeing** FreeBSD people again.
 
-I (adridg@) would like to especially thank Kai Knobich (kai@) for chasing Web Engine:
+I (adridg@) would like to especially thank Kai Knoblich (kai@) for chasing Web Engine:
 that's a huge and painful codebase to deal with, and here we
 are, all up-to-date.
