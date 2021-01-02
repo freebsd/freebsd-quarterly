@@ -1,7 +1,7 @@
-Link:	 [FreshPorts](http://freshports.org/)  
-Link:	 [FreshPorts blog](http://news.freshports.org/)  
+Link:	 [FreshPorts](http://freshports.org/)
+Link:	 [FreshPorts blog](http://news.freshports.org/)
 
-Contact: Dan Langille <dan@langille.org>  
+Contact: Dan Langille <dan@langille.org>
 
 FreshPorts, and its sister site, FreshSource, have reported
 upon FreeBSD commits for 20 years. They cover all commits,
@@ -16,19 +16,20 @@ the history of this port, back to its creation in May 2017.
 
 ### git ###
 
-The work to beome git-ready is mostly complete. Both src and doc commits are
+The work to become git-ready is mostly complete. Both src and doc commits are
 flowing into [devgit.freshports.org](https://devgit.freshports.org). Some
 work is required on various issues, but nothing that stops the flow of
 commits into the database.
 
 #### Help wanted ####
 
-I need help with AWS.  Amazon have donated enough to try FreshPorts on AWS.
+Amazon have donated enough to try FreshPorts on AWS. I need help with the
+following:
+
+  * getting IPv6 working
+  * working with [RDS](https://aws.amazon.com/rds/)
 
 If you can help with this, please contact me. Thank you.
-
-* getting IPv6 working
-* woring with  [RDS](https://aws.amazon.com/rds/)
 
 Thank you
 
