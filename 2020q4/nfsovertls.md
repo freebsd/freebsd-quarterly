@@ -23,9 +23,9 @@ All required changes to the NFS and kernel RPC code have
 been committed to the head/current kernel and will be in FreeBSD13.
 The daemons can now be built from a port that depends
 upon the security/openssl-devel port of Openssl3 that
-includes patches for support of the ktls.
+includes patches for support of ktls.
 The port for the daemons is called sysutils/nfs-over-tls
-and should be committed to /usr/ports soon.
+and should be committed to the ports framework soon.
 In the meantime, the port can easily be fetched,
 as described in
 https://people.freebsd.org/~rmacklem/nfs-over-tls-setup.txt.
@@ -52,4 +52,3 @@ and not TLS1.3, as required by the Internet Draft.
 This should change once the KERN_TLS rx patch includes TLS1.3 support.
 
 Third party testing would be appreciated.
-
