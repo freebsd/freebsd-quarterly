@@ -9,7 +9,7 @@ Contact: Puppet Team <puppet@FreeBSD.org>
 
 Since our last status report a few months ago, the FreeBSD ports tree
 has seen the addition of the Choria (sysutils/choria) orchestration
-tool, and the Puppet Plaform 7 with the Puppet Agent (sysutils/puppet7),
+tool, and the Puppet Platform 7 with the Puppet Agent (sysutils/puppet7),
 Puppet Server (sysutils/puppetserver7) and PuppetDB
 (databases/puppetdb7).
 
