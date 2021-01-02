@@ -44,5 +44,5 @@ To avoid the issue, upgrade the libexo package by itself before
 the rest of the packages, as described in UPDATING entry 20210102.
 
 Thanks also to riggs@, Olivier Duchateau <duchateau.olivier@gmail.com>,
-woodsb02@, sergey.dyatko@gmail.com, and ehaupt@ for their help and
+woodsb02@, Sergey Dyatko <sergey.dyatko@gmail.com>, and ehaupt@ for their help and
 contributions.
