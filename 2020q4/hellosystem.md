@@ -1,4 +1,4 @@
-## helloSystem: A desktop system with a focus on simplicity, elegance, and usability ##
+## helloSystem ##
 
 Link:	 [Documentation](https://hellosystem.github.io/docs/)
 
@@ -28,8 +28,6 @@ Prerelease installable Live ISO image are available.
 
 [Help is needed in a number of areas](https://github.com/helloSystem/hello/blob/master/CONTRIBUTING.md), especially:
 
-  * __FreeBSD/kernel__, e.g., allowing to put the system into a read-only disk image with a a writable overlay, e.g., using unionfs
-  * __Qt, Python__, e.g., writing various easy-to use frontends for FreeBSD/OpenZFS functionality, e.g., a Disk Utility
-  * __Testing and bugfixing__
-
-Sponsor: No Sponsoring Organisation
+  * FreeBSD/kernel: allowing to put the system into a read-only disk image with a writable overlay, e.g., using unionfs
+  * Qt, Python: writing various easy-to use frontends for FreeBSD/OpenZFS functionality, e.g., Disk Utility.app
+  * Testing and bugfixing
