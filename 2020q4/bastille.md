@@ -9,12 +9,12 @@ Contact: Christer Edwards <christer.edwards@gmail.com>
 ### What is Bastille? ###
 
 Bastille is an open-source system for automating deployment and management of
-containerized applications on FreeBSD.
+containerised applications on FreeBSD.
 
 Bastille Templates automate container setup allowing you to easily reproduce
 containers as needed.
 
-Bastille is available in ports at `sysutils/bastille`.
+Bastille is available in ports as `sysutils/bastille`.
 
 ### Q4 2020 Status ###
 
