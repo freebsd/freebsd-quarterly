@@ -17,7 +17,7 @@ on October 27.  Thank you to all involved for the hard work that went into
 this release.
 
 Additionally throughout the quarter, several development snapshots builds
-were released for the *head*, *stable/12*, and *stable/11* branches.
+were released for the head, stable/12, and stable/11 branches.
 Development snapshot builds for 13.0-CURRENT have recently been built from
 the Git tree within the project, while further snapshot builds for 12.x and
 11.x will continue to be built from Subversion.  As we approach the end of
