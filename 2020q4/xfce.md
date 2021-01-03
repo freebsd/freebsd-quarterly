@@ -22,7 +22,7 @@ Some of the highlights of this Xfce 4.16 release:
  * The Thunar file manager now supports pause for copy/move operations, and queued file transfer
  * Generating thumbnails for .epub (e-book format) was added to tumbler
  * A new default wallpaper
- * The applicaton finder now allows for sorting applications by "frecency" - a combination of frequency and recency
+ * The application finder now allows for sorting applications by "frecency" - a combination of frequency and recency
  * Dropped GTK2 support from all components and plugins
 
 For further details, refer to the [Xfce 4.16 upstream release announcement](https://xfce.org/about/news/?post=1608595200).
