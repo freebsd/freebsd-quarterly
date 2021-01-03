@@ -24,7 +24,7 @@ an interface for internet access, and an interface that is connected
 to the board's ethernet port (assuming it has one).  This allows a
 clean system for each run, and allows complete control over the network
 interfaces to support netbooting and other development.  The jail will
-have a basic set of FreeBSD installed that matches the board.
+have a basic set of FreeBSD packages installed that matches the board.
 
 Part of the API will also allow power cycling the board to aid in
 debugging.  This part is relatively extensible, so adding additional
@@ -42,10 +42,10 @@ Power control is functional, and is currently using a PoE smart switch
 to control power.
 
 Work has stalled on being able to use the [SDWire](https://wiki.tizen.org/SDWire)
-with a environment due to power issues.  USB is not made for power
+with an environment due to power issues.  USB is not made for power
 isolation, which is causing issues w/ power control.  The existing
 board, the A64-lTS, is using a USB serial console adapter that is
-opt-isolated ensuring that there is no problems w/ power control.  But
+optionally isolated, ensuring that there is no problems w/ power control.  But
 there I have not found a solution for high speed USB.  I believe that
 cutting the VBUS (power) line of a USB cable would allow fine grain
 power control, but tests have not been conducted yet.
