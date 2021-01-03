@@ -21,7 +21,7 @@ Some of the highlights of this Xfce 4.16 release:
  * The "Mime Settings" and "Preferred Applications" dialogs were merged into the "Default Applications" dialog
  * The Thunar file manager now supports pause for copy/move operations, and queued file transfer
  * Generating thumbnails for .epub (e-book format) was added to tumbler
- * A new default wallpaper
+ * A new default wallpaper and icon theme
  * The application finder now allows for sorting applications by "frecency" - a combination of frequency and recency
  * Dropped GTK2 support from all components and plugins
 
