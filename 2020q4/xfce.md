@@ -3,7 +3,8 @@
 Link:	 [Xfce 4.16 Upstream Release Announcement](https://xfce.org/about/news/?post=1608595200)  
 Link:	 [Xfce meta-port on FreshPorts](https://www.freshports.org/x11-wm/xfce4)  
 
-Contact: Guido Falsi <xfce@FreeBSD.org>  
+Contact: xfce@FreeBSD.org
+Contact: Guido Falsi <madpilot@FreeBSD.org>
 
 The FreeBSD Xfce team (xfce@) work to ensure the Xfce desktop environment
 is maintained and fully functional on FreeBSD.
