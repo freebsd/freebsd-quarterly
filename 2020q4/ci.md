@@ -50,7 +50,7 @@ Work in progress:
   * Testing and merging pull requests in the
     [the FreeBSD-ci repo](https://github.com/freebsd/freebsd-ci/pulls)
   * Designing and implementing pre-commit CI building and testing
-  * Reduce the procedures of CI/test environment setting up for contributors and
+  * Reducing the procedures of CI/test environment setting up for contributors and
     developers
   * Setting up the CI stage environment and putting the experimental jobs on it
   * Setting up public network access for the VM guest running tests
