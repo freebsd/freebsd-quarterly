@@ -16,22 +16,22 @@ platform.
 
 ### Q4 2020 Status ###
 
-* **11** languages (1 new language)
-* **116** registered users (69 new users since 2020q1)
+  * 11 languages (1 new language)
+  * 116 registered users (69 new users since 2020q1)
 
 #### Languages ####
 
-* Chinese (Simplified) (zh_CN)
-* Chinese (Traditional) (zh_TW)
-* Dutch (nl_NL) - **_Added_**
-* French (fr_FR)
-* German (de_DE)
-* Italian (it_IT)
-* Norwegian (nb_NO)
-* Persian (fa_IR)
-* Portuguese (pt_BR)
-* Spanish (es_ES)
-* Turkish (tr-TR)
+  * Chinese (Simplified) (zh_CN)
+  * Chinese (Traditional) (zh_TW)
+  * Dutch (nl_NL) - **_Added_**
+  * French (fr_FR)
+  * German (de_DE)
+  * Italian (it_IT)
+  * Norwegian (nb_NO)
+  * Persian (fa_IR)
+  * Portuguese (pt_BR)
+  * Spanish (es_ES)
+  * Turkish (tr-TR)
 
 We want to thank everyone that contributed, translating or reviewing documents.
 
