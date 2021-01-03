@@ -16,11 +16,11 @@ Link:   [D27764](https://reviews.freebsd.org/D27764)
 
 Contact: Kristof Provost, <kp@freebsd.org>
 
-pf's performance was not as good as it could be. Some investigation with the
+The performance of pf was not as good as it could be. Some investigation with the
 invaluable hwpmc tooling eventually pointed to very poor cache behaviour.
 The longest_lat_cache.miss event was very informative.
 
-This turned out to be due to pf's packet and byte counting in states, rules and
+This turned out to be due to pf doing packet and byte counting in states, rules and
 interfaces.
 
 The pf code took the very straightforward approach of having a simple uint64_t
@@ -39,23 +39,6 @@ This allows us to change the pf_krule structure, to change uint64_t to
 counter_u64_t, without affecting user space.
 
 Olivier Cochard-Labbé tested the full set of changes, and found (depending on
-hardware) substantial improvements in throughput:
-
-    x FreeBSD 20201223: inet packets-per-second
-    + FreeBSD 20201223 with pf patches: inet packets-per-second
-    +--------------------------------------------------------------------------+
-    |                                                                        + |
-    | xx                                                                     + |
-    |xxx                                                                    +++|
-    ||A|                                                                       |
-    |                                                                       |A||
-    +--------------------------------------------------------------------------+
-        N           Min           Max        Median           Avg        Stddev
-    x   5       9216962       9526356       9343902     9371057.6     116720.36
-    +   5      19427190      19698400      19502922      19546509     109084.92
-    Difference at 95.0% confidence
-            1.01755e+07 +/- 164756
-            108.584% +/- 2.9359%
-            (Student's t, pooled s = 112967)
+hardware) [substantial improvements in throughput](http://dev.bsdrp.net/benchs/kp/pf-patches/):
 
 Sponsor: Orange Business Services
