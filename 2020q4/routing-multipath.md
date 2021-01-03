@@ -25,19 +25,20 @@ Each route has a pointer to either nexthops or a nexthop group, decoupling looku
 
 ## Status
 
-1. Nexthop objects ([D24232](https://reviews.freebsd.org/D24232)) [ DONE ]
-	1. Introduction of nexthop objects [ DONE ]
-	2. Conversion of old KPI users to the new one [ DONE ]
-		1. Conversion of route caching to nexthop caching [ DONE ]
-	3. Conversion of struct `rtentry` field access to nhop field access [ DONE ]
-	4. Eliminating old lookup KPI and hiding struct rtentry [ DONE ]
+  * Nexthop objects ([D24232](https://reviews.freebsd.org/D24232)) [ DONE ]
+    * Introduction of nexthop objects [ DONE ]
+    * Conversion of old KPI users to the new one [ DONE ]
+      * Conversion of route caching to nexthop caching [ DONE ]
+    * Conversion of struct `rtentry` field access to nhop field access [ DONE ]
+    * Eliminating old lookup KPI and hiding struct rtentry [ DONE ]
 
-2. Multipath routing ([D26449](https://reviews.freebsd.org/D26449)) [ DONE ]
-	1. Switch control plane customers to use (rtentry, nexthop) pairs instead of rtentry to allow multipath changes happen transparently [ DONE ]
-	2. Introduce nexthop group objects [ DONE ]
-	3. Add mutipath support for the rib (routing information base) manipulation functions [ DONE ]
-	4. Add flowid generation for outbound traffic to enable load balancing [ DONE ]
-3. Routing daemon support
-	1. Add net/bird support for multipath routing [ NOT STARTED ]
-	2. Add explicit nexthop/nexthop groups control via rtsock [ IN POGRESS ]
-	3. Work with FRR developers to add nexthop-based route control [ NOT STARTED ]
+  * Multipath routing ([D26449](https://reviews.freebsd.org/D26449)) [ DONE ]
+    * Switch control plane customers to use (rtentry, nexthop) pairs instead of rtentry to allow multipath changes happen transparently [ DONE ]
+    * Introduce nexthop group objects [ DONE ]
+    * Add multipath support for the rib (routing information base) manipulation functions [ DONE ]
+    * Add flowid generation for outbound traffic to enable load balancing [ DONE ]
+
+  * Routing daemon support
+    * Add net/bird support for multipath routing [ NOT STARTED ]
+    * Add explicit nexthop/nexthop groups control via rtsock [ IN POGRESS ]
+    * Work with FRR developers to add nexthop-based route control [ NOT STARTED ]
