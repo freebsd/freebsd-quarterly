@@ -21,12 +21,12 @@ Bastille is available in ports as `sysutils/bastille`.
 In Q4 2020 Bastille merged some exciting new features. Changes include:
 
   * full adoption of the previously experimental Bastillefile format
-  * added `config` sub-command
+  * new `config` sub-command
   * default templates included and applied by default
   * support for -CURRENT jails on -CURRENT hosts
-  * support 32bit containers on 64bit hosts
-  * templates now support dynamic arguments & defining variables
-  * over two-dozen bug-fixes and general improvements
+  * support for 32bit containers on 64bit hosts
+  * support in templates for dynamic arguments & defining variables
+  * over two dozen bug fixes and general improvements
 
 More details about [Bastille Releases](https://github.com/BastilleBSD/bastille/releases).
 

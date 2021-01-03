@@ -25,6 +25,6 @@ Completed since the last update:
 Work in progress:
   * Introduce full kernel RSS API support.
   * Allow reconfiguration of the RSS indirection table and hash key
-  * Prototyping of the driver port to the iflib framework
+  * Prototype the driver port to the iflib framework
 
 Sponsor: Amazon.com Inc

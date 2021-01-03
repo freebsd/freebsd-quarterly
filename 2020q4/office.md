@@ -16,11 +16,11 @@ LibreOffice suite and companion apps to all FreeBSD users.
 Latest and quarterly ports branches got a series of updates of the LibreOffice suite 
 from 7.0.1 thru 7.0.4 releases, compilation patches for all Tier 1 architectures,
 and updates of all companion libraries. Some of our local and critical to build patches 
-was sent to and accepted by upstream.
+were sent to and accepted by upstream.
 
 Meanwhile, our WIP repository was moved to new home under official github.org/freebsd resources.
 
-The WIP repository also have a major updates with development versions of the LibreOffice suite,
+The WIP repository also has a major update with development versions of the LibreOffice suite,
 version 7.1.0.0.beta1 for now. Release will be planned in March, 2021.
 
 We are looking for people to help the project.

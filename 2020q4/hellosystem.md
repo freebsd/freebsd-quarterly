@@ -24,7 +24,7 @@ white text on a black background scroll by during system boot. Technologies embr
 include DNS-SD/Zeroconf (also known as Bonjour), IPP Everywhere (also known as AirPrint),
 eSCL (also known as AirScan), etc.
 
-Prerelease installable Live ISO image are available.
+Prerelease installable Live ISO images are available.
 
 [Help is needed in a number of areas](https://github.com/helloSystem/hello/blob/master/CONTRIBUTING.md), especially:
 
