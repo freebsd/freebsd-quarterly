@@ -21,4 +21,7 @@ well as topic suggestions. We also hope to improve the system to allow people
 to submit questions ahead of time, so that we can take maximum advantage of
 subject matter experts when we have them for these calls.
 
+You can find the schedule for future office hours, and videos of past
+office hours on the [FreeBSD Wiki](https://wiki.freebsd.org/OfficeHours)
+
 Sponsor: ScaleEngine Inc.
