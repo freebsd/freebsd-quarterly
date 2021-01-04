@@ -45,7 +45,7 @@ Work has stalled on being able to use the [SDWire](https://wiki.tizen.org/SDWire
 with an environment due to power issues.  USB is not made for power
 isolation, which is causing issues w/ power control.  The existing
 board, the A64-lTS, is using a USB serial console adapter that is
-optionally isolated, ensuring that there is no problems w/ power control.  But
+opto-isolated, ensuring that there is no problems w/ power control.  But
 there I have not found a solution for high speed USB.  I believe that
 cutting the VBUS (power) line of a USB cable would allow fine grain
 power control, but tests have not been conducted yet.
