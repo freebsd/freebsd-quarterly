@@ -20,8 +20,8 @@ actually tier-3, it has aspirations for tier-2.
 
   * Piotr Kubaj (pkubaj@) continues to make progress on bringing
     powerpc64 (big-endian) up to parity with amd64.  Almost everything
-    that is buildiable, now does so.  (e.g. the linux ports are excluded;
-    some of the graphics drivers are excluded).
+    that is buildable, now does so.  The Linux ports and some of the
+    graphics drivers are excluded.
 
   * Piotr has also begun the task of bringing powerpc64le (little-endian)
     up to parity with powerpc64.  Although several of the powerpc64 src
@@ -32,7 +32,7 @@ actually tier-3, it has aspirations for tier-2.
   * Mark Linimon (linimon@) has begun his own test-builds of ports on
     riscv64 just to ascertain overall buildability.  Surprisingly, many
     ports do indeed build.  Thanks to contributions from several people
-    already working on riscv64, including John Baldwin with an llvm fix,
+    already working on riscv64, including John Baldwin (jhb@) with an LLVM fix,
     we are now able to build 18732 packages.  NB: these packages are
     *unofficial* and not guaranteed.
 
