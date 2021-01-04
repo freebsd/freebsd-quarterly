@@ -45,5 +45,3 @@ Tasklist:
   * We need users of riscv64 to actually test the packages that have been
     built (so far, they have only been tested for buildability).  Contact
     linimon@ if you are interested.
-
-mcl
