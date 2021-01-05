@@ -33,8 +33,8 @@ although riscv64 is currently tier-3, it has aspirations for tier-2.
     riscv64 just to ascertain overall buildability.  Surprisingly, many
     ports do indeed build.  Thanks to contributions from several people
     already working on riscv64, including John Baldwin (jhb@) with an LLVM
-    fix, we are now able to build 18732 packages.  NB: these packages are
-    *unofficial* and not guaranteed.
+    fix, we are now able to build around 20,000 packages.  NB: these packages
+    are *unofficial* and not guaranteed.
 
   * Kyle Evans (kevans@)'s work on chasing bitrot in qemu has been key
     to work on both aarch64 and riscv64.  All users are encouraged to
