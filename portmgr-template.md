@@ -4,6 +4,7 @@ Link:	 [About FreeBSD Ports](https://www.FreeBSD.org/ports/)
 Link:	 [Contributing to Ports](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html)  
 Link:	 [FreeBSD Ports Monitoring](http://portsmon.freebsd.org/index.html)  
 Link:	 [Ports Management Team](https://www.freebsd.org/portmgr/index.html)  
+Link:    [Ports Tarball](http://ftp.freebsd.org/pub/FreeBSD/ports/ports/) 
 
 Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
 Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
