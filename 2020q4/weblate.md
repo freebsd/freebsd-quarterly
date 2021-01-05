@@ -23,7 +23,7 @@ platform.
 
   * Chinese (Simplified) (zh_CN)
   * Chinese (Traditional) (zh_TW)
-  * Dutch (nl_NL) - **_Added_**
+  * Dutch (nl_NL) - Added
   * French (fr_FR)
   * German (de_DE)
   * Italian (it_IT)
