@@ -15,7 +15,7 @@ such as the Raspberry Pi 4b (4GB and 8GB models). This new
 hypervisor is known as VMWare ESXi-ARM Fling.
 
 Since the release of ESXi-ARM Fling, work has been done on
-both the hypervisor as well as FreeBSD to make the two more
+both the hypervisor as well as FreeBSD, to make the two more
 compatible with one another. Even though the work was
 initially done to make these two work better together, the
 work overall has been more general purpose for FreeBSD
@@ -60,7 +60,7 @@ efi-fb/scfb is available for console and Xorg for the time
 being.
 
 The VMCI driver is currently not compiling at all. This
-driver has sections x86 assembly code that will need to be
+driver has sections of x86 assembly code that will need to be
 converted over to ARM. This would be a great area for
 anyone to look into that is experienced converting assembly
 language!
