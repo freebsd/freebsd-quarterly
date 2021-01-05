@@ -8,7 +8,7 @@ Contact: Alexander Chernikov <melifaro@FreeBSD.org>
 This work targets implementing scalable routing multipath support and enabling it by default.
 It closes the long-standing feature gap with other modern networking OSes.
 
-This work is a part of on-going efforts to modernize routing subsystem.
+This work is a part of on-going efforts to modernize the routing subsystem.
 
 ## Background
 
@@ -17,7 +17,7 @@ Initial FreeBSD multipath implementation, `RADIX_MPATH`, was added back in [2008
 ## Implementation overview 
 
 Multipath-related change changes are based on the introduction of the concept of next hops. Nexthops are separate data structures, containing the necessary information to perform packet forwarding. They are shared among the routes, providing more pre-computed cache-efficient data while requiring less memory.
-Interested reader can find more detailed description in [D24141](https://reviews.freebsd.org/D24141). They can find another overview in Nexthop objects [talk](https://linuxplumbersconf.org/event/4/contributions/434/attachments/251/436/nexthop-objects-talk.pdf) describing Linux kernel implementation.
+Interested readers can find a more detailed description in [D24141](https://reviews.freebsd.org/D24141). They can find another overview in Nexthop objects [talk](https://linuxplumbersconf.org/event/4/contributions/434/attachments/251/436/nexthop-objects-talk.pdf) describing Linux kernel implementation.
 
 Multipath implementation extends the nexthop concept further by introducing nexthop groups. Nexthop group is simply an array of nexthops, compiled according to each nexthop relative weight.
 
@@ -40,5 +40,5 @@ Each route has a pointer to either nexthops or a nexthop group, decoupling looku
 
   * Routing daemon support
     * Add net/bird support for multipath routing [ NOT STARTED ]
-    * Add explicit nexthop/nexthop groups control via rtsock [ IN POGRESS ]
+    * Add explicit nexthop/nexthop groups control via rtsock [ IN PROGRESS ]
     * Work with FRR developers to add nexthop-based route control [ NOT STARTED ]
