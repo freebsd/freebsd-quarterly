@@ -11,7 +11,7 @@ This work is a part of a larger effort to modernise the routing subsystem.
 ## Background
 
 FreeBSD runs diverse workloads on both low-end and high-end devices, resulting in different networking/memory requirements for each case.
-Small boxes with a couple of routes are different from routers with full view.
+Small boxes with a couple of routes are different from routers with full-view.
 IPv4 lookups are different from IPv6 ones. 
 Conditions can change dynamically: one may easily reconfigure a system to receive full view instead of a default route.
 
@@ -36,10 +36,10 @@ IPv4:
   * radix4_lockless (lockless immutable radix, re-created on every routing table change), tailored for small-fib (<1000 routes)
   * radix4 (base system radix backend)
   * dpdk_lpm4 (DPDK DIR24-8-based lookups), lockless datastructure optimised for large-fib ( [D27412](https://reviews.freebsd.org/D27412) )
-IPv6*
-* radix6_lockless: lockless immutable radix, re-created on every routing table change, tailored for small-fib (<1000 routes)
-* radix6: wrapper around existing system radix
-* dpdk_lpm6: DPDK DIR24-8-based lookups, lockless datastructure optimised for large-fib ( [D27412](https://reviews.freebsd.org/D27412) )
+IPv6:
+  * radix6_lockless: lockless immutable radix, re-created on every routing table change, tailored for small-fib (<1000 routes)
+  * radix6: wrapper around existing system radix
+  * dpdk_lpm6: DPDK DIR24-8-based lookups, lockless datastructure optimised for large-fib ( [D27412](https://reviews.freebsd.org/D27412) )
 
 ### Performance changes
 
