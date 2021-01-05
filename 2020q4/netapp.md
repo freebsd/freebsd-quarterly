@@ -11,8 +11,8 @@ bringing in the latest FreeBSD changes back into the ONTAP tree.
 
 NetApp has partnered with Klara to facilitate this project, to help identify
 interesting and useful changes to send upstream, to rework and generalize those
-changes as required to make them suitable for upstreaming, and to shephard them
-through the FreeBSD core review process.
+changes as required to make them suitable for upstreaming, and to shepherd them
+through the FreeBSD code review process.
 
 During the fourth quarter, Klara has made 40 upstream fixes in the FreeBSD
 kernel in various subsystems including geom, dev, amd64, net, kern, netinet, and
