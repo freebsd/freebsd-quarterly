@@ -6,19 +6,19 @@ Contact: Alexander Chernikov <melifaro@FreeBSD.org>
 
 This work adds a fib lookup framework, allowing to attach custom IP lookup algorithms to any routing table on the fly. It allows to use more performant and efficient lookup algorithms, dynamically selected based on the number of routes in the routing table. Finally, it provides an implementation of modified DIR-24-8 for IPv4/IPv6, speeding IP lookups for the large-fib use case.
 
-This work is a part of a larger effort to modernise routing subsystem.
+This work is a part of a larger effort to modernise the routing subsystem.
 
 ## Background
 
-FreeBSD runs diverse workloads on both low-end and high-end devices, resulting in a different networking/memory requirements for each case.
-Small boxes with a couple of routes are different from routers with full-view.
+FreeBSD runs diverse workloads on both low-end and high-end devices, resulting in different networking/memory requirements for each case.
+Small boxes with a couple of routes are different from routers with full view.
 IPv4 lookups are different from IPv6 ones. 
-Conditions can change dynamically: one may easily reconfigure a system to receive full-view instead of a default route.
+Conditions can change dynamically: one may easily reconfigure a system to receive full view instead of a default route.
 
-Currently, FreeBSD uses radix ( compressed binary tree) to perform all unicast route manipulations, including routing lookups.
+Currently, FreeBSD uses radix (compressed binary tree) to perform all unicast route manipulations, including routing lookups.
 Radix implementation requires storing key length in each item, allowing to use sockaddrs, transparently supporting virtually any address family.
-This flexibility comes at the cost: radix is *relatively slow*, *cache-unfriendly* and adds *locking* to the hot path.
-Finally, radix is closely coupled to the rest of the system, making it hard to switch it to something else.
+This flexibility comes at a cost: radix is *relatively slow*, *cache-unfriendly* and adds *locking* to the hot path.
+Finally, radix is closely coupled to the rest of the system, making it hard to switch to something else.
 
 ## Implementation overview
 

@@ -6,11 +6,11 @@ Link: [FreeBSD Weblate Instance](https://translate-dev.freebsd.org/)
 Contact: Danilo G. Baio <dbaio@FreeBSD.org>  
 Contact: Edson Brandi <ebrandi@FreeBSD.org>  
 
-In the pursuit of new contributors it was released an article in the
+In search of new contributors an article was published in the
 September/October 2020 issue of the FreeBSD Journal about How to Become a
 FreeBSD Translator.
 
-During the whole year we received new contributors to the effort, numbers are
+During the whole year we received new contributors to the effort; numbers are
 still growing and we are receiving translations almost daily on our Weblate
 platform.
 
