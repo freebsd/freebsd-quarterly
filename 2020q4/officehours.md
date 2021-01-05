@@ -17,7 +17,7 @@ The final session was hosted by bhyve maintainers Peter Grehan and John Baldwin
 to present recent development efforts and answer questions about bhyve.
 
 The project is looking for volunteers to host future office hours sessions, as
-well as topic suggestions. We also hope to improve the system to allow people
+well as taking topic suggestions. We also hope to improve the system to allow people
 to submit questions ahead of time, so that we can take maximum advantage of
 subject matter experts when we have them for these calls.
 
