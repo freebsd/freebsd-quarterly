@@ -10,7 +10,7 @@ Contact:  Vincent Milum Jr <freebsd@darkain.com>
 VMWare is a company that produces a commercial hypervisor known
 as vSphere ESXi for AMD64 and i386. In early October, they
 released a tech demo hypervisor for ARM Aarch64 which runs
-on ARM ServerReady hardware as well single board computers
+on ARM ServerReady hardware as well as single board computers
 such as the Raspberry Pi 4b (4GB and 8GB models). This new
 hypervisor is known as VMWare ESXi-ARM Fling.
 
@@ -19,7 +19,7 @@ both the hypervisor as well as FreeBSD, to make the two more
 compatible with one another. Even though the work was
 initially done to make these two work better together, the
 work overall has been more general purpose for FreeBSD
-in support of both bare metal Aarch64 installations as well
+in support of both bare-metal Aarch64 installations as well
 as running FreeBSD under other hypervisors such as QEMU.
 
 An example of others building off of this work is Twitter
@@ -62,7 +62,7 @@ being.
 The VMCI driver is currently not compiling at all. This
 driver has sections of x86 assembly code that will need to be
 converted over to ARM. This would be a great area for
-anyone to look into that is experienced converting assembly
+anyone to look into that is experienced with converting assembly
 language!
 
 At ESXi-ARM Fling launch, there was a hypervisor bug

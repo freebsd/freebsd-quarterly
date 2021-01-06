@@ -10,10 +10,10 @@ Australia, covering topics including the transition to git, recruiting for
 project teams, and core's todo list.
 
 The second was hosted by the git transition team, and answered attendee
-questions about the transition to git, and how it would impacts the projects
+questions about the transition to git and how it would impact the project's
 workflows.
 
-The final session was hosted by bhyve maintainers Peter Grehan and John Baldwin
+The third session was hosted by bhyve maintainers Peter Grehan and John Baldwin
 to present recent development efforts and answer questions about bhyve.
 
 The project is looking for volunteers to host future office hours sessions, as

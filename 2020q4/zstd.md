@@ -17,7 +17,7 @@ ZSTD into OpenZFS were completed.
 
 Completed milestones in this project:
 
-  * ZSTD integrated in the FreeBSD boot loader (Warner Losh <imp@freebsd.org>)
+  * Integrated ZSTD in the FreeBSD boot loader (Warner Losh <imp@freebsd.org>)
   * Added a section to the FreeBSD Handbook ZFS chapter explaining ZSTD
   * Wrote a FreeBSD Journal Article explaining considerations when selecting a suitable compression level
   * Monitored for bug reports after the changes were integrated into -CURRENT
