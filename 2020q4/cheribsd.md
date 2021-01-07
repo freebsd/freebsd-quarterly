@@ -54,7 +54,7 @@ various new research features have been, or are currently being, merged:
 
  * Syncing with upstream FreeBSD - We spent considerable time this
  quarter catching up with FreeBSD-CURRENT.  As of the beginning of
- Decemeber we had caughtup.  Merges are currently paused while we
+ December, we had caught up.  Merges are currently paused while we
  work to land Morello and pure-capability kernel changes.  In the
  interim, we have performed a test merge between our tree based on
  the legacy export of the FreeBSD tree to git and the new FreeBSD
