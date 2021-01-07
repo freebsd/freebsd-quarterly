@@ -12,7 +12,7 @@ TeamReports= ci.md clusteradm.md portmgr.md releng.md officehours.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= linuxulator.md lldb.md netapp.md nfsovertls.md openbsm.md 
+Projects= basegpl.md linuxulator.md lldb.md netapp.md nfsovertls.md openbsm.md 
 
 # Changes affecting the base system and programs in it
 Userland= ping.md
