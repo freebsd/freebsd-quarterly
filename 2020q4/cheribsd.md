@@ -1,4 +1,4 @@
-## CheriBSD 2020 Q4 ##
+## CheriBSD ##
 
 Link:    http://www.cheri-cpu.org  
 Link:    https://github.com/CTSRD-CHERI/cheribsd  
