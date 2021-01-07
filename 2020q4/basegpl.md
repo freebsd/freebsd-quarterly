@@ -4,6 +4,7 @@ Link:	 [GPL Software in the Base System](https://wiki.freebsd.org/GPLinBase)
 
 Contact: Ed Maste <emaste@FreeBSD.org>  
 Contact: Kyle Evans <kevans@FreeBSD.org>  
+Contact: Baptiste Daroussin <bapt@FreeBSD.org>
 
 A long-standing goal of the FreeBSD project is for the base system to migrate
 to modern, copyfree or more permissively licensed components.  In this quarter,
@@ -25,4 +26,4 @@ Note that partial completion likely means that a component is partially
 compatible, but could use evaluation and patches to bring parity with the
 component that it is replacing.
 
-  * diff3 (Contact Baptiste Daroussin <bapt@FreeBSD.org>)
+  * diff3 (Contact bapt@ if interested)
