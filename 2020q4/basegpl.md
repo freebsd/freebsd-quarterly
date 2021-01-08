@@ -15,13 +15,13 @@ the following components have been successfully removed or replaced:
   * libgnuregex ([removed](https://cgit.freebsd.org/src/commit/?id=8aff76fb37b5))
 
 The following component(s) have yet to be claimed.  Some replacement prospects
-may be listed on the above-linked wiki page, interested parties are welcome to
+may be listed on the above-linked wiki page. Interested parties are welcome to
 evaluate the options to restart the discussion:
 
   * dialog
   * gcov (kernel)
 
-The following component(s) have a principle investigator to coordinate work.
+The following component(s) have a principal investigator to coordinate work.
 Note that partial completion likely means that a component is partially
 compatible, but could use evaluation and patches to bring parity with the
 component that it is replacing.
