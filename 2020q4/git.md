@@ -9,6 +9,11 @@ Link: [Git conversion tooling repo](https://github.com/freebsd/git_conv)
 Link: [Game of Trees](http://gameoftrees.org/)
 Link: [gitup](https://github.com/johnmehr/gitup)
 
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>
+Contact: Warner Losh <imp@FreeBSD.org>
+Contact: Ed Maste <emaste@FreeBSD.org>
+Contact: Ulrich Spörlein <uqs@FreeBSD.org>
+
 The Git working group largely completed the migration of the doc and src
 (base system) trees from Subversion to Git in December 2020.  We are currently
 working on some minor outstanding issues and preparing for the ports tree
@@ -19,7 +24,7 @@ commit hooks for restrictions on commits to various branches, generation of
 commit mail, and similar needs.
 
 The doc tree migration occurred on December 8th and 9th.  After the conversion
-some minor changes to the documentation build infrastructure were necesary.
+some minor changes to the documentation build infrastructure were necessary.
 
 The src tree migration occurred between December 20th and 23rd for the main
 branch; some additional tasks occurred over the next week or so.  These
@@ -49,10 +54,5 @@ by Stefan Sperling along with some OpenBSD developers and other contributions.
 John Mehr's gitup is a minimal, dependency-free program that clones and
 synchronizes a local tree with a remote repository.  It is intended for use
 cases that would otherwise be served by tools like portsnap.
-
-Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>  
-Contact: Warner Losh <imp@FreeBSD.org>  
-Contact: Ed Maste <emaste@FreeBSD.org>  
-Contact: Ulrich Spörlein <uqs@FreeBSD.org>  
 
 Sponsor: The FreeBSD Foundation (in part)
