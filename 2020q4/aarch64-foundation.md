@@ -2,9 +2,6 @@
 
 Contact: Mitchell Horne <mhorne@FreeBSD.org>  
 
-Detailing FreeBSD Foundation sponsored work on the arm64 platform that occurred
-during this quarter.
-
 In the interest of seeing the arm64 architecture promoted to Tier-1 status, an
 effort was undertaken to test building and serving of release and patch-level
 updates via `freebsd-update(1)`. The conclusion of this investigation is that
