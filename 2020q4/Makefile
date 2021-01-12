@@ -12,7 +12,7 @@ TeamReports= ci.md clusteradm.md portmgr.md releng.md officehours.md
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= basegpl.md linuxulator.md lldb.md netapp.md nfsovertls.md openbsm.md 
+Projects= basegpl.md linuxulator.md lldb.md netapp.md nfsovertls.md openbsm.md
 
 # Changes affecting the base system and programs in it
 Userland= ping.md
@@ -27,7 +27,7 @@ Architectures= riscv.md
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
-Documentation= weblate.md
+Documentation= weblate.md docng.md
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
