@@ -36,7 +36,7 @@ although riscv64 is currently tier-3, it has aspirations for tier-2.
     fix, we are now able to build around 20,000 packages.  NB: these packages
     are *unofficial* and not guaranteed.
 
-  * Kyle Evans (kevans@)'s work on chasing bitrot in qemu has been key
+  * The work of Kyle Evans (kevans@) on chasing bitrot in qemu has been key
     to work on both aarch64 and riscv64.  All users are encouraged to
     update to the latest version.
 
