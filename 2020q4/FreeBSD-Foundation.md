@@ -1,6 +1,6 @@
 ## FreeBSD Foundation
 
-Contact: Deb Goodkin <deb@FreeBSDFoundation.org>  
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
 
 The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to
 supporting and promoting the FreeBSD Project and community worldwide.  Funding
@@ -87,7 +87,7 @@ and share with your companies!
 The Foundation provided many project grants over the last quarter, and you
 can read about OpenZFS Zstd support, Linuxulator application compatibility
 improvements, LLDB target support, test lab infrastructure, and WiFi projects
-in other reports in this quarterly update.
+in other entries in this quarterly report.
 
 The Foundation hired six co-op students from the University of Waterloo during
 the 2020 fall term, as well as one intern.  Former co-op student Tiger
@@ -111,7 +111,7 @@ execute utilities, and finally working with developers of the Game of Trees
 (got) version control system to adapt it for Capsicum support.
 
 Our intern Ka Ho focused on improving the desktop experience of the FreeBSD.
-He fixed and improved many places of OBS (Open Broadcaster Software) on
+He fixed and improved many items of OBS (Open Broadcaster Software) on
 FreeBSD, worked on FreeBSD native audio support on Firefox, adding a facility
 that user-space audio programs could make use of to enumerate a list of audio
 devices.  He also ported the fcitx5 input method framework.
@@ -168,13 +168,13 @@ infrastructure is located.
 Some of the purchases we made for the Project last quarter to support
 infrastructure includes:
 
-- 5 application servers to run tasks like bugzilla, wiki, website, cgi,
-  phabricator, host git, etc.
-- 1 server to replace the old pkg server and will provide a lot more IOPS to
-  avoid the slowdowns seen during peak times of the day where the disks just
-  cannot keep up with the request volume.
-- 1 server for exp-runs and make them faster.
-- 1 server to build packages more frequently
+  * 5 application servers to run tasks like bugzilla, wiki, website, cgi,
+    Phabricator, host git, etc.
+  * 1 server to replace the old pkg server, which will provide a lot more IOPS
+    to avoid the slowdowns seen during peak times of the day where the disks
+    simply cannot keep up with the request volume.
+  * 1 server for exp-runs and make them faster.
+  * 1 server to build packages more frequently
 
 ### FreeBSD Advocacy and Education
 
@@ -185,7 +185,7 @@ using FreeBSD or contributing to the Project easier; and attending and getting
 other FreeBSD contributors to volunteer to run FreeBSD events, staff FreeBSD
 tables, and give FreeBSD presentations.
 
-The FreeBSD Foundation'sponsors many conferences, events, and summits around
+The FreeBSD Foundation sponsors many conferences, events, and summits around
 the globe. These events can be BSD-related, open source, or technology events
 geared towards underrepresented groups. We support the FreeBSD-focused events
 to help provide a venue for sharing knowledge, to work together on projects,
@@ -194,7 +194,7 @@ all helps provide a healthy ecosystem. We support the non-FreeBSD events to
 promote and raise awareness of FreeBSD, to increase the use of FreeBSD in
 different applications, and to recruit more contributors to the Project.
 
-While we were still unable to attend in-person meetings due to covid-19, we
+While we were still unable to attend in-person meetings due to COVID-19, we
 were able to attend virtual events at new venues and facilitate the first
 online FreeBSD Vendor Summit.  In addition to attending and planning virtual
 events, we are continually working on new training initiatives and updating our
@@ -202,27 +202,27 @@ selection of [how-to guides](https://freebsdfoundation.org/freebsd-project/resou
 
 Check out some of the advocacy and education work we did last quarter:
 
-- Continued our FreeBSD Fridays series of 101 classes. Topics included an
-  Introduction to Capsicum, Introduction to Bhyve, Introduction to DTrace, and
-  more.  Videos of the past sessions can be found [here](https://freebsdfoundation.org/freebsd-fridays/). We'll be back with new
-  sessions in early 2021.
-- Gave a FreeBSD talk at the nerdear.la conference on October 20th.
-- Participated in the podcast: [What the Dev: A Dive into the FreeBSD Foundation
-  on its 20th Anniversary](https://freebsdfoundation.org/news-and-events/latest-news/what-the-dev-podcast-a-dive-into-the-freebsd-foundation-on-its-20th-anniversary/)
-- Promoted the Foundation's 20th Anniversary in the FossBytes article:
-  [20 Years of The FreeBSD Foundation](https://freebsdfoundation.org/news-and-events/latest-news/fossbytes-20-years-of-the-freebsd-foundation/)
-- Continued to promote the FreeBSD Office Hours series Videos from the one hour
-  sessions can be found on the Project's [YouTube Channel](https://www.youtube.com/channel/UCxLxR_oW-NAmChIcSkAyZGQ)  See the Office Hours
-  section of this report for more information.
-- Add two new How-To Guides: [Contributing FreeBSD Documentation](https://freebsdfoundation.org/contributing-freebsd-documentation/)
-  and [How to Submit a Bug Report](https://freebsdfoundation.org/freebsd-project/resources/how-to-submit-a-bug-report/).
-- Worked with the organizing committee to host the [November 2020 Vendor Summit](https://wiki.freebsd.org/DevSummit/202011)
-- Promoted the [use of FreeBSD](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-essential-to-bringing-cheri-and-arms-morello-processor-to-life/) in regards to CHERI and ARM's Morello Processor
-- Authored a [Beginners Guide to FreeBSD](https://www.fosslife.org/beginners-guide-freebsd) for Fosslife.
-- Sponsored All Things Open as a Media Sponsor.
-- Sponsored OpenZFS Developers Summit at the Bronze level.
-- Applied for a virtual stand at FOSDEM 2021.
-- Committed to attend the online Apricot 2021.
+  * Continued our FreeBSD Fridays series of 101 classes. Topics included an
+    Introduction to Capsicum, Introduction to Bhyve, Introduction to DTrace, and
+    more.  Videos of the past sessions can be found [here](https://freebsdfoundation.org/freebsd-fridays/). We'll be back with new
+    sessions in early 2021.
+  * Gave a FreeBSD talk at the nerdear.la conference on October 20th.
+  * Participated in the podcast: [What the Dev: A Dive into the FreeBSD Foundation
+    on its 20th Anniversary](https://freebsdfoundation.org/news-and-events/latest-news/what-the-dev-podcast-a-dive-into-the-freebsd-foundation-on-its-20th-anniversary/)
+  * Promoted the Foundation's 20th Anniversary in the FossBytes article:
+    [20 Years of The FreeBSD Foundation](https://freebsdfoundation.org/news-and-events/latest-news/fossbytes-20-years-of-the-freebsd-foundation/)
+  * Continued to promote the FreeBSD Office Hours series Videos from the one hour
+    sessions can be found on the Project's [YouTube Channel](https://www.youtube.com/channel/UCxLxR_oW-NAmChIcSkAyZGQ)  See the Office Hours
+    section of this report for more information.
+  * Add two new How-To Guides: [Contributing FreeBSD Documentation](https://freebsdfoundation.org/contributing-freebsd-documentation/)
+    and [How to Submit a Bug Report](https://freebsdfoundation.org/freebsd-project/resources/how-to-submit-a-bug-report/).
+  * Worked with the organizing committee to host the [November 2020 Vendor Summit](https://wiki.freebsd.org/DevSummit/202011)
+  * Promoted the [use of FreeBSD](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-essential-to-bringing-cheri-and-arms-morello-processor-to-life/) in regards to CHERI and ARM's Morello Processor
+  * Authored a [Beginners Guide to FreeBSD](https://www.fosslife.org/beginners-guide-freebsd) for Fosslife.
+  * Sponsored All Things Open as a Media Sponsor.
+  * Sponsored OpenZFS Developers Summit at the Bronze level.
+  * Applied for a virtual stand at FOSDEM 2021.
+  * Committed to attend the online Apricot 2021.
 
 Keep up to date with our latest work in our newsletters:
 https://www.freebsdfoundation.org/news-and-events/newsletter/
