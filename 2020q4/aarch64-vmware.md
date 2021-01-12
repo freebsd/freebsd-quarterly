@@ -73,7 +73,8 @@ by
 [VMWare developer Cypou](https://github.com/freebsd/freebsd-src/compare/master...claplace:user/claplace/gicv3_mbi).
 
 
-# Things that are currently fixed/working
+Things that are currently fixed/working:
+
   * Booting from CD ISO image
   * Virtual USB 2.0 controller
   * Virtual USB 3.1 controller
@@ -85,7 +86,8 @@ by
   * Xorg Enhanced Mouse Driver (untested)
   * Multi-Core CPU (up to 8 vCPUs inside guest)
 
-# Things that are still broken
+Things that are still broken:
+
   * Booting from pvscsi
   * Xorg SVGA Driver
   * vmci Virtual Machine Communication Interface

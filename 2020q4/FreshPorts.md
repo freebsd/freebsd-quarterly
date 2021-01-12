@@ -21,7 +21,7 @@ flowing into [devgit.freshports.org](https://devgit.freshports.org). Some
 work is required on various issues, but nothing that stops the flow of
 commits into the database.
 
-#### Help wanted ####
+### Help wanted ###
 
 Amazon have donated enough to try FreshPorts on AWS. I need help with the
 following:

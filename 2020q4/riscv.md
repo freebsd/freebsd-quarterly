@@ -11,12 +11,13 @@ The FreeBSD/RISC-V project is providing support for running FreeBSD on the
 
 This quarter saw a number of improvements and bugfixes from committers and
 contributors alike. A few small items from this quarter:
- - Added riscv64 LINT kernel config plus CI job (`FreeBSD-head-riscv64-LINT`)
- - Switched `emulators/riscv-isa-sim` to official upstream and updated to
-   2020-11-02 snapshot
- - Created `sysutils/u-boot-sifive-fu540`, a u-boot port for the HiFive
-   Unleashed
- - Improved SBI extension support
+
+  * Added riscv64 LINT kernel config plus CI job (`FreeBSD-head-riscv64-LINT`)
+  * Switched `emulators/riscv-isa-sim` to official upstream and updated to
+    2020-11-02 snapshot
+  * Created `sysutils/u-boot-sifive-fu540`, a u-boot port for the HiFive
+    Unleashed
+  * Improved SBI extension support
 
 Further progress was made this quarter in building ports for RISC-V. Build and
 runtime issues with large dependencies `devel/python-setuptools` and

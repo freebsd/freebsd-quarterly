@@ -14,10 +14,12 @@ overall direction of the Ports Tree, building packages, and
 personnel matters.  Below is what happened in the last quarter.
 
 For the last quarter the dashboard looks like:
+
   * 41500 ports (including flavors)
   * 2516 open PRs of which 625 are unassigned
   * 8715 commits to the HEAD branch by 164 committers
   * 420 commits to the 2020Q4 branch by 59 committers
+
 Compared to the third quarter, the PR statistics mostly stayed the same. There
 were slightly fewer commits by the same number of people. The number of ports
 again grew steadily, this time by almost 4 percent.
@@ -38,6 +40,7 @@ that patents are a complex topic with implications varying from one jurisdiction
 to another.
 
 The last quarter saw a number of updates to default versions of ports:
+
   * librsvg2: "rust" on supported platforms, "legacy"
     otherwise
   * Mono: 5.10
@@ -55,6 +58,7 @@ The @shell and @sample keywords have been rewritten in Lua which makes root-dir
 compliant (see pkg -r) and ensures they are Capsicum-sandboxed.
 
 The last quarter also saw updates to several user-facing ports:
+
   * Firefox 84.0.1
   * Firefox-esr 78.6.0
   * Chromium 87.0.4280.88
@@ -63,6 +67,7 @@ The last quarter also saw updates to several user-facing ports:
   * XFce 4.16
 
 As always, antoine@ was busy running exp-runs, 37 this quarter, testing:
+
   * various ports upgrades
   * changing sys/cdefs.h in base
   * adding "set pipefail" to most framework scripts to catch errors earlier

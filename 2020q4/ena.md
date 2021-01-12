@@ -13,6 +13,7 @@ up to 100 Gb/s of network traffic, depending on the instance type
 on which it is used.
 
 Completed since the last update:
+
   * MFC of the ENA v2.3.0 driver to the FreeBSD 11-STABLE branch
   * MFC of the ENA v2.3.0 driver to the upcoming FreeBSD 12-STABLE branch
   * Add feature that allows reading extra ENI (Elastic Network Interface)
@@ -23,6 +24,7 @@ Completed since the last update:
     the platforms ENA needs alignment to 4k
 
 Work in progress:
+
   * Introduce full kernel RSS API support.
   * Allow reconfiguration of the RSS indirection table and hash key
   * Prototype the driver port to the iflib framework

@@ -16,8 +16,6 @@ Contact: John Baldwin <jhb@FreeBSD.org>
 Contact: Robert Watson <rwatson@FreeBSD.org>  
 Contact: Ruslan Bukin <br@FreeBSD.org>  
 
-### CheriBSD Status ###
-
 CheriBSD extends FreeBSD to implement memory protection and software
 compartmentalization features supported by the CHERI instruction-set
 extensions.  There are three architectural implementations of the
@@ -32,7 +30,6 @@ various new research features have been, or are currently being, merged:
  from a development branch and work is in progress to merge the contents
  of this branch with the CheriBSD main line.  We anticipate producing a
  new release from this branch in early 2021.
-
  * Kernel spatial memory safety (pure-capability kernel) - The current
  CheriBSD kernel is a hybrid C program where only pointers to userspace
  are CHERI capabilities. This ensures that the kernel follows the
@@ -43,7 +40,6 @@ various new research features have been, or are currently being, merged:
  for buffer overflows. This spatial memory safety lays the
  groundwork for future work such as device driver compartmentalization
  and kernel temporal safety.
-
  * Userspace heap temporal memory safety (Cornucopia) - CHERI
  capabilities provide the necessary features to enable
  robust and efficient revocation of freed pointers.  With [Cornucopia](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
@@ -51,7 +47,6 @@ various new research features have been, or are currently being, merged:
  protection from use-after-reallocation bugs with an average cost below
  2%.  We aim to bring these overheads down further over the next year and
  merge this functionality into the mainline CheriBSD.
-
  * Syncing with upstream FreeBSD - We spent considerable time this
  quarter catching up with FreeBSD-CURRENT.  As of the beginning of
  December, we had caught up.  Merges are currently paused while we
@@ -60,7 +55,6 @@ various new research features have been, or are currently being, merged:
  the legacy export of the FreeBSD tree to git and the new FreeBSD
  git repository.  The process went smoothly and is expected to have
  few impacts.
-
  * We have been working on updating the arm64 bhyve from Politehnica
  University of Bucharest to have it committed to FreeBSD. We have been
  upstreaming initial changes to help support this.

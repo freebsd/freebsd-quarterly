@@ -1,4 +1,4 @@
-# Scalable routing multipath support
+## Scalable routing multipath support ##
 
 Link:	 [Implementation of scalable multipath](https://reviews.freebsd.org/D24141#change-ZOjdMqgDgUr7)  
 Link:	 [Introduce scalable route multipath](https://reviews.freebsd.org/D26449)
@@ -10,11 +10,11 @@ It closes the long-standing feature gap with other modern networking OSes.
 
 This work is a part of on-going efforts to modernize the routing subsystem.
 
-## Background
+### Background ###
 
 Initial FreeBSD multipath implementation, `RADIX_MPATH`, was added back in [2008](https://github.com/freebsd/freebsd-legacy/commit/4e8901ea7a04d2d803067647c0641e41494b8868). It was based on the radix changes and represented multipath routes as a linked-list of chained paths. It was not fully finished and tested, resulting in many crash reports. 
 
-## Implementation overview 
+### Implementation overview ###
 
 Multipath-related change changes are based on the introduction of the concept of next hops. Nexthops are separate data structures, containing the necessary information to perform packet forwarding. They are shared among the routes, providing more pre-computed cache-efficient data while requiring less memory.
 Interested readers can find a more detailed description in [D24141](https://reviews.freebsd.org/D24141). They can find another overview in Nexthop objects [talk](https://linuxplumbersconf.org/event/4/contributions/434/attachments/251/436/nexthop-objects-talk.pdf) describing Linux kernel implementation.
@@ -23,7 +23,7 @@ Multipath implementation extends the nexthop concept further by introducing next
 
 Each route has a pointer to either nexthops or a nexthop group, decoupling lookup algorithm from the routing stack internals. Both nexthops and nexthop groups are immutable and use epoch(9)-backed reclamation.
 
-## Status
+### Status ###
 
   * Nexthop objects ([D24232](https://reviews.freebsd.org/D24232)) [ DONE ]
     * Introduction of nexthop objects [ DONE ]

@@ -1,7 +1,5 @@
 ## pf performance improvement ##
 
-Contact: Kristof Provost, <kp@freebsd.org>
-
 Link:   [First commit](https://cgit.freebsd.org/src/commit/?id=1c00efe98ed7d103b9684ff692ffd5e3b64d0237)
 Link:   [D27707](https://reviews.freebsd.org/D27707)
 Link:   [D27756](https://reviews.freebsd.org/D27756)

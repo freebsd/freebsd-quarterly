@@ -39,9 +39,11 @@ Important changes:
   * head and stable/12 build environment have been upgraded to 12.2-RELEASE
 
 New jobs added:
+
   * [LINT kernel of head on riscv64](https://ci.freebsd.org/job/FreeBSD-head-riscv64-LINT)
 
 Work in progress:
+
   * Follow VCS migration, change src jobs to use Git - PRs are 
     [available](https://github.com/freebsd/freebsd-ci/pull/121)
     Thanks Brandon Bergren (bdragon@)

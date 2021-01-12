@@ -1,4 +1,4 @@
-## FreeBSD Foundation
+## FreeBSD Foundation ##
 
 Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
 
@@ -17,7 +17,7 @@ legal entity.
 
 Here are some highlights of what we did to help FreeBSD last quarter:
 
-### COVID-19 Impact to the Foundation
+### COVID-19 Impact to the Foundation ###
 
 Like most organizations, we transitioned all of our staff to work from home.
 We also put a temporary ban on travel for staff members, which didn't affect
@@ -26,7 +26,7 @@ supporting the community and Project, even though some of our work and
 responses may have been delayed because of changes in some of our priorities
 and the impact of limited childcare for a few of our staff members.
 
-### Partnerships and Commercial User Support
+### Partnerships and Commercial User Support ###
 
 We help facilitate collaboration between commercial users and FreeBSD
 developers. We also meet with companies to discuss their needs and bring that
@@ -47,7 +47,7 @@ invitation only, we opened this up to FreeBSD contributors from around the
 world to watch the livestream. Because of the success and excitement of this
 event, we are planning to hold another one around June or July.
 
-### Fundraising Efforts
+### Fundraising Efforts ###
 
 We want to take a moment to say thank you to all the individuals and
 corporations that stepped up to help fund our efforts last year.  As of this
@@ -82,7 +82,7 @@ commercial donors.  Find out more information at
 https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/
 and share with your companies!
 
-### OS Improvements
+### OS Improvements ###
 
 The Foundation provided many project grants over the last quarter, and you
 can read about OpenZFS Zstd support, Linuxulator application compatibility
@@ -154,7 +154,7 @@ analysis and improve the tests of non-x86 platforms.
 See the FreeBSD CI section of this report for completed work items and detailed
 information.
 
-### Supporting FreeBSD Infrastructure
+### Supporting FreeBSD Infrastructure ###
 
 The Foundation provides hardware and support to improve the FreeBSD
 infrastructure.  Last quarter, we continued supporting FreeBSD hardware located
@@ -176,7 +176,7 @@ infrastructure includes:
   * 1 server for exp-runs and make them faster.
   * 1 server to build packages more frequently
 
-### FreeBSD Advocacy and Education
+### FreeBSD Advocacy and Education ###
 
 A large part of our efforts are dedicated to advocating for the Project.  This
 includes promoting work being done by others with FreeBSD; producing advocacy
@@ -238,7 +238,7 @@ https://www.FreeBSDfoundation.org/journal/.
 You can find out more about events we attended and upcoming events at
 https://www.FreeBSDfoundation.org/news-and-events/.
 
-### Legal/FreeBSD IP
+### Legal/FreeBSD IP ###
 
 The Foundation owns the FreeBSD trademarks, and it is our responsibility to
 protect them.  We also provide legal support for the core team to investigate

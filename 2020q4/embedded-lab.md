@@ -1,4 +1,4 @@
-## Embedded Lab Project
+## Embedded Lab Project ##
 
 Link:	 [FreeBSD Embedded Lab Design](https://www.funkthat.com/gitea/jmg/fbsdembdev)  
 Link:	 [Lab API code](https://www.funkthat.com/gitea/jmg/bitelab)  

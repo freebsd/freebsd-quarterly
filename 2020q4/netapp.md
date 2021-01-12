@@ -1,5 +1,7 @@
 ## Upstreaming NetApp Changes ##
 
+Link:	[Klara Inc.](https://klarasystems.com/freebsd-development/)
+
 Contact: Alexander Sideropoulos <Alexander.Sideropoulos@netapp.com>
 Contact: Allan Jude <allan@klarasystems.com>
 
@@ -19,7 +21,5 @@ kernel in various subsystems including geom, dev, amd64, net, kern, netinet, and
 several other areas of the tree on behalf of NetApp.
 
 NetApp intends to continue to sponsor this effort throughout 2021.
-
-Link:	[Klara Inc.](https://klarasystems.com/freebsd-development/)
 
 Sponsor: NetApp
