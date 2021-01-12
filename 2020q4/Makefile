@@ -23,7 +23,7 @@ Kernel= ena.md iwlwifi.md random-fx.md pf.md routing-lookups.md routing-multipat
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures= aarch64-foundation.md cheri.md riscv.md
+Architectures= aarch64-foundation.md riscv.md
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
@@ -35,7 +35,7 @@ Ports= kde.md office.md ports_non_x86.md python27-removal.md xfce.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty= aarch64-vmware.md bastille.md embedded-lab.md FreshPorts.md hellosystem.md k8s-bhyve.md puppet.md
+ThirdParty= aarch64-vmware.md bastille.md cheri.md embedded-lab.md FreshPorts.md hellosystem.md k8s-bhyve.md puppet.md
 
 # Objects that defy categorization
 Miscellaneous= nfs-exporter.md
