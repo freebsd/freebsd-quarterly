@@ -6,7 +6,7 @@ The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to
 supporting and promoting the FreeBSD Project and community worldwide.  Funding
 comes from individual and corporate donations and is used to fund and manage
 software development projects, conferences and developer summits, and provide
-travel grants to FreeBSD contributors. The Foundation purchases and supports
+travel grants to FreeBSD contributors.  The Foundation purchases and supports
 hardware to improve and maintain FreeBSD infrastructure and provides resources
 to improve security, quality assurance, and release engineering efforts;
 publishes marketing material to promote, educate, and advocate for the FreeBSD
@@ -29,11 +29,11 @@ and the impact of limited childcare for a few of our staff members.
 ### Partnerships and Commercial User Support ###
 
 We help facilitate collaboration between commercial users and FreeBSD
-developers. We also meet with companies to discuss their needs and bring that
-information back to the Project. Not surprisingly, the stay at home orders,
+developers.  We also meet with companies to discuss their needs and bring that
+information back to the Project.  Not surprisingly, the stay at home orders,
 combined with our company ban on travel during Q4 made in-person meetings
-non-existent. However, the team was able to continue meeting with our partners
-and commercial users virtually. These meetings help us understand some of the
+non-existent.  However, the team was able to continue meeting with our partners
+and commercial users virtually.  These meetings help us understand some of the
 applications where FreeBSD is used.
 
 An event we help plan and organize, that helps with vendor/developer
@@ -44,7 +44,7 @@ this, so it would be beneficial for them, we decided to hold this over 3 half
 days in November.  One unexpected result was that more commercial users from
 around the world attended.  Since a Vendor/Developer Summit is typically
 invitation only, we opened this up to FreeBSD contributors from around the
-world to watch the livestream. Because of the success and excitement of this
+world to watch the livestream.  Because of the success and excitement of this
 event, we are planning to hold another one around June or July.
 
 ### Fundraising Efforts ###
@@ -173,8 +173,8 @@ infrastructure includes:
   * 1 server to replace the old pkg server, which will provide a lot more IOPS
     to avoid the slowdowns seen during peak times of the day where the disks
     simply cannot keep up with the request volume.
-  * 1 server for exp-runs and make them faster.
-  * 1 server to build packages more frequently
+  * 1 server for exp-runs and to make them faster.
+  * 1 server to build packages more frequently.
 
 ### FreeBSD Advocacy and Education ###
 

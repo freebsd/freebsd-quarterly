@@ -6,7 +6,7 @@ Link: [DOCNG Share Repo](https://gitlab.com/carlavilla/freebsd-hugo-data)
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 
-The Doc New Generation project it's finished. The switch-over date will be Saturday, January 23rd.
+The Doc New Generation project is finished. The switch-over date will be Saturday, January 23rd.
 
 The objective of using Hugo and AsciiDoctor is to reduce the
 learning curve and let people to start quickly contributing to our documentation
