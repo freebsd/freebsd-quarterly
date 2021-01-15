@@ -35,7 +35,7 @@ Ports= kde.md office.md ports_non_x86.md python27-removal.md xfce.md
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty= aarch64-vmware.md bastille.md cheri.md embedded-lab.md FreshPorts.md hellosystem.md k8s-bhyve.md puppet.md
+ThirdParty= aarch64-vmware.md bastille.md cheribsd.md embedded-lab.md FreshPorts.md hellosystem.md k8s-bhyve.md puppet.md
 
 # Objects that defy categorization
 Miscellaneous= nfs-exporter.md
