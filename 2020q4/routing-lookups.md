@@ -34,14 +34,14 @@ The following algorithms are provided by default.
 
 IPv4:
 
-  * bsearch4 (lockless binary search in a specially-crafted IP array), tailored for small-fib (<16 routes)
-  * radix4_lockless (lockless immutable radix, re-created on every routing table change), tailored for small-fib (<1000 routes)
+  * bsearch4 (lockless binary search in a specially-crafted IP array), tailored for small-fib (less than 16 routes)
+  * radix4_lockless (lockless immutable radix, re-created on every routing table change), tailored for small-fib (less than 1000 routes)
   * radix4 (base system radix backend)
   * dpdk_lpm4 (DPDK DIR24-8-based lookups), lockless datastructure optimised for large-fib ( [D27412](https://reviews.freebsd.org/D27412) )
 
 IPv6:
 
-  * radix6_lockless: lockless immutable radix, re-created on every routing table change, tailored for small-fib (<1000 routes)
+  * radix6_lockless: lockless immutable radix, re-created on every routing table change, tailored for small-fib (less than 1000 routes)
   * radix6: wrapper around existing system radix
   * dpdk_lpm6: DPDK DIR24-8-based lookups, lockless datastructure optimised for large-fib ( [D27412](https://reviews.freebsd.org/D27412) )
 

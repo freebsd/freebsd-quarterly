@@ -15,7 +15,7 @@ on the following:
     farther away sites like Japan and California.
   * Upgraded the package building machines to a version of head from
     mid-October 2020.
-  * Upgraded developer machines in the cluster (freefall, ref* and universe*) to
+  * Upgraded developer machines in the cluster (freefall, ref\* and universe\*) to
     a version of head from mid-October 2020.
   * Installed eight new x86 servers in our New Jersey site:
     five application servers, two package builders and one mirror server.
