@@ -119,7 +119,7 @@ report-${YEAR}-${START}-${YEAR}-${STOP}.md: intro.md ${CATEGORIES:S/$/.md/g}
 	cat $> >> $@
 
 report-${YEAR}-${START}-${YEAR}-${STOP}.txt: report-${YEAR}-${START}-${YEAR}-${STOP}.html
-	${LYNX_CMD} -dump -nolist $> | /usr/bin/iconv -f ISO-8859-1 -t UTF-8 > $@
+	${LYNX_CMD} -width=72 -dump -nolist $> | /usr/bin/iconv -f ISO-8859-1 -t UTF-8 > $@
 	${PRETTIFY_CMD} $@ ${QUARTER_WORD} ${YEAR}
 	mv $@.out $@
 
