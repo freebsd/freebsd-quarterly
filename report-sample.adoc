@@ -1,9 +1,9 @@
 == Status Report Sample - This Will Become The Title
 
-Link: link:http://www.example.com/project/url[Link description here]
-Link: link:http://www.example.com/other/url[Another link description here]
+Link: link:http://www.example.com/project/url[Link description here]  
+Link: link:http://www.example.com/other/url[Another link description here]  
 
-Contact: Full Name <email@example.org>
+Contact: Full Name <email@example.org>  
 
 Note that *Contact:*, *Link:*, and *Sponsor:* in this template have two trailing spaces (`  `), which indicates that they should have a line break after them.
 
@@ -27,4 +27,4 @@ List tasks, with enough detail that people know if they are likely to be able to
 * Second task
 * Third, if any
 
-Sponsor: Sponsoring Organisation, If Any
+Sponsor: Sponsoring Organisation, If Any  
