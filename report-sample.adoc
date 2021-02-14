@@ -5,10 +5,11 @@ Link: link:http://www.example.com/other/url[Another link description here]
 
 Contact: Full Name <email@example.org>
 
+Note that *Contact:*, *Link:*, and *Sponsor:* in this template have two trailing spaces (`  `), which indicates that they should have a line break after them.
+
 Paragraphs are separated with an empty line.
 Use AsciiDoctor syntax, the same as you use on GitHub.
 If you don't know AsciiDoctor, just write it as if it was plain text.
-Note that *Contact:*, *Link:*, and *Sponsor:* in this template have two trailing spaces (`  `), which indicates that they should have a line break after them.
 
 Introduce your work. Do not assume that the person reading the report knows about your project.
 
