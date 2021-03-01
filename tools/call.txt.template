@@ -18,11 +18,11 @@ GitHub repository:
 
 https://github.com/freebsd/freebsd-quarterly
 
-Alternatively you can fetch the Markdown template, fill it in, and
+Alternatively you can fetch the AsciiDoctor template, fill it in, and
 email it to quarterly-submissions@FreeBSD.org.
 The template can be found at:
 
-https://raw.githubusercontent.com/freebsd/freebsd-quarterly/master/report-sample.md
+https://raw.githubusercontent.com/freebsd/freebsd-quarterly/master/report-sample.adoc
 
 We look forward to seeing your %%YEAR%%Q%%QUARTER%% reports!
 
