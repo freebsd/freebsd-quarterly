@@ -1,0 +1,23 @@
+## OpenBSM Synchronisation ##
+
+Link:	 [TrustedBSD / OpenBSM](http://www.trustedbsd.org/openbsm.html)  
+Link:	 [OpenBSM Github Sources](https://github.com/openbsm/openbsm)
+Link:	 [Synchronisation with macOS Catalina](https://github.com/openbsm/openbsm/commit/54a0c07cf8bac71554130e8f6760ca68e5f36c7f)
+Link:	 [Apple OpenSource](https://opensource.apple.com)
+
+Contact: Gordon Bergling <gbe@FreeBSD.org>  
+
+OpenBSM is a crucial part of FreeBSD, which provides auditing features for
+the operating system. OpenBSM is incorporated into FreeBSD and macOS.
+Both Apple and FreeBSD have currently made changes to the OpenBSM framework,
+which weren't upstreamed. This small project aims to consolidate
+these changes and upstream them to the OpenBSM github repository, so that
+both development efforts can be merged to FreeBSD later on.
+
+There is currently a pull request pending that synchronizes the FreeBSD
+sources with OpenBSM. A comparsion was made to incorporate Apples
+Catalina changes. A few weeks ago Apple has also made the source code
+of Big Sur available. In the latest comparsion against OpenBSM Apple
+has made overlapping ID changes, which are making a simple import of the
+changes impossible. I am currently try to work around that I issue by
+making OpenBSM little vendor specific.
