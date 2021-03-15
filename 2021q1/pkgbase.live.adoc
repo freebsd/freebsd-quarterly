@@ -1,0 +1,29 @@
+== PkgBase.live
+
+Link: link:https://alpha.pkgbase.live/[Website]  
+
+Contact: Mina Galić <me@igalic.co>  
+
+Paragraphs are separated with an empty line.
+Use AsciiDoctor syntax, the same as you use on GitHub.
+If you don't know AsciiDoctor, just write it as if it was plain text.
+
+PkgBase.live is an unofficial repository for the FreeBSD link:https://wiki.freebsd.org/PkgBase[PkgBase project]. PkgBase packages the FreeBSD base system as ca 330 packages.
+
+Usually FreeBSD is distributed as `base.txz`, `kernel.txz`, etc…
+The PkgBase project gives users the choice of which parts to install.
+Users can chose which parts of the base system to install, without building their system from source and they can chose to install `-dbg` packages when they need them.
+In addition, PkgBase.live builds _every_ usable kernel! This is especially important for architectures like `armv7`.
+
+PkgBase.live was inspired by link:https://up.bsd.lv/[up.bsd.live], a service that provides man:freebsd-update[8] for STABLE and CURRENT branches.
+Despite this service, freebsd-update has been a constant point of frustrations for me, so I was looking for alternatives.
+
+PkgBase is not ready for prime yet, or else the Release Engineering team would be providing this service.
+With the call for testing open since 2016, I thought it would be time to offer a _public_ service, so a broader part of the community can take part in testing, without having to do all the work for themselves.
+
+A lot of things already work fine, but more work needs to be done, as can be seen from the TODO list, as well as the "Pending Changes" on the website.
+Perhaps the most important thing would be to provide ISOs which lets people setup a fresh system with PkgBase from the get-go.
+
+What has happened since the last report? Let us know what is new in this area.
+
+PkgBase has no sponsor currently. The hosting is paid out of my own very shallow pocket.
