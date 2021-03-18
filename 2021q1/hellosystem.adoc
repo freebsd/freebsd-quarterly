@@ -8,7 +8,7 @@ Contact: `#helloSystem` on `irc.freenode.net`, mirrored to [`#helloSystem:matrix
 
 ### What is helloSystem? ###
 
-helloSystem is FreeBSD preconfigured as a desktop operating system with a focus on simplicity, elegance, and usability. 
+helloSystem is FreeBSD preconfigured as a desktop operating system with a focus on simplicity, elegance, and usability.
 Its design follows the “Less, but better” philosophy.
 
 ### Q1 2021 Status ###
