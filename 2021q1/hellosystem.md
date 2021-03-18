@@ -13,12 +13,12 @@ Its design follows the “Less, but better” philosophy.
 
 ### Q1 2021 Status ###
 
-* helloSystem and some of the motivations and core ideas behind it were presented at the FOSDEM 2021 BSD Devroom in the talk ["hello... again? Simplicity, elegance, and usability for the desktop"](https://fosdem.org/2021/schedule/event/hello_bsd/). Video recordings of the talk and Q&A session are available ([WebM/VP9](https://video.fosdem.org/2021/D.bsd/hello_bsd.webm), [mp4](https://video.fosdem.org/2021/D.bsd/hello_bsd.mp4))
-* Version 0.4.0 of helloSystem was published. Installable Live ISO images are available.
-* Work has started towards 0.5.0. We are beginning to see contributed features and bugfixes
- * System menu reflects changes made in Applications immediately
- * Filer file manager brings already-open windows to the front rather than opening multiple windows for the same folder
- * Inital spatial mode option (each folder opens in its own window in the file manager that remembers its on-screen location)
+  * helloSystem and some of the motivations and core ideas behind it were presented at the FOSDEM 2021 BSD Devroom in the talk ["hello... again? Simplicity, elegance, and usability for the desktop"](https://fosdem.org/2021/schedule/event/hello_bsd/). Video recordings of the talk and Q&A session are available ([WebM/VP9](https://video.fosdem.org/2021/D.bsd/hello_bsd.webm), [mp4](https://video.fosdem.org/2021/D.bsd/hello_bsd.mp4))
+  * Version 0.4.0 of helloSystem was published. Installable Live ISO images are available.
+  * Work has started towards 0.5.0. We are beginning to see contributed features and bugfixes
+    * System menu reflects changes made in Applications immediately
+    * Filer file manager brings already-open windows to the front rather than opening multiple windows for the same folder
+    * Initial spatial mode option (each folder opens in its own window in the file manager that remembers its on-screen location)
 
 Experimental and release builds of the Live ISO are available at https://github.com/helloSystem/ISO/releases.
 
