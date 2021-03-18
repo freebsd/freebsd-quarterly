@@ -8,9 +8,9 @@ This repository is for drafts.
 Please submit your draft as early as possible. To submit:
 
 1. Fork the repository - reusing an old fork is OK.
-2. Enter the directory for the current time period - `2020q4`.
+2. Enter the directory for the current time period - `2021q1`.
 3. Create a new file, with a name that corresponds with the name of
-   your project - use the `report-sample.md` template.
+   your project - use the `report-sample.adoc` template.
 4. Create a pull request.
 
 You can tweak things afterwards. Simply edit, then submit another PR.
@@ -18,9 +18,9 @@ You can tweak things afterwards. Simply edit, then submit another PR.
 Please do not worry excessively about language errors or AsciiDoc
 syntax - we can correct things for you.
 
-#### Deadline for submissions for `2020q4`
+#### Deadline for submissions for `2021q1`
 
-31st of December 2020
+1st of April 2021
 
 Note that this is **immediately** after the end of the quarter.
 
@@ -43,4 +43,4 @@ Collated final reports are:
 
 The most recent report:
 
-* https://www.freebsd.org/news/status/report-2020-07-2020-09.html
+* https://www.freebsd.org/news/status/report-2020-10-2020-12.html

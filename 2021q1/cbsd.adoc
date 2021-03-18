@@ -11,6 +11,6 @@ CBSD allows users to manage jail/bhyve/xen environments at different levels of a
 
 ### CBSD 2021Q1 Status Report ###
 
-RestAPI service layer was added during last quarter, enabling creation of programmable cloud solutions.
+A RestAPI service layer was added during last quarter, enabling creation of programmable cloud solutions.
 In addition, work has been done to support RestAPI through a `CBSDfile`, allowing for private cloud environments deployment.
 In such cases the local CBSD layer acts as a thin client.
