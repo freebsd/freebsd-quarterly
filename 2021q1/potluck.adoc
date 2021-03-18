@@ -1,0 +1,19 @@
+== Potluck & Potman - Flavour & Image Repository for Pot
+
+Link:	 link:https://potluck.honeyguide.net/[Potluck Repository & Project]  
+Link:	 link:https://github.com/hny-gd/potluck[Potluck on github]  
+Link:  link:https://github.com/grembo/potman[Potman on github]  
+Link:  link:https://pot.pizzamig.dev[pot project]  
+
+Contact: Stephan Lichtenauer (Potluck) <sl@honeyguide.eu>  
+Contact: Michael Gmelin (Potman) <freebsd@grem.de>
+
+Pot is a jail management tool that link:https://www.freebsd.org/news/status/report-2020-01-2020-03.html#pot-and-the-nomad-pot-driver[also supports orchestration through nomad].
+
+Potluck aims to be to FreeBSD and pot what Dockerhub is to Linux and Docker: A repository of pot flavours and complete images for usage with pot. 
+
+Additionally, the new potman project aims to simplify building putluck images and also provides a new version of the potluck template. 
+
+In the last two quarters, FreeBSD 12.2 images have been built and the 11.4 images have been upgraded with the new packages. Furthermore, new images have been created, e.g. a Wordpress service.
+
+Future plans include further potman workflow features, new images and images for FreeBSD 13.
