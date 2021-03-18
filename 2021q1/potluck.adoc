@@ -14,7 +14,7 @@ Potluck aims to be to FreeBSD and Pot what Dockerhub is to Linux and Docker: A r
 
 The new Potman project aims to simplify building Pot images with Vagrant and VirtualBox based on the Potluck approach, e.g. as part of a DevOps workflow for software development and testing. That way, Pot images can be created as part of a Jenkins workflow to be deployed with Nomad and Consul. 
 
-In the last two quarters, FreeBSD 12.2 Potluck images have been built and the 11.4 images have been upgraded with the new packages. Furthermore, new images like Wordpress and an improved flavour script (that not only squashes a nasty network problem) have been created.
+In the last two quarters, FreeBSD 12.2 Potluck images have been built and the 11.4 images have been upgraded with the new packages. Furthermore, new images like link:https://potluck.honeyguide.net/blog/wordpress-nginx-nomad/[Wordpress] and an improved flavour script (that not only squashes a nasty network problem) have been created.
 
 Future plans include further Potman workflow features, new and improved Potluck images and publishing FreeBSD 13-based images.
 
