@@ -2,7 +2,7 @@
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 
-The purpose of this working group is redesign the Website and the Documentation Portal.
+The purpose of this working group is to redesign the Website and the Documentation Portal.
 
 The work will be divided into 4 phases.
 
@@ -12,7 +12,7 @@ Phase 1:
 
 Phase 2:
 
-* Redesign the manual pages scripts to generate the html using mandoc.
+* Redesign the manual pages scripts to generate the HTML using mandoc.
 
 Phase 3:
 
