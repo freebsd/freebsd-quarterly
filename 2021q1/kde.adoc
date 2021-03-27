@@ -40,3 +40,6 @@ the Qt and KDE stack. Some resolution may be forthcoming in the
 form of WebEngine-less ports, but the real effort is in trying to
 get WebEngine to build with Python3.
 
+More detailed descriptions of the updates in this quarter are
+available [here (part 1)](https://euroquis.nl/kde/2021/02/13/freebsd.html)
+and [here (part 2)](https://euroquis.nl/kde/2021/03/26/freebsd2021o2.html).
