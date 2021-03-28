@@ -34,7 +34,7 @@ constructively and in ways we haven't as a community or project before.
 
 With the future in mind, we have plans to:
 
-* Automatically announce news, updates and advisories in Discord
+* Automatically announce news, updates and advisories in Discord.
 * Verify and enable additional Discord features designed for large communities.
 * Set up bots with unique features, including moderation and interactive features
   for members. We welcome ideas in this regard.
