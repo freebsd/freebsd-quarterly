@@ -1,11 +1,11 @@
 == Discord Server & Community Growth ==
 
-Link: link:https://wiki.freebsd.org/Discord[Discord Wiki Page]
-Link: link:https://discord.gg/RHprKbvWJN[Discord Invitation Link]
+Link: link:https://wiki.freebsd.org/Discord[Discord Wiki Page]  
+Link: link:https://discord.gg/RHprKbvWJN[Discord Invitation Link]  
 
-Contact: Lewis Cook <lcook@FreeBSD.org>
-Contact: Kubilay Kocak <koobs@FreeBSD.org>
-Contact: Vincent Milum Jr <freebsd@darkain.com>
+Contact: Lewis Cook <lcook@FreeBSD.org>  
+Contact: Kubilay Kocak <koobs@FreeBSD.org>  
+Contact: Vincent Milum Jr <freebsd@darkain.com>  
 
 The FreeBSD project and community continues to grow, and in the last 2
 quarters, we established an official FreeBSD server on the popular Discord
