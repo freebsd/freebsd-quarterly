@@ -18,7 +18,10 @@ Despite this inspiration, freebsd-update has been a constant point of frustratio
 PkgBase is not ready for prime yet, or else the FreeBSD project would be providing this service.
 With the call for testing open since 2016, I thought it would be time to offer a _public_ service, so a broader part of the community can take part in testing, without having to do all the work for themselves.
 
-A lot of things already work fine, but more work needs to be done, as can be seen from the TODO list, as well as the "Pending Changes" on the website.
-Perhaps the most important thing would be to provide ISOs which lets people setup a fresh system with PkgBase from the get-go.
+A lot of things already work fine, but more work needs to be done. Here's a current breakdown of what we need help with:
+
+- Test pkgbase and report issues, both with the repository and pkgbase itself
+- Create a ISO from which a fresh FreeBSD system can be installed with pkgbase
+- Fix the link:https://bugs.freebsd.org/254050[autoremove bug], which currently removes a little too much
 
 Hardware for PkgBase is kindly sponsored by a member of the FreeBSD community.
