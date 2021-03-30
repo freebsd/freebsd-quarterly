@@ -1,0 +1,17 @@
+== nv(9)-based audio device enumeration
+
+Link: link:https://reviews.freebsd.org/D26884[D26884 Implement sndstat nvlist-based enumeration ioctls.]
+
+Contact: Ka Ho Ng <khng@FreeBSD.org>  
+
+This work presents a number of ioctl commands on [.underline]#/dev/sndstat# using nv(9) to expose all available audio 
+device nodes. nv(9) is used to generate a serialized binary stream representation of the information of audio device nodes 
+presented in the running system. The documented nvlist structure in sndstat(4) manual page is stable for programming use.
+
+For long time, enumerating the audio device node interface requires parsing content of [.underline]#/dev/sndstat#. It is 
+tedious to write such parser and handles different `hw.snd.verbose` levels correctly. Using nv(9) eliminates the need of 
+writing a text parser to do audio device nodes enumeration.
+
+This work has been committed and is available starting from FreeBSD version number 1400006. 
+
+Sponsor: The FreeBSD Foundation
