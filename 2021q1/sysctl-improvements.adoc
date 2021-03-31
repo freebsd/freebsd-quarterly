@@ -75,7 +75,7 @@ internal nodes has not a value).
 *Documentation:* +
 The APIs decribed above (both kernel and userspace) are really easy:
 "sysctl -aN", "sysctl -d kern.ostype", etc., can be implemented by few lines of
-code. Nevertheless each project provides a README, with Introduction, Getting
+code. Nevertheless each project provides a README with Introduction, Getting
 started, Features, API, Real world use cases, FAQ and examples in the Public
 Domain to build new projects. Of course the manuals and examples have recently
 been updated.
