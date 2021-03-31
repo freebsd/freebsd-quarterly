@@ -83,14 +83,14 @@ been updated.
 *Utilities:* +
 sysctlview - port: deskutils/sysctlview - updated to 2.1 +
 The first version of sysctlview was just a graphical representation of the MIB,
-now it could be considered a GUI version of the sysctl utility.
-This utility exploits the object serialization of sysctlinfo, indeed, it is not
+now it could be considered a GUI version of sysctl.
+This utility exploits the object serialization of sysctlinfo, indeed it is not
 feasible to compel the kernel to find many time the same object to retrieve all
 its properties considering the current MIB size.
-Thanks to user feedbacks the new version improves the GUI is been improved, for
-example sorting by clicking a column title, moreover the "Handler" entry is been
-added in the "Object" window, it is useful to know if an object has a value or
-if the OID of a CTLTYPE_NODE can be extended.
+Thanks to user feedbacks the new version provides a better UI, for example
+clicking a column title to sort the entries, moreover the "Handler" entry is
+been added in the "Object" window, it is useful to know if an object has a value
+or if the OID of a CTLTYPE_NODE can be extended.
 
 nsysctl - port: sysutils/nsysctl - updated to 2.0 +
 nsysctl is a terminal version of sysctlview, the output is explicitly indicated
