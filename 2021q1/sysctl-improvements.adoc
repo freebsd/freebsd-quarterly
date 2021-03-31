@@ -50,7 +50,7 @@ and improvements.
 *Library:* +
 sysctlmibinfo2 - port: devel/libsysctlmibinfo2 - updated to 2.0.1 +
 Primarily the sysctlmibinfo2 library wraps the low level interfaces described
-above, moreover it defines a struct sysctlmif_object with the property of an
+above, moreover it defines a struct sysctlmif_object with the properties of an
 object and provides a convenient API to build data structures of
 sysctlmif_object (for example: a subtree, a list of a list of a Depth First
 Traversal, and so on); therefore it is useful to handle an object correctly
@@ -62,15 +62,15 @@ its name (avoiding to explore the MIB just to find the corresponding OID),
 gets all info about an object in a time and manages a special name via
 sysctlbyname-improved.
 
-The version 2.0.1 takes the new advantages from the kernel improvements:
+The version 2.0.1 takes the advantages from the kernel improvements:
 improved efficiency to build a sysctlmif_object and new features to get info
 about an object: "handler" and "nextbyname".
 The new functions are: sysctlmif_hashandler() and sysctlmif_hashandlerbyname()
 to know is an object has a defined kernel handler, sysctlmif_nextnodebyname()
 and sysctlmif_nextleafbyname() to explore the MIB, sysctlmif_leaves() and
 sysctlmif_leavesbyname() to build structures of only-leaves (properly they build
-a list with the descending leaves of a node, it useful because the internal
-nodes has not a value).
+a list with the leaves descendents of a node, they are useful because the
+internal nodes has not a value).
 
 *Documentation:* +
 The APIs decribed above (both kernel and userspace) are really easy:
