@@ -97,12 +97,12 @@ nsysctl is a terminal version of sysctlview, the output is explicitly indicated
 by the options and is printed via libxo in human and machine readable formats,
 moreover some string value is parsed to display structured output.
 The options are not mutually exclusive and allow to show the properties of a
-parameter so nsysctl is useful to know the info to handle a sysctl object
-without to find its implementation, for example: is Multiprocessor safe?
-Is available in Capability mode? Is the OID extendible? Does the integer
-represent a kelvin? Has a value? What is the label? And so on.
-The new version supports libnv, it is useful to manage a non-primitive data
-type avoiding, at least in the future, hardcode of a generic opaque type.
+parameter so nsysctl is useful to know the info to handle an object without to
+find its implementation, for example: is Multiprocessor safe? Is available in
+Capability mode? Is the OID extendible? Does the integer represent a kelvin? Has
+a value? What is the label? And so on.
+The new version supports libnv, it is useful to manage a non-primitive data type
+and could avoid hardcode of a generic opaque types in the future.
 Finally the new features of sysctlinfo allow to use nsysctl to debug the MIB
 without a kernel recompilation with SYSCTL_DEBUG.
 Note, the project provides a tutorial to describe every features.
