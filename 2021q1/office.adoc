@@ -9,7 +9,7 @@ Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>
 The FreeBSD Office team works on a number of office-related software suites
 and tools such as OpenOffice and LibreOffice.
 
-Work during this quarter focused on providing the latest stable release of
+Work during this quarter was focused on providing the latest stable release of
 LibreOffice suite and companion apps to all FreeBSD users.
 
 Latest and quarterly ports branches got a new branch (7.1) of the LibreOffice suite
