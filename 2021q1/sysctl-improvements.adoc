@@ -13,9 +13,9 @@ Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>
 The sysctl system call and the wrapper sysctl utility can get and set the
 system state at runtime, the kernel exposes the available parameters as objects
 of a Management Information Base.
-After a recent system update with a GENERIC CURRENT configuration on my old
-laptop with a Desktop environment without ZFS, the MIB has exceeded ten thousand
-objects (both internal nodes and leaves, most in the vm.uma subtree).
+After a recent system update with a CURRENT-GENERIC configuration, the MIB has
+exceeded ten thousand objects (both internal nodes and leaves, most in the
+vm.uma subtree) on my laptop with a Desktop environment without ZFS.
 Furthermore I received tips, ideas, PRs and iusses about sysctl so I have been
 motivated to fulfil some improvement, finally I accomplished the suggestions
 received during the BSDCan 2020.
