@@ -37,12 +37,12 @@ with some empty string level or extetended to pass an input to the handler of a
 CTLTYPE_NODE; it is been updated to take advantages of the improvements (mainly
 efficiency) of sysctlinfo.
 
-*sysctl-libnv:* +
-This project provides an implementation and an example to build a sysctl object
-with an nvlist value, to know more about nvlist https://man.freebsd.org/libnv/9.
-Properly a new sysctl handler is been defined: it is sufficient create a nvlist
-and to pass it to a "C macro" then the system call uses the new handler to pass
-it to the userland and the nsysctl utility can manage the value.
+sysctl-libnv, this project provides an implementation and an example to build a
+sysctl object with an nvlist value, to know more about nvlist
+https://man.freebsd.org/libnv/9. Properly a new sysctl handler is been defined:
+it is sufficient create a nvlist and to pass it to a macro then the system call
+uses the new handler to pass the nvlist to the userland and the nsysctl utility
+can manage the opject value.
 
 The following tools are been updated to give advantages from new kernel features
 and improvements.
