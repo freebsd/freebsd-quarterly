@@ -4,19 +4,14 @@ Link: [ENA README](https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/
 
 Contact: Michal Krawczyk <mk@semihalf.com>  
 Contact: Artur Rojek <ar@semihalf.com>  
-Contact: Marcin Wojtas <mw@semihalf.com>  
+Contact: Marcin Wojtas <mw@semihalf.com>
 
-ENA (Elastic Network Adapter) is the smart NIC available in the
-virtualized environment of Amazon Web Services (AWS). The ENA
-driver supports multiple transmit and receive queues and can handle
-up to 100 Gb/s of network traffic, depending on the instance type
-on which it is used.
+ENA (Elastic Network Adapter) is the smart NIC available in the virtualized environment of Amazon Web Services (AWS). The ENA driver supports multiple transmit and receive queues and can handle up to 100 Gb/s of network traffic, depending on the instance type on which it is used.
 
 Completed since the last update:
 
   * Update ENA driver to v2.3.1
-    * Determine location of the MSIx vector table on the device and allocate it
-      dynamically. This enables driver usage on instances like c5gn.
+    * Determine location of the MSIx vector table on the device and allocate it dynamically - this enables driver usage on instances like c5gn.
   * MFC of the ENA v2.3.1 driver to the FreeBSD 11/12/13-STABLE branches
   * ENA v2.3.1 will be a part of the FreeBSD 13.0-RELEASE
 
