@@ -11,7 +11,7 @@ The FreeBSD Cluster Administration Team consists of the people responsible for a
   * Put local Git mirrors on the universe machines
   * Replaced disks in the UK mirror
   * Replaced a disk in pointyhat (https://pkg-status.freebsd.org)
-  * Recycled some old deadweight servers eating up rackspace and power at our primary cluster site
+  * Recycled some old dead-weight servers eating up rackspace and power at our primary cluster site
   * Upgraded developer reference platforms
     * ref{11,12,13,14}-{amd64,i386}
     * universe*
@@ -31,7 +31,7 @@ Work in progress:
 
   * Move pkg-master.nyi to new hardware
   * Fix git fallouts
-  * Upgrad cluster hardware
+  * Upgrade cluster hardware
   * Upgrade developer-facing machines to 14-CURRENT
     * Install ref14* machines
   * Improve to the package building infrastructure
