@@ -16,9 +16,9 @@ of a Management Information Base.
 After a recent system update with a CURRENT-GENERIC configuration, the MIB has
 exceeded ten thousand objects (both internal nodes and leaves, most in the
 vm.uma subtree) on my laptop with a Desktop environment without ZFS.
-Furthermore I received tips, ideas, PRs and iusses about sysctl so I have been
-motivated to fulfil some improvement, finally I accomplished the suggestions
-received during the BSDCan 2020.
+Furthermore I received tips, ideas, PRs and iusses about sysctl so some
+improvement is been fulfilled, finally the suggestions received during the
+BSDCan 2020 are been accomplished.
 
 *Kernel space:* +
 sysctlinfo - port: sysutils/sysctlinfo-kmod - updated to 20210222  +
