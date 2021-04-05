@@ -33,7 +33,7 @@ Traversal, and so on); therefore it is useful to handle an object correctly and/
 Obviously sysctlmibinfo2 benefits of the features of sysctlinfo: handles OIDs up to CTL_MAXNAME levels, supports the Capability Mode, can seek an object matching its name (avoiding to explore the MIB just to find the corresponding OID), gets all info about an object in a time and manages a special name via sysctlbyname-improved.
 
 Version 2.0.1 takes the advantage from the kernel improvements: improved efficiency to build a sysctlmif_object and new features to get info about an object: "handler" and "nextbyname".
-The new functions are: sysctlmif_hashandler() and sysctlmif_hashandlerbyname() to know is an object has a defined kernel handler, sysctlmif_nextnodebyname() and sysctlmif_nextleafbyname() to explore the MIB, sysctlmif_leaves() and sysctlmif_leavesbyname() to build only-leaf data structures.
+The new functions are: sysctlmif_hashandler() and sysctlmif_hashandlerbyname() to know if an object has a defined kernel handler, sysctlmif_nextnodebyname() and sysctlmif_nextleafbyname() to explore the MIB, sysctlmif_leaves() and sysctlmif_leavesbyname() to build only-leaf data structures.
 
 ### Documentation ###
 The APIs decribed above (both kernel and userspace) are really easy: "sysctl -aN", "sysctl -d kern.ostype", etc., can be implemented by few lines of code.
