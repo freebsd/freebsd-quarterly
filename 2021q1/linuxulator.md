@@ -7,7 +7,8 @@ with support from the FreeBSD Foundation over a few distinct project
 grants as well as contributions from the community.
 The goal of this project is to improve FreeBSD's ability to execute
 unmodified Linux binaries.
-Current support status of specific Linux applications is being tracked at [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
+Current support status of specific Linux applications is being tracked
+at [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
 
 The work this quarter focused on making sure the 13.0-RELEASE ships
 with Linuxulator in a good shape, and fixing problems reported by
