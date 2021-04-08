@@ -3,19 +3,19 @@
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
 Linuxulator improvements have been ongoing for the last two years,
-with support from the FreeBSD foundation over a few distinct project
+with support from the FreeBSD Foundation over a few distinct project
 grants as well as contributions from the community.
 The goal of this project is to improve FreeBSD's ability to execute
 unmodified Linux binaries.
-Current status is being tracked at [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
+Current support status of specific Linux applications is being tracked at [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
 
 The work this quarter focused on making sure the 13.0-RELEASE ships
 with Linuxulator in a good shape, and fixing problems reported by
 users.  There are some new directories provided by `linsysfs(5)`,
 the lack of which, through a curious chain of events, broke
 installation of make(1) in Ubuntu Focal.  The `getcwd(2)` syscall
-was fixed to no longer return the wrong error value, which was
-breaking Mono.  The `getsockopt(2)` sycall now supports `SO_PEERSEC`
+was fixed to no longer return the wrong error value for certain conditions,
+which was breaking Mono.  The `getsockopt(2)` sycall now supports `SO_PEERSEC`
 and `SO_PEERGROUPS`, which are being used by su(8) and sudo(8).
 Other fixes include flag handling for 32-bit `send(2)` syscall, and
 several ptrace(2) problems, which were affecting Steam games.  The
