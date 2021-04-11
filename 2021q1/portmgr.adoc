@@ -1,13 +1,13 @@
 == Ports Collection
 
-Link: link:https://www.FreeBSD.org/ports/[About FreeBSD Ports]
-Link: link:https://docs.freebsd.org/en/articles/contributing/ports-contributing/[Contributing to Ports]
-Link: link:http://portsmon.freebsd.org/[FreeBSD Ports Monitoring]
-Link: link:https://www.freebsd.org/portmgr/[Ports Management Team]
+Link: link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] +
+Link: link:https://docs.freebsd.org/en/articles/contributing/ports-contributing/[Contributing to Ports] +
+Link: link:http://portsmon.freebsd.org/[FreeBSD Ports Monitoring] +
+Link: link:https://www.freebsd.org/portmgr/[Ports Management Team] +
 Link: link:http://ftp.freebsd.org/pub/FreeBSD/ports/ports/[Ports Tarball]
 
-Contact: René Ladan <portmgr-secretary@FreeBSD.org>  
-Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>  
+Contact: René Ladan <portmgr-secretary@FreeBSD.org> +
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
 
 The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages, and personnel matters.
 Below is what happened in the last quarter.
