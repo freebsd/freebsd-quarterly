@@ -15,8 +15,7 @@ If you don't know AsciiDoctor, just write it as if it was plain text.
 Show the importance of your work.
 Status reports are not just about telling everyone that things were done, they also need to explain why they were done.
 
-The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages, and
-personnel matters.
+The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages, and personnel matters.
 Below is what happened in the last quarter.
 
 * #ports #PR #PRunassigned #commits #committers conclusion
