@@ -1,18 +1,18 @@
-## Continuous Integration ##
+== Continuous Integration
 
-Link: link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance]  
-Link: link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab]  
-Link: link:https://artifact.ci.FreeBSD.org[FreeBSD CI artifact archive]  
-Link: link:https://hackmd.io/@FreeBSD-CI[FreeBSD CI weekly report]  
-Link: link:https://wiki.freebsd.org/Jenkins[FreeBSD Jenkins wiki]  
-Link: link:https://wiki.freebsd.org/HostedCI[Hosted CI wiki]  
-Link: link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rd Party Software CI]  
-Link: link:https://preview.tinyurl.com/y9maauwg[Tickets related to freebsd-testing@]  
+Link: link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance]  +
+Link: link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab]  +
+Link: link:https://artifact.ci.FreeBSD.org[FreeBSD CI artifact archive]  +
+Link: link:https://hackmd.io/@FreeBSD-CI[FreeBSD CI weekly report]  +
+Link: link:https://wiki.freebsd.org/Jenkins[FreeBSD Jenkins wiki]  +
+Link: link:https://wiki.freebsd.org/HostedCI[Hosted CI wiki]  +
+Link: link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rd Party Software CI]  +
+Link: link:https://preview.tinyurl.com/y9maauwg[Tickets related to freebsd-testing@]  +
 Link: link:https://github.com/freebsd/freebsd-ci[FreeBSD CI Repository]
 
-Contact: Jenkins Admin <jenkins-admin@FreeBSD.org>  
-Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>  
-Contact: link:https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing[freebsd-testing Mailing List]  
+Contact: Jenkins Admin <jenkins-admin@FreeBSD.org>  +
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>  +
+Contact: link:https://lists.FreeBSD.org/mailman/listinfo/freebsd-testing[freebsd-testing Mailing List]  +
 Contact: IRC #freebsd-ci channel on EFNet
 
 The FreeBSD CI team maintains the continuous integration system of the FreeBSD project.
@@ -25,9 +25,9 @@ During the first quarter of 2021, we continued working with the contributors and
 
 Important changes:
 
-  * All src jobs were changed to use git to follow VCS migration.
-    Thanks Brandon Bergren (bdragon@) again.
-  * Doc job has been update for following the AsciiDoc migration.
+* All src jobs were changed to use git to follow VCS migration.
+Thanks Brandon Bergren (bdragon@) again.
+* Doc job has been update for following the AsciiDoc migration.
 
 New jobs added:
 
@@ -36,28 +36,23 @@ New jobs added:
 
 Work in progress and open tasks:
 
-  * Designing and implementing pre-commit CI building and testing
-  * Designing and implementing use CI cluster to build release artifacts as release engineering does
-  * Collecting and sorting CI tasks and ideas
-    link:https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo[here]
-  * Testing and merging pull requests in the
-    link:https://github.com/freebsd/freebsd-ci/pulls[the FreeBSD-ci repo]
-  * Reducing the procedures of CI/test environment setting up for contributors and
-    developers
-  * Setting up the CI stage environment and putting the experimental jobs on it
-  * Setting up public network access for the VM guest running tests
-  * Implementing automatic tests on bare metal hardware
-  * Adding drm ports building tests against -CURRENT
-  * Planning to run ztest and network stack tests
-  * Adding more external toolchain related jobs
-  * Improving the hardware lab to be more mature and adding more hardware
-  * Helping more software get FreeBSD support in their CI pipeline
-    Wiki pages: link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rdPartySoftwareCI],
-    link:https://wiki.freebsd.org/HostedCI[HostedCI]
-  * Working with hosted CI providers to have better FreeBSD support
-  * The build and test results will be sent to the
-    link:https://lists.freebsd.org/mailman/listinfo/dev-ci[dev-ci mailing list]
-    soon. Feedback and help with analysis is very appreciated!
+* Designing and implementing pre-commit CI building and testing
+* Designing and implementing use CI cluster to build release artifacts as release engineering does
+* Collecting and sorting CI tasks and ideas link:https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo[here]
+* Testing and merging pull requests in the link:https://github.com/freebsd/freebsd-ci/pulls[the FreeBSD-ci repo]
+* Reducing the procedures of CI/test environment setting up for contributors and
+developers
+* Setting up the CI stage environment and putting the experimental jobs on it
+* Setting up public network access for the VM guest running tests
+* Implementing automatic tests on bare metal hardware
+* Adding drm ports building tests against -CURRENT
+* Planning to run ztest and network stack tests
+* Adding more external toolchain related jobs
+* Improving the hardware lab to be more mature and adding more hardware
+* Helping more software get FreeBSD support in their CI pipeline
+Wiki pages: link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rdPartySoftwareCI], link:https://wiki.freebsd.org/HostedCI[HostedCI]
+* Working with hosted CI providers to have better FreeBSD support
+* The build and test results will be sent to the link:https://lists.freebsd.org/mailman/listinfo/dev-ci[dev-ci mailing list] soon. Feedback and help with analysis is very appreciated!
 
 Please see link:https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=__open__&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailreporter1=1&emailtype1=substring&query_format=advanced[freebsd-testing@ related tickets] for more WIP information, and don't hesitate to join the effort!
 

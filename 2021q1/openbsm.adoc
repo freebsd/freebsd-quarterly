@@ -1,9 +1,9 @@
-## OpenBSM Synchronisation ##
+== OpenBSM Synchronisation
 
-Link:	 [TrustedBSD / OpenBSM](http://www.trustedbsd.org/openbsm.html)  
-Link:	 [OpenBSM Github Sources](https://github.com/openbsm/openbsm)  
-Link:	 [Synchronisation with macOS Catalina](https://github.com/openbsm/openbsm/commit/54a0c07cf8bac71554130e8f6760ca68e5f36c7f)  
-Link:	 [Apple OpenSource](https://opensource.apple.com)
+Link: link:http://www.trustedbsd.org/openbsm.html[TrustedBSD / OpenBSM] +
+Link: link:https://github.com/openbsm/openbsm[OpenBSM Github Sources] +
+Link: link:https://github.com/openbsm/openbsm/commit/54a0c07cf8bac71554130e8f6760ca68e5f36c7f[Synchronisation with macOS Catalina] +
+Link: link:https://opensource.apple.com[Apple OpenSource]
 
 Contact: Gordon Bergling <gbe@FreeBSD.org>
 
