@@ -1,3 +1,77 @@
-# Introduction #
+= Introduction
+:doctype: article
+:toc: macro
+:toclevels: 2
+:icons: font
+:sectnums:
+:sectnumlevels: 6
+:source-highlighter: rouge
+:experimental:
+:reports-path: content/en/status/report-2021-01-2021-03
 
 This report covers FreeBSD related projects for the period between January and March, and is the third of four planned reports for 2021.
+
+'''
+
+toc::[]
+
+[[freeBSD-Team-Reports]]
+== FreeBSD Team Reports
+
+Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
+
+include::{reports-path}/clusteradm.adoc[leveloffset=+1]
+
+include::{reports-path}/ci.adoc[leveloffset=+1]
+
+[[projects]]
+== Projects
+
+Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
+
+include::{reports-path}/linuxulator.adoc[leveloffset=+1]
+
+include::{reports-path}/openbsm.adoc[leveloffset=+1]
+
+[[kernel]]
+== Kernel
+
+Updates to kernel subsystems/features, driver support, filesystems, and more.
+
+include::{reports-path}/iwlwifi.adoc[leveloffset=+1]
+
+[[ports]]
+== Ports
+
+Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
+
+include::{reports-path}/kde.adoc[leveloffset=+1]
+
+include::{reports-path}/office.adoc[leveloffset=+1]
+
+[[documentation]]
+== Documentation
+
+Noteworthy changes in the documentation tree, in manpages, or in external books/documents.
+
+include::{reports-path}/docng.adoc[leveloffset=+1]
+
+include::{reports-path}/www.adoc[leveloffset=+1]
+
+include::{reports-path}/weblate.adoc[leveloffset=+1]
+
+[[miscellaneous]]
+== Miscellaneous
+
+Objects that defy categorization.
+
+include::{reports-path}/discord.adoc[leveloffset=+1]
+
+[[third-Party-Projects]]
+== Third-Party Projects
+
+Many projects build upon FreeBSD or incorporate components of FreeBSD into their project.
+As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
+The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
+
+include::{reports-path}/hellosystem.adoc[leveloffset=+1]

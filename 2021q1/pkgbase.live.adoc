@@ -1,4 +1,4 @@
-== PkgBase.live ==
+== PkgBase.live
 
 Link: link:https://alpha.pkgbase.live/[Website]
 
@@ -9,7 +9,8 @@ PkgBase packages the FreeBSD base system as ca 330 packages.
 
 The PkgBase project gives users the choice of which parts of the system to install.
 Users can choose which parts of the base system to install, without building their system from source and optionally choose to install `-dbg` packages when they need them.
-PkgBase is built with default options. There's no need to build `WITHOUT_SENDMAIL`, when users can just chose not to install it!
+PkgBase is built with default options.
+There's no need to build `WITHOUT_SENDMAIL`, when users can just chose not to install it!
 In addition, PkgBase.live builds _every_ usable kernel! This is especially important for architectures like `armv7`.
 
 As a service, PkgBase.live was inspired by link:https://up.bsd.lv/[up.bsd.live], which provides man:freebsd-update[8] for STABLE and CURRENT branches.

@@ -1,10 +1,10 @@
-## Intel wireless update ##
+== Intel wireless update
 
-Link:  [The freebsd-wireless mailing list](https://lists.freebsd.org/mailman/listinfo/freebsd-wireless)
+Link:  link:https://lists.freebsd.org/mailman/listinfo/freebsd-wireless[The freebsd-wireless mailing list]
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
 
-### Newer Intel Wireless device support ###
+=== Newer Intel Wireless device support
 
 The Intel Wireless driver update project aims to bring support for newer chipsets.
 

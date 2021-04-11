@@ -1,13 +1,13 @@
-## VirtualBox FreeBSD port ##
+== VirtualBox FreeBSD port
 
-Link:	 [VirtualBox home page](https://www.virtualbox.org/)  
-Link:	 [VirtualBox OSE port on FreshPorts](https://www.freshports.org/emulators/virtualbox-ose)
+Link: link:https://www.virtualbox.org/[VirtualBox home page] +
+Link: link:https://www.freshports.org/emulators/virtualbox-ose[VirtualBox OSE port on FreshPorts]
 
 Contact: VirtualBox port team <vbox@FreeBSD.org>
 
 The VirtualBox ports have been updated to the upstream 6.1.18 release.
 
-This is a new major release with new features and better support, especially for graphics output. 
+This is a new major release with new features and better support, especially for graphics output.
 This new release has support only for recent amd64 CPUs providing virtualization support in hardware (VT-x, AMD-V bits).
 
 The previous versions of the VirtualBox ports have been preserved as the -legacy versions to allow people unable to use the new version to have a virtualization solution.
