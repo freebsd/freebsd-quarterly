@@ -1,4 +1,4 @@
-## Kernel Sanitizers ##
+== Kernel Sanitizers ==
 
 Contact: Mark Johnston <markj@FreeBSD.org>
 
