@@ -1,8 +1,8 @@
 == CBSD Project
 
-link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[CBSD API module]
+Link: link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[CBSD API module]
 
-Contact:	Oleg Ginzburg <olevole@olevole.ru>
+Contact: Oleg Ginzburg <olevole@olevole.ru>
 
 === What is CBSD?
 

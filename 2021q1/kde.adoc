@@ -14,12 +14,12 @@ The KDE Frameworks have a monthly release cycle; KDE Plasma and the rest of KDE 
 All of those releases landed in ports in a timely manner.
 Around KDE there are several hundred other applications with their own releases, of which notable or new ones are:
 
-* *calindori* and *kongress* and *kaidan* and *semantik* and *kgeotag*
-* *ruqola* and *neochat* for Rocket and Matrix instant-messaging, respectively
-* *amarok*, the one-time favorite KDE music player
+* `deskutils/calindori`, `deskutils/kongress`, `net-im/kaidan`, `deskutils/semantik` and `graphics/kgeotag`
+* `net-im/ruqola` and `net-im/neochat` for Rocket and Matrix instant-messaging, respectively
+* `audio/amarok`, the one-time favorite KDE music player
 
 Infrastructure work improved the way Qt5 ports install- and un-install changes to the global header `qconfig-modules.h`.
-CMake releases landed with distressing regularity, and various low-level things like *libphonenumber* and *poppler* were updated as needed.
+CMake releases landed with distressing regularity, and various low-level things like `devel/libphonenumber` and `graphics/poppler` were updated as needed.
 
 The big issue in the Qt stack on FreeBSD is Qt5-WebEngine, which is based on Chromium.
 Like Chromium itself (upstream), it has a tangled mess of a build system based on Python 2.7.

@@ -1,11 +1,11 @@
 == sysctl improvements
 
-Link: link:https://gitlab.com/alfix/sysctlinfo[sysctlinfo]  +
-Link: link:https://gitlab.com/alfix/sysctlbyname-improved[sysctlbyname-improved]  +
-Link: link:https://git.io/Jm9x7[BSDCan 2020 - sysctlinfo questions]  +
-Link: link:https://gitlab.com/alfix/sysctl-libnv[sysctl-libnv]  +
-Link: link:https://gitlab.com/alfix/sysctlmibinfo2[sysctlmibinfo2]  +
-Link: link:https://gitlab.com/alfix/sysctlview[sysctlview]  +
+Link: link:https://gitlab.com/alfix/sysctlinfo[sysctlinfo] +
+Link: link:https://gitlab.com/alfix/sysctlbyname-improved[sysctlbyname-improved] +
+Link: link:https://git.io/Jm9x7[BSDCan 2020 - sysctlinfo questions] +
+Link: link:https://gitlab.com/alfix/sysctl-libnv[sysctl-libnv] +
+Link: link:https://gitlab.com/alfix/sysctlmibinfo2[sysctlmibinfo2] +
+Link: link:https://gitlab.com/alfix/sysctlview[sysctlview] +
 Link: link:https://gitlab.com/alfix/nsysctl[nsysctl]
 
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>

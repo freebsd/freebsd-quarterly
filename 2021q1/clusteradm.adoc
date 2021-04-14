@@ -13,19 +13,19 @@ The FreeBSD Cluster Administration Team consists of the people responsible for a
 * Replaced a disk in pointyhat (https://pkg-status.freebsd.org)
 * Recycled some old dead-weight servers eating up rackspace and power at our primary cluster site
 * Upgraded developer reference platforms
-* ref{11,12,13,14}-{amd64,i386}
-* universe*
+  * ref{11,12,13,14}-{amd64,i386}
+  * universe*
 * Installed two new aarch64 machines
-* ref12-aarch64, ref13-aarch64, ref14-aarch64
-* security-officer aarch64 freebsd-update builder
+  * ref12-aarch64, ref13-aarch64, ref14-aarch64
+  * security-officer aarch64 freebsd-update builder
 * Work with asciidoc project to update https://www.freebsd.org and https://docs.freebsd.org
 * Installed a new mirror server in Brazil, sponsored by link:https://nic.br[nic.br]
-* gdns points everyone from South America to this mirror
-* complete {download,ftp,pkg}.freebsd.org mirror
+  * gdns points everyone from South America to this mirror
+  * complete {download,ftp,pkg}.freebsd.org mirror
 * Helped rmacklem@ participate in this year's link:http://www.nfsv4bat.org/Events/2021/Feb/BAT/index.html[NFS Bakeathon] interoperability testing event by providing a cluster machine to the testing VPN
 * Ongoing day to day cluster management activity
-* Putting out fires
-* Babysitting pkgsync
+  * Putting out fires
+  * Babysitting pkgsync
 
 Work in progress:
 
@@ -33,7 +33,7 @@ Work in progress:
 * Fix git fallouts
 * Upgrade cluster hardware
 * Upgrade developer-facing machines to 14-CURRENT
-* Install ref14* machines
+  * Install ref14* machines
 * Improve to the package building infrastructure
 * Research and test migration away from mailman2
 * Work with Git migration working group for ports tree migration
