@@ -18,8 +18,8 @@ Applied changes:
 * Fix device tree data parsing in mv\_ap806\_gicp interrupt controller driver ([commit 622d17da46eb](https://cgit.freebsd.org/src/commit/?id=622d17da46eb360c3d684))
 * Rework the ICU interrupt controller (mv\_cp110\_icu) and its parent (mv\_ap806\_gicp), so that they no longer rely on the data provided by firmware, which fixes booting the OS from the newer U-Boot/TF-A revisions ([D28803](https://reviews.freebsd.org/D28803))
 * PCIE Designware driver (pci_dw) fixes:
-  * Correct setting of outbound I/O ATU window.
-  * Allow mapping ATU windows bigger than 4GB.
+** Correct setting of outbound I/O ATU window.
+** Allow mapping ATU windows bigger than 4GB.
 * Generic improvements that enable proper user-space mapping and access of the PCI BARs
 
 TODO:

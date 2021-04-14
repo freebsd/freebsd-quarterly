@@ -31,8 +31,8 @@ Thanks Brandon Bergren (bdragon@) again.
 
 New jobs added:
 
-  * link:https://ci.freebsd.org/job/FreeBSD-main-amd64-test_tcptestsuite[TCP test suite for main on amd64]
-  * link:https://ci.freebsd.org/job/FreeBSD-main-amd64-gcc9_build[GCC 9 build for main on amd64]
+* link:https://ci.freebsd.org/job/FreeBSD-main-amd64-test_tcptestsuite[TCP test suite for main on amd64]
+* link:https://ci.freebsd.org/job/FreeBSD-main-amd64-gcc9_build[GCC 9 build for main on amd64]
 
 Work in progress and open tasks:
 
