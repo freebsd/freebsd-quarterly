@@ -16,8 +16,8 @@ In addition, PkgBase.live builds _every_ usable kernel! This is especially impor
 As a service, PkgBase.live was inspired by link:https://up.bsd.lv/[up.bsd.live], which provides man:freebsd-update[8] for STABLE and CURRENT branches.
 Despite this inspiration, freebsd-update has been a constant point of frustrations for me, so I was looking for alternatives.
 
-PkgBase is not ready for prime yet, or else the FreeBSD project would be providing this service.
-With the call for testing open since 2016, I thought it would be time to offer a _public_ service, so a broader part of the community can take part in testing, without having to do all the work for themselves.
+PkgBase is not ready for prime time yet, or else the FreeBSD project would be providing this service.
+With the call for testing open since 2016, I thought it was time to offer a _public_ service, so a broader part of the community can take part in testing, without having to do all the work for themselves.
 
 A lot of things already work fine, but more work needs to be done, as can be seen from the TODO list, as well as the "Pending Changes" on the website.
 Perhaps the most important thing would be to provide ISOs which lets people setup a fresh system with PkgBase from the get-go.

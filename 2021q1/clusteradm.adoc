@@ -18,7 +18,7 @@ The FreeBSD Cluster Administration Team consists of the people responsible for a
 * Installed two new aarch64 machines
 ** ref12-aarch64, ref13-aarch64, ref14-aarch64
 ** security-officer aarch64 freebsd-update builder
-* Work with asciidoc project to update https://www.freebsd.org and https://docs.freebsd.org
+* Worked with asciidoc project to update https://www.freebsd.org and https://docs.freebsd.org
 * Installed a new mirror server in Brazil, sponsored by link:https://nic.br[nic.br]
 ** gdns points everyone from South America to this mirror
 ** complete {download,ftp,pkg}.freebsd.org mirror

@@ -8,9 +8,9 @@ This work presents a number of ioctl commands on [.underline]#/dev/sndstat# usin
 nv(9) is used to generate a serialized binary stream representation of the information of audio device nodes presented in the running system.
 The documented nvlist structure in sndstat(4) manual page is stable for programming use.
 
-For long time, enumerating the audio device node interface requires parsing content of [.underline]#/dev/sndstat#.
-It is tedious to write such parser and handle different `hw.snd.verbose` levels correctly.
-Using nv(9) eliminates the need of writing a text parser to do audio device nodes enumeration.
+For a long time, enumerating the audio device node interface required parsing content of [.underline]#/dev/sndstat#.
+It is tedious to write such a parser and handle different `hw.snd.verbose` levels correctly.
+Using nv(9) eliminates the need to write a text parser to do audio device nodes enumeration.
 
 This work has been committed and is available in FreeBSD 14-CURRENT.
 

@@ -15,9 +15,9 @@ There are three projects on our Weblate:
 
 Language teams that were using Weblate before the migration to Hugo/AsciiDoctor, please see our link:https://wiki.freebsd.org/DocTranslationOnWeblate#Translation_based_on_Automatic_Suggestions[Translation based on Automatic Suggestions Wiki article] for more details.
 
-We've just started a project which consists of converting the old method of automatically translating strings, using the Machine Translation feature, into a new system that will work for the new documentation.
+We've just started a project for converting the old method of automatically translating strings, using the Machine Translation feature, to a new system that will work for the new documentation.
 This will save time for our translators.
 
-There are still pending items, you can check the link:https://wiki.freebsd.org/DocTranslationOnWeblate#Status[Status Page], any help is very welcome.
+There are still pending items: you can check the link:https://wiki.freebsd.org/DocTranslationOnWeblate#Status[Status Page]; any help is very welcome.
 
 The next step for the new quarter is to prepare and release the Website translations through Weblate as well.

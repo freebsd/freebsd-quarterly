@@ -27,7 +27,7 @@ Important changes:
 
 * All src jobs were changed to use git to follow VCS migration.
 Thanks Brandon Bergren (bdragon@) again.
-* Doc job has been update for following the AsciiDoc migration.
+* Doc job was updated for following the AsciiDoc migration.
 
 New jobs added:
 
@@ -37,9 +37,9 @@ New jobs added:
 Work in progress and open tasks:
 
 * Designing and implementing pre-commit CI building and testing
-* Designing and implementing use CI cluster to build release artifacts as release engineering does
+* Designing and implementing use of CI cluster to build release artifacts as release engineering does
 * Collecting and sorting CI tasks and ideas link:https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo[here]
-* Testing and merging pull requests in the link:https://github.com/freebsd/freebsd-ci/pulls[the FreeBSD-ci repo]
+* Testing and merging pull requests in link:https://github.com/freebsd/freebsd-ci/pulls[the FreeBSD-ci repo]
 * Reducing the procedures of CI/test environment setting up for contributors and
 developers
 * Setting up the CI stage environment and putting the experimental jobs on it

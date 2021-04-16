@@ -12,4 +12,4 @@ This new release has support only for recent amd64 CPUs providing virtualization
 
 The previous versions of the VirtualBox ports have been preserved as the -legacy versions to allow people unable to use the new version to have a virtualization solution.
 
-The new additions port at present fails to build on i386 but the old additions do provide basic functionality for such emulation.
+The new additions port at present fails to build on i386 but the old additions do provide basic functionality for that emulation.
