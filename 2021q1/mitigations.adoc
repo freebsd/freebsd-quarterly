@@ -1,0 +1,20 @@
+== Vulnerability Mitigations ==
+
+Contact: Ed Maste <emaste@FreeBSD.org> +
+Contact: Konstantin Belousov <kib@FreeBSD.org>
+
+We added support for enforcing a https://cgit.freebsd.org/src/commit/?id=2e1c94aa1fd582fb8ae0522f0827be719ff5fb67[write XOR execute] mapping policy.
+It is enabled by setting the `kern.elf64.allow_wx` and/or `kern.elf32.allow_wx` sysctls to 0 (for 64-bit and 32-bit binaries, respectively).
+Binaries can indicate that they requre writeable and executable mappings by setting the `NT_FREEBSD_FCTL_WXNEEDED` ELF feature bit, set via elfctl.
+
+elfctl received a few usability improvements to support use by ports, targeting different FreeBSD base system versions.
+We added a https://cgit.freebsd.org/src/commit/?id=f6d95a01103a49a94c876d5a51bb4be25c06d964[`-i` flag] to ignore unknown flags (so that the same elfctl invocation could be used on older FreeBSD versions) as well as the ability to  https://cgit.freebsd.org/src/commit/?id=86f33b5fcf6087bf4439881011b920ff99e6e300[specify features by value].
+
+Flags that request opt-out of a mitigation now have a `no` prefix to make the sense more clear.
+For example, the flag to indicate that the binary is not compatible with ASLR is now named `noaslr`.
+Unprefixed flag names are still supported, for backwards compatibility, but will emit a warning and will be removed in a later version.
+
+The next step is to introduce ports infrastructure to support tagging binaries in ports that require spcial flags.
+Details can be found in https://bugs.freebsd.org/252629[PR252629].
+
+Sponsor: The FreeBSD Foundation
