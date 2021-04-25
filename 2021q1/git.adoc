@@ -18,7 +18,7 @@ Contact IRC #gitcvt channel on EFnet
 
 The doc and src trees were migrated from Subversion to Git at the end of 2020, with some additional work extending into the first quarter of 2021.
 The Git Working Group implemented or updated commit hooks, and prepared for FreeBSD 13 to be built from Git.
-We converted draft documentation from Markdown to Asciidoc and merged it into the committer's guide and handbook.
+We converted draft documentation from Markdown to AsciiDoc and merged it into the committer's guide and handbook.
 
 The ports repository migration to Git started at the end of the quarter, beginning with a final Subversion commit on March 31st to indicate that the conversion started.
 We are working on portsnap and other ports infrastructure and they will be finished before or soon after the migration.
