@@ -19,17 +19,13 @@ Unprefixed flag names are still supported, for backwards compatibility, but will
 The next step is to introduce ports infrastructure to support tagging binaries in ports that require special flags.
 Details can be found in https://bugs.freebsd.org/252629[PR252629].
 
-Another update is that the base system binaries are now built as position-independent executable (PIE)
-https://cgit.freebsd.org/src/commit/?id=9a227a2fd642ec057a0ec70d67d5699d65553294[by default], for 64-bit
-architectures. PIE executables are used in conjunction with address
-randomization (ASLR) as a mitigation for certain types of security
-vulnerabilities. The ASLR feature still remains opt-in, however the described change
-allows enabling it using only sysctl knobs, without a need to rebuild the image.
+Another update is that the base system binaries are now built as position-independent executable (PIE) https://cgit.freebsd.org/src/commit/?id=9a227a2fd642ec057a0ec70d67d5699d65553294[by default], for 64-bit architectures.
+PIE executables are used in conjunction with address randomization (ASLR) as a mitigation for certain types of security vulnerabilities.
+The ASLR feature still remains opt-in, however the described change allows enabling it using only sysctl knobs, without a need to rebuild the image.
 Enabling PIE results in no material performance impact for most workloads.
 
-It is also worth mentioning that a certain number of ports inherit the base systems
-/usr/share/mk infrastructure, and some initially failed to build after toggling the
-PIE setting. All issues detected by executing the exp-run were addressed.
+It is also worth mentioning that a certain number of ports inherit the base systems /usr/share/mk infrastructure, and some initially failed to build after toggling the PIE setting.
+All issues detected by executing the exp-run were addressed.
 The details can be found in https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=253275[PR253275].
 
 The next step is to try enabling ASLR by default for 64-bit architectures.
