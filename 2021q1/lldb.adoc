@@ -1,10 +1,10 @@
 == LLDB Debugger Improvements
 
-Link:	 link:https://www.moritz.systems/blog/lldb-freebsd-cpu-target-support-and-userland-debugging-improvements/[Moritz Systems Project Description] +
-Link:	 link:https://www.moritz.systems/blog/freebsd-remote-process-plugin-on-non-x86-architectures/[Progress Report 1] +
-Link:	 link:https://www.moritz.systems/blog/freebsd-legacy-process-plugin-removed/[Progress Report 2] +
-Link:	 link:https://www.moritz.systems/blog/lldb-support-for-fork-and-vfork/[Progress Report 3] +
-Link:	 link:https://github.com/moritz-systems/llvm-project[Git Repository]
+Link: link:https://www.moritz.systems/blog/lldb-freebsd-cpu-target-support-and-userland-debugging-improvements/[Moritz Systems Project Description] +
+Link: link:https://www.moritz.systems/blog/freebsd-remote-process-plugin-on-non-x86-architectures/[Progress Report 1] +
+Link: link:https://www.moritz.systems/blog/freebsd-legacy-process-plugin-removed/[Progress Report 2] +
+Link: link:https://www.moritz.systems/blog/lldb-support-for-fork-and-vfork/[Progress Report 3] +
+Link: link:https://github.com/moritz-systems/llvm-project[Git Repository]
 
 Contact: Kamil Rytarowski <kamil@moritz.systems> +
 Contact: Michał Górny <mgorny@moritz.systems>
@@ -40,6 +40,5 @@ TODO: we are currently working on adding a ``ptrace(2)`` request to create
 a core dump of the stopped program without crashing it.  Afterwards, we are
 planning to improve LLDB test coverage for core dump support and work on any
 issues we might hit.
-
 
 Sponsor: The FreeBSD Foundation
