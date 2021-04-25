@@ -95,16 +95,16 @@ In addition to attending and planning virtual events, we are continually working
 
 Check out some of the advocacy and education work we did last quarter:
 
-- Presented a workshop at Apricot 2021
-- Staffed a virtual stand at FOSDEM 2021 and created a what’s new in 13.0 video to accompany the stand
-- Staffed a virtual booth and was a community sponsor for FOSSASIA 2021
-- Participated as an Industry Partner for USENIX FAST ‘21
-- Committed to be an Industry Partner for USENIX Annual Tech, USENIX OSDI, USENIX Security and USENIX LISA
-- Continued to promote the FreeBSD Office Hours series Videos from the one hour sessions can be found on the Project’s YouTube Channel: https://www.youtube.com/c/FreeBSDProject.
+* Presented a workshop at Apricot 2021
+* Staffed a virtual stand at FOSDEM 2021 and created a what’s new in 13.0 video to accompany the stand
+* Staffed a virtual booth and was a community sponsor for FOSSASIA 2021
+* Participated as an Industry Partner for USENIX FAST ‘21
+* Committed to be an Industry Partner for USENIX Annual Tech, USENIX OSDI, USENIX Security and USENIX LISA
+* Continued to promote the FreeBSD Office Hours series Videos from the one hour sessions can be found on the Project’s YouTube Channel: https://www.youtube.com/c/FreeBSDProject.
 See the Office Hours section of this report for more information.
-- Worked with the organizing committee to begin planning the Spring FreeBSD Developers Summit.
-- Continued recruiting for the FreeBSD Fridays series.  The series will return in May.
-- Participated in an interview with The Register about FreeBSD 13.0 highlights. https://www.theregister.com/2021/03/10/the_state_of_freebsd/
+* Worked with the organizing committee to begin planning the Spring FreeBSD Developers Summit.
+* Continued recruiting for the FreeBSD Fridays series.  The series will return in May.
+* Participated in an interview with The Register about FreeBSD 13.0 highlights. https://www.theregister.com/2021/03/10/the_state_of_freebsd/
 
 Keep up to date with our latest work in our newsletters: https://freebsdfoundation.org/our-work/latest-updates/?filter=newsletter
 
