@@ -12,7 +12,7 @@ Binaries can indicate that they requre writeable and executable mappings by sett
 In addition, elfctl received a few usability improvements to support use by ports, targeting different FreeBSD base system versions.
 We added a https://cgit.freebsd.org/src/commit/?id=f6d95a01103a49a94c876d5a51bb4be25c06d964[`-i` flag] to ignore unknown flags (so that the same elfctl invocation could be used on older FreeBSD versions) as well as the ability to  https://cgit.freebsd.org/src/commit/?id=86f33b5fcf6087bf4439881011b920ff99e6e300[specify features by value].
 
-Flags that request opt-out of a mitigation now have a `no` prefix to make the sense more clear.
+Flags that request opt-out of a mitigation now have a `no` prefix to make the sense clearer.
 For example, the flag to indicate that the binary is not compatible with ASLR is now named `noaslr`.
 Unprefixed flag names are still supported, for backwards compatibility, but will emit a warning and will be removed in a later version.
 
