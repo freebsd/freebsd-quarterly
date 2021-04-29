@@ -1,4 +1,4 @@
-== FreeBSD Translations on Weblate
+=== FreeBSD Translations on Weblate
 
 Link: link:https://wiki.freebsd.org/DocTranslationOnWeblate[Translate FreeBSD on Weblate wiki] +
 Link: link:https://translate-dev.freebsd.org/[FreeBSD Weblate Instance]

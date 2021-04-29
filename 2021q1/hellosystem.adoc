@@ -1,4 +1,4 @@
-== helloSystem
+=== helloSystem
 
 Link: link:https://hellosystem.github.io/docs/[Documentation]
 
@@ -6,12 +6,12 @@ Contact: Simon Peter <probono@puredarwin.org>
 
 Contact: `\#helloSystem` on `irc.freenode.net`, mirrored to link:https://matrix.to/#/%23helloSystem:matrix.org?via=matrix.org[`#helloSystem:matrix.org` on Matrix]
 
-=== What is helloSystem?
+==== What is helloSystem?
 
 helloSystem is FreeBSD preconfigured as a desktop operating system with a focus on simplicity, elegance, and usability.
 Its design follows the “Less, but better” philosophy.
 
-=== Q1 2021 Status
+==== Q1 2021 Status
 
 * helloSystem and some of the motivations and core ideas behind it were presented at the FOSDEM 2021 BSD Devroom in the talk link:https://fosdem.org/2021/schedule/event/hello_bsd/["hello... again? Simplicity, elegance, and usability for the desktop"]. Video recordings of the talk and Q&A session are available link:https://video.fosdem.org/2021/D.bsd/hello_bsd.webm[WebM/VP9], link:https://video.fosdem.org/2021/D.bsd/hello_bsd.mp4[mp4]
 * Version 0.4.0 of helloSystem was published. Installable Live ISO images are available.
@@ -22,6 +22,6 @@ Its design follows the “Less, but better” philosophy.
 
 Experimental and release builds of the Live ISO are available at https://github.com/helloSystem/ISO/releases.
 
-=== Contributing
+==== Contributing
 
 link:https://github.com/helloSystem/hello/blob/master/CONTRIBUTING.md[Help is wanted in a number of areas], especially in the areas of the FreeBSD core OS and kernel, and Qt/C++.

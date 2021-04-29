@@ -1,4 +1,4 @@
-== Linux compatibility layer update
+=== Linux compatibility layer update
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 

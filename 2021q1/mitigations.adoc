@@ -1,4 +1,4 @@
-== Vulnerability Mitigations ==
+=== Vulnerability Mitigations
 
 Contact: Ed Maste <emaste@FreeBSD.org> +
 Contact: Konstantin Belousov <kib@FreeBSD.org> +

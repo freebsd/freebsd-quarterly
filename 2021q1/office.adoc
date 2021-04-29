@@ -1,4 +1,4 @@
-== FreeBSD Office team 2021Q1 status report
+=== FreeBSD Office team 2021Q1 status report
 
 Link:	 link:https://wiki.freebsd.org/Office[The FreeBSD Office project]
 

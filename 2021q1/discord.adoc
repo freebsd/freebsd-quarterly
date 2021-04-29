@@ -1,4 +1,4 @@
-== Discord Server & Community Growth
+=== Discord Server & Community Growth
 
 Link: link:https://wiki.freebsd.org/Discord[Discord Wiki Page] +
 Link: link:https://discord.gg/RHprKbvWJN[Discord Invitation Link]

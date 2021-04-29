@@ -1,4 +1,4 @@
-== OpenBSM Synchronisation
+=== OpenBSM Synchronisation
 
 Link: link:http://www.trustedbsd.org/openbsm.html[TrustedBSD / OpenBSM] +
 Link: link:https://github.com/openbsm/openbsm[OpenBSM Github Sources] +

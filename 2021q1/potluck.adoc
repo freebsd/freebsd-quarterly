@@ -1,4 +1,4 @@
-== Potluck & Potman - Flavour & Image Creation and Repository for Pot
+=== Potluck & Potman
 
 Link: link:https://potluck.honeyguide.net/[Potluck Repository & Project] +
 Link: link:https://github.com/hny-gd/potluck[Potluck on github] +

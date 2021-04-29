@@ -1,4 +1,4 @@
-== nv(9)-based audio device enumeration ==
+=== nv(9)-based audio device enumeration
 
 Link: link:https://reviews.freebsd.org/D26884[D26884 Implement sndstat nvlist-based enumeration ioctls.] +
 Link: link:https://cgit.freebsd.org/src/commit/?id=c96151d33509655efb7fb26768cb56a041c176f1[Src commit c96151d33509655efb7fb26768cb56a041c176f1]

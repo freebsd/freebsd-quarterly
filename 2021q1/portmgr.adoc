@@ -1,4 +1,4 @@
-== Ports Collection
+=== Ports Collection
 
 Link: link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] +
 Link: link:https://docs.freebsd.org/en/articles/contributing/ports-contributing/[Contributing to Ports] +

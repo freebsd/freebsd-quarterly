@@ -1,4 +1,4 @@
-== Git Migration Working Group
+=== Git Migration Working Group
 
 Link: link:https://wiki.freebsd.org/git[Git transition wiki] +
 Link: link:https://cgit.FreeBSD.org/doc[doc git repo] +

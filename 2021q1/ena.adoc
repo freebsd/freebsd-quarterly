@@ -1,4 +1,4 @@
-== ENA FreeBSD Driver Update
+=== ENA FreeBSD Driver Update
 
 Link: link:https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README[ENA README]
 

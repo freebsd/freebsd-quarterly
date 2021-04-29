@@ -1,4 +1,4 @@
-== Continuous Integration
+=== Continuous Integration
 
 Link: link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance] +
 Link: link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab] +

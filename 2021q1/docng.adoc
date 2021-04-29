@@ -1,4 +1,4 @@
-== DOCNG on FreeBSD
+=== DOCNG on FreeBSD
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 

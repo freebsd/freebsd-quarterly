@@ -1,4 +1,4 @@
-== Marvell ARM64 SoCs support
+=== Marvell ARM64 SoCs support
 
 Contact: Zyta Szpak <zr@semihalf.com> +
 Contact: Kornel Dulęba <mindal@semihalf.com> +
