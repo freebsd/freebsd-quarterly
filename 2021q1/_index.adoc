@@ -20,16 +20,28 @@ toc::[]
 
 Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 
+include::{reports-path}/freebsd-foundation.adoc[leveloffset=+1]
+
+include::{reports-path}/releng.adoc[leveloffset=+1]
+
 include::{reports-path}/clusteradm.adoc[leveloffset=+1]
 
 include::{reports-path}/ci.adoc[leveloffset=+1]
+
+include::{reports-path}/portmgr.adoc[leveloffset=+1]
 
 [[projects]]
 == Projects
 
 Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
 
+include::{reports-path}/git.adoc[leveloffset=+1]
+
+include::{reports-path}/lldb.adoc[leveloffset=+1]
+
 include::{reports-path}/linuxulator.adoc[leveloffset=+1]
+
+include::{reports-path}/mitigations.adoc[leveloffset=+1]
 
 include::{reports-path}/openbsm.adoc[leveloffset=+1]
 
@@ -38,7 +50,15 @@ include::{reports-path}/openbsm.adoc[leveloffset=+1]
 
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 
+include::{reports-path}/ena.adoc[leveloffset=+1]
+
 include::{reports-path}/iwlwifi.adoc[leveloffset=+1]
+
+include::{reports-path}/kernel-sanitizers.adoc[leveloffset=+1]
+
+include::{reports-path}/marvell.adoc[leveloffset=+1]
+
+include::{reports-path}/nv-sndstat.adoc[leveloffset=+1]
 
 [[ports]]
 == Ports
@@ -49,6 +69,8 @@ include::{reports-path}/kde.adoc[leveloffset=+1]
 
 include::{reports-path}/office.adoc[leveloffset=+1]
 
+include::{reports-path}/virtualbox.adoc[leveloffset=+1]
+
 [[documentation]]
 == Documentation
 
@@ -56,9 +78,9 @@ Noteworthy changes in the documentation tree, in manpages, or in external books/
 
 include::{reports-path}/docng.adoc[leveloffset=+1]
 
-include::{reports-path}/www.adoc[leveloffset=+1]
-
 include::{reports-path}/weblate.adoc[leveloffset=+1]
+
+include::{reports-path}/www.adoc[leveloffset=+1]
 
 [[miscellaneous]]
 == Miscellaneous
@@ -74,4 +96,12 @@ Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
 The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 
+include::{reports-path}/cbsd.adoc[leveloffset=+1]
+
 include::{reports-path}/hellosystem.adoc[leveloffset=+1]
+
+include::{reports-path}/pkgbase.live.adoc[leveloffset=+1]
+
+include::{reports-path}/potluck.adoc[leveloffset=+1]
+
+include::{reports-path}/sysctl-improvements.adoc[leveloffset=+1]
