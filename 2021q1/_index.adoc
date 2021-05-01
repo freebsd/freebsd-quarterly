@@ -23,7 +23,7 @@ This combined with a switch-over to AsciiDoctor and a decision to make full use 
 
 This report in particular includes a number of interesting entries, covering everything from the linuxulator, various mitigation work, long-awaited work on OpenBSM, work on kernel sanitizers, and many more things that it is hoped you will enjoy reading about.
 
-Yours,
+Yours, +
 Daniel Ebdrup Jensen, with status hat on.
 
 '''
