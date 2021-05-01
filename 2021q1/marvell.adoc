@@ -13,10 +13,10 @@ Although the mentioned SoCs are mostly supported in FreeBSD HEAD, some pieces re
 
 Applied changes:
 
-* Add missing frequency modes in ap806_clock driver ([commit a86b0839d7bf](https://cgit.freebsd.org/src/commit/?id=a86b0839d7bf3fc06b1ae))
-* Multiple fixes in mvebu_gpio driver - in cooperation with mmel ([commit a5dce53b75d8](https://cgit.freebsd.org/src/commit/?id=a5dce53b75d8750ba))
-* Fix device tree data parsing in mv\_ap806\_gicp interrupt controller driver ([commit 622d17da46eb](https://cgit.freebsd.org/src/commit/?id=622d17da46eb360c3d684))
-* Rework the ICU interrupt controller (mv\_cp110\_icu) and its parent (mv\_ap806\_gicp), so that they no longer rely on the data provided by firmware, which fixes booting the OS from the newer U-Boot/TF-A revisions ([D28803](https://reviews.freebsd.org/D28803))
+* Add missing frequency modes in ap806_clock driver (link:https://cgit.freebsd.org/src/commit/?id=a86b0839d7bf3fc06b1ae[commit a86b0839d7bf])
+* Multiple fixes in mvebu_gpio driver - in cooperation with mmel (link:https://cgit.freebsd.org/src/commit/?id=a5dce53b75d8750ba[commit a5dce53b75d8])
+* Fix device tree data parsing in mv\_ap806\_gicp interrupt controller driver (link:https://cgit.freebsd.org/src/commit/?id=622d17da46eb360c3d684[commit 622d17da46eb])
+* Rework the ICU interrupt controller (mv\_cp110\_icu) and its parent (mv\_ap806\_gicp), so that they no longer rely on the data provided by firmware, which fixes booting the OS from the newer U-Boot/TF-A revisions (link:https://reviews.freebsd.org/D28803[D28803])
 * PCIE Designware driver (pci_dw) fixes:
 ** Correct setting of outbound I/O ATU window.
 ** Allow mapping ATU windows bigger than 4GB.

@@ -1,10 +1,14 @@
+---
+title: "Introduction"
+sidenav: about
+---
+
 = Introduction
 :doctype: article
 :toc: macro
 :toclevels: 2
 :icons: font
-:sectnums:
-:sectnumlevels: 6
+:!sectnums:
 :source-highlighter: rouge
 :experimental:
 :reports-path: content/en/status/report-2021-01-2021-03
@@ -26,79 +30,125 @@ Daniel Ebdrup Jensen, with status hat on.
 
 toc::[]
 
+'''
+
 [[FreeBSD-Team-Reports]]
 == FreeBSD Team Reports
 
 Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 
-include::{reports-path}/freebsd-foundation.adoc[leveloffset=0]
+include::{reports-path}/freebsd-foundation.adoc[]
 
-include::{reports-path}/releng.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/clusteradm.adoc[leveloffset=0]
+include::{reports-path}/releng.adoc[]
 
-include::{reports-path}/ci.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/portmgr.adoc[leveloffset=0]
+include::{reports-path}/clusteradm.adoc[]
+
+'''
+
+include::{reports-path}/ci.adoc[]
+
+'''
+
+include::{reports-path}/portmgr.adoc[]
+
+'''
 
 [[projects]]
 == Projects
 
 Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
 
-include::{reports-path}/git.adoc[leveloffset=0]
+include::{reports-path}/git.adoc[]
 
-include::{reports-path}/lldb.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/linuxulator.adoc[leveloffset=0]
+include::{reports-path}/lldb.adoc[]
 
-include::{reports-path}/mitigations.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/openbsm.adoc[leveloffset=0]
+include::{reports-path}/linuxulator.adoc[]
+
+'''
+
+include::{reports-path}/mitigations.adoc[]
+
+'''
+
+include::{reports-path}/openbsm.adoc[]
+
+'''
 
 [[kernel]]
 == Kernel
 
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 
-include::{reports-path}/ena.adoc[leveloffset=0]
+include::{reports-path}/ena.adoc[]
 
-include::{reports-path}/iwlwifi.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/kernel-sanitizers.adoc[leveloffset=0]
+include::{reports-path}/iwlwifi.adoc[]
 
-include::{reports-path}/marvell.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/nv-sndstat.adoc[leveloffset=0]
+include::{reports-path}/kernel-sanitizers.adoc[]
+
+'''
+
+include::{reports-path}/marvell.adoc[]
+
+'''
+
+include::{reports-path}/nv-sndstat.adoc[]
+
+'''
 
 [[ports]]
 == Ports
 
 Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 
-include::{reports-path}/kde.adoc[leveloffset=0]
+include::{reports-path}/kde.adoc[]
 
-include::{reports-path}/office.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/virtualbox.adoc[leveloffset=0]
+include::{reports-path}/office.adoc[]
+
+'''
+
+include::{reports-path}/virtualbox.adoc[]
+
+'''
 
 [[documentation]]
 == Documentation
 
 Noteworthy changes in the documentation tree, in manpages, or in external books/documents.
 
-include::{reports-path}/docng.adoc[leveloffset=0]
+include::{reports-path}/docng.adoc[]
 
-include::{reports-path}/weblate.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/www.adoc[leveloffset=0]
+include::{reports-path}/weblate.adoc[]
+
+'''
+
+include::{reports-path}/www.adoc[]
+
+'''
 
 [[miscellaneous]]
 == Miscellaneous
 
 Objects that defy categorization.
 
-include::{reports-path}/discord.adoc[leveloffset=0]
+include::{reports-path}/discord.adoc[]
+
+'''
 
 [[third-Party-Projects]]
 == Third-Party Projects
@@ -107,12 +157,20 @@ Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
 The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 
-include::{reports-path}/cbsd.adoc[leveloffset=0]
+include::{reports-path}/cbsd.adoc[]
 
-include::{reports-path}/hellosystem.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/pkgbase.live.adoc[leveloffset=0]
+include::{reports-path}/hellosystem.adoc[]
 
-include::{reports-path}/potluck.adoc[leveloffset=0]
+'''
 
-include::{reports-path}/sysctl-improvements.adoc[leveloffset=0]
+include::{reports-path}/pkgbase.live.adoc[]
+
+'''
+
+include::{reports-path}/potluck.adoc[]
+
+'''
+
+include::{reports-path}/sysctl-improvements.adoc[]
