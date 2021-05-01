@@ -9,85 +9,96 @@
 :experimental:
 :reports-path: content/en/status/report-2021-01-2021-03
 
-This report covers FreeBSD related projects for the period between January and March, and is the third of four planned reports for 2021.
+This report covers FreeBSD related projects for the period between January and March, and is the first of four planned reports for 2021.
+
+The first quarter of 2021 has been very active in both FreeBSD-CURRENT and -STABLE, with 13.0-RELEASE work starting in January and finishing up mid-April.
+It provides lots of new features, and there's even a good chance that some workloads will expeirence performance improvements.
+
+The number of entries is slightly down, and this is probably due to a combination of factors like code slush as well as the ongoing issues with COVID-19, but we naturally hope that things will look up next quarter.
+This combined with a switch-over to AsciiDoctor and a decision to make full use of the status report work schedule to avoid stress, means that the report can now be expected to come out at the end of the first month after the quarter has finished, rather than in the middle.
+
+This report in particular includes a number of interesting entries, covering everything from the linuxulator, various mitigation work, long-awaited work on OpenBSM, work on kernel sanitizers, and many more things that it is hoped you will enjoy reading about.
+
+Yours,
+Daniel Ebdrup Jensen, with status hat on.
 
 '''
 
 toc::[]
 
-[[freeBSD-Team-Reports]]
+[[FreeBSD-Team-Reports]]
 == FreeBSD Team Reports
 
 Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 
-include::{reports-path}/freebsd-foundation.adoc[leveloffset=+1]
+include::{reports-path}/freebsd-foundation.adoc[leveloffset=0]
 
-include::{reports-path}/releng.adoc[leveloffset=+1]
+include::{reports-path}/releng.adoc[leveloffset=0]
 
-include::{reports-path}/clusteradm.adoc[leveloffset=+1]
+include::{reports-path}/clusteradm.adoc[leveloffset=0]
 
-include::{reports-path}/ci.adoc[leveloffset=+1]
+include::{reports-path}/ci.adoc[leveloffset=0]
 
-include::{reports-path}/portmgr.adoc[leveloffset=+1]
+include::{reports-path}/portmgr.adoc[leveloffset=0]
 
 [[projects]]
 == Projects
 
 Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
 
-include::{reports-path}/git.adoc[leveloffset=+1]
+include::{reports-path}/git.adoc[leveloffset=0]
 
-include::{reports-path}/lldb.adoc[leveloffset=+1]
+include::{reports-path}/lldb.adoc[leveloffset=0]
 
-include::{reports-path}/linuxulator.adoc[leveloffset=+1]
+include::{reports-path}/linuxulator.adoc[leveloffset=0]
 
-include::{reports-path}/mitigations.adoc[leveloffset=+1]
+include::{reports-path}/mitigations.adoc[leveloffset=0]
 
-include::{reports-path}/openbsm.adoc[leveloffset=+1]
+include::{reports-path}/openbsm.adoc[leveloffset=0]
 
 [[kernel]]
 == Kernel
 
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 
-include::{reports-path}/ena.adoc[leveloffset=+1]
+include::{reports-path}/ena.adoc[leveloffset=0]
 
-include::{reports-path}/iwlwifi.adoc[leveloffset=+1]
+include::{reports-path}/iwlwifi.adoc[leveloffset=0]
 
-include::{reports-path}/kernel-sanitizers.adoc[leveloffset=+1]
+include::{reports-path}/kernel-sanitizers.adoc[leveloffset=0]
 
-include::{reports-path}/marvell.adoc[leveloffset=+1]
+include::{reports-path}/marvell.adoc[leveloffset=0]
 
-include::{reports-path}/nv-sndstat.adoc[leveloffset=+1]
+include::{reports-path}/nv-sndstat.adoc[leveloffset=0]
 
 [[ports]]
 == Ports
 
 Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 
-include::{reports-path}/kde.adoc[leveloffset=+1]
+include::{reports-path}/kde.adoc[leveloffset=0]
 
-include::{reports-path}/office.adoc[leveloffset=+1]
+include::{reports-path}/office.adoc[leveloffset=0]
 
-include::{reports-path}/virtualbox.adoc[leveloffset=+1]
+include::{reports-path}/virtualbox.adoc[leveloffset=0]
 
 [[documentation]]
 == Documentation
 
 Noteworthy changes in the documentation tree, in manpages, or in external books/documents.
 
-include::{reports-path}/docng.adoc[leveloffset=+1]
+include::{reports-path}/docng.adoc[leveloffset=0]
 
-include::{reports-path}/weblate.adoc[leveloffset=+1]
+include::{reports-path}/weblate.adoc[leveloffset=0]
 
-include::{reports-path}/www.adoc[leveloffset=+1]
+include::{reports-path}/www.adoc[leveloffset=0]
 
 [[miscellaneous]]
 == Miscellaneous
 
 Objects that defy categorization.
 
-include::{reports-path}/discord.adoc[leveloffset=+1]
+include::{reports-path}/discord.adoc[leveloffset=0]
 
 [[third-Party-Projects]]
 == Third-Party Projects
@@ -96,12 +107,12 @@ Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
 The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 
-include::{reports-path}/cbsd.adoc[leveloffset=+1]
+include::{reports-path}/cbsd.adoc[leveloffset=0]
 
-include::{reports-path}/hellosystem.adoc[leveloffset=+1]
+include::{reports-path}/hellosystem.adoc[leveloffset=0]
 
-include::{reports-path}/pkgbase.live.adoc[leveloffset=+1]
+include::{reports-path}/pkgbase.live.adoc[leveloffset=0]
 
-include::{reports-path}/potluck.adoc[leveloffset=+1]
+include::{reports-path}/potluck.adoc[leveloffset=0]
 
-include::{reports-path}/sysctl-improvements.adoc[leveloffset=+1]
+include::{reports-path}/sysctl-improvements.adoc[leveloffset=0]
