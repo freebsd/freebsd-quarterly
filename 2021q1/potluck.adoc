@@ -1,9 +1,10 @@
 === Potluck & Potman
 
-Link: link:https://potluck.honeyguide.net/[Potluck Repository & Project] +
-Link: link:https://github.com/hny-gd/potluck[Potluck on github] +
-Link: link:https://github.com/grembo/potman[Potman on github] +
-Link: link:https://pot.pizzamig.dev[Pot Project]
+Links: +
+link:https://potluck.honeyguide.net/[Potluck Repository & Project] URL: link:https://potluck.honeyguide.net/[https://potluck.honeyguide.net/] +
+link:https://github.com/hny-gd/potluck[Potluck on github] URL: link:https://github.com/hny-gd/potluck[https://github.com/hny-gd/potluck] +
+link:https://github.com/grembo/potman[Potman on github] URL: link:https://github.com/grembo/potman[https://github.com/grembo/potman] +
+link:https://pot.pizzamig.dev[Pot Project] URL link:https://pot.pizzamig.dev[https://pot.pizzamig.dev]
 
 Contact: Stephan Lichtenauer (Potluck) <sl@honeyguide.eu> +
 Contact: Michael Gmelin (Potman) <grembo@FreeBSD.org>

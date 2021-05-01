@@ -1,7 +1,8 @@
 === FreeBSD Release Engineering Team
 
-Link:	link:https://www.freebsd.org/releases/13.0R/schedule.html[FreeBSD 13.0-RELEASE schedule] +
-Link:	link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/[FreeBSD development snapshots]
+Links: +
+link:https://www.freebsd.org/releases/13.0R/schedule.html[FreeBSD 13.0-RELEASE schedule] URL: link:https://www.freebsd.org/releases/13.0R/schedule.html[https://www.freebsd.org/releases/13.0R/schedule.html] +
+link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/[FreeBSD development snapshots] URL: link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/[https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/]
 
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 

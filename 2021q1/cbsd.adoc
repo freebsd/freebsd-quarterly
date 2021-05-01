@@ -1,6 +1,7 @@
 === CBSD Project
 
-Link: link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[CBSD API module]
+Links: +
+link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[CBSD API module] URL: link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[https://www.bsdstore.ru/en/cbsd_api_ssi.html]
 
 Contact: Oleg Ginzburg <olevole@olevole.ru>
 

@@ -1,6 +1,7 @@
 === PkgBase.live
 
-Link: link:https://alpha.pkgbase.live/[Website]
+Links: +
+link:https://alpha.pkgbase.live/[Website] URL: link:https://alpha.pkgbase.live/[https://alpha.pkgbase.live/]
 
 Contact: Mina Galić <me@igalic.co>
 

@@ -1,6 +1,7 @@
 === Intel wireless update
 
-Link:  link:https://lists.freebsd.org/mailman/listinfo/freebsd-wireless[The freebsd-wireless mailing list]
+Links: +
+link:https://lists.freebsd.org/mailman/listinfo/freebsd-wireless[The freebsd-wireless mailing list] URL: link:https://lists.freebsd.org/mailman/listinfo/freebsd-wireless[https://lists.freebsd.org/mailman/listinfo/freebsd-wireless]
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
 

@@ -1,7 +1,8 @@
 === nv(9)-based audio device enumeration
 
-Link: link:https://reviews.freebsd.org/D26884[D26884 Implement sndstat nvlist-based enumeration ioctls.] +
-Link: link:https://cgit.freebsd.org/src/commit/?id=c96151d33509655efb7fb26768cb56a041c176f1[Src commit c96151d33509655efb7fb26768cb56a041c176f1]
+Links: +
+link:https://reviews.freebsd.org/D26884[D26884 Implement sndstat nvlist-based enumeration ioctls.] URL: link:https://reviews.freebsd.org/D26884[https://reviews.freebsd.org/D26884] +
+link:https://cgit.freebsd.org/src/commit/?id=c96151d33509655efb7fb26768cb56a041c176f1[commit c96151d33509655efb7fb26768cb56a041c176f1] URL:  link:https://cgit.freebsd.org/src/commit/?id=c96151d33509655efb7fb26768cb56a041c176f1[https://cgit.freebsd.org/src/commit/?id=c96151d33509655efb7fb26768cb56a041c176f1]
 
 Contact: Ka Ho Ng <khng@FreeBSD.org>
 

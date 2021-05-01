@@ -1,14 +1,15 @@
 === Continuous Integration
 
-Link: link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance] +
-Link: link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab] +
-Link: link:https://artifact.ci.FreeBSD.org[FreeBSD CI artifact archive] +
-Link: link:https://hackmd.io/@FreeBSD-CI[FreeBSD CI weekly report] +
-Link: link:https://wiki.freebsd.org/Jenkins[FreeBSD Jenkins wiki] +
-Link: link:https://wiki.freebsd.org/HostedCI[Hosted CI wiki] +
-Link: link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rd Party Software CI] +
-Link: link:https://preview.tinyurl.com/y9maauwg[Tickets related to freebsd-testing@] +
-Link: link:https://github.com/freebsd/freebsd-ci[FreeBSD CI Repository]
+Links: +
+link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance] URL: link:https://ci.FreeBSD.org[https://ci.FreeBSD.org]+
+link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab] URL: link:https://ci.FreeBSD.org/hwlab[https://ci.FreeBSD.org/hwlab] +
+link:https://artifact.ci.FreeBSD.org[FreeBSD CI artifact archive] URL: link:https://artifact.ci.FreeBSD.org[https://artifact.ci.FreeBSD.org] +
+link:https://hackmd.io/@FreeBSD-CI[FreeBSD CI weekly report] URL: link:https://hackmd.io/@FreeBSD-CI[https://hackmd.io/@FreeBSD-CI] +
+link:https://wiki.freebsd.org/Jenkins[FreeBSD Jenkins wiki] URL: link:https://wiki.freebsd.org/Jenkins[https://wiki.freebsd.org/Jenkins] +
+link:https://wiki.freebsd.org/HostedCI[Hosted CI wiki] URL: link:https://wiki.freebsd.org/HostedCI[https://wiki.freebsd.org/HostedCI] +
+link:https://wiki.freebsd.org/3rdPartySoftwareCI[3rd Party Software CI] URL: link:https://wiki.freebsd.org/3rdPartySoftwareCI[https://wiki.freebsd.org/3rdPartySoftwareCI] +
+link:https://preview.tinyurl.com/y9maauwg[Tickets related to freebsd-testing@] URL: link:https://preview.tinyurl.com/y9maauwg[https://preview.tinyurl.com/y9maauwg] +
+link:https://github.com/freebsd/freebsd-ci[FreeBSD CI Repository] URL: link:https://github.com/freebsd/freebsd-ci[https://github.com/freebsd/freebsd-ci]
 
 Contact: Jenkins Admin <jenkins-admin@FreeBSD.org> +
 Contact: Li-Wen Hsu <lwhsu@FreeBSD.org> +

@@ -1,13 +1,14 @@
 === Git Migration Working Group
 
-Link: link:https://wiki.freebsd.org/git[Git transition wiki] +
-Link: link:https://cgit.FreeBSD.org/doc[doc git repo] +
-Link: link:https://cgit.FreeBSD.org/ports[ports git repo] +
-Link: link:https://cgit.FreeBSD.org/src[src (base system) git repo] +
-Link: link:https://docs.freebsd.org/en/articles/committers-guide/#git-primer[Committers guide Git primer] +
-Link: link:https://docs.freebsd.org/en/books/handbook/mirrors/#git[Handbook Using Git appendix] +
-Link: link:http://gameoftrees.org/[Game of Trees] +
-Link: link:https://github.com/johnmehr/gitup[gitup]
+Links: +
+link:https://wiki.freebsd.org/git[Git transition wiki] URL: link:https://wiki.freebsd.org/git[https://wiki.freebsd.org/git] +
+link:https://cgit.FreeBSD.org/doc[doc git repo] URL: link:https://cgit.FreeBSD.org/doc[https://cgit.FreeBSD.org/doc] +
+link:https://cgit.FreeBSD.org/ports[ports git repo] URL: https://cgit.FreeBSD.org/ports[https://cgit.FreeBSD.org/ports] +
+link:https://cgit.FreeBSD.org/src[src (base system) git repo] URL: link:https://cgit.FreeBSD.org/src[https://cgit.FreeBSD.org/src] +
+link:https://docs.freebsd.org/en/articles/committers-guide/#git-primer[Committers guide Git primer] URL: link:https://docs.freebsd.org/en/articles/committers-guide/#git-primer[https://docs.freebsd.org/en/articles/committers-guide/#git-primer] +
+link:https://docs.freebsd.org/en/books/handbook/mirrors/#git[Handbook Using Git appendix] URL: link:https://docs.freebsd.org/en/books/handbook/mirrors/#git[https://docs.freebsd.org/en/books/handbook/mirrors/#git] +
+link:http://gameoftrees.org/[Game of Trees] URL: link:http://gameoftrees.org/[http://gameoftrees.org/] +
+link:https://github.com/johnmehr/gitup[gitup] URL: link:https://github.com/johnmehr/gitup[https://github.com/johnmehr/gitup]
 
 Contact: Li-Wen Hsu <lwhsu@FreeBSD.org> +
 Contact: Warner Losh <imp@FreeBSD.org> +

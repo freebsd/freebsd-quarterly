@@ -1,12 +1,13 @@
 === sysctl improvements
 
-Link: link:https://gitlab.com/alfix/sysctlinfo[sysctlinfo] +
-Link: link:https://gitlab.com/alfix/sysctlbyname-improved[sysctlbyname-improved] +
-Link: link:https://git.io/Jm9x7[BSDCan 2020 - sysctlinfo questions] +
-Link: link:https://gitlab.com/alfix/sysctl-libnv[sysctl-libnv] +
-Link: link:https://gitlab.com/alfix/sysctlmibinfo2[sysctlmibinfo2] +
-Link: link:https://gitlab.com/alfix/sysctlview[sysctlview] +
-Link: link:https://gitlab.com/alfix/nsysctl[nsysctl]
+Links: +
+link:https://gitlab.com/alfix/sysctlinfo[sysctlinfo] URL: link:https://gitlab.com/alfix/sysctlinfo[https://gitlab.com/alfix/sysctlinfo] +
+link:https://gitlab.com/alfix/sysctlbyname-improved[sysctlbyname-improved] URL: link:https://gitlab.com/alfix/sysctlbyname-improved[https://gitlab.com/alfix/sysctlbyname-improved] +
+link:https://git.io/Jm9x7[BSDCan 2020 - sysctlinfo questions] URL: link:https://git.io/Jm9x7[https://git.io/Jm9x7] +
+link:https://gitlab.com/alfix/sysctl-libnv[sysctl-libnv] URL:https://gitlab.com/alfix/sysctl-libnv[https://gitlab.com/alfix/sysctl-libnv] +
+link:https://gitlab.com/alfix/sysctlmibinfo2[sysctlmibinfo2] URL:https://gitlab.com/alfix/sysctlmibinfo2[https://gitlab.com/alfix/sysctlmibinfo2] +
+link:https://gitlab.com/alfix/sysctlview[sysctlview] URL: link:https://gitlab.com/alfix/sysctlview[https://gitlab.com/alfix/sysctlview] +
+link:https://gitlab.com/alfix/nsysctl[nsysctl] URL: link:https://gitlab.com/alfix/nsysctl[https://gitlab.com/alfix/nsysctl]
 
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>
 

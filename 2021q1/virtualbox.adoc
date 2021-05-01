@@ -1,7 +1,8 @@
 === VirtualBox FreeBSD port
 
-Link: link:https://www.virtualbox.org/[VirtualBox home page] +
-Link: link:https://www.freshports.org/emulators/virtualbox-ose[VirtualBox OSE port on FreshPorts]
+Links: +
+link:https://www.virtualbox.org/[VirtualBox home page] URL: link:https://www.virtualbox.org/[https://www.virtualbox.org/] +
+link:https://www.freshports.org/emulators/virtualbox-ose[VirtualBox OSE port on FreshPorts] URL: link:https://www.freshports.org/emulators/virtualbox-ose[https://www.freshports.org/emulators/virtualbox-ose]
 
 Contact: VirtualBox port team <vbox@FreeBSD.org>
 

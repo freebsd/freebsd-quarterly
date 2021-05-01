@@ -1,7 +1,8 @@
 === Discord Server & Community Growth
 
-Link: link:https://wiki.freebsd.org/Discord[Discord Wiki Page] +
-Link: link:https://discord.gg/RHprKbvWJN[Discord Invitation Link]
+Links: +
+link:https://wiki.freebsd.org/Discord[Discord Wiki Page] URL: link:https://wiki.freebsd.org/Discord[https://wiki.freebsd.org/Discord] +
+link:https://discord.gg/RHprKbvWJN[Discord Invitation Link] URL: link:https://discord.gg/RHprKbvWJN[https://discord.gg/RHprKbvWJN]
 
 Contact: Lewis Cook <lcook@FreeBSD.org> +
 Contact: Vincent Milum Jr <freebsd@darkain.com> +

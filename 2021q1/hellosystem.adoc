@@ -1,9 +1,9 @@
 === helloSystem
 
-Link: link:https://hellosystem.github.io/docs/[Documentation]
+Links: +
+link:https://hellosystem.github.io/docs/[Documentation] URL: link:https://hellosystem.github.io/docs/[https://hellosystem.github.io/docs/]
 
-Contact: Simon Peter <probono@puredarwin.org>
-
+Contact: Simon Peter <probono@puredarwin.org> +
 Contact: `\#helloSystem` on `irc.freenode.net`, mirrored to link:https://matrix.to/#/%23helloSystem:matrix.org?via=matrix.org[`#helloSystem:matrix.org` on Matrix]
 
 ==== What is helloSystem?
