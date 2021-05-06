@@ -141,10 +141,8 @@ include::{reports-path}/www.adoc[]
 
 '''
 
-[[miscellaneous]]
-== Miscellaneous
-
-Objects that defy categorization.
+[[community]]
+== Community
 
 include::{reports-path}/discord.adoc[]
 
