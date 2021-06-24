@@ -3,12 +3,12 @@ FreeBSD Quarterly Status Reports
 
 ### Drafts
 
-This repository is for drafts. 
+This repository is for drafts.
 
 Please submit your draft as early as possible. To submit:
 
 1. Fork the repository - reusing an old fork is OK.
-2. Enter the directory for the current time period - `2021q1`.
+2. Enter the directory for the current time period - `2021q2`.
 3. Create a new file, with a name that corresponds with the name of
    your project - use the `report-sample.adoc` template.
 4. Create a pull request.
@@ -18,13 +18,13 @@ You can tweak things afterwards. Simply edit, then submit another PR.
 Please do not worry excessively about language errors or AsciiDoc
 syntax - we can correct things for you.
 
-#### Deadline for submissions for `2021q1`
+#### Deadline for submissions for `2021q2`
 
-1st of April 2021
+1st of July 2021
 
 Note that this is **immediately** after the end of the quarter.
 
-General rules for deadlines: 
+General rules for deadlines:
 
 * Reports will be collected during the third month of each quarter.
 * Deadlines will be the 1st of January, April, July and October.
@@ -36,11 +36,11 @@ General rules for deadlines:
 
 ### Finals
 
-Collated final reports are: 
+Collated final reports are:
 
 * Listed at [FreeBSD Status Reports](https://www.freebsd.org/news/status/).
-* Promoted through [newsflashes](https://www.freebsd.org/news/newsflash/). 
+* Promoted through [newsflashes](https://www.freebsd.org/news/newsflash/).
 
 The most recent report:
 
-* https://www.freebsd.org/news/status/report-2020-10-2020-12.html
+* https://www.freebsd.org/status/report-2021-01-2021-03/
