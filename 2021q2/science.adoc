@@ -1,0 +1,33 @@
+== FreeBSD in Science
+
+Link: link:http://http://acadix.biz/spcm.php  
+Link: link:http://https://github.com/auerlab/biolibc  
+
+Contact: Jason Bacon <jwb@FreeBSD.org>  
+Contact: Yuri Victorovich <yuri@FreeBSD.org>
+
+FreeBSD has long provided a solid foundation for scientific computing, with
+it's remarkable reliability, network and storage performance, and the FreeBSD
+ports system which not only provides an extensive collection of scientific
+software, but also facilitates optimized installation by allowing the user
+to easily install from source with additional compiler flags.
+
+Last quarter saw the introduction of sysutils/spcm (Simple, Portable Cluster
+Manager), an integrated tool set for building and managing HPC (High
+Performance Computing) clusters based on FreeBSD.
+
+This quarter we saw rapid growth in the biology category, much of which
+culminated in the completion of the biology/biostar-tools metaport.  This
+metaport installs virtually all of the software needed by bioinformaticians
+in training.  It is now easier for bioinformatics students to install and run
+the software they need on FreeBSD than on any other platform.  Bioinformatics
+is the analysis of biological data such as gene and protein sequences.
+
+We also hit a milestone of 200 ports in the biology category, thanks to
+contributions from 21 maintainers.  Software installation has always been and
+still is a major hurdle for many researchers.  Attempts to install the
+software they need often cause major delays in their research and often
+end in failure.  The rapid growth of scientific software in the FreeBSD ports
+collection, coupled with the introduction of SPCM and numerous improvements
+to sysutils/desktop-installer, have removed many hurdles that could delay or
+prevent scientific discovery.
