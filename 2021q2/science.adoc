@@ -8,7 +8,7 @@ Contact: Jason Bacon <jwb@FreeBSD.org>
 Contact: Yuri Victorovich <yuri@FreeBSD.org>
 
 FreeBSD has long provided a solid foundation for scientific computing, with
-it's remarkable reliability, network and storage performance, and the FreeBSD
+its remarkable reliability, network and storage performance, and the FreeBSD
 ports system which not only provides an extensive collection of scientific
 software, but also facilitates optimized installation by allowing the user
 to easily install from source with additional compiler flags.
@@ -37,3 +37,15 @@ research and often end in failure.  The rapid growth of scientific software
 in the FreeBSD ports collection, coupled with the introduction of SPCM and
 numerous improvements to sysutils/desktop-installer, have removed many
 hurdles that could delay or prevent scientific discovery.
+
+FreeBSD is the primary development platform for a new C library called
+biolibc, aimed at facilitating the creation of high-performance bioinformatics
+software.  Progress in the field of bioinformatics has been hindered by the
+fact that very few biologists are well-versed in software development.  As a
+result, most of the code used in the industry is in the form of disposable
+scripts written in bash, perl, python, or R.  Few of them evolve into
+high-quality, high-performance, reusable tools.  Many biologists believe
+that high-performance programming is out of reach, largely due to the
+unnecessary complexity of existing tools.  The biolibc library and
+dependent applications available on the Auerlab site provide an example of
+simple development practices which are achievable by the average scientist.
