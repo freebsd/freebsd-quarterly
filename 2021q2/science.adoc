@@ -1,8 +1,8 @@
 == FreeBSD in Science
 
+Link: link:https://www.freshports.org/biology/biostar-tools/  
 Link: link:http://http://acadix.biz/spcm.php  
 Link: link:http://http://acadix.biz/desktop-installer.php  
-Link: link:http://https://github.com/auerlab/biolibc  
 
 Contact: Jason Bacon <jwb@FreeBSD.org>  
 Contact: Yuri Victorovich <yuri@FreeBSD.org>
