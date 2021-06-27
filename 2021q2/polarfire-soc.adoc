@@ -9,7 +9,7 @@ RISC-V cores, out of which four are equipped with MMU and capable of running
 FreeBSD. The SoC also features an FPGA and various peripherals including
 Gigabit Ethernet, PCIe and multi-function 12.3Gbps SERDES transceivers.
 
-At the time of writing, following tasks have been completed:
+At the time of writing, the following tasks have been completed:
 * Initial platform bring-up with SMP support
 * Add support for creating "booti"-style images for RISC-V
 * Ethernet support
