@@ -7,7 +7,7 @@ link:https://community.kde.org/FreeBSD[KDE Community FreeBSD] URL: link:https://
 Contact: Adriaan de Groot <kde@FreeBSD.org>
 
 The KDE on FreeBSD project aims to package all of the software produced by the KDE Community for the FreeBSD ports tree.
-The software includes a full desktop environment called KDE Plasma, graphics applications, instant-messengers, a video-editing suite, as well as a tea timer and hundreds of other applications that can be used on any FreeBSD machine.
+The software includes a full desktop environment called KDE Plasma, graphics applications, instant messengers, a video-editing suite, as well as a tea timer and hundreds of other applications that can be used on any FreeBSD machine.
 
 The KDE team (kde@) is part of desktop@ and x11@ as well, building the software stack to make FreeBSD beautiful and usable as a daily-driver graphics-based desktop machine.
 
@@ -50,11 +50,11 @@ with the rest of the desktop folk -- we have a lot of shared concerns, after all
   FreeBSD all received their regular updates. 
 - *textproc/kdiff3* had some serious issues with 3-way-merges. This was
   reported by Ed Maste, and turned out to have fixes upstream.
-- *x11/konsole* the terminal emulator would not accept `/bin/sh` as a
+- *x11/konsole*, the terminal emulator, would not accept `/bin/sh` as a
   shell; this is more of an issue on FreeBSD than on Linux where `bash`
   is a very common choice. This was resolved upstream and landed in ports.
 - The regular KDE Frameworks releases (monthly) and KDE Plasma releases
   (monthly) and KDE Gear all were announced upstream and landed in FreeBSD
   ports without a fuss. Upstream CI continues to be updated with the latest
   FreeBSD ports so that CI reflects well what the KDE-on-FreeBSD team
-  delives to FreeBSD users.
+  delivers to FreeBSD users.
