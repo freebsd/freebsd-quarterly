@@ -1,9 +1,9 @@
 == BSDDialog - TUI Widgets
 
-Link: link:https://gitlab.com/alfix/bsddialog[BSDDialog Project]  
-link: link://https://invisible-island.net/dialog[Dialog Project]
-link: link:https://wiki.freebsd.org/GPLinBase[GPLinBase Wiki Page]  
-link: link:https://man.freebsd.org/dialog4ports/1[dialog4ports utility]  
+Link: link:https://gitlab.com/alfix/bsddialog[BSDDialog Project] +
+link: link://https://invisible-island.net/dialog[Dialog Project] +
+link: link:https://wiki.freebsd.org/GPLinBase[GPLinBase Wiki Page] +
+link: link:https://man.freebsd.org/dialog4ports/1[dialog4ports utility]
 
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
 
