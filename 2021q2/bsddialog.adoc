@@ -16,7 +16,7 @@ project has been added to the "GPL Software in the Base System" wiki page.
 The aim is to provide full compatibility with the dialog utility (the challenge
 is to implement over seventy options and almost thirty widgets).
 The API compatibility with the library is not a priority because libbsddialog
-should meet the FreeBSD's needs, for example it provides the new mixedlist()
+should meet FreeBSD's needs, for example it provides the new mixedlist()
 function, it can take as argument a set of: checklists, radiolists and
 separators, so it could be useful for building a dialog4ports clone: more easier
 to implement and not depending on non-permissive dependencies.
