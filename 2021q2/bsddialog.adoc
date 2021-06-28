@@ -18,7 +18,7 @@ is to implement over seventy options and almost thirty widgets).
 The API compatibility with the library is not a priority because libbsddialog
 should meet FreeBSD's needs, for example it provides the new mixedlist()
 function, it can take as argument a set of: checklists, radiolists and
-separators, so it could be useful for building a dialog4ports clone: more easier
+separators, so it could be useful for building a dialog4ports clone: easier
 to implement and not depending on non-permissive dependencies.
 
 BSDDialog is currently under development, no widget is really completed
