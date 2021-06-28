@@ -1,0 +1,32 @@
+== BSDDialog - TUI Widgets
+
+Link: link:https://gitlab.com/alfix/bsddialog[Project repository]  
+Link: link:https://man.freebsd.org/dialog/1[Manual dialog utility]  
+Link: link:https://man.freebsd.org/dialog/3[Manual dialog library]  
+link: link:https://wiki.freebsd.org/GPLinBase[GPLinBase Wiki Page]  
+
+Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
+
+The purpose of this project is to provide an utility and a library to build
+scripts and tools with UI Widgets in a terminal.
+The project is inspired by link://https://invisible-island.net/dialog[Dialog],
+however BSDDialog is released under the terms of the BSD-2-Clause License while
+Dialog is licensed as LGPL so a link of this project has been added to the
+link:https://wiki.freebsd.org/GPLinBase[GPL Software in the Base System] Wiki
+page.
+
+The goal is to provide full compatibility with the dialog utility (the challenge
+is to implement over seventy options and about thirty widgets)
+while the "features syncronization" with the library is not a priority,
+libbsddialog should meet the FreeBSD' s needs, for example it provides the new
+mixedmenu() function, it can take as arguments a set of: checklists, radiolists
+and separators, so it could be the core of a new
+link:https://man.freebsd.org/dialog4ports/1[dialog4ports] utility: more easier
+to implement and not depending on non-permissive dependencies.
+
+BSDDialog is currently under development, no widget is really completed
+(autosizing, resizing and scrolling are missing), nevertheless the examples
+described in the README and inside the examples folders.
+
+Finally, a curiosity: BSDDialog started from the mixertui code base, however the
+original code has been almost completely rewritten.
