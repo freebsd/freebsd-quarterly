@@ -1,7 +1,7 @@
 == FreshPorts
 
-Link:	link:https://freshports.org/[FreshPorts]
-Link:	link:https://news.freshports.org/[FreshPorts blog]
+Link:	https://freshports.org/[FreshPorts]
+Link:	https://news.freshports.org/[FreshPorts blog]
 
 Contact: Dan Langille <dvl@FreeBSD.org>  
 
@@ -13,7 +13,7 @@ FreshPorts tracks the commits and extracts data from the
 port Makefiles to create a database of information useful
 to both port developers and port users.
 
-For example, link:https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows
+For example, https://www.freshports.org/security/acme.sh/ shows
 the history of this port, back to its creation in May 2017.
 
 ### git ###
@@ -28,8 +28,8 @@ directly from git and not from parsing commit emails has its benefits.
 
 ### Help wanted ###
 
-Since the link:last report[https://www.freebsd.org/status/report-2020-10-2020-12.html#FreshPorts],
-link:Jethro Nederhof[https://github.com/jethron] has been 
+Since the https://www.freebsd.org/status/report-2020-10-2020-12.html#FreshPorts[last report],
+https://github.com/jethron[Jethro Nederhof] has been 
 doing fantastic work bringing the website up to HTML5 and into the modern world.
 Nothing dramatic, from what the users see, as it has been mostly behind-the-scenes.
 
@@ -40,10 +40,10 @@ tree usually don't affect the website much.
 
 Tasks include:
 
-* There is a long list of link:https://github.com/FreshPorts/freshports/issues[issues]
+* There is a long list of https://github.com/FreshPorts/freshports/issues[issues]
 for the website.
 
-* The link:https://github.com/FreshPorts/git_proc_commit/issues[git_proc_commit project]
+* The https://github.com/FreshPorts/git_proc_commit/issues[git_proc_commit project]
 also has a set of issues, mostly in Pyton, some perhaps related to the website.
 
 * Documentation outlining how the various projects fit together and how they work is 
