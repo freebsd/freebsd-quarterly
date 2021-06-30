@@ -1,7 +1,7 @@
 == FreshPorts
 
-Link:	link:http://freshports.org/[FreshPorts]
-Link:	link:http://news.freshports.org/[FreshPorts blog]
+Link:	link:https://freshports.org/[FreshPorts]
+Link:	link:https://news.freshports.org/[FreshPorts blog]
 
 Contact: Dan Langille <dvl@FreeBSD.org>  
 
