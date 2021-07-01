@@ -24,7 +24,7 @@ Work in progress:
 * Introduce full kernel RSS API support
 * Allow reconfiguration of the RSS indirection table and hash key
 * Prototype the driver port to the iflib framework
-* MFC of the ENA v2.4.0 driver to the FreeBSD 11/12/13-STABLE branches
+* MFC the ENA v2.4.0 driver to the FreeBSD 11/12/13-STABLE branches
 * Support netmap on the c6gn/m6i AWS instance types
 * Fix race between detach function and some of the procedural sysctl nodes
 * Add new statistics counters
