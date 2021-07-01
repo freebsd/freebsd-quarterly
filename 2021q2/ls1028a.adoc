@@ -6,7 +6,7 @@ Contact: Marcin Wojtas <mw@semihalf.com>
 
 The Semihalf team has been working on adding the FreeBSD support for the link:https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/layerscape-processors/layerscape-1028a-applications-processor:LS1028A[NXP LS1028A] SoC.
 
-NXP LS1028A SoC is a dual-core 64-bit ARMv8 Cortex-A72 application processor with the high-speed peripherals such as 2 Time-Sensitive Networking-capable (TSN) Ethernet controllers, quad-port TSN-enabled switch, PCIE, SD/MMC, USB3.0 and others.
+NXP LS1028A SoC is a dual-core 64-bit ARMv8 Cortex-A72 application processor with high-speed peripherals such as 2 Time-Sensitive Networking-capable (TSN) Ethernet controllers, quad-port TSN-enabled switch, PCIE, SD/MMC, USB3.0 and others.
 
 The newly introduced support includes:
 
