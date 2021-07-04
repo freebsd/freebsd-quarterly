@@ -20,7 +20,7 @@ Some tasks have already been completed, including:
 
 Some tasks need to be completed, including:
 
- * i915kms Xorg bring-up (currently pagefaults on `remap_io_sg()` page address)
+ * i915kms Xorg bring-up
  * amdgpu VA-API bring-up
  * radeonkms bring-up
 
