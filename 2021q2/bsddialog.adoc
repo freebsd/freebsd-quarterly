@@ -3,7 +3,6 @@
 Link: link:https://gitlab.com/alfix/bsddialog[BSDDialog Project] +
 Link: link:https://invisible-island.net/dialog[Dialog Project] +
 Link: link:https://wiki.freebsd.org/GPLinBase[GPLinBase Wiki Page] +
-Link: link:https://man.freebsd.org/dialog4ports/1[dialog4ports utility]
 
 Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>  
 
