@@ -1,4 +1,4 @@
-== WebApps working group
+=== WebApps working group
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 

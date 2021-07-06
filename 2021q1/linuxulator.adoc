@@ -1,10 +1,10 @@
-## Linux compatibility layer update ##
+=== Linux compatibility layer update
 
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
 Linuxulator improvements have been ongoing for the last two years, with support from the FreeBSD Foundation over a few distinct project grants as well as contributions from the community.
 The goal of this project is to improve FreeBSD's ability to execute unmodified Linux binaries.
-Current support status of specific Linux applications is being tracked at the [Linux app status Wiki page](https://wiki.freebsd.org/LinuxApps).
+Current support status of specific Linux applications is being tracked at the link:https://wiki.freebsd.org/LinuxApps[Linux app status Wiki page].
 
 The work this quarter focused on making sure the 13.0-RELEASE ships with Linuxulator in a good shape, and fixing problems reported by users.
 There are some new directories provided by `linsysfs(5)`, the lack of which, through a curious chain of events, broke installation of make(1) in Ubuntu Focal.

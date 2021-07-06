@@ -87,7 +87,7 @@ my %options;
 # Variables initialization
 # -------------------------------------------------------
 
-@recipients = ();
+@recipients = ('freebsd-current@FreeBSD.org', 'freebsd-hackers@FreeBSD.org');
 
 $quarter_specific_recipients{1} = [	'secretary@asiabsdcon.org'	];
 $quarter_specific_recipients{2} = [	'info@bsdcan.org',

@@ -1,7 +1,8 @@
-## KDE on FreeBSD ##
+=== KDE on FreeBSD
 
-Link:    [KDE FreeBSD](https://freebsd.kde.org/)  
-Link:    [KDE Community FreeBSD](https://community.kde.org/FreeBSD)
+Links: +
+link:https://freebsd.kde.org/[KDE FreeBSD] URL: link:https://freebsd.kde.org/[https://freebsd.kde.org/] +
+link:https://community.kde.org/FreeBSD[KDE Community FreeBSD] URL: link:https://community.kde.org/FreeBSD[https://community.kde.org/FreeBSD]
 
 Contact: Adriaan de Groot <kde@FreeBSD.org>
 
@@ -13,16 +14,17 @@ The KDE team (kde@) is part of desktop@ and x11@ as well, building the software 
 The KDE Frameworks have a monthly release cycle; KDE Plasma and the rest of KDE software run on a quarterly cycle plus monthly bugfixes.
 All of those releases landed in ports in a timely manner.
 Around KDE there are several hundred other applications with their own releases, of which notable or new ones are:
-  * *calindori* and *kongress* and *kaidan* and *semantik* and *kgeotag*
-  * *ruqola* and *neochat* for Rocket and Matrix instant-messaging, respectively
-  * *amarok*, the one-time favorite KDE music player
+
+* `deskutils/calindori`, `deskutils/kongress`, `net-im/kaidan`, `deskutils/semantik` and `graphics/kgeotag`
+* `net-im/ruqola` and `net-im/neochat` for Rocket and Matrix instant-messaging, respectively
+* `audio/amarok`, the one-time favorite KDE music player
 
 Infrastructure work improved the way Qt5 ports install- and un-install changes to the global header `qconfig-modules.h`.
-CMake releases landed with distressing regularity, and various low-level things like *libphonenumber* and *poppler* were updated as needed.
+CMake releases landed with distressing regularity, and various low-level things like `devel/libphonenumber` and `graphics/poppler` were updated as needed.
 
 The big issue in the Qt stack on FreeBSD is Qt5-WebEngine, which is based on Chromium.
 Like Chromium itself (upstream), it has a tangled mess of a build system based on Python 2.7.
 The scheduled removal of Python 2.7 and ports that depend on it is a sword looming over a large chunk of the Qt and KDE stack.
 Some resolution may be forthcoming in the form of WebEngine-less ports, but the real effort is in trying to get WebEngine to build with Python3.
 
-More detailed descriptions of the updates in this quarter are available [here (part 1)](https://euroquis.nl/kde/2021/02/13/freebsd.html) and [here (part 2)](https://euroquis.nl/kde/2021/03/26/freebsd2021o2.html).
+More detailed descriptions of the updates in this quarter are available link:https://euroquis.nl/kde/2021/02/13/freebsd.html[here (part 1)] and link:https://euroquis.nl/kde/2021/03/26/freebsd2021o2.html[here (part 2)].

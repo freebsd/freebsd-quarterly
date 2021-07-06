@@ -1,4 +1,4 @@
-== Ports Collection
+=== Ports Collection
 
 Link: link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] +
 Link: link:https://docs.freebsd.org/en/articles/contributing/ports-contributing/[Contributing to Ports] +
@@ -16,13 +16,13 @@ As always, first the quarterly dashboard:
 * we currently have around 43,800 ports (including flavors).
 * the open PR count for ports is currently 2477, of which 532 are unassigned.
 * during the last quarter, 9481 commits were made by 168 committers on the main branch, and 620 commits by 64 committers on the 2021Q1 branch.
-Compared to 2020Q4, the number of ports again grew with five percent, the number of open PRs dropped a bit, and the number of commits on the main branch grew with almost nine percent.
+Compared to 2020Q4, the number of ports again grew by five percent, the number of open PRs dropped a bit, and the number of commits on the main branch grew with almost nine percent.
 
 During the last quarter, we welcomed Neel Chauhan (nc@), Lewis Cook (lcook@), and Nuno Teixeira (eduardo@).
 Adrian Chadd (adrian@) who is already a src committer got a ports commit bit extension.
 Tobias Berner (tcberner@) asked if he could join the portmgr-lurker program and was shortly added afterwards.
 
-We send another mail to the ports@ mailing list outlining further plans for removing Python 2.7 from the Ports Tree.
+We sent another mail to the ports@ mailing list outlining further plans for removing Python 2.7 from the Ports Tree.
 Currently all ports recursively depending on Python 2.7 are marked to expire on 2021-06-23, which unfortunately includes a lot of KDE ports due to the qt5-webengine port.
 We are evaluating various mitigation strategies.
 
@@ -36,7 +36,7 @@ Tasks included:
 
 Regarding the Ports Tree itself, two new USES were introduced:
 * `kodi` to ease porting of Kodi add-ons
-* `mpi` to dependencies of MPICH and OpenMPI
+* `mpi` for dependencies of MPICH and OpenMPI
 A new default version for ImageMagick was added and the default version for Julia was removed
 as no Julia port currently exists.
 `pkg` was updated to 1.16.3, Firefox to 87.0, and Chromium to 89.0.4389.114

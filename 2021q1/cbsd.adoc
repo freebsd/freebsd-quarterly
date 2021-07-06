@@ -1,15 +1,16 @@
-## CBSD Project ##
+=== CBSD Project
 
-Link:		[CBSD API module](https://www.bsdstore.ru/en/cbsd_api_ssi.html)
+Links: +
+link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[CBSD API module] URL: link:https://www.bsdstore.ru/en/cbsd_api_ssi.html[https://www.bsdstore.ru/en/cbsd_api_ssi.html]
 
-Contact:	Oleg Ginzburg <olevole@olevole.ru>
+Contact: Oleg Ginzburg <olevole@olevole.ru>
 
-### What is CBSD? ##
+==== What is CBSD?
 
-CBSD is a management layer written for the FreeBSD [jail(8)](https://man.freebsd.org/jail/8) subsystem, [bhyve(8)](https://man.freebsd.org/bhyve/8) and [xen(4)](https://man.freebsd.org/xen/4)xen(4).
-CBSD allows users to manage jail/bhyve/xen environments at different levels of abstraction by providing a varied number of unified methods: vagrant-like `CBSDfiles`, `CLI` and via [dialog(1)](https://man.freebsd.org/dialog/1).
+CBSD is a management layer written for the FreeBSD man:jail[8] subsystem, man:bhyve[8] and man:xen[4].
+CBSD allows users to manage jail/bhyve/xen environments at different levels of abstraction by providing a varied number of unified methods: vagrant-like `CBSDfiles`, `CLI` and via man:dialog[1].
 
-### CBSD 2021Q1 Status Report ###
+==== CBSD 2021Q1 Status Report
 
 A RestAPI service layer was added during last quarter, enabling creation of programmable cloud solutions.
 In addition, work has been done to support RestAPI through a `CBSDfile`, allowing for private cloud environments deployment.

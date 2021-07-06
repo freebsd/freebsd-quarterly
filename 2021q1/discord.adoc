@@ -1,10 +1,11 @@
-== Discord Server & Community Growth ==
+=== Discord Server & Community Growth
 
-Link: link:https://wiki.freebsd.org/Discord[Discord Wiki Page]  
-Link: link:https://discord.gg/RHprKbvWJN[Discord Invitation Link]
+Links: +
+link:https://wiki.freebsd.org/Discord[Discord Wiki Page] URL: link:https://wiki.freebsd.org/Discord[https://wiki.freebsd.org/Discord] +
+link:https://discord.gg/RHprKbvWJN[Discord Invitation Link] URL: link:https://discord.gg/RHprKbvWJN[https://discord.gg/RHprKbvWJN]
 
-Contact: Lewis Cook <lcook@FreeBSD.org>  
-Contact: Vincent Milum Jr <freebsd@darkain.com>  
+Contact: Lewis Cook <lcook@FreeBSD.org> +
+Contact: Vincent Milum Jr <freebsd@darkain.com> +
 Contact: Kubilay Kocak <koobs@FreeBSD.org>
 
 The FreeBSD project and community continues to grow, and in the last 2 quarters, we established an official FreeBSD server on the popular Discord platform, as a complementary means for out-reach, support, collaboration and social connection for and between members of the FreeBSD community, new and old.
@@ -21,17 +22,17 @@ We hope to see more events like these run as examples of how we can utilize Disc
 
 With the future in mind, we have plans to:
 
-  * Automatically announce news, updates and advisories in Discord.
-  * Verify and enable additional Discord features designed for large communities.
-  * Set up bots with unique features, including moderation and interactive features for members. We welcome ideas in this regard.
+* Automatically announce news, updates and advisories in Discord.
+* Verify and enable additional Discord features designed for large communities.
+* Set up bots with unique features, including moderation and interactive features for members. We welcome ideas in this regard.
 
 We are keen on project and community members to reach out to talk about how we can best leverage Discord.
 Some ideas we'd love people to get involved with include:
 
-  * Brainstorm/Suggest unique and creative ideas or features.
-  * Provide bug reports and user experience feedback and suggestions.
-  * Actively promote Discord in other social media spaces, particularly those that maybe new or curious to learn more about FreeBSD.
-  * Contribute to the Wiki page and its content.
-  * Participate and support other members on Discord.
-  * Run a live stream on a FreeBSD-related topic.
-  * Hang out in our live audio and video channels if you're comfortable doing so.
+* Brainstorm/Suggest unique and creative ideas or features.
+* Provide bug reports and user experience feedback and suggestions.
+* Actively promote Discord in other social media spaces, particularly those that maybe new or curious to learn more about FreeBSD.
+* Contribute to the Wiki page and its content.
+* Participate and support other members on Discord.
+* Run a live stream on a FreeBSD-related topic.
+* Hang out in our live audio and video channels if you're comfortable doing so.
