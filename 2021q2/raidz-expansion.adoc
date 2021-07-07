@@ -16,7 +16,8 @@ small pools (typically with only one RAID-Z group), where there isn't
 sufficient hardware to add capacity by adding a whole new RAID-Z group
 (typically doubling the number of disks).
 
-FreeBSD's ZFS implementation comes from the OpenZFS project.  This work will integrate to the OpenZFS repo, with support for FreeBSD and Linux operating systems.
+FreeBSD's ZFS implementation comes from the OpenZFS project.
+This work will be integrated into the OpenZFS repo, with support for FreeBSD and Linux.
 
 === Status
 
