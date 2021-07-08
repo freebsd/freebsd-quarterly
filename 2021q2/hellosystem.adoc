@@ -13,8 +13,8 @@ Its design follows the “Less, but better” philosophy.
 
 ==== Q2 2021 Status
 
-* Version 0.5.0 of helloSystem has been published. Installable Live ISO images are available. Download and changelog at https://github.com/helloSystem/ISO/releases/tag/r0.5.0
-* helloSystem was part of the Desktop panel at FreeBSD Developer Summit 2021. Video is available at https://www.youtube.com/watch?v=3SUKJye54aI&t=11410s
+* Version 0.5.0 of helloSystem has been published. Installable Live ISO images are available. Download and changelog are at https://github.com/helloSystem/ISO/releases/tag/r0.5.0
+* helloSystem was part of the Desktop panel at the FreeBSD Developer Summit 2021. A video is available at https://www.youtube.com/watch?v=3SUKJye54aI&t=11410s
 * Work has started towards 0.6.0. Thanks for contributed features and bugfixes
 ** Improved spatial file manager
 ** Switch to KWin (if its dependencies can be reduced significantly for use outside of KDE Plasma)
