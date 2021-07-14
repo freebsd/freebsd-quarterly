@@ -46,6 +46,29 @@ Find out more information and share with your companies! https://www.freebsdfoun
 
 ==== OS Improvements
 
+During the second quarter Foundation staff and grant recipients committed 348 src tree changes, 19 ports tree changes, and 11 doc tree changes.
+This represents 40% of src commits which identify a sponsor.
+For ports commits it's 15%, and 18% of doc commits.
+Foundation staff and grant recipients also contributed to a number of 3rd party projects.
+Two notable examples are the LLVM project's LLDB debugger and the Syzkaller code-coverage-guided system call fuzzer.
+
+You can read about a number of Foundation projects in individual quarterly reports.
+Smaller projects and improvements include:
+
+* Implement on-demand coredump generation by the kernel via `ptrace(PT_COREDUMP)`
+* General kernel debugging improvements
+* Remove obsolete kernel mcount profiling
+* Nullfs and tmpfs bug fixes
+* libc cleanup and improvements
+* rtld dlerror and thread local variable fixes (reported by Julia developers)
+* kqueue and POSIX timer fixes
+* UFS bug fixes
+* Capsicum socket operation improvements
+* hwpmc (hardware performance profiling) maintenance and CPU support
+* Cirrus-CI boot smoke test
+
+As usual Foundation staff also supported the project with significant effort on code reviews and general bug triage and fixes.
+
 ==== Continuous Integration and Quality Assurance
 
 ==== Supporting FreeBSD Infrastructure
