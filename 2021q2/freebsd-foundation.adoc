@@ -71,6 +71,13 @@ As usual Foundation staff also supported the project with significant effort on 
 
 ==== Continuous Integration and Quality Assurance
 
+The Foundation provides a full-time staff member and funds projects on improving continuous integration, automated testing, and overall quality assurance efforts for the FreeBSD project.
+
+During the second quarter of 2021, work on pre-commit tests and building release artifacts in the CI environment continued.
+A project using the netperf cluster to do network-related CI jobs is being planned.
+
+See the FreeBSD CI section of this report for completed work items and detailed information.
+
 ==== Supporting FreeBSD Infrastructure
 
 The Foundation provides hardware and support to improve the FreeBSD infrastructure.
