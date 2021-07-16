@@ -106,13 +106,13 @@ In addition to attending and planning virtual events, we are continually working
 Check out some of the advocacy and education work we did last quarter:
 
 * Participated as an Industry Partner for USENIX LISA21
-* Held two new FreeBSD Fridays: Introduction to BastilleBSD and How to Submit a Patch to FreeBSD.
+* Held two new FreeBSD Fridays: https://youtu.be/IOUr7Is5FSU[Introduction to BastilleBSD] and https://youtu.be/6fwfRoDt9bQ[How to Submit a Patch to FreeBSD].
 * Organized content and promoted FreeBSD Day on June 18-19, 2021
-* Helped organize and run the June 2021 FreeBSD Developer Summit - videos are now posted on the wiki.
+* Helped organize and run the June 2021 FreeBSD Developer Summit - videos are now posted on the https://wiki.freebsd.org/DevSummit/202106[wiki].
 * Presented at the The 16th Open Source China Open Source World Summit on June 18
 * New blog posts on the Linxulator work we funded and What’s new in FreeBSD 13.0
 * New How To Guide on Git
-* Continued to promote the FreeBSD Office Hours series Videos from the one hour sessions can be found on the Project’s YouTube Channel. See the Office Hours section of this report for more information.
+* Continued to promote the FreeBSD Office Hours series Videos from the one hour sessions can be found on the Project’s https://www.youtube.com/c/FreeBSDProject[YouTube Channel].  See the Office Hours section of this report for more information.
 * Committed to be a Silver Sponsor for EuroBSDcon
 
 Keep up to date with our latest work in our newsletters: https://www.freebsdfoundation.org/news-and-events/newsletter/
