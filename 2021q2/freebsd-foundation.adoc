@@ -32,7 +32,7 @@ Late last year we decided to put more funding into helping to improve FreeBSD.
 We hired a Sr. Software Developer to work on arm64 and a Project Coordinator to manage our projects and interface with the community.
 We also hired two of our part-time software developers full-time.
 The purpose of this was to provide more resources to step in to implement and improve major features in FreeBSD, review patches and bug reports, implement bug fixes, and support the security efforts.
-This keeps FreeBSD the innovative, secure, and reliable operating system you rely on.
+This ensures FreeBSD remains the innovative, secure, and reliable operating system that you rely on.
 
 You’ll find out how we used your donations for Q2 in our report, as well as individual reports throughout this status report.
 
@@ -88,7 +88,7 @@ See the FreeBSD CI section of this report for completed work items and detailed 
 ==== Supporting FreeBSD Infrastructure
 
 The Foundation provides hardware and support to improve the FreeBSD infrastructure.
-Last quarter, we supported the text cluster at Sentex, purchased a few needed parts for infrastructure in general, and started working with the clusteradm team on a more efficient and improved hardware request/purchase process.
+Last quarter, we supported the test cluster at Sentex, purchased a few needed parts for infrastructure in general, and started working with the clusteradm team on a more efficient and improved hardware request/purchase process.
 
 ==== FreeBSD Advocacy and Education
 
@@ -100,7 +100,7 @@ These events can be BSD-related, open source, or technology events geared toward
 We support the FreeBSD-focused events to help provide a venue for sharing knowledge, to work together on projects, and to facilitate collaboration between developers and commercial users.
 This all helps provide a healthy ecosystem.
 We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.
-While we were still unable to attend in-person meetings due to covid-19, we were able to attend virtual events and help organize the June 2021 FreeBSD Developer Summit. 
+While we were still unable to attend in-person meetings due to Covid-19, we were able to attend virtual events and help organize the June 2021 FreeBSD Developer Summit.
 In addition to attending and planning virtual events, we are continually working on new training initiatives and updating our selection of how-to guides to facilitate getting more folks to try out FreeBSD.
 
 Check out some of the advocacy and education work we did last quarter:
