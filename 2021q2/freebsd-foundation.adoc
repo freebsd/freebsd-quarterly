@@ -71,7 +71,7 @@ Smaller projects and improvements include:
   https://cgit.freebsd.org/src/commit/?id=9d7eb557c1574f879b4bb4adee285cc9f2d5f18e[commit 1]
   https://cgit.freebsd.org/src/commit/?id=6fe60f1d5c39c94fc87534e9dd4e9630594e0bec[commit 2]
   https://reviews.freebsd.org/D30827[review]
-* https://reviews.freebsd.org/D2970[Virtio 1.0 modern support] in bhyve(8)
+* https://reviews.freebsd.org/D29708[Virtio 1.0 modern support] in bhyve(8)
 
 As usual Foundation staff also supported the project with significant effort on code reviews and general bug triage and fixes.
 Also, Ka Ho added an article titled https://docs.freebsd.org/en/articles/freebsd-src-lsp/[Use Language Servers for Development in the FreeBSD Src Tree].
