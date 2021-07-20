@@ -1,0 +1,30 @@
+== FreeBSD Release Engineering Team
+
+Links:
+[FreeBSD 13.0-RELEASE schedule](https://www.freebsd.org/releases/13.0R/schedule/) URL: link:https://www.freebsd.org/releases/13.0R/schedule/ +
+[FreeBSD 13.0-RELEASE announcement](https://www.freebsd.org/releases/13.0R/announce/) URL: link:https://www.freebsd.org/releases/13.0R/announce/ +
+[FreeBSD releases](https://download.freebsd.org/ftp/releases/ISO-IMAGES/) URL: link:https://download.freebsd.org/ftp/releases/ISO-IMAGES/ +
+[FreeBSD development snapshots](https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/) URL: link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/
+
+Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
+
+The FreeBSD Release Engineering Team is responsible for setting
+and publishing release schedules for official project releases
+of FreeBSD, announcing code freezes and maintaining the respective
+branches, among other things.
+
+During the second quarter of 2021, the Release Engineering Team completed
+work on the 13.0-RELEASE cycle, the first release from the stable/13 branch.
+During the release cycle, one additional BETA build and two additional RC
+builds were added to the schedule, however the release cycle went smoothly,
+overall.
+
+Additionally throughout the quarter, several development snapshots builds
+were released for the *main*, *stable/13*, and *stable/12* branches.
+Development snapshot builds for *stable/11* will no longer be available.
+
+Thank you to all that have helped test the 13.0 builds up until this point and
+have reported issues.  As always, we strive for quality over quantity.
+
+Sponsor: Rubicon Communications, LLC ("Netgate")
+Sponsor: The FreeBSD Foundation
