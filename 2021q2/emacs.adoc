@@ -10,4 +10,4 @@ The Emacs development port, editors/emacs-devel, continues to be updated twice p
 A noteworthy change from the first June 2021 update was the addition of a NATIVECOMP port option.
 NATIVECOMP adds support for compiling Emacs lisp to native code using libgccjit, which was first enabled in lang/gcc11-devel and is now in lang/gcc11.
 
-For more information about native compilation of Emacs lisp, see link:https://www.emacswiki.org/emacs/GccEmacs[https://www.emacswiki.org/emacs/GccEmacs].
+For more information about native compilation of Emacs lisp, see link:https://www.emacswiki.org/emacs/GccEmacs[Gcc Emacs Wiki].

@@ -1,9 +1,9 @@
 === FreeBSD in Science
 
 Links: +
-link:https://www.freshports.org/biology/biostar-tools/[Meta-port for Biostar Handbook tools] URL: link:https://www.freshports.org/biology/biostar-tools/[https://www.freshports.org/biology/biostar-tools/ +
-link:http://http://acadix.biz/spcm.php[Simple Portable Cluster Manager] URL: link:http://http://acadix.biz/spcm.php[http://http://acadix.biz/spcm.php] +
-link:http://http://acadix.biz/desktop-installer.php[Desktop-installer] URL: link:http://http://acadix.biz/desktop-installer.php[http://http://acadix.biz/desktop-installer.php]
+link:https://www.freshports.org/biology/biostar-tools/[Meta-port for Biostar Handbook tools] URL: link:https://www.freshports.org/biology/biostar-tools/[https://www.freshports.org/biology/biostar-tools/] +
+link:https://acadix.biz/spcm.php[Simple, Portable Cluster Manager] URL: link:https://acadix.biz/spcm.php[https://acadix.biz/spcm.php] +
+link:https://acadix.biz/desktop-installer.php[Desktop-installer] URL: link:https://acadix.biz/desktop-installer.php[https://acadix.biz/desktop-installer.php]
 
 Contact: Jason Bacon <jwb@FreeBSD.org> +
 Contact: Yuri Victorovich <yuri@FreeBSD.org>

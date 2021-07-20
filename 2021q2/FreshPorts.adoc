@@ -2,7 +2,7 @@
 
 Links: +
 link:https://freshports.org/[FreshPorts] URL:link:https://freshports.org/[https://freshports.org/] +
-link:https://news.freshports.org/[FreshPorts blog] URL: link:https://news.freshports.org/[https://news.freshports.org/] +
+link:https://news.freshports.org/[FreshPorts blog] URL: link:https://news.freshports.org/[https://news.freshports.org/]
 
 Contact: Dan Langille <dvl@FreeBSD.org>
 
@@ -10,7 +10,7 @@ FreshPorts, and its sister site, FreshSource, have reported upon FreeBSD commits
 
 FreshPorts tracks the commits and extracts data from the port Makefiles to create a database of information useful to both port developers and port users.
 
-For example, link:https://www.freshports.org/security/acme.sh/ shows the history of this port, back to its creation in May 2017.
+For example, link:https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows the history of this port, back to its creation in May 2017.
 
 ==== git
 
@@ -34,7 +34,7 @@ Tasks include:
 
 * There is a long list of link:https://github.com/FreshPorts/freshports/issues[issues] for the website.
 * The link:https://github.com/FreshPorts/git_proc_commit/issues[git_proc_commit project] also has a set of issues, mostly in Pyton, some perhaps related to the website.
-* Documentation outlining how the various projects fit together and how they work is required
+* Documentation outlining how the various projects fit together and how they work is required.
 * I have some subversion repos which should be converted to git and uploaded to GitHub. This would allow people to work on the backend code (commit ingress and processing).
 * The FreshSource website could be updated to modern standards and the repo converted to git.
 
