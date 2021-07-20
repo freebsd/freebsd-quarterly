@@ -118,7 +118,7 @@ We help educate the world about FreeBSD by publishing the professionally produce
 As we mentioned previously, the FreeBSD Journal is now a free publication.
 Find out more and access the latest issues at link:https://www.FreeBSDfoundation.org/journal/[https://www.FreeBSDfoundation.org/journal/].
 
-You can find out more about events we attended and upcoming events at link:https://www.FreeBSDfoundation.org/news-and-events/[https://www.FreeBSDfoundation.org/news-and-events/.
+You can find out more about events we attended and upcoming events at link:https://www.FreeBSDfoundation.org/news-and-events/[https://www.FreeBSDfoundation.org/news-and-events/].
 
 == Legal/FreeBSD IP
 

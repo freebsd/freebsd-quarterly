@@ -22,7 +22,7 @@ However, changes in the IRC Network landscape have caused us to migrate to Liber
 
 === Big Picture
 
-* The new *KDE Gear* release -- all the KDE software products that are not specifically KDE Frameworks or KDE Plasma, which release in a coordinated fashion on a regular schedule -- arrived in ports the day it was released. Albert Astals Cid has a good link:https://tsdgeos.blogspot.com/2021/04/kde-gear-2104-is-coming-this-week-but.html[blog post] explaining the rationale behind KDE Gear.
+* The new KDE Gear release -- all the KDE software products that are not specifically KDE Frameworks or KDE Plasma, which release in a coordinated fashion on a regular schedule -- arrived in ports the day it was released. Albert Astals Cid has a good link:https://tsdgeos.blogspot.com/2021/04/kde-gear-2104-is-coming-this-week-but.html[blog post] explaining the rationale behind KDE Gear.
 * Wayland support has arrived for KDE Plasma. It is now possible to run a KDE Plasma Wayland environment on FreeBSD machines with a DRM-enabled graphics card (Intel iGPU or AMDGPU).
 * There is slow-but-steady progress in reducing the dependencies of KDE Applications. Most FreeBSD ports are "batteries included" and that includes all the build-tools to create the application, but really, an IDE should not be a dependency of your photo-gallery application.
 * X11 was made optional in some of the Qt ports; this opens up possibilities such as "Wayland-Only" Qt, or "Framebuffer-Only". X11 remains enabled by default.

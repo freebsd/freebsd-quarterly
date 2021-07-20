@@ -1,6 +1,6 @@
 === Linux compatibility layer update
 
-Contact: Dmitry Chagin, <dchagin@FreeBSD.org>
+Contact: Dmitry Chagin, <dchagin@FreeBSD.org> +
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
 The goal of this project is to improve FreeBSD's ability to execute unmodified Linux binaries.

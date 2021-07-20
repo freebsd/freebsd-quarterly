@@ -1,6 +1,6 @@
 === Microchip PolarFire SoC support
 
-Contact: Jakub Klama <jakub@conclusive.pl>
+Contact: Jakub Klama <jakub@conclusive.pl> +
 Contact: Wojciech Kloska <wojciech@conclusive.pl>
 
 The Conclusive Engineering team is working on support for the Microchip PolarFire FPGA SoC chip family.

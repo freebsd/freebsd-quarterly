@@ -1,6 +1,6 @@
 === FreeBSD Erlang Ecosystem Ports update
 
-Links:
+Links: +
 link:https://wiki.freebsd.org/Erlang[FreeBSD Erlang wiki] URL: link:https://wiki.freebsd.org/Erlang[https://wiki.freebsd.org/Erlang] +
 link:https://erlang.org/[Erlang/OTP language] URL: link:https://erlang.org/[https://erlang.org/] +
 link:https://elixir-lang.org/[Elixir language] URL: link:https://elixir-lang.org/[https://elixir-lang.org/] +
