@@ -51,25 +51,158 @@ include::{reports-path}/portmgr.adoc[]
 
 '''
 
+include::{reports-path}/doceng.adoc[]
+
+'''
+
 [[projects]]
 == Projects
 
 Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
+
+include::{reports-path}/bsddialog.adoc[]
+
+'''
+
+include::{reports-path}/experimental-installer.adoc[]
+
+'''
+
+include::{reports-path}/git.adoc[]
+
+'''
+
+include::{reports-path}/lldb.adoc[]
+
+'''
+
+include::{reports-path}/pmc.adoc[]
+
+'''
+
+include::{reports-path}/syzkaller.adoc[]
+
+'''
 
 [[kernel]]
 == Kernel
 
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 
+include::{reports-path}/dpaa.adoc[]
+
+'''
+
+include::{reports-path}/drm-kmod.adoc[]
+
+'''
+
+include::{reports-path}/ena.adoc[]
+
+'''
+
+include::{reports-path}/graphics.adoc[]
+
+'''
+
+include::{reports-path}/iwlwifi.adoc[]
+
+'''
+
+include::{reports-path}/kernel-sanitizers.adoc[]
+
+'''
+
+include::{reports-path}/linuxulator.adoc[]
+
+'''
+
+include::{reports-path}/ls1028a.adoc[]
+
+'''
+
+include::{reports-path}/marvell.adoc[]
+
+'''
+
+include::{reports-path}/multicast.adoc[]
+
+'''
+
+include::{reports-path}/opath.adoc[]
+
+'''
+
+include::{reports-path}/pf_dummynet.adoc[]
+
+'''
+
+include::{reports-path}/pf_ethernet.adoc[]
+
+'''
+
+include::{reports-path}/pf_syncookie.adoc[]
+
+'''
+
+include::{reports-path}/polarfire-soc.adoc[]
+
+'''
+
+
+include::{reports-path}/racct.adoc[]
+
+'''
+
+include::{reports-path}/raidz-expansion.adoc[]
+
+'''
+
+include::{reports-path}/switchtec.adoc[]
+
+'''
+
 [[ports]]
 == Ports
 
 Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 
+include::{reports-path}/emacs.adoc[]
+
+'''
+
+include::{reports-path}/erlang.adoc[]
+
+'''
+
+include::{reports-path}/gcc.adoc[]
+
+'''
+
+include::{reports-path}/kde.adoc[]
+
+'''
+
+include::{reports-path}/libglvnd.adoc[]
+
+'''
+
+include::{reports-path}/science.adoc[]
+
+'''
+
 [[documentation]]
 == Documentation
 
 Noteworthy changes in the documentation tree, in manpages, or in external books/documents.
+
+include::{reports-path}/weblate.adoc[]
+
+'''
+
+include::{reports-path}/www.adoc[]
+
+'''
 
 [[miscellaneous]]
 == Miscellaneous
@@ -83,3 +216,14 @@ Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
 The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 
+include::{reports-path}/FreshPorts.adoc[]
+
+'''
+
+include::{reports-path}/hellosystem.adoc[]
+
+'''
+
+include::{reports-path}/pot.adoc[]
+
+'''
