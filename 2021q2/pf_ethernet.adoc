@@ -1,7 +1,7 @@
 === Ethernet support for pf
 
 Links: +
-link:https://github.com/kprovost/freebsd-src/tree/netgate/pf-link[pf-link in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/netgate/pf-link
+link:https://github.com/kprovost/freebsd-src/tree/netgate/pf-link[pf-link in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/netgate/pf-link[https://github.com/kprovost/freebsd-src/tree/netgate/pf-link]
 
 Work is ongoing to add basic support for Ethernet filtering to pf.
 

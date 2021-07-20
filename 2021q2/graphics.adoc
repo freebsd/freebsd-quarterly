@@ -1,7 +1,7 @@
 === Graphics Driver Update from Linux 5.7
 
 Links:
-link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip[WIP GitHub Repository] URL: link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip
+link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip[WIP GitHub Repository] URL: link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip[https://github.com/neelchauhan/drm-kmod/tree/5.7-wip]
 
 Contact: Neel Chauhan <nc@FreeBSD.org> +
 Contact: Hans Petter Selasky <hselasky@FreeBSD.org> +

@@ -1,8 +1,8 @@
 === GCC in the Ports Tree (lang/gcc*)
 
 Links: +
-link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org +
-link:link:https://gcc.gnu.org/gcc-10/[GCC 10 release series] URL: link:https://gcc.gnu.org/gcc-10/
+link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org[https://gcc.gnu.org] +
+link:link:https://gcc.gnu.org/gcc-10/[GCC 10 release series] URL: link:https://gcc.gnu.org/gcc-10/[https://gcc.gnu.org/gcc-10/]
 
 Contact: Gerald Pfeifer <gerald@pfeifer.com>
 

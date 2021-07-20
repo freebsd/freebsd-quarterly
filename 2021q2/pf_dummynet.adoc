@@ -1,7 +1,7 @@
 === Dummynet support for pf
 
 Links: +
-link:https://github.com/kprovost/freebsd-src/tree/netgate/dummynet[dummynet in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/netgate/dummynet
+link:https://github.com/kprovost/freebsd-src/tree/netgate/dummynet[dummynet in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/netgate/dummynet[https://github.com/kprovost/freebsd-src/tree/netgate/dummynet]
 
 Contact: Kristof Provost <kp@FreeBSD.org>
 

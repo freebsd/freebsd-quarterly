@@ -1,8 +1,8 @@
 === FreshPorts
 
 Links: +
-link:https://freshports.org/[FreshPorts] URL:link:https://freshports.org/ +
-link:https://news.freshports.org/[FreshPorts blog] URL: link:https://news.freshports.org/ +
+link:https://freshports.org/[FreshPorts] URL:link:https://freshports.org/[https://freshports.org/] +
+link:https://news.freshports.org/[FreshPorts blog] URL: link:https://news.freshports.org/[https://news.freshports.org/] +
 
 Contact: Dan Langille <dvl@FreeBSD.org>
 

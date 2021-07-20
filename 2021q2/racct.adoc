@@ -1,7 +1,7 @@
 === Racct (Resource Accounting) Bug Fixes and Improvements
 
 Links: +
-link:https://github.com/samuelkarp/runj/pull/11[racct PR for runj] URL: link:https://github.com/samuelkarp/runj/pull/11
+link:https://github.com/samuelkarp/runj/pull/11[racct PR for runj] URL: link:https://github.com/samuelkarp/runj/pull/11[https://github.com/samuelkarp/runj/pull/11]
 
 Contact: Cyril Zhang <cyril@freebsdfoundation.org>
 

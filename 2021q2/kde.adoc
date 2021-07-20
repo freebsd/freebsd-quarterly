@@ -16,7 +16,7 @@ The KDE team (kde@) is part of desktop@ and x11@ as well, building the software 
 The KDE-FreeBSD team has moved its primary communications channel (on IRC) in with the rest of the link:https://wiki.freebsd.org/IRC/Official-FreeBSD-IRC-channels-now-on-Libera-Chat[FreeBSD world].
 You can now find us on link:https://libera.chat/[Libera.Chat], in the `#freebsd-desktop` channel.
 
-**Why the rename?** We've been `#kde-freebsd` since 2003 or so.
+Why the rename? We've been `#kde-freebsd` since 2003 or so.
 However, changes in the IRC Network landscape have caused us to migrate to Libera.Chat and join up with the rest of the desktop folk -- we have a lot of shared concerns, after all.
 
 
@@ -31,6 +31,6 @@ However, changes in the IRC Network landscape have caused us to migrate to Liber
 === Highlights
 
 * Poppler, CMake, polkit .. these underpinnings of the Free Desktop on FreeBSD all received their regular updates.
-* *textproc/kdiff3* had some serious issues with 3-way-merges. This was reported by Ed Maste, and turned out to have fixes upstream.
-* *x11/konsole*, the terminal emulator, would not accept `/bin/sh` as a shell; this is more of an issue on FreeBSD than on Linux where `bash` is a very common choice. This was resolved upstream and landed in ports.
+* `extproc/kdiff3` had some serious issues with 3-way-merges. This was reported by Ed Maste, and turned out to have fixes upstream.
+* `x11/konsole`, the terminal emulator, would not accept `/bin/sh` as a shell; this is more of an issue on FreeBSD than on Linux where `bash` is a very common choice. This was resolved upstream and landed in ports.
 * The regular KDE Frameworks releases (monthly) and KDE Plasma releases (monthly) and KDE Gear all were announced upstream and landed in FreeBSD ports without a fuss. Upstream CI continues to be updated with the latest FreeBSD ports so that CI reflects well what the KDE-on-FreeBSD team delivers to FreeBSD users.

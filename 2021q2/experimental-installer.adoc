@@ -1,8 +1,8 @@
 === Experimental installer
 
 Links: +
-link:https://github.com/yangzhong-freebsd/lua-httpd[Installer repository] URL: link:https://github.com/yangzhong-freebsd/lua-httpd +
-link:https://github.com/yangzhong-freebsd/ISO[Live ISO containing installer] URL: link:https://github.com/yangzhong-freebsd/ISO
+link:https://github.com/yangzhong-freebsd/lua-httpd[Installer repository] URL: link:https://github.com/yangzhong-freebsd/lua-httpd[https://github.com/yangzhong-freebsd/lua-httpd] +
+link:https://github.com/yangzhong-freebsd/ISO[Live ISO containing installer] URL: link:https://github.com/yangzhong-freebsd/ISO[https://github.com/yangzhong-freebsd/ISO]
 
 Contact: Yang Zhong <yzhong@freebsdfoundation.org>
 

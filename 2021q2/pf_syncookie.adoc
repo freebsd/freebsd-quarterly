@@ -1,7 +1,7 @@
 === pf syncookie support
 
 Links: +
-link:https://github.com/kprovost/freebsd-src/tree/modirum/pf-syncookie-cleanup[pf syncookies in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/modirum/pf-syncookie-cleanup
+link:https://github.com/kprovost/freebsd-src/tree/modirum/pf-syncookie-cleanup[pf syncookies in-progress tree] URL: link:https://github.com/kprovost/freebsd-src/tree/modirum/pf-syncookie-cleanup[https://github.com/kprovost/freebsd-src/tree/modirum/pf-syncookie-cleanup]
 
 Contact: Kristof Provost <kp@FreeBSD.org>
 
