@@ -15,12 +15,12 @@ Applied changes:
 
 * Upstream PCIE improvements
 ** PCIE Designware driver (pci_dw) fixes:
-*** Correct setting of outbound I/O ATU window (link:https://cgit.freebsd.org/src/commit/?id=57dbb3c25936f0d61fef152eb224ca86a73af0e9[commit 57dbb3c25936]) 
+*** Correct setting of outbound I/O ATU window (link:https://cgit.freebsd.org/src/commit/?id=57dbb3c25936f0d61fef152eb224ca86a73af0e9[commit 57dbb3c25936])
 *** Allow mapping ATU windows bigger than 4GB (link:https://cgit.freebsd.org/src/commit/?id=243000b19f8b4ab104b584b2d16bc6aa9131c9b5[commit 243000b19f8b])
 ** Generic improvements that enable proper user-space mapping and access of the PCI BARs - commits link:https://cgit.freebsd.org/src/commit/?id=f2f1ab39c04088ce53287528549e652cf68cee09[f2f1ab39c040] and link:https://cgit.freebsd.org/src/commit/?id=1c1ead9b94a1a731646327ec3b09e8f3acd577b8[1c1ead9b94a1]
 * SDHCI improvements
 ** 64-bit DMA operation (link:https://cgit.freebsd.org/src/commit/?id=7d8700bc291b4b3be1a592cae539f9e682592d9d[commit 7d8700bc291b])
-** sdhci_xenon UHS support (link:https://cgit.freebsd.org/src/log/?id=43e31350f8f67087b641d85520e20176e152dda7&qt=range&q=43e31350f8f6%5E..4fa977f854e2[commits 43e31350f8f6-4fa977f854e2]) 
+** sdhci_xenon UHS support (link:https://cgit.freebsd.org/src/log/?id=43e31350f8f67087b641d85520e20176e152dda7&qt=range&q=43e31350f8f6%5E..4fa977f854e2[commits 43e31350f8f6-4fa977f854e2])
 
 TODO:
 

@@ -2,9 +2,10 @@
 
 Contact: Wojciech Macek <wma@semihalf.com>
 
-The Semihalf team has been working on reworking existing ip_mroute module. Previous implementation was over 20 years old and didn't use modern kernel features.
+The Semihalf team has been working on reworking the existing ip_mroute module. The previous implementation was over 20 years old and didn't use modern kernel features.
 
-Complete rework of locking mechanism was done to eliminate taking multiple locks for a single job. Some portions of code were modified to use lockless constructions, BW-meter API refactored to work in a single context and routing hot path was identified and made to work efficiently.
+A complete rework of locking mechanism was done to eliminate taking multiple locks for a single job.
+Some portions of code were modified to use lockless constructions, BW-meter API refactored to work in a single context and routing hot path was identified and made to work efficiently.
 All these fixes helped achieve over 5x speed boost in multicast routing.
 
 The newly introduced rework includes:

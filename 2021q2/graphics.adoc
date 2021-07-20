@@ -1,4 +1,4 @@
-== Linux 5.7 Graphics Driver Update
+=== Graphics Driver Update from Linux 5.7
 
 Links:
 link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip[WIP GitHub Repository] URL: link:https://github.com/neelchauhan/drm-kmod/tree/5.7-wip
@@ -15,14 +15,13 @@ This prevents us from supporting accelerated graphics on newer hardware containi
 
 Some tasks have already been completed, including:
 
- * amdgpu bring-up
- * i915kms console bring-up
+* amdgpu bring-up
+* i915kms console bring-up
 
 Some tasks need to be completed, including:
 
- * i915kms Xorg bring-up (currently pagefaults on `remap_io_sg()` page
-address)
- * amdgpu VA-API bring-up
- * radeonkms bring-up
+* i915kms Xorg bring-up (currently pagefaults on `remap_io_sg()` page address)
+* amdgpu VA-API bring-up
+* radeonkms bring-up
 
 We welcome help for the incomplete tasks, especially from users wanting to use newer hardware (or support FreeBSD-as-a-desktop in general).

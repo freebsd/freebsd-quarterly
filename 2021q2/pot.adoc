@@ -12,7 +12,7 @@ Contact: Michael Gmelin (Potman) <grembo@FreeBSD.org>
 
 Pot is a jail management tool that link:https://www.freebsd.org/news/status/report-2020-01-2020-03/#pot-and-the-nomad-pot-driver[also supports orchestration through Nomad].
 
-In the last quarter, link:https://github.com/pizzamig/pot/releases/tag/0.12.0[v0.12.0] was released and many new improvements have been worked on since then. The main new feature under development at the moment is the possibility to link:https://github.com/pizzamig/pot/issues/148[create layered pot images] for e.g. quickly adding applications in a build pipeline to a bigger base image which can then be deployed via Ansible or Nomad. 
+In the last quarter, link:https://github.com/pizzamig/pot/releases/tag/0.12.0[v0.12.0] was released and many new improvements have been worked on since then. The main new feature under development at the moment is the possibility to link:https://github.com/pizzamig/pot/issues/148[create layered pot images] for e.g. quickly adding applications in a build pipeline to a bigger base image which can then be deployed via Ansible or Nomad.
 
 Potluck aims to be to FreeBSD and Pot what Dockerhub is to Linux and Docker: A repository of Pot flavours and complete images for usage with Pot and in many cases Nomad.
 

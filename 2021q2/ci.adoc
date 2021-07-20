@@ -1,7 +1,7 @@
 === Continuous Integration
 
 Links: +
-link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance] URL: link:https://ci.FreeBSD.org[https://ci.FreeBSD.org]+
+link:https://ci.FreeBSD.org[FreeBSD Jenkins Instance] URL: link:https://ci.FreeBSD.org[https://ci.FreeBSD.org] +
 link:https://ci.FreeBSD.org/hwlab[FreeBSD Hardware Testing Lab] URL: link:https://ci.FreeBSD.org/hwlab[https://ci.FreeBSD.org/hwlab] +
 link:https://artifact.ci.FreeBSD.org[FreeBSD CI artifact archive] URL: link:https://artifact.ci.FreeBSD.org[https://artifact.ci.FreeBSD.org] +
 link:https://hackmd.io/@FreeBSD-CI[FreeBSD CI weekly report] URL: link:https://hackmd.io/@FreeBSD-CI[https://hackmd.io/@FreeBSD-CI] +

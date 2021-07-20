@@ -1,15 +1,16 @@
-== Experimental installer
+=== Experimental installer
 
-Contact: Yang Zhong <yzhong@freebsdfoundation.org>  
+Links: +
+link:https://github.com/yangzhong-freebsd/lua-httpd[Installer repository] URL: link:https://github.com/yangzhong-freebsd/lua-httpd +
+link:https://github.com/yangzhong-freebsd/ISO[Live ISO containing installer] URL: link:https://github.com/yangzhong-freebsd/ISO
 
-Link: link:https://github.com/yangzhong-freebsd/lua-httpd[Installer repository]  
-Link: link:https://github.com/yangzhong-freebsd/ISO[Live ISO containing installer]  
+Contact: Yang Zhong <yzhong@freebsdfoundation.org>
 
 bsdinstall is FreeBSD's current installer.
 It is a terminal application with an unwieldy interface, and it asks some very obscure questions that are hard to understand for ordinary users.
 So, the purpose of this project is to create a graphical installer for FreeBSD that has a more streamlined interface, and to improve other aspects of the FreeBSD installation process.
 
-The experimental installer uses a web front-end: a web server runs locally from the installation media, and the user configures their install by filling out web forms on a browser also running on the installation media. 
+The experimental installer uses a web front-end: a web server runs locally from the installation media, and the user configures their install by filling out web forms on a browser also running on the installation media.
 A Web interface is flexible and accessible, so it suits an installer well.
 This interface can also support remote installs, where the server runs on the target and the install is configured through some other machine, though I have not done much work here.
 

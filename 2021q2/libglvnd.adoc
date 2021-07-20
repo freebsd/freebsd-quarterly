@@ -5,10 +5,9 @@ Contact: Kevin Bowling <kbowling@FreeBSD.org>
 Links: +
 link:https://gitlab.freedesktop.org/glvnd/libglvnd[libglvnd] URL: link:https://gitlab.freedesktop.org/glvnd/libglvnd[https://gitlab.freedesktop.org/glvnd/libglvnd]
 
-libglvnd (GL Vendor-Neutral Dispatch) "is a vendor-neutral dispatch layer for arbitrating OpenGL API calls
-between multiple vendors. It allows multiple drivers from different vendors to
-coexist on the same filesystem, and determines which vendor to dispatch each
-API call to at runtime.  Both GLX and EGL are supported, in any combination with OpenGL and OpenGL ES."
+libglvnd (GL Vendor-Neutral Dispatch) "is a vendor-neutral dispatch layer for arbitrating OpenGL API calls between multiple vendors.
+It allows multiple drivers from different vendors to coexist on the same filesystem, and determines which vendor to dispatch each API call to at runtime.
+Both GLX and EGL are supported, in any combination with OpenGL and OpenGL ES."
 
 Making this the default GL implementation in FreeBSD Ports unblocks a number of efforts and aligns us with future graphics stacks.
 
