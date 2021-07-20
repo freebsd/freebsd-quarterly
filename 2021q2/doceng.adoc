@@ -1,11 +1,11 @@
 === Documentation Engineering Team
 
 Links: +
-link:https://www.freebsd.org/docproj/[FreeBSD Documentation Project] URL: link:https://www.freebsd.org/docproj/ +
-link:https://docs.freebsd.org/en/books/fdp-primer/[FreeBSD Documentation Project Primer for New Contributors] URL: link:https://docs.freebsd.org/en/books/fdp-primer +
-link:https://www.freebsd.org/administration/#t-doceng[Documentation Engineering Team] URL: link:https://www.freebsd.org/administration/#t-docen
+link:https://www.freebsd.org/docproj/[FreeBSD Documentation Project] URL: link:https://www.freebsd.org/docproj/[https://www.freebsd.org/docproj/] +
+link:https://docs.freebsd.org/en/books/fdp-primer/[FreeBSD Documentation Project Primer for New Contributors] URL: link:https://docs.freebsd.org/en/books/fdp-primer/[https://docs.freebsd.org/en/books/fdp-primer/] +
+link:https://www.freebsd.org/administration/#t-doceng[Documentation Engineering Team] URL: link:https://www.freebsd.org/administration/#t-doceng[https://www.freebsd.org/administration/#t-doceng]
 
-Contact: FreeBSD Doceng Team <doceng@FreeBSD.org> +
+Contact: FreeBSD Doceng Team <doceng@FreeBSD.org>
 
 The doceng@ team is a body to handle some of the meta-project issues associated with the FreeBSD Documentation Project, more infomation on link:https://www.freebsd.org/internal/doceng/[FreeBSD Doceng Team Charter].
 
