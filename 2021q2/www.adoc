@@ -1,22 +1,23 @@
-=== WebApps working group
+==== FreeBSD Website Revamp - WebApps working group
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 
-The purpose of this working group is to redesign the Website and the Documentation Portal.
+Working group in charge of creating the new FreeBSD Documentation Portal; and redesigning the FreeBSD main Website and its components.
+FreeBSD developers can follow and join the working group on the FreeBSD Slack channel #wg-www21.
+The work will be divided into four phases:
 
-The work will be divided into 4 phases.
+. Redesign of the Documentation Portal
++
+Create a new design, responsive and with global search. (_Work in progress_)
 
-Phase 1 (almost complete):
+. Redesign of the Manual Pages on Web
++
+Scripts to generate the HTML pages using mandoc. (_Not started_)
 
-* Redesign the documentation portal: new design, responsive and global search.
+. Redesign of the Ports page on Web
++
+Ports scripts to create an applications portal. (_Not started_)
 
-Phase 2:
-* Redesign the manual pages scripts to generate the HTML using mandoc.
-
-Phase 3:
-
-* Redesign the ports scripts to create an applications portal.
-
-Phase 4:
-
-* Redesign the main website: new design, responsive and dark theme.
+. Redesign of the FreeBSD main Website
++
+New design, responsive and dark theme. (_Not started_)
