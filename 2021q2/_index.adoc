@@ -17,7 +17,7 @@ This report covers FreeBSD related projects for the period between April and Jul
 
 
 
-Yours,
+Yours, +
 Daniel Ebdrup Jensen, with status hat on.
 
 '''
