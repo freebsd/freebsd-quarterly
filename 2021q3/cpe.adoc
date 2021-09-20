@@ -34,8 +34,8 @@ need to be patched or updated.
 
 In this phase there is no easy possibility for port maintainers to
 help. Creating separate PRs only to add CPE data does not make
-sense because the overhead is very high. This is why we did spend
-some time on chkcpe to improve our review and commit workflow.
+sense because the overhead is very high. This is why I did spend
+some time on chkcpe to improve the review and commit workflow.
 Right now review and commit consumes around 3 minutes per port.
 
 If you are a Ports Committer and want to help please get in touch!
