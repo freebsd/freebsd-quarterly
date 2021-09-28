@@ -1,10 +1,9 @@
 ==  -CURRENT compilation time analyze
 
-Links:
+Links: +
 
-link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=257141
-
-link:https://lists.freebsd.org/archives/freebsd-current/2021-September/index.html#msg511
+link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=257141[Bug 257141] +
+link:https://lists.freebsd.org/archives/freebsd-current/2021-September/index.html#msg511[Discussion on freebsd-current]
 
 Contact: Wolfram Schneider <wosch@FreeBSD.org>
 
@@ -12,7 +11,7 @@ Re-building FreeBSD from source takes a lot of CPU resources. Depending on your 
 
 --------------------------------------------------------------
 time make -j $(sysctl -n hw.ncpu) buildworld > buildworld.log 2>&1
-tail -n 5 buildworld.log
+tail buildworld.log
 >>> World build completed on Sat Sep  4 20:58:00 UTC 2021
 >>> World built in 7235 seconds, ncpu: 3, make -j3
      7235.61 real     20527.30 user       915.88 sys
