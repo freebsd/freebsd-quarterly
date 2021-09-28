@@ -11,12 +11,12 @@ The software includes a full desktop environment called KDE Plasma (for both X11
 
 The KDE team (kde@) is part of desktop@ and x11@ as well, building the software stack to make FreeBSD beautiful and usable as a daily-driver graphics-based desktop machine.
 
-Q3 is summer in the northern hemisphere, so bicycles were biked and
-mountains were hiked and the were psyched to chase the software
-releases we like. And those were:
+Q3 is summer in the northern hemisphere: bicycles were biked and
+mountains were hiked and the team was psyched to chase the software
+we like. And there were plenty of things to chase:
 
-* CMake releases, ending up with CMake 3.21.3 and *libpkg* support that once-again works with CPack to produce FreeBSD packages.
-* Chasing the monthly release cadence of KDE Frameworks, KDE Plasma, and KDE Gear kept the exp-runs going. kde@ would like to thank Antoine for overseeing our many exp-run requests.
+* Three CMake releases landed, ending up with CMake 3.21.3 and *libpkg* support that once again works with CPack to produce FreeBSD packages.
+* Monthly releases of KDE Frameworks, KDE Plasma, and KDE Gear kept the exp-runs going. kde@ would like to thank Antoine for overseeing our many exp-run requests.
 * The KDE Plasma applications for monitoring the state of the system -- ksysguard, Plasma system monitor, and supporting libraries -- received a number of updates. FreeBSD support code has been merged upstream.
 * Across all of the Qt and KDE packages, an attempt was made to reduce how "heavy" the dependencies are. In general this means removing developer-only dependencies, avoiding the installation of test-code, etc. The underlying idea is to cut down the size of the installation when specific ports are installed, while preserving the "developer batteries included" character of the meta-ports.
 * A runtime-incompatibility was introduced by MySQL 5.7.34, which affected KDE's personal-information-management applications and email. This was patched in the Qt ports.
@@ -32,5 +32,5 @@ releases we like. And those were:
 * *maliit-framework*, for on-screen keyboards, as added to the ports tree.
 * *pipewire* was kept up-to-date. This is a next-generation video-handling framework, and is being increasingly used in Wayland environments for efficient passing of video data between applications.
 * *poppler* was updated to version 21.09, with significant speed improvements.
-* *sddm* has been made a little more robust when installed on its own.
+* *sddm* was made a little more robust when installed on its own, with `xinitrc` support.
 * *math/eigen2* was removed.
