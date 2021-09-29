@@ -55,7 +55,7 @@ egrep '>>> stage| real ' buildworld.log
 In this example, we spent most of the time in "stage 4.2: building libraries",
 77% of the CPU time and 75% of the real time.
 Now running the buildworld with the parameter "WITHOUT_TOOLCHAIN=yes"
-we get a much 3.3x faster build. Instead 2h it will be done in 36 minutes!
+we get a 3.3x faster build. Instead of 2h it will be done in 36 minutes!
 
 --------------------------------------------------------------
 time make -j $(sysctl -n hw.ncpu) WITHOUT_TOOLCHAIN=yes buildworld > buildworld.log 2>&1
@@ -93,7 +93,7 @@ egrep '>>> stage| real ' buildworld.log
 Using WITHOUT_TOOLCHAIN=yes" is fine as long as there
 are no major LLVM compiler changes.
 
-If you dislike this feature or suspects it is causing
+If you dislike this feature or suspect it is causing
 trouble you can disable it with the variable TIME_ENV=""
 
 Next task: get more detailed informations for the long running stages (4.2, 4.3, 4.4)
