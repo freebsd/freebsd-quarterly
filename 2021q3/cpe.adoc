@@ -42,7 +42,7 @@ If you are a Ports Committer and want to help please get in touch!
 
 === Open Tasks
 
-* Review and commit remaining matches (~3000)
+* Review and commit remaining matches (~1800)
 * Improve matching quality to find more possible matches
 * Support using CPE data in `pkg audit`
 * Scan for vulnerable ports in the Ports Collection
