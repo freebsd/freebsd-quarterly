@@ -54,7 +54,7 @@ egrep '>>> stage| real ' buildworld.log
 
 In this example, we spent most of the time in "stage 4.2: building libraries",
 77% of the CPU time and 75% of the real time.
-Now running the buildworld with the parameter "WITHOUT_TOOLCHAIN=yes"
+Now running the buildworld with the parameter WITHOUT_TOOLCHAIN=yes
 we get a 3.3x faster build. Instead of 2h it will be done in 36 minutes!
 
 --------------------------------------------------------------
