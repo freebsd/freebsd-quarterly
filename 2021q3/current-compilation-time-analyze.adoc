@@ -7,7 +7,10 @@ link:https://lists.freebsd.org/archives/freebsd-current/2021-September/index.htm
 
 Contact: Wolfram Schneider <wosch@FreeBSD.org>
 
-Re-building FreeBSD from source takes a lot of CPU resources. Depending on your machine it takes between 20min and several hours. At the end of `make buildworld' we log the real time and which parameters are used for parallel build. E.g.
+Re-building FreeBSD from source takes a lot of CPU resources.
+Depending on your machine it takes between 20min and several hours.
+At the end of `make buildworld' we log the real time and which
+parameters are used for parallel build. E.g.
 
 --------------------------------------------------------------
 time make -j $(sysctl -n hw.ncpu) buildworld > buildworld.log 2>&1
@@ -18,7 +21,10 @@ tail buildworld.log
 --------------------------------------------------------------
 
 
-The build process runs in several steps. It would be great to know which step takes most of the time, and what are the effects of special build parameters. With a small patch in Aug 2021 we get this information now:
+The build process runs in several steps.
+It would be great to know which step takes most of the time,
+and what are the effects of special build parameters.
+With a small patch in Aug 2021 we get this information now:
 
 
 --------------------------------------------------------------
@@ -46,8 +52,10 @@ egrep '>>> stage| real ' buildworld.log
       937.23 real      2540.06 user       205.47 sys
 --------------------------------------------------------------
 
-In this example, we spent most of the time in "stage 4.2: building libraries", 77% of the CPU time and 75% of the real time.
-Now running the buildworld with the parameter "WITHOUT_TOOLCHAIN=yes" we get a much 3.3x faster build. Instead 2h it will be done in 36 minutes!
+In this example, we spent most of the time in "stage 4.2: building libraries",
+77% of the CPU time and 75% of the real time.
+Now running the buildworld with the parameter "WITHOUT_TOOLCHAIN=yes"
+we get a much 3.3x faster build. Instead 2h it will be done in 36 minutes!
 
 --------------------------------------------------------------
 time make -j $(sysctl -n hw.ncpu) WITHOUT_TOOLCHAIN=yes buildworld > buildworld.log 2>&1
@@ -82,9 +90,11 @@ egrep '>>> stage| real ' buildworld.log
       677.87 real      1787.13 user       186.82 sys
 --------------------------------------------------------------
 
-Using WITHOUT_TOOLCHAIN=yes" is fine as long as there are no major LLVM compiler changes.
+Using WITHOUT_TOOLCHAIN=yes" is fine as long as there
+are no major LLVM compiler changes.
 
-If you dislike this feature or suspects it is causing trouble you can disable it with the variable TIME_ENV=""
+If you dislike this feature or suspects it is causing
+trouble you can disable it with the variable TIME_ENV=""
 
 Next task: get more detailed informations for the long running stages (4.2, 4.3, 4.4)
 
