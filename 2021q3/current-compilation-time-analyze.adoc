@@ -97,5 +97,3 @@ If you dislike this feature or suspect it is causing
 trouble you can disable it with the variable TIME_ENV=""
 
 Next task: get more detailed informations for the long running stages (4.2, 4.3, 4.4)
-
-Sponsor: none
