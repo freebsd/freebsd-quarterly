@@ -90,7 +90,7 @@ egrep '>>> stage| real ' buildworld.log
       677.87 real      1787.13 user       186.82 sys
 --------------------------------------------------------------
 
-Using WITHOUT_TOOLCHAIN=yes" is fine as long as there
+Using WITHOUT_TOOLCHAIN=yes is fine as long as there
 are no major LLVM compiler changes.
 
 If you dislike this feature or suspect it is causing
