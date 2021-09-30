@@ -16,7 +16,7 @@ product name, version, revision, etc. NIST maintains the official
 CPE dictionary which lists CPE names for all software versions
 that have ever been mentioned in an advisory.
 
-In the FreeBSD Ports Collection it is possible to annotate CPE data with
+In the FreeBSD Ports Collection it has been possible to annotate CPE data with
 `USES=cpe` since 2014 but only around 1000 ports out of 30.000 did
 use it. This is why a script called `chkcpe` was created to
 validate existing CPE data and find new possible matches
@@ -42,7 +42,7 @@ If you are a Ports Committer and want to help please get in touch!
 
 === Open Tasks
 
-* Review and commit remaining matches (~1800)
+* Review remaining reports (~1800) and update ports when appropriate
 * Improve matching quality to find more possible matches
 * Support using CPE data in `pkg audit`
 * Scan for vulnerable ports in the Ports Collection
