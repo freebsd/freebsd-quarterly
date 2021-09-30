@@ -11,7 +11,7 @@ For benchmarking purposes, he is using an EC2 c5.xlarge instance as a reference
 platform and is measuring the time between when the virtual machine enters the
 EC2 "running" state and when it is possible to SSH into the instance.
 
-This work started in 2017 and led to a conference presentation, "Profiling
+This work started in 2017, leading to a conference presentation, "Profiling
 the FreeBSD kernel boot", and quickly yielded roughly 4850 ms of improvements
 (starting from a baseline of about 30 seconds).
 
@@ -25,6 +25,6 @@ has instructions for performing profiling.  Users are encouraged to profile
 the boot process on their own systems, in case they experience delays which
 don't show up on the system Colin is using for testing.
 
-This work is being supported by the Colin's FreeBSD/EC2 Patreon.
+This work is supported by Colin's FreeBSD/EC2 Patreon.
 
 Sponsor: https://www.patreon.com/cperciva
