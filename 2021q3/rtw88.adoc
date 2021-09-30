@@ -8,9 +8,9 @@ Contact: Bjoern A. Zeeb <bz@FreeBSD.ORG>
 This project aims to bring in support for Realtek's rtw88 chips.
 
 With the growing LinuxKPI compatibility code an initial port of the Realtek rtw88 driver was done.
-This gives us a second driver symptome after Intel and helps to validate and grow the LinuxKPI code base.
+This gives us support for a second driver after Intel and helps to validate and grow the LinuxKPI code base.
 Changes and overall time needed to get the driver compiling were very little.
-At the moment we are seeing DMA issues which prevent most people from loading firmware or later on using the driver.
+At the moment we are seeing DMA issues which prevent most people from loading firmware or using the driver later on.
 
 Thanks to everyone who was brave enough to give this initial code drop a try.
 
