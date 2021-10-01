@@ -47,6 +47,9 @@ Updates to kernel subsystems/features, driver support, filesystems, and more.
 
 Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 
+include::erlang.adoc[]
+
+'''
 
 [[documentation]]
 == Documentation
