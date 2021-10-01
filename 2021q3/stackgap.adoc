@@ -10,16 +10,16 @@ Until now the only workaround for this problem was disabling the stack gap for t
 Semihalf team has been working on fixing the root cause of a stack gap related problems.
 
 One of the issues could be observed when setting the stack limit to a low value with setrlimit(2).
-Since the stack gap size can be significant, and the process had no knowledge of how big stack gap is, this caused programs to abort immediately after returning from syscall due to stack extending past limit.
-The fix involves adjusting the soft resource limit (rlim_cur) by size of stack gap during setrlimit(2) call.
-This fixes the issue with ntpd without resorting to disabling the stack gap entirely.
+Since the stack gap size can be significant, and the process had no knowledge of how large the stack gap is, this caused programs to abort immediately after returning from a syscall due to the stack extending past the limit.
+The fix involves increasing the soft resource limit (rlim_cur) by the size of stack gap during the setrlimit(2) call.
+This fixes the issue with ntpd without disabling the stack gap entirely.
 The https://reviews.freebsd.org/D31516[patch] is currently under review.
 
-Second identified problem is related to the way the thread stacks are handled.
-Thread stacks are calculated using kern.usrstack sysctl, which should point to the beginning of the stack.
-This sysctl returned a constant value depending on the ABI and presence of stack gap was ignored.
-A new sysctl  was introduced, and thread library was updated to use this it accordingly.
-The patches https://reviews.freebsd.org/D31897[D31897] and https://reviews.freebsd.org/D31898[D31898] are currently under discussion.
-The mentioned patches fix the issues with Firefox and Thunderbird not starting with the stack gap feature enabled.
+The second identified problem is related to the way the thread stacks are handled.
+Thread stacks are calculated using the kern.usrstack sysctl, which should point to the beginning of the stack.
+This sysctl returned a constant value depending on the ABI and the presence of the stack gap was ignored.
+A new sysctl  was introduced, and the thread library was updated to use it accordingly.
+Patches https://reviews.freebsd.org/D31897[D31897] and https://reviews.freebsd.org/D31898[D31898] are currently under discussion.
+These fix the issues with Firefox and Thunderbird not starting with the stack gap feature enabled.
 
 Sponsor: Stormshield
