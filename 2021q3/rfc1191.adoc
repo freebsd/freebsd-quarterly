@@ -3,7 +3,7 @@
 Contact: Wojciech Macek <wma@semihalf.com>
 
 The Semihalf team has been working on providing support for RFC1191 in IPSEC tunnels.
-This allows PMTUD algorithm to dynamically discover the maximum path MTU the tunnel
+This allows the PMTUD algorithm to dynamically discover the maximum path MTU the tunnel
 can handle and update tunnel parameters accordingly.
 As a result, a better performance can be observed as there is no need for packet fragmentation.
 
