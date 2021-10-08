@@ -29,6 +29,7 @@ There is ongoing work to make Linuxulator on arm64 on par with the amd64 one.
 There is also ongoing work on improving the vDSO functionality.
 
 The `sysutils/debootstrap` port, and its corresponding `debootstrap` package, now also work on arm64, not just x86.  It is also much faster now.
+
 There have been some further improvements to the startup scripts.
 
 Sponsor: EPSRC
