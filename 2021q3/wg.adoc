@@ -6,7 +6,7 @@ link:https://git.zx2c4.com/wireguard-freebsd/[wireguard-freebsd codebase] URL:li
 
 Contact: Jason A. Donenfeld <Jason@zx2c4.com>
 
-WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
+WireGuard is a secure tunneling protocol that lives in the kernel.
 
 For the last quarter, the https://git.zx2c4.com/wireguard-freebsd/[wireguard-freebsd codebase] has been quite stable and complete. For a while, there were rapid fire releases fixing issues, and a lot of effort was made to track down every bug report on bugs.freebsd.org, IRC, the mailing list, or otherwise. But by now, the reports have dried up, and mostly users come to IRC with questions on usage and integration, the usual types of things associated with a stabler project. We also have automated CI now for each commit, compiling and running a small smoke test on the repo's supported releases -- 12.2, and 13.0. At some point, hopefully that https://git.zx2c4.com/wireguard-freebsd/tree/tests/netns.sh[small smoke test] will expand to include the https://git.zx2c4.com/wireguard-linux/tree/tools/testing/selftests/wireguard/netns.sh[larger battery of tests] from Linux.
 
