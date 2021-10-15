@@ -24,7 +24,7 @@ During the third quarter of 2021, we continued working with the contributors and
 
 Important changes:
 
-* The results of link:https://ci.freebsd.org/job/FreeBSD-main-amd64-build[FreeBSD-main-amd64-build] and link:https://ci.freebsd.org/job/FreeBSD-main-amd64-test[FreeBSD-main-amd64-test] jobs are sending to link:https://lists.freebsd.org/subscription/dev-ci[dev-ci mailing list]
+* The results of link:https://ci.freebsd.org/job/FreeBSD-main-amd64-build[FreeBSD-main-amd64-build] and link:https://ci.freebsd.org/job/FreeBSD-main-amd64-test[FreeBSD-main-amd64-test] jobs are sent to the link:https://lists.freebsd.org/subscription/dev-ci[dev-ci mailing list]
 
 New jobs:
 
@@ -33,11 +33,11 @@ New jobs:
 
 Retired jobs:
 
-* The jobs for stable/11 branch are removed after September 30th per link:https://lists.freebsd.org/pipermail/freebsd-announce/2021-September/002060.html[FreeBSD 11.4 end-of-life]
+* The jobs for stable/11 branch were removed after September 30th per link:https://lists.freebsd.org/pipermail/freebsd-announce/2021-September/002060.html[FreeBSD 11.4 end-of-life]
 
 Work in progress and open tasks:
 
-* Designing and implementing pre-commit CI building and testing (to supoprt the link:https://gitlab.com/bsdimp/freebsd-workflow[workflow working group])
+* Designing and implementing pre-commit CI building and testing (to support the link:https://gitlab.com/bsdimp/freebsd-workflow[workflow working group])
 * Designing and implementing use of CI cluster to build release artifacts as release engineering does
 * Collecting and sorting CI tasks and ideas link:https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo[here]
 * Testing and merging pull requests in link:https://github.com/freebsd/freebsd-ci/pulls[the FreeBSD-ci repo]
