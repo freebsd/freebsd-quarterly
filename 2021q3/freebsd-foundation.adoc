@@ -139,7 +139,7 @@ Check out some of the advocacy and education work we did last quarter:
 * Sponsored EuroBSDcon at the Silver Level. The event took place, September 17-19, 2021
 * Presented at Open Source Summit, in Seattle, WA, September 27-30, 2021
 * Committed to be a Bronze Sponsor for the OpenZFS Summit
-* New blog posts:
+* New blog and video posts:
 ** link:https://youtu.be/BRACcRqgnWQ[Status of Online Conference Software on FreeBSD]
 ** link:https://freebsdfoundation.org/blog/meet-the-summer-2021-foundation-interns/[Meet the Summer 2021 Foundation Interns]
 ** link:https://freebsdfoundation.org/blog/a-look-at-profiling-freebsd-sort/[A Look at Profiling: FreeBSD Sort]
