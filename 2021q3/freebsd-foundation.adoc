@@ -71,8 +71,8 @@ and share with your companies!
 
 During the third quarter, Foundation staff and grant recipients committed 420
 src tree changes, 24 ports tree changes, and 11 doc tree changes. This
-represents 38% of src commits which identify a sponsor. For doc and ports
-commits the values are 48% and 16%.
+represents 38%, 48%, and 16% of src, port, and doc commits which identify a
+sponsor.
 
 You can read about Foundation-sponsored projects in individual quarterly report
 entries:
