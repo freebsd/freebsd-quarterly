@@ -17,7 +17,7 @@ The changes for building official images on Azure Marketplace, which fulfill the
 Above tasks are sponsored by The FreeBSD Foundation, with resources provided by Microsoft.
 
 Microsoft Azure Network Adapter (MANA) is the new network adapter from Microsoft which will be available in the Azure public cloud.
-It provides SRIOV NIC as virtual function to guest OS running on Hyper-V.
+It provides SR-IOV NIC as a Virtual Function (VF) to guest OS running on Hyper-V.
 Wei link:https://reviews.freebsd.org/D31150[has been working] on its driver for a while and link:https://cgit.freebsd.org/src/commit/?id=ce110ea12fcea71ae437d0a1d0549d3d32055b0e[committed] in this quarter.
 
 This task is sponsored by Microsoft.
