@@ -34,14 +34,14 @@ for approvals.
 So far this year we’ve raised $180,000 towards our $2,000,000 spending
 budget. Why do we need so much money? Well, last year we decided to make more
 significant software contributions to FreeBSD.  In order to do that, we had to
-grow our team.  We developed
+grow our team. We developed
 link:https://freebsdfoundation.org/blog/technology-roadmap/[a technology
 roadmap] based on input we were receiving from commercial users as well as
 market trends. Based on the roadmap, we identified positions we needed to fill.
 
 This year we've hired three full-time software developers, one full-time ARM
 kernel developer, and one project manager. We also are funding wifi work
-full-time and some other projects to help with FreeBSD on the desktop.  You can
+full-time and some other projects to help with FreeBSD on the desktop. You can
 read about this effort to attract new users and contributors to the Project in
 individual entries elsewhere in this status report.
 
@@ -90,7 +90,7 @@ entries:
 
 ==== Supporting FreeBSD Infrastructure
 
-The Foundation provides hardware and support for the Project.  Last quarter, we
+The Foundation provides hardware and support for the Project. Last quarter, we
 continued supporting the test cluster at Sentex, purchased a few needed drives,
 and spam filtering software for project email. We also set up a new and more
 efficient hardware request/purchase process for clusteradm to use.
@@ -104,11 +104,11 @@ companies to discuss their needs and share that information with the Project.
 
 ==== FreeBSD Advocacy and Education
 
-Much of our effort is dedicated to Project advocacy.  This may involve
+Much of our effort is dedicated to Project advocacy. This may involve
 highlighting interesting FreeBSD work, producing literature, attending events,
-or giving presentations.  The goal of the literature we produce is to teach
+or giving presentations. The goal of the literature we produce is to teach
 people FreeBSD basics and help make their path to adoption or contribution
-easier.  Other than attending and presenting at events, we encourage and help
+easier. Other than attending and presenting at events, we encourage and help
 community members run their own FreeBSD events, give presentations, or staff
 FreeBSD tables.
 
@@ -121,7 +121,7 @@ helps provide a healthy ecosystem. We support the non-FreeBSD events to promote
 and raise awareness of FreeBSD, to increase the use of FreeBSD in different
 applications, and to recruit more contributors to the Project. We finally made
 it back to our first in-person meeting with the *Open Source Summit* in late
-September. We are also continuing to attend virtual events.  In addition to
+September. We are also continuing to attend virtual events. In addition to
 attending and planning virtual events, we are continually working on new
 training initiatives and updating our selection of
 link:https://www.freebsdfoundation.org/freebsd/how-to-guides/[how-to guides] to
