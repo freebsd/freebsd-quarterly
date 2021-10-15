@@ -91,7 +91,7 @@ entries:
 ==== Supporting FreeBSD Infrastructure
 
 The Foundation provides hardware and support for the Project. Last quarter, we
-continued supporting the test cluster at Sentex, purchased a few needed drives,
+continued supporting the test cluster at Sentex, purchased a few needed drives
 and spam filtering software for project email. We also set up a new and more
 efficient hardware request/purchase process for clusteradm to use.
 
