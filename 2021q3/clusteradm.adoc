@@ -15,7 +15,7 @@ In this quarter, the team has worked on the following:
 - Finished installing a new mirror site in Japan, sponsored by Broadband Tower, Inc.
     - Full mirror site (ftp, pkg, git, doc, dns,...)
     - The network and machine resources for this mirror are generously sponsored by the Cloud and SDN Laboratory at BroadBand Tower, Inc., one of the Internet data center service providers in Tokyo, Japan, with 300+ Gbps international IP transit bandwidth
-- Improved the retention script used for artifact server of CI cluster to offerings a mix of the latest artifacts but also a selection of older artifacts for comparison, space permitting
+- Improved the retention script used for the artifact server of CI cluster to offer a mix of the latest artifacts but also a selection of older artifacts for comparison, space permitting
 - Ongoing day to day cluster administration
     - Replacing failed disks
     - Babysitting pkgsync
