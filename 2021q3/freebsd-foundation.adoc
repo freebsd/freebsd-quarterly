@@ -88,10 +88,10 @@ entries:
 - Using OCF in WireGuard
 - syzkaller on FreeBSD
 
-Other Foundation-sponsored work:
+Foundation-sponsored arm64 work:
 
 - Support for booting FreeBSD on the Arm Armv8-A AEM simulator
-- sha256 support to libmd(4) on arm64
+- sha256 instruction support to libmd(4) on arm64
 - Initial work to support RAS, PAC and BTI on arm64
 
 ==== Supporting FreeBSD Infrastructure
