@@ -94,6 +94,14 @@ Foundation-sponsored arm64 work:
 - sha256 instruction support to libmd(4) on arm64
 - Initial work to support RAS, PAC and BTI on arm64
 
+==== Continuous Integration and Quality Assurance
+
+The Foundation provides a full-time staff member and funds projects to improve
+continuous integration, automated testing, and overall quality assurance efforts
+for the FreeBSD project.
+
+See the separate Continuous Integration entry for details.
+
 ==== Supporting FreeBSD Infrastructure
 
 The Foundation provides hardware and support for the Project. Last quarter, we
