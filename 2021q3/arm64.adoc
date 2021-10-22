@@ -3,7 +3,7 @@
 Contact: Andrew Turner <andrew@FreeBSD.org>
 
 Links: +
-link:https://reviews.freebsd.org/D31261[Pointer Authentication Review] URL: linkhttps://reviews.freebsd.org/D31261[https://reviews.freebsd.org/D31261]
+link:https://reviews.freebsd.org/D31261[Pointer Authentication Review] URL: link:https://reviews.freebsd.org/D31261[https://reviews.freebsd.org/D31261]
 
 FreeBSD has been ported to the Arm Armv8-A Architecture Envelope Model (AEM), an
 Armv8 architecture simulator. AEM is useful for Armv8 development and testing,
