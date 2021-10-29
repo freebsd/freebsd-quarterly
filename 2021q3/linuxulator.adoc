@@ -21,4 +21,4 @@ The `ptrace(2)` syscall now supports `PTRACE_GET_SYSCALL_INFO`, which is a prere
 
 There is ongoing work to make Linuxulator on arm64 on par with the amd64 one; right now it's good enough for development work.
 
-Sponsor: EPSRC
+Sponsor: EPSRC (Edward's work)
