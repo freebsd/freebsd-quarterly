@@ -1,0 +1,11 @@
+== New mailing list for discussions of accessibility in the FreeBSD base system
+
+Links: +
+link:https://lists.freebsd.org/archives/freebsd-accessibility/2021-October/000000.html[List introduction, goals, audience, and ground rules] URL: link:https://lists.freebsd.org/archives/freebsd-accessibility/2021-October/000000.html[https://lists.freebsd.org/archives/freebsd-accessibility/2021-October/000000.html] +
+link:https://lists.freebsd.org/subscription/freebsd-accessibility[Subscribe or unsubscribe] URL: link:https://lists.freebsd.org/subscription/freebsd-accessibility[link:https://lists.freebsd.org/subscription/freebsd-accessibility] +
+link:https://lists.freebsd.org/archives/freebsd-accessibility/[List archives] URL: link:https://lists.freebsd.org/archives/freebsd-accessibility/[https://lists.freebsd.org/archives/freebsd-accessibility/]
+
+Contact: FreeBSD accessibility discussions <freebsd-accessibility@freebsd.org>  
+
+The idea for this list occurred to me during an IRC discussion about accessibility of the base system and documentation of accessibility, and the list is about exactly that: identifying and specifying missing accessibility features in the base system, helping developers implement them, and documenting them.
+Just as accessibility is important in the spaces managed by the FreeBSD project, it is important in the base system software and its documentation themselves. Anyone willing to help or just to lurk to keep current on the discussions is welcome to subscribe, but before taking an active part, even by just replying to an email, please read the link:https://lists.freebsd.org/archives/freebsd-accessibility/2021-October/000000.html[ground rules for the list]. This will spare everyone frustration and aggravation.
