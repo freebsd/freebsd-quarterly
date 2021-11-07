@@ -12,4 +12,4 @@ After the release of OpenSearch 1.0.0, a FreeBSD OpenSearch team was created to 
 
 === Contributing
 
-The ports have been thoroughly tested in our testing environments and on some production workloads, but we are actively looking for feedback from users.  Feel free to send us an e-mail to report successes or failures.
+The ports have been thoroughly tested in our testing environments and on some production workloads, but we are actively looking for feedback from users.  Feel free to send us an email to report successes or failures.
