@@ -15,7 +15,7 @@ highly leverage existing libraries in the larger LLVM Project, such as the
 Clang expression parser and LLVM disassembler."
 
 FreeBSD includes LLDB in the base system.  At present, it has some limitations
-in comparison with the GNU GDB debugger, and does not yet provide a complete
+compared to the GNU GDB debugger, and does not yet provide a complete
 replacement.  This project spans from July 2021 to January 2022 and aims to
 make LLDB suitable for debugging FreeBSD kernels.
 
@@ -26,14 +26,14 @@ gdbserver and QEMU's gdbserver implementations.  Support for debugging
 executables running on gdbserver architectures other than amd64 was fixed,
 and was explicitly tested on arm64 and i386.
 
-This effort has also resulted in adjusting lldb-server's implementation
-to conform to the standard set by GDB better.  Thanks to these improvements,
+This effort also resulted in adjusting lldb-server's implementation
+to conform better to the standard set by GDB.  Thanks to these improvements,
 the LLDB client needs to provide less divergent code paths depending
 on the server used, and the single code path used is tested more thoroughly.
 
 The work also involved improvements to the LLDB API and code deduplication,
 that result in reducing the maintenance effort and lowering the bar for future
-contributions.  The test coverage has improved, increasing the chance that
+contributions.  The test coverage was improved, increasing the likelihood that
 any future problems will be detected before they affect users.
 
 The introduced changes are expected to be shipped with LLDB 14.0.
