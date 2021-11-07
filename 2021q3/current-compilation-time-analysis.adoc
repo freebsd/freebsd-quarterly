@@ -1,4 +1,4 @@
-==  -CURRENT compilation time analyze
+==  -CURRENT compilation time analysis
 
 Links: +
 
