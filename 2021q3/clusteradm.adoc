@@ -23,7 +23,7 @@ In this quarter, the team has worked on the following:
 Work in progress:
 
 - Move pkg-master.nyi to new hardware
-- Improve to the package building infrastructure
+- Improve the package building infrastructure
 - Review the service jails and service administrators operation
 - Setup powerpc pkgbuilder/ref/universal machines
 - Search for more providers that can fit the requirements for a link:https://wiki.freebsd.org/Teams/clusteradm/generic-mirror-layout[generic mirrored layout] or a link:https://wiki.freebsd.org/Teams/clusteradm/tiny-mirror[tiny mirror]
