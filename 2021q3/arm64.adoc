@@ -17,9 +17,9 @@ can lead to a large performance improvement when these instructions are
 available. For example, on the Apple M1 under a hypervisor, the time to
 calculate the sha256 of a 1GB file has decreased from a median of 3.46s to 0.5s.
 
-The use of an ifunc in a static binary is now supported. This will allow
+Using an ifunc (indirect function) in a static binary is now supported. This will allow
 different implementations of a function to be used depending on which hardware
-it is being run on. The use of an ifunc in dynamic binaries was already
+it is being run on. Using an ifunc in dynamic binaries was already
 supported.
 
 The arm64 ID register definitions have been updated to match the Armv8.5
