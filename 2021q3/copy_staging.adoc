@@ -20,10 +20,10 @@ workarounds there.)
 
 The BIOS boot puts the kernel and preloaded data (like modules, memory
 disk, CPU microcode update etc) at the contigous physical memory block
-starting at 2M.  This algorithm goes back to how i386 kernel boots.
+starting at 2M.  This algorithm goes back to how the i386 kernel boots.
 
 Also, when preparing to pass control to the kernel, the loader
-creates very special temporary mappings, where low 1G of physical
+creates very special temporary mappings, where the low 1G of physical
 address space is mapped 1:1 into virtual address space, and then
 repeated for each 1G until the virtual memory end.  The kernel knows about
 its physical location and the temporary mapping, and constructs kernel
