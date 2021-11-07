@@ -44,7 +44,7 @@ The Erlang team is planning to:
   where they are more commonly installed via `mix` and `rebar3` tools,
   the standard community build tool chain.
 
-Additional testing and community contributions are welcomed, please
+Additional testing and community contributions are welcome; please
 reach out on the mailing list, especially if you are able to help
 testing of specific port updates.
 
