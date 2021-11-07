@@ -8,9 +8,9 @@ link:https://github.com/openzfs/zfs/pull/12458[openzfs/zfs#12458]
 
 Contact: Ka Ho Ng <khng@FreeBSD.org>
 
-Hole-punching functionality allows turning a contiguous range of bytes into a hole for a given file. File systems supporting hole-punching may deallocate the file system space from the given file. One of the use cases of the functionality is to convert TRIM/UNMAP/DEALLOCATE requests from a virtual machine guest to hole-punching calls on the host's side, thus allows reclamation of file system space when unneeded by the guest.
+Hole-punching functionality allows turning a contiguous range of bytes into a hole for a given file. File systems supporting hole-punching may deallocate the file system space from the given file. One use case for the functionality is to convert TRIM/UNMAP/DEALLOCATE requests from a virtual machine guest to hole-punching calls on the host's side, thus allows reclamation of file system space when unneeded by the guest.
 
-A set of APIs and KPIs are added so that developers can call them to invoke hole-punching at a given file, if the underlying file system exposes such functionality. For file systems not supporting hole-punching there is a fallback implementation in the kernel which does zero-filling instead. Besides the APIs and KPIs addition, the `truncate(1)` utility is expanded by adding a `-d` flag to support invoking hole-punching as well.
+A set of APIs and KPIs are added that developers can call to invoke hole-punching on a given file, if the underlying file system exposes that functionality. For file systems not supporting hole-punching there is a fallback implementation in the kernel which does zero-filling instead. Besides the APIs and KPIs addition, the `truncate(1)` utility is expanded by adding a `-d` flag to support invoking hole-punching as well.
 
 At the time of writing this report, OpenZFS and tmpfs are the file systems that support hole-punching.
 
