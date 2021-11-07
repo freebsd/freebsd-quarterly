@@ -17,7 +17,7 @@ Contact: Ed Maste <emaste@FreeBSD.org> +
 Contact: link:https://lists.freebsd.org/mailman/listinfo/freebsd-git[FreeBSD-git mailing list] +
 Contact: #gitcvt channel on EFnet
 
-With the end of the third quarter of 2021, we are approaching the one-year anniversary of the transition of the doc and src repositories from Subversion to Git.  The 2021Q4 branch of the ports tree has been created, the third such quarterly branch created using Git.
+With the end of the third quarter of 2021, we are approaching the one-year anniversary of the transition of the doc and src repositories from Subversion to Git.  The 2021Q4 branch of the ports tree has been created, the third quarterly branch created using Git.
 
 During 2021Q3, repository hooks have been refined as problems were discovered and a few lingering references to Subversion were updated in the Committer's Guide.  The Working Group continues to track progress on two permissively-licensed Git-compatible tools: Gitup and Game of Trees. Gitup is a small, dependency-free tool to clone and update git repositories. It is used only to keep a local tree up-to-date, and has no support for local commits.  Game of Trees is a version control client that is compatible with Git repositories.  It provides a user interface and workflow that is distinct from that of Git.  It is in no way intended to be a drop-in replacement for Git, but can be used to develop software maintained in a Git repository.
 
