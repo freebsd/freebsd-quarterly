@@ -1,4 +1,4 @@
-== Microchip LAN743x mgb(4) Device Driver
+=== Microchip LAN743x mgb(4) Device Driver
 
 Links: +
 link:https://cgit.freebsd.org/src/commit/?id=8890ab7758b8a03a68f3fe596f6a5446921631a5[Commit adding mgb(4) driver] URL:  https://cgit.freebsd.org/src/commit/?id=8890ab7758b8a03a68f3fe596f6a5446921631a5 +

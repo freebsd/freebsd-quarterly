@@ -1,7 +1,7 @@
-== Fixes for msdosfs_rename VOP
+=== Fixes for msdosfs_rename VOP
 
-Contact: Konstantin Belousov <kib@FreeBSD.org>  
-Contact: Peter Holm <pho@FreeBSD.org>  
+Contact: Konstantin Belousov <kib@FreeBSD.org> +
+Contact: Peter Holm <pho@FreeBSD.org>
 
 Our msdosfs(5) implementation is old code and has a relatively
 large legacy cost.  In particular, even though it got fine-grained

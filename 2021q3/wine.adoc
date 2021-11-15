@@ -1,4 +1,4 @@
-== Wine on FreeBSD
+=== Wine on FreeBSD
 
 Links
 link:https://www.winehq.org[Wine home page]

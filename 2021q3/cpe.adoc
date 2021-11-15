@@ -1,11 +1,11 @@
-== Improve CPE Data in the Ports Collection
+=== Improve CPE Data in the Ports Collection
 
-Links
+Links: +
 link:https://github.com/decke/chkcpe[chkcpe] URL: link:https://github.com/decke/chkcpe[https://github.com/decke/chkcpe] +
 link:https://wiki.freebsd.org/Ports/CPE[CPE on wiki.freebsd.org] URL: link:https://wiki.freebsd.org/Ports/CPE[https://wiki.freebsd.org/Ports/CPE] +
 link:https://nvd.nist.gov/products/cpe[CPE Dictionary] URL: link:https://nvd.nist.gov/products/cpe[https://nvd.nist.gov/products/cpe] +
 
-Contact: Bernhard Froehlich <decke@FreeBSD.org>  
+Contact: Bernhard Froehlich <decke@FreeBSD.org>
 
 Common Platform Enumeration (CPE) is an open standard for naming
 hardware and software components. Originally developed by MITRE,

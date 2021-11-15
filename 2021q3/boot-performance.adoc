@@ -1,8 +1,8 @@
-== Boot Performance Improvements
+=== Boot Performance Improvements
 
-Links
-link:https://wiki.freebsd.org/BootTime[Wiki page]
-link:https://www.daemonology.net/blog/2021-08-12-EC2-boot-time-benchmarking.html[OS boot time comparison]
+Links: +
+link:https://wiki.freebsd.org/BootTime[Wiki page] URL: link:https://wiki.freebsd.org/BootTime[https://wiki.freebsd.org/BootTime] +
+link:https://www.daemonology.net/blog/2021-08-12-EC2-boot-time-benchmarking.html[OS boot time comparison] URL: link:https://www.daemonology.net/blog/2021-08-12-EC2-boot-time-benchmarking.html[https://www.daemonology.net/blog/2021-08-12-EC2-boot-time-benchmarking.html]
 
 Contact: Colin Percival <cperciva@FreeBSD.org>
 

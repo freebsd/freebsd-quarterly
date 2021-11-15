@@ -11,9 +11,9 @@ sidenav: about
 :!sectnums:
 :source-highlighter: rouge
 :experimental:
-:reports-path: content/en/status/report-2021-01-2021-03
+:reports-path: content/en/status/report-2021-07-2021-09
 
-This report covers FreeBSD related projects for the period between June and September, and is the third of four planned reports for 2021.
+This report covers FreeBSD related projects for the period between July and September, and is the third of four planned reports for 2021, and contains 42 entries.
 
 The third quarter of 2021 was quite active in lots of different areas, so the report covers a bunch of interesting work including but not limited to boot performance, compile-time analysis, hole-punching support, various drivers, ZFS raidz expansion, an update to the sound mixer, and many more.
 
@@ -33,31 +33,31 @@ toc::[]
 
 Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 
-include::freebsd-foundation.adoc[]
+include::{reports-path}/freebsd-foundation.adoc[]
 
 '''
 
-include::releng.adoc[]
+include::{reports-path}/releng.adoc[]
 
 '''
 
-include::clusteradm.adoc[]
+include::{reports-path}/clusteradm.adoc[]
 
 '''
 
-include::ci.adoc[]
+include::{reports-path}/ci.adoc[]
 
 '''
 
-include::portmgr.adoc[]
+include::{reports-path}/portmgr.adoc[]
 
 '''
 
-include::doceng.adoc[]
+include::{reports-path}/doceng.adoc[]
 
 '''
 
-include::www.adoc[]
+include::{reports-path}/www.adoc[]
 
 '''
 
@@ -66,27 +66,27 @@ include::www.adoc[]
 
 Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
 
-include::boot-performance.adoc[]
+include::{reports-path}/boot-performance.adoc[]
 
 '''
 
-include::git.adoc[]
+include::{reports-path}/git.adoc[]
 
 '''
 
-include::lldb.adoc[]
+include::{reports-path}/lldb.adoc[]
 
 '''
 
-include::linuxulator.adoc[]
+include::{reports-path}/linuxulator.adoc[]
 
 '''
 
-include::mixer.adoc[]
+include::{reports-path}/mixer.adoc[]
 
 '''
 
-include::openssh.adoc[]
+include::{reports-path}/openssh.adoc[]
 
 '''
 
@@ -95,71 +95,71 @@ include::openssh.adoc[]
 
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 
-include::arm64.adoc[]
+include::{reports-path}/arm64.adoc[]
 
 '''
 
-include::azure.adoc[]
+include::{reports-path}/azure.adoc[]
 
 '''
 
-include::copy_staging.adoc[]
+include::{reports-path}/copy_staging.adoc[]
 
 '''
 
-include::ena.adoc[]
+include::{reports-path}/ena.adoc[]
 
 '''
 
-include::holepunching.adoc[]
+include::{reports-path}/holepunching.adoc[]
 
 '''
 
-include::intelnet.adoc[]
+include::{reports-path}/intelnet.adoc[]
 
 '''
 
-include::iwlwifi.adoc[]
+include::{reports-path}/iwlwifi.adoc[]
 
 '''
 
-include::mgb.adoc[]
+include::{reports-path}/mgb.adoc[]
 
 '''
 
-include::msdosfs_rename.adoc[]
+include::{reports-path}/msdosfs_rename.adoc[]
 
 '''
 
-include::raidz-expansion.adoc[]
+include::{reports-path}/raidz-expansion.adoc[]
 
 '''
 
-include::rfc1191.adoc[]
+include::{reports-path}/rfc1191.adoc[]
 
 '''
 
-include::rtw88.adoc[]
+include::{reports-path}/rtw88.adoc[]
 
 '''
 
-include::sdhci_acpi.adoc[]
+include::{reports-path}/sdhci_acpi.adoc[]
 
 '''
 
-include::stackgap.adoc[]
+include::{reports-path}/stackgap.adoc[]
 
 '''
 
-include::syzkaller.adoc[]
+include::{reports-path}/syzkaller.adoc[]
 
 '''
 
-include::ocf-wg.adoc[]
+include::{reports-path}/ocf-wg.adoc[]
 
 '''
 
-include::vmd.adoc[]
+include::{reports-path}/vmd.adoc[]
 
 '''
 
@@ -168,31 +168,31 @@ include::vmd.adoc[]
 
 Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 
-include::cpe.adoc[]
+include::{reports-path}/cpe.adoc[]
 
 '''
 
-include::erlang.adoc[]
+include::{reports-path}/erlang.adoc[]
 
 '''
 
-include::kde.adoc[]
+include::{reports-path}/kde.adoc[]
 
 '''
 
-include::opensearch.adoc[]
+include::{reports-path}/opensearch.adoc[]
 
 '''
 
-include::valgrind.adoc[]
+include::{reports-path}/valgrind.adoc[]
 
 '''
 
-include::wine.adoc[]
+include::{reports-path}/wine.adoc[]
 
 '''
 
-include::ztop.adoc[]
+include::{reports-path}/ztop.adoc[]
 
 '''
 
@@ -201,7 +201,7 @@ include::ztop.adoc[]
 
 Objects that defy categorization.
 
-include::current-compilation-time-analysis.adoc[]
+include::{reports-path}/current-compilation-time-analysis.adoc[]
 
 '''
 
@@ -212,18 +212,18 @@ Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
 The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 
-include::gitlab.adoc[]
+include::{reports-path}/gitlab.adoc[]
 
 '''
 
-include::hellosystem.adoc[]
+include::{reports-path}/hellosystem.adoc[]
 
 '''
 
-include::pot.adoc[]
+include::{reports-path}/pot.adoc[]
 
 '''
 
-include::wg.adoc[]
+include::{reports-path}/wg.adoc[]
 
 '''

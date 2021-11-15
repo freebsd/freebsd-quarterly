@@ -1,14 +1,14 @@
-== FreeBSD Foundation
-
-Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
+=== FreeBSD Foundation
 
 Links: +
 link:https://www.FreeBSDfoundation.org[FreeBSD Foundation] URL: link:https://www.FreeBSDfoundation.org[https://www.FreeBSDfoundation.org] +
 link:https://freebsdfoundation.org/blog/technology-roadmap/[Technology Roadmap] URL: link:https://freebsdfoundation.org/blog/technology-roadmap/[https://freebsdfoundation.org/blog/technology-roadmap/] +
 link:https://www.FreeBSDfoundation.org/donate/[Donate] URL: link:https://www.FreeBSDfoundation.org/donate/[https://www.FreeBSDfoundation.org/donate/] +
 link:https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program/[Foundation Partnership Program] URL: link:https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program[https://www.FreeBSDfoundation.org/FreeBSD-foundation-partnership-program] +
-link:https://www.FreeBSDfoundation.org/journal/[FreeBSD Journal] URL: link:https://www.FreeBSDfoundation.org/journal/[https://www.FreeBSDfoundation.org/journal/] + 
+link:https://www.FreeBSDfoundation.org/journal/[FreeBSD Journal] URL: link:https://www.FreeBSDfoundation.org/journal/[https://www.FreeBSDfoundation.org/journal/] +
 link:https://www.FreeBSDfoundation.org/news-and-events/[Foundation News and Events] URL: link:https://www.FreeBSDfoundation.org/news-and-events/[https://www.FreeBSDfoundation.org/news-and-events/] +
+
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
 
 The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated to
 supporting and promoting the FreeBSD Project and community worldwide. Donations

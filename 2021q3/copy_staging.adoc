@@ -1,6 +1,6 @@
-== Improved amd64 UEFI boot
+=== Improved amd64 UEFI boot
 
-Contact: Konstantin Belousov <kib@FreeBSD.org>  
+Contact: Konstantin Belousov <kib@FreeBSD.org>
 
 UEFI BIOS on PC provides a much richer and more streamlined environment
 for pre-OS programs, but also imposes some requirements on the

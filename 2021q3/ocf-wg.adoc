@@ -1,4 +1,4 @@
-== Using OCF in WireGuard
+=== Using OCF in WireGuard
 
 Contact: John Baldwin <jhb@FreeBSD.org>
 

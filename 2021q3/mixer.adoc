@@ -1,6 +1,6 @@
-== Sound mixer improvements
+=== Sound mixer improvements
 
-Links
+Links: +
 link:https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements[GSoC 2021 project article] URL: link:https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements[https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements]
 
 Contact: Christos Margiolis <christos@FreeBSD.org> +
