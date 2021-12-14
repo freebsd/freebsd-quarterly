@@ -1,4 +1,4 @@
-== Ztop
+=== Ztop
 
 Links: +
 link:https://github.com/asomers/ztop[Repository] +
@@ -14,7 +14,7 @@ datasets.
 Previously, there was no tool that could display this information.  The
 link:https://github.com/prometheus/node_exporter/pull/1632[Prometheus Node
 Exporter] can export it into Prometheus, from which it can be viewed
-after-the-fact with various other tools, but that requires a large stack of
+after the fact with various other tools, but that requires a large stack of
 software, and isn't real-time.
 
 I started `ztop` this quarter, and it is now fully functional.  However, it has

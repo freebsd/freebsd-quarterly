@@ -1,4 +1,4 @@
-== OpenSearch on FreeBSD
+=== OpenSearch on FreeBSD
 
 Links: +
 link:https://opensearch.org/[OpenSearch website] URL: link:https://opensearch.org/[https://opensearch.org/] +
@@ -10,6 +10,6 @@ OpenSearch is a community-driven, open-source search and analytics suite derived
 
 After the release of OpenSearch 1.0.0, a FreeBSD OpenSearch team was created to coordinate the efforts for porting it to FreeBSD.  Because ElasticSearch 7 and Kibana 7 were already in the ports tree, we could rely on these ports to get started quickly (kudos to the elastic@ team) and could focus on the parts that already changed between the previous codebase and the fork.  The ports have been committed to the FreeBSD ports tree as textproc/opensearch and textproc/opensearch-dashboards, and currently provide the latest 1.0.1 version of OpenSearch.
 
-=== Contributing
+==== Contributing
 
-The ports have been thoroughly tested in our testing environments and on some production workloads, but we are actively looking for feedback from users.  Feel free to send us an e-mail to report successes or failures.
+The ports have been thoroughly tested in our testing environments and on some production workloads, but we are actively looking for feedback from users.  Feel free to send us an email to report successes or failures.

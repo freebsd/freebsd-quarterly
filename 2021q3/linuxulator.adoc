@@ -4,7 +4,7 @@ Contact: Dmitry Chagin, <dchagin@FreeBSD.org> +
 Contact: Edward Tomasz Napierala, <trasz@FreeBSD.org>
 
 The goal of this project is to improve FreeBSD's ability to execute unmodified Linux binaries.
-The current support status of specific Linux applications is being tracked at the link:https://wiki.freebsd.org/LinuxApps[Linux app status Wiki page].
+The current support status of specific Linux applications is being tracked on the link:https://wiki.freebsd.org/LinuxApps[Linux app status Wiki page].
 
 The `vdso(7)` implementation was reworked.
 The `futex(2)` support was overhauled to make use of FreeBSD's native `umtx` mechanism.
@@ -21,4 +21,4 @@ The `ptrace(2)` syscall now supports `PTRACE_GET_SYSCALL_INFO`, which is a prere
 
 There is ongoing work to make Linuxulator on arm64 on par with the amd64 one; right now it's good enough for development work.
 
-Sponsor: EPSRC
+Sponsor: EPSRC (Edward's work)
