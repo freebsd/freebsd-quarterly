@@ -23,6 +23,6 @@ Additionally, new images like link:https://github.com/hny-gd/potluck/tree/master
 
 Potman aims to simplify building Pot images with Vagrant and VirtualBox based on the Potluck approach, e.g. as part of a DevOps workflow for software development including testing and publishing them to a repository.
 
-Here, still plan to utilise Potman in the Potluck library build process but this is still on our TODO-list.
+Here we have not yet made a lot of headway with our plan to utilise Potman in the Potluck library build process but this is still on our TODO-list, like improving the documentation for using the Virtual DC images from the Potluck library.
 
 As always, feedback and patches are welcome.
