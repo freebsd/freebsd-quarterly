@@ -17,7 +17,7 @@ In the last quarter, a new release link:https://github.com/pizzamig/pot/releases
 Potluck aims to be to FreeBSD and Pot what Dockerhub is to Linux and Docker: a repository of Pot flavours and complete container images for usage with Pot and in many cases Nomad.
 
 Here we again had a busy quarter. All images have been rebuilt for FreeBSD 12.3 and pot 0.13.0. +
-Also the images that can be used to build a virtual data center like link:https://potluck.honeyguide.net/blog/nomad-server/[Nomad], link:https://potluck.honeyguide.net/blog/consul/[Consul] and link:https://potluck.honeyguide.net/blog/vault/[Vault]) have received a lot more tender love and care and are meanwhile in pre-production use on a cluster at a fintech. +
+Also the images that can be used to build a virtual data center like link:https://potluck.honeyguide.net/blog/nomad-server/[Nomad], link:https://potluck.honeyguide.net/blog/consul/[Consul] and link:https://potluck.honeyguide.net/blog/vault/[Vault] have received a lot more tender love and care and are meanwhile in pre-production use on a cluster at a fintech. +
 Not all these changes have yet been committed to the github repository though, this is planned for the next quarter.
 Additionally, new images like link:https://github.com/hny-gd/potluck/tree/master/openldap[multi-master OpenLDAP] have been added, too.
 
