@@ -14,10 +14,14 @@ enters the EC2 "running" state and when it is possible to SSH into the instance.
 This work started in 2017, and as of the end of September 2021 the FreeBSD boot
 time was reduced from approximately 30 seconds to approximately 15 seconds.
 
-During 2021Q4, a further 3 seconds of time has been shaved off the boot process,
-taking it down to roughly 9 seconds.  In addition, the userland boot process is
-now being profiled using TSLOG, making it possible to see flamecharts of the
-entire boot process.  A further 4 seconds of improvements are in process.
+During 2021Q4, further improvements have shaved more time off the boot process,
+taking it down to roughly 10 seconds.  A further 4 seconds of improvements are
+in process.
+
+In addition, the userland boot process is now being profiled using TSLOG,
+making it possible to see flamecharts of the entire boot process; and the
+ec2-boot-bench tool is now able to generate MP4 videos of the boot process
+by taking snapshots of the EC2 VGA console.
 
 Issues are listed on the wiki page as they are identified; the wiki page also
 has instructions for performing profiling.  Users are encouraged to profile
