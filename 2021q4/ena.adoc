@@ -12,8 +12,8 @@ The ENA driver supports multiple transmit and receive queues and can handle up t
 
 Completed since the last update:
 
-* Add IPv6 L4 checksum offload support to the driver
-* Add NUMA awareness to the driver whenever kernel RSS option is being enabled
+* Add IPv6 layer 4 checksum offload support to the driver
+* Add NUMA awareness to the driver when the RSS kernel option is enabled
 * Rework validation of the Tx request ID
 * Change lifetime of the driver's timer service
 * Avoid reset triggering when the device is unresponsive
