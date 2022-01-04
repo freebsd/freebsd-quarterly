@@ -9,7 +9,7 @@ The Semihalf team has been working on adding the FreeBSD support for the link:ht
 
 NXP LS1028A/LS1027A SoC is a dual-core 64-bit ARMv8 Cortex-A72 application processor with high-speed peripherals such as 2 Time-Sensitive Networking-capable (TSN) Ethernet controllers, quad-port TSN-enabled switch, PCIE, SD/MMC, USB3.0 and others.
 
-The original support was extended in a following way:
+The original support was extended in the following way:
 
 * ENETC Ethernet link:https://cgit.freebsd.org/src/log/sys/dev/enetc[driver]
 ** Add support for PHY interrupts
