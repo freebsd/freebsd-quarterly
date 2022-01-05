@@ -29,8 +29,6 @@ toc::[]
 
 Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 
-include::{reports-path}/www.adoc[]
-
 [[projects]]
 == Projects
 
