@@ -8,12 +8,20 @@ This repository is for drafts.
 Please submit your draft as early as possible. To submit:
 
 1. Fork the repository - reusing an old fork is OK.
-2. Enter the directory for the current time period - `2021q4`.
+2. Create a new branch and enter the directory for the current time
+   period - `2021q4`.
 3. Create a new file, with a name that corresponds with the name of
    your project - use the `report-sample.adoc` template.
 4. Create a pull request.
+5. Someone will review it and may request changes. If they do,
+   evaluate the requests, make any you think are warranted, explain
+   any you chose not to, and push again. *Do not squash or
+   force-push* if at all possible as this makes the next review
+   much harder.
+6. Once your draft is accepted and merged, you're good.
 
-You can tweak things afterwards. Simply edit, then submit another PR.
+You can tweak things after your draft was merged. Simply edit, then
+submit another PR.
 
 Please do not worry excessively about language errors or AsciiDoc
 syntax - we can correct things for you.
