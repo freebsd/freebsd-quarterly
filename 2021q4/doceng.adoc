@@ -1,0 +1,74 @@
+////
+Quarter:	4th quarter of 2021
+Prepared by:	dbaio
+Reviewed by:	carlavilla, bcr
+Last edit:	$Date: 2022-01-05 20:07:39 -0300 (Wed, 05 Jan 2022) $
+Version:	$Id: doceng-2021-4th-quarter-status-report.adoc 208 2022-01-05 23:07:39Z dbaio $
+////
+
+=== Documentation Engineering Team
+
+Link: link:https://www.freebsd.org/docproj/[FreeBSD Documentation Project] +
+Link: link:https://docs.freebsd.org/en/books/fdp-primer/[FreeBSD Documentation Project Primer for New Contributors] +
+Link: link:https://www.freebsd.org/administration/#t-doceng[Documentation Engineering Team]
+
+Contact: FreeBSD Doceng Team <doceng@FreeBSD.org>
+
+The doceng@ team is a body to handle some of the meta-project issues associated with the FreeBSD Documentation Project; for more information, see link:https://www.freebsd.org/internal/doceng/[FreeBSD Doceng Team Charter].
+
+No new documentation commit bit was granted during the last quarter, and only one commit bit was safe kept.
+
+Several tasks were made related to the doc tree during the last quarter:
+
+* A COPYRIGHT file was added in the root directory of the doc repository.
++
+The license was also updated to reflect the current toolchains the project is using now.
+
+* Cleanup of Mailman information in the doc tree.
++
+Following mailing lists migration from Mailman to Mlmmj.
++
+Very old mailing lists were removed, most of the work was made on English documents.
+
+* Tag FreeBSD docset for 12.3-RELEASE.
+
+* Update all ports/packages misc/freebsd-doc-*.
+
+* Move articles/contributors/contrib-* files to the doc shared directory.
+
+* Add option to archive/compress Documentation/HTML offline files.
++
+A necessary step before updating https://download.freebsd.org/ftp/.
++
+Talking with clusteradm@ to update the offline assets (HTML/PDF).
+
+* Add experimental support for EPUB output (books/articles).
+
+* Talking with clusteradm@ to improve the performance of https://www.freebsd.org and https://docs.freebsd.org.
+
+
+==== FreeBSD Website Revamp - WebApps working group
+
+Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
+
+Working group in charge of creating the new FreeBSD Documentation Portal; and redesigning the FreeBSD main Website and its components.
+FreeBSD developers can follow and join the working group on the FreeBSD Slack channel #wg-www21.
+The work will be divided into four phases:
+
+. Redesign of the Documentation Portal
++
+Create a new design, responsive and with global search. (_Done_, _published_)
++
+Activate an edit button in the Documentation (books/articles) pointing to GitHub and encouraging Github pull requests. (_Done_) 
+
+. Redesign of the Manual Pages on Web
++
+Scripts to generate the HTML pages using mandoc. (_Work in progress_)
+
+. Redesign of the Ports page on Web
++
+Ports scripts to create an applications portal. (_Not started_)
+
+. Redesign of the FreeBSD main Website
++
+New design, responsive and dark theme. (_Not started_)
