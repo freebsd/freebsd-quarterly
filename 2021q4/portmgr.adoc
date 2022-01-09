@@ -26,7 +26,7 @@ Three new USES were introduced:
 * nodejs to provide support for NodeJS (with a new default version NODEJS=lts)
 * trigger to handle pkg triggers using the TRIGGERS variable
 The default version of PGSQL switched to 13.
-Furthermore, INSTALLS_ICONS has been replaced by a trigger on gtk-update-icon-cache, the macro is no longer functional.
+Furthermore, INSTALLS_ICONS has been replaced by a trigger on gtk-update-icon-cache and the macro is no longer functional.
 
 As always, there were some updates to "big" packages: pkg was updated to 1.17.5, Chromium to 94.0.4606.81_3, and Firefox to 95.0.2_1,2.
 Ruby 3.1.0 and Python 3.11 are now available for use by users and other ports.
