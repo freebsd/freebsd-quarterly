@@ -18,17 +18,15 @@ The doceng@ team is a body to handle some of the meta-project issues associated 
 
 No new documentation commit bit was granted during the last quarter, and only one commit bit was safe kept.
 
-Several tasks were made related to the doc tree during the last quarter:
+Several tasks were completed related to the doc tree during the last quarter:
 
 * A COPYRIGHT file was added in the root directory of the doc repository.
 +
-The license was also updated to reflect the current toolchains the project is using now.
+The license was also updated to reflect the current toolchain the project is using now.
 
 * Cleanup of Mailman information in the doc tree.
 +
-Following mailing lists migration from Mailman to Mlmmj.
-+
-Very old mailing lists were removed, most of the work was made on English documents.
+Following mailing lists migration from Mailman to Mlmmj, very old mailing lists were removed; most of the work was made on English documents.
 
 * Tag FreeBSD docset for 12.3-RELEASE.
 
@@ -36,9 +34,7 @@ Very old mailing lists were removed, most of the work was made on English docume
 
 * Move articles/contributors/contrib-* files to the doc shared directory.
 
-* Add option to archive/compress Documentation/HTML offline files.
-+
-A necessary step before updating https://download.freebsd.org/ftp/.
+* Add option in documentation Makefile to archive/compress Documentation/HTML offline files, a necessary step before updating https://download.freebsd.org/ftp/.
 +
 Talking with clusteradm@ to update the offline assets (HTML/PDF).
 
