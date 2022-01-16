@@ -12,7 +12,7 @@ During December the driver, firmware, and all remaining LinuxKPI compatibility c
 Further fixes, updates, and improvements will go directly into FreeBSD, meaning the need to apply snapshots is gone and changes can be distributed more timely.
 
 During the last months we tried to ensure that the latest AX210 chipsets are supported.
-In the compat code was restructured both to be able to better trace and debug the mac80211 compatibility layer, but also to keep the net80211 and mac80211 state machines for stations better in sync.
+The compat code was restructured both to be able to better trace and debug the mac80211 compatibility layer, but also to keep the net80211 and mac80211 state machines for stations better in sync.
 
 While we keep updating the driver and all the compat code needed for that, the focus remains on stability and adding support for newer 802.11 standards.
 The driver is still set to 11a/b/g-only and 11n will be next before we look at 11ac.
