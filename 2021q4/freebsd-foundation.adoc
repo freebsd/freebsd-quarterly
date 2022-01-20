@@ -26,15 +26,25 @@ Here are some highlights of what we did to help FreeBSD last quarter:
 
 ==== Fundraising Efforts
 
-It went down to the wire, but
-link:https://freebsdfoundation.org/blog/2021-year-end-fundraising-report/[we met
-our 2021 fundraising goal of $1,250,000].  Thank you to all who donated to help
-us continue and increase our support for FreeBSD in 2022.  If you want to get
-your 2022 donation in early, you can do so at
-link:https://www.freebsdfoundation.org/donate/[https://www.FreeBSDFoundation.org/donate/].
-We also have a Partnership Program for larger commercial donors.  You can read about
-it at
-link:https://www.freebsdfoundation.org/FreeBSD-foundation-partnership-program/[https://www.FreeBSDFoundation.org/FreeBSD-foundation-partnership-program/].
+We did it! We met our 2021 fundraising goal by raising $1,281,437!! On behalf 
+of the Foundation, I want to thank you for your financial support last year, 
+that will help us continue and increase our support for FreeBSD in 2022. In 
+addition, folks are already sending us their 2022 contributions, which is 
+incredibly heartwarming! We’ll start updating the fundraising meter for 2022 
+by the end of January. 
+
+In this Quarterly Status report you’ll read about many of the areas we funded 
+in Q4 to improve FreeBSD and advocate for the Project (the two main areas we 
+spend money on). Check out reports on the externally funded projects like LLDB 
+support, Raid-Z Expansion, WireGuard, and wifi, as well as, internally supported 
+work like improved security, tier-1 architecture support, and providing online 
+opportunities to connect and educate the community.
+
+If you want to help us continue our efforts, please consider making a donation 
+towards our 2022 fundraising campaign! https://www.FreeBSDFoundation.org/donate/. 
+
+We also have a Partnership Program for larger commercial donors. You can read about 
+it at https://www.FreeBSDFoundation.org/FreeBSD-foundation-partnership-program/.
 
 ==== OS Improvements
 
