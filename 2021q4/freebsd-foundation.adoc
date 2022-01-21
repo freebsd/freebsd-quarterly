@@ -117,13 +117,31 @@ coming.
 
 ==== FreeBSD Advocacy and Education
 
-We help educate the world about FreeBSD by publishing the professionally
-produced FreeBSD Journal. As we mentioned previously, the FreeBSD Journal is now
-a free publication. Find out more and access the latest issues at
-link:https://www.freebsdfoundation.org/journal/[https://www.FreeBSDFoundation.org/journal/].
+Much of our effort is dedicated to Project advocacy.  This may involve highlighting interesting FreeBSD work, producing literature, attending events, or giving presentations.  The goal of the literature we produce is to teach people FreeBSD basics and help make their path to adoption or contribution easier.  Other than attending and presenting at events, we encourage and help community members run their own FreeBSD events, give presentations, or staff FreeBSD tables.
 
-You can find out more about events we attended and upcoming events at
-link:https://www.FreeBSDfoundation.org/news-and-events/[https://www.FreeBSDFoundation.org/news-and-events/].
+The FreeBSD Foundation sponsors many conferences, events, and summits around the globe.  These events can be BSD-related, open source, or technology events geared towards underrepresented groups.  We support the FreeBSD-focused events to help provide a venue for sharing knowledge, working together on projects, and facilitating collaboration between developers and commercial users.  This all helps provide a healthy ecosystem.  We support the non-FreeBSD events to promote and raise awareness of FreeBSD, to increase the use of FreeBSD in different applications, and to recruit more contributors to the Project.  We are continuing to attend virtual events and held a virtual vendor summit this past November.
+
+Check out some of the advocacy and education work we did last quarter:
+
+* Promoted and participated as a media sponsor for link:https://2021.allthingsopen.org/[ALL Things Open 2021]
+* Committed to being a Media Sponsor for link:https://www.socallinuxexpo.org/scale/19x[SCALE 19x]
+* Committed to hosting a link:https://stands.fosdem.org/stands/freebsd_project/[stand at FOSDEM 2022]
+* Sent out the link:https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-fall-2021-update/[Fall 2021 Newsletter]
+* Held a link:https://www.youtube.com/watch?v=BYTNpuinaPU[FreeBSD Friday talk: The Writing Scholar's Guide to FreeBSD]
+* Foundation talk at link:http://www.semibug.org/[Semi-Bug], November 16, 2021.
+* Foundation and FreeBSD talks at Seagate OSPO, December 9, 2021.
+* Helped organize the 2 day link:https://wiki.freebsd.org/DevSummit/202111[FreeBSD Virtual Vendor Summit, November 18-19, 2021]. Videos can be found on the link:https://www.youtube.com/c/FreeBSDProject/videos[Project’s Youtube Channel].
+* New blog and video posts:
+** link:https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-fall-2021-update/[FreeBSD Foundation Fall 2021 Update]
+** link:https://freebsdfoundation.org/blog/2021-in-review-advocacy/[2021 in Review: Advocacy]
+** link:https://freebsdfoundation.org/blog/2021-in-review-infrastructure-support/[2021 in Review: Infrastructure Support]
+** link:https://freebsdfoundation.org/blog/2021-in-review-software-development/[2021 in Review: Software Development]
+** link:https://freebsdfoundation.org/blog/open-source-summit-2021-conference-recap/[Open Source Summit 2021 Conference Recap]
+* New How-To Guide: link:https://freebsdfoundation.org/freebsd-project/resources/freebsd-introduction/[Introduction to FreeBSD]
+
+We help educate the world about FreeBSD by publishing the professionally produced link:https://freebsdfoundation.org/our-work/journal/[FreeBSD Journal]. As we mentioned previously, the FreeBSD Journal is now a free publication. Find out more and access the latest issues at https://www.FreeBSDfoundation.org/journal/.
+
+You can find out more about events we attended and upcoming events at https://www.FreeBSDfoundation.org/news-and-events/.
 
 ==== Legal/FreeBSD IP
 
