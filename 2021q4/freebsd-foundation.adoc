@@ -87,7 +87,7 @@ that swap on file code broke the VFS locking protocol.  Some other regressions
 in the swap on file were also identified.  For instance, on shutdown,
 filesystems were unmounted before swapoff, which makes swapoff panic on page-in.
 These bugs were fixed and a link:https://www.freebsd.org/cgi/man.cgi?query=swapoff&apropos=0&sektion=2&manpath=FreeBSD+14.0-current&arch=default&format=html[swapoff(2)] feature was added to avoid some very
-conservative estimations for memory availability.
+conservative estimations for protection against memory and swap space shortages.
 
 ===== fcntl(F_KINFO)
 
@@ -95,8 +95,8 @@ Application developers often request an interface to return the file path for an
 open file descriptor.  Our only useful facility for this was kern.proc.filedesc
 sysctl, which is somewhat usable, but incurs too high of an overhead when a
 process has many open files.  A fcntl(F_KINFO) interface was added, which returns
-struct kinfo_file just for specified file descriptor.  Among other useful data,
-kinfo_file provides the calculated path, when available.
+a struct kinfo_file just for the specified file descriptor.  Among other useful
+data, kinfo_file provides the calculated path, when available.
 
 ==== Continuous Integration and Quality Assurance
 
@@ -127,10 +127,10 @@ Check out some of the advocacy and education work we did last quarter:
 * Committed to being a Media Sponsor for link:https://www.socallinuxexpo.org/scale/19x[SCALE 19x]
 * Committed to hosting a link:https://stands.fosdem.org/stands/freebsd_project/[stand at FOSDEM 2022]
 * Sent out the link:https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-fall-2021-update/[Fall 2021 Newsletter]
-* Held a link:https://www.youtube.com/watch?v=BYTNpuinaPU[FreeBSD Friday talk: The Writing Scholar's Guide to FreeBSD]
-* Foundation talk at link:http://www.semibug.org/[Semi-Bug], November 16, 2021.
-* Foundation and FreeBSD talks at Seagate OSPO, December 9, 2021.
-* Helped organize the 2 day link:https://wiki.freebsd.org/DevSummit/202111[FreeBSD Virtual Vendor Summit, November 18-19, 2021]. Videos can be found on the link:https://www.youtube.com/c/FreeBSDProject/videos[Project’s Youtube Channel].
+* Held a link:https://www.youtube.com/watch?v=BYTNpuinaPU[FreeBSD Friday talk: The Writing Scholar's Guide to FreeBSD], (link:https://www.coreystephan.com/freebsd-friday/[text equivalent])
+* Gave a Foundation talk at link:http://www.semibug.org/[Semi-Bug], November 16, 2021
+* Gave Foundation and FreeBSD talks at Seagate OSPO, December 9, 2021
+* Helped organize the 2 day link:https://wiki.freebsd.org/DevSummit/202111[FreeBSD Virtual Vendor Summit, November 18-19, 2021]. Videos can be found on the link:https://www.youtube.com/c/FreeBSDProject/videos[Project’s Youtube Channel]
 * New blog and video posts:
 ** link:https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-fall-2021-update/[FreeBSD Foundation Fall 2021 Update]
 ** link:https://freebsdfoundation.org/blog/2021-in-review-advocacy/[2021 in Review: Advocacy]
