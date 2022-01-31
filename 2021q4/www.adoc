@@ -9,7 +9,8 @@ The work will be divided into four phases:
 . Redesign of the Documentation Portal
 +
 Create a new design, responsive and with global search. (_Complete_)
-Activate an edit link in the Documentation (books/articles) pointing to GitHub and encouraging Github pull requests. (_Complete_)
++
+Activate an edit link in the Documentation (books/articles) pointing to GitHub and encouraging GitHub pull requests. (_Complete_)
 
 . Redesign of the Manual Pages on web
 +
