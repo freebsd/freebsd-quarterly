@@ -104,8 +104,6 @@ The Foundation provides a full-time staff member and funds projects to improve
 continuous integration, automated testing, and overall quality assurance efforts
 for the FreeBSD project.
 
-See the separate Continuous Integration entry for details.
-
 ==== Supporting FreeBSD Infrastructure
 
 The Foundation provides hardware and support for the Project.  In the fourth
