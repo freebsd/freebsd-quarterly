@@ -22,9 +22,13 @@ During the last quarter, we welcomed Dries Michiels (driesm@) and said goodbye t
 There was also a change in portmgr: adamw@ stepped down after five years of service and tcberner@ is now a full member of portmgr@.
 
 Three new USES were introduced:
+
 * magick to handle dependencies on ImageMagick
+
 * nodejs to provide support for NodeJS (with a new default version NODEJS=lts)
+
 * trigger to handle pkg triggers using the TRIGGERS variable
+
 The default version of PGSQL switched to 13.
 Furthermore, INSTALLS_ICONS has been replaced by a trigger on gtk-update-icon-cache and the macro is no longer functional.
 

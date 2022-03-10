@@ -1,4 +1,4 @@
-== sched_getcpu(2), membarrier(2), and rseq(2) syscalls
+=== sched_getcpu(2), membarrier(2), and rseq(2) syscalls
 
 Contact: Konstantin Belousov <kib@FreeBSD.org>
 

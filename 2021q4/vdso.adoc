@@ -1,4 +1,4 @@
-== VDSO on amd64
+=== VDSO on amd64
 
 Contact: Konstantin Belousov <kib@FreeBSD.org>  
 

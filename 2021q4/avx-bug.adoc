@@ -1,4 +1,4 @@
-== The AVX bug on amd64
+=== The AVX bug on amd64
 
 Commit: gitref:73b357be92385cbb70ba19e7023a736af2c6b493[repository=src] URL: link:https://cgit.freebsd.org/src/commit/?id=73b357be92385cbb70ba19e7023a736af2c6b493[https://cgit.freebsd.org/src/commit/?id=73b357be92385cbb70ba19e7023a736af2c6b493]
 
