@@ -21,7 +21,9 @@ in order to allow utilization of the bss grow region for mappings.
 It has no effect without ASLR, so it was applied to all architectures.
 
 TODO:
+
 * Improve stackgap feature implementation.
+
 * MFC to stable/13 branch.
 
 Sponsor: Stormshield
