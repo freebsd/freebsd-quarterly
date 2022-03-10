@@ -12,11 +12,11 @@ security on its own, this mechanism can make exploitation more difficult.
 
 The Semihalf team made an effort to switch on the address map
 randomization for PIE (Position Independent Executables) & non-PIE 64-bit binaries.
-Once the https://cgit.freebsd.org/src/commit/?id=b014e0f15bc73d80e[patch] was merged to HEAD,
+Once the link:https://cgit.freebsd.org/src/commit/?id=b014e0f15bc73d80e[patch] was merged to HEAD,
 the ASLR feature became enabled for all 64-bit architectures.
 
 Additionally, the mentioned change disabled
-https://www.freebsd.org/cgi/man.cgi?query=sbrk&sektion=2[SBRK],
+link:https://www.freebsd.org/cgi/man.cgi?query=sbrk&sektion=2[SBRK],
 in order to allow utilization of the bss grow region for mappings.
 It has no effect without ASLR, so it was applied to all architectures.
 

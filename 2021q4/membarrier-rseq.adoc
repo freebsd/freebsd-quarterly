@@ -2,10 +2,11 @@
 
 Contact: Konstantin Belousov <kib@FreeBSD.org>
 
-Link: link:https://kib.kiev.ua/kib/membarrier.pdf[Linux manpage for membarrier(2)]
-Link: link:https://reviews.freebsd.org/D32360[membarrier(2) implementation]
-Link: link:https://kib.kiev.ua/kib/rseq.pdf[Linux manpage for rseq(2)]
-Link: link:https://reviews.freebsd.org/D32505[rseq(2) and userspace bindings implementation]
+Links: +
+link:https://kib.kiev.ua/kib/membarrier.pdf[Linux manpage for membarrier(2)] URL: link:https://kib.kiev.ua/kib/membarrier.pdf[https://kib.kiev.ua/kib/membarrier.pdf] +
+link:https://reviews.freebsd.org/D32360[membarrier(2) implementation] URL: link:https://reviews.freebsd.org/D32360[https://reviews.freebsd.org/D32360] +
+link:https://kib.kiev.ua/kib/rseq.pdf[Linux manpage for rseq(2)] URL: link:https://kib.kiev.ua/kib/rseq.pdf[https://kib.kiev.ua/kib/rseq.pdf] +
+link:https://reviews.freebsd.org/D32505[rseq(2) and userspace bindings implementation] URL: link:https://reviews.freebsd.org/D32505[https://reviews.freebsd.org/D32505]
 
 Linux provides a set of syscalls that allow to develop mostly
 syscall-less scalable algorithms in userspace.  The mechanisms are
