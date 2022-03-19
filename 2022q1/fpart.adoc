@@ -2,7 +2,8 @@
 
 Links: +
 link:https://www.fpart.org[Project site and documentation] URL: link:https://www.fpart.org[https://www.fpart.org] +
-Link: link:https://github.com/martymac/fpart[Development] URL: link:https://github.com/martymac/fpart[https://github.com/martymac/fpart]
+link:https://github.com/martymac/fpart[Development] URL: link:https://github.com/martymac/fpart[https://github.com/martymac/fpart] +
+link:https://www.freshports.org/sysutils/fpart[Port] URL: link:https://www.freshports.org/sysutils/fpart[https://www.freshports.org/sysutils/fpart]
 
 Contact: Ganael Laplanche <martymac@FreeBSD.org>
 
