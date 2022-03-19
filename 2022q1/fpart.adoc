@@ -1,0 +1,33 @@
+=== Fpart and Fpsync
+
+Links: +
+link:https://www.fpart.org[Project site and documentation] URL: link:https://www.fpart.org[https://www.fpart.org] +
+Link: link:https://github.com/martymac/fpart[Development] URL: link:https://github.com/martymac/fpart[https://github.com/martymac/fpart]
+
+Contact: Ganael Laplanche <martymac@FreeBSD.org>
+
+==== What is Fpart ?
+
+Fpart is a *Filesystem partitioner*. It helps you sort file trees and pack them into bags ("partitions").
+
+==== What is Fpsync ?
+
+Fpsync is a companion script that uses Fpart underhood to parallelize rsync(1) or cpio(1) jobs, making it a simple but powerful data migration tool. Those jobs can be run either locally or remotely (using SSH). Fpsync is link:https://www.fpart.org/links/[often used by researchers and cloud providers] where lots of data need to be moved and clusters are available to speed up transfers.
+
+==== Q1 2022 Status
+
+Both tools continued to evolve and saw several bugs fixed, see the link:https://www.fpart.org/changelog/[https://www.fpart.org/changelog/[changelog].
+
+Also, a user reported an interesting bug regarding FreeBSD's fts(3) implementation (embedded in Fpart as an option), which ignores readdir(3) errors. I have reported the bug in our Bugzilla:
+
+link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=262038[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=262038]
+
+It should be merged soon (hopefully).
+
+Last but not least, Fpart has been link:https://sill.etalab.gouv.fr/fr/software?id=229[referenced in the French Government's 'SILL'].
+
+==== Contributing
+
+If you are interested in contributing, have a look at the link:https://github.com/martymac/fpart/blob/master/TODO[TODO list].
+
+Any contribution is welcome, more especially in the field of unit testing.
