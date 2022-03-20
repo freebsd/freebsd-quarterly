@@ -13,7 +13,7 @@ Fpart is a *Filesystem partitioner*. It helps you sort file trees and pack them 
 
 ==== What is Fpsync ?
 
-Fpsync is a companion script that uses Fpart underhood to parallelize rsync(1) or cpio(1) jobs, making it a simple but powerful data migration tool. Those jobs can be run either locally or remotely (using SSH). Fpsync is link:https://www.fpart.org/links/[often used by researchers and cloud providers] where lots of data need to be moved and clusters are available to speed up transfers.
+Fpsync is a companion script that uses Fpart under the hood to parallelize rsync(1) or cpio(1) jobs, making it a simple but powerful data migration tool. Those jobs can be run either locally or remotely (using SSH). Fpsync is link:https://www.fpart.org/links/[often used by researchers and cloud providers] where lots of data need to be moved and clusters are available to speed up transfers.
 
 ==== Q1 2022 Status
 
