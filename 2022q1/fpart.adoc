@@ -13,7 +13,7 @@ Fpart is a *filesystem partitioner*. It helps you sort file trees and pack them 
 
 It uses FreeBSD's fts(3) implementation (GNU/Linux builds can also use it as an option), which makes it crawl filesystems very fast.
 
-A hook facility is provided to trigger actions on produced partitions.
+A hook facility is provided to trigger actions on the partitions produced.
 
 ==== What is fpsync ?
 
