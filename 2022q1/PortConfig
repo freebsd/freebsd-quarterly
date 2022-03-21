@@ -1,0 +1,28 @@
+== PortConfig
+
+Links
+link:https://gitlab.com/alfix/portconfig/[Repository portconfig] URL: link:https://gitlab.com/alfix/portconfig/[https://gitlab.com/alfix/portconfig/] +
+
+Contact: Alfonso Sabato Siciliano (upstream) <asiciliano@FreeBSD.org>  
+Contact: Baptiste Daroussin (port) <bapt@FreeBSD.org>
+
+FreeBSD provides the Ports Collection to allow a simple way for users and
+administrators to install applications.
+
+It is possible to configure a port before the building and installation,
+PortConfig is an utility for setting the port options via a Text User Interface,
+it and its dependecies (libbsddialog and libncurses) are released completely
+under permissive open source licenses. Currently the dialog4ports TUI utility
+performs this task, unfortunately it depends on non-permissive software.
+
+As each terminal has different properties PortConfig can be custimized via
+environment variables to set up the User Interface, for example: menu size,
+theme, borders, and so on, each feature is documented inside the manual.
+Further, if a port has a specific 'pkg-help' file, PortConfig will show a Help
+button to open a "popup" with help information.
+
+FreeBSD provides thousands of ports therefore it is not feasible to test
+PortConfig for each use, please report any problem.
+
+I would like to thank Baptiste Daroussin for the port, suggestions, help, and
+testing for this utility and its library.
