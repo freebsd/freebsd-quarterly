@@ -23,7 +23,7 @@ Fpsync is a companion script that uses fpart under the hood to parallelize rsync
 
 Both tools continued to evolve and saw several bugs fixed; see the link:https://www.fpart.org/changelog/[changelog].
 
-Also, a user reported an interesting bug regarding our fts(3) implementation, which ignores readdir(3) errors. I have reported the bug in our Bugzilla:
+Also, a user reported a major bug regarding our fts(3) implementation, which ignores readdir(3) errors. I have reported the bug in our Bugzilla:
 
 link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=262038[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=262038]
 
