@@ -15,8 +15,8 @@ network-on-a-chip.
 
 link:https://solidrun.atlassian.net/wiki/spaces/developer/pages/197494288/HoneyComb+LX2+ClearFog+CX+LX2+Quick+Start+Guide[Honeycomb LX2],
 as one of the powerful ARM64 boards from SolidRun, is also built around NXP
-LX2160A and has a lack of the on-board GbE support in FreeBSD. These drivers are
-about to change it.
+LX2160A and lacks on-board GbE support in FreeBSD. These drivers are about to
+change it.
 
 It's still work in progress and a rough implementation of the drivers for some
 DPAA2 objects is available at the moment. A new network interface (dpni) can be
@@ -24,7 +24,7 @@ used on Honeycomb for testing.
 
 TODO:
 
-* Update dpaa2_mc_fdt driver for link:https://www.crowdsupply.com/traverse-technologies/ten64[Traverse Ten64] board
+* Update dpaa2_mc_fdt driver for the link:https://www.crowdsupply.com/traverse-technologies/ten64[Traverse Ten64] board
 
 * Review and fix DPAA2 resources allocation to support as many DPNIs as possible
 
