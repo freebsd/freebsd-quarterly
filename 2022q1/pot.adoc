@@ -9,7 +9,7 @@ Contact: Michael Gmelin (Potman) <grembo@freebsd.org>
 
 Pot is a jail management tool that link:https://www.freebsd.org/news/status/report-2020-01-2020-03/#pot-and-the-nomad-pot-driver[also supports orchestration through Nomad].
 
-Pot has received some tender, love and care in the form of some fixes which will be released in an update soon.
+It has received a lot of stability fixes in the start/stop area. Moreover attributes and commands have been developed to improve support of nomad orchestration and batch jobs, like change dns config during clone, ability to disable tmpfs, new last-run-stats command. A new release will follow soon. +
 
 Potluck aims to be to FreeBSD and Pot what Dockerhub is to Linux and Docker: a repository of Pot flavours and complete container images for usage with Pot and in many cases Nomad.
 
