@@ -22,9 +22,9 @@ Two major issues remain outstanding:
 than normal to get an IPv4 address.  The cause of this is unknown and requires
 investigation.
 
-. IPv6 configuration includes two one-second sleep(1) invocations, one from
-/etc/rc.d/netif and the other from /etc/rc.d/rtsold.  It might be possible to
-simply remove these; but care is needed to avoid progressing too far in the
+. IPv6 configuration includes two one-second-long sleep(1) invocations, one
+from /etc/rc.d/netif and the other from /etc/rc.d/rtsold.  It might be possible
+to simply remove these; but care is needed to avoid progressing too far in the
 boot process before IPv6 addresses are configured.  Input from IPv6 experts
 is required here.
 
