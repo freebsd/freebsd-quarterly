@@ -258,7 +258,7 @@ $send_command = "cat call.txt | mail -s \"".$subject."\"";
 # @recipients should never be empty as we have reports with mail
 # contacts every quarter, but we test it anyway: we do not want to assume
 # that this will be true forever
-$send_command = $send_command.' -b '.(join ',', @recipients) if(@recipients);
+$send_command = $send_command.' -c '.(join ',', @recipients) if(@recipients);
 $send_command = $send_command.' freebsd-quarterly-calls@FreeBSD.org';
 
 # -------------------------------------------------------
