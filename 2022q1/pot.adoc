@@ -14,7 +14,7 @@ Various attributes and commands have been developed to improve support of nomad 
 
 Potluck aims to be to FreeBSD and pot what Dockerhub is to Linux and Docker: a repository of pot flavours and complete container images for usage with pot and in many cases nomad.
 
-Many of the core images like link:https://potluck.honeyguide.net/blog/nomad-server/[Nomad], link:https://potluck.honeyguide.net/blog/consul/[Consul] and link:https://potluck.honeyguide.net/blog/vault/[Vault] that can be used to build a private cloud and orchestration platform, but also e.g. link:https://potluck.honeyguide.net/blog/prometheus/[Prometheus] or link:https://potluck.honeyguide.net/blog/postgresql-patroni/[PostgreSQL Patroni], have reached a stable status over the last quarter and are in production use at a fintech now..
+Many of the core images like link:https://potluck.honeyguide.net/blog/nomad-server/[Nomad], link:https://potluck.honeyguide.net/blog/consul/[Consul] and link:https://potluck.honeyguide.net/blog/vault/[Vault] that can be used to build a private cloud and orchestration platform, but also e.g. link:https://potluck.honeyguide.net/blog/prometheus/[Prometheus] or link:https://potluck.honeyguide.net/blog/postgresql-patroni/[PostgreSQL Patroni], have reached a stable status over the last quarter and are in production use now.
 
 To make navigating the evolving pot ecosystem easier, most project resources have been centralized in a dedicated github project: link:https://github.com/bsdpot[https://github.com/bsdpot]
 
