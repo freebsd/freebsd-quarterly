@@ -28,6 +28,7 @@ This landed both in main and the last quarterly branch for 2021, since it brings
 * *graphics/digikam*, the digital photography manager, was updated to 7.6.0. (Thanks Dima Panov)
 * *graphics/kf5-kimageformats* has a new option enabling libheif and HEIC support.
 * *graphics/kontrast* was added to the 'accessibility' category. This is a tool for checking color-combinations (e.g. for a website) for sufficient contrast and readability.
+* *graphics/krita* was updated to the next big release, Krita 5. (Thanks Max Brazhnikov)
 * *lang/kross-interpreters* was fixed for Ruby 3. (Thanks Yasuhiro Kimura)
 * *sysutils/plasma5-discover* was updated to resolve some denial-of-service bugs in KDE infrastructure.
 * *www/falkon* was updated. After a two-year wait, a new release of the KDE web browser built on Qt WebEngine (itself a wrapper around Chromium internals) arrived upstream and in ports.
