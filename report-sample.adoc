@@ -2,9 +2,9 @@
 
 Links
 link:http://www.example.com/project/url[Link description here] URL: link:http://www.example.com/project/url[http://www.example.com/project/url] +
-Link: link:http://www.example.com/other/url[Another link description here] URL: link:http://www.example.com/other/url[link:http://www.example.com/other/url] +
+link:http://www.example.com/other/url[Another link description here] URL: link:http://www.example.com/other/url[link:http://www.example.com/other/url] +
 
-Contact: Full Name <email@example.org>  
+Contact: Full Name <email@example.org>
 
 Paragraphs are separated with an empty line.
 Use AsciiDoctor syntax, the same as you use on GitHub.
