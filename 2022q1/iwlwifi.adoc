@@ -16,7 +16,7 @@ Changes to the LinuxKPI 802.11 compatibility layer were made to avoid firmware c
 Auto-loading support for LinuxKPI PCI drivers was comitted.
 This means that iwlwifi(4) will now load automatically during boot if a supported card is detected without any user interactions.
 Considering the current state of the driver and the next release a decision was made that iwm(4) supported chipsets will continue to attach to iwm(4) for now and only newer and otherwise unsupported chipsets will use the iwlwifi(4) driver.
-This is likely going to change in CURRENT as soon as iwlwifi(4) will provider better support than iwm(4).
+This is likely going to change in CURRENT as soon as iwlwifi(4) provides better support than iwm(4).
 
 The code was merged to the stable/13 branch and the current state will be shipped with the upcoming 13.1-RELEASE.
 
