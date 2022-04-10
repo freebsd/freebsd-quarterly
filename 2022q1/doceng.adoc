@@ -26,7 +26,7 @@ More info link:https://lists.freebsd.org/archives/freebsd-translators/2022-Febru
 
 * Update link:https://download.freebsd.org/doc/[offline documentation (PDF and HTML)].
 +
-The old directory /doc is now on link:http://ftp-archive.freebsd.org/mirror/FreeBSD-Archive/old-docs/[ftp-archive]; it contains files prior Hugo/Asciidoctor migration.
+The old directory /doc is now on link:http://ftp-archive.freebsd.org/mirror/FreeBSD-Archive/old-docs/[ftp-archive]; it contains files prior to the Hugo/Asciidoctor migration.
 
 * Remove Google Analytics from documentation and website.
 
