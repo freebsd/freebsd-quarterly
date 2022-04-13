@@ -14,7 +14,7 @@ The Ports Management Team is responsible for overseeing the overall direction of
 Below is what happened in the last quarter.
 
 Before we start with the usual statistics, portmgr is happy to announce it has successfully restarted its lurker program.
-The first two lurkers are pizzamig@ and se@, they will learn about the inner workings of portmgr and bring in new ideas.
+The first two lurkers are pizzamig@ and se@; they will learn about the inner workings of portmgr and bring in new ideas.
 
 Portmgr also started having bi-weekly meetings, some public results are:
 * restarting the lurker program
@@ -29,7 +29,7 @@ increase in the number of open PRs.
 
 No new committers joined during the last quarter, portmgr took koobs@' commit bit in for safekeeping because of a lack of recent commits.
 
-The cluster administration team has provided portmgr with a third aarch64 builder, it is being used for package builds.
+The cluster administration team has provided portmgr with a third aarch64 builder; it is being used for package builds.
 
 Things that happened in git:
 * Two new USES were introduced:
