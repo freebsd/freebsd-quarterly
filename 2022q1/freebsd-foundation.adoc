@@ -28,22 +28,24 @@ Here are some highlights from the Foundation for the first quarter of
 
 ==== Fundraising Efforts
 
-As promised, we have updated out fundraising meter for 2022.  So far, we
-have raised $80,519 from 201 different donations towards our 2022 goal
-of $1,400,000.  We currently have one gold sponsor, Facebook, and one
-silver sponsor, VMware.  The companies that donate free hosting for the
-Project are: Bytemark, NextArray, NYI, and Sentex Data Communications.
-We also receive free hosting from the Computer Science Department at
-NCTU.
+As promised, we updated our fundraising meter for 2022. So far, we’ve
+raised over $84,000 towards our 2022 goal of $1,400,000.  We’d like to
+thank our individual and corporate donors for supporting our efforts
+this year.  We’d also like to give a big shout out to our Gold Sponsor,
+FaceBook, Silver Sponsors, VMware and Tarsnap, and the companies that
+provide free hosting for the Project: Bytemark, 365 Data Centers, NYI,
+NextArray, Sentex Data Communications, and the Computer Science
+Department at NCTU.
 
-If you want to help us continue our efforts, please consider making a
-donation towards our 2022 fundraising campaign!
-https://www.FreeBSDFoundation.org/donate/.
+You can find out how we spent your donations by reading about what we
+supported in Q1, in this report, and our Spring Newsletter.
+
+If you haven’t made a donation this year, please consider making a donation
+now at https://freebsdfoundation.org/donate/.
 
 We also have a Partnership Program for larger commercial donors. You can
-read about it at
-https://www.FreeBSDFoundation.org/FreeBSD-foundation-partnership-program/.
-
+find out more at
+https://freebsdfoundation.org/our-donors/freebsd-foundation-partnership-program/
 
 ==== OS Improvements
 
