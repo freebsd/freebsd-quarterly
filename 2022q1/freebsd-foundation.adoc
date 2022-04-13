@@ -56,8 +56,8 @@ commits were made that identified The FreeBSD Foundation as a sponsor.
 You can read about Foundation-sponsored projects in individual quarterly report
 entries:
 
-- Crypto changes for WireGurard
-- Intel Wireless driver support
+* Crypto changes for WireGuard
+* Intel Wireless driver support
 
 Here is a small sample of other base system improvements from Foundation
 developers this quarter that do not have separate report entries.
@@ -72,10 +72,10 @@ For now SV48 mode is left disabled by default, but can be enabled with a
 tunable.  Note that extant hardware does not implement SV48, but QEMU
 does.
 
-- In pmap_bootstrap(), allocate a L0 page and attempt to enable SV48
+* In pmap_bootstrap(), allocate a L0 page and attempt to enable SV48
   mode.  If the write to SATP doesn't take, the kernel continues to run
   in SV39 mode.
-- Define VM_MAX_USER_ADDRESS to refer to the SV48 limit.  In SV39 mode,
+* Define VM_MAX_USER_ADDRESS to refer to the SV48 limit.  In SV39 mode,
   the region [VM_MAX_USER_ADDRESS_SV39, VM_MAX_USER_ADDRESS_SV48] is not
   mappable.
 
@@ -92,13 +92,14 @@ Tracing) provider to work with version 3 of CTF.
 Two Foundation staff members, Ed Maste and Mark Johnston, as well as a few developers and community members now each have access to Framework laptops, which are designed to make hardware upgrades, repairs, and customizations straightforward for the average user.  The goal of this work is to ensure that the experience running FreeBSD on the laptops matches the stability that FreeBSD users expect.
 
 Recent improvements and fixes include:
- making audio switch appropriately between speakers and the headphone jack when headphones are plugged in or unpluged
-A fix for bug 259230, which would cause a Framework laptop to reboot or power off when the touchpad was used.
-Adding the Tempo Semiconductor 92HD95B HDA codec ID
-A temporary fix for stalling usb enumeration, bluetooth, and S3 resume.  The temporary fix is to avoid attaching to several newer Intel controllers, which require firmware to be loaded, which is different from that implemented by ng_ubt_intel and iwmbtfw, so they are not usable yet.
-Avoid a 16 second boot delay, by probing the TSC frequency earlier.  This lets us use the TSC to implement early DELAY, limiting the use of the sometimes-unreliable 8254 PIT.
 
-You can follow news about FreeSD work on the Framework laptop at: https://wiki.freebsd.org/Laptops/Framework_Laptop.
+* Making audio switch appropriately between speakers and the headphone jack when headphones are plugged in or unplugged
+* Fixing bug 259230, which would cause a Framework laptop to reboot or power off when the touchpad was used.
+* Adding the Tempo Semiconductor 92HD95B HDA codec ID
+* Temporarily fixing stalled usb enumeration, bluetooth, and S3 resume.  The temporary fix is to avoid attaching to several newer Intel controllers, which require firmware to be loaded, which is different from that implemented by ng_ubt_intel and iwmbtfw, so they are not usable yet.
+* Avoiding a 16 second boot delay, by probing the TSC frequency earlier.  This lets us use the TSC to implement early DELAY, limiting the use of the sometimes-unreliable 8254 PIT.
+
+You can follow news about FreeBSD work on the Framework laptop at: https://wiki.freebsd.org/Laptops/Framework_Laptop.
 
 ==== Continuous Integration and Quality Assurance
 
