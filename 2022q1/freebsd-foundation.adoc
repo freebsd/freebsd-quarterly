@@ -167,23 +167,21 @@ Check out some of the advocacy and education work we did last quarter:
 
 * New blog posts:
 
-** RAID-Z Expansion Feature for ZFS In the Home Stretch
-** What's Ahead for FreeBSD and the Foundation in 2022
-** Work with FreeBSD in Google Summer of Code
+** link:https://freebsdfoundation.org/blog/raid-z-expansion-feature-for-zfs/[RAID-Z Expansion Feature for ZFS In the Home Stretch]
+** link:https://freebsdfoundation.org/blog/whats-ahead-for-freebsd-and-the-foundation-in-2022/[What's Ahead for FreeBSD and the Foundation in 2022]
+** link:https://freebsdfoundation.org/blog/work-with-freebsd-in-google-summer-of-code/[Work with FreeBSD in Google Summer of Code]
 
-* New How-To Guide: An Introduction to FreeBSD Jails
-  https://freebsdfoundation.org/freebsd-project/resources/introduction-to-freebsd-jails/
+* New How-To Guide: link:https://freebsdfoundation.org/freebsd-project/resources/introduction-to-freebsd-jails/[An Introduction to FreeBSD Jails]
 
-* New FreeBSD Journal Article: Contributing to FreeBSD ports with Git
-  https://freebsdfoundation.org/wp-content/uploads/2022/04/Contributing-to-FreeBSD-Ports-with-Git.pdf
+* New FreeBSD Journal Article: link:https://freebsdfoundation.org/wp-content/uploads/2022/04/Contributing-to-FreeBSD-Ports-with-Git.pdf[Contributing to FreeBSD ports with Git]
 
 We help educate the world about FreeBSD by publishing the professionally
 produced FreeBSD Journal. As we mentioned previously, the FreeBSD
 Journal is now a free publication. Find out more and access the latest
-issues at https:// www.FreeBSDfoundation.org/journal/
+issues at https://www.FreeBSDfoundation.org/journal/
 
 You can find out more about events we attended and upcoming events at
-https:// www.FreeBSDfoundation.org/news-and-events/.
+https://www.FreeBSDfoundation.org/news-and-events/.
 
 ==== Legal/FreeBSD IP
 
