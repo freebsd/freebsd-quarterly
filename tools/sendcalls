@@ -207,7 +207,7 @@ foreach(`ls $quarter_last_directory`)
 		{
 			my $address = $1;
 			$address =~ tr/<>//d;
-			push @bcc_recipients, $address;
+			push @bcc_recipients, $address if(not $address =~ m/\@FreeBSD.org$/i);
 		}
 	}
 	close(quarterly_report);
