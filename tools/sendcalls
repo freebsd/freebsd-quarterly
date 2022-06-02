@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# Copyright (c) 2020 Lorenzo Salvadore
+# Copyright (c) 2020-2022 Lorenzo Salvadore <salvadore@FreeBSD.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -65,11 +65,13 @@ my $quarter_last_directory;
 #
 # - $subject is the subject of the mail we send.
 # - $send_command is the command we run to send the mail.
-# - $recipients is the array of all the addresses we want to put in the
-#   CC field. The To field contains freebsd-quarterly-calls@FreeBSD.org.
+# - @bcc_recipients and @cc_recipients are the array of all the addresses
+#   we want to put in the BCC and CC field respectively. The To field
+#   contains freebsd-quarterly-calls@FreeBSD.org.
 my $subject;
 my $send_command;
-my @recipients;
+my @bcc_recipients;
+my @cc_recipients;
 
 # Other variables
 # - %quarter_specific_recipients is a hash that contains lists of
@@ -87,7 +89,10 @@ my %options;
 # Variables initialization
 # -------------------------------------------------------
 
-@recipients = ();
+@bcc_recipients = ();
+@cc_recipients = (	'freebsd-current@FreeBSD.org',
+			'freebsd-hackers@FreeBSD.org',
+			'devsummit@FreeBSD.org'	);
 
 $quarter_specific_recipients{1} = [	'secretary@asiabsdcon.org'	];
 $quarter_specific_recipients{2} = [	'info@bsdcan.org',
@@ -181,7 +186,7 @@ else
 $quarter = int($month / 3) + 1;
 
 # -------------------------------------------------------
-# Compute @recipients
+# Compute @bcc_recipients and @cc_recipients
 # -------------------------------------------------------
 $year_last = $year;
 $quarter_last = $quarter - 1;
@@ -202,17 +207,18 @@ foreach(`ls $quarter_last_directory`)
 		{
 			my $address = $1;
 			$address =~ tr/<>//d;
-			push @recipients, $address;
+			push @bcc_recipients, $address;
 		}
 	}
 	close(quarterly_report);
 }
 
-push @recipients, @{ $quarter_specific_recipients{$quarter} };
 {
-	my %tmp = map {$_ => 0} @recipients;
-	@recipients = keys %tmp;
+	my %tmp = map {$_ => 0} @bcc_recipients;
+	@bcc_recipients = keys %tmp;
 }
+
+push @cc_recipients, @{ $quarter_specific_recipients{$quarter} };
 
 # -------------------------------------------------------
 # Compute missing %template_substitutions elements
@@ -255,10 +261,14 @@ close(call_mail);
 $subject = $urgency_tag."Call for ".$year."Q".$quarter." quarterly status reports";
 
 $send_command = "cat call.txt | mail -s \"".$subject."\"";
-# @recipients should never be empty as we have reports with mail
-# contacts every quarter, but we test it anyway: we do not want to assume
-# that this will be true forever
-$send_command = $send_command.' -b '.(join ',', @recipients) if(@recipients);
+# @bcc_recipients should never be empty as we have reports with mail
+# contacts every quarter, but we test it anyway: we do not want to
+# assume that this will be true forever
+$send_command = $send_command.' -b '.(join ',', @bcc_recipients) if(@bcc_recipients);
+# @cc_recipients should never be empty as we initialize it not empty
+# and never remove addresses from there, but we test it anyway: we do
+# not want to assume that this will be true forever
+$send_command = $send_command.' -c '.(join ',', @cc_recipients) if(@cc_recipients);
 $send_command = $send_command.' freebsd-quarterly-calls@FreeBSD.org';
 
 # -------------------------------------------------------
