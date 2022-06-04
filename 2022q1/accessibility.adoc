@@ -1,4 +1,4 @@
-== FreeBSD Accessibility
+=== FreeBSD Accessibility
 
 Links
 link:https://wiki.freebsd.org/Accessibility[Accessibility wiki page] URL: link:https://wiki.freebsd.org/Accessibility[https://wiki.freebsd.org/Accessibility] +

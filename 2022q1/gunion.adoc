@@ -1,4 +1,4 @@
-== A New GEOM Facility, gunion(8)
+=== A New GEOM Facility, gunion(8)
 
 Contact: Marshall Kirk McKusick <mckusick@mckusick.com>
 

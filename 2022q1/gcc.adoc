@@ -1,4 +1,4 @@
-== lang/gcc* ports need some love and attention
+=== lang/gcc* ports need some love and attention
 
 Links: +
 link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org[https://gcc.gnu.org] +

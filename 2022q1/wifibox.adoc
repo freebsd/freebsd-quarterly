@@ -1,4 +1,4 @@
-== Wifibox: Use Linux to drive your wireless card on FreeBSD
+=== Wifibox: Use Linux to drive your wireless card on FreeBSD
 
 Links: +
 link:https://github.com/pgj/freebsd-wifibox[Project GitHub Page] +
