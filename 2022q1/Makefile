@@ -8,7 +8,7 @@ YEAR?=		2022
 QUARTER?=	1
 
 # Entries from the various official and semi-official teams
-TeamReports= FreeBSD-Foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc
+TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
