@@ -14,15 +14,14 @@ Here are a few specific tasks looking for help:
 
  * Upgrade GCC_DEFAULT in Mk/bsd.default-versions.mk from 10 to 11,
    including fixing the (luckily minor) fall out of an -exp run:
-
-     link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378
+   link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378]
 
  * Three changes to work through with upstream GCC (requires src
    expertise, not ports):
 
-     · upstreaming lang/gcc11/patch-gets-no-more
-     · upstreaming lang/gcc11/patch-arm-unwind-cxx-support
-     · link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256874
+     ** upstreaming lang/gcc11/patch-gets-no-more
+     ** upstreaming lang/gcc11/patch-arm-unwind-cxx-support
+     ** link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256874[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256874]
 
  * We have removed the unmaintained lang/gcc9-devel and lang/gcc10-devel
    ports, alas kept lang/gcc11-devel and lang/gcc12-devel which would be
