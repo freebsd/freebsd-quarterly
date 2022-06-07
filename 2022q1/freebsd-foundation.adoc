@@ -32,7 +32,7 @@ As promised, we updated our fundraising meter for 2022. So far, we’ve
 raised over $84,000 towards our 2022 goal of $1,400,000.  We’d like to
 thank our individual and corporate donors for supporting our efforts
 this year.  We’d also like to give a big shout out to our Gold Sponsor,
-FaceBook, Silver Sponsors, VMware and Tarsnap, and the companies that
+Facebook, Silver Sponsors, VMware and Tarsnap, and the companies that
 provide free hosting for the Project: Bytemark, 365 Data Centers, NYI,
 NextArray, Sentex Data Communications, and the Computer Science
 Department at NCTU.
@@ -148,7 +148,7 @@ Check out some of the advocacy and education work we did last quarter:
 
 * Hosted a stand at FOSDEM 2022 - Videos from the stand can be found at: https://youtube.com/playlist?list=PLugwS7L7NMXxwqIRg1PlhgzhNRi1eVdRQ
 
-* Participated in the Open Source Voices Podcast - Episode to be aired in late April.
+* Participated in the Open Source Voices Podcast - Episode to be aired in late April [note from status report team: the episode has indeed be aired and is now available at https://www.opensourcevoices.org/29 ]
 
 * Began planning the June 2022 FreeBSD Developers Summit taking place virtually, June 16-17, 2022 https://wiki.freebsd.org/DevSummit/202206
 

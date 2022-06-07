@@ -1,4 +1,4 @@
-=== Containers & FreeBSD: Pot, Potluck & Potman
+=== Containers and FreeBSD: Pot, Potluck and Potman
 
 Links: +
 link:https://github.com/bsdpot[Pot organization on github] URL: link:https://github.com/bsdpot[https://github.com/bsdpot]

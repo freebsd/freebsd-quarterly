@@ -2,9 +2,9 @@
 
 Links: +
 link:https://www.freebsd.org/releases/13.1R/schedule/[FreeBSD 13.1-RELEASE schedule] URL: link:https://www.freebsd.org/releases/13.1R/schedule/[https://www.freebsd.org/releases/13.1R/schedule/] +
+link:https://www.freebsd.org/releases/13.1R/[FreeBSD 13.1 Release Information] URL: link:https://www.freebsd.org/releases/13.1R/[https://www.freebsd.org/releases/13.1R/] [link added by status report team as this quarterly status report is being published after 13.1-RELEASE has been released] +
 link:https://download.freebsd.org/ftp/releases/ISO-IMAGES/[FreeBSD releases] URL: link:https://download.freebsd.org/ftp/releases/ISO-IMAGES/[https://download.freebsd.org/ftp/releases/ISO-IMAGES/] +
 link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/[FreeBSD development snapshots] URL: link:https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/[https://download.freebsd.org/ftp/snapshots/ISO-IMAGES/]
-
 
 Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 

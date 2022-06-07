@@ -20,5 +20,5 @@ button to open a "popup" with help information.
 FreeBSD provides thousands of ports therefore it is not feasible to test
 PortConfig for each use; please report any problem.
 
-I would like to thank Baptiste Daroussin for the port, suggestions, help, and
+Alfonso would like to thank Baptiste Daroussin for the port, suggestions, help, and
 testing for this utility and its library.

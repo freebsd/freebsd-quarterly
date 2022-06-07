@@ -3,7 +3,7 @@
 Links: +
 link:https://wiki.freebsd.org/WiFi/Iwlwifi[iwlwifi status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Iwlwifi[https://wiki.freebsd.org/WiFi/Iwlwifi]
 
-Contact: Bjoern A. Zeeb <bz@FreeBSD.ORG>
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
 
 The Intel Wireless driver update project aims to bring support for newer chipsets along with mac80211 LinuxKPI compat code.
 The dual-licensed Intel driver code was ported in the past for the iwm(4) native driver; using the LinuxKPI compat framework allows us to use the driver directly and gives support to all the latest chipsets, with only minor local modifications.
@@ -20,7 +20,7 @@ This is likely going to change in CURRENT as soon as iwlwifi(4) provides better 
 
 The code was merged to the stable/13 branch and the current state will be shipped with the upcoming 13.1-RELEASE.
 
-In addition to the FreeBSD Foundation thanks need to go to all users who have been testing and reporting back or are patiently waiting for the next update.
+In addition to The FreeBSD Foundation thanks need to go to all users who have been testing and reporting back or are patiently waiting for the next update.
 For the latest state of the development, please follow the freebsd-wireless mailing list.
 
 Sponsor: The FreeBSD Foundation

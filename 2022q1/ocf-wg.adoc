@@ -1,5 +1,7 @@
 === Kernel Crypto changes to support WireGuard
 
+Contact: John Baldwin <jhb@FreeBSD.org>
+
 During the last quarter, I continued my work to improve the FreeBSD
 WireGuard driver.  On the FreeBSD side, I added support for the
 XChaCha20-Poly1305 AEAD cipher.  I also added a dedicated API to support

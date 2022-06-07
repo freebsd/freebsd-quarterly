@@ -21,7 +21,7 @@ Its design follows the “Less, but better” philosophy.
 ** Improved reliability and performance of mounted archives by using fuse-archive
 ** Various bugfixes
 
-Installable experimental Live ISO images are available at https://github.com/helloSystem/ISO/releases/tag/experimental-13.1. The upcoming 0.8.0 release will be based on FreeBSD 13.1-RELEASE once it is available.
+Installable experimental Live ISO images are available at https://github.com/helloSystem/ISO/releases/tag/experimental-13.1.
 
 ==== Contributing
 
