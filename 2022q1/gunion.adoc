@@ -20,4 +20,4 @@ If it works, commit it; if it fails, revert the upgrade.
 The gunion(8) utility is used to create and manage an instance of a gunion. Further details and usage examples can be found in the gunion(8) manual page.
 At this time, gunion(8) is available only in 14.0.
 
-Netflix sponsored the development of gunion.
+Sponsor: Netflix
