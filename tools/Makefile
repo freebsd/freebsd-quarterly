@@ -22,18 +22,19 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-PYTHON_CMD?=	python3
-PYTHON_FLAGS?=	-B	# do not create __pycache__: script is already
-			# fast enough, so we prefer a clean directory
+RUBY_CMD?=	ruby
+RUBY_FLAGS?=	-I ${TOOLS_DIR}
 
-.if empty(PYTHON_CMD:S/^/which /:sh)
-.	error "Please set PYTHON_CMD to a valid python3 binary."
+TOOLS_DIR=	../tools
+
+.if empty(RUBY_CMD:S/^/which /:sh)
+.	error "Please set RUBY_CMD to a valid ruby binary."
 .endif
 
 all: _index.adoc
 
 _index.adoc:
-	${PYTHON_CMD} ${PYTHON_FLAGS} ../tools/generate-index.py \
+	${RUBY_CMD} ${RUBY_FLAGS} ${TOOLS_DIR}/generate-index.rb \
 		${START} \
 		${STOP} \
 		${YEAR} \

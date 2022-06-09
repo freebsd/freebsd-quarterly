@@ -22,33 +22,40 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-class Category:
+class Category
 
-    def _PrintHeader(self):
-        print(
-f"""
+  def printHeader
+    print <<EOT
+
 '''
 
-[[{self.Id}]]
-== {self.Name}
+[[#{@id}]]
+== #{@name}
 
-{self.Description}""")
+#{@description}
+EOT
+  end
 
-    def __init__(self, Id, Name, Description, Files):
-        self.Id = Id
-        self.Name = Name
-        self.Description = Description
-        self.Files = Files
+  def initialize(id, name, description, files)
+    @id = id
+    @name = name
+    @description = description
+    @files = files
+  end
 
-    def Print(self):
-        if self.Files:  # do not print anything if the category is empty
-            self._PrintHeader()
-            print(
-f"""
-include::{{reports-path}}/{self.Files[0]}[]""")
-            for File in self.Files[1:]:
-                print(
-f"""
+  def printAll
+    if @files != [] # do not print anything if the category is empty
+      printHeader
+      print "include::{reports-path}/#{@files[0]}[]\n"
+        for file in @files[1..]
+          print <<EOT
+
 '''
 
-include::{{reports-path}}/{File}[]""")
+include::{reports-path}/#{file}[]
+EOT
+        end
+    end
+  end
+
+end

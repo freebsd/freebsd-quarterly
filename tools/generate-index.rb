@@ -22,43 +22,39 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-import argparse
+require 'optparse'
 
-import Category
+require 'Category.rb'
 
 # ----------------------------------------------------------------------
 # Parse arguments
 # ----------------------------------------------------------------------
 
-parser = argparse.ArgumentParser()
-
-parser.add_argument("START",type=int)
-parser.add_argument("STOP",type=int)
-parser.add_argument("YEAR",type=int)
-parser.add_argument("QUARTER",type=int)
-parser.add_argument("TeamReports",type=str)
-parser.add_argument("Projects",type=str)
-parser.add_argument("Userland",type=str)
-parser.add_argument("Kernel",type=str)
-parser.add_argument("Architectures",type=str)
-parser.add_argument("Documentation",type=str)
-parser.add_argument("Ports",type=str)
-parser.add_argument("ThirdParty",type=str)
-parser.add_argument("Miscellaneous",type=str)
-
-args = parser.parse_args()
+START         = ARGV[0]
+STOP          = ARGV[1]
+YEAR          = ARGV[2]
+QUARTER       = ARGV[3]
+TeamReports   = ARGV[4]
+Projects      = ARGV[5]
+Userland      = ARGV[6]
+Kernel        = ARGV[7]
+Architectures = ARGV[8]
+Documentation = ARGV[9]
+Ports         = ARGV[10]
+ThirdParty    = ARGV[11]
+Miscellaneous = ARGV[12]
 
 # ----------------------------------------------------------------------
 # Compute the right word for the quarter
 # ----------------------------------------------------------------------
 
 Quarter_Words = {
-    1:"First",
-    2:"Second",
-    3:"Third",
-    4:"Fourth"  }
+    "1"=>"First",
+    "2"=>"Second",
+    "3"=>"Third",
+    "4"=>"Fourth"  }
 
-QUARTER_WORD = Quarter_Words[args.QUARTER]
+QUARTER_WORD = Quarter_Words[QUARTER]
 
 # ----------------------------------------------------------------------
 # Initialize categories
@@ -66,50 +62,59 @@ QUARTER_WORD = Quarter_Words[args.QUARTER]
 
 Categories = [
 
-Category.Category("FreeBSD-Team-Reports","FreeBSD Team Reports",
-"""Entries from the various official and semi-official teams, as found in the
-link:../../administration/[Administration Page].""",
-args.TeamReports.split()),
+Category.new("FreeBSD-Team-Reports","FreeBSD Team Reports",
+<<EOT,TeamReports.split),
+Entries from the various official and semi-official teams, as found in the
+link:../../administration/[Administration Page].
+EOT
 
-Category.Category("projects","Projects",
-"""Projects that span multiple categories, from the kernel and userspace to the
-Ports Collection or external projects.""",
-args.Projects.split()),
+Category.new("projects","Projects",
+<<EOT,Projects.split),
+Projects that span multiple categories, from the kernel and userspace to the
+Ports Collection or external projects.
+EOT
 
-Category.Category("userland","Userland",
-"""Changes affecting the base system and programs in it.""",
-args.Userland.split()),
+Category.new("userland","Userland",
+<<EOT, Userland.split),
+Changes affecting the base system and programs in it.
+EOT
 
-Category.Category("kernel","Kernel",
-"""Updates to kernel subsystems/features, driver support, filesystems, and more.""",
-args.Kernel.split()),
+Category.new("kernel","Kernel",
+<<EOT,Kernel.split),
+Updates to kernel subsystems/features, driver support, filesystems, and more.
+EOT
 
-Category.Category("architectures","Architectures",
-"""Updating platform-specific features and bringing in support for the new hardware
-platform.""",
-args.Architectures.split()),
+Category.new("architectures","Architectures",
+<<EOT,Architectures.split),
+Updating platform-specific features and bringing in support for the new hardware
+platform.
+EOT
 
-Category.Category("documentation","Documentation",
-"""Noteworthy changes in the documentation tree, man-pages, or new external
-books/documents.""",
-args.Documentation.split()),
+Category.new("documentation","Documentation",
+<<EOT,Documentation.split),
+Noteworthy changes in the documentation tree, man-pages, or new external
+books/documents.
+EOT
 
-Category.Category("ports","Ports",
-"""Changes affecting the Ports Collection, whether sweeping changes that touch most
-of the tree, or individual ports themselves.""",
-args.Ports.split()),
+Category.new("ports","Ports",
+<<EOT,Ports.split),
+Changes affecting the Ports Collection, whether sweeping changes that touch most
+of the tree, or individual ports themselves.
+EOT
 
-Category.Category("third-Party-Projects","Third Party Projects",
-"""Many projects build upon FreeBSD or incorporate components of FreeBSD into their
+Category.new("third-Party-Projects","Third Party Projects",
+<<EOT,ThirdParty.split),
+Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 project. As these projects may be of interest to the broader FreeBSD community,
 we sometimes include brief updates submitted by these projects in our quarterly
 report. The FreeBSD project makes no representation as to the accuracy or
-veracity of any claims in these submissions.""",
-args.ThirdParty.split()),
+veracity of any claims in these submissions.
+EOT
 
-Category.Category("miscellaneous","Miscellaneous",
-"""Objects that defy categorization.""",
-args.Miscellaneous.split())
+Category.new("miscellaneous","Miscellaneous",
+<<EOT,Miscellaneous.split)
+Objects that defy categorization.
+EOT
 
     ]
 
@@ -117,9 +122,9 @@ args.Miscellaneous.split())
 # Print report's header, introduction and ToC
 # ----------------------------------------------------------------------
 
-print(
-f"""---
-title: "FreeBSD Quarterly Status Report {QUARTER_WORD} Quarter {args.YEAR}"
+print <<EOT
+---
+title: "FreeBSD Quarterly Status Report #{QUARTER_WORD} Quarter #{YEAR}"
 sidenav: about
 ---
 
@@ -131,17 +136,19 @@ sidenav: about
 :!sectnums:
 :source-highlighter: rouge
 :experimental:
-:reports-path: content/en/status/report-{args.YEAR}-{args.START:02}-{args.YEAR}-{args.STOP:02}
+:reports-path: content/en/status/report-#{YEAR}-#{sprintf("%02d",START)}-#{YEAR}-#{sprintf("%02d",STOP)}
 
-include::{{reports-path}}/intro.adoc[]
+include::{reports-path}/intro.adoc[]
 
 '''
 
-toc::[]""")
+toc::[]
+EOT
 
 # ----------------------------------------------------------------------
 # Print reports, by categories
 # ----------------------------------------------------------------------
 
-for x in Categories:
-    x.Print()
+for x in Categories
+    x.printAll
+end
