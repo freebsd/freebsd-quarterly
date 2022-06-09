@@ -46,7 +46,7 @@ f"""
             print(
 f"""
 include::{{reports-path}}/{self.Files[0]}[]""")
-            for File in(self.Files[1:]):
+            for File in self.Files[1:]:
                 print(
 f"""
 '''
