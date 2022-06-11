@@ -40,7 +40,7 @@ _index.adoc!	intro.adoc \
 		${Projects} \
 		${Userland} \
 		${Kernel} \
-		${Architecture} \
+		${Architectures} \
 		${Documentation} \
 		${Ports} \
 		${ThirdParty} \
@@ -54,7 +54,7 @@ _index.adoc!	intro.adoc \
 		"${Projects}" \
 		"${Userland}" \
 		"${Kernel}" \
-		"${Architecture}" \
+		"${Architectures}" \
 		"${Documentation}" \
 		"${Ports}" \
 		"${ThirdParty}" \
