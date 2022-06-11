@@ -30,19 +30,19 @@ require 'Category.rb'
 # Parse arguments
 # ----------------------------------------------------------------------
 
-START         = ARGV[0]
-STOP          = ARGV[1]
-YEAR          = ARGV[2]
-QUARTER       = ARGV[3]
-TeamReports   = ARGV[4]
-Projects      = ARGV[5]
-Userland      = ARGV[6]
-Kernel        = ARGV[7]
-Architectures = ARGV[8]
-Documentation = ARGV[9]
-Ports         = ARGV[10]
-ThirdParty    = ARGV[11]
-Miscellaneous = ARGV[12]
+START               = ARGV[0]
+STOP                = ARGV[1]
+YEAR                = ARGV[2]
+QUARTER             = ARGV[3]
+TeamReports_FILES   = ARGV[4]
+Projects_FILES      = ARGV[5]
+Userland_FILES      = ARGV[6]
+Kernel_FILES        = ARGV[7]
+Architectures_FILES = ARGV[8]
+Documentation_FILES = ARGV[9]
+Ports_FILES         = ARGV[10]
+ThirdParty_FILES    = ARGV[11]
+Miscellaneous_FILES = ARGV[12]
 
 # ----------------------------------------------------------------------
 # Compute the right word for the quarter
@@ -63,47 +63,47 @@ QUARTER_WORD = Quarter_Words[QUARTER]
 Categories = [
 
 Category.new("FreeBSD-Team-Reports","FreeBSD Team Reports",
-<<EOT,TeamReports.split),
+<<EOT,TeamReports_FILES.split),
 Entries from the various official and semi-official teams, as found in the
 link:../../administration/[Administration Page].
 EOT
 
 Category.new("projects","Projects",
-<<EOT,Projects.split),
+<<EOT,Projects_FILES.split),
 Projects that span multiple categories, from the kernel and userspace to the
 Ports Collection or external projects.
 EOT
 
 Category.new("userland","Userland",
-<<EOT, Userland.split),
+<<EOT,Userland_FILES.split),
 Changes affecting the base system and programs in it.
 EOT
 
 Category.new("kernel","Kernel",
-<<EOT,Kernel.split),
+<<EOT,Kernel_FILES.split),
 Updates to kernel subsystems/features, driver support, filesystems, and more.
 EOT
 
 Category.new("architectures","Architectures",
-<<EOT,Architectures.split),
+<<EOT,Architectures_FILES.split),
 Updating platform-specific features and bringing in support for the new hardware
 platform.
 EOT
 
 Category.new("documentation","Documentation",
-<<EOT,Documentation.split),
+<<EOT,Documentation_FILES.split),
 Noteworthy changes in the documentation tree, man-pages, or new external
 books/documents.
 EOT
 
 Category.new("ports","Ports",
-<<EOT,Ports.split),
+<<EOT,Ports_FILES.split),
 Changes affecting the Ports Collection, whether sweeping changes that touch most
 of the tree, or individual ports themselves.
 EOT
 
 Category.new("third-Party-Projects","Third Party Projects",
-<<EOT,ThirdParty.split),
+<<EOT,ThirdParty_FILES.split),
 Many projects build upon FreeBSD or incorporate components of FreeBSD into their
 project. As these projects may be of interest to the broader FreeBSD community,
 we sometimes include brief updates submitted by these projects in our quarterly
@@ -112,7 +112,7 @@ veracity of any claims in these submissions.
 EOT
 
 Category.new("miscellaneous","Miscellaneous",
-<<EOT,Miscellaneous.split)
+<<EOT,Miscellaneous_FILES.split)
 Objects that defy categorization.
 EOT
 
