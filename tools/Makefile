@@ -33,7 +33,18 @@ TOOLS_DIR=	../tools
 
 all: _index.adoc
 
-_index.adoc:
+# Use ! instead of : because the content of _index.adoc is independent from the
+# content of the .adoc files, but we still want to check for their existence
+_index.adoc!	intro.adoc \
+		${TeamReports} \
+		${Projects} \
+		${Userland} \
+		${Kernel} \
+		${Architecture} \
+		${Documentation} \
+		${Ports} \
+		${ThirdParty} \
+		${Miscellaneous}
 	${RUBY_CMD} ${RUBY_FLAGS} ${TOOLS_DIR}/generate-index.rb \
 		${START} \
 		${STOP} \
