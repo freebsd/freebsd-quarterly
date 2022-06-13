@@ -21,17 +21,32 @@
 # LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
+#
+# Makefile targets:
+# all		make build test
+# build		make _index.adoc
+# test		run many checks on _index.adoc
+
+SEPARATOR_STRING?=	==========================================
+ERROR_STRING?=		[ERROR]
+
+ECHO_CMD?=	echo
 
 RUBY_CMD?=	ruby
 RUBY_FLAGS?=	-I ${TOOLS_DIR}
 
 TOOLS_DIR=	../tools
 
+.if empty(ECHO_CMD:S/^/which /:sh)
+.	error "Please set ECHO_CMD to a valid ruby binary."
+.endif
 .if empty(RUBY_CMD:S/^/which /:sh)
 .	error "Please set RUBY_CMD to a valid ruby binary."
 .endif
 
-all: _index.adoc
+all: build test
+
+build: _index.adoc
 
 # Use ! instead of : because the content of _index.adoc is independent from the
 # content of the .adoc files, but we still want to check for their existence
@@ -59,6 +74,25 @@ _index.adoc!	intro.adoc \
 		"${Ports}" \
 		"${ThirdParty}" \
 		"${Miscellaneous}" > $@
+
+test: _index.adoc
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Verify if all reports have been included:"
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@for report in *.adoc; \
+	do \
+		if test "$${report}" != "$>"; \
+		then \
+			${ECHO_CMD} -n "$${report}..."; \
+			if test -n \
+			"$$(grep "include::{reports-path}/$${report}\[\]" $>)"; \
+			then \
+				${ECHO_CMD} "found."; \
+			else \
+				${ECHO_CMD} "${ERROR_STRING} not found."; \
+			fi; \
+		fi; \
+	done
 
 clean:
 	rm -f _index.adoc
