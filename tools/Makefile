@@ -37,6 +37,8 @@ RUBY_FLAGS?=	-I ${TOOLS_DIR}
 
 TOOLS_DIR=	../tools
 
+TITLE_LEVEL=	===
+
 .if empty(ECHO_CMD:S/^/which /:sh)
 .	error "Please set ECHO_CMD to a valid ruby binary."
 .endif
@@ -75,7 +77,10 @@ _index.adoc!	intro.adoc \
 		"${ThirdParty}" \
 		"${Miscellaneous}" > $@
 
-test: _index.adoc
+test:	check_all_reports \
+	check_titles
+
+check_all_reports: _index.adoc
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Verify if all reports have been included:"
 	@${ECHO_CMD} ${SEPARATOR_STRING}
@@ -90,6 +95,26 @@ test: _index.adoc
 				${ECHO_CMD} "found."; \
 			else \
 				${ECHO_CMD} "${ERROR_STRING} not found."; \
+			fi; \
+		fi; \
+	done
+
+check_titles:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Verify if section levels for all reports are set properly:"
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@for report in *.adoc; \
+	do \
+		if	test "$${report}" != "_index.adoc" && \
+			test "$${report}" != "intro.adoc" ; \
+		then \
+			${ECHO_CMD} -n "$${report}..."; \
+			if test -n \
+			"$$(grep = $${report} | head -n 1 | grep "^${TITLE_LEVEL} ")"; \
+			then \
+				${ECHO_CMD} "looks fine."; \
+			else \
+				${ECHO_CMD} "${ERROR_STRING} expected section level: ${TITLE_LEVEL}."; \
 			fi; \
 		fi; \
 	done
