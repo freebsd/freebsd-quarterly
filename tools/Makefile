@@ -25,12 +25,16 @@
 # Makefile targets:
 # all		make build test
 # build		make _index.adoc
-# test		run many checks on _index.adoc
+# test		run many checks on _index.adoc and reports
+# autofix	fix all errors reported by test that can be fixed automatically
 
 SEPARATOR_STRING?=	==========================================
 ERROR_STRING?=		[ERROR]
 
 ECHO_CMD?=	echo
+
+SED_CMD?=	sed
+SED_FLAGS?=	-E
 
 RUBY_CMD?=	ruby
 RUBY_FLAGS?=	-I ${TOOLS_DIR}
@@ -80,6 +84,8 @@ _index.adoc!	intro.adoc \
 test:	check_all_reports \
 	check_titles
 
+autofix:	fix_titles
+
 check_all_reports: _index.adoc
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Verify if all reports have been included:"
@@ -118,6 +124,31 @@ check_titles:
 			fi; \
 		fi; \
 	done
+
+fix_titles:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} -n "Fixing section levels..."
+
+	# About SED_CMD:
+	# The first line fixes the title and exits if the title is in the first line.
+	# The second line fixes the title if it is not in the first line.
+	# Two different cases must be treated because 1,/^=+/ would change the level
+	# for two occurrences of /^=+/ if the title is at line 1 (assuming that two
+	# occurrences exist in the report).
+
+	@for report in *.adoc; \
+	do \
+		if	test "$${report}" != "_index.adoc" && \
+			test "$${report}" != "intro.adoc" ; \
+		then \
+			${SED_CMD} ${SED_FLAGS} -i '' \
+						-e "1s/^=+/${TITLE_LEVEL}/;t" \
+						-e "1,/^=+/s/^=+/${TITLE_LEVEL}/" $$report; \
+		fi; \
+	done
+
+	@${ECHO_CMD} "done."
+	@${ECHO_CMD} ${SEPARATOR_STRING}
 
 clean:
 	rm -f _index.adoc
