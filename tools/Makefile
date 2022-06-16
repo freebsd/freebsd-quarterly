@@ -40,6 +40,7 @@ ALL_REPORTS=	${TeamReports} \
 
 SEPARATOR_STRING?=	==========================================
 ERROR_STRING?=		[ERROR]
+WARNING_STRING?=	[WARNING]
 
 TOOLS_DIR=	../tools
 
@@ -77,6 +78,7 @@ _index.adoc!	intro.adoc \
 		"${Miscellaneous}" > $@
 
 test:	check_all_reports \
+	check_pluses \
 	check_titles
 
 autofix:	fix_titles
@@ -95,6 +97,28 @@ check_all_reports: _index.adoc
 		else \
 			${ECHO_CMD} "${ERROR_STRING} not found."; \
 		fi; \
+	done
+
+check_pluses:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Search for pluses:"
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	for report in ${ALL_REPORTS} intro.adoc; \
+	do \
+		${ECHO_CMD} -n "$${report}..."; \
+		lines="$$(\
+		${GREP_CMD} '+' $${report} | \
+		${GREP_CMD} -v ' +$$' | \
+		${GREP_CMD} -v '^+$$' | \
+		${GREP_CMD} -v 'link:[^ ]*\[' || \
+		${TRUE_CMD})"; \
+		if test -n "$$lines"; \
+		then \
+			${ECHO_CMD} "${WARNING_STRING} please check the following lines:"; \
+			${ECHO_CMD} $$lines; \
+		else \
+			${ECHO_CMD} "looks fine."; \
+		fi \
 	done
 
 check_titles:

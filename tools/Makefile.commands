@@ -32,6 +32,8 @@ LS_CMD?=	ls
 
 TEST_CMD?=	test
 
+TRUE_CMD?=	true
+
 SED_CMD?=	sed
 SED_FLAGS?=	-E
 
@@ -43,6 +45,7 @@ ALL_COMMANDS?=	ECHO_CMD \
 		HEAD_CMD \
 		LS_CMD \
 		TEST_CMD \
+		TRUE_CMD \
 		SED_CMD \
 		RUBY_CMD
 
