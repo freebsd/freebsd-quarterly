@@ -31,24 +31,9 @@
 SEPARATOR_STRING?=	==========================================
 ERROR_STRING?=		[ERROR]
 
-ECHO_CMD?=	echo
-
-SED_CMD?=	sed
-SED_FLAGS?=	-E
-
-RUBY_CMD?=	ruby
-RUBY_FLAGS?=	-I ${TOOLS_DIR}
-
 TOOLS_DIR=	../tools
 
 TITLE_LEVEL=	===
-
-.if empty(ECHO_CMD:S/^/which /:sh)
-.	error "Please set ECHO_CMD to a valid ruby binary."
-.endif
-.if empty(RUBY_CMD:S/^/which /:sh)
-.	error "Please set RUBY_CMD to a valid ruby binary."
-.endif
 
 all: build test
 
@@ -92,10 +77,10 @@ check_all_reports: _index.adoc
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@for report in *.adoc; \
 	do \
-		if test "$${report}" != "$>"; \
+		if ${TEST_CMD} "$${report}" != "$>"; \
 		then \
 			${ECHO_CMD} -n "$${report}..."; \
-			if test -n \
+			if ${TEST_CMD} -n \
 			"$$(grep "include::{reports-path}/$${report}\[\]" $>)"; \
 			then \
 				${ECHO_CMD} "found."; \
@@ -111,12 +96,12 @@ check_titles:
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@for report in *.adoc; \
 	do \
-		if	test "$${report}" != "_index.adoc" && \
-			test "$${report}" != "intro.adoc" ; \
+		if	${TEST_CMD} "$${report}" != "_index.adoc" && \
+			${TEST_CMD} "$${report}" != "intro.adoc" ; \
 		then \
 			${ECHO_CMD} -n "$${report}..."; \
-			if test -n \
-			"$$(grep = $${report} | head -n 1 | grep "^${TITLE_LEVEL} ")"; \
+			if ${TEST_CMD} -n \
+			"$$(${GREP_CMD} = $${report} | ${HEAD_CMD} -n 1 | ${GREP_CMD} "^${TITLE_LEVEL} ")"; \
 			then \
 				${ECHO_CMD} "looks fine."; \
 			else \
@@ -138,8 +123,8 @@ fix_titles:
 
 	@for report in *.adoc; \
 	do \
-		if	test "$${report}" != "_index.adoc" && \
-			test "$${report}" != "intro.adoc" ; \
+		if	${TEST_CMD} "$${report}" != "_index.adoc" && \
+			${TEST_CMD} "$${report}" != "intro.adoc" ; \
 		then \
 			${SED_CMD} ${SED_FLAGS} -i '' \
 						-e "1s/^=+/${TITLE_LEVEL}/;t" \
@@ -152,3 +137,5 @@ fix_titles:
 
 clean:
 	rm -f _index.adoc
+
+.include "Makefile.commands"
