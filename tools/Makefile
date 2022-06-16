@@ -28,6 +28,16 @@
 # test		run many checks on _index.adoc and reports
 # autofix	fix all errors reported by test that can be fixed automatically
 
+ALL_REPORTS=	${TeamReports} \
+		${Projects} \
+		${Userland} \
+		${Kernel} \
+		${Architectures} \
+		${Documentation} \
+		${Ports} \
+		${ThirdParty} \
+		${Miscellaneous} \
+
 SEPARATOR_STRING?=	==========================================
 ERROR_STRING?=		[ERROR]
 
@@ -75,18 +85,15 @@ check_all_reports: _index.adoc
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Verify if all reports have been included:"
 	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@for report in *.adoc; \
+	@for report in $$(${LS_CMD} *.adoc | ${SED_CMD} "s/$>//"); \
 	do \
-		if ${TEST_CMD} "$${report}" != "$>"; \
+		${ECHO_CMD} -n "$${report}..."; \
+		if ${TEST_CMD} -n \
+		"$$(grep "include::{reports-path}/$${report}\[\]" $>)"; \
 		then \
-			${ECHO_CMD} -n "$${report}..."; \
-			if ${TEST_CMD} -n \
-			"$$(grep "include::{reports-path}/$${report}\[\]" $>)"; \
-			then \
-				${ECHO_CMD} "found."; \
-			else \
-				${ECHO_CMD} "${ERROR_STRING} not found."; \
-			fi; \
+			${ECHO_CMD} "found."; \
+		else \
+			${ECHO_CMD} "${ERROR_STRING} not found."; \
 		fi; \
 	done
 
@@ -94,19 +101,15 @@ check_titles:
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Verify if section levels for all reports are set properly:"
 	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@for report in *.adoc; \
+	@for report in ${ALL_REPORTS}; \
 	do \
-		if	${TEST_CMD} "$${report}" != "_index.adoc" && \
-			${TEST_CMD} "$${report}" != "intro.adoc" ; \
+		${ECHO_CMD} -n "$${report}..."; \
+		if ${TEST_CMD} -n \
+		"$$(${GREP_CMD} = $${report} | ${HEAD_CMD} -n 1 | ${GREP_CMD} "^${TITLE_LEVEL} ")"; \
 		then \
-			${ECHO_CMD} -n "$${report}..."; \
-			if ${TEST_CMD} -n \
-			"$$(${GREP_CMD} = $${report} | ${HEAD_CMD} -n 1 | ${GREP_CMD} "^${TITLE_LEVEL} ")"; \
-			then \
-				${ECHO_CMD} "looks fine."; \
-			else \
-				${ECHO_CMD} "${ERROR_STRING} expected section level: ${TITLE_LEVEL}."; \
-			fi; \
+			${ECHO_CMD} "looks fine."; \
+		else \
+			${ECHO_CMD} "${ERROR_STRING} expected section level: ${TITLE_LEVEL}."; \
 		fi; \
 	done
 
@@ -121,15 +124,11 @@ fix_titles:
 	# for two occurrences of /^=+/ if the title is at line 1 (assuming that two
 	# occurrences exist in the report).
 
-	@for report in *.adoc; \
+	@for report in ${ALL_REPORTS} ; \
 	do \
-		if	${TEST_CMD} "$${report}" != "_index.adoc" && \
-			${TEST_CMD} "$${report}" != "intro.adoc" ; \
-		then \
-			${SED_CMD} ${SED_FLAGS} -i '' \
-						-e "1s/^=+/${TITLE_LEVEL}/;t" \
-						-e "1,/^=+/s/^=+/${TITLE_LEVEL}/" $$report; \
-		fi; \
+		${SED_CMD} ${SED_FLAGS} -i '' \
+					-e "1s/^=+/${TITLE_LEVEL}/;t" \
+					-e "1,/^=+/s/^=+/${TITLE_LEVEL}/" $$report; \
 	done
 
 	@${ECHO_CMD} "done."

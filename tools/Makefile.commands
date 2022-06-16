@@ -28,6 +28,8 @@ GREP_CMD?=	grep
 
 HEAD_CMD?=	head
 
+LS_CMD?=	ls
+
 TEST_CMD?=	test
 
 SED_CMD?=	sed
@@ -39,6 +41,7 @@ RUBY_FLAGS?=	-I ${TOOLS_DIR}
 ALL_COMMANDS?=	ECHO_CMD \
 		GREP_CMD \
 		HEAD_CMD \
+		LS_CMD \
 		TEST_CMD \
 		SED_CMD \
 		RUBY_CMD
