@@ -1,0 +1,60 @@
+# Copyright (c) 2022 Lorenzo Salvadore <salvadore@FreeBSD.org>
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+# OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+# HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+# OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+# SUCH DAMAGE.
+
+check_titles:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Verify if section levels for all reports are set properly:"
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@for report in ${ALL_REPORTS}; \
+	do \
+		${ECHO_CMD} -n "$${report}..."; \
+		if ${TEST_CMD} -n \
+		"$$(${GREP_CMD} = $${report} | ${HEAD_CMD} -n 1 | ${GREP_CMD} "^${TITLE_LEVEL} ")"; \
+		then \
+			${ECHO_CMD} "looks fine."; \
+		else \
+			${ECHO_CMD} "${ERROR_STRING} expected section level: ${TITLE_LEVEL}."; \
+		fi; \
+	done
+
+fix_titles:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} -n "Fixing section levels..."
+
+	# About SED_CMD:
+	# The first line fixes the title and exits if the title is in the first line.
+	# The second line fixes the title if it is not in the first line.
+	# Two different cases must be treated because 1,/^=+/ would change the level
+	# for two occurrences of /^=+/ if the title is at line 1 (assuming that two
+	# occurrences exist in the report).
+
+	@for report in ${ALL_REPORTS} ; \
+	do \
+		${SED_CMD} ${SED_FLAGS} -i '' \
+					-e "1s/^=+/${TITLE_LEVEL}/;t" \
+					-e "1,/^=+/s/^=+/${TITLE_LEVEL}/" $$report; \
+	done
+
+	@${ECHO_CMD} "done."
+	@${ECHO_CMD} ${SEPARATOR_STRING}

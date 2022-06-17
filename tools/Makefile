@@ -77,88 +77,16 @@ _index.adoc!	intro.adoc \
 		"${ThirdParty}" \
 		"${Miscellaneous}" > $@
 
-test:	check_all_reports \
+test:	check_all-reports \
 	check_pluses \
 	check_titles
 
 autofix:	fix_titles
 
-check_all_reports: _index.adoc
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@${ECHO_CMD} "Verify if all reports have been included:"
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@for report in $$(${LS_CMD} *.adoc | ${SED_CMD} "s/$>//"); \
-	do \
-		${ECHO_CMD} -n "$${report}..."; \
-		if ${TEST_CMD} -n \
-		"$$(grep "include::{reports-path}/$${report}\[\]" $>)"; \
-		then \
-			${ECHO_CMD} "found."; \
-		else \
-			${ECHO_CMD} "${ERROR_STRING} not found."; \
-		fi; \
-	done
-
-check_pluses:
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@${ECHO_CMD} "Search for pluses:"
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	for report in ${ALL_REPORTS} intro.adoc; \
-	do \
-		${ECHO_CMD} -n "$${report}..."; \
-		lines="$$(\
-		${GREP_CMD} '+' $${report} | \
-		${GREP_CMD} -v ' +$$' | \
-		${GREP_CMD} -v '^+$$' | \
-		${GREP_CMD} -v 'link:[^ ]*\[' || \
-		${TRUE_CMD})"; \
-		if test -n "$$lines"; \
-		then \
-			${ECHO_CMD} "${WARNING_STRING} please check the following lines:"; \
-			${ECHO_CMD} $$lines; \
-		else \
-			${ECHO_CMD} "looks fine."; \
-		fi \
-	done
-
-check_titles:
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@${ECHO_CMD} "Verify if section levels for all reports are set properly:"
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@for report in ${ALL_REPORTS}; \
-	do \
-		${ECHO_CMD} -n "$${report}..."; \
-		if ${TEST_CMD} -n \
-		"$$(${GREP_CMD} = $${report} | ${HEAD_CMD} -n 1 | ${GREP_CMD} "^${TITLE_LEVEL} ")"; \
-		then \
-			${ECHO_CMD} "looks fine."; \
-		else \
-			${ECHO_CMD} "${ERROR_STRING} expected section level: ${TITLE_LEVEL}."; \
-		fi; \
-	done
-
-fix_titles:
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-	@${ECHO_CMD} -n "Fixing section levels..."
-
-	# About SED_CMD:
-	# The first line fixes the title and exits if the title is in the first line.
-	# The second line fixes the title if it is not in the first line.
-	# Two different cases must be treated because 1,/^=+/ would change the level
-	# for two occurrences of /^=+/ if the title is at line 1 (assuming that two
-	# occurrences exist in the report).
-
-	@for report in ${ALL_REPORTS} ; \
-	do \
-		${SED_CMD} ${SED_FLAGS} -i '' \
-					-e "1s/^=+/${TITLE_LEVEL}/;t" \
-					-e "1,/^=+/s/^=+/${TITLE_LEVEL}/" $$report; \
-	done
-
-	@${ECHO_CMD} "done."
-	@${ECHO_CMD} ${SEPARATOR_STRING}
-
 clean:
 	rm -f _index.adoc
 
 .include "Makefile.commands"
+.include "tests/Makefile.all-reports"
+.include "tests/Makefile.pluses"
+.include "tests/Makefile.titles"
