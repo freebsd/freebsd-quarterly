@@ -28,9 +28,9 @@ check_pluses:
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@for report in ${ALL_REPORTS} intro.adoc; \
 	do \
-		${ECHO_CMD} -n "$${report}..."; \
+		${ECHO_CMD} -n "$$report..."; \
 		lines="$$(\
-		${GREP_CMD} '+' $${report} | \
+		${GREP_CMD} '+' $$report | \
 		${GREP_CMD} -v ' +$$' | \
 		${GREP_CMD} -v '^+$$' | \
 		${GREP_CMD} -v 'link:[^ ]*\[' || \
@@ -38,7 +38,7 @@ check_pluses:
 		if test -n "$$lines"; \
 		then \
 			${ECHO_CMD} "${WARNING_STRING} please check the following lines:"; \
-			${ECHO_CMD} $$lines; \
+			${ECHO_CMD} "$$lines"; \
 		else \
 			${ECHO_CMD} "looks fine."; \
 		fi \
