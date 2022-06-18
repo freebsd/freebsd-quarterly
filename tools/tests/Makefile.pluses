@@ -30,11 +30,9 @@ check_pluses:
 	do \
 		${ECHO_CMD} -n "$$report..."; \
 		lines="$$(\
-		${GREP_CMD} '+' $$report | \
-		${GREP_CMD} -v ' +$$' | \
-		${GREP_CMD} -v '^+$$' | \
-		${GREP_CMD} -v 'link:[^ ]*\[' || \
-		${TRUE_CMD})"; \
+			${GREP_CMD} -E '\+[^$$]|[^ ]\+$$' $$report | \
+			${GREP_CMD} -v 'link:[^ ]*\[' || \
+			${TRUE_CMD})"; \
 		if test -n "$$lines"; \
 		then \
 			${ECHO_CMD} "${WARNING_STRING} please check the following lines:"; \
