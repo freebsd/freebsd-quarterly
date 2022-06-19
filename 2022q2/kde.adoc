@@ -1,0 +1,23 @@
+=== KDE on FreeBSD
+
+Links: +
+link:https://freebsd.kde.org/[KDE FreeBSD] URL: link:https://freebsd.kde.org/[https://freebsd.kde.org/] +
+link:https://community.kde.org/FreeBSD[KDE Community FreeBSD] URL: link:https://community.kde.org/FreeBSD[https://community.kde.org/FreeBSD]
+
+Contact: Adriaan de Groot <kde@FreeBSD.org>
+
+The KDE on FreeBSD project packages the software from the KDE Community, along with dependencies and related software, for the FreeBSD ports tree.
+The software includes a full desktop environment called KDE Plasma (for both X11 and Wayland) and hundreds of applications that can be used on any FreeBSD machine.
+
+The KDE team (kde@) is part of desktop@ and x11@ as well, building the software stack to make FreeBSD beautiful and usable as a daily-driver graphics-based desktop machine.
+
+==== KDE Stack
+
+* *graphics/krita* was updated to 5.0.5, likely the last 5.0 version.
+* *net-im/ruqola* was updated. This is a Qt-styled Rocket chat application.
+
+==== Related Applications
+
+
+=== Elsewhere
+
