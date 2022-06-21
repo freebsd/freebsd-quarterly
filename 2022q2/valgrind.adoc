@@ -6,7 +6,6 @@ link:https://www.valgrind.org/[https://www.valgrind.org/] +
 link:https://www.valgrind.org/docs/manual/dist.news.html[Valgrind News]
 URL:
 link:https://www.valgrind.org/docs/manual/dist.news.html[https://www.valgrind.org/docs/manual/dist.news.html]
-+
 
 Contact: Paul Floyd <pjfloyd@wanadoo.fr>
 
@@ -44,7 +43,7 @@ For FreeBSD 13.1 / 14.0 there are
 * added some default suppressions for DRD and Helgrind
 
 There is now an initial version of vgdb invoker support - this allows
-vgdb to use ptrace to force valgrind to valgrind poll for gdb commands.
+vgdb to use ptrace to force valgrind to poll for gdb commands.
 This is not yet available in the ports versions.
 
 That does not leave much in the way of outstanding issues. I expect that
@@ -54,4 +53,4 @@ from that there is
 * some small problems with error messages getting the correct source
 information
 * better core dumps (low priority)
-* TLS handling for Helgrind (difficult if not impossible)
+* TLS (thread local storage) handling for Helgrind (difficult if not impossible)
