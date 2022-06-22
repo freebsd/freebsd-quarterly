@@ -29,7 +29,7 @@ check_pluses:
 	@for report in ${ALL_REPORTS} intro.adoc; \
 	do \
 		${ECHO_CMD} -n "$$report..."; \
-		lines="$$(\
+		lines="$$( \
 			${GREP_CMD} -E '\+[^$$]|[^ ]\+$$' $$report | \
 			${GREP_CMD} -v 'link:[^ ]*\[' || \
 			${TRUE_CMD})"; \
@@ -41,3 +41,43 @@ check_pluses:
 			${ECHO_CMD} "looks fine."; \
 		fi \
 	done
+
+fix_pluses:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Warning: This fix assumes no more than two consecutives + signs are found."
+	@${ECHO_CMD} "If you have lines with more than two consecutive + signs, you need to fix them manually."
+	@${ECHO_CMD} -n "Fixing pluses..."
+	@for report in ${ALL_REPORTS} intro.adoc; \
+	do \
+		lines="$$( \
+			${GREP_CMD} -E '\+[^$$]|[^ ]\+$$' $$report | \
+			${GREP_CMD} -v 'link:[^ ]*\[' || \
+			${TRUE_CMD})"; \
+		lines="$$( \
+			${ECHO_CMD} "$$lines" | ${TR_CMD} ' \n' 'э ')"; \
+		for line in $$lines; \
+		do \
+			line="$$( \
+				${ECHO_CMD} "$$line" | \
+				${TR_CMD} 'э ' ' \n' | \
+				${SED_CMD} 's,/,\\/,g')"; \
+			line_regexp="$$( \
+				${ECHO_CMD} "$$line" | \
+				${SED_CMD} 's,[+*],\\&,g')"; \
+			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\+\([^$$+]\),\1{plus}{plus}\2,g" $$report; \
+			line="$$(${ECHO_CMD} "$$line" | \
+				${SED_CMD} 's,\([^+]\)\+\+\([^$$+]\),\1{plus}{plus}\2,g')"; \
+			line_regexp="$$( \
+				${ECHO_CMD} "$$line" | \
+				${SED_CMD} 's,[+*],\\&,g')"; \
+			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\([^$$+]\),\1{plus}\2,g" $$report; \
+			line="$$(${ECHO_CMD} "$$line" | \
+				${SED_CMD} 's,\([^+]\)\+\([^$$+]\),\1{plus}\2,g')"; \
+			line_regexp="$$( \
+				${ECHO_CMD} "$$line" | \
+				${SED_CMD} 's,[+*],\\&,g')"; \
+			${SED_CMD} -i '' "/$$line_regexp/s,\([^ ]\)\+$$,\1{plus},g" $$report; \
+		done \
+	done
+	@${ECHO_CMD} "done."
+	@${ECHO_CMD} ${SEPARATOR_STRING}

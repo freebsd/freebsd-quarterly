@@ -32,6 +32,8 @@ LS_CMD?=	ls
 
 TEST_CMD?=	test
 
+TR_CMD?=	tr
+
 TRUE_CMD?=	true
 
 SED_CMD?=	sed
