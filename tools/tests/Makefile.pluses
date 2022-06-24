@@ -31,7 +31,7 @@ check_pluses:
 		${ECHO_CMD} -n "$$report..."; \
 		lines="$$( \
 			${GREP_CMD} -E '\+[^$$]|[^ ]\+$$' $$report | \
-			${GREP_CMD} -v 'link:[^ ]*\[' || \
+			${GREP_CMD} -v '^[^+]*link:[^ ]*\[[^+]*$$' || \
 			${TRUE_CMD})"; \
 		if test -n "$$lines"; \
 		then \
@@ -46,6 +46,7 @@ fix_pluses:
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Warning: This fix assumes no more than two consecutives + signs are found."
 	@${ECHO_CMD} "If you have lines with more than two consecutive + signs, you need to fix them manually."
+	@${ECHO_CMD} "You also need to fix manually lines that have + signs both in links and outside links."
 	@${ECHO_CMD} -n "Fixing pluses..."
 	@for report in ${ALL_REPORTS} intro.adoc; \
 	do \
@@ -59,24 +60,21 @@ fix_pluses:
 		do \
 			line="$$( \
 				${ECHO_CMD} "$$line" | \
-				${TR_CMD} 'э ' ' \n' | \
-				${SED_CMD} 's,/,\\/,g')"; \
+				${TR_CMD} 'э ' ' \n')"; \
 			line_regexp="$$( \
 				${ECHO_CMD} "$$line" | \
-				${SED_CMD} 's,[+*],\\&,g')"; \
-			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\+\([^$$+]\),\1{plus}{plus}\2,g" $$report; \
+				${SED_CMD} -E 's,[.$$|[*+?\^/],\\&,g')"; \
+			echo "$$line"; \
+			echo "$$line_regexp"; \
+			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\+\([^+]\),\1{plus}{plus}\2,g" $$report; \
 			line="$$(${ECHO_CMD} "$$line" | \
-				${SED_CMD} 's,\([^+]\)\+\+\([^$$+]\),\1{plus}{plus}\2,g')"; \
+				${SED_CMD} 's,\([^+]\)\+\+\([^+]\),\1{plus}{plus}\2,g')"; \
 			line_regexp="$$( \
 				${ECHO_CMD} "$$line" | \
-				${SED_CMD} 's,[+*],\\&,g')"; \
-			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\([^$$+]\),\1{plus}\2,g" $$report; \
-			line="$$(${ECHO_CMD} "$$line" | \
-				${SED_CMD} 's,\([^+]\)\+\([^$$+]\),\1{plus}\2,g')"; \
-			line_regexp="$$( \
-				${ECHO_CMD} "$$line" | \
-				${SED_CMD} 's,[+*],\\&,g')"; \
-			${SED_CMD} -i '' "/$$line_regexp/s,\([^ ]\)\+$$,\1{plus},g" $$report; \
+				${SED_CMD} -E 's,[.$$|[*+?\^/],\\&,g')"; \
+			echo "$$line"; \
+			echo "$$line_regexp"; \
+			${SED_CMD} -i '' "/$$line_regexp/s,\([^+]\)\+\([^+]\),\1{plus}\2,g" $$report; \
 		done \
 	done
 	@${ECHO_CMD} "done."
