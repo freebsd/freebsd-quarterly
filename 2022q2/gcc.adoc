@@ -1,0 +1,22 @@
+=== GCC: updating GCC_DEFAULT and tasks needing help
+
+Links: +
+link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org[https://gcc.gnu.org] +
+link:https://gcc.gnu.org/gcc-11/[GCC 11 release series] URL: link:https://gcc.gnu.org/gcc-11/[https://gcc.gnu.org/gcc-11/]
+
+Contact: <toolchain@FreeBSD.org> +
+Contact: Gerald Pfeifer <gerald@pfeifer.com> +
+Contact: Lorenzo Salvadore <salvadore@FreeBSD.org>
+
+ * salvadore@ worked on the upgrade of GCC_DEFAULT in Mk/bsd.default-versions.mk from 10 to 11, opening bug reports based on antoine@'s exp-runs and fixing some: many thanks to all those that helped with this task. The GCC_DEFAULT update from GCC 10 to GCC 11 has now happened in time for the next quarterly branch.
+   link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378]
+
+ * pkubaj@ switched GCC bootstrap to use Link Time Optimization for GCC itself for GCC 11 and newer.
+
+ * pkubaj@ also added lang/gcc12 and lang/gcc13-devel ports and updated lang/gcc9 to 9.5.
+
+ * Helps is still needed with these three changes to work through with upstream GCC (requires src expertise, not ports):
+
+     ** upstreaming lang/gcc11/patch-gets-no-more
+     ** upstreaming lang/gcc11/patch-arm-unwind-cxx-support
+     ** link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256874[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256874]
