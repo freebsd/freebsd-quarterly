@@ -3,9 +3,9 @@
 Contact: Eliot H. Solomon <ehs3@rice.edu> +
 Contact: Alan L. Cox <alc@rice.edu> +
 
-Recent iterations of the 64-bit ARM architecture's virtual memory subsystem include support for the Contiguous bit, which tells the hardware to cache using only one TLB entry an aligned, physically contiguous group of sixteen page table entries which have identical permissions and attributes. 
+The 64-bit ARM architecture's page table descriptor format contains a flag called the Contiguous bit. This tells the hardware to cache an aligned, physically contiguous group of 16 page table entries which have identical permissions and attributes using only 1 TLB entry if possible. 
 
-This feature, as well as the conceptually similar Svnapot extension to the RISC-V architecture, allows for the use of 64 KiB superpages. These medium-sizes superpages can bring to smaller memory objects the address-translation speedup typically associated with more traditional 2 MiB superpages.
+The Contiguous bit, as well as the conceptually similar Svnapot extension to the RISC-V architecture, allows for the use of 64 KiB superpages. These medium-sizes superpages can bring to smaller memory objects the address-translation speedup typically associated with more traditional 2 MiB superpages.
 
 This project focuses on bringing support for medium-sized superpages to FreeBSD. So far, we have modified the arm64 pmap code to automatically utilize 64 KiB superpages by detecting physically contiguous page table entries and promoting them using the Contiguous bit. Now, we are working to adapt the kernel's superpage reservation module to support 64 KiB reservations in addition to the current 2 MiB ones. Adding medium-sized reservations will allow the virtual memory system to explicitly allocate pieces of memory which fit the requirements for superpage promotion, rather than just hoping that they occur by chance.
 
