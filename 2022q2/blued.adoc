@@ -1,0 +1,107 @@
+=== blued
+
+Links: +
+link: https://git.lysator.liu.se/kempe/blued[blued git] URL: https://git.lysator.liu.se/kempe/blued[https://git.lysator.liu.se/kempe/blued]
+
+Contact: +
+Mail: kempe@lysator.liu.se +
+IRC: kempe@libera.chat
+
+==== Introduction
+
+The aim of blued is to provide a bluetooth daemon with an IPC
+interface that allows for a user friendly way for an unprivileged user
+to connect and use bluetooth devices.
+
+Work began after having issues with my bluetooth mouse and figuring
+out that the problem was a lack of support for secure simple pairing.
+This then sent me down the rabbit hole of working on my own bluetooth
+daemon.
+
+==== blued - what is it?
+
+blued consists of three parts: a library, a daemon and a command line
+utility. The library abstracts away bluetooth details, the daemon
+manages bluetooth devices and the command line utility communicates
+with the daemon via a UNIX socket.
+
+The difference between blued and the existing bluetooth software, i.e.
+bthidd and hcsecd, is first and foremost supporting secure simple
+pairing, but also providing an IPC. A long term goal is to provide a
+graphical user interface that can list devices and provide a simple
+one-click setup to connect them.
+
+With the current version of blued, it supports scanning for devices
+and pairing with them. To get a HID device to work, bthidd is still
+needed. A script is provided to pair a bluetooth device and
+appropriately configure bthidd.
+
+If the supplied script works as expected, your mouse will get
+connected, paired and simply start working. If the mouse is turned off
+and on again, the blued daemon should let it reconnect without user
+intervention.
+
+Once pairing has proven stable and bugs have been ironed out, the plan
+is for work to start an integrating bthidd with/into blued in some way
+to have HID devices automatically start functioning when paired
+without the use of an external script.
+
+
+==== What is needed to use blued v0.1?
+
+First you need to make sure you have working bluetooth drivers loaded.
+Reading the bluetooth chapter of the FreeBSD handbook is recommended
+for this [0].
+
+To test blued, you will need to compile the release found at the link
+below [1], and you will also have to patch your FreeBSD kernel with
+the patches in the kernel_patches directory of the release. The kernel
+patches are pretty small and you will only need to recompile the hci
+module. Instruction on how to build blued and apply the patches are
+provided in the README file.
+
+blued has primarily been tested on FreeBSD 12.3, but my patches
+applied cleanly on 13.1 when I tested.
+
+I am not supplying a port at the moment, but it is possible to run the
+software straight from the build directory as well as running "make
+install" that will install all needed files. The daemon binary is
+called blued, while the command line utility is called bluecontrol.
+Man pages for blued and bluecontrol are available and are also
+installed by "make install".
+
+An example configuration file for blued is installed in
+/usr/local/share/examples/blued/blued.conf.example and can be copied
+to /usr/local/etc/blued.conf, which is the default path blued checks
+for its configuration. The configuration must be present for blued to
+start correctly.
+
+blued outputs diagnostic data to syslog and on a default FreeBSD
+system, it can be found in /var/log/{debug.log,messages}.
+
+To start blued in the background after installing it, execute "blued
+&" as root. blued and bluecontrol both use capsicum and blued can be
+configured to drop its root privileges.
+
+==== Feedback!
+
+I have only tried this software with my own mouse and realise that a
+sample size of one single bluetooth device is pretty small. I'm
+expecting issues and am greatly looking forward to feedback from
+others!
+
+In case of trouble, output from /var/log/debug.log and
+/var/log/messages as well as a traffic dump from "hcidump -x" while
+trying to pair will help with troubleshooting.
+
+If you want to get involved with the code and submit patches, you're
+welcome to do so and can find the code on Lysator's Git [2]!
+
+Thank you for reading! +
+Cordially,
+Andreas Kempe
+
+[0]: https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth[freebsd-handbook - bluetooth] URL: https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth[https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth] +
+[1]: https://git.lysator.liu.se/kempe/blued/-/releases/v0.1[blued v0.1] URL:https://git.lysator.liu.se/kempe/blued/-/releases/v0.1[https://git.lysator.liu.se/kempe/blued/-/releases/v0.1] +
+[2]: https://git.lysator.liu.se/kempe/blued[blued git] URL: https://git.lysator.liu.se/kempe/blued[https://git.lysator.liu.se/kempe/blued] +
+
