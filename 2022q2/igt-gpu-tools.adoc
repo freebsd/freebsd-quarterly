@@ -1,4 +1,4 @@
-Engineer a Feature Complete Port of Intel's igt-gpu-tools for FreeBSD
+=== Feature Complete Port of Intel's igt-gpu-tools
 
 Links: +
 link:https://wiki.freebsd.org/SummerOfCode2022Projects/ImprovingTheLinuxKPICompatibilityLayerForTheFreeBSDGraphicsStack/[FreeBSD Wiki Project Page] URL:
