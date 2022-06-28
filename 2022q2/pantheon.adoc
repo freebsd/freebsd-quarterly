@@ -6,9 +6,9 @@ link:https://codeberg.org/olivierd/freebsd-ports-elementary[Development reposito
 
 Contact: Olivier Duchateau <duchateau.olivier@gmail.com>
 
-The Pantheon desktop environment is designed for elementary OS. It builds on GNOME technologies (such Mutter, GNOME Shell, GTK 3 and 4) and it is written with Vala language.
+The Pantheon desktop environment is designed for elementary OS. It builds on GNOME technologies (such as Mutter, GNOME Shell, GTK 3 and 4) and it is written in Vala.
 
-The goal is to have new desktop for users. Some features are not well supported, but we can have full session.
+The goal is to have a new desktop for users. Some features are not well supported, but we can have full session.
 
 The repository contains Mk/Uses framework `elementary.mk`, official applications, and curated ports which depend of `x11-toolkits/granite` (total of 56 new ports).
 
@@ -20,5 +20,5 @@ I have submitted several patches, especially:
 
 ==== Open tasks
 
-* Add support of user settings (it is heavily targetted for Ubuntu)
-* Finish to port wingpanel-indicator-power (power management)
+* Add support of user settings (it is very Ubuntu-centric)
+* Finish porting wingpanel-indicator-power (power management)
