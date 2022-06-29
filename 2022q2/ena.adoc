@@ -12,8 +12,8 @@ The ENA driver supports multiple transmit and receive queues and can handle up t
 
 Completed since the last update:
 
-* Upstream of the ENA driver v2.5.0, which was including:
-  * Improvement for the reset routine handling,
+* Upstream of the ENA driver v2.5.0, which included:
+  * Improvement to the reset routine handling,
   * Extension of the timer service lifetime in order to be able to detect more
     hardware failures,
   * Fix logic for verifying the Tx request ID,
@@ -23,7 +23,7 @@ Completed since the last update:
   * Further reset handling improvements,
   * Code cleanup and style fixes,
   * Logging improvements,
-  * Fix for the retrieval of the ENI metrics.
+  * Fix to the retrieval of the ENI metrics.
 
 Work in progress:
 
