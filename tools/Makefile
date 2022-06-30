@@ -78,15 +78,18 @@ _index.adoc!	intro.adoc \
 		"${Miscellaneous}" > $@
 
 test:	check_all-reports \
+	check_one-sentence-per-line \
 	check_pluses \
 	check_titles
 
-autofix:	fix_titles
+autofix:	fix_pluses \
+		fix_titles
 
 clean:
 	rm -f _index.adoc
 
 .include "Makefile.commands"
 .include "tests/Makefile.all-reports"
+.include "tests/Makefile.one-sentence-per-line"
 .include "tests/Makefile.pluses"
 .include "tests/Makefile.titles"

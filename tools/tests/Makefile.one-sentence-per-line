@@ -22,37 +22,26 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-ECHO_CMD?=	echo
-
-GREP_CMD?=	grep
-
-HEAD_CMD?=	head
-
-LS_CMD?=	ls
-
-TEST_CMD?=	test
-
-TR_CMD?=	tr
-
-TRUE_CMD?=	true
-
-SED_CMD?=	sed
-SED_FLAGS?=	-E
-
-RUBY_CMD?=	ruby
-RUBY_FLAGS?=	-I ${TOOLS_DIR}
-
-ALL_COMMANDS?=	ECHO_CMD \
-		GREP_CMD \
-		HEAD_CMD \
-		LS_CMD \
-		TEST_CMD \
-		TRUE_CMD \
-		SED_CMD \
-		RUBY_CMD
-
-.for CMD in ${ALL_COMMANDS}
-.	if empty(${CMD}:S/^/which /:sh)
-.		error "Could not find ${CMD} binary. Please redefine ${CMD} to a valid binary or install it if missing."
-.	endif
-.endfor
+check_one-sentence-per-line:
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@${ECHO_CMD} "Verify if reports contain one sentence per line..."
+	@${ECHO_CMD} ${SEPARATOR_STRING}
+	@for report in ${ALL_REPORTS}; \
+	do \
+		${ECHO_CMD} -n "$${report}..."; \
+		lines="$$(${GREP_CMD} '\. ' $$report | \
+			${GREP_CMD} -vE '[[:space:]]*[*=]' | \
+			${GREP_CMD} -v '^[^.]*\.[^.]*$$' | \
+			${GREP_CMD} -v '^[^.]*e\.g\.[^.]*\.?$$' | \
+			${GREP_CMD} -v '^[^.]*i\.e\.[^.]*\.?$$' | \
+			${GREP_CMD} -v '^[^.]*\. \+$$' | \
+			${GREP_CMD} -v '^\.' || \
+			${TRUE_CMD})"; \
+		if ${TEST_CMD} -z "$$lines"; \
+		then \
+			${ECHO_CMD} "looks fine."; \
+		else \
+			${ECHO_CMD} "${ERROR_STRING} the following lines are suspect:"; \
+			${ECHO_CMD} "$$lines"; \
+		fi; \
+	done
