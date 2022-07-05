@@ -1,4 +1,4 @@
-=== GCC: updating GCC_DEFAULT and tasks needing help
+=== GCC: updating GCC_DEFAULT and other improvements
 
 Links: +
 link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org[https://gcc.gnu.org] +
@@ -9,7 +9,7 @@ Contact: Gerald Pfeifer <gerald@pfeifer.com> +
 Contact: Lorenzo Salvadore <salvadore@FreeBSD.org> +
 Contact: Piotr Kubaj <pkubaj@FreeBSD.org>
 
- * salvadore@ changed GCC_DEFAULT in Mk/bsd.default-versions.mk from 10 to 11, opening bug reports based on antoine@'s exp-runs and fixing some: many thanks to all those that helped with this task. The GCC_DEFAULT update from GCC 10 to GCC 11 has now happened in time for the next quarterly branch.
+ * salvadore@ worked on the upgrade of GCC_DEFAULT in Mk/bsd.default-versions.mk from 10 to 11, opening bug reports based on antoine@'s exp-runs and fixing some: many thanks to all those that helped with this task. The GCC_DEFAULT update from GCC 10 to GCC 11 has now been committed by gerald@ and happened in time for the next quarterly branch.
    link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378]
 
  * pkubaj@ switched GCC bootstrapping to use Link Time Optimization for GCC itself for GCC 11 and newer.
