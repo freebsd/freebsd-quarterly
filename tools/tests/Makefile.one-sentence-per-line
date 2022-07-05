@@ -22,6 +22,8 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
+NO_MORE_PERIODS=	[^.]
+
 check_one-sentence-per-line:
 	@${ECHO_CMD} ${SEPARATOR_STRING}
 	@${ECHO_CMD} "Verify if reports contain one sentence per line..."
@@ -30,11 +32,11 @@ check_one-sentence-per-line:
 	do \
 		${ECHO_CMD} -n "$${report}..."; \
 		lines="$$(${GREP_CMD} '\. ' $$report | \
-			${GREP_CMD} -vE '[[:space:]]*[*=]' | \
-			${GREP_CMD} -v '^[^.]*\.[^.]*$$' | \
-			${GREP_CMD} -v '^[^.]*e\.g\.[^.]*\.?$$' | \
-			${GREP_CMD} -v '^[^.]*i\.e\.[^.]*\.?$$' | \
-			${GREP_CMD} -v '^[^.]*\. \+$$' | \
+			${GREP_CMD} -v '[[:space:]]*[*=]' | \
+			${GREP_CMD} -v '^${NO_MORE_PERIODS}*\.${NO_MORE_PERIODS}*$$' | \
+			${GREP_CMD} -v '^${NO_MORE_PERIODS}*e\.g\.${NO_MORE_PERIODS}*\.?$$' | \
+			${GREP_CMD} -v '^${NO_MORE_PERIODS}*i\.e\.${NO_MORE_PERIODS}*\.?$$' | \
+			${GREP_CMD} -v '^${NO_MORE_PERIODS}*\. \+$$' | \
 			${GREP_CMD} -v '^\.' || \
 			${TRUE_CMD})"; \
 		if ${TEST_CMD} -z "$$lines"; \
