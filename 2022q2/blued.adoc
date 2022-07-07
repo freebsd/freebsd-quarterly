@@ -49,39 +49,22 @@ without the use of an external script.
 
 ==== What is needed to use blued v0.1?
 
-First you need to make sure you have working bluetooth drivers loaded.
-Reading the bluetooth chapter of the FreeBSD handbook is recommended
-for this [0].
+You need the optional `src` component installed in [.filename]#/etc/src#.
 
-To test blued, you will need to compile the release found at the link
-below [1], and you will also have to patch your FreeBSD kernel with
-the patches in the kernel_patches directory of the release. The kernel
-patches are pretty small and you will only need to recompile the hci
-module. Instruction on how to build blued and apply the patches are
-provided in the README file.
+First, make sure link:https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth[you have working Bluetooth drivers loaded as explained in the FreeBSD handbook].
+
+To test blued, fetch link:https://git.lysator.liu.se/kempe/blued/-/releases/v0.1[the blued v0.1 source code].
+Then compile it, patch your FreeBSD kernel with the patches in
+[.filename]#kernel_patches#, and recompile the `hci` module as
+explained in [.filename]#README#.
 
 blued has primarily been tested on FreeBSD 12.3, but my patches
-applied cleanly on 13.1 when I tested.
+applied cleanly on 13.1 when I tested. I am not supplying a port at the moment, but it is possible to run the
+software straight from the build directory or run "make
+install" that will install all needed files. Both blued and bluecontrol
+use capsicum and blued can be configured to drop its root privileges.
 
-I am not supplying a port at the moment, but it is possible to run the
-software straight from the build directory as well as running "make
-install" that will install all needed files. The daemon binary is
-called blued, while the command line utility is called bluecontrol.
-Man pages for blued and bluecontrol are available and are also
-installed by "make install".
-
-An example configuration file for blued is installed in
-/usr/local/share/examples/blued/blued.conf.example and can be copied
-to /usr/local/etc/blued.conf, which is the default path blued checks
-for its configuration. The configuration must be present for blued to
-start correctly.
-
-blued outputs diagnostic data to syslog and on a default FreeBSD
-system, it can be found in /var/log/{debug.log,messages}.
-
-To start blued in the background after installing it, execute "blued
-&" as root. blued and bluecontrol both use capsicum and blued can be
-configured to drop its root privileges.
+For more information, refer to the `Running blued` section of [.filename]#README#.
 
 ==== Feedback!
 
@@ -95,13 +78,9 @@ In case of trouble, output from /var/log/debug.log and
 trying to pair will help with troubleshooting.
 
 If you want to get involved with the code and submit patches, you're
-welcome to do so and can find the code on Lysator's Git [2]!
+welcome to link:https://git.lysator.liu.se/kempe/blued[visit the repository]
+on Lysator's Git.
 
 Thank you for reading! +
 Cordially,
 Andreas Kempe
-
-[0]: https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth[freebsd-handbook - bluetooth] URL: https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth[https://docs.freebsd.org/en/books/handbook/advanced-networking/#network-bluetooth] +
-[1]: https://git.lysator.liu.se/kempe/blued/-/releases/v0.1[blued v0.1] URL:https://git.lysator.liu.se/kempe/blued/-/releases/v0.1[https://git.lysator.liu.se/kempe/blued/-/releases/v0.1] +
-[2]: https://git.lysator.liu.se/kempe/blued[blued git] URL: https://git.lysator.liu.se/kempe/blued[https://git.lysator.liu.se/kempe/blued] +
-
