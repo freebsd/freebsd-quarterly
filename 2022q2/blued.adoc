@@ -1,7 +1,7 @@
-=== blued
+=== New Bluetooth(R) configuration daemon: blued
 
 Links: +
-link: https://git.lysator.liu.se/kempe/blued[blued git] URL: https://git.lysator.liu.se/kempe/blued[https://git.lysator.liu.se/kempe/blued]
+link:https://git.lysator.liu.se/kempe/blued[blued git] URL: https://git.lysator.liu.se/kempe/blued[https://git.lysator.liu.se/kempe/blued]
 
 Contact: +
 Mail: kempe@lysator.liu.se +
@@ -9,45 +9,33 @@ IRC: kempe@libera.chat
 
 ==== Introduction
 
-The aim of blued is to provide a bluetooth daemon with an IPC
-interface that allows for a user friendly way for an unprivileged user
-to connect and use bluetooth devices.
+The blued utility provides an IPC interface that lets an unprivileged
+user connect to and use Bluetooth devices in a user-friendly way and
+supports secure simple pairing (public-key cryptography and if the
+device allows it man-in-the-middle protection).
 
-Work began after having issues with my bluetooth mouse and figuring
-out that the problem was a lack of support for secure simple pairing.
-This then sent me down the rabbit hole of working on my own bluetooth
-daemon.
+==== What is blued?
 
-==== blued - what is it?
-
-blued consists of three parts: a library, a daemon and a command line
+There are three parts to blued: a library, a daemon and a command line
 utility. The library abstracts away bluetooth details, the daemon
-manages bluetooth devices and the command line utility communicates
-with the daemon via a UNIX socket.
+manages Bluetooth devices and the command line utility lets users list
+or scan for Bluetooth devices, pair with a device, or unpair from one.
+The command line utility communicates with the daemon via a UNIX socket.
 
-The difference between blued and the existing bluetooth software, i.e.
-bthidd and hcsecd, is first and foremost supporting secure simple
-pairing, but also providing an IPC. A long term goal is to provide a
+Unlike bthidd and hcsecd, blued supports secure simple pairing and
+provides an IPC. To get a HID device to work, bthidd is still
+needed. A script is provided to pair a Bluetooth device and
+appropriately configure bthidd so it just works and reconnects without
+user intervention.
+
+Once pairing has proven stable and bugs have been ironed out, the plan
+is to integrate bthidd with/into blued in some way
+to have HID devices automatically start functioning when paired
+without the use of an external script. A long-term goal is to provide a
 graphical user interface that can list devices and provide a simple
 one-click setup to connect them.
 
-With the current version of blued, it supports scanning for devices
-and pairing with them. To get a HID device to work, bthidd is still
-needed. A script is provided to pair a bluetooth device and
-appropriately configure bthidd.
-
-If the supplied script works as expected, your mouse will get
-connected, paired and simply start working. If the mouse is turned off
-and on again, the blued daemon should let it reconnect without user
-intervention.
-
-Once pairing has proven stable and bugs have been ironed out, the plan
-is for work to start an integrating bthidd with/into blued in some way
-to have HID devices automatically start functioning when paired
-without the use of an external script.
-
-
-==== What is needed to use blued v0.1?
+==== Installing and using blued v0.1
 
 You need the optional `src` component installed in [.filename]#/etc/src#.
 
@@ -58,15 +46,18 @@ Then compile it, patch your FreeBSD kernel with the patches in
 [.filename]#kernel_patches#, and recompile the `hci` module as
 explained in [.filename]#README#.
 
-blued has primarily been tested on FreeBSD 12.3, but my patches
-applied cleanly on 13.1 when I tested. I am not supplying a port at the moment, but it is possible to run the
+I have primarily tested blued on FreeBSD 12.3, but my patches
+applied cleanly on 13.1 when I tested.
+I am not supplying a port at the moment, but it is possible to run the
 software straight from the build directory or run "make
 install" that will install all needed files. Both blued and bluecontrol
 use capsicum and blued can be configured to drop its root privileges.
 
 For more information, refer to the `Running blued` section of [.filename]#README#.
 
-==== Feedback!
+==== Helping out
+
+===== Testing
 
 I have only tried this software with my own mouse and realise that a
 sample size of one single bluetooth device is pretty small. I'm
@@ -77,10 +68,8 @@ In case of trouble, output from /var/log/debug.log and
 /var/log/messages as well as a traffic dump from "hcidump -x" while
 trying to pair will help with troubleshooting.
 
+===== Contributing
+
 If you want to get involved with the code and submit patches, you're
 welcome to link:https://git.lysator.liu.se/kempe/blued[visit the repository]
 on Lysator's Git.
-
-Thank you for reading! +
-Cordially,
-Andreas Kempe
