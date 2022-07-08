@@ -12,7 +12,7 @@ Contact: FreeBSD Release Engineering Team, <re@FreeBSD.org>
 The FreeBSD Release Engineering Team is responsible for setting and publishing release schedules for official project releases of FreeBSD, announcing code freezes and maintaining the respective branches, among other things.
 
 During the second quarter of 2022, the Release Engineering Team completed work on the 13.1-RELEASE cycle.
-This is be the second point release from the stable/13 branch.
+This is the second release from the stable/13 branch.
 Throughout the release cycle, three BETA builds and six RC (release candidate) builds have occurred, moving the final release date from April 21, 2022 to May 16, 2022, as some last-minute issues were identified.
 
 We thank all FreeBSD developers and contributors for testing the 13.1-RELEASE, reporting problems, and being diligent with proprosed changes as the cycle progressed.
