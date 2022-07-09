@@ -100,8 +100,8 @@ Other ongoing sponsored work is described here.
 
 * Handbook Improvement Exploration
 
-  Under sponsorship from the Foundation, Pau Amma is wrapping up a mini-project
-  to explore how the Handbook can be improved.  A survey was sent out and the
+  Under sponsorship from the Foundation, Pau Amma wrapped up a mini-project to
+  explore how the Handbook can be improved.  A survey was sent out and the
   results will be shared soon.
 
 ==== Continuous Integration and Quality Assurance
@@ -120,7 +120,7 @@ for installer images and packages has improved.
 With your donations, the Foundation purchased new hardware to repair two PowerPC
 package builders, one for little endian packages (powerpc64le) and the second
 for big endian packages (powerpc64, powerpc).  The new hardware just arrived at
-the data centre and will be installed soon.  Expect lots of PowerPC packages in
+the data center and will be installed soon.  Expect lots of PowerPC packages in
 the near future.
 
 ==== FreeBSD Advocacy and Education
