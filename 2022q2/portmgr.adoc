@@ -27,10 +27,10 @@ welcomed back salvadore@ but also said goodbye to seven ports committers due to 
 In its bi-weekly meetings, portmgr discussed the following topics:
 * the future of ca_root_nss
 * feasibility of the base system providing certain .pc files
-* ways to deal with incompatibilities kernel module ports on minor version upgrades of the base system
+* ways to deal with incompatibilities in kernel module ports on minor version upgrades of the base system
 
 Following a discussion among developers, portmgr decided to grant all documentation and source
-committers approval to fix any documentation-related change in Ports Tree which does not affect its functionality.
+committers approval to fix any documentation-related error in the Ports Tree which does not affect its functionality.
 
 The following changes were made to the Ports Tree during 2022q2:
 * pkg got updated to version 1.18.3, Firefox to version 102.0 and Chromium to version 103.0.50060.53
