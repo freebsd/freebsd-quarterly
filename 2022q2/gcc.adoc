@@ -12,7 +12,7 @@ Contact: Piotr Kubaj <pkubaj@FreeBSD.org>
  * salvadore@ worked on the upgrade of GCC_DEFAULT in Mk/bsd.default-versions.mk from 10 to 11, opening bug reports based on antoine@'s exp-runs and fixing some: many thanks to all those that helped with this task. The GCC_DEFAULT update from GCC 10 to GCC 11 has now been committed by gerald@ and happened in time for the next quarterly branch.
    link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=258378]
 
- * pkubaj@ switched GCC bootstrapping to use Link Time Optimization for GCC itself for GCC 11 and newer.
+ * pkubaj@ switched GCC bootstrapping to use Link Time Optimization for GCC itself for GCC 11 and newer by introducing a new option enabled by default. Building with LTO_BOOTSTRAP enabled requires significant amounts of memory and time. Consider disabling it in favor of STANDARD_BOOTSTRAP (or disabling BOOTSTRAP altogether) in case that is a problem.
 
  * pkubaj@ also added lang/gcc12 and lang/gcc13-devel ports and updated lang/gcc9 to 9.5.
 
