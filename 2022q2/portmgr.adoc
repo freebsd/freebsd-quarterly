@@ -13,7 +13,7 @@ Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
 The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages, and personnel matters.
 Below is what happened in the last quarter.
 
-Freshports tells us the number of ports grew to over 50,000, a new milestone.
+FreshPorts tells us the number of ports grew to over 50,000, a new milestone.
 The last quarter saw 9,137 commits by 151 committers on the "main" and 589 commits by 61 committers on the "2022Q2" branch.
 At the time of writing, there are 2,700 open ports PRs of which 682 are unassigned.
 Compared to the previous quarter, the Ports Tree grew by 7%, a slight decrease in commit activity and a constant number of PRs.
