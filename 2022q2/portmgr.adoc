@@ -31,5 +31,5 @@ Following a discussion among developers, portmgr decided to grant all documentat
 The following changes were made to the Ports Tree during 2022q2:
 
 * pkg got updated to version 1.18.3, Firefox to version 102.0 and Chromium to version 103.0.50060.53
-* deault versions of GCC, Lazarus, Python and Ruby got updated to respectively 11 (powerpcspe keeps version 8), 2.2.2, 3.9, and 3.0
+* default versions of GCC, Lazarus, Python and Ruby got updated to respectively 11 (powerpcspe keeps version 8), 2.2.2, 3.9, and 3.0
 * two new USES were added, gstreamer to support ports based on GStreamer plugins and pytest to help testing with pytest.
