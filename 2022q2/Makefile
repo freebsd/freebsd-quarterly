@@ -8,11 +8,11 @@ YEAR?=		2022
 QUARTER?=	2
 
 # Entries from the various official and semi-official teams
-TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc
+TeamReports= core.adoc freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= linuxulator.adoc golang_riscv64.adoc
+Projects= linuxulator.adoc golang_riscv64.adoc azure.adoc
 
 # Changes affecting the base system and programs in it
 Userland= lldb.adoc makefs-zfs.adoc openssh.adoc pf.adoc
