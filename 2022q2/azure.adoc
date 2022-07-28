@@ -14,20 +14,20 @@ The link:https://azuremarketplace.microsoft.com/marketplace/apps/thefreebsdfound
 
 Work in progress tasks:
 
-* Automatizing the image building and publishing process
-* Build and publish ZFS-based image to Azure Marketplace
+* Automating the image building and publishing process
+* Building and publishing ZFS-based images to Azure Marketplace
 ** The taks will be benefited by merging of ZFS support of makefs(8) and release(7)
 *** https://reviews.freebsd.org/D23334
 *** https://reviews.freebsd.org/D34426
 *** https://reviews.freebsd.org/D35248
-* Build and publish gen2 vm image to Azure Marketplace
+* Building and publishing Hyper-V gen2 VM images to Azure Marketplace
 ** Blocked by https://bugs.freebsd.org/264267
 
-Above tasks are sponsored by The FreeBSD Foundation, with resources provided by Microsoft.
+The above tasks are sponsored by The FreeBSD Foundation, with resources provided by Microsoft.
 
 Wei Hu and his colleagues in Microsoft are working on several tasks sponsored by Microsoft:
 
-* Fixing booting issue on gen2 vm in Azure
+* Fixing booting issue on Hyper-V gen2 VM in Azure
 ** https://bugs.freebsd.org/264267
 * Porting Hyper-V guest support to aarch64
 
