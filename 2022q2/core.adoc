@@ -18,9 +18,9 @@ The core.12 members are:
 * Mateusz Piotrowski (0mp)
 
 On June 10th the outgoing core.11 and incoming core.12 teams held a hand-over meeting,
-and the new Core Team is link:https://lists.freebsd.org/archives/freebsd-announce/2022-June/000034.html[announced on Jun 18].
+and the new Core Team was link:https://lists.freebsd.org/archives/freebsd-announce/2022-June/000034.html[announced on Jun 18].
 
 The current Core Team secretary, Muhammad Moinur Rahman (bofh), will step down
-after the appointment of new Core Team secretary and handover tasks completes.
+after the appointment of a new Core Team secretary and handover tasks completes.
 
-In this quarter, commit bits of Kornel Dulęba (kd) and Dmitry Salychev (dsl) have been approved.
+In this quarter, src commit bits of Kornel Dulęba (kd) and Dmitry Salychev (dsl) have been approved.
