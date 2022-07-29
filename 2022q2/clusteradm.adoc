@@ -20,7 +20,7 @@ Work in progress:
 * Plan Hardware refresh, and fixing misc failures in each sites
 * Improve the package building infrastructure
 * Review the service jails and service administrators operation
-* Working with doceng@ to improve https://www.freebsd.org and https://docs.freebsd.org
+* Working with doceng@ to improve deployment of https://www.freebsd.org and https://docs.freebsd.org
 * Improve the web service architecture
 * Improve the cluster backup plan
 * Improve the log analysis system
