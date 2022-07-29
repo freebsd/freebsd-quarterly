@@ -17,7 +17,7 @@ The core.12 members are:
 * Tobias C. Berner (tcberner)
 * Mateusz Piotrowski (0mp)
 
-On June 10th the outgoing core.11 and incoming core.12 teams held a hand-over meeting,
+On June 10th the outgoing core.11 and incoming core.12 teams held a handover meeting,
 and the new Core Team was link:https://lists.freebsd.org/archives/freebsd-announce/2022-June/000034.html[announced on Jun 18].
 
 The current Core Team secretary, Muhammad Moinur Rahman (bofh), will step down
