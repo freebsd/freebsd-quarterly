@@ -5,7 +5,8 @@ Contact: Reid Linnemann <rlinnemann@netgate.com>
 
 ==== Ethernet
 
-pf recently grew support for filtering on Ethernet layer. See the 2021q2 pf_ethernet report.
+pf recently grew support for filtering on Ethernet layer.
+See the 2021q2 pf_ethernet report.
 
 Since then the Ethernet layer filtering has been extended with:
 
