@@ -8,8 +8,5 @@ link:https://github.com/golang/go/issues/53466[FreeBSD riscv64 golang issue] URL
 Contact: Mikaël Urankar <mikael@FreeBSD.org> +
 Contact: Dmitri Goutnik <dmgk@FreeBSD.org>
 
-Work has been done to port go on FreeBSD riscv64 which builds and passes all
-run.bash tests, including cgo (tested under QEMU and on Unmatched).
-A pull request is created upstream and the proposal has been added to the active
-column of the proposals project and will be reviewed at the weekly proposal
-review meetings.
+Work has been done to port go on FreeBSD riscv64 which builds and passes all run.bash tests, including cgo (tested under QEMU and on Unmatched).
+A pull request is created upstream and the proposal has been added to the active column of the proposals project and will be reviewed at the weekly proposal review meetings.

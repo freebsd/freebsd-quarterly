@@ -7,24 +7,16 @@ link:https://reviews.freebsd.org/D34426[release(7) code review] URL: link:https:
 
 Contact: Mark Johnston <markj@FreeBSD.org>
 
-makefs(8) is a utility, originating in NetBSD, that creates file system images
-entirely in userspace.
-It is a useful component of a toolchain to build virtual machine (VM) images
-since it does not require any special privileges, unlike the approach of formatting
-a character device, mounting the fresh file system, and copying files onto it.
-Moreover, makefs can create reproducible images and aims to minimize
-resource consumption.
-Currently, FreeBSD's makefs can build UFS, cd9660, and msdos (FAT) file system
-images.
+makefs(8) is a utility, originating in NetBSD, that creates file system images entirely in userspace.
+It is a useful component of a toolchain to build virtual machine (VM) images since it does not require any special privileges, unlike the approach of formatting a character device, mounting the fresh file system, and copying files onto it.
+Moreover, makefs can create reproducible images and aims to minimize resource consumption.
+Currently, FreeBSD's makefs can build UFS, cd9660, and msdos (FAT) file system images.
 
 Recent work enables the creation of ZFS images by makefs.
 This makes it easier to build ZFS-based VM images.
-makefs' ZFS support includes the ability to create multiple datasets, with each
-mapped to a directory in the input file hierarchy.
-Many ZFS features are not supported however, as the implementation provides only
-what is needed to get reproducible root pools.
+makefs' ZFS support includes the ability to create multiple datasets, with each mapped to a directory in the input file hierarchy.
+Many ZFS features are not supported however, as the implementation provides only what is needed to get reproducible root pools.
 
-Follow-up work enables the creation of ZFS-based VM and cloud images by
-the release(7) framework, using this new makefs extension.
+Follow-up work enables the creation of ZFS-based VM and cloud images by the release(7) framework, using this new makefs extension.
 
 Sponsor: The FreeBSD Foundation
