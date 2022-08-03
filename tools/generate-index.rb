@@ -92,7 +92,7 @@ EOT
 
 Category.new("documentation","Documentation",
 <<EOT,Documentation_FILES.split),
-Noteworthy changes in the documentation tree, man-pages, or new external
+Noteworthy changes in the documentation tree, manual pages, or new external
 books/documents.
 EOT
 
