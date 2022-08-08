@@ -8,7 +8,7 @@ Please submit your draft as early as possible. To submit:
 
 1. Fork the repository - reusing an old fork is OK.
 2. Create a new branch and enter the directory for the current time
-   period - `2022q2`.
+   period - `2022q3`.
 3. Create a new file, with a name that corresponds with the name of
    your project - use the `report-sample.adoc` template.
 4. Create a pull request.
@@ -25,9 +25,9 @@ submit another PR.
 Please do not worry excessively about language errors or AsciiDoc
 syntax - we can correct things for you.
 
-=== Deadline for submissions for `2022q2`
+=== Deadline for submissions for `2022q3`
 
-30th of June 2022
+30th of September 2022
 
 Note that this is **immediately** after the end of the quarter.
 
@@ -50,4 +50,4 @@ Collated final reports are:
 
 The most recent report:
 
-* https://www.freebsd.org/status/report-2022-01-2022-03/
+* https://www.freebsd.org/status/report-2022-04-2022-06/
