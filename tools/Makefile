@@ -46,6 +46,19 @@ TOOLS_DIR=	../tools
 
 TITLE_LEVEL=	===
 
+.if	${START} < 10
+START_TWODIGITS=	0${START}
+.else
+# This should never happen: at the time when this code is written last quarterly
+# report starts in september (START == 9), but we never know.
+START_TWODIGITS=	${START}
+.endif
+.if	${STOP} < 10
+STOP_TWODIGITS=	0${STOP}
+.else
+STOP_TWODIGITS=	${STOP}
+.endif
+
 all: build test
 
 build: _index.adoc
@@ -85,8 +98,13 @@ test:	check_all-reports \
 autofix:	fix_pluses \
 		fix_titles
 
+mail: report.txt
+
+report.txt:
+	 ${W3M_CMD} ${W3M_FLAGS} https://www.freebsd.org/status/report-${YEAR}-${START_TWODIGITS}-${YEAR}-${STOP_TWODIGITS} > $@
+
 clean:
-	rm -f _index.adoc
+	rm -f _index.adoc report.txt
 
 .include "Makefile.commands"
 .include "tests/Makefile.all-reports"

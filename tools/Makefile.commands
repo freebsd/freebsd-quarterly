@@ -42,6 +42,9 @@ SED_FLAGS?=	-E
 RUBY_CMD?=	ruby
 RUBY_FLAGS?=	-I ${TOOLS_DIR}
 
+W3M_CMD?=	w3m
+W3M_FLAGS?=	-cols 80 -dump
+
 ALL_COMMANDS?=	ECHO_CMD \
 		GREP_CMD \
 		HEAD_CMD \
@@ -49,7 +52,8 @@ ALL_COMMANDS?=	ECHO_CMD \
 		TEST_CMD \
 		TRUE_CMD \
 		SED_CMD \
-		RUBY_CMD
+		RUBY_CMD \
+		W3M_CMD
 
 .for CMD in ${ALL_COMMANDS}
 .	if empty(${CMD}:S/^/which /:sh)
