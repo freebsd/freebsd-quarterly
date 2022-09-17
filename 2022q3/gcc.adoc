@@ -24,6 +24,9 @@ Contact: Lorenzo Salvadore <salvadore@FreeBSD.org> +
  * jbeich@ submitted a patch to expose non-default -stdlib=libc++ support, which has been successfully committed to all relevant ports (gcc >= 11).
    link: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265962[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265962]
 
+ * diizzy@ refreshed the mirrors list in the MASTER_SITE_GCC variables, also removing ftp mirrors. The main GCC site is used as fallback.
+   link: https://reviews.freebsd.org/D36372[https://reviews.freebsd.org/D36372]
+
  * Help is still needed with these three changes to work through with upstream GCC (requires src expertise, not ports):
 
      ** upstreaming lang/gcc11/patch-gets-no-more
