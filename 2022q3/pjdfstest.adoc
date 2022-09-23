@@ -17,11 +17,11 @@ This year, Sayafdine Said <musikid@outlook.com> rewrote it under Google's sponso
 * Better test case isolation, making failure easy to debug.
 * No longer requires root privileges for all test cases.
 * Test cases can be run in a debugger.
-* More DRY; more maintainable.
+* More maintainable, less duplication.
 
 There are still a couple of lingering PRs to complete, but we expect to wrap
 those up and add pjdfstest to the ports collection soon.  From there it will be
 used both by /usr/tests for ZFS and UFS, and by external developers for other
 file systems.
 
-Sponsor: Google Summer of Code +
+Sponsor: Google Summer of Code
