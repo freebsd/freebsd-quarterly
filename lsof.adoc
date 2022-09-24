@@ -10,6 +10,11 @@ in /dev/kmem for data and using userspace API's.  This has taken a long
 time to hit the tree, but is finally done.  This fixes lsof(1) to work with
 ZFS again for the first time since 13.0-RELEASE.
 
+This will make the maintenance of sysutils/lsof much easier going forward.
+
+To the kernel folks: if you make changes that break lsof, please submit a 
+github PR to https://github.com/lsof-org/lsof.
+
 My thanks to Warner Losh <imp@FreeBSD.org>, Mateusz Guzik <mjg@FreeBSD.org>,
 and Ed Maste <emaste@FreeBSD.org> for help getting this major change landed. 
 
