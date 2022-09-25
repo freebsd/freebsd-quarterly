@@ -18,5 +18,3 @@ github PR to https://github.com/lsof-org/lsof.
 My thanks to Warner Losh <imp@FreeBSD.org>, Mateusz Guzik <mjg@FreeBSD.org>,
 and Ed Maste <emaste@FreeBSD.org> for help getting this major change landed. 
 
-
-
