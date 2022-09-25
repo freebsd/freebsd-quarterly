@@ -6,7 +6,7 @@ link:https://github.com/lsof-org/lsof[lsof project repo] URL: link:https://githu
 Contact: Larry Rosenman <ler@FreeBSD.org>
 
 sysutils/lsof in ports has had a major upgrade to no longer go looking 
-in /dev/kmem for data and using userspace API's.  This has taken a long
+in /dev/kmem for data and using the userland API.  This has taken a long
 time to hit the tree, but is finally done.  This fixes lsof(1) to work with
 ZFS again for the first time since 13.0-RELEASE.
 
