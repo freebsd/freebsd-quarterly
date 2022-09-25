@@ -21,9 +21,9 @@ The document is currently being written and will be published after completion.
 
 The Core Team is working closely with the FreeBSD Foundation to update the Privacy Policy to properly align with current laws and practices found on similar websites such as ours.
 
-===== Bruce memorial plaque
+===== Bruce Evans memorial plaque
 
-The Core Team unanimously votes to allow the memorial plaque for Bruce mentioning him as co-founder of FreeBSD.
+The Core Team unanimously votes to allow the memorial plaque for Bruce Evans mentioning him as co-founder of FreeBSD.
 
 ===== EuroBSDCon core team office hour
 
