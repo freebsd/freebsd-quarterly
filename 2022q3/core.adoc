@@ -27,9 +27,9 @@ The Core Team unanimously votes to allow the memorial plaque for Bruce Evans men
 
 ===== EuroBSDCon core team office hour
 
-On Friday, September 16, the new Core Team will be presenting at EuroBSDCon.
-The Core Team would like to introduce themselves and talk a bit about our plans for this term.
-Attendees are given the chance to ask questions.
+On Friday, September 16, the new Core Team was presented at EuroBSDCon.
+The Core Team introduced themselves and talked a bit about our plans for this term.
+Attendees had the opportunity to ask questions.
 
 ==== Commit bits
 
