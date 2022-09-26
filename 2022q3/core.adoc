@@ -27,11 +27,11 @@ The Core Team unanimously votes to allow the memorial plaque for Bruce Evans men
 
 ===== EuroBSDCon core team office hour
 
-On Friday, September 16, the new Core Team was presented at EuroBSDCon.
+On Friday, September 16, the new Core Team presented at link:https://wiki.freebsd.org/DevSummit/202209[EuroBSDcon 2022 Developer Summit].
 The Core Team introduced themselves and talked a bit about our plans for this term.
-Attendees had the opportunity to ask questions.
+There were discussions, Q & A and suggestions from the attendees about the details.
 
 ==== Commit bits
 
-Core approved the restore of the source commit bit for Konrad Witaszczyk (def@).
+Core approved to reactive of the source commit bit for Konrad Witaszczyk (def@).
 Right now Konrad is working at Cambridge University, where he is responsible for developing CheriBSD.
