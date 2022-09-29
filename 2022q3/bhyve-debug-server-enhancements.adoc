@@ -1,8 +1,8 @@
 === bhyve debug server enhancements
 
 Links: +
-link: https://wiki.freebsd.org/SummerOfCode2022Projects/BhyveDebugServerEnhancements [Wiki project page]
-link: https://reviews.freebsd.org/D35826 [Differential]
+link: https://wiki.freebsd.org/SummerOfCode2022Projects/BhyveDebugServerEnhancements[Wiki project page]
+link: https://reviews.freebsd.org/D35826[Differential]
 Contact: Bojan Novković <bojan.novkovic@kset.org>
 
 The goal of this project was to enhance the functionality of bhyve’s debug server.
@@ -16,9 +16,9 @@ July. The project's wiki also contains detailed documentation regarding several 
 
 The changes can be summarized as follows:
 
-* Support for software breakpoints on AMD SVM,
-* Support for single-stepping AMD SVM guests using the RFLAGS.TF mechanism,
-* Support for placing hardware watchpoints on Intel VMX and AMD SVM guests.
+* Support for placing software breakpoints inside virtual machines on AMD platforms,
+* Support for single-stepping virtual machines on AMD platforms,
+* Support for placing hardware watchpoints inside virtual machines on Intel and AMD platforms.
 
 Any feedback, comments and discussions are welcome and would be greatly appreciated.
 
