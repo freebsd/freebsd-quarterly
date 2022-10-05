@@ -22,7 +22,7 @@ We also welcomed Luca Pizzamiglio (pizzamig@) as an official member of portmgr.
 
 Some large changes in the Ports Tree were made during the last quarter:
 * "Created by" lines have been removed from the top of each Makefile, as a lot of those were outdated.
-* WWW: has been moved from each pkg-descr into each Makefile as a variable, below write-up is from Stefan Eßer (se@):
+* WWW: has been moved from each pkg-descr into each Makefile as a variable, below write-up is from Stefan Eßer (se@) who did the work:
 The description of a port's functionality should end with the URL of a web page that provides further information, such as best practices for usage or configuration. 
 This information can be displayed with "pkg query -e" for installed packages or "pkg rquery -e" for available packages. 
 The URL used to be appended to the end of the ports' pkg-descr files, with the prefix "WWW: ", so that tools could extract the URL from the description.
