@@ -1,33 +1,25 @@
 === DTrace: Instruction-level dynamic tracing
 
 Links: +
-link:https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing[Wiki article] URL:
-link:https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing[https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing] +
-link:https://reviews.freebsd.org/D36851[Final code review] URL:
-link:https://reviews.freebsd.org/D36851[https://reviews.freebsd.org/D36851] +
+link:https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing[Wiki article] URL: link:https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing[https://wiki.freebsd.org/SummerOfCode2022Projects/InstructionLevelDynamicTracing] +
+link:https://reviews.freebsd.org/D36851[Final code review] URL: link:https://reviews.freebsd.org/D36851[https://reviews.freebsd.org/D36851] +
 
 Contact: Christos Margiolis <christos@FreeBSD.org> +
 Contact: Mark Johnston <markj@FreeBSD.org>
 
-kinst is new DTrace provider that allows for arbitrary kernel instruction
-tracing.
+kinst is new DTrace provider that allows for arbitrary kernel instruction tracing.
 
-The provider is currently implemented only for amd64, but we plan to port it to
-other architectures in the future as well.
+The provider is currently implemented only for amd64, but we plan to port it to other architectures in the future as well.
 
-kinst probes are created on demand by libdtrace and there is a probe for each
-kernel instruction. Probes take the form of:
+kinst probes are created on demand by libdtrace and there is a probe for each kernel instruction.
+Probes take the form of:
 	
 	kinst:<module>:<function>:<offset>
 
-where "function" is the kernel function to be traced, and "offset" is the
-offset to a specific instruction. This offset can be obtained from the
-function's disassembly using kgdb. Omitting "offset" causes all instructions in
-the function to be traced.
+where "function" is the kernel function to be traced, and "offset" is the offset to a specific instruction.
+This offset can be obtained from the function's disassembly using kgdb. Omitting "offset" causes all instructions in the function to be traced.
 
-For example, if I want to trace the second instruction in
-amd64_syscall(), I first need to figure out the offset to the
-second instruction:
+For example, if I want to trace the second instruction in amd64_syscall(), I first need to figure out the offset to the second instruction:
 
 	# kgdb
 	(kgdb) disas /r amd64_syscall
@@ -36,14 +28,12 @@ second instruction:
 	   0xffffffff809256c1 <+1>:     48 89 e5        mov    %rsp,%rbp
 	   0xffffffff809256c4 <+4>:     41 57   push   %r15
 
-The offset is 1. To trace it:
+The offset is 1.
+To trace it:
 
 	# dtrace -n 'kinst::amd64_syscall:1'
 
-kinst works similarly to FBT in that it places a breakpoint on the target
-instruction and hooks into the breakpoint handler. Because kinst has to be able
-to trace arbitrary instructions, it does not emulate most of them in software
-but rather causes the traced thread to execute a copy of the instruction before
-returning to the original code.
+kinst works similarly to FBT in that it places a breakpoint on the target instruction and hooks into the breakpoint handler.
+Because kinst has to be able to trace arbitrary instructions, it does not emulate most of them in software but rather causes the traced thread to execute a copy of the instruction before returning to the original code.
 
 Sponsor: Google, Inc. (GSOC 2022)
