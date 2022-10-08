@@ -48,7 +48,7 @@ The following happened under the hood:
 ** pkg 1.18.4
 ** Chromium 106.0.5249.91
 ** Firefox 105.0.1
-** Firefox ESR 102.3.0
+*** Firefox ESR 102.3.0
 ** KDE Applications 22.8.1
 ** KDE Frameworks 5.98
 ** Rust 1.63.0
