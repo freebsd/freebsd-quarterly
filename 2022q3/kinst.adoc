@@ -7,7 +7,7 @@ link:https://reviews.freebsd.org/D36851[Final code review] URL: link:https://rev
 Contact: Christos Margiolis <christos@FreeBSD.org> +
 Contact: Mark Johnston <markj@FreeBSD.org>
 
-kinst is new DTrace provider that allows for arbitrary kernel instruction tracing.
+kinst is a new DTrace provider that allows for arbitrary kernel instruction tracing.
 
 The provider is currently implemented only for amd64, but we plan to port it to other architectures in the future as well.
 
