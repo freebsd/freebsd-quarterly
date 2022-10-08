@@ -13,10 +13,10 @@ The ENA driver supports multiple transmit and receive queues and can handle up t
 Completed since the last update:
 
 * Upstream of the ENA driver v2.6.0 and v2.6.1, included:
-  * Fix for the performance degradation after reset issue on 6-gen instances,
-  * Fix of the false netmap assertions with KASSERT enabled,
-  * Code cleanup and style fixes,
-  * Logging improvements,
-  * Fix to the retrieval of the ENI metrics.
+** Fix for the performance degradation after reset issue on 6-gen instances,
+** Fix of the false netmap assertions with KASSERT enabled,
+** Code cleanup and style fixes,
+** Logging improvements,
+** Fix to the retrieval of the ENI metrics.
 
 Sponsor: Amazon.com Inc
