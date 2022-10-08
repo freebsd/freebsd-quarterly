@@ -18,7 +18,7 @@ There are currently just under 2,800 open ports PRs of which 750 are unassigned.
 The last quarter saw 9,137 commits by 151 committers on the main branch and 589 commits by 61 committers on the 2022Q3 branch.
 Compared to two quarters ago, this means a slight increase in the number of ports, but also a slight increase in the number of (unassigned) ports PRs and a slight decrease in the number of commits made.
 
-In the last quarter, we welcomed Felix Palmen (zirias@) as a new ports committer, welcomed back Akonori MUSHA (knu@), and said goodbye to Olli Hauer (ohauer@).
+In the last quarter, we welcomed Felix Palmen (zirias@) as a new ports committer, welcomed back Akinori MUSHA (knu@), and said goodbye to Olli Hauer (ohauer@).
 We also welcomed Luca Pizzamiglio (pizzamig@) as an official member of portmgr.
 
 Some large changes in the Ports Tree were made during the last quarter:
