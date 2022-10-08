@@ -29,7 +29,7 @@ Items pending and in the discussion:
 
 * Remove outdated translations from the Website and Documentation portal.
 
-==== FreeBSD's Documentation Primer
+==== FreeBSD's Documentation Project Primer
 
 The FDP was link:https://cgit.freebsd.org/doc/commit/?id=311e6e3d5e7476cda9107107d779a145241f11fa[expanded with information on trademark handling].
 
@@ -37,9 +37,9 @@ The FDP was link:https://cgit.freebsd.org/doc/commit/?id=311e6e3d5e7476cda910710
 
 * The documentation on link:https://cgit.freebsd.org/doc/commit/?id=08dd1185b44003d698b267851f704820c9d492c6[porting Haskell programs was updated].
 
-* The move of WWW from pkg-descr to Makefile was link:https://reviews.freebsd.org/D36369[move of WWW from pkg-descr to Makefile was documented].
+* The link:https://reviews.freebsd.org/D36369[move of WWW from pkg-descr to Makefile was documented].
 
-* link:https://cgit.freebsd.org/doc/commit/?id=78deabd3b1b2aabe9960c24d0c7e8df3fb57e607[Qt 6 related documentation has been added] following the import of the library in the ports framework.
+* link:https://cgit.freebsd.org/doc/commit/?id=78deabd3b1b2aabe9960c24d0c7e8df3fb57e607[Qt 6-related documentation has been added] following the import of the library in the ports framework.
 
 ==== FreeBSD Translations on Weblate
 
@@ -69,15 +69,15 @@ Link: link:https://translate-dev.freebsd.org/[FreeBSD Weblate Instance]
 * Spanish (es)			(progress: 15%)
 * Turkish (tr)			(progress: 2%)
 
-We want to thank everyone that contributed, translating or reviewing documents.
+We want to thank everyone who contributed, translating or reviewing documents.
 
-And please, help promote this effort on your local user group, we always need more volunteers.
+Please, promote this effort in your local user group, we always need more volunteers.
 
 ==== FreeBSD Manual Pages Portal
 
 Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 
-The Manual Pages Portal has been redesigned to use mandoc(1) for rendering.
+The Manual Pages Portal has been redesigned to use man:mandoc[1] for rendering.
 A link:https://www.carlavilla.es/[portal preview] is available.
 Feedback has been collected and addressed when possible.
 There are some remaining non-blocking issues.
