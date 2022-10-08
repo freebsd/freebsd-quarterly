@@ -2,14 +2,13 @@
 
 Links: +
 link:https://www.openstack.org/[OpenStack] URL: link:https://www.openstack.org/[] +
-link:https://github.com/starbops/osf[OpenStack on FreeBSD] URL: link:https://github.com/starbops/osf[] +
+link:https://github.com/openstack-on-freebsd[OpenStack on FreeBSD] URL: link:https://github.com/openstack-on-freebsd[] +
 
 Contact: Chih-Hsin Chang <starbops@hey.com> +
 Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>
 
-OpenStack is an open-source cloud operating system for different types of resources like virtual machines and bare metals.
-However, OpenStack only unofficially supports FreeBSD as a guest system.
-That means users can spawn FreeBSD instances on the open cloud platform, but it is not currently possible to run OpenStack control plane on FreeBSD hosts.
+OpenStack is an open-source cloud operating system for different types of resources like virtual and bare-metal machines.
+Users can spawn FreeBSD instances on the open cloud platform, but it is not currently possible to run OpenStack control plane on FreeBSD hosts.
 The goal of this project is to port key OpenStack components so that FreeBSD can function as an OpenStack host.
 
 Academic and industrial research groups have been evaluating CHERI-enabled Morello boards since mid-2022.
@@ -29,8 +28,8 @@ It is necessary to find an alternative, e.g. `vnet`, on FreeBSD and adapt it.
 Most of the time the porting strategy is to make as small of an impact as possible by working around obstacles.
 But something like `oslo.privsep` deserves a true porting. `oslo.privsep` is rooted in Linux capabilities to do the privilege separation work.
 Right now we just bypassed any Linux capabilities-related operation inside `oslo.privsep`.
-So there are plenty of hackish stuff in the source code and configurations currently.
-All of these along with the building and installation steps will be collected in the https://github.com/starbops/osf[project repository].
+So there is plenty of hackish spots in the source code and configurations currently.
+All of these along with the building and installation steps will be collected in the https://github.com/openstack-on-freebsd[project repositories].
 
 In Q4 Chih-Hsin plans to focus on porting Neutron and Nova in order to complete the VM lifecycle operations.
 The highlights include:
