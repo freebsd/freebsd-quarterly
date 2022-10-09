@@ -18,5 +18,4 @@ On the way there, any BSD related bugs found in modules and documentation will a
 People interested in helping with the project can help with testing new features and fixes through the net/cloud-init-devel port, which will be updated on a weekly basis.
 Further, people with access and experience with OpenBSD and NetBSD are also highly welcome to help.
 
-
 Sponsor: The FreeBSD Foundation +
