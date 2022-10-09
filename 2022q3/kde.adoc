@@ -22,14 +22,14 @@ With package:devel/qt6[] you get Qt 6.4.0, released at the end of the quarter.
 
 ==== KDE Stack
 
-KDE Gear releases happen each quarter, KDE Plasma updates once a month, and KDE Frameworks have a new release each month as well.
+KDE Gear releases happen every quarter, KDE Plasma updates once a month, and KDE Frameworks have a new release every month as well.
 These (large) updates land shortly after their upstream release and are not listed separately.
 
 * KDE Frameworks 5 is now at version 5.98 (latest monthly release from September 2022).
 * KDE Gear is now version 22.08.1 (update for September 2022).
 * KDE Plasma is now version 5.24.6 (update for July 2022).
 
-Note that KDE Plasma 5.25 has been released upstream, but is waiting on fixes elsewhere in FreeBSD before it can land in the ports tree.
+Note that KDE Plasma 5.25 has been released upstream, but is waiting on fixes before it can land in the ports tree (for example, link:https://bugs.kde.org/show_bug.cgi?id=458356[this KActivityManager bug] in KDE's bug-tracker).
 
 ==== Related Ports
 
