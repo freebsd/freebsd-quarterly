@@ -1,10 +1,10 @@
 === More wireless updates
 
 Links: +
-link:https://people.freebsd.org/~bz/wireless/[Bjoern's Wireless Work In Progress landing page] URL: link:https://people.freebsd.org/~bz/wireless/[https://people.freebsd.org/~bz/wireless/]
-link:https://wiki.freebsd.org/WiFi/Rtw88[Realtek rtw88 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Rtw88[https://wiki.freebsd.org/WiFi/Rtw88]
-link:https://wiki.freebsd.org/WiFi/Rtw89[Realtek rtw89 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Rtw89[https://wiki.freebsd.org/WiFi/Rtw89]
-link:https://wiki.freebsd.org/WiFi/Mt76[MediaTek mt76 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Mt76[https://wiki.freebsd.org/WiFi/Mt76]
+link:https://people.freebsd.org/~bz/wireless/[Bjoern's Wireless Work In Progress landing page] URL: link:https://people.freebsd.org/\~bz/wireless/[https://people.freebsd.org/~bz/wireless/] +
+link:https://wiki.freebsd.org/WiFi/Rtw88[Realtek rtw88 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Rtw88[https://wiki.freebsd.org/WiFi/Rtw88] +
+link:https://wiki.freebsd.org/WiFi/Rtw89[Realtek rtw89 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Rtw89[https://wiki.freebsd.org/WiFi/Rtw89] +
+link:https://wiki.freebsd.org/WiFi/Mt76[MediaTek mt76 status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Mt76[https://wiki.freebsd.org/WiFi/Mt76] +
 link:https://wiki.freebsd.org/WiFi/Ath11k[QCA ath11k status FreeBSD wiki page] URL: link:https://wiki.freebsd.org/WiFi/Ath11k[https://wiki.freebsd.org/WiFi/Ath11k]
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
