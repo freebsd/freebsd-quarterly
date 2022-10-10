@@ -12,18 +12,18 @@ TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects=
+Projects= openstack-on-freebsd.adoc cloud-init.adoc
 
 # Changes affecting the base system and programs in it
-Userland=
+Userland= bhyve-debug-server-enhancements.adoc pjdfstest.adoc lldb.adoc kinst.adoc
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel=
+Kernel= ena.adoc wtap.adoc iwlwifi.adoc wifi.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures=
+Architectures= firecracker.adoc
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
@@ -31,11 +31,11 @@ Documentation=	doceng.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports=
+Ports= calendar-data.adoc kde.adoc gcc.adoc
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty=
+ThirdParty= pot.adoc
 
 # Objects that defy categorization
 Miscellaneous=
