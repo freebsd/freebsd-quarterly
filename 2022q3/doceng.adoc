@@ -79,7 +79,7 @@ Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
 
 The Manual Pages Portal has been redesigned to use man:mandoc[1] for rendering.
 A link:https://www.carlavilla.es/[portal preview] is available.
-Feedback has been collected and addressed when possible.
+Feedback has been collected and addressed where possible.
 There are some remaining non-blocking issues.
 Doceng@ would like to move forward with the migration to this new portal.
 
