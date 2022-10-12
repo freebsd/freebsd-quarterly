@@ -143,14 +143,45 @@ to help provide a venue for sharing knowledge, working together on projects, and
 facilitating collaboration between developers and commercial users.  This all
 helps provide a healthy ecosystem.  We support the non-FreeBSD events to promote
 and raise awareness of FreeBSD, to increase the use of FreeBSD in different
-applications, and to recruit more contributors to the Project.  We are
-continuing to attend virtual events and planning the June 2022 Developer Summit.
-In addition to attending and planning virtual events, we are continually working
-on new training initiatives and updating our selection of
+applications, and to recruit more contributors to the Project. We are continuing
+to attend events both in person and virtual as well as planning the November
+Vendor Summit. In addition to attending and planning virtual events, we are
+continually working on new training initiatives and updating our selection of
 link:https://freebsdfoundation.org/freebsd-project/resources/[how-to guides] to
 facilitate getting more folks to try out FreeBSD.
 
 Check out some of the advocacy and education work we did last quarter:
+
+* Held a FreeBSD Workshop and Staffed a booth at Scale 19x in Los Angeles, CA on
+  July 28-30. You can read more about our participation in the
+  link:https://freebsdfoundation.org/blog/scale19x-conference-report/[SCALE19X
+  Conference Report]
+* Sponsored and attended link:https://coscup.org/2022/en/[COSCUP], July 30-31, Taiwan
+* Attended the EuroBSDCon Developer Summit and sponsored and attended
+  link:https://2022.eurobsdcon.org/[EuroBSDcon 2022], September 15-18, Vienna,
+  Austria
+* link:http://toilers.mines.edu/RMCWiC/2022/home.html[Sponsored and Presented at the Rocky Mountain Celebration of Women in
+  Computing], September 29-30, 2022. Slides from Deb’s presentation can be found
+  link:http://toilers.mines.edu/RMCWiC/2022/program.html[here].
+* Published the
+  link:https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-summer-2022-update/[FreeBSD
+  Foundation Summer 2022 Update]
+* Continued our participation in Google Summer of Code as both an admin and
+  mentors. Interviews with some of the Google Summer of Code Students can be
+  found link:https://freebsdfoundation.org/our-work/latest-updates/[here].
+* Introduced a new
+  link:https://freebsdfoundation.org/freebsd-project/resources/[FreeBSD
+  Resources] page that allows for search by type of subject, type of content and
+  difficulty level.
+* New Blog Posts:
+
+** Guest Post: link:https://freebsdfoundation.org/blog/guest-post-freebsd-in-science/[FreeBSD in Science]
+** link:https://freebsdfoundation.org/blog/advocating-for-freebsd-in-2022-and-beyond/[Advocating for FreeBSD in 2022 and Beyond]
+** link:https://freebsdfoundation.org/blog/august-foundation-fundraising-update/[August Foundation Fundraising Update]
+** link:https://freebsdfoundation.org/blog/sharing-dual-licensed-drivers-between-linux-and-freebsd/[Sharing Dual-Licensed Drivers between Linux and FreeBSD]
+* New and Updated How-To and Quick Guides:
+** link:https://freebsdfoundation.org/blog/new-freebsd-quick-guide-video-playback-on-freebsd-quick-guide/[FreeBSD Quick Guide: Video Playback on FreeBSD]
+** link:https://freebsdfoundation.org/resource/binary-package-management-on-freebsd/[Binary Package Management on FreeBSD]
 
 We help educate the world about FreeBSD by publishing the professionally
 produced FreeBSD Journal.  As we mentioned previously, the FreeBSD Journal is
