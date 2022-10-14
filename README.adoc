@@ -4,49 +4,58 @@
 
 This repository is for drafts.
 
-Please submit your draft as early as possible. To submit:
+Please submit your draft as early as possible during the collection period.
+To submit:
 
-1. Fork the repository - reusing an old fork is OK.
-2. Create a new branch and enter the directory for the current time
-   period - `2022q3`.
-3. Create a new file, with a name that corresponds with the name of
-   your project - use the `report-sample.adoc` template.
+1. Fork the repository – reusing an old fork is OK.
+2. Create a new branch, and enter the directory for the current time period – `2022q4`.
+3. Create a new file, with a name that corresponds with the name of your project – use the `report-sample.adoc` template.
 4. Create a pull request.
-5. Someone will review it and may request changes. If they do,
-   evaluate the requests, make any you think are warranted, explain
-   any you chose not to, and push again. *Do not squash or
-   force-push* if at all possible as this makes the next review
-   much harder.
+5. Someone will review the pull request.
+If changes are requested: evaluate them, make any that you think are warranted, explain any that you chose not to, and push again.
+** *Do not squash or force-push* if at all possible, as this makes the next review much harder.
 6. Once your draft is accepted and merged, you're good.
 
-You can tweak things after your draft was merged. Simply edit, then
-submit another PR.
+You can tweak things after your draft is merged.
+Simply edit, then submit another pull request.
 
-Please do not worry excessively about language errors or AsciiDoc
-syntax - we can correct things for you.
+Please do not worry excessively about language errors or AsciiDoc syntax – we can correct things for you.
 
-=== Deadline for submissions for `2022q3`
+=== Deadlines: general rules
 
-30th of September 2022
+Reports are collected during: 
 
-Note that this is **immediately** after the end of the quarter.
+* the third month of each quarter.
 
-General rules for deadlines:
+Deadlines will be: 
 
-* Reports will be collected during the third month of each quarter.
-* Deadlines will be the 1st of January, April, July and October.
-* Deadlines for portmgr are 1 week after the official deadlines:
-  8th of January, April, July and October.
-* Late report submitters can ask for 1 more week of time after
-  deadlines by contacting the quarterly status reports team, for
-  example by sending an e-mail to quarterly-submissions@.
+* 1st of January
+* 1st of April
+* 1st of July
+* 1st of October.
+
+For portmgr@, deadlines will be one week later: 
+
+* 8th of January
+* 8th of April
+* 8th of July
+* 8th of October.
+
+Late submitters may request a one-week extension by contacting the quarterly status reports team – for example, an e-mail to quarterly-submissions@
+
+==== Deadline for submissions for `2022q4`
+
+* 1st of January 2023
+
+– **immediately** after the end of the quarter.
 
 == Finals
 
-Collated final reports are:
+Collated reports are:
 
+* Sent to link:https://lists.freebsd.org/subscription/freebsd-announce[freebsd-announce]. 
 * Listed at link:https://www.freebsd.org/news/status/[FreeBSD Status Reports].
-* Promoted through link:https://www.freebsd.org/news/newsflash/[newsflashes].
+* Promoted through link:https://www.freebsd.org/news/newsflash/[FreeBSD News Flash].
 
 The most recent report:
 
