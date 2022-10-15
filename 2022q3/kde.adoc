@@ -14,8 +14,12 @@ The notes below describe *mostly* ports for KDE, but also include items that are
 
 ==== Qt6 Landed
 
-The big news in the KDE ports is not directly KDE-related. Qt6 has landed, which prepares us for the next generation of Qt-based applications.
-It is now possible to have `USES=qt:6` to select the new Qt version. Some ports have been flavorized to make use of the new version.
+The big news in the KDE ports is not directly KDE-related.
+Qt6 has landed, which prepares us for the next generation of Qt-based applications.
+
+It is now possible to have `USES=qt:6` to select the new Qt version.
+Some ports have been flavorized to make use of the new version.
+
 KDE itself is not affected: the upstream work on KDE Frameworks for Qt6 is not yet completed.
 Most of the KDE Frameworks will compile with Qt6, but that is not important for FreeBSD ports yet.
 With package:devel/qt6[] you get Qt 6.4.0, released at the end of the quarter.

@@ -26,7 +26,8 @@ Some of the items are still under heavy development.
 For instance, due to the design of Neutron, the DHCP servers are placed inside Linux network namespaces.
 It is necessary to find an alternative, e.g. `vnet`, on FreeBSD and adapt it.
 Most of the time the porting strategy is to make as small of an impact as possible by working around obstacles.
-But something like `oslo.privsep` deserves a true porting. `oslo.privsep` is rooted in Linux capabilities to do the privilege separation work.
+But something like `oslo.privsep` deserves a true porting.
+`oslo.privsep` is rooted in Linux capabilities to do the privilege separation work.
 Right now we just bypassed any Linux capabilities-related operation inside `oslo.privsep`.
 So there is plenty of hackish spots in the source code and configurations currently.
 All of these along with the building and installation steps will be collected in the https://github.com/openstack-on-freebsd[project repositories].

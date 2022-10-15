@@ -6,13 +6,12 @@ link: https://reviews.freebsd.org/D35826[Differential] +
 Contact: Bojan Novković <bojan.novkovic@kset.org>
 
 The goal of this project was to enhance the functionality of bhyve’s debug server.
-Several existing features related to single-stepping are tied to Intel-specific
-VM mechanisms, which severely impairs bhyve’s debugging functionality on
-other x86 platforms. The first goal dealt with extending single-stepping support to AMD hosts.
+Several existing features related to single-stepping are tied to Intel-specific VM mechanisms, which severely impairs bhyve’s debugging functionality on other x86 platforms.
+The first goal dealt with extending single-stepping support to AMD hosts.
 The second goal was to add support for hardware watchpoints using the guest OS's hardware debugging registers.
 
-The project was carried out under Google's Summer of Code program and was finished around the end of
-July. The project's wiki also contains detailed documentation regarding several implemented mechanisms.
+The project was carried out under Google's Summer of Code program and was finished around the end of July.
+The project's wiki also contains detailed documentation regarding several implemented mechanisms.
 
 The changes can be summarized as follows:
 

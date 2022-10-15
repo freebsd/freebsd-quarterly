@@ -9,7 +9,8 @@ Contact: Michael Gmelin (Potman) <grembo@freebsd.org>
 
 Pot is a jail management tool that link:https://www.freebsd.org/news/status/report-2020-01-2020-03/#pot-and-the-nomad-pot-driver[also supports orchestration through Nomad].
 
-During the last quarter, link:https://github.com/bsdpot/pot/releases/tag/0.15.3[pot 0.15.3] was released. It contains a number of improvements like mount-out to remove or unmount a previously mount-in folder or filesystem, signal and exec commands, better jail lifecycle handling, and many bug fixes.
+During the last quarter, link:https://github.com/bsdpot/pot/releases/tag/0.15.3[pot 0.15.3] was released.
+It contains a number of improvements like mount-out to remove or unmount a previously mount-in folder or filesystem, signal and exec commands, better jail lifecycle handling, and many bug fixes.
 
 A new version of the Nomad driver, link:https://github.com/bsdpot/nomad-pot-driver/releases/tag/v0.9.0[nomad-pot-driver 0.9.0], was also released with signal and exec support and stability fixes.
 
