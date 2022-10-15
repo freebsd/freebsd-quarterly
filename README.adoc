@@ -4,50 +4,60 @@
 
 This repository is for drafts.
 
-Please submit your draft as early as possible during the collection period.
+Please submit your draft **as early as possible during the quarter**.
+
+Don't worry excessively about language or link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc syntax] – we can correct things for you.
+
 To submit:
 
-1. Fork the repository – reusing an old fork is OK.
-2. Create a new branch, and enter the directory for the current period – `2022q4`.
-3. Create a new file, with a name that corresponds with the name of your project – use the `report-sample.adoc` template.
-4. Create a pull request.
-5. Someone will review the pull request.
-If changes are requested: evaluate them, make any that you think are warranted, explain any that you chose not to, and push again.
-** *Do not squash or force-push* if at all possible, as this makes the next review much harder.
-6. Once your draft is accepted and merged, you're good.
+1. Fork the repository. It's OK to reuse an existing fork.
+2. Create a new branch. 
+3. Enter the directory for the current period – `2022q4`.
+4. Create a new file – use the `report-sample.adoc` template. Choose a filename that signifies the name of your project.
+5. Submit a pull request. 
+If you allow edits from maintainers, this can streamline things. 
+6. Someone will review your pull request.
+7. If changes are requested: 
+** evaluate them
+** make any that you think are warranted
+** explain any changes that you declined
+** push again – but please, *do not squash or force-push* (doing so will make the next review much more difficult).
+8. Once your draft is accepted and merged, you're good.
 
-You can tweak things after your draft is merged.
-Simply edit, then submit another pull request.
+You can tweak things after a merge: simply edit, then submit another pull request.
 
-Please do not worry excessively about language errors or AsciiDoc syntax – we can correct things for you.
+Thanks!
 
-=== Deadlines: general rules
+=== Reviewing
 
-Reports are collected during: 
+Minor reviews may occur at any time. 
 
-* the third month of each quarter.
+Pre-final reviews occur during the third month of the quarter. 
 
-Deadlines will be: 
+=== Deadlines for submission
+
+Generally: 
 
 * 1st of January
 * 1st of April
 * 1st of July
 * 1st of October.
 
-For portmgr@, deadlines will be one week later: 
+For portmgr@, one week later: 
 
 * 8th of January
 * 8th of April
 * 8th of July
 * 8th of October.
 
-Late submitters may request a one-week extension by contacting the quarterly status reports team – for example, an e-mail to quarterly-submissions@
+==== General deadline for `2022q4`
 
-==== Deadline for submissions for `2022q4`
+* 1st of January 2023.
 
-* 1st of January 2023
+==== Lateness
 
-– **immediately** after the end of the quarter.
+* send an e-mail to quarterly-submissions@ 
+* request a one-week extension.
 
 == Finals
 
