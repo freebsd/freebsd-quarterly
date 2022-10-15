@@ -19,7 +19,7 @@ Userland= bhyve-debug-server-enhancements.adoc pjdfstest.adoc lldb.adoc kinst.ad
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= ena.adoc wtap.adoc iwlwifi.adoc wifi.adoc
+Kernel= ena.adoc wtap.adoc iwlwifi.adoc wifi.adoc ufs_snapshots.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
