@@ -56,8 +56,7 @@ For portmgr@, one week later:
 
 ==== Lateness
 
-* send an e-mail to quarterly-submissions@ 
-* request a one-week extension.
+Send an e-mail to quarterly-submissions@ to request an extension.
 
 == Finals
 
