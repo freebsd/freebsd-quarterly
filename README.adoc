@@ -4,49 +4,67 @@
 
 This repository is for drafts.
 
-Please submit your draft as early as possible. To submit:
+Please submit your draft **as early as possible during the quarter**.
 
-1. Fork the repository - reusing an old fork is OK.
-2. Create a new branch and enter the directory for the current time
-   period - `2022q3`.
-3. Create a new file, with a name that corresponds with the name of
-   your project - use the `report-sample.adoc` template.
-4. Create a pull request.
-5. Someone will review it and may request changes. If they do,
-   evaluate the requests, make any you think are warranted, explain
-   any you chose not to, and push again. *Do not squash or
-   force-push* if at all possible as this makes the next review
-   much harder.
-6. Once your draft is accepted and merged, you're good.
+Don't worry excessively about language or link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc syntax] – we can correct things for you.
 
-You can tweak things after your draft was merged. Simply edit, then
-submit another PR.
+To submit:
 
-Please do not worry excessively about language errors or AsciiDoc
-syntax - we can correct things for you.
+1. Fork the repository. It's OK to reuse an existing fork.
+2. Create a new branch. 
+3. Enter the directory for the current period – `2022q4`.
+4. Create a new file – use the `report-sample.adoc` template. Choose a filename that signifies the name of your project.
+5. Submit a pull request. 
+If you allow edits from maintainers, this can streamline things. 
+6. Someone will review your pull request.
+7. If changes are requested: 
+** evaluate them
+** make any that you think are warranted
+** explain any changes that you declined
+** push again – but please, *do not squash or force-push* (doing so will make the next review much more difficult).
+8. Once your draft is accepted and merged, you're good.
 
-=== Deadline for submissions for `2022q3`
+You can tweak things after a merge: simply edit, then submit another pull request.
 
-30th of September 2022
+Thanks!
 
-Note that this is **immediately** after the end of the quarter.
+=== Reviewing
 
-General rules for deadlines:
+Minor reviews may occur at any time. 
 
-* Reports will be collected during the third month of each quarter.
-* Deadlines will be the 1st of January, April, July and October.
-* Deadlines for portmgr are 1 week after the official deadlines:
-  8th of January, April, July and October.
-* Late report submitters can ask for 1 more week of time after
-  deadlines by contacting the quarterly status reports team, for
-  example by sending an e-mail to quarterly-submissions@.
+Pre-final reviews occur during the third month of the quarter. 
+
+=== Deadlines for submission
+
+Generally: 
+
+* 1st of January
+* 1st of April
+* 1st of July
+* 1st of October.
+
+For portmgr@, one week later: 
+
+* 8th of January
+* 8th of April
+* 8th of July
+* 8th of October.
+
+==== General deadline for `2022q4`
+
+* 1st of January 2023.
+
+==== Lateness
+
+Send an e-mail to quarterly-submissions@ to request an extension.
 
 == Finals
 
-Collated final reports are:
+Collated reports are:
 
+* Sent to link:https://lists.freebsd.org/subscription/freebsd-announce[freebsd-announce]. 
 * Listed at link:https://www.freebsd.org/news/status/[FreeBSD Status Reports].
-* Promoted through link:https://www.freebsd.org/news/newsflash/[newsflashes].
+* Promoted through link:https://www.freebsd.org/news/newsflash/[FreeBSD News Flash].
 
 The most recent report:
 
