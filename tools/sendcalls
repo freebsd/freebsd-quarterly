@@ -104,7 +104,7 @@ $quarter_specific_recipients{4} = [];
 
 $template_substitutions{1}{'%%START%%'}	=	'January';
 $template_substitutions{1}{'%%STOP%%'}	=	'March';
-$template_substitutions{1}{'%%DEADLINE%%'}	=	'March, 30th';
+$template_substitutions{1}{'%%DEADLINE%%'}	=	'March, 31st';
 $template_substitutions{2}{'%%START%%'}	=	'April';
 $template_substitutions{2}{'%%STOP%%'}	=	'June';
 $template_substitutions{2}{'%%DEADLINE%%'}	=	'June, 30th';
@@ -226,17 +226,8 @@ push @cc_recipients, @{ $quarter_specific_recipients{$quarter} };
 $template_substitutions{$quarter}{'%%QUARTER%%'} = $quarter;
 $template_substitutions{$quarter}{'%%YEAR%%'} = $year;
 $template_substitutions{$quarter}{'%%SIGNATURE%%'} = $options{'s'};
-if($quarter != 4)
-{
-	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
-	$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.$year;
-}
-else
-{
-	$template_substitutions{$quarter}{'%%DEADLINE%%'} =
-	$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.($year + 1);
-}
-
+$template_substitutions{$quarter}{'%%DEADLINE%%'} =
+$template_substitutions{$quarter}{'%%DEADLINE%%'}.' '.$year;
 
 # -------------------------------------------------------
 # Generate mail text
