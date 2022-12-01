@@ -38,10 +38,10 @@ Pre-final reviews occur during the third month of the quarter.
 
 Generally: 
 
-* 1st of January
-* 1st of April
-* 1st of July
-* 1st of October.
+* 31st of March
+* 30th of June
+* 30th of September
+* 31st of December.
 
 For portmgr@, one week later: 
 
@@ -52,7 +52,7 @@ For portmgr@, one week later:
 
 ==== General deadline for `2022q4`
 
-* 1st of January 2023.
+* 31st of December 2022.
 
 ==== Lateness
 
