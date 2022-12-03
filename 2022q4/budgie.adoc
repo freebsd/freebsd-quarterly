@@ -33,4 +33,4 @@ These bugs are also still open:
 ==== Open tasks
 
 * Re-organize some sections in Handbook
-* Migrate my link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265107[documentation] into Handbook
+* Migrate my link:https://codeberg.org/olivierd/freebsd-ports-budgie/wiki[documentation] into Handbook
