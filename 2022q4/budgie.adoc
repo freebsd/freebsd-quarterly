@@ -10,9 +10,9 @@ Budgie initially developed as the default desktop environment for the former Evo
 
 It is build on top of the GNOME technologies such as GTK >= 3, GLib, Mutter, libpeas.
 
-The goal is to have a new desktop for end-users. I have submitted 2 reviews (link:https://reviews.freebsd.org/D37224[D37224] and link:https://reviews.freebsd.org/D37286[D37286] for Porter Handbook) in order committers import it.
+The goal is to have a new desktop for end users. I have submitted 2 reviews (link:https://reviews.freebsd.org/D37224[D37224] and link:https://reviews.freebsd.org/D37286[D37286] for Porter Handbook) so committers can import it.
 
-We can find:
+These reviews include:
 
 * Mk/Uses framework `budgie.mk`
 * new virtual category (*budgie*)
@@ -30,7 +30,6 @@ These bugs are also still open:
 * `devel/libpeas` link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267420[bug #267420]
 * `sysutils/gnome-settings-daemon` link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265107[bug #265107]
 
-==== Open tasks
+==== Open task
 
-* Re-organize some sections in Handbook
-* Migrate my link:https://codeberg.org/olivierd/freebsd-ports-budgie/wiki[documentation] into Handbook
+* Add support of LightDM in FreeBSD Handbook
