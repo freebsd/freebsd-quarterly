@@ -1,17 +1,17 @@
-## Status Report Sample - This Will Become The Title ##
+## FreshPorts - help wanted ##
 
 Link:	 https://freshports.org/[FreshPorts]
 Link:	 https://news.freshports.org/[FreshPorts blog]
 
 Contact: Dan Langille <dan@FreeBSD.org>  
 
-FreshPorts, and its sister site, FreshSource, have reported
+FreshPorts and FreshSource have reported
 upon FreeBSD commits for 20 years. They cover all commits,
 not just ports.
 
 FreshPorts tracks the commits and extracts data from the
 port Makefiles to create a database of information useful
-to both port developers and port users.
+to both port maintainers and port users.
 
 For example, https://www.freshports.org/security/acme.sh/ shows
 the history of this port, back to its creation in May 2017.
@@ -25,10 +25,11 @@ updates the database, is still on subversion. I have
 wanted to convert these repositories to git for some time.
 
 I would like help with this please. I'll give you a copy of the 
-repositories and you give me back a git repo. It will be uploaded
-to https://github.com/FreshPorts
+repositories and you give me back several git repos (one for each).
+They will be uploaded to the https://github.com/FreshPorts (our project
+on GitHub).
 
-These are the repos.
+These are the existing subversion repos:
 
 * ingress (code for the back-end)
 * database schema
@@ -55,5 +56,5 @@ From time to time, a change to the FreeBSD ports infrastructure breaks
 something or requires a modification, but there is rarely any urgency
 to fix that. This is not a huge time commitment. There is a lot of
 learning. While not a complex application, FreshPorts is also not
-trivial
+trivial.
 
