@@ -16,7 +16,7 @@ to the FreeBSD ports tree!
 This new release includes many improvements in various parts of the
 environment, especially in the Thunar file manager.
 
-Also various upstream releases now include patches that were present in
+Also various upstream packages now include patches that were present in
 the ports tree.
 
 For further details, refer to the link:https://xfce.org/about/news/?post=1671062400[Xfce 4.18 Upstream Release Announcement].
