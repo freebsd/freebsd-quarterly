@@ -19,4 +19,4 @@ environment, especially in the Thunar file manager.
 Also various upstream releases now include patches that were present in
 the ports tree.
 
-For further details, refer to the [Xfce 4.18 Upstream Release Announcement](https://xfce.org/about/news/?post=1671062400).
+For further details, refer to the link:https://xfce.org/about/news/?post=1671062400[Xfce 4.18 Upstream Release Announcement].
