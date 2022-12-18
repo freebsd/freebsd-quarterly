@@ -1,7 +1,8 @@
 ## Xfce on FreeBSD ##
 
-Link:	 [Xfce 4.18 Upstream Release Announcement](https://xfce.org/about/news/?post=1671062400)
-Link:	 [Xfce meta-port on FreshPorts](https://www.freshports.org/x11-wm/xfce4)
+Links: +
+link:https://xfce.org/about/news/?post=1671062400[Xfce 4.18 Upstream Release Announcement] URL: link:https://xfce.org/about/news/?post=1671062400[https://xfce.org/about/news/?post=1671062400] +
+link:https://www.freshports.org/x11-wm/xfce4[Xfce meta-port on FreshPorts] URL: link:https://www.freshports.org/x11-wm/xfce4[link:https://www.freshports.org/x11-wm/xfce4]
 
 Contact: Xfce team <xfce@FreeBSD.org>
 Contact: Guido Falsi <madpilot@FreeBSD.org>
