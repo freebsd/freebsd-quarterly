@@ -13,10 +13,10 @@ FreshPorts tracks the commits and extracts data from the
 port Makefiles to create a database of information useful
 to both port maintainers and port users.
 
-For example, https://www.freshports.org/security/acme.sh/ shows
+For example, link:https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows
 the history of this port, back to its creation in May 2017.
 
-### converting the backend repository ###
+### Converting the backend repository ###
 
 This topic deals with the FreshPorts code repository. The
 front end (website) was converted from subversion to git several
@@ -26,12 +26,12 @@ wanted to convert these repositories to git for some time.
 
 I would like help with this please. I'll give you a copy of the 
 repositories and you give me back several git repos (one for each).
-They will be uploaded to the https://github.com/FreshPorts (our project
+They will be uploaded to link:https://github.com/FreshPorts[https://github.com/FreshPorts] (our project
 on GitHub).
 
 These are the existing subversion repos:
 
-* ingress (code for the back-end)
+* ingress (code for the back end)
 * database schema
 * backend - monitoring code
 * packaging - scripts for cutting new tarballs - deprecated via git
