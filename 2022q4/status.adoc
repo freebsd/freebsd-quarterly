@@ -18,7 +18,7 @@ link:https://github.com/freebsd/freebsd-quarterly/commit/4b8255e604dd0513e841aa8
 
 * the FreeSD doc/ repository is self-hosted, while the status repository is hosted on GitHub. Since the contents of the self-hosted repository are mirrored, nothing is being lost in visibility with the repository merging.
 
-Some inconsistencies about the name of the team have also been found: the team has been referred to "quarterly", "quarterly status team", "status", "status team", "monthly" etc.
+Some inconsistencies about the name of the team have also been found: the team has been referred to as "quarterly", "quarterly status team", "status", "status team", "monthly" etc.
 So this issue is also being addressed.
 
 Please note that we are still working on these changes and that they might not be completed within the next quarter.
