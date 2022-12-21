@@ -9,4 +9,4 @@ Contact: Mikaël Urankar <mikael@FreeBSD.org> +
 Contact: Dmitri Goutnik <dmgk@FreeBSD.org>
 
 The proposal to add support for FreeBSD riscv64 has been accepted and the patches merged.
-golang on FreeBSD riscv64 will be available in golang v1.20 (to be release in February 2023)
+golang on FreeBSD riscv64 will be available in golang v1.20 (to be released in February 2023)
