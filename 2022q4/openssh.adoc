@@ -2,7 +2,7 @@
 
 Links: +
 link:https://www.openssh.com/[OpenSSH] URL: link:https://www.openssh.com/[https://www.openssh.com/] +
-link:https://www.openssh.com/txt/release-9.1[OpenSSH 9.1 release notes] URL:https://www.openssh.com/txt/release-9.0[https://www.openssh.com/txt/release-9.1]
+link:https://www.openssh.com/txt/release-9.1[OpenSSH 9.1 release notes] URL:https://www.openssh.com/txt/release-9.1[https://www.openssh.com/txt/release-9.1]
 
 Contact: Ed Maste <emaste@freebsd.org>
 
