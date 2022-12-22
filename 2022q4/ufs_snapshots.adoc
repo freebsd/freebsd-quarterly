@@ -6,7 +6,7 @@ link:https://reviews.freebsd.org/D36491[Milestone 1 Core Changes] URL: link:http
 Contact: Kirk McKusick <mckusick@FreeBSD.org>
 
 The goal of this project is to make UFS/FFS filesystem snapshots
-avaiable when running with journaled soft updates.
+available when running with journaled soft updates.
 
 First a bit of background.  Soft updates have been available for
 UFS/FFS since the mid 1990s.  They eliminate the need for most
@@ -14,7 +14,7 @@ synchronous disk writes and keep the state of the filesystem
 sufficiently consistent that it can be put back online after a crash
 without the need to run fsck(8).  However, it may incorrectly assume
 that some of its blocks are still in use when in fact they are free.
-So, eventually it is necessary take the filesystem offline to run
+So, eventually it is necessary to take the filesystem offline to run
 fsck(8) to reclaim these lost blocks.  The time to run fsck(8) is a
 function of the number of files in the filesystem and the size of
 the filesystem.  Large filesystems may take hours to complete an
@@ -26,7 +26,7 @@ time to recover after a crash is a function of the amount of activity
 in the filesystem in the minute before the crash.  Journaled recovery
 time is usually only a few seconds and never exceeds a minute.
 
-The drawback to using journaling is that the writes to its log adds
+The drawback to using journaling is that the writes to its log add
 an extra write load to the media containing the filesystem.  Thus
 a write-intensive workload will have reduced throughput on a
 filesystem running with journaling.
@@ -40,7 +40,7 @@ any errors brought on by media failure.
 
 A full fsck(8) is normally done on an offline filesystem.  However,
 it can be done by running fsck(8) on a snapshot of a live filesystem.
-When running fsck(8) in background on a live filesystem, the
+When running fsck(8) in the background on a live filesystem, the
 filesystem performance will be about half of normal during the time
 that the background fsck(8) is running.  Running a full fsck on a
 UFS filesystem is the equivalent of running a scrub on a ZFS
