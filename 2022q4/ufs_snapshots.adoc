@@ -1,6 +1,9 @@
 === Enabling Snapshots on Filesystems Using Journaled Soft Updates
 
-Contact: Marshall Kirk McKusick <mckusick@freebsd.org>
+Links: +
+link:https://reviews.freebsd.org/D36491[Milestone 1 Core Changes] URL: link:https://reviews.freebsd.org/D36491[https://reviews.freebsd.org/D36491]
+
+Contact: Kirk McKusick <mckusick@FreeBSD.org>
 
 The goal of this project is to make UFS/FFS filesystem snapshots
 available when running with journaled soft updates.
