@@ -12,7 +12,7 @@ Pot is a jail management tool that link:https://www.freebsd.org/news/status/repo
 During the last quarter, link:https://github.com/bsdpot/pot/releases/tag/0.15.4[pot 0.15.4] was released.
 It again contains a number of improvements like signing pot images as well as many bug fixes. Also, we welcome two new pot contributors: link:https://github.com/zilti[@zilti] and link:https://github.com/reezer[@reezer].
 
-Additionally, there ist a new link:https://galaxy.ansible.com/zilti/pot[Ansible pot collection] available.
+Additionally, there is a new link:https://galaxy.ansible.com/zilti/pot[Ansible pot collection] available.
 
 Potluck aims to be to FreeBSD and pot what Dockerhub is to Linux and Docker: a repository of pot flavours and complete container images for usage with pot and in many cases Nomad.
 
