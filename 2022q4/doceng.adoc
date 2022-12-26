@@ -23,7 +23,6 @@ During the last quarter:
 Items pending and in the discussion:
 
 * link:https://cgit.freebsd.org/doc/commit/?id=4c50528a8678246a6d01765acac8c395434b8c7e[A new document about licensing] has been added to the documentation set.
-==== FreeBSD's Documentation Primer
 
 ==== Porter's Handbook:
 
