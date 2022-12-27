@@ -9,11 +9,11 @@ Contact: Olivier Duchateau <duchateau.olivier@gmail.com>
 The Pantheon desktop environment is designed for elementary OS.
 It builds on GNOME technologies (such as Mutter, GTK 3 and 4) and it is written in Vala. The goal is to have a new desktop for users.
 
-*13.1-RELEASE or higher is required*, because several core components depend of `deskutils/xdg-desktop-portal`.
+*13.1-RELEASE or higher is required*, because several core components depend on `deskutils/xdg-desktop-portal`.
 
-The repository contains Mk/Uses framework `elementary.mk`, official applications, and curated ports which depend of `x11-toolkits/granite`.
+The repository contains Mk/Uses framework `elementary.mk`, official applications, and curated ports which depend on `x11-toolkits/granite`.
 
-Since the lastest report, we continue to keep up to date its related ports, especially:
+Since the previous report, we have been updating its related ports, especially:
 
 * `deskutils/elementary-calendar` update to link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267797[6.1.2]
 * `deskutils/iconbrowser`
@@ -28,7 +28,7 @@ Power manager plugins for top panel (wingpanel) and control center (switchboard)
 
 A new switchboard plugin is also available, `net/switchboard-plug-sharing`. Ported *Rygel*, GNOME UPnP/DLNA services.
 
-Submitted others patches for low level libraries such as:
+Submitted other patches for low level libraries such as:
 
 * `print/cups-pk-helper` update to link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=266067[0.2.7] required by `print/switchboard-plus-printers`
 * `devel/libgee` update to link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=266585[0.20.6] heavily uses by the desktop
@@ -36,5 +36,6 @@ Submitted others patches for low level libraries such as:
 * `sysutils/accountsservice` update to 22.08.8 link:https://reviews.freebsd.org/D37679[D37679]
 
 ==== Open tasks
+
 * Improve documentation
 * Continue to work on user settings
