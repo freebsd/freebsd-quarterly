@@ -9,22 +9,24 @@ Contact: Rick Macklem <rmacklem@freebsd.org>
 Several users of FreeBSD identified a need to run the NFS server inside
 a vnet prison.
 This turned into a small project, where I now have a patch that does this.
-It is currently available at the above link for testing, or on phabricator
-as D37519.
+It is currently available at the above link for testing or on phabricator
+as link:https://reviews.freebsd.org/D37519[D37519].
 Without this patch, the NFS server cannot be run in a prison.
 
 Not included in the above patch is the ability to run the
-rpc.tlsservd(8) or nfsuserd(8) daemons within the vnet prison.
+man:rpc.tlsservd[8] or man:nfsuserd[8] daemons within the vnet prison.
 I do now have patches that allow these daemons to run in the
-vnet prison along with mountd(8) and nfsd(8), but I would
+vnet prison along with man:mountd[8] and man:nfsd[8], but I would
 like to get the above patch into main before adding support
-for the rpc.tlsservd(8) or nfsuserd(8) daemons.
+for man:rpc.tlsservd[8] or man:nfsuserd[8].
 
-At this time, the code needs review and testing.
+At this time, the code needs reviewing and testing.
 Hopefully this can be completed in the next few
-weeks, so that the patch can be committed to "main"
+weeks, so that the patch can be committed to `main`
 and possibly also MFC'd to stable/13.
+
+==== To do
 
 * Testing the above patch
 * Reviewing the above patch
-* Doing the same the rpc.tlsservd(8) and nfsuserd(8) patches
+* Doing the same for the man:rpc.tlsservd[8] and man:nfsuserd[8] patches
