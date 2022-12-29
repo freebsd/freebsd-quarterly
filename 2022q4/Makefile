@@ -8,22 +8,22 @@ YEAR?=	2022
 QUARTER?=	4
 
 # Entries from the various official and semi-official teams
-TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc
+TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr.adoc status.adoc
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects=
+Projects= cloud-init.adoc vessel-status-report.adoc NFS-in-prisons.adoc
 
 # Changes affecting the base system and programs in it
-Userland=
+Userland= openssh.adoc
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel=
+Kernel= ufs_snapshots.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures=
+Architectures= golang_riscv64.adoc
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
@@ -31,11 +31,11 @@ Documentation=	doceng.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports=
+Ports= FreshPorts.adoc xfce.md pantheon.adoc budgie.adoc gcc.adoc biology.adoc
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
-ThirdParty=
+ThirdParty= pot.adoc
 
 # Objects that defy categorization
 Miscellaneous=
