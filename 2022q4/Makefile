@@ -19,7 +19,7 @@ Userland= openssh.adoc
 
 # Updates to kernel subsystems/features, driver support, filesystems,
 # and more
-Kernel= ufs_snapshots.adoc
+Kernel= ufs_snapshots.adoc ddb_ctf.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
@@ -31,7 +31,7 @@ Documentation=	doceng.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= FreshPorts.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
+Ports= FreshPorts.adoc alderlake-i915kms-drmkmod-update.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
