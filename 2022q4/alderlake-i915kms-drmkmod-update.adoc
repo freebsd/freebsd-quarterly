@@ -3,7 +3,6 @@
 Links: +
 link:https://github.com/christian-moerz/drm-kmod[GitHub site] URL:
 link:https://github.com/christian-moerz/drm-kmod[https://github.com/christian-moerz/drm-kmod]
-+
 
 Contact: Christian Moerz <freebsd@ny-central.org>
 
@@ -23,6 +22,7 @@ drivers for 12th gen Intel CPUs. The work is still ongoing.
 
 There are a few limitations, particularly in contrast to the more
 general drm-kmod base:
+
 * development is focused on 14.0 SNAPSHOT, since everything is based
 on the main branch of the original krm-mod project
 * focused only on i915; amd and radeon support was completely removed
@@ -56,5 +56,5 @@ combination with reviewing patches for possible suspects that
 introduced the issues.
 
 The work that remains for the moment:
-* Debug system freezes, either via remote debug, savecore, ddb, kgdb
+* Debug system freezes, via remote debug, savecore, ddb, or kgdb
 * Review code changes for possible introduction of deadlocks
