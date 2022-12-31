@@ -12,7 +12,7 @@ TeamReports= freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.adoc portmgr
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= cloud-init.adoc vessel-status-report.adoc NFS-in-prisons.adoc
+Projects= vessel-status-report.adoc NFS-in-prisons.adoc
 
 # Changes affecting the base system and programs in it
 Userland= openssh.adoc
@@ -24,6 +24,10 @@ Kernel= ufs_snapshots.adoc ddb_ctf.adoc
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
 Architectures= golang_riscv64.adoc
+
+# Updating cloud-specific features and bringing in support for new
+# cloud platforms
+Cloud= cloud-init.adoc openstack-on-freebsd.adoc
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
