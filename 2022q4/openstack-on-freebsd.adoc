@@ -32,22 +32,22 @@ Most of the components/services composing an essential OpenStack cluster are now
 ** nova-compute
 ** nova-novncproxy
 
-The step-by-step documents constructing a POC can be found link:https://github.com/openstack-on-freebsd/docs[here].
+The step-by-step documents for constructing a POC can be found link:https://github.com/openstack-on-freebsd/docs[in the `docs` repository].
 
 In its design, most of the OpenStack components provide an abstraction layer for the underlying implementations.
 For nova, we choose the combination of the `libvirt` driver with the `bhyve` virtualization type enabled.
-And for neutron, it is the `openvswitch` mechanism driver.
+For neutron, it is the `openvswitch` mechanism driver.
 We solved several runtime dependencies and porting issues against the Libvirt, bhyve, and Open vSwitch combinations with minimal effort.
 It indicates we still have lots of work to undertake to make the changes back to OpenStack upstream.
 
-Concerning legitimate porting, there are three significant TODOs:
+Concerning actual porting, there are three significant TODOs:
 
 * Develop a proper alternative execution path in the `oslo_privsep` module for FreeBSD environments
 * Develop a new virtualization type, `bhyve`, for nova-compute's `libvirt` driver
 * Develop the IP library for FreeBSD under `neutron/agent/freebsd`
 
-In the next few weeks, we will focus on breaking through the last mile of the instance spawn path and wrapping up the documentation regarding POC site construction. We will also try rebasing the porting work to the master branch of OpenStack (now Xena).
+In the first few weeks of 2023, we will focus on breaking through the last mile of the instance spawn path and wrapping up the documentation regarding POC site construction. We will also try rebasing the porting work to the master branch of OpenStack (now Xena).
 
-People interested in helping with the project can first help verify the documentation by following the installation guide.
+People interested in helping with the project can first help check the documentation by following the installation guide.
 
 Sponsor: The FreeBSD Foundation
