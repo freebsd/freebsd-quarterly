@@ -7,6 +7,7 @@ link:http://www.example.com/other/url[Another link description] URL: link:http:/
 Contact: Full Name <email@example.org>
 
 Paragraphs are separated with an empty line.
+If at all possible, write one sentence per line and don't split a sentence between lines.
 Use link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc syntax], if you can.
 If you don't know AsciiDoc, just use plain text.
 
