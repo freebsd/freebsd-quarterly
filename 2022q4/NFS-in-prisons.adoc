@@ -19,6 +19,6 @@ Hopefully this can be completed in the next few weeks, so that the patch can be 
 
 ==== To do
 
-* Testing the above patch
-* Reviewing the above patch
+* Testing the above patch.
+* Reviewing the above patch.
 * Doing the same for the man:rpc.tlsservd[8] and man:nfsuserd[8] patches.
