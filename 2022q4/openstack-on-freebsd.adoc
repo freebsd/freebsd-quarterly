@@ -38,9 +38,9 @@ In its design, most of the OpenStack components provide an abstraction layer for
 For nova, we choose the combination of the `libvirt` driver with the `bhyve` virtualization type enabled.
 For neutron, it is the `openvswitch` mechanism driver.
 We solved several runtime dependencies and porting issues against the Libvirt, bhyve, and Open vSwitch combinations with minimal effort.
-It indicates we still have lots of work to undertake to make the changes back to OpenStack upstream.
+We still have lots of work to undertake to make the changes back to OpenStack upstream.
 
-Concerning actual porting, there are three significant TODOs:
+TODOs include:
 
 * Develop a proper alternative execution path in the `oslo_privsep` module for FreeBSD environments
 * Develop a new virtualization type, `bhyve`, for nova-compute's `libvirt` driver
