@@ -46,8 +46,7 @@ There are several aspects to FreshPorts:
 
 The database does not change very often and requires little maintenance compared to the applications and OS.
 The website pretty much runs itself.
-From time to time, a change to the FreeBSD ports infrastructure breaks something or requires a modification, but there is rarely any urgency
-to fix that.
+From time to time, a change to the FreeBSD ports infrastructure breaks something or requires a modification, but there is rarely any urgency to fix that.
 This is not a huge time commitment.
 There is a lot of learning.
 While not a complex application, FreshPorts is also not trivial.
