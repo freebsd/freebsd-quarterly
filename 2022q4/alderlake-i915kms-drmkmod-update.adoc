@@ -38,5 +38,5 @@ It will likely require remote debugging, possibly in combination with reviewing 
 
 The work that remains for the moment:
 
-* Debug system freezes, via remote debug, savecore, ddb, or kgdb
-* Review code changes for possible introduction of deadlocks.
+* debug system freezes, via remote debug, savecore, ddb, or kgdb
+* review code changes for possible introduction of deadlocks.
