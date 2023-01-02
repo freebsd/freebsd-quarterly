@@ -21,9 +21,9 @@ Of course I understand that this will imply more work for all ports maintainers 
 
 link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265948[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=2659548]
 
-==== Multiple versions
+==== Resolution of a conflict preventing the installation of multiple GCC versions simultaneously
  
-A conflict preventing the installation of multiple versions of GCC was resolved. Now, lang/gcc11 and lang/gcc12 can be installed at the same time.
+Now, lang/gcc11 and lang/gcc12 can be installed at the same time.
 This was particularly important for the update of the GCC default version, since a few ports have been kept to compile with GCC 11 for now.
 
 Note however that at the moment only one -devel GCC port at the time can be installed on your system.
