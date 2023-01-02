@@ -39,5 +39,5 @@ Submitted other patches for low level libraries such as:
 
 ==== Open tasks
 
-* Improve documentation
+* Improve documentation.
 * Continue to work on user settings.
