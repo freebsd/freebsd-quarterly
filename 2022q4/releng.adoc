@@ -13,7 +13,7 @@ The FreeBSD Release Engineering Team is responsible for setting and publishing r
 
 During the fourth quarter of 2022, the Release Engineering Team completed work on the 12.4-RELEASE cycle.
 This is the final release from the stable/12 branch.
-During the release cycle, only one BETA builds and two RC (release candidate) builds were needed; overall the release cycle went very smoothly and the release took place on December 5th.
+During the release cycle, only one BETA build and two RC (release candidate) builds were needed; overall the release cycle went very smoothly and the release took place on December 5th.
 
 During the fourth quarter of 2022, the Release Engineering Team continued providing weekly development snapshot builds for the *main*, *stable/13*, and *stable/12* branches.
 
