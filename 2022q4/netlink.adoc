@@ -32,11 +32,11 @@ The code implements a subset of the `NETLINK_ROUTE` subsystem and `NETLINK_GENER
 Partial support exists for the interface addresses and interfaces.
 
 Linuxulator support for Netlink has been committed to HEAD.
-It is possible to use unmodified ip with routes, nexthops, addresses and interfaces.
+It is possible to use unmodified iproute2 ip binary with routes, nexthops, addresses and interfaces.
 
 The simple userland library, snl(3), that provides convenient abstractions on the netlink socket, has been committed to HEAD.
 
-The first third-party software, BIRD, link:https://gitlab.nic.cz/labs/bird/-/commit/1e47b9f203aaaad0fb658d40a1670f1d0437f1f8[added] experimental FreeBSD Netlink support.
+The first third-party software, BIRD, link:https://gitlab.nic.cz/labs/bird/-/commit/1e47b9f203aaaad0fb658d40a1670f1d0437f1f8[added experimental FreeBSD Netlink support].
 
 ==== Next steps
 
