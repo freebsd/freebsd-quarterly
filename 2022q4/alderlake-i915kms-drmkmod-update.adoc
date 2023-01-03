@@ -24,7 +24,7 @@ There are a few limitations, particularly in contrast to the more
 general drm-kmod base:
 
 * development is focused on 14.0 SNAPSHOT, since everything is based
-on the main branch of the original krm-mod project
+on the main branch of the original drm-kmod project
 * focused only on i915; amd and radeon support was completely removed
 * patches were brought over from freedesktop/drm-intel
 link:https://github.com/freedesktop/drm-intel[freedesktop/drm-intel]
