@@ -15,7 +15,7 @@ Python atf(7) support comes with a number of libraries that abstracts a number o
 
 ==== Current status
 
-Python support have been commited to HEAD. Currently, ~80 tests use the python framework and the number is rising. Example tests have beed commited to show the handling of the typical cases.
+Python support has been committed to HEAD. Currently, ~80 tests use the python framework and the number is rising. Example tests have been committed to show the handling of the typical cases.
 
 ==== Next steps
 
