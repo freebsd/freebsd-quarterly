@@ -32,7 +32,7 @@ The code implements a subset of the `NETLINK_ROUTE` subsystem and `NETLINK_GENER
 Partial support exists for the interface addresses and interfaces.
 
 Linuxulator support for Netlink has been committed to HEAD.
-It is possible to use unmodified iproute2 ip binary with routes, nexthops, addresses and interfaces.
+It is possible to use the unmodified ip from iproute2 with routes, nexthops, addresses and interfaces.
 
 The simple userland library, snl(3), that provides convenient abstractions on the netlink socket, has been committed to HEAD.
 
