@@ -6,7 +6,7 @@ link:https://cgit.freebsd.org/src/tree/tests/examples/test_examples.py[Test exam
 
 Contact: Alexander Chernikov <melifaro@FreeBSD.org>
 
-Native pytest support for atf(7) enhances the capabilities of the FreeBSD testing.
+Native pytest support for atf(7) enhances the capabilities of the FreeBSD test suite.
 
 Pytest simplifies test writing by reducing the amount of boiler-plate code.
 It offers several advantages over the existing atf-c and atf-shell bindings.
