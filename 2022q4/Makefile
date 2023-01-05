@@ -35,7 +35,7 @@ Documentation=	doceng.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= FreshPorts.adoc alderlake-i915kms-drmkmod-update.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
+Ports= FreshPorts.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
