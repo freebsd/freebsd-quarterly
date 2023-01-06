@@ -13,10 +13,11 @@ In particular, the team is attempting to merge its GitHub repository into the Fr
 
 Here are the reasons for such a change:
 
-* having two independent repositories requires spending some time to make sure that both are in sync, which is being done manually. See for example commits such as
-link:https://github.com/freebsd/freebsd-quarterly/commit/4b8255e604dd0513e841aa8f3dce7741e78b999c[https://github.com/freebsd/freebsd-quarterly/commit/4b8255e604dd0513e841aa8f3dce7741e78b999c], which are not immediately clear in their commit messages about what is being done unless more time is invested to copy commit messages properly;
+* having two independent repositories requires spending some time to make sure that both are in sync, which is being done manually.
+See for example commits such as link:https://github.com/freebsd/freebsd-quarterly/commit/4b8255e604dd0513e841aa8f3dce7741e78b999c[https://github.com/freebsd/freebsd-quarterly/commit/4b8255e604dd0513e841aa8f3dce7741e78b999c], which are not immediately clear in their commit messages about what is being done unless more time is invested to copy commit messages properly;
 
-* the FreeSD doc/ repository is self-hosted, while the status repository is hosted on GitHub. Since the contents of the self-hosted repository are mirrored, nothing is being lost in visibility with the repository merging.
+* the FreeSD doc/ repository is self-hosted, while the status repository is hosted on GitHub.
+Since the contents of the self-hosted repository are mirrored, nothing is being lost in visibility with the repository merging.
 
 Some inconsistencies about the name of the team have also been found: the team has been referred to as "quarterly", "quarterly status team", "status", "status team", "monthly" etc.
 So this issue is also being addressed.
@@ -32,9 +33,12 @@ Thus just "status" has been chosen: this is correct as quarterly status reports 
 
 The following link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267813[email addresses have been created]:
 
-* the main contact address for the status report team is now <status@FreeBSD.org>. Mails sent to <quarterly@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
-* the email address for the status report submissions is now <status-submissions@FreeBSD.org>. Mails sent to <quarterly-submissions@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
-* the <quarterly-calls@FreeBSD.org> mailing list has been renamed to <status-calls@FreeBSD.org>. If you were already subscribed to <quarterly-calls@FreeBSD.org>, you do not need to resubscribe to <status-calls@FreeBSD.org>.
+* the main contact address for the status report team is now <status@FreeBSD.org>.
+Mails sent to <quarterly@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
+* the email address for the status report submissions is now <status-submissions@FreeBSD.org>.
+Mails sent to <quarterly-submissions@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
+* the <quarterly-calls@FreeBSD.org> mailing list has been renamed to <status-calls@FreeBSD.org>.
+If you were already subscribed to <quarterly-calls@FreeBSD.org>, you do not need to resubscribe to <status-calls@FreeBSD.org>.
 
 ==== Report submission
 
