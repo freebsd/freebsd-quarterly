@@ -3,7 +3,6 @@
 Links: +
 link:https://github.com/yurivict/freebsd-portsdb/[PortsDB] URL: link:https://github.com/yurivict/freebsd-portsdb/[https://github.com/yurivict/freebsd-portsdb/]
 
-
 Contact: Yuri Victorovich <yuri@FreeBSD.org>
 
 I developed the PortsDB project that imports FreeBSD ports into an SQLite
