@@ -1,8 +1,8 @@
 === Adding basic CTF support to ddb
 
-Link: +
-link:https://reviews.freebsd.org/D37898[Differential 1] 
-link:https://reviews.freebsd.org/D37899[Differential 2]
+Links: +
+link:https://reviews.freebsd.org/D37898[Differential 1] URL: link:https://reviews.freebsd.org/D37898[https://reviews.freebsd.org/D37898] +
+link:https://reviews.freebsd.org/D37899[Differential 2] URL: link:https://reviews.freebsd.org/D37899[https://reviews.freebsd.org/D37899]
 Contact: Bojan Novković <bojan.novkovic@kset.org>
 
 The goal of this project was to extend the ddb kernel debugger to use the kernel's Compact C Type Format (CTF) data and use the newly added features to implement a pretty-printing command in ddb.
