@@ -14,19 +14,19 @@ The Ports Management Team is responsible for overseeing the overall direction of
 Below is what happened in the last quarter.
 
 Currently we have just over 31,000 ports in the Ports Tree.
-There are currenly close to 2900 open ports PRs of which almost 800 are unassigned.
+There are currently close to 2900 open ports PRs of which almost 800 are unassigned.
 The last quarter saw 8194 commits by 159 committers on the main branch and 657 commits by 53 committers on the 2022Q4 branch.
 Compared to the quarter before, this means a small increase in the number of available ports but also in the number of open PRs and a decreasing number of commits made.
 
 On the personnel front, we welcomed Ronald Klop (ronald@) and said goodbye to bar@ and bhughes@
-We welcomed pizzamig@ as a new official member after a succesful lurking period.
+We welcomed pizzamig@ as a new official member after a successful lurking period.
 We also welcomed three new lurkers: bofh@, ler@, and ygy@.
 
 Portmgr split itself up into portmgr and pkgmgr.
-The new pkgmgr team, currently consisting of anoine@ and bdrewery@, is responsible for building packages and maintaining the package building cluster.
+The new pkgmgr team, currently consisting of antoine@ and bdrewery@, is responsible for building packages and maintaining the package building cluster.
 
 Four new USES were introduced:
-* llvm to canocalize ports dependencies on LLVM
+* llvm to canonicalize ports dependencies on LLVM
 * luajit to select a LuaJIT runtime
 * octave to help ports to depend on Octave and Octave-Forge
 * tex to define dependencies on TeX and its various components
