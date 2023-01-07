@@ -15,7 +15,7 @@ Two full upgrades to fix and prevent some impacting issues (FreeBSD-EN-22:25.tcp
 * Regular disk and parts support (and replacement) for all physical hosts and mirrors.
 * Site audit at our primary site
 ** Inventory of spares and other miscellanea occupying space in our cabinets.
-** Inventory of PDUs/power outlet usage and identify faulty PSUs.
+** Inventory of PDUs/power outlet usage and identifying faulty PSUs.
 * Identify and fix major DNS issue impacting the project +
 The primary DNS servers hosted on HE.net suffered outages for a few days, and new DNS servers were deployed worldwide.
 We thank our sponsor link:https://www.metapeer.com/[Metapeer] for providing anycast infrastructure.
@@ -23,7 +23,7 @@ We thank our sponsor link:https://www.metapeer.com/[Metapeer] for providing anyc
 A replacement for our mirror in Amsterdam (site decommissioned).
 Former and new mirror hosted and sponsored by link:https://deploy.equinix.com/[Equinix].
 * Reuse parts of three broken CI machines +
-No replaces for these at this moment, waiting a for a cluster refresh soon.
+No replacements for these at this moment, waiting a for a cluster refresh soon.
 * Work with the PowerPC team to improve the PowerPC cluster machines
 ** Parts like mainboard, NVMe and Power 9 CPU bought through the FreeBSD Foundation.
 ** Former package builder fixed, and re-deployed as powerpc and powerpc64 package builder.
