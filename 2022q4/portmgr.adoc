@@ -1,7 +1,7 @@
 === Ports Collection
 
 Links: +
-link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] URL:link:https://www.FreeBSD.org/ports/[https://www.FreeBSD.org/ports/] +
+link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] URL: link:https://www.FreeBSD.org/ports/[https://www.FreeBSD.org/ports/] +
 link:https://docs.freebsd.org/en/articles/contributing/#ports-contributing[Contributing to Ports] URL: link:https://docs.freebsd.org/en/articles/contributing/#ports-contributing[https://docs.freebsd.org/en/articles/contributing/#ports-contributing] +
 link:http://portsmon.freebsd.org/[FreeBSD Ports Monitoring] URL: link:http://portsmon.freebsd.org/[http://portsmon.freebsd.org/] +
 link:https://www.freebsd.org/portmgr/[Ports Management Team] URL: link:https://www.freebsd.org/portmgr/[https://www.freebsd.org/portmgr/] +
@@ -28,7 +28,7 @@ The new pkgmgr team, currently consisting of antoine@ and bdrewery@, is responsi
 Four new USES were introduced:
 * llvm to canonicalize ports dependencies on LLVM
 * luajit to select a LuaJIT runtime
-* octave to help ports to depend on Octave and Octave-Forge
+* octave to help ports depend on Octave and Octave-Forge
 * tex to define dependencies on TeX and its various components
 
 The following default versions were bumped:
@@ -39,7 +39,7 @@ The following default versions were bumped:
 * PHP to 8.1
 * Samba to 4.13
 * Varnish to 6
-* LuaJIT is new and at luajit-devel or luajit-openresty for PowerPC64
+* LuaJIT is new and set at "luajit-openresty" for PowerPC64 and "luajit-devel" for all other architectures
 
 Three new features were introduced, PIE, RELRO, and BIND_NOW.
 Each port can opt out of them by setting the <feature>_UNSAFE variable.
@@ -59,7 +59,7 @@ The following major ports were updated to new versions:
 * wlroots 0.16.1
 * Wine 7.0.1
 
-The exp-run report are available again.
+The exp-run reports are available again.
 During the last quarter, antoine@ ran 38 exp-runs to:
 * test port updates
 * change default versions
