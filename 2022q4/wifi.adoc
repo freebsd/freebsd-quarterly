@@ -5,7 +5,7 @@ link:https://people.freebsd.org/~bz/wireless/[Bjoern's Wireless Work In Progress
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
 
-During the last quarter of the year not much work was publicly visible and admittedly slightly slow.
+During the quarter not much work was publicly visible and admittedly slightly slow.
 Behind the scenes wireless work was happening on two fronts:
 
  * 11n, 11ac, and wpa,
