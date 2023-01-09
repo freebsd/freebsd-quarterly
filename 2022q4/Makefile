@@ -12,7 +12,7 @@ TeamReports= core.adoc freebsd-foundation.adoc releng.adoc clusteradm.adoc ci.ad
 
 # Projects that span multiple categories, from the kernel, and userspace to
 # the Ports Collection or external projects
-Projects= vessel-status-report.adoc NFS-in-prisons.adoc pytest-for-atf.adoc
+Projects= accessibility.adoc vessel-status-report.adoc NFS-in-prisons.adoc pytest-for-atf.adoc
 
 # Changes affecting the base system and programs in it
 Userland= openssh.adoc
