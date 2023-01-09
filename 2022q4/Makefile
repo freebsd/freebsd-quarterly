@@ -27,7 +27,7 @@ Architectures= cheribsd.adoc riscv.adoc golang_riscv64.adoc
 
 # Updating cloud-specific features and bringing in support for new
 # cloud platforms
-Cloud= cloud-init.adoc openstack-on-freebsd.adoc
+Cloud= azure.adoc cloud-init.adoc openstack-on-freebsd.adoc
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
