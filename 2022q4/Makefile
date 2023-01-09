@@ -23,7 +23,7 @@ Kernel= ufs_snapshots.adoc wifi.adoc netlink.adoc ddb_ctf.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures= cheribsd.adoc golang_riscv64.adoc
+Architectures= cheribsd.adoc riscv.adoc golang_riscv64.adoc
 
 # Updating cloud-specific features and bringing in support for new
 # cloud platforms
@@ -35,7 +35,7 @@ Documentation=	doceng.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
-Ports= FreshPorts.adoc portsdb.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
+Ports= FreshPorts.adoc portsdb.adoc kde.adoc xfce.adoc pantheon.adoc budgie.adoc gcc.adoc biology.adoc
 
 # Third party project built on FreeBSD, but not part of the FreeBSD
 # project itself
