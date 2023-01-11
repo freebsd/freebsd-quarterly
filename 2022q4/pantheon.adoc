@@ -34,8 +34,8 @@ Submitted other patches for low level libraries such as:
 
 * package:print/cups-pk-helper[] https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=266067[update to 0.2.7] required by package:print/switchboard-plus-printers[]
 * package:devel/libgee[] https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=266585[update to 0.20.6] heavily used by the desktop
-* package:sysutils/polkit[] update to 122 link:https://reviews.freebsd.org/D37137[D37137]
-* package:sysutils/accountsservice[] update to 22.08.8 link:https://reviews.freebsd.org/D37679[D37679].
+* package:sysutils/polkit[] update to 122 (https://reviews.freebsd.org/D37137[D37137])
+* package:sysutils/accountsservice[] update to 22.08.8 (https://reviews.freebsd.org/D37679[D37679]).
 
 ==== Open tasks
 
