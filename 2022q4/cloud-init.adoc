@@ -1,7 +1,7 @@
 === FreeBSD as a Tier 1 cloud-init Platform
 
 Links: +
-https://https://cloud-init.io/[cloud-init Website] URL: https://cloud-init.io/[https://cloud-init.io/] +
+https://cloud-init.io/[cloud-init Website] URL: https://cloud-init.io/[https://cloud-init.io/] +
 https://cloudinit.readthedocs.io/en/latest/[cloud-init Documentation] URL: https://cloudinit.readthedocs.io/en/latest/[https://cloudinit.readthedocs.io/en/latest/] +
 https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[cloud-init ongoing refactorization] URL: https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst] 
 
