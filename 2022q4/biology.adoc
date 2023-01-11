@@ -1,7 +1,7 @@
 === Another milestone for biology ports
 
 Links: +
-link:https://github.com/auerlab/biolibc-tools[Biolibc-tools] URL: link:https://github.com/auerlab/biolibc-tools[link:https://github.com/auerlab/biolibc-tools]
+link:https://github.com/auerlab/biolibc-tools[Biolibc-tools] URL: link:https://github.com/auerlab/biolibc-tools[link:https://github.com/auerlab/biolibc-tools] +
 link:https://github.com/auerlab/fasda[Fast And Simple Differential Analysis] URL: link:https://github.com/auerlab/fasda[link:https://github.com/auerlab/fasda]
 
 Contact: Jason Bacon <jwb@FreeBSD.org>
@@ -18,7 +18,7 @@ It now contains a solid core of many of the most commonly used open source appli
 
 This quarter saw the completion of a tool chain for one of the most important types of analysis, known as RNA-Seq.
 RNA-Seq measures the abundance of RNA, and hence gene activity, in tissue samples.
-All of the tools needed to perform a typical RNA-Seq analysis can now be installed on FreeBSD using
+All of the tools needed to perform a typical RNA-Seq analysis can now be installed on FreeBSD using:
 
 `pkg install rna-seq`
 
