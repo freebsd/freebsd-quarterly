@@ -1,6 +1,6 @@
 === Containers and FreeBSD: Pot, Potluck and Potman
 
-Links: +
+Link: +
 link:https://github.com/bsdpot[Pot organization on GitHub] URL: link:https://github.com/bsdpot[https://github.com/bsdpot]
 
 Contact: Luca Pizzamiglio (Pot) <pizzamig@freebsd.org> +
