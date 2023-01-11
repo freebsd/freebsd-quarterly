@@ -34,18 +34,19 @@ Thus just "status" has been chosen: this is correct as quarterly status reports 
 The following link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267813[email addresses have been created]:
 
 * the main contact address for the status report team is now <status@FreeBSD.org>.
-Mails sent to <quarterly@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
+Mails sent to `quarterly@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
 * the email address for the status report submissions is now <status-submissions@FreeBSD.org>.
-Mails sent to <quarterly-submissions@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
-* the <quarterly-calls@FreeBSD.org> mailing list has been renamed to <status-calls@FreeBSD.org>.
-If you were already subscribed to <quarterly-calls@FreeBSD.org>, you do not need to resubscribe to <status-calls@FreeBSD.org>.
+Mails sent to `quarterly-submissions@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
+* the `quarterly-calls` mailing list has been renamed to https://lists.freebsd.org/subscription/freebsd-status-calls[status-calls].
+If you were already subscribed to `quarterly-calls`, you do not need to resubscribe.
 
 ==== Report submission
 
 Three different ways to submit reports will be provided:
 
-* submitting a review on Phabricator.
-  A new link:https://reviews.freebsd.org/project/profile/88/[Phabricator group] called "status" link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267812[has been created].
+* submitting a review on Phabricator. +
++
+A new link:https://reviews.freebsd.org/project/profile/88/[Phabricator group] called "status" link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267812[has been created].
   If you would like to give a hand to the team by reviewing reports we suggest you add yourself to the group watchers; 
 
 * submitting a pull request at https://github.com/freebsd/freebsd-doc/pulls;
