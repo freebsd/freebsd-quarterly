@@ -42,4 +42,4 @@ The first third-party software, BIRD, link:https://gitlab.nic.cz/labs/bird/-/com
 
 * Add Netlink to GENERIC
 * Make `netstat/route/arp/ndp/ifconfig` use Netlink interfaces (help is appreciated)
-* Add FreeBSD Netlink support to `net/frr`.
+* Add FreeBSD Netlink support to package:net/frr[].
