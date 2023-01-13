@@ -1,6 +1,6 @@
 === Vessel - Integrated Application Containers for FreeBSD
 
-Link: https://github.com/ssteidl/vessel[Vessel] URL: https://github.com/ssteidl/vessel[https://github.com/ssteidl/vessel]
+Link: link:https://github.com/ssteidl/vessel[Vessel] URL: link:https://github.com/ssteidl/vessel[https://github.com/ssteidl/vessel]
 
 Contact: Shane Steidley <ssgriffonuser@gmail.com>
 
