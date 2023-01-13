@@ -31,7 +31,7 @@ Cloud= azure.adoc cloud-init.adoc openstack-on-freebsd.adoc
 
 # Noteworthy changes in the documentation tree, man-pages, or new
 # external books/documents
-Documentation=	doceng.adoc
+Documentation=	doceng.adoc papers.adoc
 
 # Changes affecting the Ports Collection, whether sweeping changes that
 # touch most of the tree, or individual ports themselves
