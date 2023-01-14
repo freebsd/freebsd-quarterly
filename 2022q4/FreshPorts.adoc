@@ -3,7 +3,7 @@
 Link:	 https://freshports.org/[FreshPorts]
 Link:	 https://news.freshports.org/[FreshPorts blog]
 
-Contact: Dan Langille <dan@FreeBSD.org>  
+Contact: Dan Langille <dvl@FreeBSD.org>  
 
 FreshPorts and FreshSource have reported upon FreeBSD commits for 20 years.
 They cover all commits, not just ports.

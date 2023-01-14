@@ -1,7 +1,7 @@
 === Ports Collection
 
 Links: +
-link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] URL:link:https://www.FreeBSD.org/ports/[https://www.FreeBSD.org/ports/] +
+link:https://www.FreeBSD.org/ports/[About FreeBSD Ports] URL: link:https://www.FreeBSD.org/ports/[https://www.FreeBSD.org/ports/] +
 link:https://docs.freebsd.org/en/articles/contributing/#ports-contributing[Contributing to Ports] URL: link:https://docs.freebsd.org/en/articles/contributing/#ports-contributing[https://docs.freebsd.org/en/articles/contributing/#ports-contributing] +
 link:http://portsmon.freebsd.org/[FreeBSD Ports Monitoring] URL: link:http://portsmon.freebsd.org/[http://portsmon.freebsd.org/] +
 link:https://www.freebsd.org/portmgr/[Ports Management Team] URL: link:https://www.freebsd.org/portmgr/[https://www.freebsd.org/portmgr/] +
@@ -10,13 +10,7 @@ link:http://ftp.freebsd.org/pub/FreeBSD/ports/ports/[Ports Tarball] URL: link:ht
 Contact: René Ladan <portmgr-secretary@FreeBSD.org> +
 Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
 
-Paragraphs are separated with an empty line. Use AsciiDoctor syntax, the same as you use on GitHub.
-If you don't know AsciiDoctor, just write it as if it was plain text.
-
-Show the importance of your work.
-Status reports are not just about telling everyone that things were done, they also need to explain why they were done.
-
-The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages, and personnel matters.
+The Ports Management Team is responsible for overseeing the overall direction of the Ports Tree, building packages (through its subsidiary pkgmgr), and personnel matters.
 Below is what happened in the last quarter.
 
 * #ports #PR #PRunassigned #commits #committers conclusion
