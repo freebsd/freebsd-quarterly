@@ -1,6 +1,6 @@
 === FreeBSD/riscv64 Improvements
 
-Links: +
+Link: +
 link:https://wiki.freebsd.org/riscv[Wiki Homepage] URL: link:https://wiki.freebsd.org/riscv[https://wiki.freebsd.org/riscv]
 
 Contact: Mitchell Horne <mhorne@FreeBSD.org>
@@ -20,7 +20,7 @@ Now, DTrace can be used to accurately capture profiling data on this platform, e
 
 I also began porting the `hwpmc(4)` driver to run on this platform.
 Unlike other ISAs, RISC-V does not standardize the set of counter events that a CPU must support, nor are the programmable event selection registers accessible to the kernel.
-To work around this, there is an link:https://github.com/riscv-non-isa/riscv-sbi-doc/blob/master/riscv-sbi.adoc[SBI "Performance Monitoring Unit" extension] which provides an abstracted interface for managing such functionality.
+To work around this, there is an link:https://github.com/riscv-non-isa/riscv-sbi-doc/blob/master/riscv-sbi.adoc#performance-monitoring-unit-extension-eid-0x504d55-pmu[SBI "Performance Monitoring Unit" extension] which provides an abstracted interface for managing such functionality.
 The new `hwpmc(4)` class is written to use this interface.
 Current generation RISC-V hardware supports incrementing performance counters, but lacks the counter overflow interrupts required to enable sampling PMCs.
 
@@ -28,6 +28,6 @@ Work is expected to continue next quarter.
 Aside from the in-progress items mentioned, focus will be given to the following areas:
 
 * Support for newer OS-level extensions such as Page-Based Memory Types (Svpbmt)
-* Profiling system performance
+* Profiling system performance.
 
 Sponsor: The FreeBSD Foundation
