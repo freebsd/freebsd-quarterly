@@ -12,7 +12,7 @@ This quarter I resumed work on improvements to FreeBSD's RISC-V architecture sup
 Work was focused primarily on small bug-fixes and improvements, and tooling.
 A handful of known panics and bug reports were fixed and closed.
 
-On the performance tooling side, some issues with the use of DTrace on riscv were found and addressed.
+On the performance tooling side, some issues with the use of DTrace on riscv64 were found and addressed.
 Specifically, backtraces produced by the `stack()` function were not being captured correctly.
 First, a change was made to the compiler flags to ensure that kernel modules always make use of the frame pointer, so that unwinding the kernel stack works as expected.
 Second, some tweaks were made to machine-dependent DTrace code in the `profile` and `fbt` providers, making the correct number of frames appear in each backtrace.
