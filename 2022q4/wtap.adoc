@@ -1,0 +1,16 @@
+=== New tool for wtap(4) 
+
+Links: +
+link:https://reviews.freebsd.org/D37973[wtapctl(8): Introduce new tool for wtap(4)] URL:
+link:https://reviews.freebsd.org/D37973[https://reviews.freebsd.org/D37973]
+
+Contact: En-Wei Wu <enweiwu@FreeBSD.org> +
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org> +
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
+
+The new user-space utility wtapctl(8) controls two aspects of the wtap(4) system: device manipulation and visibility control. The wtapctl(8) utility has replaced the older tools located in tools/tools/wtap and is now located in usr.sbin, as it is necessary for building the wtap(4) system.
+
+For more details about wtpactl(8), see the
+link:https://reviews.freebsd.org/D37973[D37073].
+
+Sponsor: The FreeBSD Foundation
