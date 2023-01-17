@@ -79,7 +79,7 @@ Other Foundation work in the src tree included:
   addition of support for an array of hwresets]
 - more RISC-V improvements from Mitchell Horne, including
   link:https://cgit.freebsd.org/src/commit/?id=701923e2a4105be606c5263181b6eb6f546f1a84[improvements
-  to parsing of isa property strings],
+  to parsing of ISA property strings],
   link:https://cgit.freebsd.org/src/commit/?id=95b1c27069775dd969cd045888b4ea5aeb53cb7f[optimizations
   to memory allocation], and various documentation additions and improvements
 - follow-up commits to Mark Johnston's work to add ZFS Support to makefs(8)
@@ -131,8 +131,9 @@ Check out some of the advocacy and education work we did last quarter:
 
 * Sponsored All Things Open, October 30-November 2, 2022 in Raleigh, NC
 
-* Sponsored and helped organize the November 2022 FreeBSD Vendor Summit. Videos
-from the Summit are available link:https://youtube.com/playlist?list=PLugwS7L7NMXwVfBq5eDRky450jp7LTRJj[here].
+* Sponsored and helped organize the November 2022 FreeBSD Vendor
+  Summit. link:https://youtube.com/playlist?list=PLugwS7L7NMXwVfBq5eDRky450jp7LTRJj[Videos
+  from the Summit are available].
 
 * Held a new FreeBSD Friday: link:https://youtu.be/t2VLTtHYIcA[An Introduction to FreeBSD Services] by Drew
   Gurkowski
@@ -164,7 +165,7 @@ from the Summit are available link:https://youtube.com/playlist?list=PLugwS7L7NM
 ** link:https://freebsdfoundation.org/news-and-events/latest-news/ampere-getting-cloud-native-with-freebsd-on-oci-ampere-a1-with-terraform/[Ampere: Getting Cloud-Native with FreeBSD on OCI Ampere A1 with Terraform]
 ** link:https://freebsdfoundation.org/news-and-events/latest-news/freebsd-is-well-supported-on-4th-gen-amd-epyc-processors/[FreeBSD is Well Supported on 4th Gen AMD EPYC™ Processors]
 
-* For a quick review of all the Foundation efforts in 2023, check out our link:https://youtu.be/6ybbeFXFm-I[2023 Thank You Video].
+* For a quick review of all the Foundation efforts in 2022, check out our link:https://youtu.be/6ybbeFXFm-I[2022 Thank You Video].
 
 We help educate the world about FreeBSD by publishing the professionally
 produced FreeBSD Journal. As we mentioned previously, the FreeBSD Journal is now
