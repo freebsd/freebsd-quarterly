@@ -1,4 +1,4 @@
-The New Year has started and here is the last status report of 2022, including 32 reports.
+The New Year has started and here is the last status report of 2022, including 33 reports.
 You will also notice that for the first time a new category has been introduced: the Cloud category.
 As FreeBSD keeps up to date with the latest technologies in IT, projects dealing with the cloud make steady improvements, and thus it has been judged that they deserve their own category in the status reports.
 
