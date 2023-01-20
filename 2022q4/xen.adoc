@@ -1,8 +1,8 @@
 === FreeBSD/ARM64 on Xen
 
-Links:
-+ https://www.xenproject.org/[Xen Project]
-+ https://wiki.freebsd.org/Xen[FreeBSD wiki page on Xen]
+Links: +
+link:https://www.xenproject.org/[Xen Project] URL: link:https://www.xenproject.org/[https://www.xenproject.org/] +
+link:https://wiki.freebsd.org/Xen[FreeBSD wiki page on Xen] URL: link:https://wiki.freebsd.org/Xen[https://wiki.freebsd.org/Xen]
 
 Contact: Elliott Mitchell <ehem+freebsd@m5p.com>
 
@@ -31,6 +31,6 @@ No plans currently exist for having FreeBSD/ARM64 operating as the controlling V
 
 ===== Thanks
 
-Thanks to Julien Grall <julien@xen.org> for the Proof of Concept.
-Thanks to Roger Pau Monné <royger@FreeBSD.org> for reviewing changes involving x86.
+Thanks to Julien Grall <julien@xen.org> for the Proof of Concept. +
+Thanks to Roger Pau Monné <royger@FreeBSD.org> for reviewing changes involving x86. +
 Thanks to Mitchell Horne <mhorne@FreeBSD.org> for helping with various FreeBSD/ARM64 issues and addressing a key problem with FreeBSD/ARM64.
