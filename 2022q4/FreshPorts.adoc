@@ -1,8 +1,8 @@
 ## FreshPorts - help wanted ##
 
 Links: +
-https://freshports.org/[FreshPorts] URL: https://freshports.org/[https://freshports.org/] +
-https://news.freshports.org/[FreshPorts blog] URL: https://news.freshports.org/[https://news.freshports.org/]
+link:https://freshports.org/[FreshPorts] URL: link:https://freshports.org/[https://freshports.org/] +
+link:https://news.freshports.org/[FreshPorts blog] URL: link:https://news.freshports.org/[https://news.freshports.org/]
 
 Contact: Dan Langille <dvl@FreeBSD.org>  
 
@@ -11,7 +11,7 @@ They cover all commits, not just ports.
 
 FreshPorts tracks the commits and extracts data from the port Makefiles to create a database of information useful to both port maintainers and port users.
 
-For example, https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows the history of the _acme.sh_ port, back to its creation in May 2017.
+For example, link:https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows the history of the _acme.sh_ port, back to its creation in May 2017.
 
 ### Converting the backend repository ###
 
@@ -22,7 +22,7 @@ I have wanted to convert these repositories to Git for some time.
 
 I would like help with this please.
 I'll give you a copy of the repositories and you give me back several Git repos (one for each).
-They will be uploaded to https://github.com/FreshPorts[https://github.com/FreshPorts] (our project on GitHub).
+They will be uploaded to link:https://github.com/FreshPorts[https://github.com/FreshPorts] (our project on GitHub).
 
 These are the existing Subversion repos:
 
