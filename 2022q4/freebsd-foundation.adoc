@@ -22,7 +22,7 @@ Unfortunately, we did not meet our fundraising goal, which reinforced our need o
 We will bring someone on board soon to help with that effort.
 
 In this Quarterly Status report you'll read about many of the areas we funded in Q4 to improve FreeBSD and advocate for the Project (the two main areas we spend money on).
-Check out reports on the internally and externally funded projects like Openstack on FreeBSD, Enabling Snapshots on Filesystems Using Journaled Soft Updates, FreeBSD as a Tier 1 cloud-init Platform, RISC-V support, and Arm64 support.
+Check out reports on the internally and externally funded projects like Openstack on FreeBSD, Enabling Snapshots on Filesystems Using Journaled Soft Updates, and FreeBSD as a Tier 1 cloud-init Platform.
 In addition, we provided tons of community engagement and education opportunities virtually and in-person!
 
 If you want to help us continue our efforts, please consider making a donation towards our 2023 fundraising campaign!
