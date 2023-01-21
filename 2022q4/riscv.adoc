@@ -1,6 +1,6 @@
 === FreeBSD/riscv64 Improvements
 
-Link: +
+Links: +
 link:https://wiki.freebsd.org/riscv[Wiki Homepage] URL: link:https://wiki.freebsd.org/riscv[https://wiki.freebsd.org/riscv]
 
 Contact: Mitchell Horne <mhorne@FreeBSD.org>
