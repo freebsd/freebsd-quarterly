@@ -19,4 +19,4 @@ This project needs help with the following:
 * Usability testing
 * Integrating with the FreeBSD installer.
 
-Sponsor: NVIDIA(R) Networking (for the kernel development part)
+Sponsor: NVIDIA Networking (for the kernel development part)
