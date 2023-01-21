@@ -8,7 +8,7 @@ Contact: <status@FreeBSD.org>
 
 ==== Goals of the new workflow
 
-This quarter the status reports team has been discussing with doceng@ some improvements to its workflow.
+This quarter the status team has been discussing with doceng@ some improvements to its workflow.
 In particular, the team is attempting to merge its GitHub repository into the FreeBSD doc/ repository.
 
 Here are the reasons for such a change:
@@ -23,7 +23,7 @@ Some inconsistencies about the name of the team have also been found: the team h
 So this issue is also being addressed.
 
 Please note that we are still working on these changes and that they might not be completed within the next quarter.
-The status report team will take care to keep all information about report submissions up to date so that you always know how to submit your reports.
+The status team will take care to keep all information about report submissions up to date so that you always know how to submit your reports.
 
 ==== Team naming
 
@@ -33,7 +33,7 @@ Thus just "status" has been chosen: this is correct as quarterly status reports 
 
 The following link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267813[email addresses have been created]:
 
-* the main contact address for the status report team is now <status@FreeBSD.org>.
+* the main contact address for the status team is now <status@FreeBSD.org>.
 Mails sent to `quarterly@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
 * the email address for the status report submissions is now <status-submissions@FreeBSD.org>.
 Mails sent to `quarterly-submissions@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
