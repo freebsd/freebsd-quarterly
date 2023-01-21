@@ -27,7 +27,7 @@ The status team will take care to keep all information about report submissions 
 
 ==== Team naming
 
-Since "quarterly" might refers to quarterly reports but also to quarterly branches, using "quarterly" only could cause some confusion in some contexts.
+Since "quarterly" might refer to quarterly reports but also to quarterly branches, using "quarterly" only could cause some confusion in some contexts.
 "quarterly-status" is likely a bad idea as well, as the frequency of reports publication might need to change in the future.
 Thus just "status" has been chosen: this is correct as quarterly status reports contain information about the status of the development of FreeBSD, it is frequency-agnostic and consistent with link:https://www.freebsd.org/status/[its FreeBSD website section].
 
