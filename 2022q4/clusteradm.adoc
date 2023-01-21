@@ -30,7 +30,7 @@ No replacements for these at this moment, awaiting a cluster refresh soon.
 ** Former devref machine reinstalled as a new powerpc64le package builder.
 ** The cluster has now only these two PowerPC machines in operation.
 * Several rounds to free up disk space usage in the cluster machines
-* Setup of an experimental search engine for the mailing lists: link:https://lists.freebsd.org/search
+* Setup of an experimental search engine for the mailing lists: https://lists.freebsd.org/search
 * Fix a bug in the mailing lists archiver, which resulted in some broken links +
 All mailing lists archives have been regenerated.
 
