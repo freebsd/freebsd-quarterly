@@ -1,6 +1,7 @@
 === Enabling Snapshots on Filesystems Using Journaled Soft Updates
 
-Link: link:https://reviews.freebsd.org/D36491[Milestone 1 Core Changes] URL: link:https://reviews.freebsd.org/D36491[https://reviews.freebsd.org/D36491]
+Links: +
+link:https://reviews.freebsd.org/D36491[Milestone 1 Core Changes] URL: link:https://reviews.freebsd.org/D36491[https://reviews.freebsd.org/D36491]
 
 Contact: Kirk McKusick <mckusick@FreeBSD.org>
 
