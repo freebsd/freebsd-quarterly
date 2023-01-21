@@ -23,7 +23,7 @@ Kernel= ufs_snapshots.adoc wifi.adoc netlink.adoc ddb_ctf.adoc
 
 # Updating platform-specific features and bringing in support for new
 # hardware platforms
-Architectures= cheribsd.adoc riscv.adoc golang_riscv64.adoc
+Architectures= cheribsd.adoc riscv.adoc golang_riscv64.adoc xen.adoc
 
 # Updating cloud-specific features and bringing in support for new
 # cloud platforms

@@ -17,15 +17,17 @@ We publish marketing material to promote, educate, and advocate for the FreeBSD 
 
 ==== Fundraising Efforts
 
-Thank you to everyone who made a financial contribution in 2022! We're still tallying up the totals and will have final numbers soon.
+Thank you to everyone who made a financial contribution in 2022!
+We're still tallying up the totals and will have final numbers soon.
 Unfortunately, we did not meet our fundraising goal, which reinforced our need of having someone who can focus on encouraging organizations to invest in FreeBSD.
 We will bring someone on board soon to help with that effort.
 
 In this Quarterly Status report you'll read about many of the areas we funded in Q4 to improve FreeBSD and advocate for the Project (the two main areas we spend money on).
-Check out reports on the internally and externally funded projects like Openstack on FreeBSD, Enabling Snapshots on Filesystems Using Journaled Soft Updates, and FreeBSD as a Tier 1 cloud-init Platform.
+Check out reports on the internally and externally funded projects like Openstack on FreeBSD, Enabling Snapshots on Filesystems Using Journaled Soft Updates, FreeBSD as a Tier 1 cloud-init Platform, and FreeBSD/riscv64 Improvements.
 In addition, we provided tons of community engagement and education opportunities virtually and in-person!
 
-If you want to help us continue our efforts, please consider making a donation towards our 2023 fundraising campaign!
+If you want to help us continue our efforts, please consider making a donation
+towards our 2023 fundraising campaign!
 link:https://www.FreeBSDFoundation.org/donate/[https://www.FreeBSDFoundation.org/donate/]
 
 We also have a Partnership Program for larger commercial donors.
