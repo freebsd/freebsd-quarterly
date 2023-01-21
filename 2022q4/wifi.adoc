@@ -1,6 +1,6 @@
 === Wireless updates
 
-Link: +
+Links: +
 link:https://people.freebsd.org/~bz/wireless/[Bjoern's Wireless Work In Progress landing page] URL: link:https://people.freebsd.org/\~bz/wireless/[https://people.freebsd.org/~bz/wireless/] +
 
 Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
