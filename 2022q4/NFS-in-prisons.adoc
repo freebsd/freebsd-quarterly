@@ -1,8 +1,8 @@
 === Enable the NFS server to run in a vnet prison
 
 Links: +
-https://people.freebsd.org/~rmacklem/vnet.patch[Source patch for main] URL: link:https://people.freebsd.org/~rmacklem/vnet.patch[https://people.freebsd.org/~rmacklem/vnet.patch] +
-https://people.freebsd.org/~rmacklem/nfsd-vnet-prison-setup.txt[Simple Setup Doc] URL: link:https://people.freebsd.org/~rmacklem/nfsd-vnet-prison-setup.txt[https://people.freebsd.org/~rmacklem/nfsd-vnet-prison-setup.txt]
+link:https://people.freebsd.org/%7Ermacklem/vnet.patch[Source patch for main] URL: link:https://people.freebsd.org/%7Ermacklem/vnet.patch[https://people.freebsd.org/~rmacklem/vnet.patch] +
+link:https://people.freebsd.org/%7Ermacklem/nfsd-vnet-prison-setup.txt[Simple Setup Doc] URL: link:https://people.freebsd.org/%7Ermacklem/nfsd-vnet-prison-setup.txt[https://people.freebsd.org/~rmacklem/nfsd-vnet-prison-setup.txt]
 
 Contact: Rick Macklem <rmacklem@freebsd.org>
 
