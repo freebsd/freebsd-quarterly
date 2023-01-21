@@ -1,6 +1,6 @@
 === FreeBSD Presentations and Papers
 
-Link: +
+Links: +
 link:https://papers.FreeBSD.org/[FreeBSD Presentations and Papers] URL: link:https://papers.FreeBSD.org/[]
 
 Contact: Allan Jude <allanjude@FreeBSD.org> +
