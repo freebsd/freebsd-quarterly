@@ -1,6 +1,6 @@
 === Cluster Administration Team
 
-Link: +
+Links: +
 link:https://www.freebsd.org/administration/#t-clusteradm[Cluster Administration Team members] URL: link:https://www.freebsd.org/administration/#t-clusteradm[https://www.freebsd.org/administration/#t-clusteradm]
 
 Contact: Cluster Administration Team <clusteradm@FreeBSD.org>
