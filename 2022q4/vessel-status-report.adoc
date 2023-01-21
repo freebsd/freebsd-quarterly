@@ -21,7 +21,7 @@ After the environment is configured though, it is just handed off to the `jail` 
 
 In addition to jail configuration and creation, Vessel aims to take the next step and implement an event loop to manage jails based on system events.
 An instance of vessel runs alongside each jail to assist with management.
-This allows fat jails and single process jails to run in the foreground and be managed by the vessel-supervisor.
+This allows "Fat Jails" and single process jails to run in the foreground and be managed by the vessel-supervisor.
 
 ==== Why make Vessel?
 
