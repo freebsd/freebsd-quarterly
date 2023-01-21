@@ -50,7 +50,7 @@ If you would like to give a hand to the team by reviewing reports we suggest you
 
 * submitting a pull request at link:https://github.com/freebsd/freebsd-doc/pulls[https://github.com/freebsd/freebsd-doc/pulls];
 
-* sending an email to <status-submissions@FreeBSD.org>.
+* sending an email to `status-submissions@FreeBSD.org`.
 
 Reviewing processes will proceed as they usually do on each of these channels.
 
