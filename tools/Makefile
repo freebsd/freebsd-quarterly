@@ -33,6 +33,7 @@ ALL_REPORTS=	${TeamReports} \
 		${Userland} \
 		${Kernel} \
 		${Architectures} \
+		${Cloud} \
 		${Documentation} \
 		${Ports} \
 		${ThirdParty} \
@@ -71,6 +72,7 @@ _index.adoc!	intro.adoc \
 		${Userland} \
 		${Kernel} \
 		${Architectures} \
+		${Cloud} \
 		${Documentation} \
 		${Ports} \
 		${ThirdParty} \
@@ -85,6 +87,7 @@ _index.adoc!	intro.adoc \
 		"${Userland}" \
 		"${Kernel}" \
 		"${Architectures}" \
+		"${Cloud}" \
 		"${Documentation}" \
 		"${Ports}" \
 		"${ThirdParty}" \

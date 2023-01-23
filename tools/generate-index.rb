@@ -39,10 +39,11 @@ Projects_FILES      = ARGV[5]
 Userland_FILES      = ARGV[6]
 Kernel_FILES        = ARGV[7]
 Architectures_FILES = ARGV[8]
-Documentation_FILES = ARGV[9]
-Ports_FILES         = ARGV[10]
-ThirdParty_FILES    = ARGV[11]
-Miscellaneous_FILES = ARGV[12]
+Cloud_FILES         = ARGV[9]
+Documentation_FILES = ARGV[10]
+Ports_FILES         = ARGV[11]
+ThirdParty_FILES    = ARGV[12]
+Miscellaneous_FILES = ARGV[13]
 
 # ----------------------------------------------------------------------
 # Compute the right word for the quarter
@@ -88,6 +89,12 @@ Category.new("architectures","Architectures",
 <<EOT,Architectures_FILES.split),
 Updating platform-specific features and bringing in support for the new hardware
 platform.
+EOT
+
+Category.new("cloud","Cloud",
+<<EOT,Cloud_FILES.split),
+Updating cloud-specific features and bringing in support for new cloud
+platforms.
 EOT
 
 Category.new("documentation","Documentation",
