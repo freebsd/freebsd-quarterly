@@ -29,7 +29,7 @@ There is substantial hope of having FreeBSD/ARM64 available for "DomU" (unprivil
 There is potential for FreeBSD/ARM and FreeBSD/RISC-V to run on Xen in short order.
 No plans currently exist for having FreeBSD/ARM64 operating as the controlling VM (someone could try to sponsor this).
 
-===== Thanks
+==== Thanks
 
 Thanks to Julien Grall <julien@xen.org> for the Proof of Concept. +
 Thanks to Roger Pau Monné <royger@FreeBSD.org> for reviewing changes involving x86. +
