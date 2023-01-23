@@ -65,14 +65,12 @@ Categories = [
 
 Category.new("FreeBSD-Team-Reports","FreeBSD Team Reports",
 <<EOT,TeamReports_FILES.split),
-Entries from the various official and semi-official teams, as found in the
-link:../../administration/[Administration Page].
+Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
 EOT
 
 Category.new("projects","Projects",
 <<EOT,Projects_FILES.split),
-Projects that span multiple categories, from the kernel and userspace to the
-Ports Collection or external projects.
+Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
 EOT
 
 Category.new("userland","Userland",
@@ -87,35 +85,29 @@ EOT
 
 Category.new("architectures","Architectures",
 <<EOT,Architectures_FILES.split),
-Updating platform-specific features and bringing in support for the new hardware
-platform.
+Updating platform-specific features and bringing in support for the new hardware platform.
 EOT
 
 Category.new("cloud","Cloud",
 <<EOT,Cloud_FILES.split),
-Updating cloud-specific features and bringing in support for new cloud
-platforms.
+Updating cloud-specific features and bringing in support for new cloud platforms.
 EOT
 
 Category.new("documentation","Documentation",
 <<EOT,Documentation_FILES.split),
-Noteworthy changes in the documentation tree, manual pages, or new external
-books/documents.
+Noteworthy changes in the documentation tree, manual pages, or new external books/documents.
 EOT
 
 Category.new("ports","Ports",
 <<EOT,Ports_FILES.split),
-Changes affecting the Ports Collection, whether sweeping changes that touch most
-of the tree, or individual ports themselves.
+Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
 EOT
 
 Category.new("third-Party-Projects","Third Party Projects",
 <<EOT,ThirdParty_FILES.split),
-Many projects build upon FreeBSD or incorporate components of FreeBSD into their
-project. As these projects may be of interest to the broader FreeBSD community,
-we sometimes include brief updates submitted by these projects in our quarterly
-report. The FreeBSD project makes no representation as to the accuracy or
-veracity of any claims in these submissions.
+Many projects build upon FreeBSD or incorporate components of FreeBSD into their project.
+As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
+The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
 EOT
 
 Category.new("miscellaneous","Miscellaneous",
