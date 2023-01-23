@@ -10,7 +10,7 @@ The port is package:ports-mgmt/portsdb[].
 
 The database can be fully rebuilt in around 20 minutes, after which it can be quickly (in seconds) updated with new commits.
 
-The database is currently updated hourly: https://people.freebsd.org/~yuri/ports.sqlite.
+The database is currently updated hourly: link:https://people.freebsd.org/%7Eyuri/ports.sqlite[https://people.freebsd.org/~yuri/ports.sqlite].
 
 PortsDB can be used to query ports using SQL, as a relational database.
 External services like Repology, FreshPorts, Portscout, and other similar services can use PortsDB to access information in the ports tree.
