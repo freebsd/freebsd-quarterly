@@ -1,6 +1,7 @@
 === Vessel - Integrated Application Containers for FreeBSD
 
-Links: link:https://github.com/ssteidl/vessel[Vessel]
+Links: +
+link:https://github.com/ssteidl/vessel[Vessel] URL: link:https://github.com/ssteidl/vessel[https://github.com/ssteidl/vessel]
 
 Contact: Shane Steidley <ssgriffonuser@gmail.com>
 
@@ -9,7 +10,7 @@ Contact: Shane Steidley <ssgriffonuser@gmail.com>
 The goal of vessel is to expose the many powerful features of FreeBSD to application developers.
 Vessel accomplishes this goal by:
 
-* Providing a "docker-like" interface familiar to most application developers for building, running, publishing and pulling container images.
+* Providing a "Docker-like" interface familiar to most application developers for building, running, publishing and pulling container images.
 * Tightly integrating with FreeBSD system level interfaces (kqueue process tracing, signal handling, devd.seqpacket, rctl, cpuset) to manage running jails.
 
 ==== How is Vessel different from other jail management systems?
@@ -20,13 +21,13 @@ After the environment is configured though, it is just handed off to the `jail` 
 
 In addition to jail configuration and creation, Vessel aims to take the next step and implement an event loop to manage jails based on system events.
 An instance of vessel runs alongside each jail to assist with management.
-This allows for "Fat Jails" and single process jails to run in the foreground and be managed by the vessel-supervisor.
+This allows "Fat Jails" and single process jails to run in the foreground and be managed by the vessel-supervisor.
 
 ==== Why make Vessel?
 
 Vessel has been a side project for a few years.
 I initially started it because it was a fun hobby project and I was surprised something similar did not already exist.
-It's now become a viable tool that I use for all of my projects.
+It has now become a viable tool that I use for all of my projects.
 I believe it will be useful to others as well.
 
 ==== Is help needed?
@@ -34,6 +35,6 @@ I believe it will be useful to others as well.
 Help is always appreciated.
 It's a fun project to work on because it can touch on so many portions of FreeBSD.
 
-* Just using it and reporting any bugs on github would be very useful.
+* Just using it and reporting any bugs on GitHub would be very useful.
 * Whatever sounds fun.
 I'm happy to help get people started.

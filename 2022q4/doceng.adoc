@@ -8,9 +8,10 @@ Version:
 
 === Documentation Engineering Team
 
-Link: link:https://www.freebsd.org/docproj/[FreeBSD Documentation Project] +
-Link: link:https://docs.freebsd.org/en/books/fdp-primer/[FreeBSD Documentation Project Primer for New Contributors] +
-Link: link:https://www.freebsd.org/administration/#t-doceng[Documentation Engineering Team]
+Links: +
+link:https://www.freebsd.org/docproj/[FreeBSD Documentation Project] URL: link:https://www.freebsd.org/docproj/[https://www.freebsd.org/docproj/] +
+link:https://docs.freebsd.org/en/books/fdp-primer/[FreeBSD Documentation Project Primer for New Contributors] URL: link:https://docs.freebsd.org/en/books/fdp-primer/[https://docs.freebsd.org/en/books/fdp-primer/] +
+link:https://www.freebsd.org/administration/#t-doceng[Documentation Engineering Team] URL: link:https://www.freebsd.org/administration/#t-doceng[https://www.freebsd.org/administration/#t-doceng]
 
 Contact: FreeBSD Doceng Team <doceng@FreeBSD.org>
 
@@ -26,10 +27,10 @@ Items pending and in the discussion:
 
 ==== Porter's Handbook:
 
-Two new `Uses` knobs have been added to the Handbook:
+Two new `USES` knobs have been added to the Handbook:
 
-* link:https://cgit.freebsd.org/doc/commit/?id=0870d76e67a3a4ca2d1169e0fbc0cd8e5b378f7f[New Uses = luajit].
-* link:https://cgit.freebsd.org/doc/commit/?id=c94edcebb622c4a35405f591f242132db534cd7b[New Uses = llvm].
+* link:https://cgit.freebsd.org/doc/commit/?id=0870d76e67a3a4ca2d1169e0fbc0cd8e5b378f7f[New USES = luajit].
+* link:https://cgit.freebsd.org/doc/commit/?id=c94edcebb622c4a35405f591f242132db534cd7b[New USES = llvm].
 
 Also:
 

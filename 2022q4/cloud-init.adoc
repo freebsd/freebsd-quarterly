@@ -1,9 +1,9 @@
 === FreeBSD as a Tier 1 cloud-init Platform
 
 Links: +
-link:https://https://cloud-init.io/[cloud-init Website] URL: link:https://cloud-init.io/[https://cloud-init.io/] +
+link:https://cloud-init.io/[cloud-init Website] URL: link:https://cloud-init.io/[https://cloud-init.io/] +
 link:https://cloudinit.readthedocs.io/en/latest/[cloud-init Documentation] URL: link:https://cloudinit.readthedocs.io/en/latest/[https://cloudinit.readthedocs.io/en/latest/] +
-link:https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[cloud-init ongoing refactorization] URL: link:https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[link:https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst] +
+link:https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[cloud-init ongoing refactorization] URL: link:https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst[https://github.com/canonical/cloud-init/blob/main/WIP-ONGOING-REFACTORIZATION.rst] 
 
 Contact: Mina Galić <me+FreeBSD@igalic.co>
 
@@ -13,7 +13,7 @@ To remedy the situation, this project aims to bring FreeBSD cloud-init support o
 The broader plan is to lift support across all BSDs.
 
 The first milestone has been delivered.
-Along with many bug fixes, we now have link:https://github.com/canonical/cloud-init/pull/1779[merged] an man:ifconfig[8] parser, which allows us to retrieve all the information of all network devices, similarly to how on Linux this is done by parsing the contents of `/sys/class/net/<dev>/`
+Along with many bug fixes, we now have link:https://github.com/canonical/cloud-init/pull/1779[merged] an man:ifconfig[8] parser, which allows us to retrieve all the information of all network devices, similarly to how on Linux this is done by parsing the contents of `/sys/class/net/<dev>/`.
 In the coming weeks, this project will align itself with the Azure developers to do some crucial refactoring.
 This will move our new parser further into cloud-init's main execution paths.
 

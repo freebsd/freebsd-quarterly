@@ -19,5 +19,6 @@ During the fourth quarter of 2022, the Release Engineering Team continued provid
 
 In the first quarter of 2023, the Release Engineering Team will start work on the upcoming 13.2-RELEASE.
 
-Sponsor: Rubicon Communications, LLC ("Netgate")
-Sponsor: The FreeBSD Foundation
+Sponsors: +
+Rubicon Communications, LLC ("Netgate") +
+The FreeBSD Foundation

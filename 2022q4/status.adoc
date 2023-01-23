@@ -8,7 +8,7 @@ Contact: <status@FreeBSD.org>
 
 ==== Goals of the new workflow
 
-This quarter the status reports team has been discussing with doceng@ some improvements to its workflow.
+This quarter the status team has been discussing with doceng@ some improvements to its workflow.
 In particular, the team is attempting to merge its GitHub repository into the FreeBSD doc/ repository.
 
 Here are the reasons for such a change:
@@ -27,30 +27,30 @@ The status team will take care to keep all information about report submissions 
 
 ==== Team naming
 
-Since "quarterly" might refers to quarterly reports but also to quarterly branches, using "quarterly" only could cause some confusion in some contexts.
+Since "quarterly" might refer to quarterly reports but also to quarterly branches, using "quarterly" only could cause some confusion in some contexts.
 "quarterly-status" is likely a bad idea as well, as the frequency of reports publication might need to change in the future.
 Thus just "status" has been chosen: this is correct as quarterly status reports contain information about the status of the development of FreeBSD, it is frequency-agnostic and consistent with link:https://www.freebsd.org/status/[its FreeBSD website section].
 
 The following link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267813[email addresses have been created]:
 
-* the main contact address for the status report team is now <status@FreeBSD.org>.
-Mails sent to <quarterly@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
+* the main contact address for the status team is now <status@FreeBSD.org>.
+Mails sent to `quarterly@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
 * the email address for the status report submissions is now <status-submissions@FreeBSD.org>.
-Mails sent to <quarterly-submissions@FreeBSD.org> will still reach the team, but you are encouraged to use the new address;
-* the <quarterly-calls@FreeBSD.org> mailing list has been renamed to <status-calls@FreeBSD.org>.
-If you were already subscribed to <quarterly-calls@FreeBSD.org>, you do not need to resubscribe to <status-calls@FreeBSD.org>.
+Mails sent to `quarterly-submissions@FreeBSD.org` will still reach the team, but you are encouraged to use the new address;
+* the `quarterly-calls` mailing list has been renamed to link:https://lists.freebsd.org/subscription/freebsd-status-calls[status-calls].
+If you were already subscribed to `quarterly-calls`, you do not need to resubscribe.
 
 ==== Report submission
 
 Three different ways to submit reports will be provided:
 
-* submitting a review on Phabricator.
-  A new link:https://reviews.freebsd.org/project/profile/88/[Phabricator group] called "status" link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267812[has been created].
-  If you would like to give a hand to the team by reviewing reports we suggest you add yourself to the group watchers; 
+* submitting a review on Phabricator. 
+A new link:https://reviews.freebsd.org/project/profile/88/[Phabricator group] called "status" link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267812[has been created].
+If you would like to give a hand to the team by reviewing reports we suggest you add yourself to the group watchers; 
 
-* submitting a pull request at https://github.com/freebsd/freebsd-doc/pulls;
+* submitting a pull request at link:https://github.com/freebsd/freebsd-doc/pulls[https://github.com/freebsd/freebsd-doc/pulls];
 
-* sending an email to <status-submissions@FreeBSD.org>.
+* sending an email to `status-submissions@FreeBSD.org`.
 
 Reviewing processes will proceed as they usually do on each of these channels.
 
