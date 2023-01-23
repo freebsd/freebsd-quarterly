@@ -18,7 +18,8 @@ External services like Repology, FreshPorts, Portscout, and other similar servic
 Users can, for example, easily find their broken ports, or port duplicates, or all ports that they maintain that use gmake, among many other possible queries.
 Such queries aren't easy to perform by grepping the ports tree.
 
-Cross-DB queries are also easy to do. They can combine PortsDB, /var/db/pkg/repo-FreeBSD.sqlite, and /var/db/pkg/local.sqlite.
+Cross-DB queries are also easy to do.
+They can combine PortsDB, /var/db/pkg/repo-FreeBSD.sqlite, and /var/db/pkg/local.sqlite.
 
 All that needs to be done to run PortsDB is ./import.sh, and then ./update.sh after more commits were pulled into the ports repository.
 

@@ -1,4 +1,4 @@
-=== Console screen reader infrastructure
+=== Console screen reader infrastructure
 
 Links: +
 link:https://reviews.freebsd.org/D35776[console speaker daemon] URL: link:https://reviews.freebsd.org/D35776[https://reviews.freebsd.org/D35776] +

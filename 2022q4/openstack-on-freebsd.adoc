@@ -46,7 +46,8 @@ TODOs include:
 * Develop a new virtualization type, `bhyve`, for nova-compute's `libvirt` driver
 * Develop the IP library for FreeBSD under `neutron/agent/freebsd`
 
-In the first few weeks of 2023, we will focus on breaking through the last mile of the instance spawn path and wrapping up the documentation regarding POC site construction. We will also try rebasing the porting work to the master branch of OpenStack (now Xena).
+In the first few weeks of 2023, we will focus on breaking through the last mile of the instance spawn path and wrapping up the documentation regarding POC site construction.
+We will also try rebasing the porting work to the master branch of OpenStack (now Xena).
 
 People interested in helping with the project can first help check the documentation by following the installation guide.
 

@@ -1,4 +1,4 @@
-## FreshPorts - help wanted ##
+=== FreshPorts - help wanted
 
 Links: +
 link:https://freshports.org/[FreshPorts] URL: link:https://freshports.org/[https://freshports.org/] +
@@ -13,7 +13,7 @@ FreshPorts tracks the commits and extracts data from the port Makefiles to creat
 
 For example, link:https://www.freshports.org/security/acme.sh/[https://www.freshports.org/security/acme.sh/] shows the history of the _acme.sh_ port, back to its creation in May 2017.
 
-### Converting the backend repository ###
+==== Converting the backend repository
 
 This topic deals with the FreshPorts code repository.
 The front end (website) was converted from Subversion to Git several years ago.
@@ -34,7 +34,7 @@ These are the existing Subversion repos:
 * periodics - scripts started by man:periodic[8]
 * ports - for the FreeBSD packages which install the above.
 
-### I won't be running FreshPorts forever ###
+==== I won't be running FreshPorts forever
 
 It's been over 22 years and I know others must take over eventually.
 I'd like to start that process now.
