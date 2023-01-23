@@ -1,4 +1,4 @@
-=== GCC
+=== GCC on FreeBSD
 
 Links: +
 link:https://gcc.gnu.org[GCC Project] URL: link:https://gcc.gnu.org[https://gcc.gnu.org] +
