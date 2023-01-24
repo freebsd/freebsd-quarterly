@@ -123,7 +123,7 @@ EOT
 
 print <<EOT
 ---
-title: "FreeBSD Quarterly Status Report #{QUARTER_WORD} Quarter #{YEAR}"
+title: "FreeBSD Status Report #{QUARTER_WORD} Quarter #{YEAR}"
 sidenav: about
 ---
 
