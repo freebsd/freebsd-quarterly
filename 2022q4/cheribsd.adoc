@@ -24,7 +24,7 @@ We have published the 22.12 release of CheriBSD including:
 These drivers may be used with hybrid or pure-capability kernels.
 * An initial set of graphics and desktop CheriABI software packages such as Wayland and portions of KDE to get you up and running with a memory-safe desktop environment.
 These components remain under active development, and we anticipate continuing package updates after the CheriBSD release.
-* An early research prototype of link:https://github.com/CTSRD-CHERI/cheripedia/wiki/Library-based-Compartmentalisation[library-based compartmentalisation], which implements an alternative run-time linker running shared objects in libraries.
+* An early research prototype of link:https://github.com/CTSRD-CHERI/cheripedia/wiki/Library-based-Compartmentalisation[library-based compartmentalization], which implements an alternative run-time linker running shared objects in libraries.
 This implementation is very much a work-in-progress, and is provided to enable research at other collaborator institutions needing easy access to the prototype.
 It is neither complete nor intended to be secure.
 * Improved pluggability of experimental heap temporal memory-safety support, which is not yet merged into the main development branch, but will now be easier to use by downloading an alternative kernel and heap allocator libraries provided by Microsoft.

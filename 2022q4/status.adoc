@@ -46,7 +46,7 @@ Three different ways to submit reports will be provided:
 
 * submitting a review on Phabricator.
 A new link:https://reviews.freebsd.org/project/profile/88/[Phabricator group] called "status" link:https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=267812[has been created].
-If you would like to give a hand to the team by reviewing reports we suggest you add yourself to the group watchers;
+If you would like to give a hand to the team by reviewing reports we suggest you add yourself to the group _watchers_;
 
 * submitting a pull request at link:https://github.com/freebsd/freebsd-doc/pulls[https://github.com/freebsd/freebsd-doc/pulls];
 

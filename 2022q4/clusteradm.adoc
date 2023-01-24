@@ -71,4 +71,4 @@ We are still looking for an additional full mirror site (five servers) in Europe
 We see a good pattern in having single mirrors in Internet Exchange Points worldwide (Australia, Brazil, and South Africa); if you know or work for some of them that could sponsor a single mirror server, please get in touch.
 United States (West Coast) and Europe (anywhere) are preferable places.
 
-See link:https://wiki.freebsd.org/Teams/clusteradm/generic-mirror-layout[generic mirrored layout] for a full mirror site specs and link:https://wiki.freebsd.org/Teams/clusteradm/tiny-mirror[tiny-mirror] for a single mirror site.
+See link:https://wiki.freebsd.org/Teams/clusteradm/generic-mirror-layout[generic mirrored layout] for full mirror site specs and link:https://wiki.freebsd.org/Teams/clusteradm/tiny-mirror[tiny-mirror] for a single mirror site.

@@ -1,8 +1,8 @@
 === OpenStack on FreeBSD
 
 Links: +
-link:https://www.openstack.org/[OpenStack] URL: link:https://www.openstack.org/[] +
-link:https://github.com/openstack-on-freebsd[OpenStack on FreeBSD] URL: link:https://github.com/openstack-on-freebsd[] +
+link:https://www.openstack.org/[OpenStack] URL: link:https://www.openstack.org/[https://www.openstack.org] +
+link:https://github.com/openstack-on-freebsd[OpenStack on FreeBSD] URL: link:https://github.com/openstack-on-freebsd[https://github.com/openstack-on-freebsd] +
 
 Contact: Chih-Hsin Chang <starbops@hey.com> +
 Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>

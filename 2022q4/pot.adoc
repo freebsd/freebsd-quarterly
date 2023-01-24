@@ -22,8 +22,8 @@ As you can see, we link:https://github.com/bsdpot/potluck/commits/master[had a b
 Furthermore, we landed pot-based FreeBSD support for sccache-dist server (the server component for distributed compilation of rust and C++ using sccache) and it will be part of the upcoming sccache 0.4.0, see link:https://github.com/mozilla/sccache/pull/1184[mozilla/sccache#1184].
 Once released, this will become available through devel/sccache.
 
-This means one can build rust projects on FreeBSD targeting a cluster of machines, something that could potentially integrated into poudriere as well.
+This means one can build rust projects on FreeBSD targeting a cluster of machines, something that could potentially be integrated into poudriere as well.
 
-Last not least, link:https://www.youtube.com/watch?v=b0IB0mc2KTE[Luca's EuroBSDCon 2022 talk] is now available on YouTube.
+Last but not least, link:https://www.youtube.com/watch?v=b0IB0mc2KTE[Luca's EuroBSDCon 2022 talk] is now available on YouTube.
 
 As always, feedback and patches are welcome.

@@ -12,7 +12,7 @@ Pytest simplifies test writing by reducing the amount of boiler-plate code.
 It offers several advantages over the existing atf-c and atf-shell bindings.
 One of the most important ones is the test parametrization, which allows improving coverage with writing nearly no code.
 The other is a rich assert system, offering detailed errors description.
-Python man:atf[7] support comes with a number of libraries that abstracts a number of commonly-used tasks.
+Python man:atf[7] support comes with a number of libraries that abstract a number of commonly-used tasks.
 For example, running a test within a VNET jail with man:epair[4] requires adding a single line of code.
 Such helpers are especially handy in the networking area, where tests with complex VNET setups are not uncommon.
 

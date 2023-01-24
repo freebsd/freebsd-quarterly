@@ -26,8 +26,7 @@ In this Quarterly Status report you'll read about many of the areas we funded in
 Check out reports on the internally and externally funded projects like Openstack on FreeBSD, Enabling Snapshots on Filesystems Using Journaled Soft Updates, FreeBSD as a Tier 1 cloud-init Platform, and FreeBSD/riscv64 Improvements.
 In addition, we provided tons of community engagement and education opportunities virtually and in-person!
 
-If you want to help us continue our efforts, please consider making a donation
-towards our 2023 fundraising campaign!
+If you want to help us continue our efforts, please consider making a donation towards our 2023 fundraising campaign!
 link:https://www.freebsdfoundation.org/donate/[https://www.freebsdfoundation.org/donate/]
 
 We also have a Partnership Program for larger commercial donors.

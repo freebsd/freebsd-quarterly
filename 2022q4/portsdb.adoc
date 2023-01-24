@@ -21,7 +21,7 @@ Such queries aren't easy to perform by grepping the ports tree.
 Cross-DB queries are also easy to do.
 They can combine PortsDB, /var/db/pkg/repo-FreeBSD.sqlite, and /var/db/pkg/local.sqlite.
 
-All that needs to be done to run PortsDB is ./import.sh, and then ./update.sh after more commits were pulled into the ports repository.
+All that needs to be done to run PortsDB is ./import.sh, and then ./update.sh after more commits are pulled into the ports repository.
 
 The periodic script is provided that can simplify integration with cron.
 Multiple ready to use SQL queries are also included.

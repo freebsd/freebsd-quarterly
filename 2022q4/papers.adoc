@@ -1,7 +1,7 @@
 === FreeBSD Presentations and Papers
 
 Links: +
-link:https://papers.FreeBSD.org/[FreeBSD Presentations and Papers] URL: link:https://papers.FreeBSD.org/[]
+link:https://papers.FreeBSD.org/[FreeBSD Presentations and Papers] URL: link:https://papers.FreeBSD.org/[https://papers.FreeBSD.org]
 
 Contact: Allan Jude <allanjude@FreeBSD.org> +
 Contact: Greg White <gkwhite@gmail.com> +

@@ -5,8 +5,7 @@ link:https://wiki.freebsd.org/riscv[Wiki Homepage] URL: link:https://wiki.freebs
 
 Contact: Mitchell Horne <mhorne@FreeBSD.org>
 
-The FreeBSD/RISC-V project is providing support for running FreeBSD on the
-link:https://riscv.org[RISC-V Instruction Set Architecture].
+The FreeBSD/RISC-V project is providing support for running FreeBSD on the link:https://riscv.org[RISC-V Instruction Set Architecture].
 
 This quarter I resumed work on improvements to FreeBSD's RISC-V architecture support (riscv64).
 Work was focused primarily on small bug-fixes and improvements, and tooling.
