@@ -3,4 +3,4 @@
 This repository has been used to collect and review FreeBSD quarterly status reports from 2017Q4 through 2022Q4.
 It is now archived.
 
-Please check https://www.FreeBSD.org/status/ for up to date information about FreeBSD status reports collection, reviewing and publication.
+Please check the link:https://www.FreeBSD.org/status/[FreeBSD status reports webpage] for up to date information about FreeBSD status reports collection, reviewing and publication.
